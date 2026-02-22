@@ -1,0 +1,119 @@
+{
+  "lang": "ro",
+  "langName": "Română",
+  "isMachineTranslated": false,
+  "nav": {
+    "what": "Ce este",
+    "privacy": "Confidențialitate",
+    "documents": "Documente",
+    "usedToday": "Unde funcționează",
+    "future": "Viitor",
+    "howItWorks": "Cum funcționează",
+    "faq": "Întrebări frecvente",
+    "download": "Descarcă"
+  },
+  "hero": {
+    "title": "Identitatea ta digitală — sigură, privată, mereu la tine",
+    "subtitle": "EguWallet este portofelul digital european certificat eIDAS 2.0 care înlocuiește documentele fizice cu echivalente digitale verificabile, recunoscute în toate statele membre UE.",
+    "badge1": "eIDAS 2.0 Conform",
+    "badge2": "EUDI Wallet Certificat",
+    "badge3": "Gratuit",
+    "downloadAndroid": "Disponibil pe Google Play",
+    "downloadIos": "Disponibil curând pe App Store",
+    "downloadIosComingSoon": "În curând"
+  },
+  "what": {
+    "heading": "Ce este EguWallet?",
+    "card1Title": "Reglementat de Legea UE",
+    "card1Body": "EguWallet este construit pe Regulamentul (UE) 2024/1183 — revizuirea eIDAS — care garantează fiecărui cetățean european dreptul la un portofel digital gratuit, recunoscut în toate cele 27 de state membre.",
+    "card2Title": "Ce este un EUDI Wallet?",
+    "card2Body": "Un Portofel European de Identitate Digitală (EUDI) este o aplicație sigură care stochează documente de identitate digitale verificabile: buletin, pașaport, permis auto, documente de vehicul și multe altele — toate sub controlul tău exclusiv.",
+    "card3Title": "Cine furnizează EguWallet?",
+    "card3Body": "EguWallet este dezvoltat de IT Eguilde SRL, furnizor autorizat de identitate digitală. Aplicația respectă integral Arhitectura de Referință EUDI (ARF 2.5+), standardele OpenID4VCI și OpenID4VP."
+  },
+  "privacy": {
+    "heading": "Datele tale, controlul tău",
+    "subheading": "Dezvăluire selectivă — numai ce este necesar, numai când ești de acord",
+    "body": "EguWallet utilizează SD-JWT (Selective Disclosure JWT) și mDoc/ISO 18013-5 pentru a permite dezvăluirea selectivă a datelor. Când un comerciant sau o instituție îți solicită verificarea identității, tu alegi exact ce date sunt transmise. Nimic mai mult.",
+    "example1Title": "Verificare vârstă 18+",
+    "example1Step1": "Comerciantul scanează codul QR",
+    "example1Step2": "Portofelul tău primește cererea",
+    "example1Step3": "Tu aprobi: transmite DOAR «vârstă ≥ 18: DA»",
+    "example1Step4": "Comerciantul nu primește: nume, CNP, adresă, fotografie",
+    "legalTitle": "Baza juridică",
+    "legal1": "GDPR Art. 5(1)(c) — principiul minimizării datelor: prelucrarea datelor se limitează la strictul necesar.",
+    "legal2": "Reg. (UE) 2024/1183 — prezentarea selectivă este un drept al cetățeanului, nu o opțiune opțională.",
+    "legal3": "Nicio prezentare nu este stocată de portofel sau de parte terță — fiecare dezvăluire este efemeră."
+  },
+  "documents": {
+    "heading": "Documentele din portofelul tău",
+    "subheading": "Toate documentele tale importante — digitale, verificabile, mereu la îndemână",
+    "items": [
+      { "icon": "🪪", "title": "Carte de identitate (PID)", "body": "Documentul principal de identitate digitală conform eIDAS 2.0. Recunoscut în toate statele membre UE.", "status": "available" },
+      { "icon": "🛂", "title": "Pașaport", "body": "Versiunea digitală a pașaportului tău, verificabilă instantaneu de autorități și servicii.", "status": "available" },
+      { "icon": "🚗", "title": "Permis de conducere", "body": "Permisul auto digital conform mDoc/ISO 18013-5. Verificabil fără contact, inclusiv de Poliția Rutieră.", "status": "available" },
+      { "icon": "📋", "title": "Certificat de înmatriculare", "body": "Talonul vehiculului în format digital. Nu mai cărați hârtii.", "status": "available" },
+      { "icon": "🛡️", "title": "Asigurare RCA", "body": "Polița de asigurare auto obligatorie, verificabilă în timp real.", "status": "available" },
+      { "icon": "🔧", "title": "ITP / RAR (Carte auto)", "body": "Inspecția tehnică periodică și datele RAR ale vehiculului — certificate digitale verificabile.", "status": "available" },
+      { "icon": "🏢", "title": "Documente firmă", "body": "Certificat de înregistrare ONRC, împuterniciri și documente corporative. Semnați digital cu portofelul.", "status": "soon" },
+      { "icon": "🏠", "title": "Documente de proprietate", "body": "Extrase de carte funciară și documente de proprietate imobiliară în format digital verificabil.", "status": "soon" }
+    ],
+    "statusAvailable": "Disponibil",
+    "statusSoon": "În curând"
+  },
+  "usedToday": {
+    "heading": "Unde funcționează EguWallet astăzi",
+    "subheading": "Aplicații de producție care folosesc deja EguWallet pentru autentificare și verificare",
+    "app1Name": "Consiliul Județean Ilfov",
+    "app1Url": "https://ilfov.net",
+    "app1Body": "Servicii publice digitale pentru cetățenii județului Ilfov — autentificare cu EguWallet pentru acces la portalul e-guvernare, depunere cereri, verificare documente.",
+    "app2Name": "Primăria Sectorului 2 București",
+    "app2Url": "https://sector2.eu",
+    "app2Body": "Servicii municipale digitale pentru locuitorii Sectorului 2 — autentificare rapidă și sigură cu portofelul digital pentru toate serviciile online ale primăriei.",
+    "badgeText": "Autentifică-te cu EguWallet"
+  },
+  "future": {
+    "heading": "Ce urmează — viitorul identității digitale",
+    "subheading": "EguWallet se extinde continuu cu noi cazuri de utilizare care fac viața mai ușoară",
+    "items": [
+      { "icon": "📡", "title": "Verificare dispozitiv la dispozitiv (Bluetooth)", "body": "Ca plata NFC contactless — ofițerul de poliție sau comerciantul apropie telefonul de al tău și primește instantaneu datele autorizate de tine. Fără internet, fără server intermediar." },
+      { "icon": "🚔", "title": "Control de identitate de către autorități", "body": "Similar cu plata contactless modernă: ofițerul de ordine publică verifică identitatea prin NFC/Bluetooth. Tu controlezi ce date sunt transmise. Rapid, sigur, fără fotocopii." },
+      { "icon": "🍺", "title": "Verificare vârstă 18+ (în curând)", "body": "Implementare iminentă cu un important retailer român pentru controlul vârstei la vânzarea de alcool. Comerciantul primește doar răspunsul DA/NU — nicio altă dată personală nu este dezvăluită." },
+      { "icon": "🚌", "title": "Abonamente și bilete transport public", "body": "Elevi și studenți cu drept la transport gratuit își dovedesc statutul prin EguWallet. Călătorii obișnuiți cumpără și prezintă biletele digital — fără hârtie, fără validatoare cu contact." },
+      { "icon": "📍", "title": "Adresa pe noul buletin românesc", "body": "Noul buletin român nu mai conține adresa pe cip. EguWallet rezolvă această problemă: adresa ta de domiciliu, certificată de registrul oficial, poate fi dezvăluită selectiv când este necesar." },
+      { "icon": "✍️", "title": "Semnătură digitală calificată", "body": "EguWallet va funcționa ca dispozitiv de semnătură digitală calificată (QES — Qualified Electronic Signature) conform eIDAS 2.0. Semnează documente cu valoare juridică deplină, recunoscute în toate statele membre UE — de pe telefonul tău." }
+    ]
+  },
+  "howItWorks": {
+    "heading": "Cum funcționează",
+    "step1Title": "1. Descarcă aplicația",
+    "step1Body": "Instalează EguWallet gratuit din Google Play Store. Disponibil în curând și pe Apple App Store.",
+    "step2Title": "2. Activează portofelul",
+    "step2Body": "Verifică numărul de telefon, creează un PIN securizat și conectează-te la portalul județului sau orașului tău pentru a-ți înregistra documentele digitale.",
+    "step3Title": "3. Prezintă cu control total",
+    "step3Body": "Scanezi un cod QR, atingi un terminal NFC sau partajezi un link securizat. Tu alegi exact ce date sunt transmise — niciodată mai mult decât este necesar."
+  },
+  "faq": {
+    "heading": "Întrebări frecvente",
+    "items": [
+      { "q": "Ce este EguWallet?", "a": "EguWallet este un portofel digital european certificat eIDAS 2.0, dezvoltat de IT Eguilde SRL. Vă permite să stocați și să prezentați documente de identitate digitale (buletin, pașaport, permis auto etc.) în mod securizat, pe telefonul dvs., cu control total asupra datelor personale." },
+      { "q": "Ce documente pot stoca în EguWallet?", "a": "Momentan: carte de identitate (PID), pașaport, permis de conducere, certificat de înmatriculare, asigurare RCA și carte auto (ITP/RAR). În curând: documente de firmă și documente de proprietate." },
+      { "q": "Datele mele personale sunt în siguranță?", "a": "Da. EguWallet folosește SD-JWT și mDoc/ISO 18013-5 pentru dezvăluire selectivă — transmiteți doar datele pe care le aprobați explicit. Nicio prezentare nu este stocată. Baza juridică: GDPR Art. 5(1)(c) și Regulamentul (UE) 2024/1183." },
+      { "q": "Unde pot folosi EguWallet?", "a": "Astăzi: la serviciile digitale ale Consiliului Județean Ilfov (ilfov.net) și Primăriei Sectorului 2 (sector2.eu). Urmează extinderea la alte instituții publice și retaileri privați din România și UE." },
+      { "q": "Ce este eIDAS 2.0?", "a": "eIDAS 2.0 este Regulamentul (UE) 2024/1183 care amendează regulamentul eIDAS original. Garantează fiecărui cetățean european dreptul la un portofel digital gratuit (EUDI Wallet), recunoscut în toate cele 27 de state membre." },
+      { "q": "Cum funcționează dezvăluirea selectivă?", "a": "Când un serviciu solicită verificarea identității, portofelul dvs. vă arată exact ce date sunt cerute. Aprobați sau respingeți fiecare câmp. De exemplu, pentru verificarea vârstei la 18 ani, comerciantul primește doar răspunsul DA/NU — nu vă vede numele, CNP-ul sau adresa." },
+      { "q": "Este EguWallet gratuit?", "a": "Da, complet gratuit pentru cetățeni. Descărcarea, înregistrarea și utilizarea sunt fără cost." },
+      { "q": "Cum îmi activez portofelul digital?", "a": "Descărcați aplicația din Google Play, verificați numărul de telefon, creați un PIN, apoi conectați-vă la portalul județului sau orașului dvs. pentru înregistrarea documentelor. Procesul durează aproximativ 5 minute." }
+    ]
+  },
+  "footer": {
+    "provider": "Furnizat de IT Eguilde SRL",
+    "tagline": "Portofel Digital European — eIDAS 2.0 Conform",
+    "privacy": "Politica de confidențialitate",
+    "legal": "Termeni și condiții",
+    "contact": "Contact",
+    "euCompliance": "eIDAS 2.0 Conform",
+    "machineTranslatedNotice": "Această pagină este disponibilă momentan doar în română și engleză.",
+    "rights": "© 2026 IT Eguilde SRL. Toate drepturile rezervate."
+  }
+}
