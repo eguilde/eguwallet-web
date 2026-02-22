@@ -1,5 +1,4 @@
 ---
-import ShieldLogo from './ShieldLogo.astro';
 import ThemeToggle from './ThemeToggle.astro';
 import LanguageSelector from './LanguageSelector.astro';
 import type { Translations } from '../i18n/index';
@@ -16,80 +15,51 @@ const links = [
   { href: '#faq',        label: t.nav.faq },
 ];
 ---
-<header class="sticky top-0 z-40 w-full" style="background:var(--bg);border-bottom:1px solid var(--outline-var)">
-  <nav class="max-w-7xl mx-auto flex items-center justify-between gap-4 px-4 py-3" aria-label="Main navigation">
+<header class="sticky top-0 z-40 w-full t-bg border-b t-border backdrop-blur-sm">
+  <nav class="max-w-6xl mx-auto flex items-center justify-between gap-4 px-4 h-14" aria-label="Main navigation">
 
-    <!-- Logo + brand -->
-    <a href={`/${lang}/`} class="flex items-center gap-3 flex-shrink-0" aria-label="EguWallet home">
-      <ShieldLogo size={40} />
-      <span class="font-bold text-lg hidden sm:inline" style="color:var(--primary)">EguWallet</span>
+    <a href={`/${lang}/`} class="flex items-center gap-2 flex-shrink-0" aria-label="EguWallet home">
+      <svg class="w-7 h-7 t-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
+      </svg>
+      <span class="font-bold text-[15px] hidden sm:inline t-fg">EguWallet</span>
     </a>
 
-    <!-- Desktop nav links -->
     <ul class="hidden lg:flex items-center gap-1 flex-1 justify-center list-none m-0 p-0">
       {links.map(({ href, label }) => (
         <li>
-          <a
-            href={href}
-            class="px-3 py-2 rounded-lg text-sm font-medium transition-colors hover:opacity-80"
-            style="color:var(--fg)"
-          >
-            {label}
-          </a>
+          <a href={href} class="px-2.5 py-1.5 rounded-md text-[13px] font-medium t-fg opacity-70 hover:opacity-100 transition-opacity">{label}</a>
         </li>
       ))}
     </ul>
 
-    <!-- Right controls -->
     <div class="flex items-center gap-2 flex-shrink-0">
       <LanguageSelector currentLang={lang} />
       <ThemeToggle />
 
-      <!-- Download CTA -->
       <a
-        href="https://play.google.com/store/apps/details?id=com.eguwallet.wallet"
-        target="_blank"
-        rel="noopener"
-        class="hidden md:flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold transition-colors"
-        style="background:var(--primary);color:#fff"
+        href="#download"
+        class="hidden md:flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-[13px] font-semibold t-fg border t-border hover:opacity-80 transition-opacity"
       >
         {t.nav.download}
+        <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg>
       </a>
 
-      <!-- Mobile hamburger -->
       <button
         id="nav-hamburger"
         aria-label="Open menu"
         aria-expanded="false"
-        class="lg:hidden min-h-[48px] min-w-[48px] flex items-center justify-center rounded-lg"
-        style="color:var(--fg)"
+        class="lg:hidden min-h-[44px] min-w-[44px] flex items-center justify-center rounded-lg t-fg"
       >
-        <span class="text-2xl">☰</span>
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
       </button>
     </div>
   </nav>
 
-  <!-- Mobile menu -->
-  <div id="mobile-menu" class="hidden lg:hidden px-4 pb-4 flex-col gap-1" style="background:var(--bg)">
+  <div id="mobile-menu" class="hidden lg:hidden px-4 pb-4 flex-col gap-1 t-bg">
     {links.map(({ href, label }) => (
-      <a
-        href={href}
-        class="block px-4 py-3 rounded-lg text-sm font-medium transition-colors"
-        style="color:var(--fg)"
-        onclick="document.getElementById('mobile-menu').classList.add('hidden')"
-      >
-        {label}
-      </a>
+      <a href={href} class="block px-3 py-2.5 rounded-lg text-[13px] font-medium t-fg" onclick="document.getElementById('mobile-menu').classList.add('hidden')">{label}</a>
     ))}
-    <a
-      href="https://play.google.com/store/apps/details?id=com.eguwallet.wallet"
-      target="_blank"
-      rel="noopener"
-      class="flex items-center justify-center gap-2 mt-2 px-4 py-3 rounded-xl text-sm font-semibold"
-      style="background:var(--primary);color:#fff"
-    >
-      {t.nav.download}
-    </a>
   </div>
 </header>
 

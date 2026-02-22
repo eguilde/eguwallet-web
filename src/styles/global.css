@@ -101,13 +101,24 @@
   --outline-var:  var(--eg-outline-var);
 }
 
+/* ─── Theme utility classes (reliable dark mode switching) ─── */
+.t-bg         { background-color: var(--eg-bg); }
+.t-bg-surface { background-color: var(--eg-surface); }
+.t-bg-low     { background-color: var(--eg-surface-low); }
+.t-bg-high    { background-color: var(--eg-surface-high); }
+.t-fg         { color: var(--eg-fg); }
+.t-fg-muted   { color: var(--eg-fg); opacity: 0.6; }
+.t-primary    { color: var(--eg-primary); }
+.t-bg-primary { background-color: var(--eg-primary); }
+.t-border     { border-color: var(--eg-outline-var); }
+
 /* ─── Base styles ─── */
 body {
-  background-color: var(--bg);
-  color: var(--fg);
-  font-family: 'Segoe UI', 'Roboto', system-ui, -apple-system, sans-serif;
+  background-color: var(--eg-bg);
+  color: var(--eg-fg);
+  font-family: 'Inter', 'Segoe UI', 'Roboto', system-ui, -apple-system, sans-serif;
   transition: background-color 0.2s, color 0.2s;
 }
 
 html { scroll-behavior: smooth; }
-:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+:focus-visible { outline: 2px solid var(--eg-primary); outline-offset: 2px; }

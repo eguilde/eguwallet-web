@@ -2,48 +2,45 @@
 interface Props { currentLang: string; }
 const { currentLang } = Astro.props;
 
-const LANGS: [string, string, string][] = [
-  ['ro','🇷🇴','Română'],    ['en','🇬🇧','English'],   ['de','🇩🇪','Deutsch'],
-  ['fr','🇫🇷','Français'],  ['es','🇪🇸','Español'],   ['it','🇮🇹','Italiano'],
-  ['pl','🇵🇱','Polski'],    ['pt','🇵🇹','Português'], ['hu','🇭🇺','Magyar'],
-  ['cs','🇨🇿','Čeština'],   ['sk','🇸🇰','Slovenčina'],['bg','🇧🇬','Български'],
-  ['hr','🇭🇷','Hrvatski'],  ['lt','🇱🇹','Lietuvių'],  ['lv','🇱🇻','Latviešu'],
-  ['et','🇪🇪','Eesti'],     ['mt','🇲🇹','Malti'],     ['sl','🇸🇮','Slovenščina'],
-  ['sv','🇸🇪','Svenska'],   ['da','🇩🇰','Dansk'],     ['nl','🇳🇱','Nederlands'],
-  ['el','🇬🇷','Ελληνικά'],  ['fi','🇫🇮','Suomi'],     ['ga','🇮🇪','Gaeilge'],
+const LANGS: [string, string][] = [
+  ['ro','Română'],    ['en','English'],   ['de','Deutsch'],
+  ['fr','Français'],  ['es','Español'],   ['it','Italiano'],
+  ['pl','Polski'],    ['pt','Português'], ['hu','Magyar'],
+  ['cs','Čeština'],   ['sk','Slovenčina'],['bg','Български'],
+  ['hr','Hrvatski'],  ['lt','Lietuvių'],  ['lv','Latviešu'],
+  ['et','Eesti'],     ['mt','Malti'],     ['sl','Slovenščina'],
+  ['sv','Svenska'],   ['da','Dansk'],     ['nl','Nederlands'],
+  ['el','Ελληνικά'],  ['fi','Suomi'],     ['ga','Gaeilge'],
 ];
 
-const current = LANGS.find(([l]) => l === currentLang);
+const currentName = LANGS.find(([l]) => l === currentLang)?.[1] ?? currentLang;
 ---
 <div class="relative" id="lang-selector">
   <button
+    id="lang-btn"
     aria-haspopup="listbox"
     aria-expanded="false"
-    id="lang-btn"
-    class="flex items-center gap-2 min-h-[48px] px-3 rounded-lg transition-colors text-sm font-medium cursor-pointer"
-    style="background:var(--surface);border:1px solid var(--outline-var);color:var(--fg)"
+    class="flex items-center gap-1.5 h-8 px-2.5 rounded-md text-[13px] font-medium t-fg border t-border cursor-pointer hover:opacity-80 transition-opacity"
   >
-    <span class="text-lg">{current?.[1]}</span>
-    <span class="hidden sm:inline">{current?.[2]}</span>
-    <span class="text-xs opacity-60">▾</span>
+    <svg class="w-4 h-4 opacity-50" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+    <span class="uppercase">{currentLang}</span>
+    <svg class="w-3 h-3 opacity-40" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg>
   </button>
 
   <ul
     id="lang-menu"
     role="listbox"
     aria-label="Select language"
-    class="absolute right-0 top-full mt-2 z-50 hidden rounded-xl shadow-xl w-52 max-h-80 overflow-y-auto py-1"
-    style="background:var(--surface);border:1px solid var(--outline-var)"
+    class="absolute right-0 top-full mt-1.5 z-50 hidden rounded-lg shadow-xl w-44 max-h-72 overflow-y-auto py-1 t-bg-surface border t-border"
   >
-    {LANGS.map(([loc, flag, name]) => (
+    {LANGS.map(([loc, name]) => (
       <li role="option" aria-selected={loc === currentLang}>
         <a
           href={`/${loc}/`}
-          class="flex items-center gap-3 px-4 py-2.5 text-sm transition-colors min-h-[44px]"
-          style={loc === currentLang ? 'font-weight:600;color:var(--primary)' : 'color:var(--fg)'}
+          class={`flex items-center justify-between px-3 py-2 text-[13px] hover:opacity-100 transition-opacity ${loc === currentLang ? 't-primary font-semibold' : 't-fg opacity-70'}`}
         >
-          <span class="text-xl">{flag}</span>
           <span>{name}</span>
+          <span class="text-[11px] uppercase opacity-40">{loc}</span>
         </a>
       </li>
     ))}
