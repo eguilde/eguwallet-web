@@ -1,0 +1,40 @@
+name: Deploy to eguwallet.eu
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Deploy to egucluster1
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: egucluster1.eguilde.cloud
+          username: eguilde
+          key: ${{ secrets.DEPLOY_SSH_KEY }}
+          source: 'dist/'
+          target: '/var/www/eguwallet.eu/'
+          strip_components: 1
+
+      - name: Reload nginx
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: egucluster1.eguilde.cloud
+          username: eguilde
+          key: ${{ secrets.DEPLOY_SSH_KEY }}
+          script: sudo nginx -s reload
