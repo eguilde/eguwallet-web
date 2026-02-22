@@ -23,76 +23,84 @@ const playUrl = 'https://play.google.com/store/apps/details?id=com.eguwallet.wal
   <main>
 
     <!-- HERO -->
-    <section id="download" class="relative overflow-hidden bg-[#0c0c14]">
-      <div class="absolute top-[-200px] right-[-150px] w-[500px] h-[500px] rounded-full bg-indigo-600/10 blur-[150px]"></div>
-      <div class="absolute bottom-[-100px] left-[-100px] w-[400px] h-[400px] rounded-full bg-purple-600/8 blur-[120px]"></div>
+    <section id="download" class="py-16 md:py-24 px-6 t-bg border-b t-border">
+      <div class="max-w-4xl mx-auto">
+        <div class="flex flex-col md:flex-row gap-10 md:gap-16 items-start">
+          <!-- Text -->
+          <div class="flex-1 flex flex-col gap-6">
+            <div class="flex items-center gap-2">
+              <span class="text-[12px] font-semibold uppercase tracking-wider t-primary">{t.hero.badge1}</span>
+              <span class="text-[12px] t-fg opacity-30">·</span>
+              <span class="text-[12px] font-semibold uppercase tracking-wider t-primary">{t.hero.badge2}</span>
+            </div>
 
-      <div class="relative max-w-4xl mx-auto px-6 py-20 md:py-32 flex flex-col items-center text-center gap-8">
+            <h1 class="text-3xl md:text-4xl font-bold leading-snug tracking-tight t-fg">
+              {t.hero.title}
+            </h1>
 
-        <div class="flex flex-wrap justify-center gap-2">
-          <span class="px-3 py-1 rounded-full text-[11px] font-medium text-white/60 border border-white/10">{t.hero.badge1}</span>
-          <span class="px-3 py-1 rounded-full text-[11px] font-medium text-white/60 border border-white/10">{t.hero.badge2}</span>
-          <span class="px-3 py-1 rounded-full text-[11px] font-medium text-emerald-400/70 border border-emerald-400/20">{t.hero.badge3}</span>
+            <p class="text-base leading-relaxed t-fg opacity-60">
+              {t.hero.subtitle}
+            </p>
+
+            <!-- Store badges -->
+            <div class="flex items-center gap-3 mt-2">
+              <a href={playUrl} target="_blank" rel="noopener" class="transition-opacity hover:opacity-80">
+                <img src={playBadge} alt={t.hero.downloadAndroid} class="h-[40px] w-auto" />
+              </a>
+              <span class="relative">
+                <img src="/assets/badges/app-store.svg" alt={t.hero.downloadIos} class="h-[40px] w-auto opacity-30" />
+                <span class="absolute -bottom-5 left-0 text-[10px] t-fg opacity-30">{t.hero.downloadIosComingSoon}</span>
+              </span>
+            </div>
+          </div>
+
+          <!-- Shield / Visual -->
+          <div class="hidden md:flex flex-col items-center justify-center w-48">
+            <div class="w-32 h-32 rounded-3xl t-bg-surface border t-border flex items-center justify-center">
+              <svg class="w-16 h-16 t-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
+              </svg>
+            </div>
+            <span class="mt-3 text-[11px] font-medium t-fg opacity-30 uppercase tracking-wider">EUDI Wallet</span>
+          </div>
         </div>
-
-        <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-[1.15] tracking-tight text-white max-w-3xl">
-          {t.hero.title}
-        </h1>
-
-        <p class="text-base md:text-lg text-white/40 leading-relaxed max-w-2xl">
-          {t.hero.subtitle}
-        </p>
-
-        <!-- Standard store badges — side by side, same height -->
-        <div class="flex items-center gap-3 mt-2">
-          <a href={playUrl} target="_blank" rel="noopener" class="transition-opacity hover:opacity-80">
-            <img src={playBadge} alt={t.hero.downloadAndroid} class="h-[40px] w-auto" />
-          </a>
-          <a href="#" class="opacity-40 cursor-default" title={t.hero.downloadIosComingSoon}>
-            <img src="/assets/badges/app-store.svg" alt={t.hero.downloadIos} class="h-[40px] w-auto" />
-          </a>
-        </div>
-        <p class="text-[11px] text-white/25 -mt-4">iOS — {t.hero.downloadIosComingSoon}</p>
       </div>
     </section>
 
     <!-- WHAT IS IT -->
-    <section id="what" class="py-20 md:py-28 px-6 t-bg">
-      <div class="max-w-5xl mx-auto">
-        <div class="max-w-2xl mx-auto text-center mb-14">
-          <p class="text-xs font-semibold uppercase tracking-[0.15em] mb-3 t-primary">EUDI Wallet</p>
-          <h2 class="text-2xl md:text-3xl font-bold leading-snug t-fg">{t.what.heading}</h2>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <section id="what" class="py-16 md:py-24 px-6 t-bg-low">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-2xl md:text-3xl font-bold mb-4 t-fg">{t.what.heading}</h2>
+        <div class="h-[3px] w-12 rounded-full t-bg-primary mb-10"></div>
+
+        <div class="flex flex-col gap-8">
           {[
-            { title: t.what.card1Title, body: t.what.card1Body, icon: '⚖️' },
-            { title: t.what.card2Title, body: t.what.card2Body, icon: '🛡️' },
-            { title: t.what.card3Title, body: t.what.card3Body, icon: '🏛️' },
-          ].map(({ title, body, icon }) => (
-            <div class="flex flex-col gap-4 p-6 rounded-xl t-bg-surface border t-border">
-              <span class="text-2xl">{icon}</span>
-              <h3 class="font-semibold text-[15px] t-fg">{title}</h3>
-              <p class="text-[13px] leading-relaxed t-fg-muted">{body}</p>
+            { title: t.what.card1Title, body: t.what.card1Body },
+            { title: t.what.card2Title, body: t.what.card2Body },
+            { title: t.what.card3Title, body: t.what.card3Body },
+          ].map(({ title, body }) => (
+            <div class="flex flex-col gap-2">
+              <h3 class="text-lg font-semibold t-fg">{title}</h3>
+              <p class="text-[15px] leading-relaxed t-fg opacity-60">{body}</p>
             </div>
           ))}
         </div>
       </div>
     </section>
 
-    <!-- PRIVACY -->
-    <section id="privacy" class="py-20 md:py-28 px-6 t-bg-low">
-      <div class="max-w-5xl mx-auto">
-        <div class="max-w-2xl mx-auto text-center mb-14">
-          <p class="text-xs font-semibold uppercase tracking-[0.15em] mb-3 t-primary">Selective Disclosure</p>
-          <h2 class="text-2xl md:text-3xl font-bold leading-snug t-fg">{t.privacy.heading}</h2>
-          <p class="mt-3 text-sm t-primary">{t.privacy.subheading}</p>
-        </div>
+    <!-- PRIVACY / SELECTIVE DISCLOSURE -->
+    <section id="privacy" class="py-16 md:py-24 px-6 t-bg">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-2xl md:text-3xl font-bold mb-2 t-fg">{t.privacy.heading}</h2>
+        <p class="text-base mb-4 t-primary font-medium">{t.privacy.subheading}</p>
+        <div class="h-[3px] w-12 rounded-full t-bg-primary mb-10"></div>
 
-        <p class="text-center max-w-2xl mx-auto mb-10 text-[13px] leading-relaxed t-fg-muted">{t.privacy.body}</p>
+        <p class="text-[15px] leading-relaxed t-fg opacity-60 mb-10">{t.privacy.body}</p>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div class="flex flex-col gap-4 p-6 rounded-xl t-bg-surface border t-border">
-            <h3 class="font-semibold text-[15px] t-fg">{t.privacy.example1Title}</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Example -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4 t-fg">{t.privacy.example1Title}</h3>
             <div class="flex flex-col gap-3">
               {[
                 { step: t.privacy.example1Step1, ok: true },
@@ -100,23 +108,24 @@ const playUrl = 'https://play.google.com/store/apps/details?id=com.eguwallet.wal
                 { step: t.privacy.example1Step3, ok: true },
                 { step: t.privacy.example1Step4, ok: false },
               ].map(({ step, ok }) => (
-                <div class="flex items-start gap-3 text-[13px]">
-                  <span class={`w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-[10px] font-bold ${ok ? 'bg-emerald-500/15 text-emerald-600' : 'bg-red-500/15 text-red-500'}`}>
+                <div class="flex items-start gap-3 text-[14px]">
+                  <span class={`w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-[10px] font-bold ${ok ? 'bg-emerald-100 text-emerald-700' : 'bg-red-100 text-red-600'}`}>
                     {ok ? '✓' : '✗'}
                   </span>
-                  <span class="t-fg-muted">{step}</span>
+                  <span class="t-fg opacity-70">{step}</span>
                 </div>
               ))}
             </div>
           </div>
 
-          <div class="flex flex-col gap-4 p-6 rounded-xl t-bg-surface border t-border">
-            <h3 class="font-semibold text-[15px] t-fg">{t.privacy.legalTitle}</h3>
+          <!-- Legal basis -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4 t-fg">{t.privacy.legalTitle}</h3>
             <div class="flex flex-col gap-3">
               {[t.privacy.legal1, t.privacy.legal2, t.privacy.legal3].map((text) => (
-                <div class="flex items-start gap-3 text-[13px]">
-                  <span class="w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-[10px] bg-blue-500/10 text-blue-500">§</span>
-                  <span class="t-fg-muted leading-relaxed">{text}</span>
+                <div class="flex items-start gap-3 text-[14px]">
+                  <span class="w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-[10px] font-bold bg-blue-100 text-blue-700">§</span>
+                  <span class="t-fg opacity-70 leading-relaxed">{text}</span>
                 </div>
               ))}
             </div>
@@ -126,28 +135,29 @@ const playUrl = 'https://play.google.com/store/apps/details?id=com.eguwallet.wal
     </section>
 
     <!-- DOCUMENTS -->
-    <section id="documents" class="py-20 md:py-28 px-6 t-bg">
-      <div class="max-w-5xl mx-auto">
-        <div class="max-w-2xl mx-auto text-center mb-14">
-          <p class="text-xs font-semibold uppercase tracking-[0.15em] mb-3 t-primary">Digital Documents</p>
-          <h2 class="text-2xl md:text-3xl font-bold leading-snug t-fg">{t.documents.heading}</h2>
-          <p class="mt-3 text-sm t-fg opacity-50">{t.documents.subheading}</p>
-        </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+    <section id="documents" class="py-16 md:py-24 px-6 t-bg-low">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-2xl md:text-3xl font-bold mb-4 t-fg">{t.documents.heading}</h2>
+        <p class="text-[15px] t-fg opacity-50 mb-2">{t.documents.subheading}</p>
+        <div class="h-[3px] w-12 rounded-full t-bg-primary mb-10"></div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {t.documents.items.map(({ icon, title, body, status }) => (
-            <div class="flex flex-col gap-3 p-5 rounded-xl t-bg-surface border t-border">
-              <span class="text-xl">{icon}</span>
-              <h3 class="font-semibold text-[14px] t-fg">{title}</h3>
-              <p class="text-[12px] leading-relaxed t-fg-muted flex-1">{body}</p>
-              <span
-                class={`text-[10px] px-2.5 py-1 rounded-full font-semibold self-start uppercase tracking-wider ${
-                  status === 'available'
-                    ? 'bg-emerald-500/10 text-emerald-600 border border-emerald-500/20'
-                    : 't-bg-high t-fg opacity-50 border t-border'
-                }`}
-              >
-                {status === 'available' ? t.documents.statusAvailable : t.documents.statusSoon}
-              </span>
+            <div class="flex gap-4 p-5 rounded-lg t-bg-surface border t-border">
+              <span class="text-2xl flex-shrink-0">{icon}</span>
+              <div class="flex flex-col gap-1.5">
+                <div class="flex items-center gap-2">
+                  <h3 class="font-semibold text-[14px] t-fg">{title}</h3>
+                  <span class={`text-[10px] px-2 py-0.5 rounded-full font-semibold uppercase tracking-wider ${
+                    status === 'available'
+                      ? 'bg-emerald-100 text-emerald-700'
+                      : 't-bg-high t-fg opacity-50'
+                  }`}>
+                    {status === 'available' ? t.documents.statusAvailable : t.documents.statusSoon}
+                  </span>
+                </div>
+                <p class="text-[13px] leading-relaxed t-fg opacity-50">{body}</p>
+              </div>
             </div>
           ))}
         </div>
@@ -155,25 +165,24 @@ const playUrl = 'https://play.google.com/store/apps/details?id=com.eguwallet.wal
     </section>
 
     <!-- WHERE IT WORKS -->
-    <section id="usedtoday" class="py-20 md:py-28 px-6 t-bg-low">
-      <div class="max-w-5xl mx-auto">
-        <div class="max-w-2xl mx-auto text-center mb-14">
-          <p class="text-xs font-semibold uppercase tracking-[0.15em] mb-3 t-primary">In Production</p>
-          <h2 class="text-2xl md:text-3xl font-bold leading-snug t-fg">{t.usedToday.heading}</h2>
-          <p class="mt-3 text-sm t-fg opacity-50">{t.usedToday.subheading}</p>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+    <section id="usedtoday" class="py-16 md:py-24 px-6 t-bg">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-2xl md:text-3xl font-bold mb-4 t-fg">{t.usedToday.heading}</h2>
+        <p class="text-[15px] t-fg opacity-50 mb-2">{t.usedToday.subheading}</p>
+        <div class="h-[3px] w-12 rounded-full t-bg-primary mb-10"></div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
           {[
             { name: t.usedToday.app1Name, url: t.usedToday.app1Url, body: t.usedToday.app1Body },
             { name: t.usedToday.app2Name, url: t.usedToday.app2Url, body: t.usedToday.app2Body },
           ].map(({ name, url, body }) => (
-            <div class="flex flex-col gap-4 p-6 rounded-xl t-bg-surface border t-border">
-              <h3 class="font-semibold t-fg">{name}</h3>
-              <p class="text-[13px] leading-relaxed t-fg-muted flex-1">{body}</p>
+            <div class="flex flex-col gap-4 p-6 rounded-lg t-bg-surface border t-border">
+              <h3 class="font-semibold text-lg t-fg">{name}</h3>
+              <p class="text-[14px] leading-relaxed t-fg opacity-60 flex-1">{body}</p>
               <a href={url} target="_blank" rel="noopener"
-                class="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-[13px] font-semibold self-start t-bg-primary text-white">
-                {t.usedToday.badgeText}
-                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+                class="inline-flex items-center gap-2 text-[14px] font-semibold t-primary hover:underline self-start">
+                {url.replace('https://','')}
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
               </a>
             </div>
           ))}
@@ -181,20 +190,21 @@ const playUrl = 'https://play.google.com/store/apps/details?id=com.eguwallet.wal
       </div>
     </section>
 
-    <!-- FUTURE -->
-    <section id="future" class="py-20 md:py-28 px-6 t-bg">
-      <div class="max-w-5xl mx-auto">
-        <div class="max-w-2xl mx-auto text-center mb-14">
-          <p class="text-xs font-semibold uppercase tracking-[0.15em] mb-3 t-primary">Roadmap</p>
-          <h2 class="text-2xl md:text-3xl font-bold leading-snug t-fg">{t.future.heading}</h2>
-          <p class="mt-3 text-sm t-fg opacity-50">{t.future.subheading}</p>
-        </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <!-- FUTURE / ROADMAP -->
+    <section id="future" class="py-16 md:py-24 px-6 t-bg-low">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-2xl md:text-3xl font-bold mb-4 t-fg">{t.future.heading}</h2>
+        <p class="text-[15px] t-fg opacity-50 mb-2">{t.future.subheading}</p>
+        <div class="h-[3px] w-12 rounded-full t-bg-primary mb-10"></div>
+
+        <div class="flex flex-col gap-6">
           {t.future.items.map(({ icon, title, body }) => (
-            <div class="flex flex-col gap-3 p-6 rounded-xl t-bg-surface border t-border">
-              <span class="text-xl">{icon}</span>
-              <h3 class="font-semibold text-[14px] t-fg">{title}</h3>
-              <p class="text-[13px] leading-relaxed t-fg-muted">{body}</p>
+            <div class="flex gap-4">
+              <span class="text-xl flex-shrink-0 mt-1">{icon}</span>
+              <div>
+                <h3 class="font-semibold text-[15px] mb-1.5 t-fg">{title}</h3>
+                <p class="text-[14px] leading-relaxed t-fg opacity-55">{body}</p>
+              </div>
             </div>
           ))}
         </div>
@@ -202,20 +212,20 @@ const playUrl = 'https://play.google.com/store/apps/details?id=com.eguwallet.wal
     </section>
 
     <!-- HOW IT WORKS -->
-    <section id="how" class="py-20 md:py-28 px-6 t-bg-low">
+    <section id="how" class="py-16 md:py-24 px-6 t-bg">
       <div class="max-w-4xl mx-auto">
-        <div class="text-center mb-14">
-          <h2 class="text-2xl md:text-3xl font-bold t-fg">{t.howItWorks.heading}</h2>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <h2 class="text-2xl md:text-3xl font-bold mb-4 t-fg">{t.howItWorks.heading}</h2>
+        <div class="h-[3px] w-12 rounded-full t-bg-primary mb-10"></div>
+
+        <div class="flex flex-col md:flex-row gap-8">
           {[
             { title: t.howItWorks.step1Title, body: t.howItWorks.step1Body },
             { title: t.howItWorks.step2Title, body: t.howItWorks.step2Body },
             { title: t.howItWorks.step3Title, body: t.howItWorks.step3Body },
           ].map(({ title, body }) => (
-            <div class="flex flex-col gap-4 p-6 rounded-xl text-center t-bg-surface border t-border">
+            <div class="flex-1 flex flex-col gap-2">
               <h3 class="font-semibold text-[15px] t-fg">{title}</h3>
-              <p class="text-[13px] leading-relaxed t-fg-muted">{body}</p>
+              <p class="text-[14px] leading-relaxed t-fg opacity-55">{body}</p>
             </div>
           ))}
         </div>
@@ -223,19 +233,20 @@ const playUrl = 'https://play.google.com/store/apps/details?id=com.eguwallet.wal
     </section>
 
     <!-- FAQ -->
-    <section id="faq" class="py-20 md:py-28 px-6 t-bg">
-      <div class="max-w-3xl mx-auto">
-        <div class="text-center mb-14">
-          <h2 class="text-2xl md:text-3xl font-bold t-fg">{t.faq.heading}</h2>
-        </div>
-        <div class="flex flex-col gap-3">
-          {t.faq.items.map(({ q, a }) => (
-            <details class="group rounded-xl overflow-hidden t-bg-surface border t-border">
+    <section id="faq" class="py-16 md:py-24 px-6 t-bg-low">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-2xl md:text-3xl font-bold mb-4 t-fg">{t.faq.heading}</h2>
+        <div class="h-[3px] w-12 rounded-full t-bg-primary mb-10"></div>
+
+        <div class="flex flex-col gap-0 border t-border rounded-lg overflow-hidden">
+          {t.faq.items.map(({ q, a }, i) => (
+            <details class="group t-bg-surface">
+              {i > 0 && <div class="h-px t-bg-low"></div>}
               <summary class="px-6 py-4 font-medium text-[14px] cursor-pointer list-none flex items-center justify-between gap-4 select-none t-fg">
                 <span>{q}</span>
                 <svg class="w-4 h-4 flex-shrink-0 opacity-30 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg>
               </summary>
-              <div class="px-6 pb-5 text-[13px] leading-relaxed t-fg-muted">{a}</div>
+              <div class="px-6 pb-5 text-[14px] leading-relaxed t-fg opacity-55">{a}</div>
             </details>
           ))}
         </div>
@@ -243,61 +254,56 @@ const playUrl = 'https://play.google.com/store/apps/details?id=com.eguwallet.wal
     </section>
 
     <!-- DOWNLOAD CTA -->
-    <section class="py-16 px-6 bg-[#0c0c14]">
-      <div class="max-w-3xl mx-auto text-center flex flex-col items-center gap-6">
-        <h2 class="text-2xl md:text-3xl font-bold text-white">{t.nav.download} EguWallet</h2>
-        <p class="text-sm text-white/35 max-w-lg">{t.hero.subtitle}</p>
+    <section class="py-14 px-6 t-bg border-t t-border">
+      <div class="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
+        <div>
+          <h2 class="text-xl font-bold t-fg">{t.nav.download} EguWallet</h2>
+          <p class="text-[13px] t-fg opacity-40 mt-1">{t.hero.badge1} · {t.hero.badge2} · {t.hero.badge3}</p>
+        </div>
         <div class="flex items-center gap-3">
           <a href={playUrl} target="_blank" rel="noopener" class="transition-opacity hover:opacity-80">
             <img src={playBadge} alt={t.hero.downloadAndroid} class="h-[40px] w-auto" />
           </a>
-          <a href="#" class="opacity-40 cursor-default">
-            <img src="/assets/badges/app-store.svg" alt="App Store" class="h-[40px] w-auto" />
-          </a>
+          <img src="/assets/badges/app-store.svg" alt="App Store" class="h-[40px] w-auto opacity-30" />
         </div>
       </div>
     </section>
 
     <!-- FOOTER -->
-    <footer class="py-12 px-6 t-bg-low border-t t-border">
-      <div class="max-w-5xl mx-auto">
-        <div class="flex flex-col md:flex-row justify-between gap-10 mb-10">
-          <div class="flex flex-col gap-2">
-            <div class="flex items-center gap-2">
-              <svg class="w-6 h-6 t-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
-              </svg>
-              <span class="text-sm font-bold t-fg">EguWallet</span>
-            </div>
-            <p class="text-[12px] t-fg opacity-40 max-w-xs">{t.footer.tagline}</p>
-            <p class="text-[11px] t-fg opacity-25">{t.footer.provider}</p>
+    <footer class="py-10 px-6 t-bg-low border-t t-border">
+      <div class="max-w-4xl mx-auto">
+        <div class="flex flex-col md:flex-row justify-between gap-8 mb-8">
+          <div>
+            <p class="text-sm font-bold t-fg">EguWallet</p>
+            <p class="text-[12px] t-fg opacity-40 mt-1">{t.footer.tagline}</p>
+            <p class="text-[11px] t-fg opacity-25 mt-1">{t.footer.provider}</p>
           </div>
-
-          <div class="flex gap-10 text-[13px]">
-            <div class="flex flex-col gap-2">
-              <span class="text-[11px] font-semibold uppercase tracking-wider t-fg opacity-25">Legal</span>
+          <div class="flex gap-8 text-[13px]">
+            <div class="flex flex-col gap-1.5">
               <a href={`/${lang}/privacy/`} class="t-fg opacity-50 hover:opacity-80 transition-opacity">{t.footer.privacy}</a>
               <a href={`/${lang}/terms/`} class="t-fg opacity-50 hover:opacity-80 transition-opacity">{t.footer.legal}</a>
             </div>
-            <div class="flex flex-col gap-2">
-              <span class="text-[11px] font-semibold uppercase tracking-wider t-fg opacity-25">Links</span>
+            <div class="flex flex-col gap-1.5">
               <a href="mailto:contact@eguwallet.eu" class="t-fg opacity-50 hover:opacity-80 transition-opacity">{t.footer.contact}</a>
               <a href="https://github.com/eguilde" target="_blank" rel="noopener" class="t-fg opacity-50 hover:opacity-80 transition-opacity">GitHub</a>
             </div>
           </div>
         </div>
 
-        <div class="flex flex-wrap justify-center gap-2 mb-6 text-[10px]">
-          {['eIDAS 2.0', 'GDPR', 'ARF 2.5+', 'OpenID4VCI', 'SD-JWT', 'ISO 18013-5'].map((label) => (
-            <span class="px-2.5 py-1 rounded-full font-medium t-bg-surface border t-border t-fg opacity-40">{label}</span>
-          ))}
+        <div class="flex flex-wrap gap-x-4 gap-y-1 mb-4 text-[11px] t-fg opacity-30">
+          <span>eIDAS 2.0</span><span>·</span>
+          <span>GDPR</span><span>·</span>
+          <span>ARF 2.5+</span><span>·</span>
+          <span>OpenID4VCI</span><span>·</span>
+          <span>SD-JWT</span><span>·</span>
+          <span>ISO 18013-5</span>
         </div>
 
         {t.isMachineTranslated && (
-          <p class="text-[11px] text-center t-fg opacity-25 mb-3">{t.footer.machineTranslatedNotice}</p>
+          <p class="text-[11px] t-fg opacity-25 mb-2">{t.footer.machineTranslatedNotice}</p>
         )}
 
-        <div class="text-center text-[11px] t-fg opacity-20">{t.footer.rights}</div>
+        <p class="text-[11px] t-fg opacity-20">{t.footer.rights}</p>
       </div>
     </footer>
 
