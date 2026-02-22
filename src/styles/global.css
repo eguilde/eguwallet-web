@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+/* ─── EguWallet Design Tokens (exact match to Android colors.xml) ─── */
+@theme {
+  --color-primary:             #C41E3A;
+  --color-on-primary:          #FFFFFF;
+  --color-primary-container:   #FFDAD6;
+  --color-secondary:           #1976D2;
+  --color-on-secondary:        #FFFFFF;
+  --color-secondary-container: #D1E4FF;
+  --color-tertiary:            #B8860B;
+  --color-tertiary-container:  #FFF8DC;
+  --color-eu-blue:             #003399;
+  --color-eu-gold:             #FFCC00;
+  --color-crimson:             #C41E3A;
+  --color-background:          #FFFBFF;
+  --color-on-background:       #1D1B20;
+  --color-surface:             #FFFBFF;
+  --color-on-surface:          #1D1B20;
+  --color-surface-variant:     #F4DDDB;
+  --color-on-surface-variant:  #534341;
+  --color-surface-low:         #FFF1EF;
+  --color-surface-high:        #F6E4E2;
+  --color-outline:             #857371;
+  --color-outline-variant:     #D8C2BF;
+  --color-loa-high:            #2E7D32;
+  --color-loa-substantial:     #E65100;
+}
+
+/* ─── CSS custom properties for dark/light switching ─── */
+:root {
+  --bg:           #FFFBFF;
+  --fg:           #1D1B20;
+  --surface:      #FCEAE8;
+  --surface-low:  #FFF1EF;
+  --surface-high: #F6E4E2;
+  --on-variant:   #534341;
+  --outline:      #857371;
+  --outline-var:  #D8C2BF;
+  --primary:      #C41E3A;
+  --secondary:    #1976D2;
+  --tertiary:     #B8860B;
+}
+
+[data-theme="dark"] {
+  --bg:           #141218;
+  --fg:           #E6E0E9;
+  --surface:      #211F22;
+  --surface-low:  #1D1B1E;
+  --surface-high: #2C2A2C;
+  --on-variant:   #D8C2BF;
+  --outline:      #A08C89;
+  --outline-var:  #534341;
+  --primary:      #FFB4AB;
+  --secondary:    #9ECAFF;
+  --tertiary:     #FFD54F;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: 'Segoe UI', 'Roboto', system-ui, -apple-system, sans-serif;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+html { scroll-behavior: smooth; }
+:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }

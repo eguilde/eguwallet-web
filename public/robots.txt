@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://eguwallet.eu/sitemap-index.xml
