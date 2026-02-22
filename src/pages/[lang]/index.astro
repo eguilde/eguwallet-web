@@ -1,0 +1,295 @@
+---
+import Base from '../../layouts/Base.astro';
+import Navbar from '../../components/Navbar.astro';
+import ShieldLogo from '../../components/ShieldLogo.astro';
+import { getTranslations } from '../../i18n/index';
+
+export async function getStaticPaths() {
+  const locales = [
+    'ro','en','de','fr','es','it','pl','pt','hu','cs',
+    'sk','bg','hr','lt','lv','et','mt','sl','sv','da','nl','el','fi','ga'
+  ];
+  return locales.map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const t = await getTranslations(lang);
+
+const faqItems = t.faq.items.map(({ q, a }) => ({ q, a }));
+
+const title = `EguWallet — ${t.hero.title}`;
+const description = t.hero.subtitle;
+---
+<Base lang={lang} title={title} description={description} faqItems={faqItems}>
+  <Navbar t={t} lang={lang} />
+
+  <main>
+
+    <!-- HERO -->
+    <section id="hero" class="relative overflow-hidden py-20 md:py-32 px-4" style="background:var(--surface-low)">
+      <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
+        <div class="flex-1 flex flex-col gap-6">
+          <!-- Badges -->
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 rounded-full text-xs font-semibold" style="background:var(--primary);color:#fff">{t.hero.badge1}</span>
+            <span class="px-3 py-1 rounded-full text-xs font-semibold" style="background:var(--surface-high);color:var(--fg);border:1px solid var(--outline-var)">{t.hero.badge2}</span>
+            <span class="px-3 py-1 rounded-full text-xs font-semibold" style="background:#2E7D32;color:#fff">{t.hero.badge3}</span>
+          </div>
+          <h1 class="text-3xl md:text-5xl font-bold leading-tight" style="color:var(--fg)">{t.hero.title}</h1>
+          <p class="text-lg opacity-80 leading-relaxed" style="color:var(--fg)">{t.hero.subtitle}</p>
+
+          <!-- Download buttons -->
+          <div class="flex flex-col sm:flex-row gap-4 mt-2">
+            <a
+              href="https://play.google.com/store/apps/details?id=com.eguwallet.wallet"
+              target="_blank" rel="noopener"
+              class="flex items-center gap-3 px-5 py-3 rounded-xl font-semibold text-sm transition-opacity hover:opacity-90"
+              style="background:#000;color:#fff"
+            >
+              <span class="text-2xl">▶</span>
+              <span>{t.hero.downloadAndroid}</span>
+            </a>
+            <div
+              class="flex items-center gap-3 px-5 py-3 rounded-xl font-semibold text-sm opacity-50 cursor-not-allowed"
+              style="background:var(--surface-high);color:var(--fg);border:1px solid var(--outline-var)"
+              title={t.hero.downloadIosComingSoon}
+            >
+              <span class="text-2xl"></span>
+              <span>{t.hero.downloadIos}</span>
+              <span class="text-xs px-2 py-0.5 rounded-full" style="background:var(--tertiary);color:#fff">{t.hero.downloadIosComingSoon}</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Shield logo -->
+        <div class="flex-shrink-0 flex flex-col items-center gap-4">
+          <ShieldLogo size={180} />
+          <div class="text-center">
+            <div class="text-2xl font-bold" style="color:var(--primary)">EguWallet</div>
+            <div class="text-sm opacity-60" style="color:var(--fg)">EUDI Wallet · eIDAS 2.0</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT IS IT -->
+    <section id="what" class="py-20 px-4">
+      <div class="max-w-5xl mx-auto flex flex-col gap-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-center" style="color:var(--fg)">{t.what.heading}</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {[
+            { title: t.what.card1Title, body: t.what.card1Body, icon: '⚖️' },
+            { title: t.what.card2Title, body: t.what.card2Body, icon: '🪪' },
+            { title: t.what.card3Title, body: t.what.card3Body, icon: '🏛️' },
+          ].map(({ title, body, icon }) => (
+            <div class="flex flex-col gap-4 p-6 rounded-2xl" style="background:var(--surface);border:1px solid var(--outline-var)">
+              <div class="text-4xl">{icon}</div>
+              <h3 class="font-bold text-lg" style="color:var(--fg)">{title}</h3>
+              <p class="text-sm leading-relaxed opacity-80" style="color:var(--fg)">{body}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- PRIVACY -->
+    <section id="privacy" class="py-20 px-4" style="background:var(--surface-low)">
+      <div class="max-w-5xl mx-auto flex flex-col gap-10">
+        <div class="flex flex-col gap-3 text-center">
+          <h2 class="text-3xl md:text-4xl font-bold" style="color:var(--fg)">{t.privacy.heading}</h2>
+          <p class="text-lg font-medium" style="color:var(--primary)">{t.privacy.subheading}</p>
+          <p class="max-w-3xl mx-auto opacity-80 leading-relaxed" style="color:var(--fg)">{t.privacy.body}</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Selective disclosure example -->
+          <div class="flex flex-col gap-4 p-6 rounded-2xl" style="background:var(--surface);border:1px solid var(--outline-var)">
+            <h3 class="font-bold text-lg" style="color:var(--fg)">{t.privacy.example1Title}</h3>
+            <div class="flex flex-col gap-2">
+              {[
+                { step: t.privacy.example1Step1, ok: true },
+                { step: t.privacy.example1Step2, ok: true },
+                { step: t.privacy.example1Step3, ok: true },
+                { step: t.privacy.example1Step4, ok: false },
+              ].map(({ step, ok }) => (
+                <div class="flex items-start gap-3 text-sm" style="color:var(--fg)">
+                  <span class="mt-0.5 flex-shrink-0">{ok ? '✅' : '🚫'}</span>
+                  <span>{step}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <!-- Legal basis -->
+          <div class="flex flex-col gap-4 p-6 rounded-2xl" style="background:var(--surface);border:1px solid var(--outline-var)">
+            <h3 class="font-bold text-lg" style="color:var(--fg)">{t.privacy.legalTitle}</h3>
+            <div class="flex flex-col gap-3">
+              {[t.privacy.legal1, t.privacy.legal2, t.privacy.legal3].map((legal) => (
+                <p class="text-sm leading-relaxed opacity-80" style="color:var(--fg)">⚖️ {legal}</p>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DOCUMENTS -->
+    <section id="documents" class="py-20 px-4">
+      <div class="max-w-5xl mx-auto flex flex-col gap-10">
+        <div class="text-center flex flex-col gap-3">
+          <h2 class="text-3xl md:text-4xl font-bold" style="color:var(--fg)">{t.documents.heading}</h2>
+          <p class="opacity-70" style="color:var(--fg)">{t.documents.subheading}</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          {t.documents.items.map(({ icon, title, body, status }) => (
+            <div class="flex flex-col gap-3 p-5 rounded-2xl relative" style="background:var(--surface);border:1px solid var(--outline-var)">
+              <div class="text-3xl">{icon}</div>
+              <h3 class="font-semibold text-sm" style="color:var(--fg)">{title}</h3>
+              <p class="text-xs leading-relaxed opacity-70" style="color:var(--fg)">{body}</p>
+              <span
+                class="text-xs px-2 py-0.5 rounded-full font-medium self-start"
+                style={status === 'available'
+                  ? 'background:#2E7D32;color:#fff'
+                  : 'background:var(--surface-high);color:var(--fg);border:1px solid var(--outline-var)'}
+              >
+                {status === 'available' ? t.documents.statusAvailable : t.documents.statusSoon}
+              </span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- USED TODAY -->
+    <section id="usedtoday" class="py-20 px-4" style="background:var(--surface-low)">
+      <div class="max-w-5xl mx-auto flex flex-col gap-10">
+        <div class="text-center flex flex-col gap-3">
+          <h2 class="text-3xl md:text-4xl font-bold" style="color:var(--fg)">{t.usedToday.heading}</h2>
+          <p class="opacity-70" style="color:var(--fg)">{t.usedToday.subheading}</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {[
+            { name: t.usedToday.app1Name, url: t.usedToday.app1Url, body: t.usedToday.app1Body },
+            { name: t.usedToday.app2Name, url: t.usedToday.app2Url, body: t.usedToday.app2Body },
+          ].map(({ name, url, body }) => (
+            <div class="flex flex-col gap-4 p-6 rounded-2xl" style="background:var(--surface);border:1px solid var(--outline-var)">
+              <div class="flex items-center gap-3">
+                <span class="text-3xl">🏛️</span>
+                <h3 class="font-bold text-lg" style="color:var(--fg)">{name}</h3>
+              </div>
+              <p class="text-sm leading-relaxed opacity-80" style="color:var(--fg)">{body}</p>
+              <a
+                href={url}
+                target="_blank" rel="noopener"
+                class="flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold self-start transition-opacity hover:opacity-80"
+                style="background:var(--primary);color:#fff"
+              >
+                {t.usedToday.badgeText} ↗
+              </a>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- FUTURE USE CASES -->
+    <section id="future" class="py-20 px-4">
+      <div class="max-w-5xl mx-auto flex flex-col gap-10">
+        <div class="text-center flex flex-col gap-3">
+          <h2 class="text-3xl md:text-4xl font-bold" style="color:var(--fg)">{t.future.heading}</h2>
+          <p class="opacity-70" style="color:var(--fg)">{t.future.subheading}</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {t.future.items.map(({ icon, title, body }) => (
+            <div class="flex flex-col gap-3 p-6 rounded-2xl" style="background:var(--surface);border:1px solid var(--outline-var)">
+              <div class="text-4xl">{icon}</div>
+              <h3 class="font-bold" style="color:var(--fg)">{title}</h3>
+              <p class="text-sm leading-relaxed opacity-80" style="color:var(--fg)">{body}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section id="how" class="py-20 px-4" style="background:var(--surface-low)">
+      <div class="max-w-4xl mx-auto flex flex-col gap-10">
+        <h2 class="text-3xl md:text-4xl font-bold text-center" style="color:var(--fg)">{t.howItWorks.heading}</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {[
+            { title: t.howItWorks.step1Title, body: t.howItWorks.step1Body, n: '1' },
+            { title: t.howItWorks.step2Title, body: t.howItWorks.step2Body, n: '2' },
+            { title: t.howItWorks.step3Title, body: t.howItWorks.step3Body, n: '3' },
+          ].map(({ title, body, n }) => (
+            <div class="flex flex-col gap-4 p-6 rounded-2xl text-center" style="background:var(--surface);border:1px solid var(--outline-var)">
+              <div
+                class="w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold mx-auto"
+                style="background:var(--primary);color:#fff"
+              >{n}</div>
+              <h3 class="font-bold" style="color:var(--fg)">{title}</h3>
+              <p class="text-sm leading-relaxed opacity-80" style="color:var(--fg)">{body}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-20 px-4">
+      <div class="max-w-3xl mx-auto flex flex-col gap-8">
+        <h2 class="text-3xl md:text-4xl font-bold text-center" style="color:var(--fg)">{t.faq.heading}</h2>
+        <div class="flex flex-col gap-3">
+          {t.faq.items.map(({ q, a }) => (
+            <details class="rounded-2xl overflow-hidden" style="background:var(--surface);border:1px solid var(--outline-var)">
+              <summary
+                class="px-6 py-4 font-semibold cursor-pointer list-none flex items-center justify-between gap-4"
+                style="color:var(--fg)"
+              >
+                <span>{q}</span>
+                <span class="text-lg flex-shrink-0 opacity-60">▾</span>
+              </summary>
+              <div class="px-6 pb-5 pt-1 text-sm leading-relaxed opacity-80" style="color:var(--fg)">{a}</div>
+            </details>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-12 px-4" style="background:var(--surface-low);border-top:1px solid var(--outline-var)">
+      <div class="max-w-5xl mx-auto flex flex-col gap-8">
+        <div class="flex flex-col md:flex-row items-center md:items-start justify-between gap-8">
+          <!-- Brand -->
+          <div class="flex flex-col items-center md:items-start gap-3">
+            <ShieldLogo size={48} />
+            <div class="font-bold text-xl" style="color:var(--primary)">EguWallet</div>
+            <div class="text-sm opacity-60 text-center md:text-left" style="color:var(--fg)">{t.footer.tagline}</div>
+            <div class="text-xs opacity-50" style="color:var(--fg)">{t.footer.provider}</div>
+          </div>
+
+          <!-- Links -->
+          <div class="flex flex-wrap justify-center md:justify-end gap-6 text-sm">
+            <a href={`/${lang}/privacy/`} style="color:var(--fg)" class="opacity-70 hover:opacity-100 transition-opacity">{t.footer.privacy}</a>
+            <a href={`/${lang}/terms/`} style="color:var(--fg)" class="opacity-70 hover:opacity-100 transition-opacity">{t.footer.legal}</a>
+            <a href="mailto:contact@eguwallet.eu" style="color:var(--fg)" class="opacity-70 hover:opacity-100 transition-opacity">{t.footer.contact}</a>
+          </div>
+        </div>
+
+        <!-- EU compliance badges -->
+        <div class="flex flex-wrap justify-center gap-4 text-xs">
+          <span class="px-3 py-1.5 rounded-full" style="background:var(--surface);border:1px solid var(--outline-var);color:var(--fg)">🇪🇺 {t.footer.euCompliance}</span>
+          <span class="px-3 py-1.5 rounded-full" style="background:var(--surface);border:1px solid var(--outline-var);color:var(--fg)">🔒 GDPR Compliant</span>
+          <span class="px-3 py-1.5 rounded-full" style="background:var(--surface);border:1px solid var(--outline-var);color:var(--fg)">📋 ARF 2.5+</span>
+          <span class="px-3 py-1.5 rounded-full" style="background:var(--surface);border:1px solid var(--outline-var);color:var(--fg)">🔐 OpenID4VCI</span>
+        </div>
+
+        {t.isMachineTranslated && (
+          <p class="text-xs text-center opacity-50" style="color:var(--fg)">{t.footer.machineTranslatedNotice}</p>
+        )}
+
+        <div class="text-center text-xs opacity-40" style="color:var(--fg)">{t.footer.rights}</div>
+      </div>
+    </footer>
+
+  </main>
+</Base>
