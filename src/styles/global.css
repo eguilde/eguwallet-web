@@ -1,61 +1,107 @@
 @import "tailwindcss";
 
-/* ─── EguWallet Design Tokens (exact match to Android colors.xml) ─── */
-@theme {
-  --color-primary:             #C41E3A;
-  --color-on-primary:          #FFFFFF;
-  --color-primary-container:   #FFDAD6;
-  --color-secondary:           #1976D2;
-  --color-on-secondary:        #FFFFFF;
-  --color-secondary-container: #D1E4FF;
-  --color-tertiary:            #B8860B;
-  --color-tertiary-container:  #FFF8DC;
-  --color-eu-blue:             #003399;
-  --color-eu-gold:             #FFCC00;
-  --color-crimson:             #C41E3A;
-  --color-background:          #FFFBFF;
-  --color-on-background:       #1D1B20;
-  --color-surface:             #FFFBFF;
-  --color-on-surface:          #1D1B20;
-  --color-surface-variant:     #F4DDDB;
-  --color-on-surface-variant:  #534341;
-  --color-surface-low:         #FFF1EF;
-  --color-surface-high:        #F6E4E2;
-  --color-outline:             #857371;
-  --color-outline-variant:     #D8C2BF;
-  --color-loa-high:            #2E7D32;
-  --color-loa-substantial:     #E65100;
+/* ─── EguWallet Design Tokens — @theme inline enables CSS var() override for dark mode ─── */
+@theme inline {
+  --color-primary:                    var(--eg-primary);
+  --color-on-primary:                 var(--eg-on-primary);
+  --color-primary-container:          var(--eg-primary-container);
+  --color-on-primary-container:       var(--eg-on-primary-container);
+  --color-secondary:                  var(--eg-secondary);
+  --color-on-secondary:               var(--eg-on-secondary);
+  --color-secondary-container:        var(--eg-secondary-container);
+  --color-on-secondary-container:     var(--eg-on-secondary-container);
+  --color-tertiary:                   var(--eg-tertiary);
+  --color-tertiary-container:         var(--eg-tertiary-container);
+  --color-eu-blue:                    #003399;
+  --color-eu-gold:                    #FFCC00;
+  --color-crimson:                    #C41E3A;
+  --color-background:                 var(--eg-bg);
+  --color-on-background:              var(--eg-fg);
+  --color-surface:                    var(--eg-surface);
+  --color-on-surface:                 var(--eg-fg);
+  --color-surface-variant:            var(--eg-surface-variant);
+  --color-on-surface-variant:         var(--eg-on-variant);
+  --color-surface-low:                var(--eg-surface-low);
+  --color-surface-high:               var(--eg-surface-high);
+  --color-outline:                    var(--eg-outline);
+  --color-outline-variant:            var(--eg-outline-var);
+  --color-loa-high:                   #2E7D32;
+  --color-loa-substantial:            #E65100;
 }
 
-/* ─── CSS custom properties for dark/light switching ─── */
+/* ─── Light mode (default) — exact values from Android colors.xml ─── */
 :root {
-  --bg:           #FFFBFF;
-  --fg:           #1D1B20;
-  --surface:      #FCEAE8;
-  --surface-low:  #FFF1EF;
-  --surface-high: #F6E4E2;
-  --on-variant:   #534341;
-  --outline:      #857371;
-  --outline-var:  #D8C2BF;
-  --primary:      #C41E3A;
-  --secondary:    #1976D2;
-  --tertiary:     #B8860B;
+  --eg-primary:                #C41E3A;   /* md_primary_light */
+  --eg-on-primary:             #FFFFFF;
+  --eg-primary-container:      #FFDAD6;
+  --eg-on-primary-container:   #410002;
+  --eg-secondary:              #1976D2;   /* md_secondary_light */
+  --eg-on-secondary:           #FFFFFF;
+  --eg-secondary-container:    #D1E4FF;
+  --eg-on-secondary-container: #001D36;
+  --eg-tertiary:               #B8860B;   /* md_tertiary_light */
+  --eg-tertiary-container:     #FFF8DC;
+  --eg-bg:                     #FFFBFF;   /* md_background_light */
+  --eg-fg:                     #1D1B20;   /* md_onBackground_light */
+  --eg-surface:                #FCEAE8;   /* md_surfaceContainer_light */
+  --eg-surface-variant:        #F4DDDB;   /* md_surfaceVariant_light */
+  --eg-on-variant:             #534341;   /* md_onSurfaceVariant_light */
+  --eg-surface-low:            #FFF1EF;   /* md_surfaceContainerLow_light */
+  --eg-surface-high:           #F6E4E2;   /* md_surfaceContainerHigh_light */
+  --eg-outline:                #857371;   /* md_outline_light */
+  --eg-outline-var:            #D8C2BF;   /* md_outlineVariant_light */
+
+  /* Shorthand aliases used by components with var(--primary) etc. */
+  --primary:      var(--eg-primary);
+  --secondary:    var(--eg-secondary);
+  --tertiary:     var(--eg-tertiary);
+  --bg:           var(--eg-bg);
+  --fg:           var(--eg-fg);
+  --surface:      var(--eg-surface);
+  --surface-low:  var(--eg-surface-low);
+  --surface-high: var(--eg-surface-high);
+  --on-variant:   var(--eg-on-variant);
+  --outline:      var(--eg-outline);
+  --outline-var:  var(--eg-outline-var);
 }
 
+/* ─── Dark mode — exact values from Android values-night/themes.xml ─── */
 [data-theme="dark"] {
-  --bg:           #141218;
-  --fg:           #E6E0E9;
-  --surface:      #211F22;
-  --surface-low:  #1D1B1E;
-  --surface-high: #2C2A2C;
-  --on-variant:   #D8C2BF;
-  --outline:      #A08C89;
-  --outline-var:  #534341;
-  --primary:      #FFB4AB;
-  --secondary:    #9ECAFF;
-  --tertiary:     #FFD54F;
+  --eg-primary:                #FFB4AB;   /* md_primary_dark */
+  --eg-on-primary:             #690005;
+  --eg-primary-container:      #93000A;
+  --eg-on-primary-container:   #FFDAD6;
+  --eg-secondary:              #9ECAFF;   /* md_secondary_dark */
+  --eg-on-secondary:           #003258;
+  --eg-secondary-container:    #00497D;
+  --eg-on-secondary-container: #D1E4FF;
+  --eg-tertiary:               #FFD54F;   /* md_tertiary_dark */
+  --eg-tertiary-container:     #6B3A00;
+  --eg-bg:                     #141218;   /* md_background_dark */
+  --eg-fg:                     #E6E0E9;   /* md_onBackground_dark */
+  --eg-surface:                #211F22;   /* md_surfaceContainer_dark */
+  --eg-surface-variant:        #534341;   /* md_surfaceVariant_dark */
+  --eg-on-variant:             #D8C2BF;   /* md_onSurfaceVariant_dark */
+  --eg-surface-low:            #1D1B1E;   /* md_surfaceContainerLow_dark */
+  --eg-surface-high:           #2C2A2C;   /* md_surfaceContainerHigh_dark */
+  --eg-outline:                #A08C89;   /* md_outline_dark */
+  --eg-outline-var:            #534341;   /* md_outlineVariant_dark */
+
+  /* Shorthand aliases */
+  --primary:      var(--eg-primary);
+  --secondary:    var(--eg-secondary);
+  --tertiary:     var(--eg-tertiary);
+  --bg:           var(--eg-bg);
+  --fg:           var(--eg-fg);
+  --surface:      var(--eg-surface);
+  --surface-low:  var(--eg-surface-low);
+  --surface-high: var(--eg-surface-high);
+  --on-variant:   var(--eg-on-variant);
+  --outline:      var(--eg-outline);
+  --outline-var:  var(--eg-outline-var);
 }
 
+/* ─── Base styles ─── */
 body {
   background-color: var(--bg);
   color: var(--fg);
