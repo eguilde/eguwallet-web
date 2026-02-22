@@ -106,6 +106,14 @@
       { "q": "How do I activate my digital wallet?", "a": "Download the app from Google Play, verify your phone number, create a PIN, then connect to your county or city portal to register your documents. The process takes approximately 5 minutes." }
     ]
   },
+  "getDigitalId": {
+    "heading": "Get your European Digital Identity",
+    "body": "Request your Personal Identification Data (PID) credential — the official EU digital ID card that lives in your wallet, recognised across all 27 member states.",
+    "cta": "Request your Digital ID",
+    "step1": "Verify your identity with ID card scan and face recognition",
+    "step2": "An inspector reviews and approves your request",
+    "step3": "Receive your PID credential directly in EguWallet"
+  },
   "footer": {
     "provider": "Provided by IT Eguilde SRL",
     "tagline": "European Digital Wallet — eIDAS 2.0 Compliant",

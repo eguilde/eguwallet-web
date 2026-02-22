@@ -194,6 +194,14 @@
       }
     ]
   },
+  "getDigitalId": {
+    "heading": "Získejte svou evropskou digitální identitu",
+    "body": "Požádejte o PID pověření (Osobní identifikační údaje) — oficiální digitální průkaz EU ve vaší peněžence, uznávaný ve všech 27 členských státech.",
+    "cta": "Požádat o digitální průkaz",
+    "step1": "Ověřte svou identitu skenem občanského průkazu a rozpoznáváním obličeje",
+    "step2": "Inspektor zkontroluje a schválí vaši žádost",
+    "step3": "Obdržíte PID pověření přímo v EguWallet"
+  },
   "footer": {
     "provider": "Provided by IT Eguilde SRL",
     "tagline": "European Digital Wallet — eIDAS 2.0 Compliant",

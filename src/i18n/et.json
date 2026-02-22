@@ -194,6 +194,14 @@
       }
     ]
   },
+  "getDigitalId": {
+    "heading": "Hankige oma Euroopa digitaalne isikutunnistus",
+    "body": "Taotlege oma PID-tunnistust (Isiku tuvastamise andmed) — ELi ametlikku digitaalset isikutunnistust oma rahakotis, mis on tunnustatud kõigis 27 liikmesriigis.",
+    "cta": "Taotlege digitaalset isikutunnistust",
+    "step1": "Kinnitage oma isikut ID-kaardi skannimise ja näotuvastusega",
+    "step2": "Inspektor vaatab läbi ja kinnitab teie taotluse",
+    "step3": "Saate PID-tunnistuse otse EguWallet rakenduses"
+  },
   "footer": {
     "provider": "Provided by IT Eguilde SRL",
     "tagline": "European Digital Wallet — eIDAS 2.0 Compliant",

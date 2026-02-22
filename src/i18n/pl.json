@@ -194,6 +194,14 @@
       }
     ]
   },
+  "getDigitalId": {
+    "heading": "Uzyskaj europejską tożsamość cyfrową",
+    "body": "Złóż wniosek o poświadczenie PID (Dane Identyfikacji Osobowej) — oficjalny cyfrowy dowód osobisty UE w Twoim portfelu, uznawany we wszystkich 27 państwach członkowskich.",
+    "cta": "Złóż wniosek o cyfrowy dowód",
+    "step1": "Zweryfikuj tożsamość skanem dowodu osobistego i rozpoznawaniem twarzy",
+    "step2": "Inspektor weryfikuje i zatwierdza Twój wniosek",
+    "step3": "Otrzymaj poświadczenie PID bezpośrednio w EguWallet"
+  },
   "footer": {
     "provider": "Provided by IT Eguilde SRL",
     "tagline": "European Digital Wallet — eIDAS 2.0 Compliant",

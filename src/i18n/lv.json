@@ -194,6 +194,14 @@
       }
     ]
   },
+  "getDigitalId": {
+    "heading": "Iegūstiet savu Eiropas digitālo identitāti",
+    "body": "Pieprasiet savu PID apliecinājumu (Personas identifikācijas dati) — oficiālo ES digitālo personas apliecību jūsu makā, kas atzīta visās 27 dalībvalstīs.",
+    "cta": "Pieprasīt digitālo apliecību",
+    "step1": "Apstipriniet savu identitāti ar personas apliecības skenēšanu un sejas atpazīšanu",
+    "step2": "Inspektors pārbauda un apstiprina jūsu pieteikumu",
+    "step3": "Saņemiet PID apliecinājumu tieši EguWallet lietotnē"
+  },
   "footer": {
     "provider": "Provided by IT Eguilde SRL",
     "tagline": "European Digital Wallet — eIDAS 2.0 Compliant",

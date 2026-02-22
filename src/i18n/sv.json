@@ -194,6 +194,14 @@
       }
     ]
   },
+  "getDigitalId": {
+    "heading": "Skaffa din europeiska digitala identitet",
+    "body": "Ansök om ditt PID-intyg (Personliga identifieringsuppgifter) — det officiella digitala EU-ID-kortet i din plånbok, erkänt i alla 27 medlemsländer.",
+    "cta": "Ansök om digitalt ID-kort",
+    "step1": "Verifiera din identitet med ID-kortsskanning och ansiktsigenkänning",
+    "step2": "En inspektör granskar och godkänner din ansökan",
+    "step3": "Ta emot ditt PID-intyg direkt i EguWallet"
+  },
   "footer": {
     "provider": "Provided by IT Eguilde SRL",
     "tagline": "European Digital Wallet — eIDAS 2.0 Compliant",

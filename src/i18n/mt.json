@@ -194,6 +194,14 @@
       }
     ]
   },
+  "getDigitalId": {
+    "heading": "Ikseb l-identità diġitali Ewropea tiegħek",
+    "body": "Applika għall-kredenzjal PID (Data ta' Identifikazzjoni Personali) — il-karta tal-identità diġitali uffiċjali tal-UE fil-kartiera tiegħek, rikonoxxuta fl-27 Stat Membru kollha.",
+    "cta": "Applika għall-identità diġitali",
+    "step1": "Ivverifika l-identità tiegħek b'skanjar tal-karta tal-identità u rikonoxximent tal-wiċċ",
+    "step2": "Ispettur jirrevedi u japprova t-talba tiegħek",
+    "step3": "Irċievi l-kredenzjal PID direttament f'EguWallet"
+  },
   "footer": {
     "provider": "Provided by IT Eguilde SRL",
     "tagline": "European Digital Wallet — eIDAS 2.0 Compliant",

@@ -194,6 +194,14 @@
       }
     ]
   },
+  "getDigitalId": {
+    "heading": "Szerezze meg európai digitális személyazonosságát",
+    "body": "Igényelje PID tanúsítványát (Személyi Azonosító Adatok) — az EU hivatalos digitális személyi igazolványa a pénztárcájában, amelyet mind a 27 tagállamban elismernek.",
+    "cta": "Digitális személyi igénylése",
+    "step1": "Igazolja személyazonosságát igazolvány-szkennelés és arcfelismerés segítségével",
+    "step2": "Egy ellenőr megvizsgálja és jóváhagyja kérelmét",
+    "step3": "Kapja meg PID tanúsítványát közvetlenül az EguWallet-ben"
+  },
   "footer": {
     "provider": "Provided by IT Eguilde SRL",
     "tagline": "European Digital Wallet — eIDAS 2.0 Compliant",

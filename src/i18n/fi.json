@@ -194,6 +194,14 @@
       }
     ]
   },
+  "getDigitalId": {
+    "heading": "Hanki eurooppalainen digitaalinen henkilöllisyytesi",
+    "body": "Hae PID-todistustasi (Henkilökohtaiset tunnistamistiedot) — EU:n virallinen digitaalinen henkilökortti lompakossasi, tunnustettu kaikissa 27 jäsenvaltiossa.",
+    "cta": "Hae digitaalista henkilökorttia",
+    "step1": "Vahvista henkilöllisyytesi henkilökortin skannauksella ja kasvojentunnistuksella",
+    "step2": "Tarkastaja tarkistaa ja hyväksyy hakemuksesi",
+    "step3": "Vastaanota PID-todistuksesi suoraan EguWallet-sovelluksessa"
+  },
   "footer": {
     "provider": "Provided by IT Eguilde SRL",
     "tagline": "European Digital Wallet — eIDAS 2.0 Compliant",

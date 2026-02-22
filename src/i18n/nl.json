@@ -194,6 +194,14 @@
       }
     ]
   },
+  "getDigitalId": {
+    "heading": "Verkrijg uw Europese digitale identiteit",
+    "body": "Vraag uw PID-credential aan (Persoonlijke Identificatiegegevens) — het officiële digitale EU-identiteitsbewijs in uw portemonnee, erkend in alle 27 lidstaten.",
+    "cta": "Digitaal identiteitsbewijs aanvragen",
+    "step1": "Verifieer uw identiteit met ID-kaart scan en gezichtsherkenning",
+    "step2": "Een inspecteur beoordeelt en keurt uw aanvraag goed",
+    "step3": "Ontvang uw PID-credential rechtstreeks in EguWallet"
+  },
   "footer": {
     "provider": "Provided by IT Eguilde SRL",
     "tagline": "European Digital Wallet — eIDAS 2.0 Compliant",

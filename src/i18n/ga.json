@@ -194,6 +194,14 @@
       }
     ]
   },
+  "getDigitalId": {
+    "heading": "Faigh d'aitheantas digiteach Eorpach",
+    "body": "Déan iarratas ar do dhintiúr PID (Sonraí Aitheantais Phearsanta) — cárta aitheantais digiteach oifigiúil an AE i do sparán, atá aitheanta i ngach 27 Ballstát.",
+    "cta": "Iarr d'aitheantas digiteach",
+    "step1": "Deimhnigh d'aitheantas le scanadh cárta aitheantais agus aithint aghaidhe",
+    "step2": "Scrúdaíonn cigire agus ceadaíonn do d'iarratas",
+    "step3": "Faigh do dhintiúr PID go díreach in EguWallet"
+  },
   "footer": {
     "provider": "Provided by IT Eguilde SRL",
     "tagline": "European Digital Wallet — eIDAS 2.0 Compliant",

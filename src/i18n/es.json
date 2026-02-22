@@ -194,6 +194,14 @@
       }
     ]
   },
+  "getDigitalId": {
+    "heading": "Obtén tu identidad digital europea",
+    "body": "Solicita tu credencial PID (Datos de Identificación Personal) — el documento de identidad digital oficial de la UE en tu cartera, reconocido en los 27 estados miembros.",
+    "cta": "Solicitar tu identidad digital",
+    "step1": "Verifica tu identidad con escaneo de DNI y reconocimiento facial",
+    "step2": "Un inspector revisa y aprueba tu solicitud",
+    "step3": "Recibe tu credencial PID directamente en EguWallet"
+  },
   "footer": {
     "provider": "Provided by IT Eguilde SRL",
     "tagline": "European Digital Wallet — eIDAS 2.0 Compliant",

@@ -194,6 +194,14 @@
       }
     ]
   },
+  "getDigitalId": {
+    "heading": "Pridobite svojo evropsko digitalno identiteto",
+    "body": "Zaprosite za PID poverilnico (Osebni identifikacijski podatki) — uradno digitalno osebno izkaznico EU v vaši denarnici, priznano v vseh 27 državah članicah.",
+    "cta": "Zaprosite za digitalno izkaznico",
+    "step1": "Potrdite svojo identiteto s skeniranjem osebne izkaznice in prepoznavo obraza",
+    "step2": "Inšpektor pregleda in odobri vašo zahtevo",
+    "step3": "Prejmite PID poverilnico neposredno v EguWallet"
+  },
   "footer": {
     "provider": "Provided by IT Eguilde SRL",
     "tagline": "European Digital Wallet — eIDAS 2.0 Compliant",

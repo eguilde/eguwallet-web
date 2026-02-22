@@ -194,6 +194,14 @@
       }
     ]
   },
+  "getDigitalId": {
+    "heading": "Holen Sie sich Ihre europäische digitale Identität",
+    "body": "Beantragen Sie Ihre PID-Berechtigung (Persönliche Identifikationsdaten) — der offizielle digitale EU-Ausweis in Ihrer Wallet, anerkannt in allen 27 Mitgliedstaaten.",
+    "cta": "Digitalen Ausweis beantragen",
+    "step1": "Identität mit Ausweisscan und Gesichtserkennung verifizieren",
+    "step2": "Ein Prüfer überprüft und genehmigt Ihren Antrag",
+    "step3": "PID-Berechtigung direkt in EguWallet erhalten"
+  },
   "footer": {
     "provider": "Provided by IT Eguilde SRL",
     "tagline": "European Digital Wallet — eIDAS 2.0 Compliant",

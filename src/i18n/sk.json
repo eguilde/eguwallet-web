@@ -194,6 +194,14 @@
       }
     ]
   },
+  "getDigitalId": {
+    "heading": "Získajte svoju európsku digitálnu identitu",
+    "body": "Požiadajte o PID oprávnenie (Osobné identifikačné údaje) — oficiálny digitálny preukaz EÚ vo vašej peňaženke, uznávaný vo všetkých 27 členských štátoch.",
+    "cta": "Požiadať o digitálny preukaz",
+    "step1": "Overte svoju identitu skenovaním občianskeho preukazu a rozpoznávaním tváre",
+    "step2": "Inšpektor skontroluje a schváli vašu žiadosť",
+    "step3": "Dostanete PID oprávnenie priamo v EguWallet"
+  },
   "footer": {
     "provider": "Provided by IT Eguilde SRL",
     "tagline": "European Digital Wallet — eIDAS 2.0 Compliant",

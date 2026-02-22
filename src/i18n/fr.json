@@ -194,6 +194,14 @@
       }
     ]
   },
+  "getDigitalId": {
+    "heading": "Obtenez votre identité numérique européenne",
+    "body": "Demandez votre attestation PID (Données d'Identification Personnelle) — la carte d'identité numérique officielle de l'UE dans votre portefeuille, reconnue dans les 27 États membres.",
+    "cta": "Demander votre identité numérique",
+    "step1": "Vérifiez votre identité par scan de carte d'identité et reconnaissance faciale",
+    "step2": "Un inspecteur examine et approuve votre demande",
+    "step3": "Recevez votre attestation PID directement dans EguWallet"
+  },
   "footer": {
     "provider": "Provided by IT Eguilde SRL",
     "tagline": "European Digital Wallet — eIDAS 2.0 Compliant",

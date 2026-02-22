@@ -194,6 +194,14 @@
       }
     ]
   },
+  "getDigitalId": {
+    "heading": "Gaukite savo europinę skaitmeninę tapatybę",
+    "body": "Pateikite paraišką dėl PID kredencialo (Asmens tapatybės duomenys) — oficialaus ES skaitmeninio asmens tapatybės dokumento jūsų piniginėje, pripažįstamo visose 27 valstybėse narėse.",
+    "cta": "Prašyti skaitmeninio dokumento",
+    "step1": "Patvirtinkite savo tapatybę nuskaitydami asmens tapatybės kortelę ir veido atpažinimu",
+    "step2": "Inspektorius peržiūri ir patvirtina jūsų paraišką",
+    "step3": "Gaukite PID kredencialą tiesiogiai EguWallet programėlėje"
+  },
   "footer": {
     "provider": "Provided by IT Eguilde SRL",
     "tagline": "European Digital Wallet — eIDAS 2.0 Compliant",

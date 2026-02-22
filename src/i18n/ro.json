@@ -106,6 +106,14 @@
       { "q": "Cum îmi activez portofelul digital?", "a": "Descărcați aplicația din Google Play, verificați numărul de telefon, creați un PIN, apoi conectați-vă la portalul județului sau orașului dvs. pentru înregistrarea documentelor. Procesul durează aproximativ 5 minute." }
     ]
   },
+  "getDigitalId": {
+    "heading": "Obține-ți identitatea digitală europeană",
+    "body": "Solicită credențialul PID (Date de Identificare Personală) — actul de identitate digital oficial UE care se află în portofelul tău, recunoscut în toate cele 27 de state membre.",
+    "cta": "Solicită actul de identitate digital",
+    "step1": "Verifică-ți identitatea prin scanarea buletinului și recunoaștere facială",
+    "step2": "Un inspector verifică și aprobă cererea ta",
+    "step3": "Primești credențialul PID direct în EguWallet"
+  },
   "footer": {
     "provider": "Furnizat de IT Eguilde SRL",
     "tagline": "Portofel Digital European — eIDAS 2.0 Conform",

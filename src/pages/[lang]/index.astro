@@ -249,18 +249,28 @@ const playUrl = 'https://play.google.com/store/apps/details?id=com.eguwallet.wal
       </div>
     </section>
 
-    <!-- DOWNLOAD CTA -->
-    <section class="py-8 sm:py-12 px-4 sm:px-6">
-      <div class="max-w-4xl mx-auto rounded-xl t-bg-surface p-5 sm:p-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-between sm:gap-6">
-        <div class="text-center sm:text-left">
-          <h2 class="text-lg sm:text-xl font-bold t-fg">{t.nav.download} EguWallet</h2>
-          <p class="text-[12px] sm:text-[13px] t-fg opacity-35 mt-1">{t.hero.badge1} · {t.hero.badge2} · {t.hero.badge3}</p>
-        </div>
-        <div class="flex items-center gap-3 flex-shrink-0">
-          <a href={playUrl} target="_blank" rel="noopener" class="transition-opacity hover:opacity-80">
-            <img src={playBadge} alt={t.hero.downloadAndroid} class="h-[36px] sm:h-[40px] w-auto" />
+    <!-- GET YOUR DIGITAL ID -->
+    <section id="get-id" class="py-8 sm:py-12 px-4 sm:px-6">
+      <div class="max-w-4xl mx-auto rounded-xl t-bg-primary-container p-5 sm:p-8">
+        <div class="flex flex-col items-center text-center gap-4 sm:gap-5">
+          <svg class="w-10 h-10 sm:w-12 sm:h-12 t-on-primary-container opacity-80" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15A2.25 2.25 0 002.25 6.75v10.5A2.25 2.25 0 004.5 19.5zm6-10.125a1.875 1.875 0 11-3.75 0 1.875 1.875 0 013.75 0zm1.294 6.336a6.721 6.721 0 01-3.17.789 6.721 6.721 0 01-3.168-.789 3.376 3.376 0 016.338 0z"/></svg>
+          <h2 class="text-lg sm:text-xl md:text-2xl font-bold t-on-primary-container">{t.getDigitalId.heading}</h2>
+          <p class="text-[13px] sm:text-[14px] leading-relaxed t-on-primary-container opacity-70 max-w-xl">{t.getDigitalId.body}</p>
+
+          <div class="flex flex-col gap-2 text-[12px] sm:text-[13px] t-on-primary-container opacity-60 text-left">
+            <div class="flex items-center gap-2"><span class="font-bold">1.</span> {t.getDigitalId.step1}</div>
+            <div class="flex items-center gap-2"><span class="font-bold">2.</span> {t.getDigitalId.step2}</div>
+            <div class="flex items-center gap-2"><span class="font-bold">3.</span> {t.getDigitalId.step3}</div>
+          </div>
+
+          <a
+            href="https://dgep.eguwallet.eu/onboarding"
+            class="mt-2 inline-flex items-center gap-2 px-5 py-2.5 sm:px-6 sm:py-3 rounded-lg font-semibold text-[13px] sm:text-[14px] transition-opacity hover:opacity-90"
+            style="background-color: var(--eg-primary); color: var(--eg-on-primary);"
+          >
+            {t.getDigitalId.cta}
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
           </a>
-          <img src="/assets/badges/app-store.svg" alt="App Store" class="h-[36px] sm:h-[40px] w-auto opacity-25" />
         </div>
       </div>
     </section>
