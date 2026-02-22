@@ -16,11 +16,11 @@ const links = [
 ];
 ---
 <header class="sticky top-0 z-40 w-full t-bg border-b t-border backdrop-blur-sm">
-  <nav class="max-w-6xl mx-auto flex items-center justify-between gap-4 px-4 h-14" aria-label="Main navigation">
+  <nav class="max-w-6xl mx-auto flex items-center justify-between gap-2 sm:gap-4 px-3 sm:px-4 h-12 sm:h-14" aria-label="Main navigation">
 
-    <a href={`/${lang}/`} class="flex items-center gap-2 flex-shrink-0" aria-label="EguWallet home">
-      <img src="/assets/logo-shield.svg" alt="" class="w-7 h-7" width="28" height="28" />
-      <span class="font-bold text-[15px] hidden sm:inline t-fg">EguWallet</span>
+    <a href={`/${lang}/`} class="flex items-center gap-1.5 sm:gap-2 flex-shrink-0" aria-label="EguWallet home">
+      <img src="/assets/logo-shield.svg" alt="" class="w-6 h-6 sm:w-7 sm:h-7" width="28" height="28" />
+      <span class="font-bold text-[13px] sm:text-[15px] hidden sm:inline t-fg">EguWallet</span>
     </a>
 
     <ul class="hidden lg:flex items-center gap-1 flex-1 justify-center list-none m-0 p-0">
@@ -31,7 +31,7 @@ const links = [
       ))}
     </ul>
 
-    <div class="flex items-center gap-2 flex-shrink-0">
+    <div class="flex items-center gap-1.5 sm:gap-2 flex-shrink-0">
       <LanguageSelector currentLang={lang} />
       <ThemeToggle />
 
@@ -54,7 +54,7 @@ const links = [
     </div>
   </nav>
 
-  <div id="mobile-menu" class="hidden lg:hidden px-4 pb-4 flex-col gap-1 t-bg">
+  <div id="mobile-menu" class="hidden lg:hidden px-3 sm:px-4 pb-3 sm:pb-4 flex-col gap-0.5 sm:gap-1 t-bg">
     {links.map(({ href, label }) => (
       <a href={href} class="block px-3 py-2.5 rounded-lg text-[13px] font-medium t-fg" onclick="document.getElementById('mobile-menu').classList.add('hidden')">{label}</a>
     ))}

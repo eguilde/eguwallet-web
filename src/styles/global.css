@@ -62,5 +62,6 @@ body {
   transition: background-color 0.2s, color 0.2s;
 }
 
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; overflow-x: hidden; }
+body { overflow-x: hidden; }
 :focus-visible { outline: 2px solid var(--eg-primary); outline-offset: 2px; }
