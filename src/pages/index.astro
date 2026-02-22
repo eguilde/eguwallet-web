@@ -1,12 +1,8 @@
 ---
-// Root index: instant JS redirect to browser locale (no visible flash)
+// Fallback redirect handled by nginx (301 / -> /ro/)
+// This file exists only for the build system; nginx serves the redirect.
 ---
 <!doctype html><html><head>
-<script is:inline>
-var s=['ro','en','de','fr','es','it','pl','pt','hu','cs','sk','bg','hr','lt','lv','et','mt','sl','sv','da','nl','el','fi','ga'];
-var l=(navigator.language||'').slice(0,2).toLowerCase();
-location.replace('/'+(s.indexOf(l)>=0?l:'ro')+'/');
-</script>
 <meta http-equiv="refresh" content="0;url=/ro/" />
 <link rel="canonical" href="/ro/" />
 </head></html>
