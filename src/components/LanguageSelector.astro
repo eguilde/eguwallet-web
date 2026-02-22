@@ -1,0 +1,65 @@
+---
+interface Props { currentLang: string; }
+const { currentLang } = Astro.props;
+
+const LANGS: [string, string, string][] = [
+  ['ro','🇷🇴','Română'],    ['en','🇬🇧','English'],   ['de','🇩🇪','Deutsch'],
+  ['fr','🇫🇷','Français'],  ['es','🇪🇸','Español'],   ['it','🇮🇹','Italiano'],
+  ['pl','🇵🇱','Polski'],    ['pt','🇵🇹','Português'], ['hu','🇭🇺','Magyar'],
+  ['cs','🇨🇿','Čeština'],   ['sk','🇸🇰','Slovenčina'],['bg','🇧🇬','Български'],
+  ['hr','🇭🇷','Hrvatski'],  ['lt','🇱🇹','Lietuvių'],  ['lv','🇱🇻','Latviešu'],
+  ['et','🇪🇪','Eesti'],     ['mt','🇲🇹','Malti'],     ['sl','🇸🇮','Slovenščina'],
+  ['sv','🇸🇪','Svenska'],   ['da','🇩🇰','Dansk'],     ['nl','🇳🇱','Nederlands'],
+  ['el','🇬🇷','Ελληνικά'],  ['fi','🇫🇮','Suomi'],     ['ga','🇮🇪','Gaeilge'],
+];
+
+const current = LANGS.find(([l]) => l === currentLang);
+---
+<div class="relative" id="lang-selector">
+  <button
+    aria-haspopup="listbox"
+    aria-expanded="false"
+    id="lang-btn"
+    class="flex items-center gap-2 min-h-[48px] px-3 rounded-lg transition-colors text-sm font-medium cursor-pointer"
+    style="background:var(--surface);border:1px solid var(--outline-var);color:var(--fg)"
+  >
+    <span class="text-lg">{current?.[1]}</span>
+    <span class="hidden sm:inline">{current?.[2]}</span>
+    <span class="text-xs opacity-60">▾</span>
+  </button>
+
+  <ul
+    id="lang-menu"
+    role="listbox"
+    aria-label="Select language"
+    class="absolute right-0 top-full mt-2 z-50 hidden rounded-xl shadow-xl w-52 max-h-80 overflow-y-auto py-1"
+    style="background:var(--surface);border:1px solid var(--outline-var)"
+  >
+    {LANGS.map(([loc, flag, name]) => (
+      <li role="option" aria-selected={loc === currentLang}>
+        <a
+          href={`/${loc}/`}
+          class="flex items-center gap-3 px-4 py-2.5 text-sm transition-colors min-h-[44px]"
+          style={loc === currentLang ? 'font-weight:600;color:var(--primary)' : 'color:var(--fg)'}
+        >
+          <span class="text-xl">{flag}</span>
+          <span>{name}</span>
+        </a>
+      </li>
+    ))}
+  </ul>
+</div>
+
+<script>
+  const btn = document.getElementById('lang-btn');
+  const menu = document.getElementById('lang-menu');
+  btn?.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const open = menu?.classList.toggle('hidden') === false;
+    btn.setAttribute('aria-expanded', String(open));
+  });
+  document.addEventListener('click', () => {
+    menu?.classList.add('hidden');
+    btn?.setAttribute('aria-expanded', 'false');
+  });
+</script>

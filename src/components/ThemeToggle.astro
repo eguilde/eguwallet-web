@@ -1,0 +1,26 @@
+---
+---
+<button
+  id="theme-toggle"
+  aria-label="Toggle dark/light mode"
+  class="min-h-[48px] min-w-[48px] flex items-center justify-center rounded-full
+         transition-colors cursor-pointer"
+  style="background:var(--surface);border:1px solid var(--outline-var)"
+>
+  <span class="theme-light text-xl">☀️</span>
+  <span class="theme-dark  text-xl" style="display:none">🌙</span>
+</button>
+
+<style>
+  [data-theme="dark"] .theme-light { display: none !important; }
+  [data-theme="dark"] .theme-dark  { display: inline !important; }
+</style>
+
+<script>
+  const btn = document.getElementById('theme-toggle');
+  btn?.addEventListener('click', () => {
+    const next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', next);
+    localStorage.setItem('egu-theme', next);
+  });
+</script>

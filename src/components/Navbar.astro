@@ -1,0 +1,103 @@
+---
+import ShieldLogo from './ShieldLogo.astro';
+import ThemeToggle from './ThemeToggle.astro';
+import LanguageSelector from './LanguageSelector.astro';
+import type { Translations } from '../i18n/index';
+
+interface Props { t: Translations; lang: string; }
+const { t, lang } = Astro.props;
+
+const links = [
+  { href: '#what',       label: t.nav.what },
+  { href: '#privacy',    label: t.nav.privacy },
+  { href: '#documents',  label: t.nav.documents },
+  { href: '#future',     label: t.nav.future },
+  { href: '#how',        label: t.nav.howItWorks },
+  { href: '#faq',        label: t.nav.faq },
+];
+---
+<header class="sticky top-0 z-40 w-full" style="background:var(--bg);border-bottom:1px solid var(--outline-var)">
+  <nav class="max-w-7xl mx-auto flex items-center justify-between gap-4 px-4 py-3" aria-label="Main navigation">
+
+    <!-- Logo + brand -->
+    <a href={`/${lang}/`} class="flex items-center gap-3 flex-shrink-0" aria-label="EguWallet home">
+      <ShieldLogo size={40} />
+      <span class="font-bold text-lg hidden sm:inline" style="color:var(--primary)">EguWallet</span>
+    </a>
+
+    <!-- Desktop nav links -->
+    <ul class="hidden lg:flex items-center gap-1 flex-1 justify-center list-none m-0 p-0">
+      {links.map(({ href, label }) => (
+        <li>
+          <a
+            href={href}
+            class="px-3 py-2 rounded-lg text-sm font-medium transition-colors hover:opacity-80"
+            style="color:var(--fg)"
+          >
+            {label}
+          </a>
+        </li>
+      ))}
+    </ul>
+
+    <!-- Right controls -->
+    <div class="flex items-center gap-2 flex-shrink-0">
+      <LanguageSelector currentLang={lang} />
+      <ThemeToggle />
+
+      <!-- Download CTA -->
+      <a
+        href="https://play.google.com/store/apps/details?id=com.eguwallet.wallet"
+        target="_blank"
+        rel="noopener"
+        class="hidden md:flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold transition-colors"
+        style="background:var(--primary);color:#fff"
+      >
+        {t.nav.download}
+      </a>
+
+      <!-- Mobile hamburger -->
+      <button
+        id="nav-hamburger"
+        aria-label="Open menu"
+        aria-expanded="false"
+        class="lg:hidden min-h-[48px] min-w-[48px] flex items-center justify-center rounded-lg"
+        style="color:var(--fg)"
+      >
+        <span class="text-2xl">☰</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="hidden lg:hidden px-4 pb-4 flex-col gap-1" style="background:var(--bg)">
+    {links.map(({ href, label }) => (
+      <a
+        href={href}
+        class="block px-4 py-3 rounded-lg text-sm font-medium transition-colors"
+        style="color:var(--fg)"
+        onclick="document.getElementById('mobile-menu').classList.add('hidden')"
+      >
+        {label}
+      </a>
+    ))}
+    <a
+      href="https://play.google.com/store/apps/details?id=com.eguwallet.wallet"
+      target="_blank"
+      rel="noopener"
+      class="flex items-center justify-center gap-2 mt-2 px-4 py-3 rounded-xl text-sm font-semibold"
+      style="background:var(--primary);color:#fff"
+    >
+      {t.nav.download}
+    </a>
+  </div>
+</header>
+
+<script>
+  const hamburger = document.getElementById('nav-hamburger');
+  const mobileMenu = document.getElementById('mobile-menu');
+  hamburger?.addEventListener('click', () => {
+    const open = mobileMenu?.classList.toggle('hidden') === false;
+    hamburger.setAttribute('aria-expanded', String(open));
+  });
+</script>
