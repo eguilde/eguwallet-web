@@ -1,0 +1,49 @@
+---
+interface Props { lang: string; faqItems: {q:string; a:string}[]; }
+const { lang, faqItems } = Astro.props;
+const SITE = 'https://eguwallet.eu';
+
+const softwareApp = {
+  '@context':'https://schema.org',
+  '@type':'SoftwareApplication',
+  'name':'EguWallet',
+  'operatingSystem':'Android',
+  'applicationCategory':'UtilitiesApplication',
+  'offers':{'@type':'Offer','price':'0','priceCurrency':'EUR'},
+  'description':'EUDI Wallet conform eIDAS 2.0 — identitate digitală europeană',
+  'url':SITE,
+  'downloadUrl':'https://play.google.com/store/apps/details?id=com.eguwallet.wallet',
+  'author':{'@type':'Organization','name':'IT Eguilde SRL'},
+};
+
+const organization = {
+  '@context':'https://schema.org',
+  '@type':'Organization',
+  'name':'IT Eguilde SRL',
+  'url':SITE,
+  'logo':`${SITE}/assets/logo-shield.svg`,
+  'sameAs':['https://github.com/eguilde'],
+};
+
+const website = {
+  '@context':'https://schema.org',
+  '@type':'WebSite',
+  'name':'EguWallet',
+  'url':SITE,
+  'inLanguage': lang,
+};
+
+const faqPage = {
+  '@context':'https://schema.org',
+  '@type':'FAQPage',
+  'mainEntity': faqItems.map(({q,a}) => ({
+    '@type':'Question',
+    'name': q,
+    'acceptedAnswer':{'@type':'Answer','text': a},
+  })),
+};
+---
+<script type="application/ld+json" set:html={JSON.stringify(softwareApp)} />
+<script type="application/ld+json" set:html={JSON.stringify(organization)} />
+<script type="application/ld+json" set:html={JSON.stringify(website)} />
+<script type="application/ld+json" set:html={JSON.stringify(faqPage)} />

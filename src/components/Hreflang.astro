@@ -1,0 +1,14 @@
+---
+const LOCALES: Record<string, string> = {
+  ro:'ro-RO', en:'en-GB', de:'de-DE', fr:'fr-FR', es:'es-ES',
+  it:'it-IT', pl:'pl-PL', pt:'pt-PT', hu:'hu-HU', cs:'cs-CZ',
+  sk:'sk-SK', bg:'bg-BG', hr:'hr-HR', lt:'lt-LT', lv:'lv-LV',
+  et:'et-EE', mt:'mt-MT', sl:'sl-SI', sv:'sv-SE', da:'da-DK',
+  nl:'nl-NL', el:'el-GR', fi:'fi-FI', ga:'ga-IE',
+};
+const SITE = 'https://eguwallet.eu';
+---
+{Object.entries(LOCALES).map(([loc, hl]) => (
+  <link rel="alternate" hreflang={hl} href={`${SITE}/${loc}/`} />
+))}
+<link rel="alternate" hreflang="x-default" href={`${SITE}/ro/`} />
