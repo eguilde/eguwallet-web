@@ -1,18 +1,16 @@
 import type ro from './ro.json';
+import roData from './ro.json';
+import enData from './en.json';
 
 export type Translations = typeof ro;
 
-const cache: Partial<Record<string, Translations>> = {};
+const translations: Record<string, Translations> = {
+  ro: roData,
+  en: enData,
+};
 
 export async function getTranslations(lang: string): Promise<Translations> {
-  if (cache[lang]) return cache[lang]!;
-  try {
-    const mod = await import(`./${lang}.json`);
-    cache[lang] = mod.default as Translations;
-    return cache[lang]!;
-  } catch {
-    const mod = await import('./en.json');
-    cache[lang] = mod.default as Translations;
-    return cache[lang]!;
-  }
+  if (translations[lang]) return translations[lang];
+  // All other languages fall back to English
+  return translations.en;
 }
