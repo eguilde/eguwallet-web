@@ -1,7 +1,16 @@
 ---
+import { SITE } from '../config/site.ts';
 interface Props { lang: string; faqItems: {q:string; a:string}[]; }
 const { lang, faqItems } = Astro.props;
-const SITE = 'https://eguwallet.eu';
+
+const BCP47: Record<string, string> = {
+  ro:'ro-RO', en:'en-GB', de:'de-DE', fr:'fr-FR', es:'es-ES',
+  it:'it-IT', pl:'pl-PL', pt:'pt-PT', hu:'hu-HU', cs:'cs-CZ',
+  sk:'sk-SK', bg:'bg-BG', hr:'hr-HR', lt:'lt-LT', lv:'lv-LV',
+  et:'et-EE', mt:'mt-MT', sl:'sl-SI', sv:'sv-SE', da:'da-DK',
+  nl:'nl-NL', el:'el-GR', fi:'fi-FI', ga:'ga-IE',
+};
+const inLanguage = BCP47[lang] ?? lang;
 
 const softwareApp = {
   '@context':'https://schema.org',
@@ -30,7 +39,7 @@ const website = {
   '@type':'WebSite',
   'name':'EguWallet',
   'url':SITE,
-  'inLanguage': lang,
+  'inLanguage': inLanguage,
 };
 
 const faqPage = {
@@ -43,7 +52,7 @@ const faqPage = {
   })),
 };
 ---
-<script type="application/ld+json" set:html={JSON.stringify(softwareApp)} />
-<script type="application/ld+json" set:html={JSON.stringify(organization)} />
-<script type="application/ld+json" set:html={JSON.stringify(website)} />
-<script type="application/ld+json" set:html={JSON.stringify(faqPage)} />
+<script type="application/ld+json" is:inline set:html={JSON.stringify(softwareApp)} />
+<script type="application/ld+json" is:inline set:html={JSON.stringify(organization)} />
+<script type="application/ld+json" is:inline set:html={JSON.stringify(website)} />
+<script type="application/ld+json" is:inline set:html={JSON.stringify(faqPage)} />

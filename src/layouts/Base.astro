@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import { SITE } from '../config/site.ts';
 import Hreflang from '../components/Hreflang.astro';
 import JsonLd from '../components/JsonLd.astro';
 
@@ -11,7 +12,14 @@ interface Props {
   faqItems: {q:string; a:string}[];
 }
 const { lang, title, description, faqItems } = Astro.props;
-const SITE = 'https://eguwallet.eu';
+const OG_LOCALES: Record<string, string> = {
+  ro:'ro_RO', en:'en_GB', de:'de_DE', fr:'fr_FR', es:'es_ES',
+  it:'it_IT', pl:'pl_PL', pt:'pt_PT', hu:'hu_HU', cs:'cs_CZ',
+  sk:'sk_SK', bg:'bg_BG', hr:'hr_HR', lt:'lt_LT', lv:'lv_LV',
+  et:'et_EE', mt:'mt_MT', sl:'sl_SI', sv:'sv_SE', da:'da_DK',
+  nl:'nl_NL', el:'el_GR', fi:'fi_FI', ga:'ga_IE',
+};
+const ogLocale = OG_LOCALES[lang] ?? lang;
 const ogImage = Astro.props.ogImage ?? `${SITE}/assets/og/og-${lang}.png`;
 const canonical = `${SITE}/${lang}/`;
 ---
@@ -45,7 +53,7 @@ const canonical = `${SITE}/${lang}/`;
   <meta property="og:image" content={ogImage} />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
-  <meta property="og:locale" content={lang} />
+  <meta property="og:locale" content={ogLocale} />
   <meta property="og:site_name" content="EguWallet" />
 
   <!-- Twitter / X -->
