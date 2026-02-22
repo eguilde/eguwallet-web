@@ -1,58 +1,120 @@
 @import "tailwindcss";
 
-/* ─── EguWallet Design Tokens ─── */
+/* ─── EguWallet Design Tokens (Material 3 from seed #A01E28) ─── */
 @theme inline {
   --color-primary:                    var(--eg-primary);
   --color-on-primary:                 var(--eg-on-primary);
+  --color-primary-container:          var(--eg-primary-container);
+  --color-on-primary-container:       var(--eg-on-primary-container);
   --color-secondary:                  var(--eg-secondary);
+  --color-on-secondary:               var(--eg-on-secondary);
+  --color-secondary-container:        var(--eg-secondary-container);
+  --color-tertiary:                   var(--eg-tertiary);
   --color-background:                 var(--eg-bg);
   --color-on-background:              var(--eg-fg);
   --color-surface:                    var(--eg-surface);
   --color-on-surface:                 var(--eg-fg);
-  --color-surface-low:                var(--eg-surface-low);
-  --color-surface-high:               var(--eg-surface-high);
+  --color-surface-dim:                var(--eg-surface-dim);
+  --color-surface-bright:             var(--eg-surface-bright);
+  --color-surface-container-lowest:   var(--eg-surface-container-lowest);
+  --color-surface-container-low:      var(--eg-surface-container-low);
+  --color-surface-container:          var(--eg-surface-container);
+  --color-surface-container-high:     var(--eg-surface-container-high);
+  --color-surface-container-highest:  var(--eg-surface-container-highest);
   --color-outline:                    var(--eg-outline);
   --color-outline-variant:            var(--eg-outline-var);
 }
 
-/* ─── Light mode — Navy + Teal ─── */
+/* ═══════════════════════════════════════════════════════════════
+   Material 3 palette — Seed: #A01E28 (EguildE Crimson)
+   Generated via HCT tonal palette algorithm
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ─── Light Scheme ─── */
 :root {
-  --eg-primary:          #0D9488;   /* teal-600 */
-  --eg-on-primary:       #FFFFFF;
-  --eg-secondary:        #1E3A5F;   /* navy */
-  --eg-bg:               #FFFFFF;
-  --eg-fg:               #1a2332;   /* dark navy text */
-  --eg-surface:          #F4F7FA;   /* very light cool gray */
-  --eg-surface-low:      #F9FAFB;   /* near-white */
-  --eg-surface-high:     #EDF0F4;   /* slightly darker */
-  --eg-outline:          #94A3B8;   /* slate-400 */
-  --eg-outline-var:      #E2E8F0;   /* slate-200 */
+  /* Primary */
+  --eg-primary:                    #904A4D;   /* P-40  */
+  --eg-primary-light:              #DC4A56;
+  --eg-on-primary:                 #FFFFFF;
+  --eg-primary-container:          #FFDAD8;   /* P-90  */
+  --eg-on-primary-container:       #3B080E;   /* P-10  */
+
+  /* Secondary (desaturated red-brown) */
+  --eg-secondary:                  #775656;   /* S-40  */
+  --eg-on-secondary:               #FFFFFF;
+  --eg-secondary-container:        #FFDAD8;   /* S-90  */
+
+  /* Tertiary (warm gold — M3 triadic shift) */
+  --eg-tertiary:                   #725B2E;   /* T-40  */
+
+  /* Background & Surface */
+  --eg-bg:                         #FFFBFF;
+  --eg-fg:                         #201A1A;   /* onBackground */
+
+  /* M3 Surface tonal hierarchy */
+  --eg-surface:                    #FFF8F7;
+  --eg-surface-dim:                #E4D7D6;
+  --eg-surface-bright:             #FFF8F7;
+  --eg-surface-container-lowest:   #FFFFFF;
+  --eg-surface-container-low:      #FEF1EF;
+  --eg-surface-container:          #F8EBEA;
+  --eg-surface-container-high:     #F3E5E4;
+  --eg-surface-container-highest:  #EDDFDE;
+
+  /* Outline */
+  --eg-outline:                    #857372;   /* N-50  */
+  --eg-outline-var:                #D7C1C0;   /* NV-80 */
 }
 
-/* ─── Dark mode — Navy + Teal ─── */
+/* ─── Dark Scheme ─── */
 [data-theme="dark"] {
-  --eg-primary:          #2DD4BF;   /* teal-400 */
-  --eg-on-primary:       #042F2E;
-  --eg-secondary:        #94A3B8;
-  --eg-bg:               #0F172A;   /* slate-900 */
-  --eg-fg:               #E2E8F0;   /* slate-200 */
-  --eg-surface:          #1E293B;   /* slate-800 */
-  --eg-surface-low:      #162032;
-  --eg-surface-high:     #273548;
-  --eg-outline:          #64748B;   /* slate-500 */
-  --eg-outline-var:      #334155;   /* slate-700 */
+  /* Primary */
+  --eg-primary:                    #FFB3B0;   /* P-80  */
+  --eg-primary-light:              #DC4A56;
+  --eg-on-primary:                 #561D22;   /* P-20  */
+  --eg-primary-container:          #733337;   /* P-30  */
+  --eg-on-primary-container:       #FFDAD8;   /* P-90  */
+
+  /* Secondary */
+  --eg-secondary:                  #E6BDBB;   /* S-80  */
+  --eg-on-secondary:               #44292A;   /* S-20  */
+  --eg-secondary-container:        #5D3F3F;   /* S-30  */
+
+  /* Tertiary */
+  --eg-tertiary:                   #E0C38C;   /* T-80  */
+
+  /* Background & Surface */
+  --eg-bg:                         #201A1A;
+  --eg-fg:                         #EDDFDE;   /* onBackground */
+
+  /* M3 Surface tonal hierarchy */
+  --eg-surface:                    #181212;
+  --eg-surface-dim:                #181212;
+  --eg-surface-bright:             #3F3737;
+  --eg-surface-container-lowest:   #120D0D;
+  --eg-surface-container-low:      #201A1A;
+  --eg-surface-container:          #251E1E;
+  --eg-surface-container-high:     #2F2828;
+  --eg-surface-container-highest:  #3B3333;
+
+  /* Outline */
+  --eg-outline:                    #A08C8B;   /* N-60  */
+  --eg-outline-var:                #534342;   /* NV-30 */
 }
 
 /* ─── Theme utility classes ─── */
-.t-bg         { background-color: var(--eg-bg); }
-.t-bg-surface { background-color: var(--eg-surface); }
-.t-bg-low     { background-color: var(--eg-surface-low); }
-.t-bg-high    { background-color: var(--eg-surface-high); }
-.t-fg         { color: var(--eg-fg); }
-.t-fg-muted   { color: var(--eg-fg); opacity: 0.6; }
-.t-primary    { color: var(--eg-primary); }
-.t-bg-primary { background-color: var(--eg-primary); }
-.t-border     { border-color: var(--eg-outline-var); }
+.t-bg                   { background-color: var(--eg-bg); }
+.t-bg-surface           { background-color: var(--eg-surface-container); }
+.t-bg-surface-low       { background-color: var(--eg-surface-container-low); }
+.t-bg-surface-high      { background-color: var(--eg-surface-container-high); }
+.t-bg-surface-highest   { background-color: var(--eg-surface-container-highest); }
+.t-bg-primary-container { background-color: var(--eg-primary-container); }
+.t-fg                   { color: var(--eg-fg); }
+.t-fg-muted             { color: var(--eg-fg); opacity: 0.6; }
+.t-primary              { color: var(--eg-primary); }
+.t-on-primary-container { color: var(--eg-on-primary-container); }
+.t-bg-primary           { background-color: var(--eg-primary); }
+.t-border               { border-color: var(--eg-outline-var); }
 
 /* ─── Base styles ─── */
 body {

@@ -25,6 +25,10 @@ const playUrl = 'https://play.google.com/store/apps/details?id=com.eguwallet.wal
     <!-- HERO -->
     <section id="download" class="pt-10 sm:pt-16 md:pt-24 pb-10 sm:pb-12 px-4 sm:px-6">
       <div class="max-w-4xl mx-auto flex flex-col items-center text-center gap-4 sm:gap-6">
+
+        <!-- Large shield logo -->
+        <img src="/assets/logo-shield.svg" alt="EguWallet" class="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24" />
+
         <div class="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 text-[10px] sm:text-[12px] font-semibold uppercase tracking-wider t-primary">
           <span>{t.hero.badge1}</span>
           <span class="t-fg opacity-20">·</span>
@@ -97,7 +101,7 @@ const playUrl = 'https://play.google.com/store/apps/details?id=com.eguwallet.wal
                 { step: t.privacy.example1Step4, ok: false },
               ].map(({ step, ok }) => (
                 <div class="flex items-start gap-2.5 sm:gap-3 text-[13px] sm:text-[14px]">
-                  <span class={`w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-[10px] font-bold ${ok ? 'bg-teal-100 text-teal-700' : 'bg-red-100 text-red-600'}`}>
+                  <span class={`w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-[10px] font-bold ${ok ? 't-bg-primary-container t-on-primary-container' : 't-bg-surface-highest t-fg opacity-45'}`}>
                     {ok ? '✓' : '✗'}
                   </span>
                   <span class="t-fg opacity-65">{step}</span>
@@ -111,7 +115,7 @@ const playUrl = 'https://play.google.com/store/apps/details?id=com.eguwallet.wal
             <div class="flex flex-col gap-2.5 sm:gap-3">
               {[t.privacy.legal1, t.privacy.legal2, t.privacy.legal3].map((text) => (
                 <div class="flex items-start gap-2.5 sm:gap-3 text-[13px] sm:text-[14px]">
-                  <span class="w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-[10px] font-bold bg-slate-100 text-slate-600">§</span>
+                  <span class="w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-[10px] font-bold t-bg-surface-high t-fg opacity-60">§</span>
                   <span class="t-fg opacity-65 leading-relaxed">{text}</span>
                 </div>
               ))}
@@ -138,8 +142,8 @@ const playUrl = 'https://play.google.com/store/apps/details?id=com.eguwallet.wal
                   <h3 class="font-semibold text-[13px] sm:text-[14px] t-fg">{title}</h3>
                   <span class={`text-[9px] sm:text-[10px] px-1.5 sm:px-2 py-0.5 rounded-full font-semibold uppercase tracking-wider ${
                     status === 'available'
-                      ? 'bg-teal-100 text-teal-700'
-                      : 't-bg-high t-fg opacity-45'
+                      ? 't-bg-primary-container t-on-primary-container'
+                      : 't-bg-surface-high t-fg opacity-45'
                   }`}>
                     {status === 'available' ? t.documents.statusAvailable : t.documents.statusSoon}
                   </span>
@@ -233,7 +237,7 @@ const playUrl = 'https://play.google.com/store/apps/details?id=com.eguwallet.wal
         <div class="flex flex-col gap-0 border t-border rounded-lg overflow-hidden">
           {t.faq.items.map(({ q, a }, i) => (
             <details class="group t-bg-surface">
-              {i > 0 && <div class="h-px t-bg-high"></div>}
+              {i > 0 && <div class="h-px t-bg-surface-high"></div>}
               <summary class="px-3.5 sm:px-5 py-3.5 sm:py-4 font-medium text-[13px] sm:text-[14px] cursor-pointer list-none flex items-center justify-between gap-3 sm:gap-4 select-none t-fg">
                 <span>{q}</span>
                 <svg class="w-4 h-4 flex-shrink-0 opacity-30 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg>
@@ -262,7 +266,7 @@ const playUrl = 'https://play.google.com/store/apps/details?id=com.eguwallet.wal
     </section>
 
     <!-- FOOTER -->
-    <footer class="py-8 sm:py-10 px-4 sm:px-6 border-t t-border">
+    <footer class="py-8 sm:py-10 px-4 sm:px-6 t-bg-surface-high">
       <div class="max-w-4xl mx-auto">
         <div class="flex flex-col gap-6 sm:flex-row sm:justify-between sm:gap-8 mb-6 sm:mb-8">
           <div>
