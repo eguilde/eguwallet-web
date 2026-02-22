@@ -1,7 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
 import Navbar from '../../components/Navbar.astro';
-import ShieldLogo from '../../components/ShieldLogo.astro';
 import { getTranslations } from '../../i18n/index';
 
 export async function getStaticPaths() {
@@ -14,118 +13,142 @@ export async function getStaticPaths() {
 
 const { lang } = Astro.params;
 const t = await getTranslations(lang);
-
 const faqItems = t.faq.items.map(({ q, a }) => ({ q, a }));
 
-const title = `EguWallet — ${t.hero.title}`;
-const description = t.hero.subtitle;
+const playBadge = lang === 'ro' ? '/assets/google-play-badge-ro.svg' : '/assets/google-play-badge-en.svg';
 ---
-<Base lang={lang} title={title} description={description} faqItems={faqItems}>
+<Base lang={lang} title={`EguWallet — ${t.hero.title}`} description={t.hero.subtitle} faqItems={faqItems}>
   <Navbar t={t} lang={lang} />
-
   <main>
 
-    <!-- HERO -->
-    <section id="hero" class="relative overflow-hidden py-20 md:py-32 px-4" style="background:var(--surface-low)">
-      <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
-        <div class="flex-1 flex flex-col gap-6">
-          <!-- Badges -->
-          <div class="flex flex-wrap gap-2">
-            <span class="px-3 py-1 rounded-full text-xs font-semibold" style="background:var(--primary);color:#fff">{t.hero.badge1}</span>
-            <span class="px-3 py-1 rounded-full text-xs font-semibold" style="background:var(--surface-high);color:var(--fg);border:1px solid var(--outline-var)">{t.hero.badge2}</span>
-            <span class="px-3 py-1 rounded-full text-xs font-semibold" style="background:#2E7D32;color:#fff">{t.hero.badge3}</span>
-          </div>
-          <h1 class="text-3xl md:text-5xl font-bold leading-tight" style="color:var(--fg)">{t.hero.title}</h1>
-          <p class="text-lg opacity-80 leading-relaxed" style="color:var(--fg)">{t.hero.subtitle}</p>
+    <!-- ═══════════════════════ HERO ═══════════════════════ -->
+    <section class="relative overflow-hidden">
+      <!-- Gradient background -->
+      <div class="absolute inset-0 bg-gradient-to-br from-[#0a0520] via-[#1a0a35] to-[#0d1b3e]"></div>
+      <div class="absolute top-0 right-0 w-[600px] h-[600px] rounded-full bg-[#C41E3A] opacity-10 blur-[120px] -translate-y-1/2 translate-x-1/3"></div>
+      <div class="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full bg-[#003399] opacity-15 blur-[100px] translate-y-1/2 -translate-x-1/3"></div>
 
-          <!-- Download buttons -->
-          <div class="flex flex-col sm:flex-row gap-4 mt-2">
-            <a
-              href="https://play.google.com/store/apps/details?id=com.eguwallet.wallet"
-              target="_blank" rel="noopener"
-              class="flex items-center gap-3 px-5 py-3 rounded-xl font-semibold text-sm transition-opacity hover:opacity-90"
-              style="background:#000;color:#fff"
-            >
-              <span class="text-2xl">▶</span>
-              <span>{t.hero.downloadAndroid}</span>
-            </a>
-            <div
-              class="flex items-center gap-3 px-5 py-3 rounded-xl font-semibold text-sm opacity-50 cursor-not-allowed"
-              style="background:var(--surface-high);color:var(--fg);border:1px solid var(--outline-var)"
-              title={t.hero.downloadIosComingSoon}
-            >
-              <span class="text-2xl"></span>
-              <span>{t.hero.downloadIos}</span>
-              <span class="text-xs px-2 py-0.5 rounded-full" style="background:var(--tertiary);color:#fff">{t.hero.downloadIosComingSoon}</span>
+      <div class="relative max-w-6xl mx-auto px-6 py-24 md:py-36 flex flex-col lg:flex-row items-center gap-16">
+        <!-- Left: copy -->
+        <div class="flex-1 flex flex-col gap-8 text-center lg:text-left">
+          <!-- Trust badges -->
+          <div class="flex flex-wrap justify-center lg:justify-start gap-3">
+            <span class="px-4 py-1.5 rounded-full text-xs font-semibold tracking-wide bg-white/10 text-white/90 border border-white/20 backdrop-blur-sm">{t.hero.badge1}</span>
+            <span class="px-4 py-1.5 rounded-full text-xs font-semibold tracking-wide bg-white/10 text-white/90 border border-white/20 backdrop-blur-sm">{t.hero.badge2}</span>
+            <span class="px-4 py-1.5 rounded-full text-xs font-semibold tracking-wide bg-emerald-500/20 text-emerald-300 border border-emerald-400/30 backdrop-blur-sm">{t.hero.badge3}</span>
+          </div>
+
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-[1.1] tracking-tight text-white">
+            {t.hero.title}
+          </h1>
+
+          <p class="text-lg md:text-xl text-white/70 leading-relaxed max-w-xl mx-auto lg:mx-0">
+            {t.hero.subtitle}
+          </p>
+
+          <!-- Download row: official badges + QR -->
+          <div class="flex flex-col sm:flex-row items-center gap-6 mt-4">
+            <div class="flex flex-col gap-3">
+              <!-- Google Play official badge -->
+              <a href="https://play.google.com/store/apps/details?id=com.eguwallet.wallet" target="_blank" rel="noopener">
+                <img src={playBadge} alt={t.hero.downloadAndroid} width="200" height="60" class="h-[60px] w-auto" />
+              </a>
+              <!-- App Store coming soon -->
+              <div class="flex items-center gap-3 px-4 py-2 rounded-xl bg-white/5 border border-white/10">
+                <svg class="w-7 h-7 text-white/40" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                <div class="flex flex-col">
+                  <span class="text-[10px] text-white/40 uppercase tracking-wider">{t.hero.downloadIosComingSoon}</span>
+                  <span class="text-sm text-white/60 font-medium">App Store</span>
+                </div>
+              </div>
+            </div>
+            <!-- QR Code -->
+            <div class="flex flex-col items-center gap-2">
+              <div class="p-3 bg-white rounded-2xl shadow-xl">
+                <img src="/assets/qr-download.png" alt="QR Code" width="120" height="120" class="w-[120px] h-[120px]" />
+              </div>
+              <span class="text-xs text-white/40">Scan to download</span>
             </div>
           </div>
         </div>
 
-        <!-- Shield logo -->
-        <div class="flex-shrink-0 flex flex-col items-center gap-4">
-          <ShieldLogo size={180} />
+        <!-- Right: brand mark -->
+        <div class="flex-shrink-0 hidden lg:flex flex-col items-center gap-6">
+          <div class="relative">
+            <div class="absolute inset-0 bg-[#C41E3A] rounded-full blur-[60px] opacity-30"></div>
+            <div class="relative w-48 h-48 rounded-[2.5rem] bg-gradient-to-br from-[#C41E3A] to-[#8B0010] flex items-center justify-center shadow-2xl">
+              <span class="text-white font-black text-6xl tracking-tighter">W</span>
+            </div>
+          </div>
           <div class="text-center">
-            <div class="text-2xl font-bold" style="color:var(--primary)">EguWallet</div>
-            <div class="text-sm opacity-60" style="color:var(--fg)">EUDI Wallet · eIDAS 2.0</div>
+            <div class="text-3xl font-black text-white tracking-tight">EguWallet</div>
+            <div class="text-sm text-white/40 font-medium tracking-widest uppercase mt-1">EUDI Wallet · eIDAS 2.0</div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- WHAT IS IT -->
-    <section id="what" class="py-20 px-4">
-      <div class="max-w-5xl mx-auto flex flex-col gap-12">
-        <h2 class="text-3xl md:text-4xl font-bold text-center" style="color:var(--fg)">{t.what.heading}</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <!-- ═══════════════════════ WHAT IS IT ═══════════════════════ -->
+    <section id="what" class="py-24 px-6" style="background:var(--bg)">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+          <span class="text-xs font-bold uppercase tracking-[0.2em] mb-4 block" style="color:var(--primary)">EUDI Wallet</span>
+          <h2 class="text-3xl md:text-4xl font-bold" style="color:var(--fg)">{t.what.heading}</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           {[
             { title: t.what.card1Title, body: t.what.card1Body, icon: '⚖️' },
-            { title: t.what.card2Title, body: t.what.card2Body, icon: '🪪' },
+            { title: t.what.card2Title, body: t.what.card2Body, icon: '🛡️' },
             { title: t.what.card3Title, body: t.what.card3Body, icon: '🏛️' },
           ].map(({ title, body, icon }) => (
-            <div class="flex flex-col gap-4 p-6 rounded-2xl" style="background:var(--surface);border:1px solid var(--outline-var)">
+            <div class="group flex flex-col gap-5 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-1 hover:shadow-lg" style="background:var(--surface);border:1px solid var(--outline-var)">
               <div class="text-4xl">{icon}</div>
-              <h3 class="font-bold text-lg" style="color:var(--fg)">{title}</h3>
-              <p class="text-sm leading-relaxed opacity-80" style="color:var(--fg)">{body}</p>
+              <h3 class="font-bold text-xl" style="color:var(--fg)">{title}</h3>
+              <p class="text-sm leading-relaxed opacity-75" style="color:var(--fg)">{body}</p>
             </div>
           ))}
         </div>
       </div>
     </section>
 
-    <!-- PRIVACY -->
-    <section id="privacy" class="py-20 px-4" style="background:var(--surface-low)">
-      <div class="max-w-5xl mx-auto flex flex-col gap-10">
-        <div class="flex flex-col gap-3 text-center">
+    <!-- ═══════════════════════ PRIVACY ═══════════════════════ -->
+    <section id="privacy" class="py-24 px-6" style="background:var(--surface-low)">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+          <span class="text-xs font-bold uppercase tracking-[0.2em] mb-4 block" style="color:var(--primary)">Selective Disclosure</span>
           <h2 class="text-3xl md:text-4xl font-bold" style="color:var(--fg)">{t.privacy.heading}</h2>
-          <p class="text-lg font-medium" style="color:var(--primary)">{t.privacy.subheading}</p>
-          <p class="max-w-3xl mx-auto opacity-80 leading-relaxed" style="color:var(--fg)">{t.privacy.body}</p>
+          <p class="mt-4 text-lg max-w-3xl mx-auto" style="color:var(--primary)">{t.privacy.subheading}</p>
         </div>
 
+        <p class="text-center max-w-3xl mx-auto mb-12 leading-relaxed opacity-75" style="color:var(--fg)">{t.privacy.body}</p>
+
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <!-- Selective disclosure example -->
-          <div class="flex flex-col gap-4 p-6 rounded-2xl" style="background:var(--surface);border:1px solid var(--outline-var)">
+          <div class="flex flex-col gap-5 p-8 rounded-2xl" style="background:var(--surface);border:1px solid var(--outline-var)">
             <h3 class="font-bold text-lg" style="color:var(--fg)">{t.privacy.example1Title}</h3>
-            <div class="flex flex-col gap-2">
+            <div class="flex flex-col gap-4">
               {[
-                { step: t.privacy.example1Step1, ok: true },
-                { step: t.privacy.example1Step2, ok: true },
-                { step: t.privacy.example1Step3, ok: true },
-                { step: t.privacy.example1Step4, ok: false },
-              ].map(({ step, ok }) => (
-                <div class="flex items-start gap-3 text-sm" style="color:var(--fg)">
-                  <span class="mt-0.5 flex-shrink-0">{ok ? '✅' : '🚫'}</span>
-                  <span>{step}</span>
+                { step: t.privacy.example1Step1, icon: '📱', ok: true },
+                { step: t.privacy.example1Step2, icon: '📩', ok: true },
+                { step: t.privacy.example1Step3, icon: '✅', ok: true },
+                { step: t.privacy.example1Step4, icon: '🚫', ok: false },
+              ].map(({ step, icon, ok }) => (
+                <div class="flex items-start gap-4 text-sm">
+                  <span class="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0 text-lg"
+                    style={ok ? 'background:#2E7D3220' : 'background:#BA1A1A20'}>{icon}</span>
+                  <span style="color:var(--fg)" class="pt-1">{step}</span>
                 </div>
               ))}
             </div>
           </div>
 
-          <!-- Legal basis -->
-          <div class="flex flex-col gap-4 p-6 rounded-2xl" style="background:var(--surface);border:1px solid var(--outline-var)">
+          <div class="flex flex-col gap-5 p-8 rounded-2xl" style="background:var(--surface);border:1px solid var(--outline-var)">
             <h3 class="font-bold text-lg" style="color:var(--fg)">{t.privacy.legalTitle}</h3>
-            <div class="flex flex-col gap-3">
+            <div class="flex flex-col gap-4">
               {[t.privacy.legal1, t.privacy.legal2, t.privacy.legal3].map((legal) => (
-                <p class="text-sm leading-relaxed opacity-80" style="color:var(--fg)">⚖️ {legal}</p>
+                <div class="flex items-start gap-4 text-sm">
+                  <span class="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0 text-lg" style="background:var(--surface-high)">⚖️</span>
+                  <span class="pt-1 leading-relaxed opacity-75" style="color:var(--fg)">{legal}</span>
+                </div>
               ))}
             </div>
           </div>
@@ -133,24 +156,25 @@ const description = t.hero.subtitle;
       </div>
     </section>
 
-    <!-- DOCUMENTS -->
-    <section id="documents" class="py-20 px-4">
-      <div class="max-w-5xl mx-auto flex flex-col gap-10">
-        <div class="text-center flex flex-col gap-3">
+    <!-- ═══════════════════════ DOCUMENTS ═══════════════════════ -->
+    <section id="documents" class="py-24 px-6" style="background:var(--bg)">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+          <span class="text-xs font-bold uppercase tracking-[0.2em] mb-4 block" style="color:var(--primary)">Digital Documents</span>
           <h2 class="text-3xl md:text-4xl font-bold" style="color:var(--fg)">{t.documents.heading}</h2>
-          <p class="opacity-70" style="color:var(--fg)">{t.documents.subheading}</p>
+          <p class="mt-4 opacity-60" style="color:var(--fg)">{t.documents.subheading}</p>
         </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {t.documents.items.map(({ icon, title, body, status }) => (
-            <div class="flex flex-col gap-3 p-5 rounded-2xl relative" style="background:var(--surface);border:1px solid var(--outline-var)">
-              <div class="text-3xl">{icon}</div>
-              <h3 class="font-semibold text-sm" style="color:var(--fg)">{title}</h3>
-              <p class="text-xs leading-relaxed opacity-70" style="color:var(--fg)">{body}</p>
+            <div class="flex flex-col gap-4 p-6 rounded-2xl transition-all duration-300 hover:-translate-y-1 hover:shadow-lg" style="background:var(--surface);border:1px solid var(--outline-var)">
+              <div class="w-12 h-12 rounded-xl flex items-center justify-center text-2xl" style="background:var(--surface-high)">{icon}</div>
+              <h3 class="font-semibold" style="color:var(--fg)">{title}</h3>
+              <p class="text-xs leading-relaxed opacity-65 flex-1" style="color:var(--fg)">{body}</p>
               <span
-                class="text-xs px-2 py-0.5 rounded-full font-medium self-start"
+                class="text-[11px] px-3 py-1 rounded-full font-semibold self-start uppercase tracking-wider"
                 style={status === 'available'
-                  ? 'background:#2E7D32;color:#fff'
-                  : 'background:var(--surface-high);color:var(--fg);border:1px solid var(--outline-var)'}
+                  ? 'background:#2E7D3218;color:#2E7D32;border:1px solid #2E7D3230'
+                  : 'background:var(--surface-high);color:var(--fg);border:1px solid var(--outline-var);opacity:0.6'}
               >
                 {status === 'available' ? t.documents.statusAvailable : t.documents.statusSoon}
               </span>
@@ -160,31 +184,30 @@ const description = t.hero.subtitle;
       </div>
     </section>
 
-    <!-- USED TODAY -->
-    <section id="usedtoday" class="py-20 px-4" style="background:var(--surface-low)">
-      <div class="max-w-5xl mx-auto flex flex-col gap-10">
-        <div class="text-center flex flex-col gap-3">
+    <!-- ═══════════════════════ WHERE IT WORKS ═══════════════════════ -->
+    <section id="usedtoday" class="py-24 px-6" style="background:var(--surface-low)">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+          <span class="text-xs font-bold uppercase tracking-[0.2em] mb-4 block" style="color:var(--primary)">In Production</span>
           <h2 class="text-3xl md:text-4xl font-bold" style="color:var(--fg)">{t.usedToday.heading}</h2>
-          <p class="opacity-70" style="color:var(--fg)">{t.usedToday.subheading}</p>
+          <p class="mt-4 opacity-60" style="color:var(--fg)">{t.usedToday.subheading}</p>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {[
             { name: t.usedToday.app1Name, url: t.usedToday.app1Url, body: t.usedToday.app1Body },
             { name: t.usedToday.app2Name, url: t.usedToday.app2Url, body: t.usedToday.app2Body },
           ].map(({ name, url, body }) => (
-            <div class="flex flex-col gap-4 p-6 rounded-2xl" style="background:var(--surface);border:1px solid var(--outline-var)">
-              <div class="flex items-center gap-3">
-                <span class="text-3xl">🏛️</span>
+            <div class="flex flex-col gap-5 p-8 rounded-2xl" style="background:var(--surface);border:1px solid var(--outline-var)">
+              <div class="flex items-center gap-4">
+                <div class="w-12 h-12 rounded-xl flex items-center justify-center text-xl" style="background:var(--primary);color:#fff">🏛</div>
                 <h3 class="font-bold text-lg" style="color:var(--fg)">{name}</h3>
               </div>
-              <p class="text-sm leading-relaxed opacity-80" style="color:var(--fg)">{body}</p>
-              <a
-                href={url}
-                target="_blank" rel="noopener"
-                class="flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold self-start transition-opacity hover:opacity-80"
-                style="background:var(--primary);color:#fff"
-              >
-                {t.usedToday.badgeText} ↗
+              <p class="text-sm leading-relaxed opacity-70" style="color:var(--fg)">{body}</p>
+              <a href={url} target="_blank" rel="noopener"
+                class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold self-start transition-all duration-200 hover:shadow-md"
+                style="background:var(--primary);color:#fff">
+                {t.usedToday.badgeText}
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
               </a>
             </div>
           ))}
@@ -192,102 +215,131 @@ const description = t.hero.subtitle;
       </div>
     </section>
 
-    <!-- FUTURE USE CASES -->
-    <section id="future" class="py-20 px-4">
-      <div class="max-w-5xl mx-auto flex flex-col gap-10">
-        <div class="text-center flex flex-col gap-3">
+    <!-- ═══════════════════════ FUTURE ═══════════════════════ -->
+    <section id="future" class="py-24 px-6" style="background:var(--bg)">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+          <span class="text-xs font-bold uppercase tracking-[0.2em] mb-4 block" style="color:var(--primary)">Roadmap</span>
           <h2 class="text-3xl md:text-4xl font-bold" style="color:var(--fg)">{t.future.heading}</h2>
-          <p class="opacity-70" style="color:var(--fg)">{t.future.subheading}</p>
+          <p class="mt-4 opacity-60" style="color:var(--fg)">{t.future.subheading}</p>
         </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {t.future.items.map(({ icon, title, body }) => (
-            <div class="flex flex-col gap-3 p-6 rounded-2xl" style="background:var(--surface);border:1px solid var(--outline-var)">
-              <div class="text-4xl">{icon}</div>
+            <div class="flex flex-col gap-4 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-1 hover:shadow-lg" style="background:var(--surface);border:1px solid var(--outline-var)">
+              <div class="w-12 h-12 rounded-xl flex items-center justify-center text-2xl" style="background:var(--surface-high)">{icon}</div>
               <h3 class="font-bold" style="color:var(--fg)">{title}</h3>
-              <p class="text-sm leading-relaxed opacity-80" style="color:var(--fg)">{body}</p>
+              <p class="text-sm leading-relaxed opacity-70" style="color:var(--fg)">{body}</p>
             </div>
           ))}
         </div>
       </div>
     </section>
 
-    <!-- HOW IT WORKS -->
-    <section id="how" class="py-20 px-4" style="background:var(--surface-low)">
-      <div class="max-w-4xl mx-auto flex flex-col gap-10">
-        <h2 class="text-3xl md:text-4xl font-bold text-center" style="color:var(--fg)">{t.howItWorks.heading}</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <!-- ═══════════════════════ HOW IT WORKS ═══════════════════════ -->
+    <section id="how" class="py-24 px-6" style="background:var(--surface-low)">
+      <div class="max-w-5xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold" style="color:var(--fg)">{t.howItWorks.heading}</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           {[
             { title: t.howItWorks.step1Title, body: t.howItWorks.step1Body, n: '1' },
             { title: t.howItWorks.step2Title, body: t.howItWorks.step2Body, n: '2' },
             { title: t.howItWorks.step3Title, body: t.howItWorks.step3Body, n: '3' },
           ].map(({ title, body, n }) => (
-            <div class="flex flex-col gap-4 p-6 rounded-2xl text-center" style="background:var(--surface);border:1px solid var(--outline-var)">
-              <div
-                class="w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold mx-auto"
-                style="background:var(--primary);color:#fff"
-              >{n}</div>
-              <h3 class="font-bold" style="color:var(--fg)">{title}</h3>
-              <p class="text-sm leading-relaxed opacity-80" style="color:var(--fg)">{body}</p>
+            <div class="flex flex-col gap-5 p-8 rounded-2xl text-center" style="background:var(--surface);border:1px solid var(--outline-var)">
+              <div class="w-14 h-14 rounded-2xl flex items-center justify-center text-xl font-black mx-auto shadow-lg" style="background:var(--primary);color:#fff">{n}</div>
+              <h3 class="font-bold text-lg" style="color:var(--fg)">{title}</h3>
+              <p class="text-sm leading-relaxed opacity-70" style="color:var(--fg)">{body}</p>
             </div>
           ))}
         </div>
       </div>
     </section>
 
-    <!-- FAQ -->
-    <section id="faq" class="py-20 px-4">
-      <div class="max-w-3xl mx-auto flex flex-col gap-8">
-        <h2 class="text-3xl md:text-4xl font-bold text-center" style="color:var(--fg)">{t.faq.heading}</h2>
-        <div class="flex flex-col gap-3">
+    <!-- ═══════════════════════ FAQ ═══════════════════════ -->
+    <section id="faq" class="py-24 px-6" style="background:var(--bg)">
+      <div class="max-w-3xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold" style="color:var(--fg)">{t.faq.heading}</h2>
+        </div>
+        <div class="flex flex-col gap-4">
           {t.faq.items.map(({ q, a }) => (
-            <details class="rounded-2xl overflow-hidden" style="background:var(--surface);border:1px solid var(--outline-var)">
-              <summary
-                class="px-6 py-4 font-semibold cursor-pointer list-none flex items-center justify-between gap-4"
-                style="color:var(--fg)"
-              >
+            <details class="group rounded-2xl overflow-hidden transition-all" style="background:var(--surface);border:1px solid var(--outline-var)">
+              <summary class="px-8 py-5 font-semibold cursor-pointer list-none flex items-center justify-between gap-6 select-none" style="color:var(--fg)">
                 <span>{q}</span>
-                <span class="text-lg flex-shrink-0 opacity-60">▾</span>
+                <svg class="w-5 h-5 flex-shrink-0 opacity-40 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg>
               </summary>
-              <div class="px-6 pb-5 pt-1 text-sm leading-relaxed opacity-80" style="color:var(--fg)">{a}</div>
+              <div class="px-8 pb-6 text-sm leading-relaxed opacity-70" style="color:var(--fg)">{a}</div>
             </details>
           ))}
         </div>
       </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer class="py-12 px-4" style="background:var(--surface-low);border-top:1px solid var(--outline-var)">
-      <div class="max-w-5xl mx-auto flex flex-col gap-8">
-        <div class="flex flex-col md:flex-row items-center md:items-start justify-between gap-8">
+    <!-- ═══════════════════════ DOWNLOAD CTA ═══════════════════════ -->
+    <section class="py-20 px-6 relative overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-r from-[#C41E3A] to-[#8B0010]"></div>
+      <div class="relative max-w-4xl mx-auto text-center flex flex-col items-center gap-8">
+        <h2 class="text-3xl md:text-4xl font-bold text-white">{t.nav.download} EguWallet</h2>
+        <p class="text-lg text-white/80 max-w-xl">{t.hero.subtitle}</p>
+        <div class="flex flex-col sm:flex-row items-center gap-6">
+          <a href="https://play.google.com/store/apps/details?id=com.eguwallet.wallet" target="_blank" rel="noopener">
+            <img src={playBadge} alt={t.hero.downloadAndroid} width="200" height="60" class="h-[60px] w-auto" />
+          </a>
+          <div class="p-2 bg-white rounded-xl">
+            <img src="/assets/qr-download.png" alt="QR Code" width="80" height="80" class="w-20 h-20" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+    <footer class="py-16 px-6" style="background:var(--surface-low);border-top:1px solid var(--outline-var)">
+      <div class="max-w-6xl mx-auto">
+        <div class="flex flex-col md:flex-row justify-between gap-12 mb-12">
           <!-- Brand -->
-          <div class="flex flex-col items-center md:items-start gap-3">
-            <ShieldLogo size={48} />
-            <div class="font-bold text-xl" style="color:var(--primary)">EguWallet</div>
-            <div class="text-sm opacity-60 text-center md:text-left" style="color:var(--fg)">{t.footer.tagline}</div>
-            <div class="text-xs opacity-50" style="color:var(--fg)">{t.footer.provider}</div>
+          <div class="flex flex-col gap-3">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-[#C41E3A] to-[#8B0010] flex items-center justify-center">
+                <span class="text-white font-black text-lg">W</span>
+              </div>
+              <span class="text-xl font-black" style="color:var(--primary)">EguWallet</span>
+            </div>
+            <p class="text-sm opacity-50 max-w-xs" style="color:var(--fg)">{t.footer.tagline}</p>
+            <p class="text-xs opacity-40" style="color:var(--fg)">{t.footer.provider}</p>
           </div>
 
           <!-- Links -->
-          <div class="flex flex-wrap justify-center md:justify-end gap-6 text-sm">
-            <a href={`/${lang}/privacy/`} style="color:var(--fg)" class="opacity-70 hover:opacity-100 transition-opacity">{t.footer.privacy}</a>
-            <a href={`/${lang}/terms/`} style="color:var(--fg)" class="opacity-70 hover:opacity-100 transition-opacity">{t.footer.legal}</a>
-            <a href="mailto:contact@eguwallet.eu" style="color:var(--fg)" class="opacity-70 hover:opacity-100 transition-opacity">{t.footer.contact}</a>
+          <div class="flex flex-wrap gap-8 text-sm">
+            <div class="flex flex-col gap-3">
+              <span class="text-xs font-bold uppercase tracking-wider opacity-40" style="color:var(--fg)">Legal</span>
+              <a href={`/${lang}/privacy/`} class="opacity-60 hover:opacity-100 transition-opacity" style="color:var(--fg)">{t.footer.privacy}</a>
+              <a href={`/${lang}/terms/`} class="opacity-60 hover:opacity-100 transition-opacity" style="color:var(--fg)">{t.footer.legal}</a>
+            </div>
+            <div class="flex flex-col gap-3">
+              <span class="text-xs font-bold uppercase tracking-wider opacity-40" style="color:var(--fg)">Links</span>
+              <a href="mailto:contact@eguwallet.eu" class="opacity-60 hover:opacity-100 transition-opacity" style="color:var(--fg)">{t.footer.contact}</a>
+              <a href="https://github.com/eguilde" target="_blank" rel="noopener" class="opacity-60 hover:opacity-100 transition-opacity" style="color:var(--fg)">GitHub</a>
+            </div>
           </div>
         </div>
 
-        <!-- EU compliance badges -->
-        <div class="flex flex-wrap justify-center gap-4 text-xs">
-          <span class="px-3 py-1.5 rounded-full" style="background:var(--surface);border:1px solid var(--outline-var);color:var(--fg)">🇪🇺 {t.footer.euCompliance}</span>
-          <span class="px-3 py-1.5 rounded-full" style="background:var(--surface);border:1px solid var(--outline-var);color:var(--fg)">🔒 GDPR Compliant</span>
-          <span class="px-3 py-1.5 rounded-full" style="background:var(--surface);border:1px solid var(--outline-var);color:var(--fg)">📋 ARF 2.5+</span>
-          <span class="px-3 py-1.5 rounded-full" style="background:var(--surface);border:1px solid var(--outline-var);color:var(--fg)">🔐 OpenID4VCI</span>
+        <!-- Compliance strip -->
+        <div class="flex flex-wrap justify-center gap-3 mb-8 text-[11px]">
+          <span class="px-3 py-1.5 rounded-full font-medium" style="background:var(--surface);border:1px solid var(--outline-var);color:var(--fg)">🇪🇺 eIDAS 2.0</span>
+          <span class="px-3 py-1.5 rounded-full font-medium" style="background:var(--surface);border:1px solid var(--outline-var);color:var(--fg)">GDPR</span>
+          <span class="px-3 py-1.5 rounded-full font-medium" style="background:var(--surface);border:1px solid var(--outline-var);color:var(--fg)">ARF 2.5+</span>
+          <span class="px-3 py-1.5 rounded-full font-medium" style="background:var(--surface);border:1px solid var(--outline-var);color:var(--fg)">OpenID4VCI</span>
+          <span class="px-3 py-1.5 rounded-full font-medium" style="background:var(--surface);border:1px solid var(--outline-var);color:var(--fg)">SD-JWT</span>
+          <span class="px-3 py-1.5 rounded-full font-medium" style="background:var(--surface);border:1px solid var(--outline-var);color:var(--fg)">ISO 18013-5</span>
         </div>
 
         {t.isMachineTranslated && (
-          <p class="text-xs text-center opacity-50" style="color:var(--fg)">{t.footer.machineTranslatedNotice}</p>
+          <p class="text-xs text-center opacity-40 mb-4" style="color:var(--fg)">{t.footer.machineTranslatedNotice}</p>
         )}
 
-        <div class="text-center text-xs opacity-40" style="color:var(--fg)">{t.footer.rights}</div>
+        <div class="text-center text-xs opacity-30" style="color:var(--fg)">{t.footer.rights}</div>
       </div>
     </footer>
 
