@@ -29,7 +29,7 @@
     "card2Title": "Ce este un EUDI Wallet?",
     "card2Body": "Un Portofel European de Identitate Digitală (EUDI) este o aplicație sigură care stochează documente de identitate digitale verificabile: buletin, pașaport, permis auto, documente de vehicul și multe altele — toate sub controlul tău exclusiv.",
     "card3Title": "Cine furnizează EguWallet?",
-    "card3Body": "EguWallet este dezvoltat de IT Eguilde SRL, furnizor autorizat de identitate digitală. Aplicația respectă integral Arhitectura de Referință EUDI (ARF 2.5+), standardele OpenID4VCI și OpenID4VP."
+    "card3Body": "EguWallet este dezvoltat de IT Eguilde SRL, furnizor de identitate digitală. Aplicația respectă integral Arhitectura de Referință EUDI (ARF 2.5+), standardele OpenID4VCI și OpenID4VP."
   },
   "privacy": {
     "heading": "Datele tale, controlul tău",
