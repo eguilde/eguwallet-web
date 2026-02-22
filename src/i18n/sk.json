@@ -41,8 +41,8 @@
     "example1Step3": "You approve: transmit ONLY «age ≥ 18: YES»",
     "example1Step4": "Merchant does NOT receive: name, ID number, address, photo",
     "legalTitle": "Legal basis",
-    "legal1": "GDPR Art. 5(1)(c) — data minimisation principle: processing is limited to what is strictly necessary.",
-    "legal2": "Reg. (EU) 2024/1183 — selective presentation is a citizen right, not an optional feature.",
+    "legal1": "<a href=\"https://eur-lex.europa.eu/eli/reg/2016/679/oj\" target=\"_blank\" rel=\"noopener\" style=\"text-decoration:underline;\">GDPR Art. 5(1)(c)</a> — data minimisation principle: processing is limited to what is strictly necessary.",
+    "legal2": "<a href=\"https://eur-lex.europa.eu/eli/reg/2024/1183/oj\" target=\"_blank\" rel=\"noopener\" style=\"text-decoration:underline;\">Reg. (EU) 2024/1183</a> — selective presentation is a citizen right, not an optional feature.",
     "legal3": "No presentation is stored by the wallet or any third party — every disclosure is ephemeral."
   },
   "documents": {

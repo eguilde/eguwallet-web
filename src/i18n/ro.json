@@ -41,8 +41,8 @@
     "example1Step3": "Tu aprobi: transmite DOAR «vârstă ≥ 18: DA»",
     "example1Step4": "Comerciantul nu primește: nume, CNP, adresă, fotografie",
     "legalTitle": "Baza juridică",
-    "legal1": "GDPR Art. 5(1)(c) — principiul minimizării datelor: prelucrarea datelor se limitează la strictul necesar.",
-    "legal2": "Reg. (UE) 2024/1183 — prezentarea selectivă este un drept al cetățeanului, nu o opțiune opțională.",
+    "legal1": "<a href=\"https://eur-lex.europa.eu/eli/reg/2016/679/oj\" target=\"_blank\" rel=\"noopener\" style=\"text-decoration:underline;\">GDPR Art. 5(1)(c)</a> — principiul minimizării datelor: prelucrarea datelor se limitează la strictul necesar.",
+    "legal2": "<a href=\"https://eur-lex.europa.eu/eli/reg/2024/1183/oj\" target=\"_blank\" rel=\"noopener\" style=\"text-decoration:underline;\">Reg. (UE) 2024/1183</a> — prezentarea selectivă este un drept al cetățeanului, nu o opțiune opțională.",
     "legal3": "Nicio prezentare nu este stocată de portofel sau de parte terță — fiecare dezvăluire este efemeră."
   },
   "documents": {

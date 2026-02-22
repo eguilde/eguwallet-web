@@ -116,7 +116,7 @@ const playUrl = 'https://play.google.com/store/apps/details?id=com.eguwallet.wal
               {[t.privacy.legal1, t.privacy.legal2, t.privacy.legal3].map((text) => (
                 <div class="flex items-start gap-2.5 sm:gap-3 text-[13px] sm:text-[14px]">
                   <span class="w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-[10px] font-bold t-bg-surface-high t-fg opacity-60">§</span>
-                  <span class="t-fg opacity-65 leading-relaxed">{text}</span>
+                  <span class="t-fg opacity-65 leading-relaxed" set:html={text} />
                 </div>
               ))}
             </div>
