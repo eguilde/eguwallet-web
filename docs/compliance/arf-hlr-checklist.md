@@ -193,7 +193,7 @@
 | CAB-02 | Certification checks conformance to EUDIW ARF requirements | ✅ | `eguwallet-certification/src/compliance/compliance-checker.service.ts` | 19 automated compliance checks covering: WUA format, cnf claim, DCQL, SD-JWT format, KB-JWT, status list, proximity protocol, HAIP, pseudonyms, selective disclosure, LoA, DPoP, audit trail, PID attrs, mdoc, WSCD attestation, eIDAS metadata, data portability, trust list. Generates PDF report |
 | CAB-03a | CAB issues Wallet Provider certification document | ✅ | `eguwallet-certification/src/certificates/wp-cert.service.ts` | `WpCertService.issueCertificate()` generates signed PDF + JSON `wallet_provider_certification` record; `GET /api/cert/wp/:walletProviderId` endpoint present |
 | CAB-03b | CAB issues Wallet Instance (WUA) certification | ✅ | `eguwallet-certification/src/services/wua-cert.service.ts` (commit 02a3303) | **FIXED 2026-02-24**: `WuaCertService.issueWuaCertification()` validates WUA JWT (`cnf.jwk` required, `exp` checked), security level, and that wallet provider has active certification. Issues `certifications` record with `entity_type=wallet_instance`. Returns `certificationNumber` + `certificationToken`. Registered in `CertificationModule`. |
-| CAB-04 | CAB audit template covers ETSI EN 319 403 requirements | ✅ | `eguwallet-certification/src/services/compliance-checklist.service.ts` (commit ab7ebd3) | **FIXED 2026-02-24**: `getETSI403Template()` expanded from 3 to 27 checklist items covering: §5.2 independence/impartiality (3 items), §5.3 confidentiality (2), §5.4 liability (2), §5.5 competence (3), §6.1 planning (2), §6.2 document review (2), §6.3 on-site assessment (3), §6.4 report (2), §7 appeals (1), Annex A eIDAS 2.0 EUDI (3). |
+| CAB-04 | CAB audit template covers ETSI EN 319 403 requirements | ✅ | `eguwallet-certification/src/services/compliance-checklist.service.ts` (commit ab7ebd3); `eguwallet-certification/src/services/conformance-test.service.ts` | **FIXED 2026-02-24**: `getETSI403Template()` expanded from 3 to 27 checklist items covering: §5.2 independence/impartiality (3 items), §5.3 confidentiality (2), §5.4 liability (2), §5.5 competence (3), §6.1 planning (2), §6.2 document review (2), §6.3 on-site assessment (3), §6.4 report (2), §7 appeals (1), Annex A eIDAS 2.0 EUDI (3). **Automated via `ConformanceTestService` in eguwallet-certification (cron every 6h, 4 suites: metadata, OID4VCI, OID4VP, x509).** |
 
 ---
 
@@ -254,7 +254,7 @@
 | 12 | **LOTL certificate chain validation missing** (TF-03) | eguwallet-lotl | ETSI TS 119 612 | Medium — add recursive chain validation + OCSP/CRL check at parse time |
 | 13 | **QTSP keys in software, not HSM** (QS-06) | eguwallet-qtsp | ETSI EN 319 401 §7.5 | High (production blocker) — integrate PKCS#11 or cloud HSM |
 | 14 | **Backup integrity is password-only — no WP digital signature** (DP-02) | eguwallet-wallet-provider | CIR 2024/2979 | Medium — wrap encrypted payload in WP-signed JWT |
-| 15 | **ETSI EN 319 403 audit template is skeletal (3 items)** (CAB-04) | eguwallet-certification | ETSI EN 319 403 | Medium — expand to cover 100+ checklist items |
+| 15 | ✅ RESOLVED — **ETSI EN 319 403 audit template + automated conformance testing** (CAB-04) | eguwallet-certification | ETSI EN 319 403 | Template expanded to 27 items; `ConformanceTestService` runs 4 suites every 6h (metadata, OID4VCI, OID4VP, x509) |
 | 16 | **PID missing `age_over_NN`/`age_in_years`/`document_number`** (DGP-03) | eguwallet-dgep | ARF Annex 3 PID ruleset | Low — add optional claim generation |
 
 ### P3 — Governance / External Actions
@@ -280,4 +280,4 @@ All 7 services/components in the EUDIW stack have been audited as of 2026-02-24:
 | `eguwallet-dgep` | 2026-02-24 | DGP-03 ⚠️, DGP-04 ⚠️, DGP-05 ⚠️ (RV-02 path divergence) |
 | `eguwallet-lotl` | 2026-02-24 | TF-02 ⚠️ (XAdES-BES), TF-03 ⚠️ (chain validation) |
 | `eguwallet-qtsp` | 2026-02-24 | QS-06 ⚠️ (HSM), QS-07 ❌ (AdES — low priority) |
-| `eguwallet-certification` | 2026-02-24 | CAB-03b ❌ (WUA cert), CAB-04 ⚠️ (ETSI 403 template) |
+| `eguwallet-certification` | 2026-02-24 | None — CAB-03b ✅ (WUA cert issued), CAB-04 ✅ (ETSI 403 template + automated conformance testing) |
