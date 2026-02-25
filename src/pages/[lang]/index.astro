@@ -16,7 +16,7 @@ const t = await getTranslations(lang);
 const faqItems = t.faq.items.map(({ q, a }) => ({ q, a }));
 
 const playBadge = lang === 'ro' ? '/assets/badges/google-play-ro.svg' : '/assets/badges/google-play-en.svg';
-const playUrl = 'https://play.google.com/store/apps/details?id=com.eguwallet.wallet';
+const playUrl = 'https://play.google.com/store/apps/details?id=wallet.eguwallet.eu';
 ---
 <Base lang={lang} title={`EguWallet — ${t.hero.title}`} description={t.hero.subtitle} faqItems={faqItems}>
   <Navbar t={t} lang={lang} />
@@ -179,6 +179,48 @@ const playUrl = 'https://play.google.com/store/apps/details?id=com.eguwallet.wal
               </a>
             </div>
           ))}
+        </div>
+      </div>
+    </section>
+
+    <div class="max-w-4xl mx-auto px-4 sm:px-6"><div class="h-px t-bg-surface"></div></div>
+
+    <!-- VERIFIER / FOR INSTITUTIONS -->
+    <section id="verifier" class="py-10 sm:py-16 md:py-20 px-4 sm:px-6">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-xl sm:text-2xl md:text-3xl font-bold mb-1.5 sm:mb-2 t-fg">{t.verifier.heading}</h2>
+        <p class="text-[13px] sm:text-[15px] t-fg opacity-45 mb-6 sm:mb-8">{t.verifier.subheading}</p>
+
+        <div class="flex flex-col gap-3 md:grid md:grid-cols-2 md:gap-4">
+          <!-- Card 1 — What it is -->
+          <div class="flex gap-3 sm:gap-4 p-4 sm:p-5 rounded-lg t-bg-surface">
+            <span class="text-xl sm:text-2xl flex-shrink-0">🏛️</span>
+            <div>
+              <h3 class="font-semibold text-[14px] sm:text-base mb-1.5 t-fg">{t.verifier.card1Title}</h3>
+              <p class="text-[13px] sm:text-[14px] leading-relaxed t-fg opacity-55">{t.verifier.card1Body}</p>
+            </div>
+          </div>
+
+          <!-- Card 2 — How to start + Play badge -->
+          <div class="flex gap-3 sm:gap-4 p-4 sm:p-5 rounded-lg t-bg-surface">
+            <span class="text-xl sm:text-2xl flex-shrink-0">📲</span>
+            <div class="flex flex-col gap-3">
+              <h3 class="font-semibold text-[14px] sm:text-base mb-1 t-fg">{t.verifier.card2Title}</h3>
+              <p class="text-[13px] sm:text-[14px] leading-relaxed t-fg opacity-55">{t.verifier.card2Body}</p>
+              <a
+                href="https://play.google.com/store/apps/details?id=com.eguwallet.verifier"
+                target="_blank"
+                rel="noopener"
+                class="transition-opacity hover:opacity-80 self-start"
+              >
+                <img
+                  src={playBadge}
+                  alt={t.verifier.playBadgeAlt}
+                  class="h-[36px] sm:h-[40px] w-auto"
+                />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>

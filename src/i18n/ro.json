@@ -72,6 +72,16 @@
     "app2Body": "Servicii municipale digitale pentru locuitorii Sectorului 2 — autentificare rapidă și sigură cu portofelul digital pentru toate serviciile online ale primăriei.",
     "badgeText": "Autentifică-te cu EguWallet"
   },
+  "verifier": {
+    "heading": "Ești instituție publică sau companie?",
+    "subheading": "Verifică acte de identitate și documente digitale cu EguWallet Verifier",
+    "card1Title": "Inspector digital de identitate",
+    "card1Body": "Angajații instituțiilor înregistrate verifică documente digitale în câteva secunde prin Bluetooth/NFC — direct de pe telefon. Fiecare verificare este înregistrată, trasabilă și conformă GDPR. Fără hârtii, fără fotocopii.",
+    "card2Title": "Cum începi",
+    "card2Body": "Descarcă EguWallet Verifier, înregistrează-te cu portofelul tău EguWallet sau manual, selectează instituția și departamentul. Contul tău este activat de administratorul instituției.",
+    "playBadgeAlt": "Descarcă EguWallet Verifier pe Google Play",
+    "navLabel": "Pentru instituții"
+  },
   "future": {
     "heading": "Ce urmează — viitorul identității digitale",
     "subheading": "EguWallet se extinde continuu cu noi cazuri de utilizare care fac viața mai ușoară",
@@ -123,5 +133,37 @@
     "euCompliance": "eIDAS 2.0 Conform",
     "machineTranslatedNotice": "Această pagină este disponibilă momentan doar în română și engleză.",
     "rights": "© 2026 IT Eguilde SRL. Toate drepturile rezervate."
+  },
+  "accountDelete": {
+    "title": "Șterge contul tău",
+    "description": "Solicită ștergerea contului EguWallet și a tuturor datelor asociate.",
+    "intro": "EguWallet respectă dreptul tău la ștergerea datelor conform GDPR Articolul 17. Poți șterge portofelul și toate datele asociate folosind oricare dintre metodele de mai jos.",
+    "method1Title": "Metoda 1: Ștergere din aplicație",
+    "method1Steps": [
+      "Deschide aplicația EguWallet pe dispozitivul tău",
+      "Mergi la Setări",
+      "Apasă pe 'Șterge portofelul'",
+      "Confirmă ștergerea când ești solicitat"
+    ],
+    "method1Note": "Aceasta elimină imediat toate acreditările, cheile criptografice și datele locale de pe dispozitivul tău și solicită ștergerea datelor contului de pe server.",
+    "method2Title": "Metoda 2: Solicitare prin email",
+    "method2Text": "Trimite un email la <a href='mailto:privacy@eguwallet.eu' class='t-primary underline'>privacy@eguwallet.eu</a> cu subiectul 'Solicitare ștergere cont'. Include adresa de email sau numărul de telefon asociat înregistrării portofelului tău.",
+    "whatDeleted": "Ce se șterge",
+    "deletedItems": [
+      "Datele de înregistrare ale portofelului (nume, email, număr de telefon)",
+      "Toate acreditările digitale (PID, mDL, atestări calificate)",
+      "Cheile criptografice și atestările portofelului",
+      "Informațiile despre dispozitiv și tokenurile de notificări push FCM",
+      "Imaginile selfie și scanările documentelor",
+      "Codurile de verificare și datele de sesiune"
+    ],
+    "whatRetained": "Ce se păstrează",
+    "retainedItems": [
+      "Jurnalele de audit obligatorii eIDAS 2.0 (anonimizate, fără date personale) — păstrate 7 ani conform reglementărilor UE"
+    ],
+    "timeline": "Termene de ștergere",
+    "timelineText": "La primirea solicitării tale de ștergere, datele personale vor fi eliminate definitiv de pe serverele noastre în termen de 30 de zile. Datele locale de pe dispozitiv sunt șterse imediat la utilizarea ștergerii din aplicație.",
+    "contact": "Întrebări?",
+    "contactText": "Pentru întrebări despre ștergerea datelor sau drepturile tale de confidențialitate, contactează-ne la <a href='mailto:privacy@eguwallet.eu' class='t-primary underline'>privacy@eguwallet.eu</a>."
   }
 }

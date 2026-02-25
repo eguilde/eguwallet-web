@@ -72,6 +72,16 @@
     "app2Body": "Digital municipal services for Sector 2 residents — fast and secure authentication with the digital wallet for all online city hall services.",
     "badgeText": "Sign in with EguWallet"
   },
+  "verifier": {
+    "heading": "Are you a public institution or company?",
+    "subheading": "Verify identity documents and digital credentials with EguWallet Verifier",
+    "card1Title": "Digital identity inspector",
+    "card1Body": "Registered institution employees verify digital documents in seconds via Bluetooth/NFC — directly from their phone. Every verification is logged, traceable, and GDPR-compliant. No paper, no photocopies.",
+    "card2Title": "How to get started",
+    "card2Body": "Download EguWallet Verifier, register with your EguWallet wallet or manually, select your institution and department. Your account is activated by your institution's admin.",
+    "playBadgeAlt": "Download EguWallet Verifier on Google Play",
+    "navLabel": "For institutions"
+  },
   "future": {
     "heading": "What's next — the future of digital identity",
     "subheading": "EguWallet continuously expands with new use cases that make life easier",
@@ -123,5 +133,37 @@
     "euCompliance": "eIDAS 2.0 Compliant",
     "machineTranslatedNotice": "This page is currently available in Romanian and English only.",
     "rights": "© 2026 IT Eguilde SRL. All rights reserved."
+  },
+  "accountDelete": {
+    "title": "Delete Your Account",
+    "description": "Request deletion of your EguWallet account and all associated data.",
+    "intro": "EguWallet respects your right to data erasure under GDPR Article 17. You can delete your wallet and all associated data using any of the methods below.",
+    "method1Title": "Method 1: In-App Deletion",
+    "method1Steps": [
+      "Open the EguWallet app on your device",
+      "Go to Settings",
+      "Tap 'Delete Wallet'",
+      "Confirm the deletion when prompted"
+    ],
+    "method1Note": "This immediately removes all credentials, cryptographic keys, and local data from your device, and requests deletion of your server-side account data.",
+    "method2Title": "Method 2: Email Request",
+    "method2Text": "Send an email to <a href='mailto:privacy@eguwallet.eu' class='t-primary underline'>privacy@eguwallet.eu</a> with the subject line 'Account Deletion Request'. Include the email address or phone number associated with your wallet registration.",
+    "whatDeleted": "What Gets Deleted",
+    "deletedItems": [
+      "Your wallet registration data (name, email, phone number)",
+      "All digital credentials (PID, mDL, qualified attestations)",
+      "Cryptographic keys and wallet attestations",
+      "Device information and FCM push notification tokens",
+      "Selfie and document scan images",
+      "Verification codes and session data"
+    ],
+    "whatRetained": "What Is Retained",
+    "retainedItems": [
+      "eIDAS 2.0 mandatory audit logs (anonymised, no personal data) — retained for 7 years as required by EU regulation"
+    ],
+    "timeline": "Deletion Timeline",
+    "timelineText": "Upon receiving your deletion request, your personal data will be permanently removed from our servers within 30 days. Local device data is deleted immediately when using in-app deletion.",
+    "contact": "Questions?",
+    "contactText": "For questions about data deletion or your privacy rights, contact us at <a href='mailto:privacy@eguwallet.eu' class='t-primary underline'>privacy@eguwallet.eu</a>."
   }
 }
