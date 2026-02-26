@@ -494,19 +494,18 @@ const playUrl = 'https://play.google.com/store/apps/details?id=wallet.eguwallet.
 
   <!-- Scroll fade-up animation driver -->
   <script is:inline>
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.style.animation = 'fadeUp 0.5s ease forwards';
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.08 }
-    );
-    document.querySelectorAll('.eg-fade-up').forEach((el) => {
+  (function() {
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.style.animation = 'fadeUp 0.5s ease forwards';
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('.eg-fade-up').forEach(function(el) {
       observer.observe(el);
     });
+  })();
   </script>
 </Base>

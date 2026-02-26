@@ -135,97 +135,101 @@ const links = [
 </style>
 
 <script is:inline>
+(function() {
   // ── Hamburger ──────────────────────────────────────────────────
-  const hamburger = document.getElementById('nav-hamburger');
-  const mobileMenu = document.getElementById('mobile-menu');
-  hamburger?.addEventListener('click', () => {
-    const open = mobileMenu?.classList.toggle('hidden') === false;
+  var hamburger = document.getElementById('nav-hamburger');
+  var mobileMenu = document.getElementById('mobile-menu');
+  if (hamburger) hamburger.addEventListener('click', function() {
+    var open = mobileMenu ? mobileMenu.classList.toggle('hidden') === false : false;
     hamburger.setAttribute('aria-expanded', String(open));
   });
 
   // ── Accessibility panel ────────────────────────────────────────
-  const panel    = document.getElementById('a11y-panel');
-  const toggle   = document.getElementById('a11y-toggle');
-  const ttsBtn   = document.getElementById('a11y-tts');
-  const ttsLabel = document.getElementById('a11y-tts-label');
-  const ttsIcon  = document.getElementById('a11y-tts-icon');
-  const contrastBtn   = document.getElementById('a11y-contrast');
-  const contrastLabel = document.getElementById('a11y-contrast-label');
-  const fontBtns = document.querySelectorAll('.a11y-font-btn');
-  const html     = document.documentElement;
+  var panel        = document.getElementById('a11y-panel');
+  var toggle       = document.getElementById('a11y-toggle');
+  var ttsBtn       = document.getElementById('a11y-tts');
+  var ttsLabel     = document.getElementById('a11y-tts-label');
+  var ttsIcon      = document.getElementById('a11y-tts-icon');
+  var contrastBtn  = document.getElementById('a11y-contrast');
+  var contrastLabel= document.getElementById('a11y-contrast-label');
+  var fontBtns     = document.querySelectorAll('.a11y-font-btn');
+  var html         = document.documentElement;
+
+  var labelRead       = (ttsBtn && ttsBtn.dataset.labelRead)       || 'Read page aloud';
+  var labelStop       = (ttsBtn && ttsBtn.dataset.labelStop)       || 'Stop reading';
+  var labelContrastOff= (contrastBtn && contrastBtn.dataset.labelOff) || 'High contrast: off';
+  var labelContrastOn = (contrastBtn && contrastBtn.dataset.labelOn)  || 'High contrast: on';
 
   // Restore persisted settings
   applyFont(parseInt(localStorage.getItem('a11y-font') || '0'));
   applyContrast(localStorage.getItem('a11y-contrast') || 'off');
 
-  toggle?.addEventListener('click', (e) => {
+  if (toggle) toggle.addEventListener('click', function(e) {
     e.stopPropagation();
-    const open = panel?.classList.toggle('hidden') === false;
-    panel?.classList.toggle('flex', open);
+    var open = panel ? panel.classList.toggle('hidden') === false : false;
+    if (panel) panel.classList.toggle('flex', open);
     toggle.setAttribute('aria-expanded', String(open));
   });
 
-  document.addEventListener('click', (e) => {
-    const wrapper = document.getElementById('a11y-nav-wrapper');
-    if (wrapper && !wrapper.contains(/** @type {Node} */ (e.target))) {
-      panel?.classList.add('hidden');
-      panel?.classList.remove('flex');
-      toggle?.setAttribute('aria-expanded', 'false');
+  document.addEventListener('click', function(e) {
+    var wrapper = document.getElementById('a11y-nav-wrapper');
+    if (wrapper && !wrapper.contains(e.target)) {
+      if (panel) { panel.classList.add('hidden'); panel.classList.remove('flex'); }
+      if (toggle) toggle.setAttribute('aria-expanded', 'false');
     }
   });
 
-  const labelRead = ttsBtn?.dataset.labelRead || 'Read page aloud';
-  const labelStop = ttsBtn?.dataset.labelStop || 'Stop reading';
-  const labelContrastOff = contrastBtn?.dataset.labelOff || 'High contrast: off';
-  const labelContrastOn  = contrastBtn?.dataset.labelOn  || 'High contrast: on';
-
-  ttsBtn?.addEventListener('click', () => {
+  if (ttsBtn) ttsBtn.addEventListener('click', function() {
     if (!('speechSynthesis' in window)) { alert('Text-to-speech not supported in this browser.'); return; }
     if (window.speechSynthesis.speaking) { window.speechSynthesis.cancel(); setTtsState(false); return; }
-    const main = document.getElementById('main-content');
-    const text = Array.from(main?.querySelectorAll('h1,h2,h3,h4,p,li') ?? [])
-      .map(el => el.textContent?.trim()).filter(t => t && t.length > 2).join('. ');
-    const utt = new SpeechSynthesisUtterance(text);
+    var main = document.getElementById('main-content');
+    var text = Array.from(main ? main.querySelectorAll('h1,h2,h3,h4,p,li') : [])
+      .map(function(el) { return el.textContent ? el.textContent.trim() : ''; })
+      .filter(function(t) { return t && t.length > 2; }).join('. ');
+    var utt = new SpeechSynthesisUtterance(text);
     utt.lang = document.documentElement.lang || 'en';
     utt.rate = 0.92;
-    utt.onstart = () => setTtsState(true);
-    utt.onend = () => setTtsState(false);
-    utt.onerror = () => setTtsState(false);
+    utt.onstart = function() { setTtsState(true); };
+    utt.onend = function() { setTtsState(false); };
+    utt.onerror = function() { setTtsState(false); };
     window.speechSynthesis.speak(utt);
   });
 
-  function setTtsState(speaking: boolean) {
-    ttsBtn?.setAttribute('aria-pressed', String(speaking));
+  function setTtsState(speaking) {
+    if (ttsBtn) ttsBtn.setAttribute('aria-pressed', String(speaking));
     if (ttsIcon) ttsIcon.textContent = speaking ? '⏹' : '🔊';
     if (ttsLabel) ttsLabel.textContent = speaking ? labelStop : labelRead;
     if (ttsBtn) ttsBtn.style.background = speaking ? 'rgba(160,30,40,0.40)' : 'rgba(255,255,255,0.08)';
   }
 
-  fontBtns.forEach(btn => btn.addEventListener('click', () => {
-    const level = parseInt(btn.getAttribute('data-font-size') ?? '0');
-    applyFont(level);
-    localStorage.setItem('a11y-font', String(level));
-  }));
+  fontBtns.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var level = parseInt(btn.getAttribute('data-font-size') || '0');
+      applyFont(level);
+      localStorage.setItem('a11y-font', String(level));
+    });
+  });
 
-  function applyFont(level: number) {
+  function applyFont(level) {
     html.removeAttribute('data-a11y-font');
     if (level > 0) html.setAttribute('data-a11y-font', String(level));
-    fontBtns.forEach(btn => {
-      const active = parseInt(btn.getAttribute('data-font-size') ?? '0') === level;
-      (btn as HTMLElement).style.background = active ? 'rgba(160,30,40,0.45)' : 'rgba(255,255,255,0.08)';
+    fontBtns.forEach(function(btn) {
+      var active = parseInt(btn.getAttribute('data-font-size') || '0') === level;
+      btn.style.background = active ? 'rgba(160,30,40,0.45)' : 'rgba(255,255,255,0.08)';
     });
   }
 
-  contrastBtn?.addEventListener('click', () => {
-    const next = html.getAttribute('data-a11y-contrast') === 'on' ? 'off' : 'on';
+  if (contrastBtn) contrastBtn.addEventListener('click', function() {
+    var next = html.getAttribute('data-a11y-contrast') === 'on' ? 'off' : 'on';
     applyContrast(next);
     localStorage.setItem('a11y-contrast', next);
   });
 
-  function applyContrast(value: string) {
+  function applyContrast(value) {
     html.setAttribute('data-a11y-contrast', value);
-    contrastBtn?.setAttribute('aria-pressed', String(value === 'on'));
+    if (contrastBtn) contrastBtn.setAttribute('aria-pressed', String(value === 'on'));
     if (contrastLabel) contrastLabel.textContent = value === 'on' ? labelContrastOn : labelContrastOff;
     if (contrastBtn) contrastBtn.style.background = value === 'on' ? 'rgba(160,30,40,0.45)' : 'rgba(255,255,255,0.08)';
   }
+})();
 </script>
