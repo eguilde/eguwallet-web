@@ -1,0 +1,328 @@
+---
+import '../../../styles/global.css';
+import { SITE } from '../../../config/site.ts';
+import { getTranslations } from '../../../i18n/index';
+import Navbar from '../../../components/Navbar.astro';
+import HeadSEO from '../../../components/HeadSEO.astro';
+
+export async function getStaticPaths() {
+  const locales = [
+    'ro','en','de','fr','es','it','pl','pt','hu','cs',
+    'sk','bg','hr','lt','lv','et','mt','sl','sv','da','nl','el','fi','ga'
+  ];
+  return locales.map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+
+// Only EN and RO have a localised certification page; others redirect to EN
+if (lang !== 'en' && lang !== 'ro') {
+  return Astro.redirect('/en/certification/');
+}
+
+const t = await getTranslations(lang);
+const tc = t.certification;
+
+const COMPONENT_IDS = ['android-wallet', 'android-verifier', 'dgep', 'dgp'];
+
+interface RemediationReport {
+  component?: string;
+  generatedAt?: string;
+  overallStatus?: string;
+  summary?: { total?: number; passed?: number; failed?: number };
+  failures?: Array<{ id: string; title?: string; description?: string }>;
+  cabDownloadUrl?: string;
+  reportUrl?: string;
+}
+
+async function fetchReport(component: string): Promise<RemediationReport | null> {
+  const url = 'https://eguilde.github.io/eguwallet-conformance/latest/' + component + '/remediation.json';
+  try {
+    const controller = new AbortController();
+    const timerId = setTimeout(() => controller.abort(), 5000);
+    const res = await fetch(url, { signal: controller.signal });
+    clearTimeout(timerId);
+    if (!res.ok) return null;
+    return await res.json() as RemediationReport;
+  } catch {
+    return null;
+  }
+}
+
+function statusStyle(status: string | undefined): string {
+  if (status === 'COMPLIANT')     return 'color:#155724;background:#d4edda;';
+  if (status === 'PARTIAL')       return 'color:#856404;background:#fff3cd;';
+  if (status === 'NON_COMPLIANT') return 'color:#721c24;background:#f8d7da;';
+  return 'color:inherit;background:rgba(0,0,0,0.06);opacity:0.65;';
+}
+
+function statusLabel(status: string | undefined, labels: Record<string, string>): string {
+  const key = status ?? 'NOT_RUN';
+  return labels[key] ?? labels['NOT_RUN'] ?? key;
+}
+
+function formatDate(iso: string | undefined, locale: string): string {
+  if (!iso) return '—';
+  try {
+    return new Date(iso).toLocaleDateString(locale, {
+      year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit'
+    });
+  } catch {
+    return iso;
+  }
+}
+
+const dateLocale = lang === 'ro' ? 'ro-RO' : 'en-GB';
+const statusLabels: Record<string, string> = {
+  COMPLIANT:     tc.status.COMPLIANT,
+  PARTIAL:       tc.status.PARTIAL,
+  NON_COMPLIANT: tc.status.NON_COMPLIANT,
+  NOT_RUN:       tc.status.NOT_RUN,
+};
+const componentNames: Record<string, string> = {
+  'android-wallet':   tc.components['android-wallet'],
+  'android-verifier': tc.components['android-verifier'],
+  'dgep':             tc.components['dgep'],
+  'dgp':              tc.components['dgp'],
+};
+const componentRoles: Record<string, string> = {
+  'android-wallet':   tc.roles['android-wallet'],
+  'android-verifier': tc.roles['android-verifier'],
+  'dgep':             tc.roles['dgep'],
+  'dgp':              tc.roles['dgp'],
+};
+
+const reports = await Promise.all(COMPONENT_IDS.map(fetchReport));
+
+interface CardData {
+  component: string;
+  compName: string;
+  compRole: string;
+  status: string | undefined;
+  total: number;
+  passed: number;
+  failed: number;
+  failures: Array<{ id: string; title?: string }>;
+  updatedAt: string | undefined;
+  reportUrl: string;
+  cabUrl: string | null;
+  passedPercent: number;
+  progressColor: string;
+  hasReport: boolean;
+}
+
+const cards: CardData[] = COMPONENT_IDS.map((component, i) => {
+  const report = reports[i];
+  const status = report?.overallStatus;
+  const total = report?.summary?.total ?? 0;
+  const passed = report?.summary?.passed ?? 0;
+  const failed = report?.summary?.failed ?? 0;
+  const progressColor =
+    status === 'COMPLIANT' ? '#198754' :
+    status === 'PARTIAL'   ? '#ffc107' : '#dc3545';
+  return {
+    component,
+    compName: componentNames[component] ?? component,
+    compRole: componentRoles[component] ?? '',
+    status,
+    total,
+    passed,
+    failed,
+    failures: report?.failures ?? [],
+    updatedAt: report?.generatedAt,
+    reportUrl: report?.reportUrl ?? ('https://eguilde.github.io/eguwallet-conformance/latest/' + component + '/report.html'),
+    cabUrl: report?.cabDownloadUrl ?? null,
+    passedPercent: total > 0 ? Math.round((passed / total) * 100) : 0,
+    progressColor,
+    hasReport: report !== null,
+  };
+});
+
+const title = t.meta.certificationTitle;
+const desc  = t.meta.certificationDesc;
+const contactSubject = encodeURIComponent(lang === 'ro' ? 'Solicitare informații conformitate' : 'Conformance information request');
+---
+<!doctype html>
+<html lang={lang} data-theme="light">
+<head>
+  <HeadSEO lang={lang} title={title} description={desc} canonical={`${SITE}/${lang}/certification/`} pathSuffix="certification/" />
+</head>
+<body class="t-bg t-fg">
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:px-4 focus:py-2 focus:rounded focus:t-bg focus:t-fg focus:outline-none focus:ring-2">
+    {lang === 'ro' ? 'Sari la conținut' : 'Skip to main content'}
+  </a>
+
+  <Navbar t={t} lang={lang} />
+
+  <main id="main-content" class="t-bg">
+
+    <!-- Page header -->
+    <div class="py-12 sm:py-16 px-4 sm:px-6 t-bg-surface-high">
+      <div class="max-w-4xl mx-auto">
+        <div class="flex flex-wrap items-center gap-2 mb-3">
+          <span class="text-[11px] sm:text-[12px] font-semibold uppercase tracking-widest px-2 py-0.5 rounded"
+            style="background:rgba(160,30,40,0.10);color:var(--eg-primary);">
+            eIDAS 2.0
+          </span>
+          <span class="text-[11px] sm:text-[12px] t-fg opacity-35 font-semibold uppercase tracking-widest">
+            ⚡ {tc.autoGenerated}
+          </span>
+        </div>
+        <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold t-fg mb-2">
+          {tc.title}
+        </h1>
+        <p class="text-[14px] sm:text-base t-fg opacity-55 max-w-2xl">
+          {tc.subtitle}
+        </p>
+        <p class="text-[11px] sm:text-[12px] t-fg opacity-35 mt-4">
+          {tc.regulations}
+        </p>
+      </div>
+    </div>
+
+    <!-- Component cards -->
+    <div class="py-10 sm:py-14 px-4 sm:px-6">
+      <div class="max-w-4xl mx-auto flex flex-col gap-6">
+
+        {cards.map((card) => (
+          <div class="rounded-2xl p-5 sm:p-6 flex flex-col gap-4 t-bg-surface" style="border:1px solid var(--eg-glass-border);">
+
+            <!-- Card header -->
+            <div class="flex flex-wrap items-start justify-between gap-3">
+              <div class="flex flex-col gap-1">
+                <h2 class="text-base sm:text-lg font-bold t-fg">{card.compName}</h2>
+                <p class="text-[12px] sm:text-[13px] t-fg opacity-50">{card.compRole}</p>
+              </div>
+              <span class="text-[11px] sm:text-xs font-semibold uppercase tracking-wider px-3 py-1 rounded-full flex-shrink-0"
+                style={statusStyle(card.status)}>
+                {statusLabel(card.status, statusLabels)}
+              </span>
+            </div>
+
+            {card.hasReport ? (
+              <div class="flex flex-col gap-3">
+
+                <!-- Check summary -->
+                <div class="flex flex-wrap items-center gap-3 text-[13px] sm:text-[14px]">
+                  <span class="t-fg opacity-50">{tc.checksLabel}:</span>
+                  <span class="font-semibold t-fg">{card.total}</span>
+                  <span style="color:#155724;" class="font-semibold">{card.passed} {tc.passed}</span>
+                  {card.failed > 0 && (
+                    <span style="color:#721c24;" class="font-semibold">· {card.failed} {tc.failed}</span>
+                  )}
+                </div>
+
+                <!-- Progress bar -->
+                {card.total > 0 && (
+                  <div class="w-full rounded-full overflow-hidden h-1.5" style="background:rgba(0,0,0,0.08);">
+                    <div
+                      class="h-1.5 rounded-full transition-all"
+                      style={'width:' + card.passedPercent + '%;background:' + card.progressColor + ';'}
+                    />
+                  </div>
+                )}
+
+                <!-- Failure list (collapsed) -->
+                {card.failures.length > 0 && (
+                  <details class="group">
+                    <summary class="cursor-pointer list-none flex items-center gap-2 text-[12px] sm:text-[13px] t-fg opacity-60 select-none hover:opacity-90 transition-opacity">
+                      <svg class="w-3.5 h-3.5 flex-shrink-0 transition-transform group-open:rotate-90" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>
+                      <span>{card.failures.length} {lang === 'ro' ? 'verificări eșuate' : 'failed checks'}</span>
+                    </summary>
+                    <div class="mt-2 flex flex-col gap-1.5 pl-5">
+                      {card.failures.slice(0, 10).map((f) => (
+                        <div class="flex items-start gap-2 text-[12px] sm:text-[13px]">
+                          <span style="color:#721c24;" class="flex-shrink-0 mt-0.5 font-bold">✗</span>
+                          <span class="t-fg opacity-70 leading-snug">{f.title ?? f.id}</span>
+                        </div>
+                      ))}
+                      {card.failures.length > 10 && (
+                        <p class="text-[11px] t-fg opacity-40 pl-4">
+                          {lang === 'ro' ? '… și încă ' + (card.failures.length - 10) + ' mai multe' : '… and ' + (card.failures.length - 10) + ' more'}
+                        </p>
+                      )}
+                    </div>
+                  </details>
+                )}
+
+                <!-- Last updated + links -->
+                <div class="flex flex-wrap items-center justify-between gap-3 pt-1" style="border-top:1px solid var(--eg-glass-border);">
+                  <p class="text-[11px] sm:text-[12px] t-fg opacity-40">
+                    {tc.lastUpdated}: {formatDate(card.updatedAt, dateLocale)}
+                  </p>
+                  <div class="flex flex-wrap gap-2">
+                    <a
+                      href={card.reportUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="inline-flex items-center gap-1 text-[12px] sm:text-[13px] font-medium t-primary hover:underline"
+                    >
+                      {tc.viewFullReport}
+                      <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+                    </a>
+                    {card.cabUrl && (
+                      <a
+                        href={card.cabUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="inline-flex items-center gap-1 text-[12px] sm:text-[13px] font-medium t-fg opacity-60 hover:opacity-100 transition-opacity"
+                      >
+                        ↓ {tc.downloadCABPackage}
+                      </a>
+                    )}
+                  </div>
+                </div>
+
+              </div>
+            ) : (
+              <p class="text-[13px] sm:text-[14px] t-fg opacity-50 italic">{tc.noData}</p>
+            )}
+
+          </div>
+        ))}
+
+      </div>
+    </div>
+
+    <!-- Contact section -->
+    <div class="py-10 sm:py-14 px-4 sm:px-6 t-bg-surface-high">
+      <div class="max-w-4xl mx-auto">
+        <div class="flex flex-col gap-4 max-w-2xl">
+          <h2 class="text-xl sm:text-2xl font-bold t-fg">{tc.contact.heading}</h2>
+          <p class="text-[14px] sm:text-base t-fg opacity-70 leading-relaxed">{tc.contact.body}</p>
+          <a
+            href={'mailto:' + tc.contact.email}
+            class="font-semibold text-base t-primary hover:underline self-start"
+          >
+            {tc.contact.email}
+          </a>
+          <p class="text-[13px] t-fg opacity-50 italic">{tc.contact.responseTime}</p>
+          <a
+            href={'mailto:' + tc.contact.email + '?subject=' + contactSubject}
+            class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl font-semibold text-sm transition-opacity hover:opacity-90 self-start"
+            style="background: var(--eg-gradient); color: #fff; box-shadow: 0 4px 20px rgba(160,30,40,0.30);"
+          >
+            {tc.contact.buttonLabel} →
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-8 px-4 sm:px-6 t-bg-surface-high">
+      <div class="max-w-4xl mx-auto flex flex-wrap gap-x-4 gap-y-1 text-[12px] t-fg opacity-40">
+        <a href={'/' + lang + '/'} class="hover:opacity-70 transition-opacity">EguWallet</a>
+        <span>·</span>
+        <a href={'/' + lang + '/privacy/'} class="hover:opacity-70 transition-opacity underline">{lang === 'ro' ? 'Confidențialitate' : 'Privacy Policy'}</a>
+        <span>·</span>
+        <a href={'/' + lang + '/terms/'} class="hover:opacity-70 transition-opacity underline">{lang === 'ro' ? 'Termeni' : 'Terms'}</a>
+        <span>·</span>
+        <a href={'/' + lang + '/contact/'} class="hover:opacity-70 transition-opacity underline">{lang === 'ro' ? 'Contact' : 'Contact'}</a>
+        <span>·</span>
+        <span>© 2026 IT Eguilde SRL</span>
+      </div>
+    </footer>
+
+  </main>
+</body>
+</html>

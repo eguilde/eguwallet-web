@@ -14,6 +14,9 @@ const desktopLinks = [
   { href: `/${lang}/#verifier`,      label: t.verifier.navLabel },
   { href: `/${lang}/#faq`,           label: t.nav.faq },
   { href: `/${lang}/about/`,         label: t.nav.about },
+  ...(lang === 'en' || lang === 'ro'
+    ? [{ href: `/${lang}/certification/`, label: t.certification.nav }]
+    : []),
   { href: `/${lang}/contact/`,       label: t.nav.contact },
 ];
 const mobileLinks = [
