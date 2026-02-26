@@ -26,7 +26,36 @@ import gaData from './ga.json';
 
 export type Translations = typeof ro;
 
-const cache: Record<string, Translations> = {
+// Deep merge: target fills any gaps from source (source = fallback)
+function deepMerge<T extends object>(target: Partial<T>, source: T): T {
+  const result = { ...source } as T;
+  for (const key in target) {
+    const tv = target[key];
+    const sv = source[key];
+    if (tv !== undefined && tv !== null) {
+      if (typeof tv === 'object' && !Array.isArray(tv) && typeof sv === 'object' && sv !== null && !Array.isArray(sv)) {
+        (result as Record<string, unknown>)[key] = deepMerge(tv as object, sv as object);
+      } else if (Array.isArray(tv) && Array.isArray(sv)) {
+        // Merge arrays element-by-element so longer RO arrays fill missing entries
+        const merged = sv.map((item: unknown, i: number) =>
+          i < tv.length
+            ? (typeof item === 'object' && item !== null && typeof tv[i] === 'object' && tv[i] !== null
+                ? deepMerge(tv[i] as object, item as object)
+                : tv[i])
+            : item
+        );
+        // If target has more items than source, append them
+        if (tv.length > sv.length) merged.push(...tv.slice(sv.length));
+        (result as Record<string, unknown>)[key] = merged;
+      } else {
+        (result as Record<string, unknown>)[key] = tv;
+      }
+    }
+  }
+  return result;
+}
+
+const raw: Record<string, object> = {
   ro: roData, en: enData, de: deData, fr: frData, es: esData,
   it: itData, pl: plData, pt: ptData, hu: huData, cs: csData,
   sk: skData, bg: bgData, hr: hrData, lt: ltData, lv: lvData,
@@ -34,6 +63,13 @@ const cache: Record<string, Translations> = {
   nl: nlData, el: elData, fi: fiData, ga: gaData,
 };
 
+const cache: Record<string, Translations> = {};
+
 export async function getTranslations(lang: string): Promise<Translations> {
-  return cache[lang] ?? enData;
+  if (cache[lang]) return cache[lang];
+  const data = raw[lang] ?? enData;
+  // Deep-merge with RO as the authoritative fallback (RO is always complete)
+  const merged = deepMerge(data as Partial<Translations>, roData as Translations);
+  cache[lang] = merged;
+  return merged;
 }
