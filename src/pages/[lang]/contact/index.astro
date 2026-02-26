@@ -258,8 +258,8 @@ const desc  = isRo
 </body>
 </html>
 
-<script>
-const form = document.getElementById('contact-form') as HTMLFormElement | null;
+<script is:inline>
+const form = document.getElementById('contact-form');
 const statusEl = document.getElementById('cf-status');
 
 // i18n messages injected from data attributes on the form
@@ -276,17 +276,17 @@ form?.addEventListener('submit', async (e) => {
   if (!form || !statusEl) return;
 
   const lang    = document.documentElement.lang || 'en';
-  const name    = (form.querySelector('#cf-name')    as HTMLInputElement)?.value.trim();
-  const email   = (form.querySelector('#cf-email')   as HTMLInputElement)?.value.trim();
-  const subject = (form.querySelector('#cf-subject') as HTMLSelectElement)?.value;
-  const message = (form.querySelector('#cf-message') as HTMLTextAreaElement)?.value.trim();
+  const name    = form.querySelector('#cf-name')?.value.trim();
+  const email   = form.querySelector('#cf-email')?.value.trim();
+  const subject = form.querySelector('#cf-subject')?.value;
+  const message = form.querySelector('#cf-message')?.value.trim();
 
   if (!name || !email || !subject || !message) {
     showStatus('error', msg.errorFields);
     return;
   }
 
-  const btn = form.querySelector('button[type="submit"]') as HTMLButtonElement;
+  const btn = form.querySelector('button[type="submit"]');
   if (btn) { btn.disabled = true; btn.textContent = msg.sending; }
 
   try {
@@ -309,7 +309,7 @@ form?.addEventListener('submit', async (e) => {
   }
 });
 
-function showStatus(type: 'success' | 'error' | 'warn', text: string) {
+function showStatus(type, text) {
   if (!statusEl) return;
   const styles = {
     success: { bg: 'rgba(34,197,94,0.12)', color: '#166534', border: 'rgba(34,197,94,0.25)' },

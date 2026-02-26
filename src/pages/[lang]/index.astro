@@ -493,12 +493,12 @@ const playUrl = 'https://play.google.com/store/apps/details?id=wallet.eguwallet.
   </main>
 
   <!-- Scroll fade-up animation driver -->
-  <script>
+  <script is:inline>
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            (entry.target as HTMLElement).style.animation = 'fadeUp 0.5s ease forwards';
+            entry.target.style.animation = 'fadeUp 0.5s ease forwards';
             observer.unobserve(entry.target);
           }
         });
