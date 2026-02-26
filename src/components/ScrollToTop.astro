@@ -1,0 +1,27 @@
+---
+---
+<button
+  id="scroll-to-top"
+  aria-label="Scroll to top"
+  class="fixed bottom-6 right-6 z-40 w-12 h-12 rounded-full flex items-center justify-center shadow-xl opacity-0 pointer-events-none transition-all duration-300"
+  style="background: linear-gradient(135deg, #A01E28 0%, #6B0D14 100%); color: #fff; box-shadow: 0 4px 20px rgba(160,30,40,0.45);"
+>
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M18 15l-6-6-6 6"/>
+  </svg>
+</button>
+
+<script>
+  const btn = document.getElementById('scroll-to-top');
+  window.addEventListener('scroll', () => {
+    if (!btn) return;
+    if (window.scrollY > 300) {
+      btn.classList.remove('opacity-0', 'pointer-events-none');
+      btn.classList.add('opacity-100');
+    } else {
+      btn.classList.add('opacity-0', 'pointer-events-none');
+      btn.classList.remove('opacity-100');
+    }
+  }, { passive: true });
+  btn?.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+</script>
