@@ -3,213 +3,297 @@
   "langName": "Malti",
   "isMachineTranslated": true,
   "nav": {
-    "what": "What is it",
-    "privacy": "Privacy",
-    "documents": "Documents",
-    "usedToday": "Where it works",
-    "future": "Future",
-    "howItWorks": "How it works",
+    "what": "X'inhu",
+    "privacy": "Privatezza",
+    "documents": "Dokumenti",
+    "useCases": "Użi prattici",
+    "trust": "Fiduċja u Liġi",
+    "usedToday": "Fejn jaħdem",
+    "about": "Dwar",
+    "contact": "Kuntatt",
+    "future": "Futur",
+    "howItWorks": "Kif jaħdem",
     "faq": "FAQ",
-    "download": "Download"
+    "download": "Niżżel"
   },
   "hero": {
-    "title": "Your digital identity — secure, private, always with you",
-    "subtitle": "EguWallet is a European eIDAS 2.0 certified digital wallet that replaces physical documents with verifiable digital equivalents, recognised across all EU member states.",
-    "badge1": "eIDAS 2.0 Compliant",
-    "badge2": "Certified EUDI Wallet",
-    "badge3": "Free",
-    "downloadAndroid": "Get it on Google Play",
-    "downloadIos": "Available soon on App Store",
-    "downloadIosComingSoon": "Coming Soon"
+    "title": "L-identità digitali tiegħek — sigura, privata, dejjem miegħek",
+    "subtitle": "EguWallet huwa kartiera digitali Ewropea ċertifikata eIDAS 2.0 li tissostitwixxi d-dokumenti fiżiċi b'ekwivalenti digitali verifikabbli, rikonoxxuti fl-istati membri kollha tal-UE.",
+    "badge1": "Konformi mal-eIDAS 2.0",
+    "badge2": "Ċertifikazzjoni fi progress",
+    "badge3": "Bla ħlas bħalissa",
+    "downloadAndroid": "Iksibha fuq Google Play",
+    "downloadIos": "Disponibbli breve fuq App Store",
+    "downloadIosComingSoon": "Dalwaqt"
   },
   "what": {
-    "heading": "What is EguWallet?",
-    "card1Title": "Regulated by EU Law",
-    "card1Body": "EguWallet is built on Regulation (EU) 2024/1183 — the eIDAS revision — which guarantees every European citizen the right to a free digital wallet, recognised across all 27 member states.",
-    "card2Title": "What is a EUDI Wallet?",
-    "card2Body": "A European Digital Identity Wallet (EUDI) is a secure app that stores verifiable digital identity documents: ID card, passport, driving licence, vehicle documents and more — all under your exclusive control.",
-    "card3Title": "Who provides EguWallet?",
-    "card3Body": "EguWallet is developed by IT Eguilde SRL, a digital identity provider. The app fully complies with the EUDI Architecture Reference Framework (ARF 2.5+), OpenID4VCI and OpenID4VP standards."
+    "heading": "X'inhu EguWallet?",
+    "card1Title": "Regolat mil-Liġi tal-UE",
+    "card1Body": "EguWallet huwa mibnija fuq ir-Regolament (UE) 2024/1183 — ir-reviżjoni tal-eIDAS — li tiggarantixxi lil kull ċittadin Ewropew id-dritt għal kartiera digitali bla ħlas, rikonoxxuta fl-istati membri kollha 27.",
+    "card2Title": "X'inhu Kartiera EUDI?",
+    "card2Body": "Kartiera Ewropea tal-Identità Digitali (EUDI) hija applikazzjoni sigura li taħżen dokumenti tal-identità digitali verifikabbli: karta tal-identità, passaport, liċenzja tas-sewqan, dokumenti tal-vettura u oħrajn — kollha taħt il-kontroll esklużiv tiegħek.",
+    "card3Title": "Min jipprovdi EguWallet?",
+    "card3Body": "EguWallet huwa żviluppat minn IT Eguilde SRL, fornitur tal-identità digitali. L-applikazzjoni hija mibnija fuq il-Qafas ta' Referenza tal-Arkitettura EUDI (ARF 2.5+), OpenID4VCI u standards OpenID4VP. Bħalissa qiegħda tgħaddi minn ċertifikazzjoni formali tal-eIDAS 2.0."
   },
   "privacy": {
-    "heading": "Your data, your control",
-    "subheading": "Selective disclosure — only what is needed, only when you agree",
-    "body": "EguWallet uses SD-JWT (Selective Disclosure JWT) and mDoc/ISO 18013-5 to enable selective data disclosure. When a merchant or institution requests identity verification, you choose exactly which data is transmitted. Nothing more.",
-    "example1Title": "Age 18+ verification",
-    "example1Step1": "Merchant scans QR code",
-    "example1Step2": "Your wallet receives the request",
-    "example1Step3": "You approve: transmit ONLY «age ≥ 18: YES»",
-    "example1Step4": "Merchant does NOT receive: name, ID number, address, photo",
-    "legalTitle": "Legal basis",
-    "legal1": "<a href=\"https://eur-lex.europa.eu/eli/reg/2016/679/oj\" target=\"_blank\" rel=\"noopener\" style=\"text-decoration:underline;\">GDPR Art. 5(1)(c)</a> — data minimisation principle: processing is limited to what is strictly necessary.",
-    "legal2": "<a href=\"https://eur-lex.europa.eu/eli/reg/2024/1183/oj\" target=\"_blank\" rel=\"noopener\" style=\"text-decoration:underline;\">Reg. (EU) 2024/1183</a> — selective presentation is a citizen right, not an optional feature.",
-    "legal3": "No presentation is stored by the wallet or any third party — every disclosure is ephemeral."
+    "heading": "Id-data tiegħek, il-kontroll tiegħek",
+    "subheading": "Żvelar selettiv — biss dak li huwa meħtieġ, biss meta taqbel",
+    "body": "EguWallet juża SD-JWT (Selective Disclosure JWT) u mDoc/ISO 18013-5 biex jippermetti żvelar selettiv tad-data. Meta negozjant jew istituzzjoni titlob verifika tal-identità, int tagħżel eżattament liema data tiġi trasmessa. Xejn aktar.",
+    "example1Title": "Verifika tal-età 18+",
+    "example1Step1": "In-negozjant jiskenja l-kodiċi QR",
+    "example1Step2": "Il-kartiera tiegħek tirċievi t-talba",
+    "example1Step3": "Tapprovaw: jintbagħat BISS «età ≥ 18: IVA»",
+    "example1Step4": "In-negozjant MA jirċievix: isem, numru tal-ID, indirizz, ritratt",
+    "legalTitle": "Bażi legali",
+    "legal1": "<a href=\"https://eur-lex.europa.eu/eli/reg/2016/679/oj\" target=\"_blank\" rel=\"noopener\" style=\"text-decoration:underline;\">GDPR Art. 5(1)(c)</a> — prinċipju ta' minimizzazzjoni tad-data: l-ipproċessar huwa limitat għal dak li huwa strettament meħtieġ.",
+    "legal2": "<a href=\"https://eur-lex.europa.eu/eli/reg/2024/1183/oj\" target=\"_blank\" rel=\"noopener\" style=\"text-decoration:underline;\">Reg. (UE) 2024/1183</a> — il-preżentazzjoni selettiva hija dritt taċ-ċittadin, mhux karatteristika fakultattiva.",
+    "legal3": "L-ebda preżentazzjoni ma tiġi maħżuna mill-kartiera jew minn parti terza — kull żvelar huwa efemerali."
   },
   "documents": {
-    "heading": "Documents in your wallet",
-    "subheading": "All your important documents — digital, verifiable, always at hand",
+    "heading": "Dokumenti fil-kartiera tiegħek",
+    "subheading": "Id-dokumenti importanti tiegħek kollha — digitali, verifikabbli, dejjem f'idejk",
     "items": [
+      { "icon": "🪪", "title": "Karta tal-Identità (PID)", "body": "Id-dokument tal-identità digitali primarju konformi mal-eIDAS 2.0. Rikonoxxut fl-istati membri kollha tal-UE.", "status": "available" },
+      { "icon": "🛂", "title": "Passaport", "body": "Il-verżjoni digitali tal-passaport tiegħek, verifikabbli istantanjament mill-awtoritajiet u s-servizzi.", "status": "available" },
+      { "icon": "🚗", "title": "Liċenzja tas-Sewqan", "body": "Liċenzja tas-sewqan digitali konformi mal-mDoc/ISO 18013-5. Verifikabbli mingħajr kuntatt, inkluż mill-pulizija tat-traffiku.", "status": "available" },
+      { "icon": "📋", "title": "Reġistrazzjoni tal-Vettura", "body": "Id-dokument tar-reġistrazzjoni tal-vettura tiegħek f'format digitali. M'għadekx teħtieġ dokumenti tal-karta.", "status": "soon" },
+      { "icon": "🛡️", "title": "Assigurazzjoni tal-Vettura (RCA)", "body": "Polza tal-assigurazzjoni obbligatorja tal-vettura, verifikabbli f'ħin reali.", "status": "soon" },
+      { "icon": "🔧", "title": "Spezzjoni Teknika / RAR", "body": "Spezzjoni teknika perjodika (ITP) u data tal-vettura RAR — ċertifikati digitali verifikabbli.", "status": "soon" },
+      { "icon": "🏢", "title": "Dokumenti tal-Kumpanija", "body": "Ċertifikat tar-reġistrazzjoni tal-kumpanija, prokuri u dokumenti korporattivi. Iffirma digitalment bil-kartiera tiegħek.", "status": "soon" },
+      { "icon": "🏠", "title": "Dokumenti tal-Proprjetà", "body": "Estratti mir-reġistru tal-artijiet u dokumenti tal-proprjetà immobbli f'format digitali verifikabbli.", "status": "soon" }
+    ],
+    "statusAvailable": "Disponibbli",
+    "statusSoon": "Dalwaqt"
+  },
+  "useCases": {
+    "heading": "Użi prattici fid-dinja reali",
+    "subheading": "EguWallet jaħdem f'kull qasam tal-ħajja pubblika u privata — minn waqfa tat-traffiku ta' rutina sa ffirmar ta' kuntratt kummerċjali",
+    "categories": [
       {
-        "icon": "🪪",
-        "title": "Identity Card (PID)",
-        "body": "The primary digital identity document compliant with eIDAS 2.0. Recognised across all EU member states.",
-        "status": "available"
-      },
-      {
-        "icon": "🛂",
-        "title": "Passport",
-        "body": "The digital version of your passport, instantly verifiable by authorities and services.",
-        "status": "available"
-      },
-      {
-        "icon": "🚗",
-        "title": "Driving Licence",
-        "body": "Digital driving licence compliant with mDoc/ISO 18013-5. Contactlessly verifiable, including by traffic police.",
-        "status": "available"
-      },
-      {
-        "icon": "📋",
-        "title": "Vehicle Registration",
-        "body": "Your vehicle registration document in digital format. No more carrying paper documents.",
-        "status": "available"
-      },
-      {
-        "icon": "🛡️",
-        "title": "Vehicle Insurance (RCA)",
-        "body": "Mandatory vehicle insurance policy, verifiable in real time.",
-        "status": "available"
-      },
-      {
-        "icon": "🔧",
-        "title": "Technical Inspection / RAR",
-        "body": "Periodic technical inspection (ITP) and RAR vehicle data — verifiable digital certificates.",
-        "status": "available"
+        "icon": "🚔",
+        "image": "/assets/illustrations/usecase-police.jpg",
+        "title": "Infurzar tal-Liġi u Ordni Pubbliku",
+        "description": "L-uffiċjali tal-pulizija, il-gwardji tal-fruntiera u l-ispetturi tal-ordni pubbliku jivverifikaw l-identità digitali f'sekondi — b'fiduċja kriptografika sħiħa, mingħajr ma jmissu d-dokumenti fiżiċi.",
+        "scenarios": [
+          { "emoji": "🪪", "name": "Kontroll tal-Identità fil-Patrolja", "body": "Uffiċjal tal-pulizija jivverifika l-identità sħiħa taċ-ċittadin — isem, CNP, indirizz, ritratt — permezz ta' NFC jew QR. L-ebda karta. Ir-riżultat jiġi reġistrat awtomatikament.", "legal": "Law 218/2002 — Art. 31" },
+          { "emoji": "🚗", "name": "Pakkett Sħiħ ta' Waqfa tat-Traffiku", "body": "Skaner wieħed QR: l-uffiċjal jirċievi l-ID, il-liċenzja tas-sewqan bil-kategoriji, ir-reġistrazzjoni tal-vettura, l-assigurazzjoni RCA u l-ITP — kollha vverifikati kriptografikament.", "legal": "OUG 195/2002 — Art. 6, 80, 81" },
+          { "emoji": "🛂", "name": "Kontroll tal-Fruntiera", "body": "Fil-punti tal-qsim tal-fruntiera, l-uffiċjali jivverifikaw l-identità, in-nazzjonalità u l-validità tad-dokument tal-ivvjaġġar f'preżentazzjoni digitali sigura waħda.", "legal": "Law 248/2005" }
+        ]
       },
       {
         "icon": "🏢",
-        "title": "Company Documents",
-        "body": "Company registration certificate, powers of attorney and corporate documents. Sign digitally with your wallet.",
-        "status": "soon"
+        "image": "/assets/illustrations/usecase-business.jpg",
+        "title": "Negozju u Tranżazzjonijiet Kummerċjali",
+        "description": "Il-kumpaniji, in-nutara, l-avukati u l-pjattaformi B2B jivverifikaw l-identità tal-kumpanija u l-awtorità tar-rappreżentant legali istantanjament — jelimina ċ-ċertifikati tal-karta u l-kurrier.",
+        "scenarios": [
+          { "emoji": "🏛️", "name": "Verifika tal-Kumpanija (ONRC)", "body": "Pjattaforma B2B jew portal ta' sejħa pubblika jivverifika l-isem tal-kumpanija, CUI, l-indirizz reġistrat u l-istatus attiv — kollha ċċertifikati mir-Reġistru Nazzjonali tal-Kummerċ.", "legal": "Law 31/1990; Law 26/1990" },
+          { "emoji": "✍️", "name": "Verifika tar-Rappreżentant Legali", "body": "Sieħeb jew nutar jivverifika li persuna hija rappreżentant awtorizzat ta' kumpanija — identità + kredenzjal tal-kumpanija + mandat ippreżentati simultanjament.", "legal": "Law 31/1990 — Art. 75, 197" },
+          { "emoji": "📜", "name": "Iffirmar ta' Kuntratt — Flusso Awtomatizzat Sħiħ", "body": "QR wieħed: identità vverifikata, mandat ikkonfermata, kuntratt iffirmat b'Firma Elettronika Kwalifikata. Legalment vinkolanti fl-UE kollha. Taħt 90 sekonda.", "legal": "Reg. (UE) 2024/1183 — Art. 25; Law 455/2001" }
+        ]
       },
       {
-        "icon": "🏠",
-        "title": "Property Documents",
-        "body": "Land registry extracts and real estate ownership documents in verifiable digital format.",
-        "status": "soon"
+        "icon": "🎓",
+        "image": "/assets/illustrations/usecase-education.jpg",
+        "title": "Edukazzjoni — Skola u Università",
+        "description": "L-istudenti mill-età ta' 6 sal-dottorat iġorru l-karta tal-iskola jew tal-università tagħhom f'EguWallet. Użata għad-dħul fl-iskola, l-eżamijiet, il-librerija, il-kafetterija, id-dormitorji u s-skontijiet tat-trasport.",
+        "scenarios": [
+          { "emoji": "🏫", "name": "Karta tal-Istudent tal-Iskola (Klassijiet 1–12)", "body": "Tifel/tifla jdoqq it-telefon tiegħu/tagħha fil-bieb tal-iskola, il-librerija jew il-kafetterija. Il-carnet de elev digitali jinħareġ mill-iskola jew mill-ispettorat — validu għas-sena akkademika.", "legal": "Law 1/2011 — Art. 5" },
+          { "emoji": "📋", "name": "Karta tal-Istudent + ID fl-Eżamijiet", "body": "Għall-bakkalaureatt, l-eżamijiet nazzjonali u l-olimpjadi: carnet de elev flimkien mal-karta tal-identità elettronika ippreżentati simultanjament — għall-istudenti ta' 14-il sena u akbar.", "legal": "Law 1/2011; OUG 97/2005 — Art. 14" },
+          { "emoji": "🎓", "name": "Karta tal-Istudent Universitarju", "body": "Dħul fil-fakultà, dormitorju, librerija, segretarjat — il-carnet de student digitali jissostitwixxi l-karta fiżika. Jaħdem għal boroz ta' studju u skontijiet tal-ivvjaġġar CFR.", "legal": "Law 1/2011 — Art. 118, 119" },
+          { "emoji": "🚌", "name": "Pass tat-Trasport tal-Istudent", "body": "L-istudenti jitilqu l-karozzi tal-linja, il-metro u t-treni bl-użu tal-kartiera tagħhom. Il-validatur jew is-sewwieq jara d-dritt istantanjament — l-ebda pass fiżiku meħtieġ.", "legal": "OUG 133/2000; HCL trasport urban" }
+        ]
+      },
+      {
+        "icon": "🛒",
+        "image": "/assets/illustrations/usecase-retail.jpg",
+        "title": "Bejgħ bl-Imnut u Verifika tal-Età",
+        "description": "In-negozjanti jivverifikaw l-età jew l-identità fil-punt tal-bejgħ f'sekondi — mingħajr ebda data personali maħżuna u konformità sħiħa mal-GDPR.",
+        "scenarios": [
+          { "emoji": "🍺", "name": "Età 18+ fil-Punt tal-Bejgħ", "body": "Il-kaxxier juri kodiċi QR. Il-klijent japprova mill-kartiera tiegħu: jintbagħat biss «età ≥ 18: IVA». L-ebda isem, l-ebda numru tal-ID, l-ebda ritratt.", "legal": "OUG 99/2000 — alkoħol/tabakk" },
+          { "emoji": "🏨", "name": "Check-in fl-Albergu", "body": "It-turist jagħmel check-in billi jippreżenta ismu, id-data tat-twelid u n-nazzjonalità mill-kartiera. L-ebda fotokolja tal-passaporti. Konformi mar-regolamenti tar-reġistrazzjoni tal-akkomodazzjoni.", "legal": "HG 1215/2001" }
+        ]
+      },
+      {
+        "icon": "🏦",
+        "image": "/assets/illustrations/usecase-banking.jpg",
+        "title": "Servizzi Finanzjarji u KYC",
+        "description": "Il-banek, il-kumpaniji tal-assigurazzjoni u l-pjattaformi fintech jirreġistraw il-klijenti diġitalment — jissodisfaw ir-rekwiżiti AML/KYC mingħajr formoli tal-karta.",
+        "scenarios": [
+          { "emoji": "🏦", "name": "Ftuħ ta' Kont Bankarju (KYC/AML)", "body": "Bank jivverifika l-identità sħiħa tal-klijent mill-bogħod — isem, CNP, data u post tat-twelid, nazzjonalità, indirizz — ċċertifikat mill-kartiera EUDI. Konformi mal-liġi kontra l-ħasil tal-flus.", "legal": "Law 129/2019; Directive (UE) 2015/849" },
+          { "emoji": "💼", "name": "Assigurazzjoni u Prodotti Finanzjarji", "body": "Il-kumpaniji tal-assigurazzjoni jivverifikaw l-identità tad-detentur tal-polza meta jiffirmaw il-kuntratt — diġitalment, istantanjament, b'traċċabilità sħiħa tal-eIDAS 2.0.", "legal": "Reg. (UE) 2024/1183" }
+        ]
+      },
+      {
+        "icon": "🏥",
+        "image": "/assets/illustrations/usecase-healthcare.jpg",
+        "title": "Saħħa u Servizzi Soċjali",
+        "description": "L-isptarijiet, il-kliniċi, il-ispiżeriji u s-servizzi soċjali jidentifikaw lill-pazjenti u l-benefiċjarji b'mod sigur, mingħajr ma jimlewx formoli manwalment.",
+        "scenarios": [
+          { "emoji": "🏥", "name": "Identifikazzjoni tal-Pazjent", "body": "Sptar jew klinika jidentifika pazjent bl-EguWallet tiegħu. Isem, CNP, data tat-twelid ivverifikati istantanjament fl-akkoljenza jew fid-dipartiment tal-emerġenza.", "legal": "Law 95/2006 — Art. 230-232" },
+          { "emoji": "🗳️", "name": "Kontroll tal-Votant tal-Kummissjoni Elettorali", "body": "Il-persunal tal-istazzjon tal-votazzjoni jivverifika l-identità tal-votant u jikkontrolla r-reġistru elettorali — istantanjament, b'pista ta' awditu sħiħa. L-ebda tfittxija manwali tal-lista.", "legal": "Law 208/2015 — Art. 84" },
+          { "emoji": "📋", "name": "Reklutaġġ u Verifika tal-HR", "body": "Min iħaddem jivverifika l-identità tal-ħaddiem il-ġdid meta jiffirma l-kuntratt — isem, CNP, indirizz — kif meħtieġ mill-Kodiċi tax-Xogħol u r-rappurtar REVISAL.", "legal": "Law 53/2003; HG 500/2011" }
+        ]
+      },
+      {
+        "icon": "🎰",
+        "image": "/assets/illustrations/usecase-gambling.jpg",
+        "title": "Logħob u Esklużjoni Awtoimposta",
+        "description": "Il-każinos onlajn u fiżiċi, l-operaturi tas-sports betting u l-pjattaformi tal-logħob jivverifikaw l-identità tal-loġġatur u jiċċekkjaw ir-reġistri nazzjonali tal-esklużjoni awtoimposta.",
+        "scenarios": [
+          { "emoji": "🎰", "name": "Verifika tal-Identità tal-Loġġatur (KYC)", "body": "L-operaturi tal-logħob jivverifikaw l-identità tal-loġġatur fir-reġistrazzjoni — isem, data tat-twelid, nazzjonalità — kif meħtieġ mir-regolamenti AML u l-liċenzjar tal-logħob. Mgħaġġla, digitali, l-ebda fotokolja.", "legal": "Directive (UE) 2015/849; OUG 77/2009" },
+          { "emoji": "🚫", "name": "Kontroll tar-Reġistru tal-Esklużjoni Awtoimposta", "body": "Qabel ma jħalli loġġatur jillogħob, l-operatur jiċċekkja r-reġistru nazzjonali tal-esklużjoni awtoimposta permezz ta' EguWallet. Jekk il-loġġatur jinsab fuq il-lista, l-aċċess jiġi mblukkat awtomatikament — l-ebda tfittxija manwali meħtieġa.", "legal": "OUG 77/2009 — Art. 10; awtorità nazzjonali tal-logħob" },
+          { "emoji": "🔞", "name": "Verifika tal-Età 18+ għal-Logħob", "body": "L-operaturi tal-logħob onlajn u fiżiċi jivverifikaw li l-loġġatur għandu 18-il sena jew akbar — bl-użu tal-attestazzjoni tal-età EguWallet. Jintbagħat biss IVA/LE — l-ebda data personali maħżuna mill-operatur.", "legal": "OUG 77/2009; Directive (UE) 2015/849" }
+        ]
+      },
+      {
+        "icon": "⚖️",
+        "image": "/assets/illustrations/usecase-legal.jpg",
+        "title": "Legali u Notarili — Il-Preżenza Fiżika M'għadhiex Meħtieġa",
+        "description": "Skont ir-Regolament (UE) 2024/1183, il-Kartiera EUDI tipprovdi identifikazzjoni legalment vinkolanti ekwivalenti għall-preżenza fiżika għal firxa wiesgħa ta' atti legali.",
+        "scenarios": [
+          { "emoji": "📝", "name": "Identifikazzjoni Notarili mill-Bogħod", "body": "Għal atti li qabel kienu jeħtieġu preżenza fiżika — prokura, dikjarazzjonijiet, trasferimenti ta' proprjetà — in-nutar issa jista' jidentifika l-parti permezz tal-kartiera EUDI mill-bogħod.", "legal": "Law 36/1995 — Art. 40; Reg. (UE) 2024/1183 — Art. 5a" },
+          { "emoji": "🏠", "name": "Tranżazzjonijiet tal-Proprjetà Immobbli Mingħajr Tbatija", "body": "Ix-xiri jew il-bejgħ tal-proprjetà m'għadux jeħtieġ li tivvjaġġa lejn l-uffiċċju tan-nutar biss għall-identifikazzjoni. Iż-żewġ partijiet jidentifikaw ruħhom diġitalment, il-mandat tar-rappreżentant jiġi vverifikat, u l-kuntratt jiġi ffirmat b'QES — kollha mill-bogħod.", "legal": "Civil Code Art. 1244; eIDAS 2.0 Art. 25" },
+          { "emoji": "✅", "name": "Dikjarazzjonijiet u Prokuri", "body": "Dikjarazzjonijiet statutorji, mandati, affidavits — dawn l-atti m'għadhomx jeħtieġu appuntament notarili fiżiku għall-pass tal-identifikazzjoni. Iċ-ċittadin jippreżenta l-PID EguWallet tiegħu; l-identifikazzjoni hija legalment ekwivalenti għall-verifika personali.", "legal": "Reg. (UE) 2024/1183 — eIDAS 2.0; Law 455/2001" },
+          { "emoji": "🤝", "name": "Kuntratti Kummerċjali b'QES", "body": "Ftehimiet ta' servizzi, kuntratti ta' sħubija, riżoluzzjonijiet tal-azzjonisti — iffirmati b'Firma Elettronika Kwalifikata direttament minn EguWallet. Forza legali fl-istati membri kollha 27 tal-UE. L-ebda printer, l-ebda kurrier, l-ebda appuntament.", "legal": "Law 455/2001; eIDAS 2.0 Art. 25; Law 31/1990" }
+        ]
       }
+    ]
+  },
+  "trust": {
+    "heading": "Legalment vinkolanti — mafdal mil-liġi, ikkontrollat minnek",
+    "subheading": "EguWallet jagħti liċ-ċittadini kontroll sħiħ fuq id-data tal-identità tagħhom, filwaqt li jagħti lis-servizzi u lill-awtoritajiet pubbliċi ċ-ċertezza legali li jeħtieġu.",
+    "image": "/assets/illustrations/usecase-trust.jpg",
+    "citizenTitle": "Għaċ-ċittadini — int tiddeċiedi kollox",
+    "citizenPoints": [
+      "Int tagħżel liema data taqsam, ma' min, u meta — il-kartiera tiegħek qatt ma tibgħat xejn mingħajr l-approvazzjoni espliċita tiegħek.",
+      "Kull interazzjoni tiġi reġistrata fl-istorja personali tal-awditu tiegħek. Tista' tara eżattament min talab id-data tiegħek u dak li rċieva.",
+      "Skont il-GDPR Art. 17, tista' titlob it-tħassir tad-data tiegħek minn kwalunkwe servizz fi kwalunkwe żmien — direttament mill-applikazzjoni.",
+      "Ċwievet kriptografiċi tiegħek qatt ma jitilqu mid-dispożittiv tiegħek. L-ebda fornitur ta' kartiera, l-ebda gvern, l-ebda parti terza ma tista' taċċessa l-kredenzjali tiegħek mingħajr il-kunsens tiegħek."
     ],
-    "statusAvailable": "Available",
-    "statusSoon": "Coming Soon"
+    "rpTitle": "Għas-servizzi u l-organizzazzjonijiet — identità legalment ċerta",
+    "rpSubtitle": "Is-servizzi li jaċċettaw EguWallet (msejħa Relying Parties) jibbenifikaw minn:",
+    "rpPoints": [
+      "Identifikazzjoni legalment vinkolanti skont ir-Regolament (UE) 2024/1183 — ekwivalenti għall-ispezzjoni fiżika tad-dokumenti għall-maġġoranza tal-finijiet legali.",
+      "Data tal-identità vverifikata kriptografikament — impossibbli li tiffalzifika, tirrepeti jew tmanipola.",
+      "Konformità sħiħa AML/KYC għall-banek, il-kumpaniji tal-assigurazzjoni u l-pjattaformi finanzjarji.",
+      "Riskju żero ta' responsabbiltà — il-ħarriġ tal-kartiera jġorr ir-responsabbiltà regolatorja għall-awtentiċità tal-kredenzjali."
+    ],
+    "auditTitle": "Awditjat privatament. Responsabbli pubblikament.",
+    "auditBody": "EguWallet huwa mibnija fuq standards miftuħa (ARF 2.5+, OpenID4VCI, OpenID4VP, SD-JWT, ISO 18013-5) u qiegħed jgħaddi minn ċertifikazzjoni formali minn Korp ta' Valutazzjoni tal-Konformità akkreditat.",
+    "badges": [
+      { "icon": "🛡️", "label": "GDPR Art. 17 — Dritt għat-tħassir" },
+      { "icon": "📋", "label": "Storja sħiħa tal-interazzjonijiet" },
+      { "icon": "⚖️", "label": "eIDAS 2.0 legalment vinkolanti" },
+      { "icon": "🔐", "label": "Żvelar selettiv b'zero-knowledge" },
+      { "icon": "🔍", "label": "Awditjat privatament" },
+      { "icon": "🌍", "label": "Validu fl-istati kollha 27 tal-UE" }
+    ]
   },
   "usedToday": {
-    "heading": "Where EguWallet works today",
-    "subheading": "Production applications already using EguWallet for authentication and verification",
-    "app1Name": "Ilfov County Council",
+    "heading": "Fejn jaħdem EguWallet llum",
+    "subheading": "Applikazzjonijiet ta' produzzjoni diġà jużaw EguWallet għall-awtentikazzjoni u l-verifika",
+    "app1Name": "Kunsill tal-Kontea ta' Ilfov",
     "app1Url": "https://ilfov.net",
-    "app1Body": "Digital public services for Ilfov County citizens — EguWallet authentication for e-government portal access, application submission, and document verification.",
-    "app2Name": "Sector 2 Bucharest City Hall",
+    "app1Body": "Servizzi pubbliċi diġitali għaċ-ċittadini tal-Kontea ta' Ilfov — awtentikazzjoni EguWallet għall-aċċess għall-portal e-governament, is-sottomissjoni tal-applikazzjonijiet u l-verifika tad-dokumenti.",
+    "app2Name": "Muniċipalità ta' Bukarest Settur 2",
     "app2Url": "https://sector2.eu",
-    "app2Body": "Digital municipal services for Sector 2 residents — fast and secure authentication with the digital wallet for all online city hall services.",
-    "badgeText": "Sign in with EguWallet"
+    "app2Body": "Servizzi muniċipali diġitali għar-residenti tas-Settur 2 — awtentikazzjoni mgħaġġla u sigura bil-kartiera digitali għas-servizzi kollha tal-kunsill tal-belt onlajn.",
+    "badgeText": "Idħol b'EguWallet"
+  },
+  "verifier": {
+    "heading": "Hekk istituzzjoni pubblika jew kumpanija?",
+    "subheading": "Ivverifika d-dokumenti tal-identità u l-kredenzjali digitali b'EguWallet Verifier",
+    "card1Title": "Spettur tal-identità digitali",
+    "card1Body": "L-impjegati tal-istituzzjoni rreġistrata jivverifikaw id-dokumenti diġitali f'sekondi permezz ta' Bluetooth/NFC — direttament mit-telefon tagħhom. Kull verifika tiġi reġistrata, hija traċċabbli u konformi mal-GDPR. L-ebda karta, l-ebda fotokolja.",
+    "card2Title": "Kif tibda",
+    "card2Body": "Niżżel EguWallet Verifier, irreġistra bil-kartiera EguWallet tiegħek jew manwalment, agħżel l-istituzzjoni u d-dipartiment tiegħek. Il-kont tiegħek jiġi attivat mill-amministratur tal-istituzzjoni tiegħek.",
+    "playBadgeAlt": "Niżżel EguWallet Verifier fuq Google Play",
+    "navLabel": "Għall-istituzzjonijiet"
   },
   "future": {
-    "heading": "What's next — the future of digital identity",
-    "subheading": "EguWallet continuously expands with new use cases that make life easier",
+    "heading": "X'jmiss — il-futur tal-identità digitali",
+    "subheading": "EguWallet jespandi kontinwament b'każijiet ġodda ta' użu li jagħmlu l-ħajja aktar faċli",
     "items": [
-      {
-        "icon": "📡",
-        "title": "Device-to-Device Verification (Bluetooth)",
-        "body": "Like contactless NFC payment — a police officer or merchant brings their phone near yours and instantly receives only the data you have authorised. No internet, no intermediate server."
-      },
-      {
-        "icon": "🚔",
-        "title": "Law Enforcement Identity Check",
-        "body": "Similar to modern contactless payment: a law enforcement officer verifies identity via NFC/Bluetooth. You control what data is transmitted. Fast, secure, no photocopies needed."
-      },
-      {
-        "icon": "🍺",
-        "title": "Age 18+ Verification (Coming Soon)",
-        "body": "Imminent deployment with a major Romanian retailer for age control on alcohol sales. The merchant receives only a YES/NO answer — no other personal data is disclosed."
-      },
-      {
-        "icon": "🚌",
-        "title": "Public Transport Tickets & Passes",
-        "body": "Students entitled to free travel prove their status via EguWallet. Regular passengers purchase and present tickets digitally — no paper, no contact validators."
-      },
-      {
-        "icon": "📍",
-        "title": "Address on the New Romanian ID Card",
-        "body": "The new Romanian ID card no longer contains an address on the chip. EguWallet solves this: your registered address, certified by the official registry, can be selectively disclosed when required."
-      },
-      {
-        "icon": "✍️",
-        "title": "Qualified Digital Signature",
-        "body": "EguWallet will function as a Qualified Electronic Signature (QES) device compliant with eIDAS 2.0. Sign documents with full legal force, recognised across all EU member states — directly from your phone."
-      }
+      { "icon": "📡", "title": "Verifika minn Dispożittiv għal Dispożittiv (Bluetooth)", "body": "Bħall-ħlas NFC mingħajr kuntatt — uffiċjal tal-pulizija jew negozjant iġib it-telefon tiegħu qrib tiegħek u jirċievi istantanjament biss id-data li kont awtorizzajt. L-ebda internet, l-ebda server intermedjarju." },
+      { "icon": "🚔", "title": "Kontroll tal-Identità tal-Infurzar tal-Liġi", "body": "Simili għall-ħlas kontemporan mingħajr kuntatt: uffiċjal tal-infurzar tal-liġi jivverifika l-identità permezz ta' NFC/Bluetooth. Int tikkontrolla liema data tiġi trasmessa. Mgħaġġel, sigur, l-ebda fotokolja meħtieġa." },
+      { "icon": "🍺", "title": "Verifika tal-Età 18+ (Dalwaqt)", "body": "Skjerament imminenti ma' negozjant ewlieni Rumen għall-kontroll tal-età fuq il-bejgħ tal-alkoħol. In-negozjant jirċievi biss risposta IVA/LE — l-ebda data personali oħra tiġi żvelata." },
+      { "icon": "🚌", "title": "Biljetti u Passes tat-Trasport Pubbliku", "body": "L-istudenti li għandhom id-dritt għal vjaġġ bla ħlas jippruvaw l-istatus tagħhom permezz ta' EguWallet. Il-passiġġieri regolari jixtru u jippreżentaw biljetti diġitalment — l-ebda karta, l-ebda validaturi tal-kuntatt." },
+      { "icon": "📍", "title": "Attestazzjoni tal-Indirizz", "body": "L-indirizz reġistrat tiegħek, ċċertifikat mir-reġistru uffiċjali, jista' jiġi żvelat b'mod selettiv meta meħtieġ." },
+      { "icon": "✍️", "title": "Firma Digitali Kkwalifikata", "body": "EguWallet se jiffunzjona bħala dspożittiv ta' Firma Elettronika Kkwalifikata (QES) konformi mal-eIDAS 2.0. Iffirma dokumenti b'forza legali sħiħa, rikonoxxuta fl-istati membri kollha tal-UE — direttament mit-telefon tiegħek." }
     ]
   },
   "howItWorks": {
-    "heading": "How it works",
-    "step1Title": "1. Download the app",
-    "step1Body": "Install EguWallet for free from the Google Play Store. Coming soon on Apple App Store.",
-    "step2Title": "2. Activate your wallet",
-    "step2Body": "Verify your phone number, create a secure PIN, and connect to your county or city portal to register your digital documents.",
-    "step3Title": "3. Present with full control",
-    "step3Body": "Scan a QR code, tap an NFC terminal or share a secure link. You choose exactly what data is transmitted — never more than is necessary."
+    "heading": "Kif jaħdem",
+    "step1Title": "1. Niżżel l-applikazzjoni",
+    "step1Body": "Installa EguWallet mill-Google Play Store — bla ħlas bħalissa matul il-fażi tal-pilota. Dalwaqt fuq Apple App Store.",
+    "step2Title": "2. Attiva l-kartiera tiegħek",
+    "step2Body": "Ivverifika n-numru tat-telefon tiegħek, oħloq PIN sigur, u qabbad mal-portal tal-kontea jew tal-belt tiegħek biex tirreġistra d-dokumenti digitali tiegħek.",
+    "step3Title": "3. Ippreżenta b'kontroll sħiħ",
+    "step3Body": "Iskenja kodiċi QR, idoqq terminal NFC jew aqsam link sigur. Int tagħżel eżattament liema data tiġi trasmessa — qatt aktar minn dak li huwa meħtieġ."
   },
   "faq": {
-    "heading": "Frequently asked questions",
+    "heading": "Mistoqsijiet frekwenti",
     "items": [
-      {
-        "q": "What is EguWallet?",
-        "a": "EguWallet is a European eIDAS 2.0 certified digital wallet developed by IT Eguilde SRL. It allows you to store and present digital identity documents (ID card, passport, driving licence etc.) securely on your phone, with full control over your personal data."
-      },
-      {
-        "q": "What documents can I store in EguWallet?",
-        "a": "Currently: identity card (PID), passport, driving licence, vehicle registration, RCA insurance and vehicle inspection certificate (ITP/RAR). Coming soon: company documents and property documents."
-      },
-      {
-        "q": "Is my personal data secure?",
-        "a": "Yes. EguWallet uses SD-JWT and mDoc/ISO 18013-5 for selective disclosure — you only transmit data you explicitly approve. No presentation is stored. Legal basis: GDPR Art. 5(1)(c) and Regulation (EU) 2024/1183."
-      },
-      {
-        "q": "Where can I use EguWallet?",
-        "a": "Today: Ilfov County Council digital services (ilfov.net) and Sector 2 City Hall (sector2.eu). Expansion to other public institutions and private retailers in Romania and the EU is ongoing."
-      },
-      {
-        "q": "What is eIDAS 2.0?",
-        "a": "eIDAS 2.0 is Regulation (EU) 2024/1183 amending the original eIDAS regulation. It guarantees every European citizen the right to a free digital wallet (EUDI Wallet), recognised across all 27 member states."
-      },
-      {
-        "q": "How does selective disclosure work?",
-        "a": "When a service requests identity verification, your wallet shows you exactly what data is being requested. You approve or reject each field. For example, for age-18 verification, the merchant receives only a YES/NO — they never see your name, national ID number or address."
-      },
-      {
-        "q": "Is EguWallet free?",
-        "a": "Yes, completely free for citizens. Download, registration and use are all without cost."
-      },
-      {
-        "q": "How do I activate my digital wallet?",
-        "a": "Download the app from Google Play, verify your phone number, create a PIN, then connect to your county or city portal to register your documents. The process takes approximately 5 minutes."
-      }
+      { "q": "X'inhu EguWallet?", "a": "EguWallet hija kartiera digitali Ewropea ċertifikata eIDAS 2.0 żviluppata minn IT Eguilde SRL. Tippermettik taħżen u tippreżenta dokumenti tal-identità digitali (karta tal-identità, passaport, liċenzja tas-sewqan eċċ.) b'mod sigur fuq it-telefon tiegħek, b'kontroll sħiħ fuq id-data personali tiegħek." },
+      { "q": "Liema dokumenti nista' naħżen f'EguWallet?", "a": "Bħalissa: karta tal-identità (PID), passaport u liċenzja tas-sewqan. Dalwaqt: reġistrazzjoni tal-vettura, assigurazzjoni RCA, ITP/RAR, dokumenti tal-kumpanija u dokumenti tal-proprjetà." },
+      { "q": "Hija sigura d-data personali tiegħi?", "a": "Iva. EguWallet juża SD-JWT u mDoc/ISO 18013-5 għal żvelar selettiv — int tibgħat biss data li approvajt b'mod espliċitu. L-ebda preżentazzjoni ma tiġi maħżuna. Bażi legali: GDPR Art. 5(1)(c) u Regolament (UE) 2024/1183." },
+      { "q": "Fejn nista' nuża EguWallet?", "a": "Illum: servizzi diġitali tal-Kunsill tal-Kontea ta' Ilfov (ilfov.net) u l-Kunsill tal-Belt tas-Settur 2 (sector2.eu). It-tkabbir għal istituzzjonijiet pubbliċi oħra u negozjanti privati fir-Rumanija u l-UE huwa kontinwu." },
+      { "q": "X'inhu eIDAS 2.0?", "a": "eIDAS 2.0 huwa r-Regolament (UE) 2024/1183 li jemenda r-regolament oriġinali tal-eIDAS. Jiggarantixxi lil kull ċittadin Ewropew id-dritt għal kartiera digitali bla ħlas (Kartiera EUDI), rikonoxxuta fl-istati membri kollha 27." },
+      { "q": "Kif jaħdem l-iżvelar selettiv?", "a": "Meta servizz jitlob il-verifika tal-identità, il-kartiera tiegħek turi eżattament liema data qiegħda tintalab. Inti tapprova jew tirrifjuta kull qasam. Pereżempju, għall-verifika tal-età-18, in-negozjant jirċievi biss IVA/LE — qatt ma jara ismek, in-numru nazzjonali tal-ID jew l-indirizz tiegħek." },
+      { "q": "Huwa EguWallet bla ħlas?", "a": "Iva, bla ħlas għaċ-ċittadini matul il-fażi tal-pilota attwali. EguWallet qiegħed jgħaddi minn ċertifikazzjoni formali tal-eIDAS 2.0 — ladarba ċċertifikat, jistgħu japplikaw prezzijiet għall-integrazzjonijiet istituzzjonali, iżda l-applikazzjoni tal-kartiera taċ-ċittadin tibqa' bla ħlas." },
+      { "q": "Huwa EguWallet ċertifikat bis-sħiħ?", "a": "EguWallet bħalissa qiegħed jgħaddi minn ċertifikazzjoni formali tal-eIDAS 2.0 minn Korp ta' Valutazzjoni tal-Konformità (CAB) akkreditat. Sakemm il-ċertifikazzjoni titlesta, topera bħala kartiera EUDI pilota. L-istandards tekniċi kollha (ARF 2.5+, OpenID4VCI, OpenID4VP, SD-JWT, ISO 18013-5) diġà huma implimentati." },
+      { "q": "Kif nattiva l-kartiera digitali tiegħi?", "a": "Niżżel l-applikazzjoni minn Google Play, ivverifika n-numru tat-telefon tiegħek, oħloq PIN, imbagħad qabbad mal-portal tal-kontea jew tal-belt tiegħek biex tirreġistra d-dokumenti tiegħek. Il-proċess jieħu madwar 5 minuti." }
     ]
   },
   "getDigitalId": {
-    "heading": "Ikseb l-identità diġitali Ewropea tiegħek",
-    "body": "Applika għall-kredenzjal PID (Data ta' Identifikazzjoni Personali) — il-karta tal-identità diġitali uffiċjali tal-UE fil-kartiera tiegħek, rikonoxxuta fl-27 Stat Membru kollha.",
-    "cta": "Applika għall-identità diġitali",
-    "step1": "Ivverifika l-identità tiegħek b'skanjar tal-karta tal-identità u rikonoxximent tal-wiċċ",
-    "step2": "Ispettur jirrevedi u japprova t-talba tiegħek",
-    "step3": "Irċievi l-kredenzjal PID direttament f'EguWallet"
+    "heading": "Ikseb l-Identità Digitali Ewropea tiegħek",
+    "body": "Itlob il-kredenzjal tad-Data ta' Identifikazzjoni Personali (PID) tiegħek — il-karta tal-identità digitali uffiċjali tal-UE fil-kartiera tiegħek, rikonoxxuta fl-istati membri kollha 27.",
+    "cta": "Itlob l-ID Diġitali tiegħek",
+    "step1": "Ivverifika l-identità tiegħek b'skennjar tal-karta tal-identità u rikonoxximent tal-wiċċ",
+    "step2": "Spettur jeżamina u japprova t-talba tiegħek",
+    "step3": "Irċievi l-kredenzjal PID tiegħek direttament f'EguWallet"
   },
   "footer": {
-    "provider": "Provided by IT Eguilde SRL",
-    "tagline": "European Digital Wallet — eIDAS 2.0 Compliant",
-    "privacy": "Privacy Policy",
-    "legal": "Terms & Conditions",
-    "contact": "Contact",
-    "euCompliance": "eIDAS 2.0 Compliant",
-    "machineTranslatedNotice": "This page is currently available in Romanian and English only.",
-    "rights": "© 2026 IT Eguilde SRL. All rights reserved."
+    "provider": "Ipprovdut minn IT Eguilde SRL",
+    "tagline": "Kartiera Digitali Ewropea — Konformi mal-eIDAS 2.0",
+    "privacy": "Politika tal-Privatezza",
+    "legal": "Termini u Kundizzjonijiet",
+    "contact": "Kuntatt",
+    "euCompliance": "Konformi mal-eIDAS 2.0",
+    "accessibility": "Aċċessibbiltà",
+    "machineTranslatedNotice": "Din il-paġna hija tradotta bil-magna. Verżjonijiet uffiċjali: Rumen u Ingliż.",
+    "rights": "© 2026 IT Eguilde SRL. Id-drittijiet kollha riżervati."
+  },
+  "accountDelete": {
+    "title": "Ħassar il-Kont Tiegħek",
+    "description": "Itlob it-tħassir tal-kont EguWallet tiegħek u d-data kollha assoċjata.",
+    "intro": "EguWallet jirrispetta d-dritt tiegħek għat-tħassir tad-data skont l-Artikolu 17 tal-GDPR. Tista' tħassar il-kartiera tiegħek u d-data kollha assoċjata bl-użu ta' kwalunkwe metodu hawn taħt.",
+    "method1Title": "Metodu 1: Tħassir fl-Applikazzjoni",
+    "method1Steps": [
+      "Iftaħ l-applikazzjoni EguWallet fuq id-dispożittiv tiegħek",
+      "Mur għas-Settings",
+      "Idoqq 'Ħassar il-Kartiera'",
+      "Ikkonferma t-tħassir meta jintalab"
+    ],
+    "method1Note": "Dan jneħħi immedjatament il-kredenzjali, iċ-ċwievet kriptografiċi u d-data lokali kollha mid-dispożittiv tiegħek, u jitlob it-tħassir tad-data tal-kont tiegħek fuq is-server.",
+    "method2Title": "Metodu 2: Talba bil-Posta Elettronika",
+    "method2Text": "Ibgħat email lil <a href='mailto:privacy@eguwallet.eu' class='t-primary underline'>privacy@eguwallet.eu</a> bis-suġġett 'Talba għat-Tħassir tal-Kont'. Inkludu l-indirizz tal-email jew in-numru tat-telefon assoċjat mar-reġistrazzjoni tal-kartiera tiegħek.",
+    "whatDeleted": "X'Jiġi Mħassar",
+    "deletedItems": [
+      "Id-data tar-reġistrazzjoni tal-kartiera tiegħek (isem, email, numru tat-telefon)",
+      "Il-kredenzjali digitali kollha (PID, mDL, attestazzjonijiet ikkwalifikati)",
+      "Ċwievet kriptografiċi u attestazzjonijiet tal-kartiera",
+      "Informazzjoni tad-dispożittiv u tokens ta' notifika push FCM",
+      "Immaġini tas-selfie u skennerjar tad-dokumenti",
+      "Kodiċi ta' verifika u data tas-sessjoni"
+    ],
+    "whatRetained": "X'Jinżamm",
+    "retainedItems": [
+      "Reġistri tal-awditu obbligatorji tal-eIDAS 2.0 (anonimizzati, l-ebda data personali) — miżmuma għal 7 snin kif meħtieġ mir-regolament tal-UE"
+    ],
+    "timeline": "Skeda ta' Żmien tat-Tħassir",
+    "timelineText": "Wara li jirċievi t-talba tiegħek għat-tħassir, id-data personali tiegħek tiġi mħassra b'mod permanenti mis-servers tagħna fi żmien 30 jum. Id-data lokali tad-dispożittiv titħassar immedjatament meta tuża t-tħassir fl-applikazzjoni.",
+    "contact": "Mistoqsijiet?",
+    "contactText": "Għal mistoqsijiet dwar it-tħassir tad-data jew id-drittijiet tal-privatezza tiegħek, ikkuntattjana fuq <a href='mailto:privacy@eguwallet.eu' class='t-primary underline'>privacy@eguwallet.eu</a>."
   }
 }

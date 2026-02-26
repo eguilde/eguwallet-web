@@ -3,213 +3,297 @@
   "langName": "Ελληνικά",
   "isMachineTranslated": true,
   "nav": {
-    "what": "What is it",
-    "privacy": "Privacy",
-    "documents": "Documents",
-    "usedToday": "Where it works",
-    "future": "Future",
-    "howItWorks": "How it works",
-    "faq": "FAQ",
-    "download": "Download"
+    "what": "Τι είναι",
+    "privacy": "Απόρρητο",
+    "documents": "Έγγραφα",
+    "useCases": "Περιπτώσεις χρήσης",
+    "trust": "Εμπιστοσύνη και νόμος",
+    "usedToday": "Πού λειτουργεί",
+    "about": "Σχετικά",
+    "contact": "Επικοινωνία",
+    "future": "Μέλλον",
+    "howItWorks": "Πώς λειτουργεί",
+    "faq": "Συχνές ερωτήσεις",
+    "download": "Λήψη"
   },
   "hero": {
-    "title": "Your digital identity — secure, private, always with you",
-    "subtitle": "EguWallet is a European eIDAS 2.0 certified digital wallet that replaces physical documents with verifiable digital equivalents, recognised across all EU member states.",
-    "badge1": "eIDAS 2.0 Compliant",
-    "badge2": "Certified EUDI Wallet",
-    "badge3": "Free",
-    "downloadAndroid": "Get it on Google Play",
-    "downloadIos": "Available soon on App Store",
-    "downloadIosComingSoon": "Coming Soon"
+    "title": "Η ψηφιακή σας ταυτότητα — ασφαλής, ιδιωτική, πάντα μαζί σας",
+    "subtitle": "Το EguWallet είναι ένα ευρωπαϊκό πιστοποιημένο eIDAS 2.0 ψηφιακό πορτοφόλι που αντικαθιστά τα φυσικά έγγραφα με επαληθεύσιμα ψηφιακά ισοδύναμα, αναγνωρισμένα σε όλα τα κράτη μέλη της ΕΕ.",
+    "badge1": "Συμμόρφωση eIDAS 2.0",
+    "badge2": "Πιστοποίηση σε εξέλιξη",
+    "badge3": "Δωρεάν προς το παρόν",
+    "downloadAndroid": "Διαθέσιμο στο Google Play",
+    "downloadIos": "Σύντομα διαθέσιμο στο App Store",
+    "downloadIosComingSoon": "Σύντομα"
   },
   "what": {
-    "heading": "What is EguWallet?",
-    "card1Title": "Regulated by EU Law",
-    "card1Body": "EguWallet is built on Regulation (EU) 2024/1183 — the eIDAS revision — which guarantees every European citizen the right to a free digital wallet, recognised across all 27 member states.",
-    "card2Title": "What is a EUDI Wallet?",
-    "card2Body": "A European Digital Identity Wallet (EUDI) is a secure app that stores verifiable digital identity documents: ID card, passport, driving licence, vehicle documents and more — all under your exclusive control.",
-    "card3Title": "Who provides EguWallet?",
-    "card3Body": "EguWallet is developed by IT Eguilde SRL, a digital identity provider. The app fully complies with the EUDI Architecture Reference Framework (ARF 2.5+), OpenID4VCI and OpenID4VP standards."
+    "heading": "Τι είναι το EguWallet;",
+    "card1Title": "Ρυθμιζόμενο από το δίκαιο της ΕΕ",
+    "card1Body": "Το EguWallet βασίζεται στον Κανονισμό (ΕΕ) 2024/1183 — την αναθεώρηση eIDAS — που εγγυάται σε κάθε Ευρωπαίο πολίτη το δικαίωμα σε ένα δωρεάν ψηφιακό πορτοφόλι, αναγνωρισμένο σε όλα τα 27 κράτη μέλη.",
+    "card2Title": "Τι είναι ένα πορτοφόλι EUDI;",
+    "card2Body": "Ένα Ευρωπαϊκό Ψηφιακό Πορτοφόλι Ταυτότητας (EUDI) είναι μια ασφαλής εφαρμογή που αποθηκεύει επαληθεύσιμα ψηφιακά έγγραφα ταυτότητας: δελτίο ταυτότητας, διαβατήριο, δίπλωμα οδήγησης, έγγραφα οχήματος και άλλα — όλα υπό τον αποκλειστικό σας έλεγχο.",
+    "card3Title": "Ποιος παρέχει το EguWallet;",
+    "card3Body": "Το EguWallet αναπτύσσεται από την IT Eguilde SRL, πάροχο ψηφιακής ταυτότητας. Η εφαρμογή βασίζεται στο Πλαίσιο Αναφοράς Αρχιτεκτονικής EUDI (ARF 2.5+), OpenID4VCI και πρότυπα OpenID4VP. Υπόκειται αυτή τη στιγμή σε επίσημη πιστοποίηση eIDAS 2.0."
   },
   "privacy": {
-    "heading": "Your data, your control",
-    "subheading": "Selective disclosure — only what is needed, only when you agree",
-    "body": "EguWallet uses SD-JWT (Selective Disclosure JWT) and mDoc/ISO 18013-5 to enable selective data disclosure. When a merchant or institution requests identity verification, you choose exactly which data is transmitted. Nothing more.",
-    "example1Title": "Age 18+ verification",
-    "example1Step1": "Merchant scans QR code",
-    "example1Step2": "Your wallet receives the request",
-    "example1Step3": "You approve: transmit ONLY «age ≥ 18: YES»",
-    "example1Step4": "Merchant does NOT receive: name, ID number, address, photo",
-    "legalTitle": "Legal basis",
-    "legal1": "<a href=\"https://eur-lex.europa.eu/eli/reg/2016/679/oj\" target=\"_blank\" rel=\"noopener\" style=\"text-decoration:underline;\">GDPR Art. 5(1)(c)</a> — data minimisation principle: processing is limited to what is strictly necessary.",
-    "legal2": "<a href=\"https://eur-lex.europa.eu/eli/reg/2024/1183/oj\" target=\"_blank\" rel=\"noopener\" style=\"text-decoration:underline;\">Reg. (EU) 2024/1183</a> — selective presentation is a citizen right, not an optional feature.",
-    "legal3": "No presentation is stored by the wallet or any third party — every disclosure is ephemeral."
+    "heading": "Τα δεδομένα σας, ο έλεγχός σας",
+    "subheading": "Επιλεκτική αποκάλυψη — μόνο αυτό που χρειάζεται, μόνο όταν συναινείτε",
+    "body": "Το EguWallet χρησιμοποιεί SD-JWT (Selective Disclosure JWT) και mDoc/ISO 18013-5 για επιλεκτική αποκάλυψη δεδομένων. Όταν ένας έμπορος ή ένας φορέας ζητά επαλήθευση ταυτότητας, επιλέγετε ακριβώς ποια δεδομένα μεταδίδονται. Τίποτα παραπάνω.",
+    "example1Title": "Επαλήθευση ηλικίας 18+",
+    "example1Step1": "Ο έμπορος σαρώνει τον κωδικό QR",
+    "example1Step2": "Το πορτοφόλι σας λαμβάνει το αίτημα",
+    "example1Step3": "Εγκρίνετε: μεταδίδεται ΜΟΝΟ «ηλικία ≥ 18: ΝΑΙ»",
+    "example1Step4": "Ο έμπορος ΔΕΝ λαμβάνει: όνομα, αριθμό ταυτότητας, διεύθυνση, φωτογραφία",
+    "legalTitle": "Νομική βάση",
+    "legal1": "<a href=\"https://eur-lex.europa.eu/eli/reg/2016/679/oj\" target=\"_blank\" rel=\"noopener\" style=\"text-decoration:underline;\">GDPR Άρθρο 5(1)(γ)</a> — αρχή ελαχιστοποίησης δεδομένων: η επεξεργασία περιορίζεται σε ό,τι είναι απολύτως απαραίτητο.",
+    "legal2": "<a href=\"https://eur-lex.europa.eu/eli/reg/2024/1183/oj\" target=\"_blank\" rel=\"noopener\" style=\"text-decoration:underline;\">Κανον. (ΕΕ) 2024/1183</a> — η επιλεκτική παρουσίαση είναι δικαίωμα πολίτη, όχι προαιρετικό χαρακτηριστικό.",
+    "legal3": "Καμία παρουσίαση δεν αποθηκεύεται από το πορτοφόλι ή τρίτο μέρος — κάθε αποκάλυψη είναι εφήμερη."
   },
   "documents": {
-    "heading": "Documents in your wallet",
-    "subheading": "All your important documents — digital, verifiable, always at hand",
+    "heading": "Έγγραφα στο πορτοφόλι σας",
+    "subheading": "Όλα τα σημαντικά έγγραφά σας — ψηφιακά, επαληθεύσιμα, πάντα στα χέρια σας",
     "items": [
+      { "icon": "🪪", "title": "Δελτίο Ταυτότητας (PID)", "body": "Το κύριο ψηφιακό έγγραφο ταυτότητας σε συμμόρφωση με το eIDAS 2.0. Αναγνωρισμένο σε όλα τα κράτη μέλη της ΕΕ.", "status": "available" },
+      { "icon": "🛂", "title": "Διαβατήριο", "body": "Η ψηφιακή έκδοση του διαβατηρίου σας, άμεσα επαληθεύσιμη από αρχές και υπηρεσίες.", "status": "available" },
+      { "icon": "🚗", "title": "Δίπλωμα Οδήγησης", "body": "Ψηφιακό δίπλωμα οδήγησης σε συμμόρφωση με mDoc/ISO 18013-5. Επαληθεύσιμο χωρίς επαφή, συμπεριλαμβανομένης της τροχαίας.", "status": "available" },
+      { "icon": "📋", "title": "Ταξινόμηση Οχήματος", "body": "Το έγγραφο ταξινόμησης του οχήματός σας σε ψηφιακή μορφή. Δεν χρειάζεστε πλέον έγγραφα σε χαρτί.", "status": "soon" },
+      { "icon": "🛡️", "title": "Ασφάλεια Οχήματος (RCA)", "body": "Υποχρεωτικό ασφαλιστήριο συμβόλαιο οχήματος, επαληθεύσιμο σε πραγματικό χρόνο.", "status": "soon" },
+      { "icon": "🔧", "title": "Τεχνικός Έλεγχος / RAR", "body": "Περιοδικός τεχνικός έλεγχος (ITP) και δεδομένα οχήματος RAR — επαληθεύσιμα ψηφιακά πιστοποιητικά.", "status": "soon" },
+      { "icon": "🏢", "title": "Εταιρικά Έγγραφα", "body": "Πιστοποιητικό εγγραφής εταιρείας, πληρεξούσια και εταιρικά έγγραφα. Υπογράψτε ψηφιακά με το πορτοφόλι σας.", "status": "soon" },
+      { "icon": "🏠", "title": "Έγγραφα Ακινήτων", "body": "Αποσπάσματα κτηματολογίου και τίτλοι ιδιοκτησίας σε επαληθεύσιμη ψηφιακή μορφή.", "status": "soon" }
+    ],
+    "statusAvailable": "Διαθέσιμο",
+    "statusSoon": "Σύντομα"
+  },
+  "useCases": {
+    "heading": "Πραγματικές περιπτώσεις χρήσης",
+    "subheading": "Το EguWallet λειτουργεί σε κάθε τομέα της δημόσιας και ιδιωτικής ζωής — από μια συνηθισμένη τροχαία έλεγχο έως την υπογραφή επιχειρηματικής σύμβασης",
+    "categories": [
       {
-        "icon": "🪪",
-        "title": "Identity Card (PID)",
-        "body": "The primary digital identity document compliant with eIDAS 2.0. Recognised across all EU member states.",
-        "status": "available"
-      },
-      {
-        "icon": "🛂",
-        "title": "Passport",
-        "body": "The digital version of your passport, instantly verifiable by authorities and services.",
-        "status": "available"
-      },
-      {
-        "icon": "🚗",
-        "title": "Driving Licence",
-        "body": "Digital driving licence compliant with mDoc/ISO 18013-5. Contactlessly verifiable, including by traffic police.",
-        "status": "available"
-      },
-      {
-        "icon": "📋",
-        "title": "Vehicle Registration",
-        "body": "Your vehicle registration document in digital format. No more carrying paper documents.",
-        "status": "available"
-      },
-      {
-        "icon": "🛡️",
-        "title": "Vehicle Insurance (RCA)",
-        "body": "Mandatory vehicle insurance policy, verifiable in real time.",
-        "status": "available"
-      },
-      {
-        "icon": "🔧",
-        "title": "Technical Inspection / RAR",
-        "body": "Periodic technical inspection (ITP) and RAR vehicle data — verifiable digital certificates.",
-        "status": "available"
+        "icon": "🚔",
+        "image": "/assets/illustrations/usecase-police.jpg",
+        "title": "Επιβολή Νόμου και Δημόσια Τάξη",
+        "description": "Αστυνομικοί, φύλακες συνόρων και επιθεωρητές δημόσιας τάξης επαληθεύουν ψηφιακή ταυτότητα σε δευτερόλεπτα — με πλήρη κρυπτογραφική εμπιστοσύνη, χωρίς να αγγίζουν φυσικά έγγραφα.",
+        "scenarios": [
+          { "emoji": "🪪", "name": "Έλεγχος Ταυτότητας σε Περιπολία", "body": "Ένας αστυνομικός επαληθεύει την πλήρη ταυτότητα πολίτη — όνομα, CNP, διεύθυνση, φωτογραφία — μέσω NFC ή QR. Κανένα χαρτί. Το αποτέλεσμα καταγράφεται αυτόματα.", "legal": "Law 218/2002 — Art. 31" },
+          { "emoji": "🚗", "name": "Πλήρες Πακέτο Τροχαίου Ελέγχου", "body": "Μία σάρωση QR: ο αξιωματικός λαμβάνει ταυτότητα, δίπλωμα οδήγησης με κατηγορίες, ταξινόμηση οχήματος, ασφάλεια RCA και ITP — όλα κρυπτογραφικά επαληθευμένα.", "legal": "OUG 195/2002 — Art. 6, 80, 81" },
+          { "emoji": "🛂", "name": "Έλεγχος Συνόρων", "body": "Στα σημεία διέλευσης συνόρων, οι αξιωματικοί επαληθεύουν ταυτότητα, εθνικότητα και ισχύ ταξιδιωτικού εγγράφου σε μία ασφαλή ψηφιακή παρουσίαση.", "legal": "Law 248/2005" }
+        ]
       },
       {
         "icon": "🏢",
-        "title": "Company Documents",
-        "body": "Company registration certificate, powers of attorney and corporate documents. Sign digitally with your wallet.",
-        "status": "soon"
+        "image": "/assets/illustrations/usecase-business.jpg",
+        "title": "Επιχειρήσεις και Εμπορικές Συναλλαγές",
+        "description": "Εταιρείες, συμβολαιογράφοι, δικηγόροι και πλατφόρμες B2B επαληθεύουν εταιρική ταυτότητα και εξουσία νόμιμου εκπροσώπου άμεσα — εξαλείφοντας χάρτινα πιστοποιητικά και ταχυδρομείο.",
+        "scenarios": [
+          { "emoji": "🏛️", "name": "Επαλήθευση Εταιρείας (ONRC)", "body": "Μια πλατφόρμα B2B ή διαδικτυακή πύλη δημόσιων διαγωνισμών επαληθεύει εταιρική επωνυμία, CUI, εγγεγραμμένη διεύθυνση και ενεργή κατάσταση — όλα πιστοποιημένα από το Εθνικό Εμπορικό Μητρώο.", "legal": "Law 31/1990; Law 26/1990" },
+          { "emoji": "✍️", "name": "Επαλήθευση Νόμιμου Εκπροσώπου", "body": "Ένας εταίρος ή συμβολαιογράφος επαληθεύει ότι ένα πρόσωπο είναι εξουσιοδοτημένος εκπρόσωπος εταιρείας — ταυτότητα + εταιρικό διαπιστευτήριο + εντολή παρουσιάζονται ταυτόχρονα.", "legal": "Law 31/1990 — Art. 75, 197" },
+          { "emoji": "📜", "name": "Υπογραφή Σύμβασης — Πλήρης Αυτοματοποιημένη Ροή", "body": "Ένα QR: ταυτότητα επαληθευμένη, εντολή επιβεβαιωμένη, σύμβαση υπογεγραμμένη με Εγκεκριμένη Ηλεκτρονική Υπογραφή. Νομικά δεσμευτική σε ολόκληρη την ΕΕ. Κάτω από 90 δευτερόλεπτα.", "legal": "Κανον. (ΕΕ) 2024/1183 — Art. 25; Law 455/2001" }
+        ]
       },
       {
-        "icon": "🏠",
-        "title": "Property Documents",
-        "body": "Land registry extracts and real estate ownership documents in verifiable digital format.",
-        "status": "soon"
+        "icon": "🎓",
+        "image": "/assets/illustrations/usecase-education.jpg",
+        "title": "Εκπαίδευση — Σχολείο και Πανεπιστήμιο",
+        "description": "Μαθητές από 6 ετών έως διδακτορικό φέρουν την κάρτα σχολείου ή πανεπιστημίου τους στο EguWallet. Χρησιμοποιείται για είσοδο στο σχολείο, εξετάσεις, βιβλιοθήκη, καντίνα, εστίες και εκπτώσεις μεταφορών.",
+        "scenarios": [
+          { "emoji": "🏫", "name": "Κάρτα Μαθητή Σχολείου (Τάξεις 1–12)", "body": "Ένας μαθητής χτυπά το τηλέφωνό του στην πύλη του σχολείου, τη βιβλιοθήκη ή την καντίνα. Το ψηφιακό carnet de elev εκδίδεται από το σχολείο ή την επιθεώρηση — ισχύει για το σχολικό έτος.", "legal": "Law 1/2011 — Art. 5" },
+          { "emoji": "📋", "name": "Φοιτητική Κάρτα + Ταυτότητα σε Εξετάσεις", "body": "Για απολυτήριο, εθνικές εξετάσεις και ολυμπιάδες: carnet de elev μαζί με ηλεκτρονική ταυτότητα παρουσιάζονται ταυτόχρονα — για μαθητές 14 ετών και άνω.", "legal": "Law 1/2011; OUG 97/2005 — Art. 14" },
+          { "emoji": "🎓", "name": "Φοιτητική Κάρτα Πανεπιστημίου", "body": "Είσοδος σε σχολή, εστία, βιβλιοθήκη, γραμματεία — το ψηφιακό carnet de student αντικαθιστά τη φυσική κάρτα. Λειτουργεί για υποτροφίες και εκπτώσεις CFR.", "legal": "Law 1/2011 — Art. 118, 119" },
+          { "emoji": "🚌", "name": "Μηνιαία Κάρτα Μεταφορών Φοιτητή", "body": "Μαθητές και φοιτητές επιβιβάζονται σε λεωφορεία, μετρό και τρένα με το πορτοφόλι τους. Ο ελεγκτής ή ο οδηγός βλέπει το δικαίωμα άμεσα — δεν απαιτείται φυσική κάρτα.", "legal": "OUG 133/2000; HCL αστικές μεταφορές" }
+        ]
+      },
+      {
+        "icon": "🛒",
+        "image": "/assets/illustrations/usecase-retail.jpg",
+        "title": "Λιανεμπόριο και Επαλήθευση Ηλικίας",
+        "description": "Έμποροι επαληθεύουν ηλικία ή ταυτότητα στο ταμείο σε δευτερόλεπτα — χωρίς αποθήκευση προσωπικών δεδομένων και πλήρη συμμόρφωση με GDPR.",
+        "scenarios": [
+          { "emoji": "🍺", "name": "Ηλικία 18+ στο Ταμείο", "body": "Ο ταμίας εμφανίζει κωδικό QR. Ο πελάτης εγκρίνει από το πορτοφόλι του: αποστέλλεται μόνο «ηλικία ≥ 18: ΝΑΙ». Κανένα όνομα, κανένας αριθμός ταυτότητας, καμία φωτογραφία.", "legal": "OUG 99/2000 — αλκοόλ/καπνός" },
+          { "emoji": "🏨", "name": "Check-in Ξενοδοχείου", "body": "Ο τουρίστας κάνει check-in παρουσιάζοντας όνομα, ημερομηνία γέννησης και εθνικότητα από το πορτοφόλι. Κανένα φωτοτυπημένο διαβατήριο. Συμμόρφωση με κανονισμούς εγγραφής καταλυμάτων.", "legal": "HG 1215/2001" }
+        ]
+      },
+      {
+        "icon": "🏦",
+        "image": "/assets/illustrations/usecase-banking.jpg",
+        "title": "Χρηματοοικονομικές Υπηρεσίες και KYC",
+        "description": "Τράπεζες, ασφαλιστικές εταιρείες και πλατφόρμες fintech εγγράφουν πελάτες ψηφιακά — εκπληρώνοντας απαιτήσεις AML/KYC χωρίς έγχαρτες φόρμες.",
+        "scenarios": [
+          { "emoji": "🏦", "name": "Άνοιγμα Τραπεζικού Λογαριασμού (KYC/AML)", "body": "Μια τράπεζα επαληθεύει την πλήρη ταυτότητα του πελάτη εξ αποστάσεως — όνομα, CNP, ημερομηνία και τόπο γέννησης, εθνικότητα, διεύθυνση — πιστοποιημένα από το πορτοφόλι EUDI. Συμμόρφωση με νόμο κατά ξεπλύματος χρήματος.", "legal": "Law 129/2019; Directive (EU) 2015/849" },
+          { "emoji": "💼", "name": "Ασφάλεια και Χρηματοοικονομικά Προϊόντα", "body": "Ασφαλιστικές εταιρείες επαληθεύουν ταυτότητα ασφαλισμένου κατά την υπογραφή συμβολαίου — ψηφιακά, άμεσα, με πλήρη ιχνηλατισιμότητα eIDAS 2.0.", "legal": "Κανον. (ΕΕ) 2024/1183" }
+        ]
+      },
+      {
+        "icon": "🏥",
+        "image": "/assets/illustrations/usecase-healthcare.jpg",
+        "title": "Υγειονομική Περίθαλψη και Κοινωνικές Υπηρεσίες",
+        "description": "Νοσοκομεία, κλινικές, φαρμακεία και κοινωνικές υπηρεσίες αναγνωρίζουν ασθενείς και δικαιούχους με ασφάλεια, χωρίς χειροκίνητη συμπλήρωση φορμών.",
+        "scenarios": [
+          { "emoji": "🏥", "name": "Αναγνώριση Ασθενή", "body": "Νοσοκομείο ή κλινική αναγνωρίζει ασθενή με το EguWallet τους. Όνομα, CNP, ημερομηνία γέννησης επαληθεύονται άμεσα στη ρεσεψιόν ή στα επείγοντα.", "legal": "Law 95/2006 — Art. 230-232" },
+          { "emoji": "🗳️", "name": "Έλεγχος Ψηφοφόρου από Εκλογική Επιτροπή", "body": "Προσωπικό εκλογικού τμήματος επαληθεύει ταυτότητα ψηφοφόρου και ελέγχει τον εκλογικό κατάλογο — άμεσα, με πλήρες ίχνος ελέγχου. Κανένα χειροκίνητο ψάξιμο λίστας.", "legal": "Law 208/2015 — Art. 84" },
+          { "emoji": "📋", "name": "Πρόσληψη και Επαλήθευση HR", "body": "Εργοδότες επαληθεύουν ταυτότητα νέου εργαζομένου κατά την υπογραφή σύμβασης — όνομα, CNP, διεύθυνση — όπως απαιτεί ο Εργατικός Κώδικας και η αναφορά REVISAL.", "legal": "Law 53/2003; HG 500/2011" }
+        ]
+      },
+      {
+        "icon": "🎰",
+        "image": "/assets/illustrations/usecase-gambling.jpg",
+        "title": "Τυχερά Παιχνίδια και Αυτοαποκλεισμός",
+        "description": "Online και φυσικά καζίνο, χειριστές στοιχημάτων και πλατφόρμες παιχνιδιών επαληθεύουν ταυτότητα παίκτη και ελέγχουν εθνικά μητρώα αυτοαποκλεισμού.",
+        "scenarios": [
+          { "emoji": "🎰", "name": "Επαλήθευση Ταυτότητας Παίκτη (KYC)", "body": "Χειριστές τυχερών παιχνιδιών επαληθεύουν ταυτότητα παίκτη κατά την εγγραφή — όνομα, ημερομηνία γέννησης, εθνικότητα — όπως απαιτούν κανονισμοί AML και αδειοδότησης. Γρήγορο, ψηφιακό, χωρίς φωτοτυπίες.", "legal": "Directive (EU) 2015/849; OUG 77/2009" },
+          { "emoji": "🚫", "name": "Έλεγχος Μητρώου Αυτοαποκλεισμού", "body": "Πριν επιτρέψει σε παίκτη να στοιχηματίσει, ο χειριστής ελέγχει το εθνικό μητρώο αυτοαποκλεισμού μέσω EguWallet. Αν ο παίκτης είναι στη λίστα, η πρόσβαση αποκλείεται αυτόματα — δεν απαιτείται χειροκίνητη αναζήτηση.", "legal": "OUG 77/2009 — Art. 10; εθνική αρχή τυχερών παιχνιδιών" },
+          { "emoji": "🔞", "name": "Επαλήθευση Ηλικίας 18+ για Παιχνίδια", "body": "Online και φυσικοί χειριστές παιχνιδιών επαληθεύουν ότι ο παίκτης είναι 18 ετών ή άνω — χρησιμοποιώντας την πιστοποίηση ηλικίας EguWallet. Μεταδίδεται μόνο ΝΑΙ/ΟΧΙ — δεν αποθηκεύονται προσωπικά δεδομένα.", "legal": "OUG 77/2009; Directive (EU) 2015/849" }
+        ]
+      },
+      {
+        "icon": "⚖️",
+        "image": "/assets/illustrations/usecase-legal.jpg",
+        "title": "Νομικά και Συμβολαιογραφικά — Η Φυσική Παρουσία Δεν Απαιτείται Πλέον",
+        "description": "Βάσει του Κανονισμού (ΕΕ) 2024/1183, το πορτοφόλι EUDI παρέχει νομικά δεσμευτική ταυτοποίηση ισοδύναμη με φυσική παρουσία για ευρύ φάσμα νομικών πράξεων.",
+        "scenarios": [
+          { "emoji": "📝", "name": "Απομακρυσμένη Συμβολαιογραφική Ταυτοποίηση", "body": "Για πράξεις που προηγουμένως απαιτούσαν φυσική παρουσία — πληρεξούσια, δηλώσεις, μεταβιβάσεις ακινήτων — ο συμβολαιογράφος μπορεί τώρα να ταυτοποιεί το μέρος μέσω πορτοφολιού EUDI εξ αποστάσεως.", "legal": "Law 36/1995 — Art. 40; Κανον. (ΕΕ) 2024/1183 — Art. 5a" },
+          { "emoji": "🏠", "name": "Συναλλαγές Ακινήτων Χωρίς Αναμονή", "body": "Η αγορά ή πώληση ακινήτου δεν απαιτεί πλέον ταξίδι σε συμβολαιογραφικό γραφείο μόνο για ταυτοποίηση. Και τα δύο μέρη ταυτοποιούνται ψηφιακά, η εντολή εκπροσώπου επαληθεύεται και η σύμβαση υπογράφεται με QES — όλα εξ αποστάσεως.", "legal": "Civil Code Art. 1244; eIDAS 2.0 Art. 25" },
+          { "emoji": "✅", "name": "Δηλώσεις και Πληρεξούσια", "body": "Νόμιμες δηλώσεις, εντολές, ένορκες βεβαιώσεις — αυτές οι πράξεις δεν απαιτούν πλέον φυσικό συμβολαιογραφικό ραντεβού για το βήμα ταυτοποίησης. Ο πολίτης παρουσιάζει το EguWallet PID του; η ταυτοποίηση είναι νομικά ισοδύναμη με προσωπική επαλήθευση.", "legal": "Κανον. (ΕΕ) 2024/1183 — eIDAS 2.0; Law 455/2001" },
+          { "emoji": "🤝", "name": "Επιχειρηματικές Συμβάσεις με QES", "body": "Συμβάσεις υπηρεσιών, συμβάσεις συνεργασίας, αποφάσεις μετόχων — υπογεγραμμένες με Εγκεκριμένη Ηλεκτρονική Υπογραφή απευθείας από το EguWallet. Νομική ισχύς σε όλα τα 27 κράτη μέλη της ΕΕ. Χωρίς εκτυπωτή, χωρίς ταχυδρομείο, χωρίς ραντεβού.", "legal": "Law 455/2001; eIDAS 2.0 Art. 25; Law 31/1990" }
+        ]
       }
+    ]
+  },
+  "trust": {
+    "heading": "Νομικά δεσμευτικό — εμπιστευμένο από τον νόμο, ελεγχόμενο από εσάς",
+    "subheading": "Το EguWallet δίνει στους πολίτες πλήρη έλεγχο των δεδομένων ταυτότητάς τους, παρέχοντας παράλληλα στις υπηρεσίες και τις δημόσιες αρχές τη νομική βεβαιότητα που χρειάζονται.",
+    "image": "/assets/illustrations/usecase-trust.jpg",
+    "citizenTitle": "Για πολίτες — εσείς αποφασίζετε τα πάντα",
+    "citizenPoints": [
+      "Εσείς επιλέγετε ποια δεδομένα να μοιραστείτε, με ποιον και πότε — το πορτοφόλι σας δεν μεταδίδει ποτέ τίποτα χωρίς τη ρητή έγκρισή σας.",
+      "Κάθε αλληλεπίδραση καταγράφεται στο προσωπικό σας ιστορικό ελέγχου. Μπορείτε να δείτε ακριβώς ποιος ζήτησε τα δεδομένα σας και τι έλαβε.",
+      "Βάσει GDPR Άρθρο 17, μπορείτε να ζητήσετε διαγραφή των δεδομένων σας από οποιαδήποτε υπηρεσία ανά πάσα στιγμή — απευθείας από την εφαρμογή.",
+      "Τα κρυπτογραφικά κλειδιά σας δεν εγκαταλείπουν ποτέ τη συσκευή σας. Κανένας πάροχος πορτοφολιού, κυβέρνηση ή τρίτο μέρος δεν μπορεί να αποκτήσει πρόσβαση στα διαπιστευτήρια σας χωρίς τη συγκατάθεσή σας."
     ],
-    "statusAvailable": "Available",
-    "statusSoon": "Coming Soon"
+    "rpTitle": "Για υπηρεσίες και οργανισμούς — νομικά βέβαιη ταυτότητα",
+    "rpSubtitle": "Υπηρεσίες που αποδέχονται το EguWallet (λεγόμενα Relying Parties) επωφελούνται από:",
+    "rpPoints": [
+      "Νομικά δεσμευτική ταυτοποίηση βάσει Κανονισμού (ΕΕ) 2024/1183 — ισοδύναμη με φυσική επιθεώρηση εγγράφων για τους περισσότερους νομικούς σκοπούς.",
+      "Κρυπτογραφικά επαληθευμένα δεδομένα ταυτότητας — αδύνατο να παραποιηθούν, επαναληφθούν ή χειραγωγηθούν.",
+      "Πλήρης συμμόρφωση AML/KYC για τράπεζες, ασφαλιστικές εταιρείες και χρηματοοικονομικές πλατφόρμες.",
+      "Μηδενικός κίνδυνος ευθύνης — ο εκδότης πορτοφολιού φέρει τη ρυθμιστική ευθύνη για την αυθεντικότητα των διαπιστευτηρίων."
+    ],
+    "auditTitle": "Ιδιωτικά ελεγχόμενο. Δημόσια υπόλογο.",
+    "auditBody": "Το EguWallet βασίζεται σε ανοιχτά πρότυπα (ARF 2.5+, OpenID4VCI, OpenID4VP, SD-JWT, ISO 18013-5) και υπόκειται σε επίσημη πιστοποίηση από διαπιστευμένο Φορέα Αξιολόγησης Συμμόρφωσης.",
+    "badges": [
+      { "icon": "🛡️", "label": "GDPR Άρθρο 17 — Δικαίωμα διαγραφής" },
+      { "icon": "📋", "label": "Πλήρες ιστορικό αλληλεπιδράσεων" },
+      { "icon": "⚖️", "label": "eIDAS 2.0 νομικά δεσμευτικό" },
+      { "icon": "🔐", "label": "Επιλεκτική αποκάλυψη zero-knowledge" },
+      { "icon": "🔍", "label": "Ιδιωτικά ελεγχόμενο" },
+      { "icon": "🌍", "label": "Ισχύει σε όλα τα 27 κράτη της ΕΕ" }
+    ]
   },
   "usedToday": {
-    "heading": "Where EguWallet works today",
-    "subheading": "Production applications already using EguWallet for authentication and verification",
-    "app1Name": "Ilfov County Council",
+    "heading": "Πού λειτουργεί το EguWallet σήμερα",
+    "subheading": "Εφαρμογές παραγωγής που ήδη χρησιμοποιούν το EguWallet για αυθεντικοποίηση και επαλήθευση",
+    "app1Name": "Περιφερειακό Συμβούλιο Ilfov",
     "app1Url": "https://ilfov.net",
-    "app1Body": "Digital public services for Ilfov County citizens — EguWallet authentication for e-government portal access, application submission, and document verification.",
-    "app2Name": "Sector 2 Bucharest City Hall",
+    "app1Body": "Ψηφιακές δημόσιες υπηρεσίες για πολίτες της Κομητείας Ilfov — αυθεντικοποίηση EguWallet για πρόσβαση στην ηλεκτρονική πύλη διακυβέρνησης, υποβολή αιτήσεων και επαλήθευση εγγράφων.",
+    "app2Name": "Δημαρχείο Τομέα 2 Βουκουρεστίου",
     "app2Url": "https://sector2.eu",
-    "app2Body": "Digital municipal services for Sector 2 residents — fast and secure authentication with the digital wallet for all online city hall services.",
-    "badgeText": "Sign in with EguWallet"
+    "app2Body": "Ψηφιακές δημοτικές υπηρεσίες για κατοίκους του Τομέα 2 — γρήγορη και ασφαλής αυθεντικοποίηση με ψηφιακό πορτοφόλι για όλες τις διαδικτυακές υπηρεσίες δημαρχείου.",
+    "badgeText": "Σύνδεση με EguWallet"
+  },
+  "verifier": {
+    "heading": "Είστε δημόσιος φορέας ή εταιρεία;",
+    "subheading": "Επαληθεύστε έγγραφα ταυτότητας και ψηφιακά διαπιστευτήρια με το EguWallet Verifier",
+    "card1Title": "Ψηφιακός επιθεωρητής ταυτότητας",
+    "card1Body": "Εγγεγραμμένοι υπάλληλοι φορέων επαληθεύουν ψηφιακά έγγραφα σε δευτερόλεπτα μέσω Bluetooth/NFC — απευθείας από το τηλέφωνό τους. Κάθε επαλήθευση καταγράφεται, είναι ιχνηλατήσιμη και συμμορφώνεται με GDPR. Κανένα χαρτί, καμία φωτοτυπία.",
+    "card2Title": "Πώς να ξεκινήσετε",
+    "card2Body": "Κατεβάστε το EguWallet Verifier, εγγραφείτε με το πορτοφόλι EguWallet ή χειροκίνητα, επιλέξτε τον φορέα και τμήμα σας. Ο λογαριασμός σας ενεργοποιείται από τον διαχειριστή του φορέα σας.",
+    "playBadgeAlt": "Κατεβάστε το EguWallet Verifier στο Google Play",
+    "navLabel": "Για φορείς"
   },
   "future": {
-    "heading": "What's next — the future of digital identity",
-    "subheading": "EguWallet continuously expands with new use cases that make life easier",
+    "heading": "Τι έπεται — το μέλλον της ψηφιακής ταυτότητας",
+    "subheading": "Το EguWallet επεκτείνεται συνεχώς με νέες περιπτώσεις χρήσης που κάνουν τη ζωή ευκολότερη",
     "items": [
-      {
-        "icon": "📡",
-        "title": "Device-to-Device Verification (Bluetooth)",
-        "body": "Like contactless NFC payment — a police officer or merchant brings their phone near yours and instantly receives only the data you have authorised. No internet, no intermediate server."
-      },
-      {
-        "icon": "🚔",
-        "title": "Law Enforcement Identity Check",
-        "body": "Similar to modern contactless payment: a law enforcement officer verifies identity via NFC/Bluetooth. You control what data is transmitted. Fast, secure, no photocopies needed."
-      },
-      {
-        "icon": "🍺",
-        "title": "Age 18+ Verification (Coming Soon)",
-        "body": "Imminent deployment with a major Romanian retailer for age control on alcohol sales. The merchant receives only a YES/NO answer — no other personal data is disclosed."
-      },
-      {
-        "icon": "🚌",
-        "title": "Public Transport Tickets & Passes",
-        "body": "Students entitled to free travel prove their status via EguWallet. Regular passengers purchase and present tickets digitally — no paper, no contact validators."
-      },
-      {
-        "icon": "📍",
-        "title": "Address on the New Romanian ID Card",
-        "body": "The new Romanian ID card no longer contains an address on the chip. EguWallet solves this: your registered address, certified by the official registry, can be selectively disclosed when required."
-      },
-      {
-        "icon": "✍️",
-        "title": "Qualified Digital Signature",
-        "body": "EguWallet will function as a Qualified Electronic Signature (QES) device compliant with eIDAS 2.0. Sign documents with full legal force, recognised across all EU member states — directly from your phone."
-      }
+      { "icon": "📡", "title": "Επαλήθευση Συσκευή-προς-Συσκευή (Bluetooth)", "body": "Όπως η ανέπαφη πληρωμή NFC — αστυνομικός ή έμπορος φέρνει το τηλέφωνό του κοντά στο δικό σας και λαμβάνει άμεσα μόνο τα δεδομένα που έχετε εξουσιοδοτήσει. Χωρίς internet, χωρίς ενδιάμεσο server." },
+      { "icon": "🚔", "title": "Έλεγχος Ταυτότητας Επιβολής Νόμου", "body": "Παρόμοιο με τη σύγχρονη ανέπαφη πληρωμή: αξιωματικός επιβολής νόμου επαληθεύει ταυτότητα μέσω NFC/Bluetooth. Εσείς ελέγχετε ποια δεδομένα μεταδίδονται. Γρήγορο, ασφαλές, χωρίς φωτοτυπίες." },
+      { "icon": "🍺", "title": "Επαλήθευση Ηλικίας 18+ (Σύντομα)", "body": "Επικείμενη εγκατάσταση σε μεγάλο Ρουμάνο λιανοπωλητή για έλεγχο ηλικίας στην πώληση αλκοόλ. Ο έμπορος λαμβάνει μόνο ΝΑΙ/ΟΧΙ — δεν αποκαλύπτονται άλλα προσωπικά δεδομένα." },
+      { "icon": "🚌", "title": "Εισιτήρια και Κάρτες Δημόσιων Μεταφορών", "body": "Φοιτητές με δικαίωμα δωρεάν ταξιδιού αποδεικνύουν την κατάστασή τους μέσω EguWallet. Κανονικοί επιβάτες αγοράζουν και παρουσιάζουν εισιτήρια ψηφιακά — χωρίς χαρτί, χωρίς επαφές επικύρωσης." },
+      { "icon": "📍", "title": "Βεβαίωση Διεύθυνσης", "body": "Η εγγεγραμμένη διεύθυνσή σας, πιστοποιημένη από το επίσημο μητρώο, μπορεί να αποκαλυφθεί επιλεκτικά όταν απαιτείται." },
+      { "icon": "✍️", "title": "Εγκεκριμένη Ψηφιακή Υπογραφή", "body": "Το EguWallet θα λειτουργεί ως συσκευή Εγκεκριμένης Ηλεκτρονικής Υπογραφής (QES) σε συμμόρφωση με eIDAS 2.0. Υπογράψτε έγγραφα με πλήρη νομική ισχύ, αναγνωρισμένη σε όλα τα κράτη μέλη της ΕΕ — απευθείας από το τηλέφωνό σας." }
     ]
   },
   "howItWorks": {
-    "heading": "How it works",
-    "step1Title": "1. Download the app",
-    "step1Body": "Install EguWallet for free from the Google Play Store. Coming soon on Apple App Store.",
-    "step2Title": "2. Activate your wallet",
-    "step2Body": "Verify your phone number, create a secure PIN, and connect to your county or city portal to register your digital documents.",
-    "step3Title": "3. Present with full control",
-    "step3Body": "Scan a QR code, tap an NFC terminal or share a secure link. You choose exactly what data is transmitted — never more than is necessary."
+    "heading": "Πώς λειτουργεί",
+    "step1Title": "1. Κατεβάστε την εφαρμογή",
+    "step1Body": "Εγκαταστήστε το EguWallet από το Google Play Store — δωρεάν προς το παρόν κατά τη διάρκεια της πιλοτικής φάσης. Σύντομα στο Apple App Store.",
+    "step2Title": "2. Ενεργοποιήστε το πορτοφόλι σας",
+    "step2Body": "Επαληθεύστε τον αριθμό τηλεφώνου σας, δημιουργήστε ασφαλές PIN και συνδεθείτε στη νομαρχιακή ή δημοτική πύλη για να εγγράψετε τα ψηφιακά σας έγγραφα.",
+    "step3Title": "3. Παρουσιάστε με πλήρη έλεγχο",
+    "step3Body": "Σαρώστε κωδικό QR, αγγίξτε τερματικό NFC ή μοιραστείτε ασφαλή σύνδεσμο. Εσείς επιλέγετε ακριβώς ποια δεδομένα μεταδίδονται — ποτέ περισσότερα από ό,τι είναι απαραίτητο."
   },
   "faq": {
-    "heading": "Frequently asked questions",
+    "heading": "Συχνές ερωτήσεις",
     "items": [
-      {
-        "q": "What is EguWallet?",
-        "a": "EguWallet is a European eIDAS 2.0 certified digital wallet developed by IT Eguilde SRL. It allows you to store and present digital identity documents (ID card, passport, driving licence etc.) securely on your phone, with full control over your personal data."
-      },
-      {
-        "q": "What documents can I store in EguWallet?",
-        "a": "Currently: identity card (PID), passport, driving licence, vehicle registration, RCA insurance and vehicle inspection certificate (ITP/RAR). Coming soon: company documents and property documents."
-      },
-      {
-        "q": "Is my personal data secure?",
-        "a": "Yes. EguWallet uses SD-JWT and mDoc/ISO 18013-5 for selective disclosure — you only transmit data you explicitly approve. No presentation is stored. Legal basis: GDPR Art. 5(1)(c) and Regulation (EU) 2024/1183."
-      },
-      {
-        "q": "Where can I use EguWallet?",
-        "a": "Today: Ilfov County Council digital services (ilfov.net) and Sector 2 City Hall (sector2.eu). Expansion to other public institutions and private retailers in Romania and the EU is ongoing."
-      },
-      {
-        "q": "What is eIDAS 2.0?",
-        "a": "eIDAS 2.0 is Regulation (EU) 2024/1183 amending the original eIDAS regulation. It guarantees every European citizen the right to a free digital wallet (EUDI Wallet), recognised across all 27 member states."
-      },
-      {
-        "q": "How does selective disclosure work?",
-        "a": "When a service requests identity verification, your wallet shows you exactly what data is being requested. You approve or reject each field. For example, for age-18 verification, the merchant receives only a YES/NO — they never see your name, national ID number or address."
-      },
-      {
-        "q": "Is EguWallet free?",
-        "a": "Yes, completely free for citizens. Download, registration and use are all without cost."
-      },
-      {
-        "q": "How do I activate my digital wallet?",
-        "a": "Download the app from Google Play, verify your phone number, create a PIN, then connect to your county or city portal to register your documents. The process takes approximately 5 minutes."
-      }
+      { "q": "Τι είναι το EguWallet;", "a": "Το EguWallet είναι ένα ευρωπαϊκό πιστοποιημένο eIDAS 2.0 ψηφιακό πορτοφόλι που αναπτύχθηκε από την IT Eguilde SRL. Σας επιτρέπει να αποθηκεύετε και να παρουσιάζετε ψηφιακά έγγραφα ταυτότητας (δελτίο ταυτότητας, διαβατήριο, δίπλωμα οδήγησης κ.λπ.) με ασφάλεια στο τηλέφωνό σας, με πλήρη έλεγχο των προσωπικών σας δεδομένων." },
+      { "q": "Ποια έγγραφα μπορώ να αποθηκεύσω στο EguWallet;", "a": "Αυτή τη στιγμή: δελτίο ταυτότητας (PID), διαβατήριο και δίπλωμα οδήγησης. Σύντομα: ταξινόμηση οχήματος, ασφάλεια RCA, ITP/RAR, εταιρικά έγγραφα και έγγραφα ακινήτων." },
+      { "q": "Είναι ασφαλή τα προσωπικά μου δεδομένα;", "a": "Ναι. Το EguWallet χρησιμοποιεί SD-JWT και mDoc/ISO 18013-5 για επιλεκτική αποκάλυψη — στέλνετε μόνο δεδομένα που έχετε ρητά εγκρίνει. Καμία παρουσίαση δεν αποθηκεύεται. Νομική βάση: GDPR Άρθρο 5(1)(γ) και Κανονισμός (ΕΕ) 2024/1183." },
+      { "q": "Πού μπορώ να χρησιμοποιήσω το EguWallet;", "a": "Σήμερα: ψηφιακές υπηρεσίες Περιφερειακού Συμβουλίου Ilfov (ilfov.net) και Δημαρχείο Τομέα 2 (sector2.eu). Επέκταση σε άλλους δημόσιους φορείς και ιδιώτες λιανοπωλητές στη Ρουμανία και την ΕΕ είναι σε εξέλιξη." },
+      { "q": "Τι είναι το eIDAS 2.0;", "a": "Το eIDAS 2.0 είναι ο Κανονισμός (ΕΕ) 2024/1183 που τροποποιεί τον αρχικό κανονισμό eIDAS. Εγγυάται σε κάθε Ευρωπαίο πολίτη το δικαίωμα σε ένα δωρεάν ψηφιακό πορτοφόλι (πορτοφόλι EUDI), αναγνωρισμένο σε όλα τα 27 κράτη μέλη." },
+      { "q": "Πώς λειτουργεί η επιλεκτική αποκάλυψη;", "a": "Όταν μια υπηρεσία ζητά επαλήθευση ταυτότητας, το πορτοφόλι σας εμφανίζει ακριβώς ποια δεδομένα ζητούνται. Εγκρίνετε ή απορρίπτετε κάθε πεδίο. Για παράδειγμα, για επαλήθευση ηλικίας-18, ο έμπορος λαμβάνει μόνο ΝΑΙ/ΟΧΙ — δεν βλέπει ποτέ το όνομά σας, τον αριθμό ταυτότητας ή τη διεύθυνσή σας." },
+      { "q": "Είναι το EguWallet δωρεάν;", "a": "Ναι, εντελώς δωρεάν για πολίτες κατά την τρέχουσα πιλοτική φάση. Λήψη, εγγραφή και χρήση είναι όλα χωρίς κόστος." },
+      { "q": "Είναι το EguWallet πλήρως πιστοποιημένο;", "a": "Το EguWallet υπόκειται αυτή τη στιγμή σε επίσημη πιστοποίηση eIDAS 2.0 από διαπιστευμένο Φορέα Αξιολόγησης Συμμόρφωσης (CAB). Μέχρι να ολοκληρωθεί η πιστοποίηση, λειτουργεί ως πιλοτικό πορτοφόλι EUDI. Όλα τα τεχνικά πρότυπα (ARF 2.5+, OpenID4VCI, OpenID4VP, SD-JWT, ISO 18013-5) έχουν ήδη υλοποιηθεί." },
+      { "q": "Πώς να ενεργοποιήσω το ψηφιακό μου πορτοφόλι;", "a": "Κατεβάστε την εφαρμογή από το Google Play, επαληθεύστε τον αριθμό τηλεφώνου, δημιουργήστε PIN, στη συνέχεια συνδεθείτε στη νομαρχιακή ή δημοτική πύλη για να εγγράψετε τα έγγραφά σας. Η διαδικασία διαρκεί περίπου 5 λεπτά." }
     ]
   },
   "getDigitalId": {
-    "heading": "Αποκτήστε την ευρωπαϊκή ψηφιακή σας ταυτότητα",
-    "body": "Υποβάλετε αίτηση για το PID διαπιστευτήριό σας (Δεδομένα Προσωπικής Ταυτοποίησης) — η επίσημη ψηφιακή ταυτότητα ΕΕ στο πορτοφόλι σας, αναγνωρισμένη σε όλα τα 27 κράτη μέλη.",
-    "cta": "Αίτηση για ψηφιακή ταυτότητα",
+    "heading": "Αποκτήστε την Ευρωπαϊκή Ψηφιακή σας Ταυτότητα",
+    "body": "Αιτηθείτε το διαπιστευτήριο Δεδομένων Προσωπικής Ταυτοποίησης (PID) — την επίσημη ψηφιακή κάρτα ταυτότητας της ΕΕ στο πορτοφόλι σας, αναγνωρισμένη σε όλα τα 27 κράτη μέλη.",
+    "cta": "Αιτηθείτε το Ψηφιακό σας ID",
     "step1": "Επαληθεύστε την ταυτότητά σας με σάρωση ταυτότητας και αναγνώριση προσώπου",
     "step2": "Ένας επιθεωρητής εξετάζει και εγκρίνει το αίτημά σας",
-    "step3": "Λάβετε το PID διαπιστευτήριό σας απευθείας στο EguWallet"
+    "step3": "Λάβετε το PID σας απευθείας στο EguWallet"
   },
   "footer": {
-    "provider": "Provided by IT Eguilde SRL",
-    "tagline": "European Digital Wallet — eIDAS 2.0 Compliant",
-    "privacy": "Privacy Policy",
-    "legal": "Terms & Conditions",
-    "contact": "Contact",
-    "euCompliance": "eIDAS 2.0 Compliant",
-    "machineTranslatedNotice": "This page is currently available in Romanian and English only.",
-    "rights": "© 2026 IT Eguilde SRL. All rights reserved."
+    "provider": "Παρέχεται από IT Eguilde SRL",
+    "tagline": "Ευρωπαϊκό Ψηφιακό Πορτοφόλι — Συμμόρφωση eIDAS 2.0",
+    "privacy": "Πολιτική Απορρήτου",
+    "legal": "Όροι και Προϋποθέσεις",
+    "contact": "Επικοινωνία",
+    "euCompliance": "Συμμόρφωση eIDAS 2.0",
+    "accessibility": "Προσβασιμότητα",
+    "machineTranslatedNotice": "Αυτή η σελίδα είναι μηχανικά μεταφρασμένη. Επίσημες εκδόσεις: ρουμανικά και αγγλικά.",
+    "rights": "© 2026 IT Eguilde SRL. Όλα τα δικαιώματα διατηρούνται."
+  },
+  "accountDelete": {
+    "title": "Διαγράψτε τον Λογαριασμό σας",
+    "description": "Αιτηθείτε διαγραφή του λογαριασμού EguWallet και όλων των σχετικών δεδομένων.",
+    "intro": "Το EguWallet σέβεται το δικαίωμά σας στη διαγραφή δεδομένων βάσει Άρθρου 17 GDPR. Μπορείτε να διαγράψετε το πορτοφόλι σας και όλα τα σχετικά δεδομένα χρησιμοποιώντας οποιαδήποτε από τις παρακάτω μεθόδους.",
+    "method1Title": "Μέθοδος 1: Διαγραφή εντός Εφαρμογής",
+    "method1Steps": [
+      "Ανοίξτε την εφαρμογή EguWallet στη συσκευή σας",
+      "Μεταβείτε στις Ρυθμίσεις",
+      "Πατήστε 'Διαγραφή Πορτοφολιού'",
+      "Επιβεβαιώστε τη διαγραφή όταν σας ζητηθεί"
+    ],
+    "method1Note": "Αυτό αφαιρεί αμέσως όλα τα διαπιστευτήρια, κρυπτογραφικά κλειδιά και τοπικά δεδομένα από τη συσκευή σας, και αιτείται διαγραφή των δεδομένων λογαριασμού από τον server.",
+    "method2Title": "Μέθοδος 2: Αίτηση μέσω Email",
+    "method2Text": "Στείλτε email στο <a href='mailto:privacy@eguwallet.eu' class='t-primary underline'>privacy@eguwallet.eu</a> με θέμα 'Αίτηση Διαγραφής Λογαριασμού'. Συμπεριλάβετε τη διεύθυνση email ή αριθμό τηλεφώνου που συνδέεται με την εγγραφή σας.",
+    "whatDeleted": "Τι Διαγράφεται",
+    "deletedItems": [
+      "Δεδομένα εγγραφής πορτοφολιού (όνομα, email, αριθμός τηλεφώνου)",
+      "Όλα τα ψηφιακά διαπιστευτήρια (PID, mDL, εγκεκριμένες πιστοποιήσεις)",
+      "Κρυπτογραφικά κλειδιά και πιστοποιήσεις πορτοφολιού",
+      "Πληροφορίες συσκευής και tokens ειδοποιήσεων FCM",
+      "Εικόνες selfie και σάρωσης εγγράφων",
+      "Κωδικοί επαλήθευσης και δεδομένα συνεδρίας"
+    ],
+    "whatRetained": "Τι Διατηρείται",
+    "retainedItems": [
+      "Υποχρεωτικά αρχεία καταγραφής ελέγχου eIDAS 2.0 (ανωνυμοποιημένα, χωρίς προσωπικά δεδομένα) — διατηρούνται για 7 χρόνια όπως απαιτεί ο κανονισμός της ΕΕ"
+    ],
+    "timeline": "Χρονοδιάγραμμα Διαγραφής",
+    "timelineText": "Μετά τη λήψη του αιτήματος διαγραφής, τα προσωπικά σας δεδομένα θα αφαιρεθούν μόνιμα από τους servers μας εντός 30 ημερών. Τα τοπικά δεδομένα συσκευής διαγράφονται άμεσα κατά τη διαγραφή εντός εφαρμογής.",
+    "contact": "Ερωτήσεις;",
+    "contactText": "Για ερωτήσεις σχετικά με τη διαγραφή δεδομένων ή τα δικαιώματα απορρήτου σας, επικοινωνήστε μαζί μας στο <a href='mailto:privacy@eguwallet.eu' class='t-primary underline'>privacy@eguwallet.eu</a>."
   }
 }

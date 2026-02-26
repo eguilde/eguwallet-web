@@ -3,213 +3,283 @@
   "langName": "Lietuvių",
   "isMachineTranslated": true,
   "nav": {
-    "what": "What is it",
-    "privacy": "Privacy",
-    "documents": "Documents",
-    "usedToday": "Where it works",
-    "future": "Future",
-    "howItWorks": "How it works",
-    "faq": "FAQ",
-    "download": "Download"
+    "what": "Kas tai",
+    "privacy": "Privatumas",
+    "documents": "Dokumentai",
+    "useCases": "Naudojimo atvejai",
+    "trust": "Pasitikėjimas ir teisė",
+    "usedToday": "Kur veikia",
+    "about": "Apie mus",
+    "contact": "Kontaktai",
+    "future": "Ateitis",
+    "howItWorks": "Kaip veikia",
+    "faq": "D.U.K.",
+    "download": "Atsisiųsti"
   },
   "hero": {
-    "title": "Your digital identity — secure, private, always with you",
-    "subtitle": "EguWallet is a European eIDAS 2.0 certified digital wallet that replaces physical documents with verifiable digital equivalents, recognised across all EU member states.",
-    "badge1": "eIDAS 2.0 Compliant",
-    "badge2": "Certified EUDI Wallet",
-    "badge3": "Free",
-    "downloadAndroid": "Get it on Google Play",
-    "downloadIos": "Available soon on App Store",
-    "downloadIosComingSoon": "Coming Soon"
+    "title": "Jūsų skaitmeninė tapatybė — saugi, privati, visada su jumis",
+    "subtitle": "EguWallet yra Europos skaitmeninė piniginė, sertifikuota pagal eIDAS 2.0, kuri pakeičia fizinius dokumentus patikrinamu skaitmeniniu atitikmeniu, pripažįstamu visose ES valstybėse narėse.",
+    "badge1": "Atitinka eIDAS 2.0",
+    "badge2": "Sertifikavimas vyksta",
+    "badge3": "Kol kas nemokama",
+    "downloadAndroid": "Atsisiųskite iš Google Play",
+    "downloadIos": "Greitai App Store",
+    "downloadIosComingSoon": "Greitai"
   },
   "what": {
-    "heading": "What is EguWallet?",
-    "card1Title": "Regulated by EU Law",
-    "card1Body": "EguWallet is built on Regulation (EU) 2024/1183 — the eIDAS revision — which guarantees every European citizen the right to a free digital wallet, recognised across all 27 member states.",
-    "card2Title": "What is a EUDI Wallet?",
-    "card2Body": "A European Digital Identity Wallet (EUDI) is a secure app that stores verifiable digital identity documents: ID card, passport, driving licence, vehicle documents and more — all under your exclusive control.",
-    "card3Title": "Who provides EguWallet?",
-    "card3Body": "EguWallet is developed by IT Eguilde SRL, a digital identity provider. The app fully complies with the EUDI Architecture Reference Framework (ARF 2.5+), OpenID4VCI and OpenID4VP standards."
+    "heading": "Kas yra EguWallet?",
+    "card1Title": "Reglamentuojama ES teise",
+    "card1Body": "EguWallet sukurta remiantis Reglamentu (ES) 2024/1183 — eIDAS pataisa — kuria kiekvienam Europos piliečiui garantuojama teisė į nemokamą skaitmeninę piniginę.",
+    "card2Title": "Kas yra EUDI Wallet?",
+    "card2Body": "Europos skaitmeninės tapatybės piniginė (EUDI) yra saugi programa, sauganti patikrinamus skaitmeninius tapatybės dokumentus — visiškai jūsų kontroliuojama.",
+    "card3Title": "Kas teikia EguWallet?",
+    "card3Body": "EguWallet kuria IT Eguilde SRL. Programa sukurta remiantis ARF 2.5+, OpenID4VCI ir OpenID4VP standartais. Šiuo metu vyksta oficialus eIDAS 2.0 sertifikavimas."
   },
   "privacy": {
-    "heading": "Your data, your control",
-    "subheading": "Selective disclosure — only what is needed, only when you agree",
-    "body": "EguWallet uses SD-JWT (Selective Disclosure JWT) and mDoc/ISO 18013-5 to enable selective data disclosure. When a merchant or institution requests identity verification, you choose exactly which data is transmitted. Nothing more.",
-    "example1Title": "Age 18+ verification",
-    "example1Step1": "Merchant scans QR code",
-    "example1Step2": "Your wallet receives the request",
-    "example1Step3": "You approve: transmit ONLY «age ≥ 18: YES»",
-    "example1Step4": "Merchant does NOT receive: name, ID number, address, photo",
-    "legalTitle": "Legal basis",
-    "legal1": "<a href=\"https://eur-lex.europa.eu/eli/reg/2016/679/oj\" target=\"_blank\" rel=\"noopener\" style=\"text-decoration:underline;\">GDPR Art. 5(1)(c)</a> — data minimisation principle: processing is limited to what is strictly necessary.",
-    "legal2": "<a href=\"https://eur-lex.europa.eu/eli/reg/2024/1183/oj\" target=\"_blank\" rel=\"noopener\" style=\"text-decoration:underline;\">Reg. (EU) 2024/1183</a> — selective presentation is a citizen right, not an optional feature.",
-    "legal3": "No presentation is stored by the wallet or any third party — every disclosure is ephemeral."
+    "heading": "Jūsų duomenys, jūsų kontrolė",
+    "subheading": "Selektyvus atskleidimas — tik tai, kas reikalinga, tik kai sutinkate",
+    "body": "EguWallet naudoja SD-JWT ir mDoc/ISO 18013-5 selektyviam duomenų atskleidimui. Jūs tiksliai pasirenkate, kokie duomenys perduodami.",
+    "example1Title": "Amžiaus 18+ patikrinimas",
+    "example1Step1": "Pardavėjas nuskaito QR kodą",
+    "example1Step2": "Jūsų piniginė gauna užklausą",
+    "example1Step3": "Jūs patvirtinate: perduodama TIK «amžius ≥ 18: TAIP»",
+    "example1Step4": "Pardavėjas NEGAUNA: vardo, asmens kodo, adreso, nuotraukos",
+    "legalTitle": "Teisinis pagrindas",
+    "legal1": "<a href=\"https://eur-lex.europa.eu/eli/reg/2016/679/oj\" target=\"_blank\" rel=\"noopener\" style=\"text-decoration:underline;\">BDAR 5 str. 1 d. c p.</a> — duomenų kiekio mažinimo principas.",
+    "legal2": "<a href=\"https://eur-lex.europa.eu/eli/reg/2024/1183/oj\" target=\"_blank\" rel=\"noopener\" style=\"text-decoration:underline;\">Regl. (ES) 2024/1183</a> — selektyvus pateikimas yra piliečio teisė.",
+    "legal3": "Joks pateikimas nesaugomas — kiekvienas atskleidimas yra laikinas."
   },
   "documents": {
-    "heading": "Documents in your wallet",
-    "subheading": "All your important documents — digital, verifiable, always at hand",
+    "heading": "Dokumentai jūsų piniginėje",
+    "subheading": "Visi svarbūs jūsų dokumentai — skaitmeniniai, patikrinami, visada po ranka",
     "items": [
+      { "icon": "🪪", "title": "Asmens tapatybės kortelė (PID)", "body": "Pagrindinis skaitmeninis tapatybės dokumentas, atitinkantis eIDAS 2.0.", "status": "available" },
+      { "icon": "🛂", "title": "Pasas", "body": "Skaitmeninė jūsų paso versija, nedelsiant patikrinama.", "status": "available" },
+      { "icon": "🚗", "title": "Vairuotojo pažymėjimas", "body": "Skaitmeninis vairuotojo pažymėjimas, atitinkantis mDoc/ISO 18013-5.", "status": "available" },
+      { "icon": "📋", "title": "Transporto priemonės registracija", "body": "Jūsų transporto priemonės registracijos dokumentas skaitmeniniu formatu.", "status": "soon" },
+      { "icon": "🛡️", "title": "Transporto priemonės draudimas (RCA)", "body": "Privalomasis transporto priemonės draudimas, tikrinamas realiuoju laiku.", "status": "soon" },
+      { "icon": "🔧", "title": "Techninis patikrinimas", "body": "Periodinio techninio patikrinimo pažymėjimai.", "status": "soon" },
+      { "icon": "🏢", "title": "Įmonės dokumentai", "body": "Įmonės registracija ir korporatyviniai dokumentai.", "status": "soon" },
+      { "icon": "🏠", "title": "Nekilnojamojo turto dokumentai", "body": "Žemės registro išrašai ir nuosavybės dokumentai.", "status": "soon" }
+    ],
+    "statusAvailable": "Prieinama",
+    "statusSoon": "Greitai"
+  },
+  "useCases": {
+    "heading": "Realūs naudojimo atvejai",
+    "subheading": "EguWallet veikia visose viešojo ir privataus gyvenimo srityse",
+    "categories": [
       {
-        "icon": "🪪",
-        "title": "Identity Card (PID)",
-        "body": "The primary digital identity document compliant with eIDAS 2.0. Recognised across all EU member states.",
-        "status": "available"
-      },
-      {
-        "icon": "🛂",
-        "title": "Passport",
-        "body": "The digital version of your passport, instantly verifiable by authorities and services.",
-        "status": "available"
-      },
-      {
-        "icon": "🚗",
-        "title": "Driving Licence",
-        "body": "Digital driving licence compliant with mDoc/ISO 18013-5. Contactlessly verifiable, including by traffic police.",
-        "status": "available"
-      },
-      {
-        "icon": "📋",
-        "title": "Vehicle Registration",
-        "body": "Your vehicle registration document in digital format. No more carrying paper documents.",
-        "status": "available"
-      },
-      {
-        "icon": "🛡️",
-        "title": "Vehicle Insurance (RCA)",
-        "body": "Mandatory vehicle insurance policy, verifiable in real time.",
-        "status": "available"
-      },
-      {
-        "icon": "🔧",
-        "title": "Technical Inspection / RAR",
-        "body": "Periodic technical inspection (ITP) and RAR vehicle data — verifiable digital certificates.",
-        "status": "available"
+        "icon": "🚔",
+        "image": "/assets/illustrations/usecase-police.jpg",
+        "title": "Teisėsaugos institucijos ir viešoji tvarka",
+        "description": "Policijos pareigūnai ir pasienio apsaugos darbuotojai per kelias sekundes patikrina skaitmeninę tapatybę.",
+        "scenarios": [
+          { "emoji": "🪪", "name": "Tapatybės patikrinimas patruliaujant", "body": "Policijos pareigūnas patikrina visą piliečio tapatybę per NFC arba QR.", "legal": "Įstatymas 218/2002 — str. 31" },
+          { "emoji": "🚗", "name": "Pilnas paketas eismo patikrinimo metu", "body": "Vienas QR nuskaitymas: pareigūnas gauna tapatybės kortelę, vairuotojo pažymėjimą, registraciją, draudimą ir techninį patikrinimą.", "legal": "OUG 195/2002 — str. 6, 80, 81" },
+          { "emoji": "🛂", "name": "Pasienio kontrolė", "body": "Pareigūnai skaitmeniškai patikrina tapatybę ir kelionės dokumentų galiojimą.", "legal": "Įstatymas 248/2005" }
+        ]
       },
       {
         "icon": "🏢",
-        "title": "Company Documents",
-        "body": "Company registration certificate, powers of attorney and corporate documents. Sign digitally with your wallet.",
-        "status": "soon"
+        "image": "/assets/illustrations/usecase-business.jpg",
+        "title": "Verslas ir komerciniai sandoriai",
+        "description": "Įmonės ir notarai akimirksniu patikrina tapatybę ir įgaliojimus.",
+        "scenarios": [
+          { "emoji": "🏛️", "name": "Įmonės patikrinimas", "body": "B2B platforma patikrina įmonės pavadinimą, registraciją ir veiklos statusą.", "legal": "Įstatymas 31/1990; Įstatymas 26/1990" },
+          { "emoji": "✍️", "name": "Teisėto atstovo patikrinimas", "body": "Notaras patikrina įgaliotojo atstovo statusą.", "legal": "Įstatymas 31/1990 — str. 75, 197" },
+          { "emoji": "📜", "name": "Sutarties pasirašymas su QES", "body": "Tapatybė patikrinta, sutartis pasirašyta kvalifikuotu elektroniniu parašu. Per 90 sekundžių.", "legal": "Regl. (ES) 2024/1183 — str. 25; Įstatymas 455/2001" }
+        ]
       },
       {
-        "icon": "🏠",
-        "title": "Property Documents",
-        "body": "Land registry extracts and real estate ownership documents in verifiable digital format.",
-        "status": "soon"
+        "icon": "🎓",
+        "image": "/assets/illustrations/usecase-education.jpg",
+        "title": "Švietimas — mokykla ir universitetas",
+        "description": "Mokiniai nešiojasi savo mokyklinę ar studentų kortelę EguWallet.",
+        "scenarios": [
+          { "emoji": "🏫", "name": "Mokyklinio mokinio kortelė", "body": "Mokinys prisideda telefoną prie mokyklos vartų, bibliotekos ar valgyklos.", "legal": "Įstatymas 1/2011 — str. 5" },
+          { "emoji": "📋", "name": "Studentų kortelė + tapatybė egzaminuose", "body": "Skaitmeninė studentų kortelė ir elektroninė tapatybės kortelė pateikiama egzaminų metu.", "legal": "Įstatymas 1/2011; OUG 97/2005 — str. 14" },
+          { "emoji": "🎓", "name": "Universiteto studentų kortelė", "body": "Skaitmeninė studentų kortelė pakeičia fizinę kortelę.", "legal": "Įstatymas 1/2011 — str. 118, 119" },
+          { "emoji": "🚌", "name": "Studentų transporto bilietas", "body": "Studentai sėda į autobusus ir traukinius naudodamiesi piniginę.", "legal": "OUG 133/2000" }
+        ]
+      },
+      {
+        "icon": "🛒",
+        "image": "/assets/illustrations/usecase-retail.jpg",
+        "title": "Mažmeninė prekyba ir amžiaus patikrinimas",
+        "description": "Pardavėjai tikrina amžių nesaugodami asmens duomenų.",
+        "scenarios": [
+          { "emoji": "🍺", "name": "Amžius 18+ pardavimo vietoje", "body": "Perduodama tik «amžius ≥ 18: TAIP». Be vardo, be asmens kodo.", "legal": "OUG 99/2000" },
+          { "emoji": "🏨", "name": "Registracija viešbutyje", "body": "Turistas registruojasi pateikdamas vardą, gimimo datą ir pilietybę.", "legal": "HG 1215/2001" }
+        ]
+      },
+      {
+        "icon": "🏦",
+        "image": "/assets/illustrations/usecase-banking.jpg",
+        "title": "Finansinės paslaugos ir KYC",
+        "description": "Bankai ir fintech platformos priima klientus laikydamiesi AML/KYC reikalavimų.",
+        "scenarios": [
+          { "emoji": "🏦", "name": "Banko sąskaitos atidarymas (KYC/AML)", "body": "Bankas nuotoliniu būdu patikrina kliento tapatybę — sertifikuota EUDI piniginės.", "legal": "Įstatymas 129/2019; Direktyva (ES) 2015/849" },
+          { "emoji": "💼", "name": "Draudimas ir finansiniai produktai", "body": "Draudimo bendrovės skaitmeniškai patikrina draudėjo tapatybę.", "legal": "Regl. (ES) 2024/1183" }
+        ]
+      },
+      {
+        "icon": "🏥",
+        "image": "/assets/illustrations/usecase-healthcare.jpg",
+        "title": "Sveikatos priežiūra ir socialinės paslaugos",
+        "description": "Ligoninės ir klinikos saugiai identifikuoja pacientus.",
+        "scenarios": [
+          { "emoji": "🏥", "name": "Paciento identifikavimas", "body": "Ligoninė akimirksniu identifikuoja pacientą naudodama EguWallet.", "legal": "Įstatymas 95/2006 — str. 230-232" },
+          { "emoji": "🗳️", "name": "Rinkimų komisijos rinkėjo patikrinimas", "body": "Balsavimo skyriaus darbuotojai akimirksniu patikrina rinkėjo tapatybę.", "legal": "Įstatymas 208/2015 — str. 84" },
+          { "emoji": "📋", "name": "Įdarbinimas ir HR patikrinimas", "body": "Darbdaviai patikrina naujojo darbuotojo tapatybę sudarant sutartį.", "legal": "Įstatymas 53/2003; HG 500/2011" }
+        ]
+      },
+      {
+        "icon": "⚖️",
+        "image": "/assets/illustrations/usecase-legal.jpg",
+        "title": "Teisinės ir notarinės paslaugos — fizinis buvimas nebereikalingas",
+        "description": "Pagal Regl. (ES) 2024/1183 EUDI Wallet suteikia teisiškai privalomą identifikavimą.",
+        "scenarios": [
+          { "emoji": "📝", "name": "Nuotolinis notarinis identifikavimas", "body": "Notaras nuotoliniu būdu identifikuoja šalį per EUDI piniginę.", "legal": "Įstatymas 36/1995 — str. 40; Regl. (ES) 2024/1183 — str. 5a" },
+          { "emoji": "🏠", "name": "Nekilnojamojo turto sandoriai be eilių", "body": "Abi šalys skaitmeniškai identifikuojasi ir pasirašo su QES — viskas nuotoliniu būdu.", "legal": "Civilinis kodeksas str. 1244; eIDAS 2.0 str. 25" },
+          { "emoji": "✅", "name": "Pareiškimai ir įgaliojimai", "body": "Pilietis pateikia EguWallet PID teisiniam identifikavimui.", "legal": "Regl. (ES) 2024/1183; Įstatymas 455/2001" },
+          { "emoji": "🤝", "name": "Komercinės sutartys su QES", "body": "Sutartys, pasirašytos su QES — teisinė galia visose 27 ES valstybėse narėse.", "legal": "Įstatymas 455/2001; eIDAS 2.0 str. 25; Įstatymas 31/1990" }
+        ]
+      },
+      {
+        "icon": "🎰",
+        "image": "/assets/illustrations/usecase-gambling.jpg",
+        "title": "Azartiniai lošimai ir saviizstūmimas",
+        "description": "Kazino ir lošimų platformos tikrina žaidėjų tapatybę ir saviizstūmimo registrus.",
+        "scenarios": [
+          { "emoji": "🎰", "name": "Žaidėjo tapatybės patikrinimas (KYC)", "body": "Lošimų operatoriai tikrina žaidėjo tapatybę registruojantis pagal AML reikalavimus.", "legal": "Direktyva (ES) 2015/849; lošimų licencijavimo taisyklės" },
+          { "emoji": "🚫", "name": "Saviizstūmimo registro patikrinimas", "body": "Operatorius tikrina nacionalinį saviizstūmimo registrą. Jei asmuo yra sąraše, prieiga automatiškai blokuojama.", "legal": "Regl. (ES) 2024/1183; nacionaliniai azartinių lošimų įstatymai" },
+          { "emoji": "🔞", "name": "Amžiaus 18+ patikrinimas lošimams", "body": "Lošimų operatoriai tikrina, ar žaidėjui yra 18 ar daugiau metų — perduodama tik TAIP/NE.", "legal": "OUG 77/2009; Direktyva (ES) 2015/849" }
+        ]
       }
+    ]
+  },
+  "trust": {
+    "heading": "Teisiškai privaloma — patikima pagal įstatymą, kontroliuojama jūsų",
+    "subheading": "EguWallet suteikia piliečiams visišką kontrolę virš jų tapatybės duomenų.",
+    "image": "/assets/illustrations/usecase-trust.jpg",
+    "citizenTitle": "Piliečiams — jūs sprendžiate viską",
+    "citizenPoints": [
+      "Jūs pasirenkate, kokius duomenis dalytis, su kuo ir kada.",
+      "Kiekviena sąveika įrašoma į jūsų asmeninę audito istoriją.",
+      "Pagal BDAR 17 str. galite bet kuriuo metu paprašyti ištrinti savo duomenis.",
+      "Jūsų kriptografiniai raktai niekada nepalieka jūsų įrenginio."
     ],
-    "statusAvailable": "Available",
-    "statusSoon": "Coming Soon"
+    "rpTitle": "Paslaugoms ir organizacijoms — teisiškai patikima tapatybė",
+    "rpSubtitle": "Paslaugos, priimančios EguWallet (pasikliaujančiosios šalys), naudojasi:",
+    "rpPoints": [
+      "Teisiškai privalomą identifikavimą pagal Regl. (ES) 2024/1183.",
+      "Kriptografiškai patikrintais tapatybės duomenimis — neįmanoma suklastoti.",
+      "Visišku atitikimu AML/KYC.",
+      "Nuline atsakomybės rizika."
+    ],
+    "auditTitle": "Privačiai audituota. Viešai atskaitinga.",
+    "auditBody": "EguWallet sukurta remiantis atvirais standartais ir vyksta oficialus sertifikavimas.",
+    "badges": [
+      { "icon": "🛡️", "label": "BDAR 17 str. — Teisė į ištrynimą" },
+      { "icon": "📋", "label": "Pilna sąveikų istorija" },
+      { "icon": "⚖️", "label": "eIDAS 2.0 teisiškai privaloma" },
+      { "icon": "🔐", "label": "Selektyvus atskleidimas be žinių" },
+      { "icon": "🔍", "label": "Privačiai audituota" },
+      { "icon": "🌍", "label": "Galioja visose 27 ES valstybėse" }
+    ]
   },
   "usedToday": {
-    "heading": "Where EguWallet works today",
-    "subheading": "Production applications already using EguWallet for authentication and verification",
-    "app1Name": "Ilfov County Council",
+    "heading": "Kur EguWallet veikia šiandien",
+    "subheading": "Gamybinės programos, jau naudojančios EguWallet",
+    "app1Name": "Ilf apskrities taryba",
     "app1Url": "https://ilfov.net",
-    "app1Body": "Digital public services for Ilfov County citizens — EguWallet authentication for e-government portal access, application submission, and document verification.",
-    "app2Name": "Sector 2 Bucharest City Hall",
+    "app1Body": "Skaitmeninės viešosios paslaugos Ilf apskrities piliečiams.",
+    "app2Name": "Bukarešto 2-ojo sektoriaus savivaldybė",
     "app2Url": "https://sector2.eu",
-    "app2Body": "Digital municipal services for Sector 2 residents — fast and secure authentication with the digital wallet for all online city hall services.",
-    "badgeText": "Sign in with EguWallet"
+    "app2Body": "Skaitmeninės savivaldybės paslaugos 2-ojo sektoriaus gyventojams.",
+    "badgeText": "Prisijunkite su EguWallet"
+  },
+  "verifier": {
+    "heading": "Ar esate viešoji institucija ar įmonė?",
+    "subheading": "Tikrinkite tapatybės dokumentus su EguWallet Verifier",
+    "card1Title": "Skaitmeninis tapatybės inspektorius",
+    "card1Body": "Institucijų darbuotojai per kelias sekundes tikrina skaitmeninius dokumentus per Bluetooth/NFC.",
+    "card2Title": "Kaip pradėti",
+    "card2Body": "Atsisiųskite EguWallet Verifier, užsiregistruokite, pasirinkite savo instituciją.",
+    "playBadgeAlt": "Atsisiųskite EguWallet Verifier iš Google Play",
+    "navLabel": "Institucijoms"
   },
   "future": {
-    "heading": "What's next — the future of digital identity",
-    "subheading": "EguWallet continuously expands with new use cases that make life easier",
+    "heading": "Kas toliau — skaitmeninės tapatybės ateitis",
+    "subheading": "EguWallet nuolat plečiamas naujais naudojimo atvejais",
     "items": [
-      {
-        "icon": "📡",
-        "title": "Device-to-Device Verification (Bluetooth)",
-        "body": "Like contactless NFC payment — a police officer or merchant brings their phone near yours and instantly receives only the data you have authorised. No internet, no intermediate server."
-      },
-      {
-        "icon": "🚔",
-        "title": "Law Enforcement Identity Check",
-        "body": "Similar to modern contactless payment: a law enforcement officer verifies identity via NFC/Bluetooth. You control what data is transmitted. Fast, secure, no photocopies needed."
-      },
-      {
-        "icon": "🍺",
-        "title": "Age 18+ Verification (Coming Soon)",
-        "body": "Imminent deployment with a major Romanian retailer for age control on alcohol sales. The merchant receives only a YES/NO answer — no other personal data is disclosed."
-      },
-      {
-        "icon": "🚌",
-        "title": "Public Transport Tickets & Passes",
-        "body": "Students entitled to free travel prove their status via EguWallet. Regular passengers purchase and present tickets digitally — no paper, no contact validators."
-      },
-      {
-        "icon": "📍",
-        "title": "Address on the New Romanian ID Card",
-        "body": "The new Romanian ID card no longer contains an address on the chip. EguWallet solves this: your registered address, certified by the official registry, can be selectively disclosed when required."
-      },
-      {
-        "icon": "✍️",
-        "title": "Qualified Digital Signature",
-        "body": "EguWallet will function as a Qualified Electronic Signature (QES) device compliant with eIDAS 2.0. Sign documents with full legal force, recognised across all EU member states — directly from your phone."
-      }
+      { "icon": "📡", "title": "Įrenginys su įrenginiu (Bluetooth) patikrinimas", "body": "Kaip bekontaktis NFC mokėjimas — momentinis duomenų perdavimas jūsų kontroliuojamas." },
+      { "icon": "🚔", "title": "Teisėsaugos tapatybės patikrinimas", "body": "Teisėsaugos pareigūnas tikrina tapatybę per NFC/Bluetooth." },
+      { "icon": "🍺", "title": "Amžiaus 18+ patikrinimas (Greitai)", "body": "Diegimas amžiaus kontrolei parduodant alkoholį." },
+      { "icon": "🚌", "title": "Viešojo transporto bilietai ir abonementai", "body": "Studentai ir keleiviai pateikia skaitmeninius bilietus." },
+      { "icon": "📍", "title": "Adreso patvirtinimas", "body": "Jūsų registruotas adresas gali būti selektyviai atskleistas, kai reikia." },
+      { "icon": "✍️", "title": "Kvalifikuotas skaitmeninis parašas", "body": "Pasirašykite dokumentus su visu teisiniu pajėgumu visose 27 ES valstybėse narėse." }
     ]
   },
   "howItWorks": {
-    "heading": "How it works",
-    "step1Title": "1. Download the app",
-    "step1Body": "Install EguWallet for free from the Google Play Store. Coming soon on Apple App Store.",
-    "step2Title": "2. Activate your wallet",
-    "step2Body": "Verify your phone number, create a secure PIN, and connect to your county or city portal to register your digital documents.",
-    "step3Title": "3. Present with full control",
-    "step3Body": "Scan a QR code, tap an NFC terminal or share a secure link. You choose exactly what data is transmitted — never more than is necessary."
+    "heading": "Kaip veikia",
+    "step1Title": "1. Atsisiųskite programą",
+    "step1Body": "Įdiekite EguWallet iš Google Play — nemokamai bandomojo etapo metu.",
+    "step2Title": "2. Aktyvuokite piniginę",
+    "step2Body": "Patvirtinkite savo telefono numerį, sukurkite PIN ir prisijunkite prie savo portalo.",
+    "step3Title": "3. Pateikite su visišku kontroliu",
+    "step3Body": "Nuskaitykite QR kodą, prisidėkite NFC. Jūs tiksliai pasirenkate, kokie duomenys perduodami."
   },
   "faq": {
-    "heading": "Frequently asked questions",
+    "heading": "Dažnai užduodami klausimai",
     "items": [
-      {
-        "q": "What is EguWallet?",
-        "a": "EguWallet is a European eIDAS 2.0 certified digital wallet developed by IT Eguilde SRL. It allows you to store and present digital identity documents (ID card, passport, driving licence etc.) securely on your phone, with full control over your personal data."
-      },
-      {
-        "q": "What documents can I store in EguWallet?",
-        "a": "Currently: identity card (PID), passport, driving licence, vehicle registration, RCA insurance and vehicle inspection certificate (ITP/RAR). Coming soon: company documents and property documents."
-      },
-      {
-        "q": "Is my personal data secure?",
-        "a": "Yes. EguWallet uses SD-JWT and mDoc/ISO 18013-5 for selective disclosure — you only transmit data you explicitly approve. No presentation is stored. Legal basis: GDPR Art. 5(1)(c) and Regulation (EU) 2024/1183."
-      },
-      {
-        "q": "Where can I use EguWallet?",
-        "a": "Today: Ilfov County Council digital services (ilfov.net) and Sector 2 City Hall (sector2.eu). Expansion to other public institutions and private retailers in Romania and the EU is ongoing."
-      },
-      {
-        "q": "What is eIDAS 2.0?",
-        "a": "eIDAS 2.0 is Regulation (EU) 2024/1183 amending the original eIDAS regulation. It guarantees every European citizen the right to a free digital wallet (EUDI Wallet), recognised across all 27 member states."
-      },
-      {
-        "q": "How does selective disclosure work?",
-        "a": "When a service requests identity verification, your wallet shows you exactly what data is being requested. You approve or reject each field. For example, for age-18 verification, the merchant receives only a YES/NO — they never see your name, national ID number or address."
-      },
-      {
-        "q": "Is EguWallet free?",
-        "a": "Yes, completely free for citizens. Download, registration and use are all without cost."
-      },
-      {
-        "q": "How do I activate my digital wallet?",
-        "a": "Download the app from Google Play, verify your phone number, create a PIN, then connect to your county or city portal to register your documents. The process takes approximately 5 minutes."
-      }
+      { "q": "Kas yra EguWallet?", "a": "EguWallet yra Europos eIDAS 2.0 skaitmeninė piniginė iš IT Eguilde SRL." },
+      { "q": "Kokius dokumentus galiu saugoti?", "a": "Asmens tapatybės kortelę (PID), pasą, vairuotojo pažymėjimą. Greitai: transporto priemonės registraciją, draudimą, įmonės ir nekilnojamojo turto dokumentus." },
+      { "q": "Ar saugūs mano asmens duomenys?", "a": "Taip. EguWallet naudoja SD-JWT ir mDoc selektyviam atskleidimui." },
+      { "q": "Kur galiu naudoti EguWallet?", "a": "Šiandien: ilfov.net ir sector2.eu." },
+      { "q": "Kas yra eIDAS 2.0?", "a": "Reglamentas (ES) 2024/1183 — kiekvienas ES pilietis turi teisę į nemokamą skaitmeninę piniginę." },
+      { "q": "Kaip veikia selektyvus atskleidimas?", "a": "Jūsų piniginė rodo, kokie duomenys prašomi. Jūs patvirtinate arba atmetate kiekvieną lauką." },
+      { "q": "Ar EguWallet nemokamas?", "a": "Taip, nemokamai piliečiams bandomojo etapo metu." },
+      { "q": "Ar EguWallet yra visiškai sertifikuotas?", "a": "Šiuo metu vyksta oficialus eIDAS 2.0 sertifikavimas." },
+      { "q": "Kaip aktyvuoti piniginę?", "a": "Atsisiųskite iš Google Play, patvirtinkite telefono numerį, sukurkite PIN." }
     ]
   },
   "getDigitalId": {
-    "heading": "Gaukite savo europinę skaitmeninę tapatybę",
-    "body": "Pateikite paraišką dėl PID kredencialo (Asmens tapatybės duomenys) — oficialaus ES skaitmeninio asmens tapatybės dokumento jūsų piniginėje, pripažįstamo visose 27 valstybėse narėse.",
+    "heading": "Gaukite savo Europos skaitmeninę tapatybę",
+    "body": "Pateikite paraišką dėl PID kredencialo (Asmens tapatybės duomenys).",
     "cta": "Prašyti skaitmeninio dokumento",
-    "step1": "Patvirtinkite savo tapatybę nuskaitydami asmens tapatybės kortelę ir veido atpažinimu",
-    "step2": "Inspektorius peržiūri ir patvirtina jūsų paraišką",
-    "step3": "Gaukite PID kredencialą tiesiogiai EguWallet programėlėje"
+    "step1": "Patvirtinkite savo tapatybę",
+    "step2": "Inspektorius patvirtina jūsų paraišką",
+    "step3": "Gaukite savo PID EguWallet programėlėje"
   },
   "footer": {
-    "provider": "Provided by IT Eguilde SRL",
-    "tagline": "European Digital Wallet — eIDAS 2.0 Compliant",
-    "privacy": "Privacy Policy",
-    "legal": "Terms & Conditions",
-    "contact": "Contact",
-    "euCompliance": "eIDAS 2.0 Compliant",
-    "machineTranslatedNotice": "This page is currently available in Romanian and English only.",
-    "rights": "© 2026 IT Eguilde SRL. All rights reserved."
+    "provider": "Teikia IT Eguilde SRL",
+    "tagline": "Europos skaitmeninė piniginė — atitinkanti eIDAS 2.0",
+    "privacy": "Privatumo politika",
+    "legal": "Naudojimo sąlygos",
+    "contact": "Kontaktai",
+    "euCompliance": "Atitinka eIDAS 2.0",
+    "accessibility": "Prieinamumas",
+    "machineTranslatedNotice": "Šis puslapis yra išverstas mašininiu būdu. Oficialios versijos: rumunų ir anglų kalba.",
+    "rights": "© 2026 IT Eguilde SRL. Visos teisės saugomos."
+  },
+  "accountDelete": {
+    "title": "Ištrinkite savo paskyrą",
+    "description": "Prašykite ištrinti savo EguWallet paskyrą.",
+    "intro": "EguWallet gerbia jūsų teisę į duomenų ištrynimą pagal BDAR 17 straipsnį.",
+    "method1Title": "1 būdas: Ištrynimas programėlėje",
+    "method1Steps": ["Atidarykite EguWallet", "Eikite į Nustatymus", "Bakstelėkite 'Ištrinti piniginę'", "Patvirtinkite"],
+    "method1Note": "Tai pašalina visus kredencialus ir vietinius duomenis.",
+    "method2Title": "2 būdas: Užklausa el. paštu",
+    "method2Text": "Siųskite el. laišką adresu <a href='mailto:privacy@eguwallet.eu' class='t-primary underline'>privacy@eguwallet.eu</a>.",
+    "whatDeleted": "Kas ištriname",
+    "deletedItems": ["Piniginės registracijos duomenys", "Visi skaitmeniniai kredencialai", "Kriptografiniai raktai", "Įrenginio informacija", "Selfie ir dokumentų nuskaitymai", "Seanso duomenys"],
+    "whatRetained": "Kas saugoma",
+    "retainedItems": ["eIDAS 2.0 audito žurnalai (anonimizuoti) — saugomi 7 metus"],
+    "timeline": "Ištrynimo terminas",
+    "timelineText": "Jūsų duomenys bus visam laikui pašalinti per 30 dienų.",
+    "contact": "Klausimai?",
+    "contactText": "Susisiekite su mumis adresu <a href='mailto:privacy@eguwallet.eu' class='t-primary underline'>privacy@eguwallet.eu</a>."
   }
 }

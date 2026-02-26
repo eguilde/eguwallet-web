@@ -3,213 +3,297 @@
   "langName": "Slovenčina",
   "isMachineTranslated": true,
   "nav": {
-    "what": "What is it",
-    "privacy": "Privacy",
-    "documents": "Documents",
-    "usedToday": "Where it works",
-    "future": "Future",
-    "howItWorks": "How it works",
-    "faq": "FAQ",
-    "download": "Download"
+    "what": "Čo to je",
+    "privacy": "Súkromie",
+    "documents": "Dokumenty",
+    "useCases": "Prípady použitia",
+    "trust": "Dôvera a právo",
+    "usedToday": "Kde funguje",
+    "about": "O nás",
+    "contact": "Kontakt",
+    "future": "Budúcnosť",
+    "howItWorks": "Ako to funguje",
+    "faq": "Časté otázky",
+    "download": "Stiahnuť"
   },
   "hero": {
-    "title": "Your digital identity — secure, private, always with you",
-    "subtitle": "EguWallet is a European eIDAS 2.0 certified digital wallet that replaces physical documents with verifiable digital equivalents, recognised across all EU member states.",
-    "badge1": "eIDAS 2.0 Compliant",
-    "badge2": "Certified EUDI Wallet",
-    "badge3": "Free",
-    "downloadAndroid": "Get it on Google Play",
-    "downloadIos": "Available soon on App Store",
-    "downloadIosComingSoon": "Coming Soon"
+    "title": "Vaša digitálna identita — bezpečná, súkromná, vždy pri vás",
+    "subtitle": "EguWallet je európska digitálna peňaženka s certifikáciou eIDAS 2.0, ktorá nahrádza fyzické doklady overiteľnými digitálnymi ekvivalentmi uznanými vo všetkých členských štátoch EÚ.",
+    "badge1": "Súlad s eIDAS 2.0",
+    "badge2": "Certifikácia prebieha",
+    "badge3": "Zatiaľ zadarmo",
+    "downloadAndroid": "Stiahnuť v Google Play",
+    "downloadIos": "Čoskoro v App Store",
+    "downloadIosComingSoon": "Čoskoro"
   },
   "what": {
-    "heading": "What is EguWallet?",
-    "card1Title": "Regulated by EU Law",
-    "card1Body": "EguWallet is built on Regulation (EU) 2024/1183 — the eIDAS revision — which guarantees every European citizen the right to a free digital wallet, recognised across all 27 member states.",
-    "card2Title": "What is a EUDI Wallet?",
-    "card2Body": "A European Digital Identity Wallet (EUDI) is a secure app that stores verifiable digital identity documents: ID card, passport, driving licence, vehicle documents and more — all under your exclusive control.",
-    "card3Title": "Who provides EguWallet?",
-    "card3Body": "EguWallet is developed by IT Eguilde SRL, a digital identity provider. The app fully complies with the EUDI Architecture Reference Framework (ARF 2.5+), OpenID4VCI and OpenID4VP standards."
+    "heading": "Čo je EguWallet?",
+    "card1Title": "Regulované právom EÚ",
+    "card1Body": "EguWallet je postavený na nariadení (EÚ) 2024/1183 — revízii eIDAS — ktorá zaručuje každému európskemu občanovi právo na bezplatnú digitálnu peňaženku uznanú vo všetkých 27 členských štátoch.",
+    "card2Title": "Čo je peňaženka EUDI?",
+    "card2Body": "Európska peňaženka digitálnej identity (EUDI) je bezpečná aplikácia, ktorá uchováva overiteľné digitálne doklady totožnosti: občiansky preukaz, pas, vodičský preukaz, doklady k vozidlu a ďalšie — všetko pod vaším výhradným riadením.",
+    "card3Title": "Kto poskytuje EguWallet?",
+    "card3Body": "EguWallet vyvíja IT Eguilde SRL, poskytovateľ digitálnej identity. Aplikácia je postavená na štandardoch EUDI Architecture Reference Framework (ARF 2.5+), OpenID4VCI a OpenID4VP. V súčasnosti prebieha formálna certifikácia eIDAS 2.0 — do dokončenia certifikácie funguje ako pilotná peňaženka EUDI."
   },
   "privacy": {
-    "heading": "Your data, your control",
-    "subheading": "Selective disclosure — only what is needed, only when you agree",
-    "body": "EguWallet uses SD-JWT (Selective Disclosure JWT) and mDoc/ISO 18013-5 to enable selective data disclosure. When a merchant or institution requests identity verification, you choose exactly which data is transmitted. Nothing more.",
-    "example1Title": "Age 18+ verification",
-    "example1Step1": "Merchant scans QR code",
-    "example1Step2": "Your wallet receives the request",
-    "example1Step3": "You approve: transmit ONLY «age ≥ 18: YES»",
-    "example1Step4": "Merchant does NOT receive: name, ID number, address, photo",
-    "legalTitle": "Legal basis",
-    "legal1": "<a href=\"https://eur-lex.europa.eu/eli/reg/2016/679/oj\" target=\"_blank\" rel=\"noopener\" style=\"text-decoration:underline;\">GDPR Art. 5(1)(c)</a> — data minimisation principle: processing is limited to what is strictly necessary.",
-    "legal2": "<a href=\"https://eur-lex.europa.eu/eli/reg/2024/1183/oj\" target=\"_blank\" rel=\"noopener\" style=\"text-decoration:underline;\">Reg. (EU) 2024/1183</a> — selective presentation is a citizen right, not an optional feature.",
-    "legal3": "No presentation is stored by the wallet or any third party — every disclosure is ephemeral."
+    "heading": "Vaše údaje, vaša kontrola",
+    "subheading": "Selektívne zverejňovanie — iba to, čo je potrebné, iba keď súhlasíte",
+    "body": "EguWallet používa SD-JWT (Selective Disclosure JWT) a mDoc/ISO 18013-5 na umožnenie selektívneho zverejňovania údajov. Keď obchodník alebo inštitúcia požiada o overenie totožnosti, vy presne určíte, ktoré údaje sa prenášajú. Nič viac.",
+    "example1Title": "Overenie veku 18+",
+    "example1Step1": "Obchodník naskenuje QR kód",
+    "example1Step2": "Vaša peňaženka dostane požiadavku",
+    "example1Step3": "Schválite: preniesť IBA «vek ≥ 18: ÁNO»",
+    "example1Step4": "Obchodník NEDOSTANE: meno, číslo preukazu, adresu, fotografiu",
+    "legalTitle": "Právny základ",
+    "legal1": "<a href=\"https://eur-lex.europa.eu/eli/reg/2016/679/oj\" target=\"_blank\" rel=\"noopener\" style=\"text-decoration:underline;\">GDPR čl. 5 ods. 1 písm. c)</a> — zásada minimalizácie údajov: spracovanie je obmedzené na nevyhnutne potrebné.",
+    "legal2": "<a href=\"https://eur-lex.europa.eu/eli/reg/2024/1183/oj\" target=\"_blank\" rel=\"noopener\" style=\"text-decoration:underline;\">Nariadenie (EÚ) 2024/1183</a> — selektívna prezentácia je právo občana, nie voliteľná funkcia.",
+    "legal3": "Žiadna prezentácia nie je uložená peňaženkou ani treťou stranou — každé zverejnenie je pominuteľné."
   },
   "documents": {
-    "heading": "Documents in your wallet",
-    "subheading": "All your important documents — digital, verifiable, always at hand",
+    "heading": "Doklady vo vašej peňaženke",
+    "subheading": "Všetky vaše dôležité doklady — digitálne, overiteľné, vždy po ruke",
     "items": [
+      { "icon": "🪪", "title": "Občiansky preukaz (PID)", "body": "Primárny digitálny doklad totožnosti v súlade s eIDAS 2.0. Uznaný vo všetkých členských štátoch EÚ.", "status": "available" },
+      { "icon": "🛂", "title": "Pas", "body": "Digitálna verzia vášho pasu, okamžite overiteľná úradmi a službami.", "status": "available" },
+      { "icon": "🚗", "title": "Vodičský preukaz", "body": "Digitálny vodičský preukaz v súlade s mDoc/ISO 18013-5. Bezkontaktne overiteľný, vrátane dopravnej polície.", "status": "available" },
+      { "icon": "📋", "title": "Technický preukaz vozidla", "body": "Technický preukaz vášho vozidla v digitálnom formáte. Žiadne papierové doklady.", "status": "soon" },
+      { "icon": "🛡️", "title": "Poistenie vozidla (povinné zmluvné)", "body": "Povinné zmluvné poistenie vozidla, overiteľné v reálnom čase.", "status": "soon" },
+      { "icon": "🔧", "title": "Technická kontrola / STK", "body": "Pravidelná technická kontrola (STK) a údaje vozidla — overiteľné digitálne certifikáty.", "status": "soon" },
+      { "icon": "🏢", "title": "Firemné dokumenty", "body": "Výpis z obchodného registra, plné moci a firemné dokumenty. Podpisujte digitálne svojou peňaženkou.", "status": "soon" },
+      { "icon": "🏠", "title": "Nehnuteľnostné doklady", "body": "Výpisy z katastra nehnuteľností a vlastnícke doklady k nehnuteľnostiam v overiteľnom digitálnom formáte.", "status": "soon" }
+    ],
+    "statusAvailable": "Dostupné",
+    "statusSoon": "Čoskoro"
+  },
+  "useCases": {
+    "heading": "Reálne prípady použitia",
+    "subheading": "EguWallet funguje vo všetkých oblastiach verejného i súkromného života — od rutinnej cestnej kontroly po podpis obchodnej zmluvy",
+    "categories": [
       {
-        "icon": "🪪",
-        "title": "Identity Card (PID)",
-        "body": "The primary digital identity document compliant with eIDAS 2.0. Recognised across all EU member states.",
-        "status": "available"
-      },
-      {
-        "icon": "🛂",
-        "title": "Passport",
-        "body": "The digital version of your passport, instantly verifiable by authorities and services.",
-        "status": "available"
-      },
-      {
-        "icon": "🚗",
-        "title": "Driving Licence",
-        "body": "Digital driving licence compliant with mDoc/ISO 18013-5. Contactlessly verifiable, including by traffic police.",
-        "status": "available"
-      },
-      {
-        "icon": "📋",
-        "title": "Vehicle Registration",
-        "body": "Your vehicle registration document in digital format. No more carrying paper documents.",
-        "status": "available"
-      },
-      {
-        "icon": "🛡️",
-        "title": "Vehicle Insurance (RCA)",
-        "body": "Mandatory vehicle insurance policy, verifiable in real time.",
-        "status": "available"
-      },
-      {
-        "icon": "🔧",
-        "title": "Technical Inspection / RAR",
-        "body": "Periodic technical inspection (ITP) and RAR vehicle data — verifiable digital certificates.",
-        "status": "available"
+        "icon": "🚔",
+        "image": "/assets/illustrations/usecase-police.jpg",
+        "title": "Presadzovanie práva a verejný poriadok",
+        "description": "Policajti, príslušníci pohraničnej stráže a inšpektori verejného poriadku overujú digitálnu totožnosť v priebehu sekúnd — s plnou kryptografickou dôveryhodnosťou, bez kontaktu s fyzickými dokladmi.",
+        "scenarios": [
+          { "emoji": "🪪", "name": "Kontrola totožnosti pri hliadke", "body": "Policajt overí plnú totožnosť občana — meno, CNP, adresu, fotografiu — prostredníctvom NFC alebo QR. Bez papiera. Výsledok automaticky zaznamenaný.", "legal": "Law 218/2002 — Art. 31" },
+          { "emoji": "🚗", "name": "Kompletný balík cestnej kontroly", "body": "Jeden sken QR: policajt dostane občiansky preukaz, vodičský preukaz s kategóriami, technický preukaz, povinné zmluvné poistenie a STK — všetko kryptograficky overené.", "legal": "OUG 195/2002 — Art. 6, 80, 81" },
+          { "emoji": "🛂", "name": "Hraničná kontrola", "body": "Na hraničných priechodoch príslušníci overia totožnosť, štátnu príslušnosť a platnosť cestovného dokladu v jednej bezpečnej digitálnej prezentácii.", "legal": "Law 248/2005" }
+        ]
       },
       {
         "icon": "🏢",
-        "title": "Company Documents",
-        "body": "Company registration certificate, powers of attorney and corporate documents. Sign digitally with your wallet.",
-        "status": "soon"
+        "image": "/assets/illustrations/usecase-business.jpg",
+        "title": "Obchod a komerčné transakcie",
+        "description": "Spoločnosti, notári, právnici a B2B platformy okamžite overujú firemnú identitu a oprávnenie zákonného zástupcu — eliminácia papierových certifikátov a kuriérov.",
+        "scenarios": [
+          { "emoji": "🏛️", "name": "Overenie firmy (obchodný register)", "body": "B2B platforma alebo portál verejného obstarávania overí názov firmy, IČO, sídlo a aktívny stav — všetko certifikované národným obchodným registrom.", "legal": "Law 31/1990; Law 26/1990" },
+          { "emoji": "✍️", "name": "Overenie zákonného zástupcu", "body": "Partner alebo notár overí, že osoba je oprávneným zástupcom firmy — totožnosť, firemné poverenie a mandát predložené súčasne.", "legal": "Law 31/1990 — Art. 75, 197" },
+          { "emoji": "📜", "name": "Podpis zmluvy — plne automatizovaný priebeh", "body": "Jeden QR: totožnosť overená, mandát potvrdený, zmluva podpísaná kvalifikovaným elektronickým podpisom. Právne záväzné v celej EÚ. Do 90 sekúnd.", "legal": "Reg. (EÚ) 2024/1183 — Art. 25; Law 455/2001" }
+        ]
       },
       {
-        "icon": "🏠",
-        "title": "Property Documents",
-        "body": "Land registry extracts and real estate ownership documents in verifiable digital format.",
-        "status": "soon"
-      }
-    ],
-    "statusAvailable": "Available",
-    "statusSoon": "Coming Soon"
-  },
-  "usedToday": {
-    "heading": "Where EguWallet works today",
-    "subheading": "Production applications already using EguWallet for authentication and verification",
-    "app1Name": "Ilfov County Council",
-    "app1Url": "https://ilfov.net",
-    "app1Body": "Digital public services for Ilfov County citizens — EguWallet authentication for e-government portal access, application submission, and document verification.",
-    "app2Name": "Sector 2 Bucharest City Hall",
-    "app2Url": "https://sector2.eu",
-    "app2Body": "Digital municipal services for Sector 2 residents — fast and secure authentication with the digital wallet for all online city hall services.",
-    "badgeText": "Sign in with EguWallet"
-  },
-  "future": {
-    "heading": "What's next — the future of digital identity",
-    "subheading": "EguWallet continuously expands with new use cases that make life easier",
-    "items": [
-      {
-        "icon": "📡",
-        "title": "Device-to-Device Verification (Bluetooth)",
-        "body": "Like contactless NFC payment — a police officer or merchant brings their phone near yours and instantly receives only the data you have authorised. No internet, no intermediate server."
+        "icon": "🎓",
+        "image": "/assets/illustrations/usecase-education.jpg",
+        "title": "Vzdelávanie — škola a univerzita",
+        "description": "Študenti od 1. ročníka po doktorát nosia svoj školský alebo univerzitný preukaz v EguWallet. Používajú ho na vstup do školy, na skúšky, do knižnice, na internát a na dopravné zľavy.",
+        "scenarios": [
+          { "emoji": "🏫", "name": "Preukaz žiaka (1.–12. ročník)", "body": "Žiak priloží telefón pri školskej bráne, v knižnici alebo jedálni. Digitálny preukaz vydáva škola alebo inšpektorát — platný pre daný školský rok.", "legal": "Law 1/2011 — Art. 5" },
+          { "emoji": "📋", "name": "Preukaz študenta + preukaz totožnosti na skúškach", "body": "Pri maturite, štátnych skúškach a olympiádach: preukaz študenta plus elektronický občiansky preukaz predložené súčasne — pre študentov od 14 rokov.", "legal": "Law 1/2011; OUG 97/2005 — Art. 14" },
+          { "emoji": "🎓", "name": "Preukaz vysokoškolského študenta", "body": "Vstup na fakultu, internát, knižnica, sekretariát — digitálny preukaz nahrádza fyzickú kartu. Funguje pre štipendiá a zľavy na vlaky.", "legal": "Law 1/2011 — Art. 118, 119" },
+          { "emoji": "🚌", "name": "Študentská dopravná jízdenka", "body": "Žiaci a študenti nastupujú do autobusov, metra a vlakov pomocou svojej peňaženky. Kompostér alebo vodič okamžite vidí nárok — bez fyzickej jízdenky.", "legal": "OUG 133/2000; HCL urban transport" }
+        ]
       },
       {
-        "icon": "🚔",
-        "title": "Law Enforcement Identity Check",
-        "body": "Similar to modern contactless payment: a law enforcement officer verifies identity via NFC/Bluetooth. You control what data is transmitted. Fast, secure, no photocopies needed."
+        "icon": "🛒",
+        "image": "/assets/illustrations/usecase-retail.jpg",
+        "title": "Maloobchod a overovanie veku",
+        "description": "Obchodníci overia vek alebo totožnosť na mieste predaja v priebehu sekúnd — bez uložených osobných údajov a s plným súladom s GDPR.",
+        "scenarios": [
+          { "emoji": "🍺", "name": "Vek 18+ na mieste predaja", "body": "Pokladník ukáže QR kód. Zákazník schváli zo svojej peňaženky: prenesené je iba «vek ≥ 18: ÁNO». Žiadne meno, žiadne číslo preukazu, žiadna fotografia.", "legal": "OUG 99/2000 — alkohol/tabak" },
+          { "emoji": "🏨", "name": "Príchod do hotela", "body": "Turista sa ubytuje predložením mena, dátumu narodenia a štátnej príslušnosti z peňaženky. Žiadne kopírovanie pasov. V súlade s predpismi o evidencii ubytovania.", "legal": "HG 1215/2001" }
+        ]
       },
       {
-        "icon": "🍺",
-        "title": "Age 18+ Verification (Coming Soon)",
-        "body": "Imminent deployment with a major Romanian retailer for age control on alcohol sales. The merchant receives only a YES/NO answer — no other personal data is disclosed."
+        "icon": "🏦",
+        "image": "/assets/illustrations/usecase-banking.jpg",
+        "title": "Finančné služby a KYC",
+        "description": "Banky, poisťovne a fintech platformy digitálne prijímajú zákazníkov — plnenie požiadaviek AML/KYC bez papierových formulárov.",
+        "scenarios": [
+          { "emoji": "🏦", "name": "Otvorenie bankového účtu (KYC/AML)", "body": "Banka vzdialene overí plnú totožnosť zákazníka — meno, CNP, dátum a miesto narodenia, štátnu príslušnosť, adresu — certifikovanú peňaženkou EUDI. V súlade so zákonom proti praniu špinavých peňazí.", "legal": "Law 129/2019; Directive (EU) 2015/849" },
+          { "emoji": "💼", "name": "Poistenie a finančné produkty", "body": "Poisťovne overia totožnosť poistníka pri podpise zmluvy — digitálne, okamžite, s plnou sledovateľnosťou eIDAS 2.0.", "legal": "Reg. (EÚ) 2024/1183" }
+        ]
       },
       {
-        "icon": "🚌",
-        "title": "Public Transport Tickets & Passes",
-        "body": "Students entitled to free travel prove their status via EguWallet. Regular passengers purchase and present tickets digitally — no paper, no contact validators."
+        "icon": "🏥",
+        "image": "/assets/illustrations/usecase-healthcare.jpg",
+        "title": "Zdravotníctvo a sociálne služby",
+        "description": "Nemocnice, kliniky, lekárne a sociálne služby bezpečne identifikujú pacientov a príjemcov bez ručného vypĺňania formulárov.",
+        "scenarios": [
+          { "emoji": "🏥", "name": "Identifikácia pacienta", "body": "Nemocnica alebo klinika identifikuje pacienta pomocou EguWallet. Meno, CNP, dátum narodenia overené okamžite na recepcii alebo na urgentnom príjme.", "legal": "Law 95/2006 — Art. 230-232" },
+          { "emoji": "🗳️", "name": "Overenie voliča volebnou komisiou", "body": "Pracovníci volebnej miestnosti overia totožnosť voliča a porovnajú so zoznamom voličov — okamžite, s plným záznamom auditu. Bez ručného prehľadávania zoznamov.", "legal": "Law 208/2015 — Art. 84" },
+          { "emoji": "📋", "name": "Overenie pri nástupe do zamestnania a v HR", "body": "Zamestnávatelia overia totožnosť nového zamestnanca pri podpise zmluvy — meno, CNP, adresu — podľa požiadaviek Zákonníka práce a hlásenia REVISAL.", "legal": "Law 53/2003; HG 500/2011" }
+        ]
       },
       {
-        "icon": "📍",
-        "title": "Address on the New Romanian ID Card",
-        "body": "The new Romanian ID card no longer contains an address on the chip. EguWallet solves this: your registered address, certified by the official registry, can be selectively disclosed when required."
+        "icon": "🎰",
+        "image": "/assets/illustrations/usecase-gambling.jpg",
+        "title": "Hazardné hry a sebaobmedzenie",
+        "description": "Online aj kamenné kasíná, prevádzkovatelia športového stávkovania a herné platformy overujú totožnosť hráča a kontrolujú národné registre sebaobmedzenia — prevencia problémového hazardu a zabezpečenie regulačnej zhody.",
+        "scenarios": [
+          { "emoji": "🎰", "name": "Overenie totožnosti hráča (KYC)", "body": "Prevádzkovatelia hazardných hier overia totožnosť hráča pri registrácii — meno, dátum narodenia, štátnu príslušnosť — podľa požiadaviek predpisov AML a licencovania hazardu. Rýchlo, digitálne, bez kópií.", "legal": "Directive (EU) 2015/849; OUG 77/2009" },
+          { "emoji": "🚫", "name": "Kontrola registra sebaobmedzenia", "body": "Pred povolením hráčovi stavať prevádzkovateľ cez EguWallet skontroluje národný register sebaobmedzenia. Ak je hráč na zozname, prístup je automaticky zablokovaný — bez ručného vyhľadávania.", "legal": "OUG 77/2009 — Art. 10; national gambling authority" },
+          { "emoji": "🔞", "name": "Overenie veku 18+ pre hry", "body": "Online aj kamenní herní prevádzkovatelia overia, že hráč má 18 rokov alebo viac — pomocou vekovej atestácie EguWallet. Prenesené je iba ÁNO/NIE — žiadne osobné údaje nie sú uložené prevádzkovateľom.", "legal": "OUG 77/2009; Directive (EU) 2015/849" }
+        ]
       },
       {
-        "icon": "✍️",
-        "title": "Qualified Digital Signature",
-        "body": "EguWallet will function as a Qualified Electronic Signature (QES) device compliant with eIDAS 2.0. Sign documents with full legal force, recognised across all EU member states — directly from your phone."
+        "icon": "⚖️",
+        "image": "/assets/illustrations/usecase-legal.jpg",
+        "title": "Právne a notárske — fyzická prítomnosť už nie je potrebná",
+        "description": "Podľa nariadenia (EÚ) 2024/1183 poskytuje peňaženka EUDI právne záväznú identifikáciu rovnocennú fyzickej prítomnosti pre celý rad právnych úkonov. Mnohé notárske postupy, ktoré predtým vyžadovali osobnú prítomnosť, možno teraz dokončiť vzdialene.",
+        "scenarios": [
+          { "emoji": "📝", "name": "Vzdialená notárska identifikácia", "body": "Pre úkony, ktoré predtým vyžadovali osobnú prítomnosť — plná moc, vyhlásenia, prevod nehnuteľnosti — môže notár teraz vzdialene identifikovať stranu prostredníctvom peňaženky EUDI. Overený PID peňaženky nahrádza osobnú kontrolu dokladov.", "legal": "Law 36/1995 — Art. 40; Reg. (EÚ) 2024/1183 — Art. 5a" },
+          { "emoji": "🏠", "name": "Realitné transakcie bez fronty", "body": "Kúpa alebo predaj nehnuteľnosti už nevyžaduje cestovanie do notárskej kancelárie iba za účelom identifikácie. Obe strany sa identifikujú digitálne, mandát zástupcu je overený a zmluva podpísaná KEP — všetko vzdialene.", "legal": "Civil Code Art. 1244; eIDAS 2.0 Art. 25" },
+          { "emoji": "✅", "name": "Vyhlásenia a plné moci", "body": "Zákonné vyhlásenia, mandáty, čestné vyhlásenia — tieto úkony už nevyžadujú fyzickú návštevu notára pre krok identifikácie. Občan predloží svoj PID EguWallet; identifikácia je právne rovnocenná osobnej verifikácii.", "legal": "Reg. (EÚ) 2024/1183 — eIDAS 2.0; Law 455/2001" },
+          { "emoji": "🤝", "name": "Firemné a komerčné zmluvy s KEP", "body": "Zmluvy o poskytovaní služieb, partnerské zmluvy, uznesenia akcionárov — podpísané kvalifikovaným elektronickým podpisom priamo z EguWallet. Právna sila vo všetkých 27 členských štátoch EÚ. Bez tlačiarne, bez kuriéra, bez objednania.", "legal": "Law 455/2001; eIDAS 2.0 Art. 25; Law 31/1990" }
+        ]
       }
     ]
   },
+  "trust": {
+    "heading": "Právne záväzné — dôveryhodné zo zákona, ovládané vami",
+    "subheading": "EguWallet dáva občanom plnú kontrolu nad ich identitými údajmi a zároveň poskytuje službám a verejným orgánom potrebnú právnu istotu.",
+    "image": "/assets/illustrations/usecase-trust.jpg",
+    "citizenTitle": "Pre občanov — vy rozhodujete o všetkom",
+    "citizenPoints": [
+      "Vy volíte, aké údaje zdieľať, s kým a kedy — vaša peňaženka nikdy nič neprenáša bez vášho výslovného súhlasu.",
+      "Každá interakcia je zaznamenaná vo vašej osobnej histórii auditu. Presne vidíte, kto žiadal o vaše údaje a čo dostal.",
+      "Podľa GDPR čl. 17 môžete kedykoľvek požiadať o vymazanie vašich údajov z akejkoľvek služby — priamo z aplikácie.",
+      "Vaše kryptografické kľúče nikdy neopustia vaše zariadenie. Žiadny poskytovateľ peňaženky, žiadna vláda, žiadna tretia strana nemôže pristupovať k vašim povereniam bez vášho súhlasu."
+    ],
+    "rpTitle": "Pre služby a organizácie — právne istá identita",
+    "rpSubtitle": "Služby prijímajúce EguWallet (tzv. Spoliehajúce sa strany — firmy, inštitúcie alebo verejné orgány overujúce totožnosť) ťažia z:",
+    "rpPoints": [
+      "Právne záväznej identifikácie podľa nariadenia (EÚ) 2024/1183 — rovnocennej fyzickej kontrole dokladov pre väčšinu právnych účelov.",
+      "Kryptograficky overených identitných údajov — nezfalšovateľných, neopakovateľných ani manipulovateľných.",
+      "Plného súladu s AML/KYC pre banky, poisťovne a finančné platformy.",
+      "Nulového rizika zodpovednosti — vydavateľ peňaženky nesie regulačnú zodpovednosť za pravosť poverení."
+    ],
+    "auditTitle": "Súkromne auditované. Verejne zodpovedné.",
+    "auditBody": "EguWallet je postavený na otvorených štandardoch (ARF 2.5+, OpenID4VCI, OpenID4VP, SD-JWT, ISO 18013-5) a prechádza formálnou certifikáciou akreditovaným orgánom posudzovania zhody. Naša technická architektúra je otvorená nezávislým bezpečnostným auditom. Sme v súlade s eIDAS 2.0 pre verejné orgány a zostávame flexibilní pre integrácie súkromného sektora v maloobchode, zdravotníctve, financiách a právnych službách.",
+    "badges": [
+      { "icon": "🛡️", "label": "GDPR čl. 17 — právo na výmaz" },
+      { "icon": "📋", "label": "Plná história interakcií" },
+      { "icon": "⚖️", "label": "eIDAS 2.0 právne záväzné" },
+      { "icon": "🔐", "label": "Selektívne zverejňovanie s nulovou znalosťou" },
+      { "icon": "🔍", "label": "Súkromne auditované" },
+      { "icon": "🌍", "label": "Platné vo všetkých 27 štátoch EÚ" }
+    ]
+  },
+  "usedToday": {
+    "heading": "Kde EguWallet funguje dnes",
+    "subheading": "Produkčné aplikácie už používajúce EguWallet na autentifikáciu a overovanie",
+    "app1Name": "Rada okresu Ilfov",
+    "app1Url": "https://ilfov.net",
+    "app1Body": "Digitálne verejné služby pre občanov okresu Ilfov — autentifikácia EguWallet pre prístup k portálu e-government, podávanie žiadostí a overovanie dokladov.",
+    "app2Name": "Mestský úrad mestského obvodu Sektor 2 Bukurešť",
+    "app2Url": "https://sector2.eu",
+    "app2Body": "Digitálne komunálne služby pre obyvateľov Sektora 2 — rýchla a bezpečná autentifikácia digitálnou peňaženkou pre všetky online služby mestského úradu.",
+    "badgeText": "Prihlásiť sa pomocou EguWallet"
+  },
+  "verifier": {
+    "heading": "Ste verejná inštitúcia alebo firma?",
+    "subheading": "Overujte doklady totožnosti a digitálne poverenia pomocou EguWallet Verifier",
+    "card1Title": "Digitálny inšpektor totožnosti",
+    "card1Body": "Registrovaní zamestnanci inštitúcie overujú digitálne doklady v priebehu sekúnd cez Bluetooth/NFC — priamo z telefónu. Každé overenie je zaznamenané, sledovateľné a v súlade s GDPR. Žiadny papier, žiadne kópie.",
+    "card2Title": "Ako začať",
+    "card2Body": "Stiahnite EguWallet Verifier, zaregistrujte sa pomocou peňaženky EguWallet alebo ručne, vyberte svoju inštitúciu a oddelenie. Váš účet aktivuje správca vašej inštitúcie.",
+    "playBadgeAlt": "Stiahnuť EguWallet Verifier v Google Play",
+    "navLabel": "Pre inštitúcie"
+  },
+  "future": {
+    "heading": "Čo príde ďalej — budúcnosť digitálnej identity",
+    "subheading": "EguWallet sa neustále rozširuje o nové prípady použitia, ktoré uľahčujú život",
+    "items": [
+      { "icon": "📡", "title": "Overenie zariadenie-na-zariadenie (Bluetooth)", "body": "Ako bezkontaktná platba NFC — policajt alebo obchodník priblíži svoj telefón k vášmu a okamžite dostane iba údaje, ktoré ste autorizovali. Bez internetu, bez medzilehlého servera." },
+      { "icon": "🚔", "title": "Kontrola totožnosti orgánmi činnými v trestnom konaní", "body": "Podobne ako moderná bezkontaktná platba: príslušník bezpečnostného zboru overí totožnosť cez NFC/Bluetooth. Vy kontrolujete, aké údaje sa prenášajú. Rýchlo, bezpečne, bez kópií." },
+      { "icon": "🍺", "title": "Overenie veku 18+ (čoskoro)", "body": "Blížiace sa nasadenie s veľkým maloobchodníkom na vekovú kontrolu pri predaji alkoholu. Obchodník dostane iba odpoveď ÁNO/NIE — žiadne iné osobné údaje nie sú zverejnené." },
+      { "icon": "🚌", "title": "Lístky a cestovné preukazy MHD", "body": "Študenti oprávnení na bezplatnú jazdu preukážu svoj nárok cez EguWallet. Bežní cestujúci kupujú a predkladajú lístky digitálne — bez papiera, bez kontaktných kompostérov." },
+      { "icon": "📍", "title": "Atestácia adresy", "body": "Vaša registrovaná adresa, certifikovaná úradným registrom, môže byť selektívne zverejnená v prípade potreby." },
+      { "icon": "✍️", "title": "Kvalifikovaný digitálny podpis", "body": "EguWallet bude fungovať ako zariadenie na kvalifikovaný elektronický podpis (KEP) v súlade s eIDAS 2.0. Podpisujte dokumenty s plnou právnou silou uznanou vo všetkých členských štátoch EÚ — priamo z telefónu." }
+    ]
+  },
   "howItWorks": {
-    "heading": "How it works",
-    "step1Title": "1. Download the app",
-    "step1Body": "Install EguWallet for free from the Google Play Store. Coming soon on Apple App Store.",
-    "step2Title": "2. Activate your wallet",
-    "step2Body": "Verify your phone number, create a secure PIN, and connect to your county or city portal to register your digital documents.",
-    "step3Title": "3. Present with full control",
-    "step3Body": "Scan a QR code, tap an NFC terminal or share a secure link. You choose exactly what data is transmitted — never more than is necessary."
+    "heading": "Ako to funguje",
+    "step1Title": "1. Stiahnite aplikáciu",
+    "step1Body": "Nainštalujte EguWallet z Google Play Store — zatiaľ zadarmo v pilotnej fáze. Čoskoro aj v Apple App Store.",
+    "step2Title": "2. Aktivujte peňaženku",
+    "step2Body": "Overte svoje telefónne číslo, vytvorte bezpečný PIN a pripojte sa k portálu svojho kraja alebo mesta na registráciu digitálnych dokladov.",
+    "step3Title": "3. Predložte s plnou kontrolou",
+    "step3Body": "Naskenujte QR kód, priložte k NFC terminálu alebo zdieľajte bezpečný odkaz. Vy presne určíte, aké údaje sa prenášajú — nikdy viac, než je nutné."
   },
   "faq": {
-    "heading": "Frequently asked questions",
+    "heading": "Časté otázky",
     "items": [
-      {
-        "q": "What is EguWallet?",
-        "a": "EguWallet is a European eIDAS 2.0 certified digital wallet developed by IT Eguilde SRL. It allows you to store and present digital identity documents (ID card, passport, driving licence etc.) securely on your phone, with full control over your personal data."
-      },
-      {
-        "q": "What documents can I store in EguWallet?",
-        "a": "Currently: identity card (PID), passport, driving licence, vehicle registration, RCA insurance and vehicle inspection certificate (ITP/RAR). Coming soon: company documents and property documents."
-      },
-      {
-        "q": "Is my personal data secure?",
-        "a": "Yes. EguWallet uses SD-JWT and mDoc/ISO 18013-5 for selective disclosure — you only transmit data you explicitly approve. No presentation is stored. Legal basis: GDPR Art. 5(1)(c) and Regulation (EU) 2024/1183."
-      },
-      {
-        "q": "Where can I use EguWallet?",
-        "a": "Today: Ilfov County Council digital services (ilfov.net) and Sector 2 City Hall (sector2.eu). Expansion to other public institutions and private retailers in Romania and the EU is ongoing."
-      },
-      {
-        "q": "What is eIDAS 2.0?",
-        "a": "eIDAS 2.0 is Regulation (EU) 2024/1183 amending the original eIDAS regulation. It guarantees every European citizen the right to a free digital wallet (EUDI Wallet), recognised across all 27 member states."
-      },
-      {
-        "q": "How does selective disclosure work?",
-        "a": "When a service requests identity verification, your wallet shows you exactly what data is being requested. You approve or reject each field. For example, for age-18 verification, the merchant receives only a YES/NO — they never see your name, national ID number or address."
-      },
-      {
-        "q": "Is EguWallet free?",
-        "a": "Yes, completely free for citizens. Download, registration and use are all without cost."
-      },
-      {
-        "q": "How do I activate my digital wallet?",
-        "a": "Download the app from Google Play, verify your phone number, create a PIN, then connect to your county or city portal to register your documents. The process takes approximately 5 minutes."
-      }
+      { "q": "Čo je EguWallet?", "a": "EguWallet je európska digitálna peňaženka s certifikáciou eIDAS 2.0 vyvinutá IT Eguilde SRL. Umožňuje bezpečne ukladať a predkladať digitálne doklady totožnosti (občiansky preukaz, pas, vodičský preukaz atď.) v telefóne s plnou kontrolou nad osobnými údajmi." },
+      { "q": "Aké doklady môžem ukladať v EguWallet?", "a": "Aktuálne: občiansky preukaz (PID), pas a vodičský preukaz. Čoskoro: technický preukaz vozidla, povinné zmluvné poistenie, STK/RAR, firemné doklady a nehnuteľnostné doklady." },
+      { "q": "Sú moje osobné údaje v bezpečí?", "a": "Áno. EguWallet používa SD-JWT a mDoc/ISO 18013-5 na selektívne zverejňovanie — prenášate iba údaje, ktoré výslovne schválite. Žiadna prezentácia nie je uložená. Právny základ: GDPR čl. 5 ods. 1 písm. c) a nariadenie (EÚ) 2024/1183." },
+      { "q": "Kde môžem EguWallet používať?", "a": "Dnes: digitálne služby Rady okresu Ilfov (ilfov.net) a Mestského úradu Sektora 2 (sector2.eu). Rozšírenie na ďalšie verejné inštitúcie a súkromných obchodníkov v Rumunsku a EÚ prebieha." },
+      { "q": "Čo je eIDAS 2.0?", "a": "eIDAS 2.0 je nariadenie (EÚ) 2024/1183 meniace pôvodné nariadenie eIDAS. Garantuje každému občanovi EÚ právo na bezplatnú digitálnu peňaženku (peňaženka EUDI) uznanú vo všetkých 27 členských štátoch." },
+      { "q": "Ako funguje selektívne zverejňovanie?", "a": "Keď služba požiada o overenie totožnosti, vaša peňaženka vám presne ukáže, aké údaje sa požadujú. Každé pole schválite alebo zamietate. Napríklad pri overení veku 18+ obchodník dostane iba ÁNO/NIE — nikdy nevidí vaše meno, číslo preukazu ani adresu." },
+      { "q": "Je EguWallet zadarmo?", "a": "Áno, zadarmo pre občanov v aktuálnej pilotnej fáze. EguWallet prechádza formálnou certifikáciou eIDAS 2.0 — po certifikácii sa môže na inštitucionálne integrácie vzťahovať cenová politika, ale aplikácia peňaženky pre občanov zostane zadarmo." },
+      { "q": "Je EguWallet plne certifikovaný?", "a": "EguWallet v súčasnosti prechádza formálnou certifikáciou eIDAS 2.0 akreditovaným orgánom posudzovania zhody (CAB). Do dokončenia certifikácie funguje ako pilotná peňaženka EUDI. Všetky technické štandardy (ARF 2.5+, OpenID4VCI, OpenID4VP, SD-JWT, ISO 18013-5) sú už implementované." },
+      { "q": "Ako aktivujem digitálnu peňaženku?", "a": "Stiahnite aplikáciu z Google Play, overte telefónne číslo, vytvorte PIN a pripojte sa k portálu svojho kraja alebo mesta na registráciu dokladov. Proces trvá približne 5 minút." }
     ]
   },
   "getDigitalId": {
     "heading": "Získajte svoju európsku digitálnu identitu",
-    "body": "Požiadajte o PID oprávnenie (Osobné identifikačné údaje) — oficiálny digitálny preukaz EÚ vo vašej peňaženke, uznávaný vo všetkých 27 členských štátoch.",
-    "cta": "Požiadať o digitálny preukaz",
-    "step1": "Overte svoju identitu skenovaním občianskeho preukazu a rozpoznávaním tváre",
-    "step2": "Inšpektor skontroluje a schváli vašu žiadosť",
-    "step3": "Dostanete PID oprávnenie priamo v EguWallet"
+    "body": "Požiadajte o poverenie Osobné identifikačné údaje (PID) — oficiálny digitálny preukaz totožnosti EÚ vo vašej peňaženke uznaný vo všetkých 27 členských štátoch.",
+    "cta": "Požiadať o digitálny preukaz totožnosti",
+    "step1": "Overte svoju totožnosť skenovaním preukazu a rozpoznávaním tváre",
+    "step2": "Inšpektor posúdi a schváli vašu žiadosť",
+    "step3": "Prijmite poverenie PID priamo do EguWallet"
   },
   "footer": {
-    "provider": "Provided by IT Eguilde SRL",
-    "tagline": "European Digital Wallet — eIDAS 2.0 Compliant",
-    "privacy": "Privacy Policy",
-    "legal": "Terms & Conditions",
-    "contact": "Contact",
-    "euCompliance": "eIDAS 2.0 Compliant",
-    "machineTranslatedNotice": "This page is currently available in Romanian and English only.",
-    "rights": "© 2026 IT Eguilde SRL. All rights reserved."
+    "provider": "Poskytuje IT Eguilde SRL",
+    "tagline": "Európska digitálna peňaženka — súlad s eIDAS 2.0",
+    "privacy": "Zásady ochrany súkromia",
+    "legal": "Obchodné podmienky",
+    "contact": "Kontakt",
+    "euCompliance": "Súlad s eIDAS 2.0",
+    "accessibility": "Prístupnosť",
+    "machineTranslatedNotice": "Táto stránka je strojovo preložená. Oficiálne verzie: rumunská a anglická.",
+    "rights": "© 2026 IT Eguilde SRL. Všetky práva vyhradené."
+  },
+  "accountDelete": {
+    "title": "Vymazanie vášho účtu",
+    "description": "Požiadajte o vymazanie vášho účtu EguWallet a všetkých pridružených údajov.",
+    "intro": "EguWallet rešpektuje vaše právo na výmaz údajov podľa článku 17 GDPR. Peňaženku a všetky pridružené údaje môžete vymazať ktoroukoľvek z nižšie uvedených metód.",
+    "method1Title": "Metóda 1: Vymazanie v aplikácii",
+    "method1Steps": [
+      "Otvorte aplikáciu EguWallet na svojom zariadení",
+      "Prejdite do Nastavení",
+      "Klepnite na 'Vymazať peňaženku'",
+      "Potvrďte vymazanie po výzve"
+    ],
+    "method1Note": "Tým sa okamžite odstránia všetky poverenia, kryptografické kľúče a miestne údaje zo zariadenia a požiada sa o vymazanie údajov účtu na strane servera.",
+    "method2Title": "Metóda 2: Žiadosť e-mailom",
+    "method2Text": "Pošlite e-mail na adresu <a href='mailto:privacy@eguwallet.eu' class='t-primary underline'>privacy@eguwallet.eu</a> s predmetom 'Žiadosť o vymazanie účtu'. Uveďte e-mailovú adresu alebo telefónne číslo spojené s registráciou vašej peňaženky.",
+    "whatDeleted": "Čo sa vymaže",
+    "deletedItems": [
+      "Registračné údaje vašej peňaženky (meno, e-mail, telefónne číslo)",
+      "Všetky digitálne poverenia (PID, mDL, kvalifikované atestácie)",
+      "Kryptografické kľúče a atestácie peňaženky",
+      "Informácie o zariadení a tokeny push oznámení FCM",
+      "Selfie a skeny dokladov",
+      "Overovacie kódy a údaje relácie"
+    ],
+    "whatRetained": "Čo zostane zachované",
+    "retainedItems": [
+      "Povinné záznamy auditu eIDAS 2.0 (anonymizované, bez osobných údajov) — uchovávané 7 rokov podľa požiadaviek nariadenia EÚ"
+    ],
+    "timeline": "Harmonogram vymazania",
+    "timelineText": "Po obdržaní vašej žiadosti o vymazanie budú vaše osobné údaje trvalo odstránené z našich serverov do 30 dní. Miestne údaje zariadenia sú vymazané okamžite pri použití vymazania v aplikácii.",
+    "contact": "Máte otázky?",
+    "contactText": "S otázkami ohľadom vymazania údajov alebo vašich práv na súkromie nás kontaktujte na adrese <a href='mailto:privacy@eguwallet.eu' class='t-primary underline'>privacy@eguwallet.eu</a>."
   }
 }
