@@ -1,6 +1,7 @@
 ---
 import '../../../styles/global.css';
 import { SITE } from '../../../config/site.ts';
+import { getTranslations } from '../../../i18n/index';
 import HeadSEO from '../../../components/HeadSEO.astro';
 
 export async function getStaticPaths() {
@@ -12,6 +13,7 @@ export async function getStaticPaths() {
 }
 
 const { lang } = Astro.params;
+const t = await getTranslations(lang);
 const isRo = lang === 'ro';
 ---
 <!doctype html>
@@ -19,8 +21,8 @@ const isRo = lang === 'ro';
 <head>
   <HeadSEO
     lang={lang}
-    title={`${isRo ? 'Termeni și condiții' : 'Terms & Conditions'} — EguWallet`}
-    description={isRo ? 'Termeni și condiții de utilizare EguWallet — Portofel digital european eIDAS 2.0' : 'EguWallet Terms & Conditions — EU Digital Identity Wallet eIDAS 2.0'}
+    title={t.meta.termsTitle}
+    description={t.meta.termsDesc}
     canonical={`${SITE}/${lang}/terms/`}
     pathSuffix="terms/"
   />

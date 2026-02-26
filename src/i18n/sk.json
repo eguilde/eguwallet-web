@@ -540,5 +540,17 @@
     "contrast": "Kontrast",
     "highContrastOff": "Vysoký kontrast: vypnutý",
     "highContrastOn": "Vysoký kontrast: zapnutý"
+  },
+  "meta": {
+    "homeTitle": "EguWallet — Európska digitálna peňaženka identity",
+    "homeDesc": "Uchovajte a predkladajte občiansky preukaz, vodičský preukaz, diplomy a kvalifikovaný podpis z telefónu. eIDAS 2.0, uznávaný v celej EÚ.",
+    "aboutTitle": "O EguWallet — IT Eguilde SRL",
+    "aboutDesc": "IT Eguilde SRL vyvíja digitálnu peňaženku identity eIDAS 2.0 pre občanov Rumunska a EÚ.",
+    "contactTitle": "Kontakt — EguWallet",
+    "contactDesc": "Kontaktujte tím EguWallet. Odpovedáme na otázky a žiadosti o integráciu do 2 pracovných dní.",
+    "privacyTitle": "Zásady ochrany osobných údajov — EguWallet",
+    "privacyDesc": "Zásady ochrany osobných údajov EguWallet: súlad s GDPR, spracovanie dát a záväzok k ochrane súkromia.",
+    "termsTitle": "Obchodné podmienky — EguWallet",
+    "termsDesc": "Podmienky používania aplikácie EguWallet a služieb IT Eguilde SRL, európskeho poskytovateľa digitálnej identity."
   }
 }

@@ -540,5 +540,17 @@
     "contrast": "Kontrast",
     "highContrastOff": "Visoki kontrast: isključen",
     "highContrastOn": "Visoki kontrast: uključen"
+  },
+  "meta": {
+    "homeTitle": "EguWallet — Europski digitalni novčanik identiteta",
+    "homeDesc": "Pohranite i predstavite osobnu iskaznicu, vozačku dozvolu, diplome i kvalificirani potpis s telefona. eIDAS 2.0, priznat u cijeloj EU.",
+    "aboutTitle": "O EguWallet — IT Eguilde SRL",
+    "aboutDesc": "IT Eguilde SRL razvija digitalni novčanik identiteta eIDAS 2.0 za građane Rumunjske i EU.",
+    "contactTitle": "Kontakt — EguWallet",
+    "contactDesc": "Kontaktirajte tim EguWallet. Odgovaramo na pitanja i zahtjeve za integraciju u roku od 2 radna dana.",
+    "privacyTitle": "Pravila o privatnosti — EguWallet",
+    "privacyDesc": "Pravila o privatnosti EguWallet: usklađenost s GDPR-om, obrada podataka i predanost privatnosti.",
+    "termsTitle": "Uvjeti korištenja — EguWallet",
+    "termsDesc": "Uvjeti korištenja aplikacije EguWallet i usluga IT Eguilde SRL, europskog pružatelja digitalnog identiteta."
   }
 }

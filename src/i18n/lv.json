@@ -540,5 +540,17 @@
     "contrast": "Kontrasts",
     "highContrastOff": "Augsts kontrasts: izslēgts",
     "highContrastOn": "Augsts kontrasts: ieslēgts"
+  },
+  "meta": {
+    "homeTitle": "EguWallet — Eiropas digitālā identitātes maka",
+    "homeDesc": "Uzglabājiet un uzrādiet ID karti, vadītāja apliecību, diplomus un kvalificētu parakstu no tālruņa. eIDAS 2.0, atzīts visā ES.",
+    "aboutTitle": "Par EguWallet — IT Eguilde SRL",
+    "aboutDesc": "IT Eguilde SRL izstrādā eIDAS 2.0 digitālo identitātes maku Rumānijas un ES pilsoņiem.",
+    "contactTitle": "Kontakti — EguWallet",
+    "contactDesc": "Sazinieties ar EguWallet komandu. Atbildam uz jautājumiem un integrācijas pieprasījumiem 2 darba dienu laikā.",
+    "privacyTitle": "Privātuma politika — EguWallet",
+    "privacyDesc": "EguWallet privātuma politika: GDPR atbilstība, datu apstrāde un apņemšanās aizsargāt privātumu.",
+    "termsTitle": "Lietošanas noteikumi — EguWallet",
+    "termsDesc": "EguWallet lietotnes un IT Eguilde SRL pakalpojumu lietošanas noteikumi."
   }
 }

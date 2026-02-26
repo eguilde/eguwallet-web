@@ -540,5 +540,17 @@
     "contrast": "Kontrast",
     "highContrastOff": "Wysoki kontrast: wyłączony",
     "highContrastOn": "Wysoki kontrast: włączony"
+  },
+  "meta": {
+    "homeTitle": "EguWallet — Europejski portfel tożsamości cyfrowej",
+    "homeDesc": "Przechowuj i prezentuj dowód osobisty, prawo jazdy, dyplomy i podpis kwalifikowany ze swojego telefonu. Zgodny z eIDAS 2.0, uznawany w całej UE.",
+    "aboutTitle": "O EguWallet — IT Eguilde SRL",
+    "aboutDesc": "IT Eguilde SRL tworzy portfel tożsamości cyfrowej eIDAS 2.0 dla obywateli Rumunii i UE.",
+    "contactTitle": "Kontakt — EguWallet",
+    "contactDesc": "Skontaktuj się z zespołem EguWallet. Odpowiadamy na pytania i prośby o integrację w ciągu 2 dni roboczych.",
+    "privacyTitle": "Polityka prywatności — EguWallet",
+    "privacyDesc": "Polityka prywatności EguWallet: zgodność z RODO, przetwarzanie danych i zaangażowanie w ochronę prywatności.",
+    "termsTitle": "Regulamin — EguWallet",
+    "termsDesc": "Regulamin korzystania z aplikacji EguWallet i usług IT Eguilde SRL, europejskiego dostawcy tożsamości cyfrowej."
   }
 }

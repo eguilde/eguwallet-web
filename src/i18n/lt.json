@@ -540,5 +540,17 @@
     "contrast": "Kontrastas",
     "highContrastOff": "Didelis kontrastas: išjungtas",
     "highContrastOn": "Didelis kontrastas: įjungtas"
+  },
+  "meta": {
+    "homeTitle": "EguWallet — Europos skaitmeninė tapatybės piniginė",
+    "homeDesc": "Saugokite ir pateikite asmens tapatybės kortelę, vairuotojo pažymėjimą, diplomus ir kvalifikuotą parašą iš telefono. eIDAS 2.0, pripažinta ES.",
+    "aboutTitle": "Apie EguWallet — IT Eguilde SRL",
+    "aboutDesc": "IT Eguilde SRL kuria eIDAS 2.0 skaitmeninę tapatybės piniginę Rumunijos ir ES piliečiams.",
+    "contactTitle": "Kontaktai — EguWallet",
+    "contactDesc": "Susisiekite su EguWallet komanda. Atsakome į klausimus ir integracijos užklausas per 2 darbo dienas.",
+    "privacyTitle": "Privatumo politika — EguWallet",
+    "privacyDesc": "EguWallet privatumo politika: BDAR atitiktis, duomenų tvarkymas ir įsipareigojimas saugoti privatumą.",
+    "termsTitle": "Naudojimo sąlygos — EguWallet",
+    "termsDesc": "EguWallet programėlės ir IT Eguilde SRL paslaugų naudojimo sąlygos."
   }
 }

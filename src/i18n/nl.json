@@ -540,5 +540,17 @@
     "contrast": "Contrast",
     "highContrastOff": "Hoog contrast: uit",
     "highContrastOn": "Hoog contrast: aan"
+  },
+  "meta": {
+    "homeTitle": "EguWallet — Europese digitale identiteitsportemonnee",
+    "homeDesc": "Sla uw ID-kaart, rijbewijs, diploma's en gekwalificeerde handtekening op en toon ze via uw telefoon. eIDAS 2.0-conform, erkend in de EU.",
+    "aboutTitle": "Over EguWallet — IT Eguilde SRL",
+    "aboutDesc": "IT Eguilde SRL bouwt de eIDAS 2.0-conforme digitale identiteitsportemonnee voor burgers in Roemenië en de EU.",
+    "contactTitle": "Contact — EguWallet",
+    "contactDesc": "Neem contact op met het EguWallet-team. We beantwoorden vragen en integratieverzoeken binnen 2 werkdagen.",
+    "privacyTitle": "Privacybeleid — EguWallet",
+    "privacyDesc": "EguWallet privacybeleid: AVG-naleving, gegevensverwerking en toewijding aan privacy by design.",
+    "termsTitle": "Algemene voorwaarden — EguWallet",
+    "termsDesc": "Gebruiksvoorwaarden van de EguWallet-app en diensten van IT Eguilde SRL."
   }
 }

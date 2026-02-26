@@ -540,5 +540,17 @@
     "contrast": "Kontrast",
     "highContrastOff": "Hög kontrast: av",
     "highContrastOn": "Hög kontrast: på"
+  },
+  "meta": {
+    "homeTitle": "EguWallet — Europeisk digital identitetsplånbok",
+    "homeDesc": "Lagra och visa ID-kort, körkort, examensbevis och kvalificerad signatur från telefonen. eIDAS 2.0-kompatibel, erkänd i hela EU.",
+    "aboutTitle": "Om EguWallet — IT Eguilde SRL",
+    "aboutDesc": "IT Eguilde SRL bygger den eIDAS 2.0-kompatibla digitala identitetsplånboken för medborgare i Rumänien och EU.",
+    "contactTitle": "Kontakt — EguWallet",
+    "contactDesc": "Kontakta EguWallet-teamet. Vi svarar på frågor och integreringsförfrågningar inom 2 arbetsdagar.",
+    "privacyTitle": "Integritetspolicy — EguWallet",
+    "privacyDesc": "EguWallets integritetspolicy: GDPR-efterlevnad, databehandling och engagemang för integritet by design.",
+    "termsTitle": "Användarvillkor — EguWallet",
+    "termsDesc": "Användarvillkor för EguWallet-appen och IT Eguilde SRL:s tjänster."
   }
 }

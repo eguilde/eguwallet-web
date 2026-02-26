@@ -540,5 +540,17 @@
     "contrast": "Kontraszt",
     "highContrastOff": "Nagy kontraszt: kikapcsolva",
     "highContrastOn": "Nagy kontraszt: bekapcsolva"
+  },
+  "meta": {
+    "homeTitle": "EguWallet — Európai digitális személyazonosság-tárca",
+    "homeDesc": "Tárold és mutasd be személyigazolványod, jogosítványod, okleveleid és minősített aláírásodat telefonról. eIDAS 2.0 megfelelő, EU-szerte elismert.",
+    "aboutTitle": "Az EguWalletről — IT Eguilde SRL",
+    "aboutDesc": "Az IT Eguilde SRL fejleszti az eIDAS 2.0 digitális személyazonosság-tárcát romániai és uniós polgárok számára.",
+    "contactTitle": "Kapcsolat — EguWallet",
+    "contactDesc": "Vegye fel a kapcsolatot az EguWallet csapatával. Kérdésekre és integrációs kérésekre 2 munkanapon belül válaszolunk.",
+    "privacyTitle": "Adatvédelmi nyilatkozat — EguWallet",
+    "privacyDesc": "Az EguWallet adatvédelmi nyilatkozata: GDPR-megfelelőség, adatkezelés és adatvédelmi elköteleződés.",
+    "termsTitle": "Felhasználási feltételek — EguWallet",
+    "termsDesc": "Az EguWallet alkalmazás és az IT Eguilde SRL szolgáltatásainak felhasználási feltételei."
   }
 }

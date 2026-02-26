@@ -20,18 +20,27 @@ function bestLangFromHeader(header: string | null): string {
   return 'en';
 }
 
-// Check cookie from a previous visit — skip geo lookup
-const cookieLang = Astro.cookies.get('egu-lang')?.value;
-let lang = (cookieLang && SUPPORTED.includes(cookieLang))
-  ? cookieLang
-  : bestLangFromHeader(Astro.request.headers.get('accept-language'));
+// Option 3:
+// - Romanian IPs or unknown → serve RO content at / (no URL change, consistent for SEO)
+// - Non-Romanian IPs        → 302 redirect to their language (clean, Google-approved)
+// Cookie caches the result for 7 days to skip the geo lookup on repeat visits.
 
-// If no cookie: check visitor's IP country (Romania → always Romanian)
-if (!cookieLang) {
+const cookieLang = Astro.cookies.get('egu-lang')?.value;
+
+let lang: string;
+let fromCookie = false;
+
+if (cookieLang && SUPPORTED.includes(cookieLang)) {
+  lang = cookieLang;
+  fromCookie = true;
+} else {
+  // Detect country from IP
   const ip =
     Astro.request.headers.get('x-forwarded-for')?.split(',')[0].trim() ||
     Astro.request.headers.get('x-real-ip') ||
     '';
+
+  let country = 'RO'; // default — serve Romanian if geo lookup fails
 
   if (ip && ip !== '127.0.0.1' && ip !== '::1') {
     try {
@@ -42,15 +51,21 @@ if (!cookieLang) {
       });
       clearTimeout(tid);
       if (res.ok) {
-        const { countryCode } = await res.json() as { countryCode?: string };
-        if (countryCode === 'RO') lang = 'ro';
+        const data = await res.json() as { countryCode?: string };
+        country = data.countryCode ?? 'RO';
       }
     } catch {
-      // timed out or unreachable — keep Accept-Language result
+      // timeout or unreachable — keep default 'RO'
     }
   }
 
-  // Remember for 7 days so next visit skips the geo lookup
+  if (country === 'RO') {
+    lang = 'ro';
+  } else {
+    lang = bestLangFromHeader(Astro.request.headers.get('accept-language'));
+  }
+
+  // Cache for 7 days
   Astro.cookies.set('egu-lang', lang, {
     path: '/',
     maxAge: 60 * 60 * 24 * 7,
@@ -59,6 +74,10 @@ if (!cookieLang) {
   });
 }
 
-// Serve the language page content without changing the browser URL
-return Astro.rewrite(`/${lang}/`);
+// Romanian (and default): serve content at / — URL stays eguwallet.eu, SEO-consistent
+// Other languages: 302 redirect — clean pattern, Google-approved for language detection
+if (lang === 'ro') {
+  return Astro.rewrite('/ro/');
+}
+return Astro.redirect(`/${lang}/`, 302);
 ---

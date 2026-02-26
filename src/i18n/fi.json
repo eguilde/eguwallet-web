@@ -540,5 +540,17 @@
     "contrast": "Kontrasti",
     "highContrastOff": "Korkea kontrasti: pois",
     "highContrastOn": "Korkea kontrasti: päällä"
+  },
+  "meta": {
+    "homeTitle": "EguWallet — Eurooppalainen digitaalinen henkilöllisyyslompakko",
+    "homeDesc": "Tallenna ja esitä henkilökortti, ajokortti, tutkintotodistukset ja hyväksytty allekirjoitus puhelimesta. eIDAS 2.0-yhteensopiva, tunnustettu EU:ssa.",
+    "aboutTitle": "Tietoja EguWalletista — IT Eguilde SRL",
+    "aboutDesc": "IT Eguilde SRL rakentaa eIDAS 2.0 -yhteensopivan digitaalisen henkilöllisyyslompakon Romanian ja EU:n kansalaisille.",
+    "contactTitle": "Yhteystiedot — EguWallet",
+    "contactDesc": "Ota yhteyttä EguWallet-tiimiin. Vastaamme kysymyksiin ja integrointipyyntöihin 2 arkipäivän kuluessa.",
+    "privacyTitle": "Tietosuojakäytäntö — EguWallet",
+    "privacyDesc": "EguWalletin tietosuojakäytäntö: GDPR-vaatimustenmukaisuus, tietojen käsittely ja sitoutuminen yksityisyyteen.",
+    "termsTitle": "Käyttöehdot — EguWallet",
+    "termsDesc": "EguWallet-sovelluksen ja IT Eguilde SRL:n palveluiden käyttöehdot."
   }
 }

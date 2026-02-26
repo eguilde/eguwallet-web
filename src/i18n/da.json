@@ -540,5 +540,17 @@
     "contrast": "Kontrast",
     "highContrastOff": "Høj kontrast: fra",
     "highContrastOn": "Høj kontrast: til"
+  },
+  "meta": {
+    "homeTitle": "EguWallet — Europæisk digital identitetspung",
+    "homeDesc": "Gem og præsenter dit ID-kort, kørekort, eksamensbeviser og kvalificeret signatur fra telefonen. eIDAS 2.0-kompatibel, anerkendt i hele EU.",
+    "aboutTitle": "Om EguWallet — IT Eguilde SRL",
+    "aboutDesc": "IT Eguilde SRL bygger den eIDAS 2.0-kompatible digitale identitetspung for borgere i Rumænien og EU.",
+    "contactTitle": "Kontakt — EguWallet",
+    "contactDesc": "Kontakt EguWallet-teamet. Vi besvarer spørgsmål og integrationsanmodninger inden for 2 hverdage.",
+    "privacyTitle": "Privatlivspolitik — EguWallet",
+    "privacyDesc": "EguWallets privatlivspolitik: GDPR-overholdelse, databehandling og engagement for privatlivsbeskyttelse.",
+    "termsTitle": "Vilkår og betingelser — EguWallet",
+    "termsDesc": "Vilkår for brug af EguWallet-appen og IT Eguilde SRL's tjenester."
   }
 }

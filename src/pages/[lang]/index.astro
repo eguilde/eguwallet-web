@@ -18,7 +18,7 @@ const faqItems = t.faq.items.map(({ q, a }) => ({ q, a }));
 const playBadge = lang === 'ro' ? '/assets/badges/google-play-ro.svg' : '/assets/badges/google-play-en.svg';
 const playUrl = 'https://play.google.com/store/apps/details?id=wallet.eguwallet.eu';
 ---
-<Base lang={lang} title={`EguWallet — ${t.hero.title}`} description={t.hero.subtitle} faqItems={faqItems}>
+<Base lang={lang} title={t.meta.homeTitle} description={t.meta.homeDesc} faqItems={faqItems}>
   <Navbar t={t} lang={lang} />
   <main id="main-content" class="t-bg">
 

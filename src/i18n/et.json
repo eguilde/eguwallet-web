@@ -540,5 +540,17 @@
     "contrast": "Kontrastsus",
     "highContrastOff": "Kõrge kontrastsus: väljas",
     "highContrastOn": "Kõrge kontrastsus: sees"
+  },
+  "meta": {
+    "homeTitle": "EguWallet — Euroopa digitaalne identiteedirahakott",
+    "homeDesc": "Hoidke ja esitage isikut tõendavat dokumenti, juhiluba, diplomeid ja kvalifitseeritud allkirja telefonist. eIDAS 2.0, tunnustatud kogu ELis.",
+    "aboutTitle": "EguWalletist — IT Eguilde SRL",
+    "aboutDesc": "IT Eguilde SRL arendab eIDAS 2.0 digitaalset identiteedirahakotti Rumeenia ja ELi kodanikele.",
+    "contactTitle": "Kontakt — EguWallet",
+    "contactDesc": "Võtke ühendust EguWalletiga. Vastame küsimustele ja integreerimistaotlustele 2 tööpäeva jooksul.",
+    "privacyTitle": "Privaatsuspoliitika — EguWallet",
+    "privacyDesc": "EguWallet privaatsuspoliitika: GDPR-vastavus, andmetöötlus ja pühendumine privaatsusele.",
+    "termsTitle": "Kasutustingimused — EguWallet",
+    "termsDesc": "EguWallet rakenduse ja IT Eguilde SRL teenuste kasutustingimused."
   }
 }

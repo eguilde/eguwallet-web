@@ -540,5 +540,17 @@
     "contrast": "Kontrast",
     "highContrastOff": "Hoher Kontrast: aus",
     "highContrastOn": "Hoher Kontrast: ein"
+  },
+  "meta": {
+    "homeTitle": "EguWallet — Europäische digitale Brieftasche",
+    "homeDesc": "Speichern und vorlegen Sie Ausweis, Führerschein, Zeugnisse und qualifizierte Signatur vom Smartphone. eIDAS 2.0 konform, EU-weit anerkannt.",
+    "aboutTitle": "Über EguWallet — IT Eguilde SRL",
+    "aboutDesc": "IT Eguilde SRL entwickelt die eIDAS 2.0-konforme digitale Brieftasche für Bürger in Rumänien und der EU. Sichere, private digitale Identität.",
+    "contactTitle": "Kontakt — EguWallet",
+    "contactDesc": "Kontaktieren Sie das EguWallet-Team. Wir beantworten Fragen, Partnerschafts- und Integrationsanfragen innerhalb von 2 Werktagen.",
+    "privacyTitle": "Datenschutzrichtlinie — EguWallet",
+    "privacyDesc": "EguWallet Datenschutzrichtlinie: DSGVO-Konformität, Datenverarbeitung, Nutzerrechte und unser Engagement für Privacy by Design.",
+    "termsTitle": "Allgemeine Geschäftsbedingungen — EguWallet",
+    "termsDesc": "Nutzungsbedingungen der EguWallet-App und der Dienste von IT Eguilde SRL, europäischer Anbieter digitaler Identität."
   }
 }

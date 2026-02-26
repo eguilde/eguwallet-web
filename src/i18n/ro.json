@@ -556,5 +556,17 @@
     "contrast": "Contrast",
     "highContrastOff": "Contrast ridicat: dezactivat",
     "highContrastOn": "Contrast ridicat: activat"
+  },
+  "meta": {
+    "homeTitle": "EguWallet — Portofel Digital European eIDAS 2.0",
+    "homeDesc": "Stochează și prezintă actul de identitate, permisul, diplomele și semnătura calificată direct de pe telefon. Conform eIDAS 2.0, recunoscut în UE.",
+    "aboutTitle": "Despre EguWallet — IT Eguilde SRL",
+    "aboutDesc": "IT Eguilde SRL construiește portofelul digital european eIDAS 2.0 pentru cetățenii din România și UE. Identitate digitală sigură și privată.",
+    "contactTitle": "Contact — EguWallet",
+    "contactDesc": "Contactează echipa EguWallet. Răspundem la întrebări, solicitări de parteneriat și integrare în maximum 2 zile lucrătoare.",
+    "privacyTitle": "Politica de Confidențialitate — EguWallet",
+    "privacyDesc": "Politica de confidențialitate EguWallet: GDPR, prelucrarea datelor, drepturile utilizatorilor și angajamentul față de privacitate.",
+    "termsTitle": "Termeni și Condiții — EguWallet",
+    "termsDesc": "Termenii și condițiile de utilizare ale aplicației EguWallet și serviciilor IT Eguilde SRL, furnizor de identitate digitală europeană."
   }
 }

@@ -540,5 +540,17 @@
     "contrast": "Kuntrast",
     "highContrastOff": "Kuntrast għoli: mitfi",
     "highContrastOn": "Kuntrast għoli: mixgħul"
+  },
+  "meta": {
+    "homeTitle": "EguWallet — Kartiera Diġitali Ewropea tal-Identità",
+    "homeDesc": "Aħżen u ippreżenta l-karta tal-identità, liċenzja tas-sewqan, diplomi u firem kwalifikati mit-telefon. eIDAS 2.0, rikonoxxut fl-UE.",
+    "aboutTitle": "Dwar EguWallet — IT Eguilde SRL",
+    "aboutDesc": "IT Eguilde SRL tiżviluppa l-kartiera diġitali tal-identità eIDAS 2.0 għaċ-ċittadini tar-Rumanija u l-UE.",
+    "contactTitle": "Kuntatt — EguWallet",
+    "contactDesc": "Ikkuntattja t-tim EguWallet. Nwieġbu mistoqsijiet u talbiet ta' integrazzjoni fi żmien 2 ijiem tax-xogħol.",
+    "privacyTitle": "Politika tal-Privatezza — EguWallet",
+    "privacyDesc": "Politika tal-privatezza EguWallet: konformità mal-GDPR, ipproċessar ta' data u impenn għall-privatezza.",
+    "termsTitle": "Termini u Kundizzjonijiet — EguWallet",
+    "termsDesc": "Termini ta' użu tal-app EguWallet u s-servizzi ta' IT Eguilde SRL."
   }
 }

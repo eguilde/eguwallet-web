@@ -17,10 +17,8 @@ const { lang } = Astro.params;
 const t = await getTranslations(lang);
 const isRo = lang === 'ro';
 
-const title = isRo ? 'Despre EguWallet — IT Eguilde SRL' : 'About EguWallet — IT Eguilde SRL';
-const desc  = isRo
-  ? 'IT Eguilde SRL, furnizor de identitate digitală europeană. Construim portofelul digital eIDAS 2.0 pentru cetățenii europeni.'
-  : 'IT Eguilde SRL, European digital identity provider. Building the eIDAS 2.0 digital wallet for European citizens.';
+const title = t.meta.aboutTitle;
+const desc  = t.meta.aboutDesc;
 ---
 <!doctype html>
 <html lang={lang} data-theme="light">

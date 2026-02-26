@@ -556,5 +556,17 @@
     "contrast": "Contrast",
     "highContrastOff": "High contrast: off",
     "highContrastOn": "High contrast: on"
+  },
+  "meta": {
+    "homeTitle": "EguWallet — European Digital Identity Wallet",
+    "homeDesc": "Store and present your ID, driving licence, diplomas and qualified signature from your phone. eIDAS 2.0 compliant, recognised across the EU.",
+    "aboutTitle": "About EguWallet — IT Eguilde SRL",
+    "aboutDesc": "IT Eguilde SRL builds the eIDAS 2.0 European digital identity wallet for citizens in Romania and the EU. Secure, private digital identity.",
+    "contactTitle": "Contact — EguWallet",
+    "contactDesc": "Contact the EguWallet team. We answer general questions, partnership and integration requests within 2 business days.",
+    "privacyTitle": "Privacy Policy — EguWallet",
+    "privacyDesc": "EguWallet privacy policy: GDPR compliance, data processing, user rights and our commitment to privacy by design.",
+    "termsTitle": "Terms and Conditions — EguWallet",
+    "termsDesc": "Terms and conditions for using the EguWallet app and IT Eguilde SRL services, European digital identity provider."
   }
 }

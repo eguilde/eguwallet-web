@@ -17,4 +17,4 @@ const LOCALES: Record<string, string> = {
 {Object.entries(LOCALES).map(([loc, hl]) => (
   <link rel="alternate" hreflang={hl} href={`${SITE}/${loc}/${pathSuffix}`} />
 ))}
-<link rel="alternate" hreflang="x-default" href={`${SITE}/en/${pathSuffix}`} />
+<link rel="alternate" hreflang="x-default" href={`${SITE}/${pathSuffix || ''}`} />

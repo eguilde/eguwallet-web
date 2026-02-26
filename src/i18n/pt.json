@@ -540,5 +540,17 @@
     "contrast": "Contraste",
     "highContrastOff": "Alto contraste: desligado",
     "highContrastOn": "Alto contraste: ligado"
+  },
+  "meta": {
+    "homeTitle": "EguWallet — Carteira de identidade digital europeia",
+    "homeDesc": "Armazena e apresenta o BI, carta de condução, diplomas e assinatura qualificada pelo telemóvel. Conforme eIDAS 2.0, reconhecido na UE.",
+    "aboutTitle": "Sobre o EguWallet — IT Eguilde SRL",
+    "aboutDesc": "IT Eguilde SRL desenvolve a carteira de identidade digital eIDAS 2.0 para cidadãos da Roménia e da UE.",
+    "contactTitle": "Contacto — EguWallet",
+    "contactDesc": "Contacte a equipa EguWallet. Respondemos a perguntas e pedidos de integração em até 2 dias úteis.",
+    "privacyTitle": "Política de privacidade — EguWallet",
+    "privacyDesc": "Política de privacidade EguWallet: conformidade RGPD, tratamento de dados e compromisso com a privacidade.",
+    "termsTitle": "Termos e condições — EguWallet",
+    "termsDesc": "Termos e condições de utilização da app EguWallet e dos serviços IT Eguilde SRL, fornecedor europeu de identidade digital."
   }
 }

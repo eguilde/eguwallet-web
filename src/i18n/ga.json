@@ -540,5 +540,17 @@
     "contrast": "Codarsnacht",
     "highContrastOff": "Codarsnacht ard: as",
     "highContrastOn": "Codarsnacht ard: air"
+  },
+  "meta": {
+    "homeTitle": "EguWallet — Sparán Digiteach Eorpach Aitheantais",
+    "homeDesc": "Stóráil agus cuir i láthair do chárta aitheantais, ceadúnas tiomána, dioplómaí agus síniú cáilithe ón bhfón. eIDAS 2.0, aitheanta san AE.",
+    "aboutTitle": "Faoi EguWallet — IT Eguilde SRL",
+    "aboutDesc": "Forbraíonn IT Eguilde SRL sparán digiteach aitheantais eIDAS 2.0 do shaoránaigh na Rómáine agus an AE.",
+    "contactTitle": "Teagmháil — EguWallet",
+    "contactDesc": "Déan teagmháil le foireann EguWallet. Freagróimid ceisteanna agus iarratais comhtháthaithe laistigh de 2 lá oibre.",
+    "privacyTitle": "Polasaí Príobháideachais — EguWallet",
+    "privacyDesc": "Polasaí príobháideachais EguWallet: GDPR, próiseáil sonraí agus tiomantas do phríobháideachas.",
+    "termsTitle": "Téarmaí agus Coinníollacha — EguWallet",
+    "termsDesc": "Téarmaí úsáide feidhmchláir EguWallet agus seirbhísí IT Eguilde SRL."
   }
 }

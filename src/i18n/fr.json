@@ -540,5 +540,17 @@
     "contrast": "Contraste",
     "highContrastOff": "Contraste élevé: désactivé",
     "highContrastOn": "Contraste élevé: activé"
+  },
+  "meta": {
+    "homeTitle": "EguWallet — Portefeuille d'identité numérique européen",
+    "homeDesc": "Stockez et présentez votre carte d'identité, permis, diplômes et signature qualifiée depuis votre téléphone. Conforme eIDAS 2.0, reconnu dans l'UE.",
+    "aboutTitle": "À propos d'EguWallet — IT Eguilde SRL",
+    "aboutDesc": "IT Eguilde SRL développe le portefeuille d'identité numérique eIDAS 2.0 pour les citoyens de Roumanie et de l'UE.",
+    "contactTitle": "Contact — EguWallet",
+    "contactDesc": "Contactez l'équipe EguWallet. Nous répondons aux questions et demandes de partenariat sous 2 jours ouvrables.",
+    "privacyTitle": "Politique de confidentialité — EguWallet",
+    "privacyDesc": "Politique de confidentialité EguWallet: conformité RGPD, traitement des données et engagement envers la vie privée.",
+    "termsTitle": "Conditions générales — EguWallet",
+    "termsDesc": "Conditions d'utilisation de l'application EguWallet et des services IT Eguilde SRL, fournisseur d'identité numérique européen."
   }
 }
