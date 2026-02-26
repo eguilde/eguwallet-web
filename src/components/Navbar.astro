@@ -196,8 +196,15 @@ const links = [
       et:'et-EE', mt:'mt-MT', sl:'sl-SI', sv:'sv-SE', da:'da-DK',
       nl:'nl-NL', el:'el-GR', fi:'fi-FI', ga:'ga-IE'
     };
-    var lang = document.documentElement.lang || 'en';
-    utt.lang = bcp47[lang] || lang;
+    var pageLang = document.documentElement.lang || 'en';
+    var targetLang = bcp47[pageLang] || pageLang;
+    // Pick best available voice: exact match → language prefix match → first available
+    var voices = window.speechSynthesis.getVoices();
+    var voice = voices.find(function(v) { return v.lang === targetLang; })
+      || voices.find(function(v) { return v.lang.startsWith(targetLang.split('-')[0]); })
+      || voices[0] || null;
+    if (voice) utt.voice = voice;
+    utt.lang = voice ? voice.lang : targetLang;
     utt.rate = 0.92;
     utt.onstart = function() { setTtsState(true); };
     utt.onend = function() { setTtsState(false); };
