@@ -134,7 +134,7 @@ const links = [
   [data-a11y-font="2"] { font-size: 128% !important; }
 </style>
 
-<script>
+<script is:inline>
   // ── Hamburger ──────────────────────────────────────────────────
   const hamburger = document.getElementById('nav-hamburger');
   const mobileMenu = document.getElementById('mobile-menu');
@@ -167,7 +167,7 @@ const links = [
 
   document.addEventListener('click', (e) => {
     const wrapper = document.getElementById('a11y-nav-wrapper');
-    if (wrapper && !wrapper.contains(e.target as Node)) {
+    if (wrapper && !wrapper.contains(/** @type {Node} */ (e.target))) {
       panel?.classList.add('hidden');
       panel?.classList.remove('flex');
       toggle?.setAttribute('aria-expanded', 'false');

@@ -49,7 +49,7 @@ const current = LANGS.find(([l]) => l === currentLang) ?? ['en','EN','🇬🇧']
   </ul>
 </div>
 
-<script>
+<script is:inline>
   const btn = document.getElementById('lang-btn');
   const menu = document.getElementById('lang-menu');
   btn?.addEventListener('click', (e) => {

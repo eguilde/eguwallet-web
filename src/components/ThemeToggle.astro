@@ -14,7 +14,7 @@
   [data-theme="dark"] .theme-dark  { display: block !important; }
 </style>
 
-<script>
+<script is:inline>
   const btn = document.getElementById('theme-toggle');
   btn?.addEventListener('click', () => {
     const next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
