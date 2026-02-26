@@ -74,10 +74,8 @@ if (cookieLang && SUPPORTED.includes(cookieLang)) {
   });
 }
 
-// Romanian (and default): serve content at / — URL stays eguwallet.eu, SEO-consistent
-// Other languages: 302 redirect — clean pattern, Google-approved for language detection
-if (lang === 'ro') {
-  return Astro.rewrite('/ro/');
-}
+// All languages: 302 redirect — clean, Google-approved language detection pattern
+// Note: Astro.rewrite() cannot rewrite to prerendered static pages in Node standalone mode.
+// A 302 to /ro/ is SEO-equivalent (Google treats language redirects correctly).
 return Astro.redirect(`/${lang}/`, 302);
 ---
