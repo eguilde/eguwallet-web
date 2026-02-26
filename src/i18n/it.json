@@ -416,7 +416,7 @@
       {
         "icon": "🚔",
         "title": "Controllo di identità delle forze dell'ordine",
-        "body": "Un agente delle forze dell'ordine verifica l'identità tramite NFC/Bluetooth. Controlli quali dati vengono trasmessi. Veloce, sicuro, senza fotocopie necessarie."
+        "body": "Un agente delle forze dell'ordine verifica l'identità tramite NFC/Bluetooth. Sei tu a controllare quali dati vengono trasmessi. Veloce, sicuro, senza fotocopie necessarie."
       },
       {
         "icon": "🍺",
@@ -545,7 +545,7 @@
     "sending": "Invio in corso…",
     "successMsg": "Messaggio inviato! Risponderemo entro 2 giorni lavorativi.",
     "errorFields": "Si prega di compilare tutti i campi obbligatori.",
-    "errorFail": "Impossibile inviare il messaggio. Scriveteci direttamente a contact@eguwallet.eu",
+    "errorFail": "Impossibile inviare il messaggio. Scrivici direttamente a contact@eguwallet.eu",
     "submitBtn": "Invia messaggio"
   },
   "a11y": {

@@ -33,12 +33,12 @@
     "card2Title": "Was ist eine EUDI Wallet?",
     "card2Body": "Eine Europäische Digitale Identitäts-Wallet (EUDI) ist eine sichere App, die verifizierbare digitale Identitätsdokumente speichert: Personalausweis, Reisepass, Führerschein, Fahrzeugdokumente und mehr — alles unter Ihrer ausschließlichen Kontrolle.",
     "card3Title": "Wer stellt EguWallet bereit?",
-    "card3Body": "EguWallet wird von IT Eguilde SRL, einem Anbieter digitaler Identitäten, entwickelt. Die App basiert auf dem EUDI Architecture Reference Framework (ARF 2.5+), OpenID4VCI und OpenID4VP-Standards. Sie durchläuft derzeit die formelle eIDAS 2.0-Zertifizierung — bis zum Abschluss der Zertifizierung betreibt sie als Pilot-EUDI-Wallet."
+    "card3Body": "EguWallet wird von IT Eguilde SRL, einem Anbieter digitaler Identitäten, entwickelt. Die App basiert auf dem EUDI Architecture Reference Framework (ARF 2.5+), OpenID4VCI und OpenID4VP-Standards. Sie durchläuft derzeit die formelle eIDAS 2.0-Zertifizierung — bis zum Abschluss der Zertifizierung fungiert sie als Pilot-EUDI-Wallet."
   },
   "privacy": {
     "heading": "Ihre Daten, Ihre Kontrolle",
     "subheading": "Selektive Offenlegung — nur was benötigt wird, nur wenn Sie zustimmen",
-    "body": "EguWallet verwendet SD-JWT (Selective Disclosure JWT) und mDoc/ISO 18013-5, um eine selektive Datenweitergabe zu ermöglichen. Wenn ein Händler oder eine Institution eine Identitätsverifizierung anfordert, wählen Sie genau aus, welche Daten übermittelt werden. Nicht mehr.",
+    "body": "EguWallet verwendet SD-JWT (Selective Disclosure JWT) und mDoc/ISO 18013-5, um eine selektive Datenweitergabe zu ermöglichen. Wenn ein Händler oder eine Institution eine Identitätsverifizierung anfordert, wählen Sie genau aus, welche Daten übermittelt werden. Nichts mehr.",
     "example1Title": "Altersverifikation 18+",
     "example1Step1": "Händler scannt QR-Code",
     "example1Step2": "Ihre Wallet erhält die Anfrage",
@@ -482,7 +482,7 @@
       },
       {
         "q": "Ist EguWallet vollständig zertifiziert?",
-        "a": "EguWallet durchläuft derzeit die formelle eIDAS 2.0-Zertifizierung. Bis zum Abschluss der Zertifizierung betreibt sie als Pilot-EUDI-Wallet."
+        "a": "EguWallet durchläuft derzeit die formelle eIDAS 2.0-Zertifizierung. Bis zum Abschluss der Zertifizierung fungiert sie als Pilot-EUDI-Wallet."
       },
       {
         "q": "Wie aktiviere ich meine digitale Wallet?",

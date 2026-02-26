@@ -19,7 +19,7 @@
   "hero": {
     "title": "Vaše digitální identita — bezpečná, soukromá, vždy s vámi",
     "subtitle": "EguWallet je evropská digitální peněženka s certifikací eIDAS 2.0, která nahrazuje fyzické dokumenty ověřitelnými digitálními ekvivalenty uznanými ve všech členských státech EU.",
-    "badge1": "Soulad s eIDAS 2.0",
+    "badge1": "V souladu s eIDAS 2.0",
     "badge2": "Certifikace probíhá",
     "badge3": "Zatím zdarma",
     "downloadAndroid": "Stáhnout v Google Play",
@@ -500,7 +500,7 @@
   },
   "footer": {
     "provider": "Poskytuje IT Eguilde SRL",
-    "tagline": "Evropská digitální peněženka — soulad s eIDAS 2.0",
+    "tagline": "Evropská digitální peněženka — v souladu s eIDAS 2.0",
     "privacy": "Zásady ochrany soukromí",
     "legal": "Obchodní podmínky",
     "contact": "Kontakt",

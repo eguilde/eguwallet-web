@@ -542,11 +542,11 @@
     "contactText": "W sprawie pytań dotyczących usunięcia danych lub Twoich praw do prywatności skontaktuj się z nami pod adresem <a href='mailto:privacy@eguwallet.eu' class='t-primary underline'>privacy@eguwallet.eu</a>."
   },
   "contact": {
-    "sending": "Wysylanie…",
-    "successMsg": "Wiadomosc wyslana! Odpowiemy w ciagu 2 dni roboczych.",
-    "errorFields": "Prosze wypelnic wszystkie wymagane pola.",
-    "errorFail": "Nie mozna wyslac wiadomosci. Napisz do nas bezposrednio na contact@eguwallet.eu",
-    "submitBtn": "Wyslij wiadomosc"
+    "sending": "Wysyłanie…",
+    "successMsg": "Wiadomość wysłana! Odpowiemy w ciągu 2 dni roboczych.",
+    "errorFields": "Proszę wypełnić wszystkie wymagane pola.",
+    "errorFail": "Nie można wysłać wiadomości. Napisz do nas bezpośrednio na contact@eguwallet.eu",
+    "submitBtn": "Wyślij wiadomość"
   },
   "a11y": {
     "listen": "Słuchaj",

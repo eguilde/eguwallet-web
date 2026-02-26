@@ -20,7 +20,7 @@
   "hero": {
     "title": "Identitatea ta digitală — sigură, privată, mereu la tine",
     "subtitle": "EguWallet este portofelul digital european certificat eIDAS 2.0 care înlocuiește documentele fizice cu echivalente digitale verificabile, recunoscute în toate statele membre UE.",
-    "badge1": "eIDAS 2.0 Conform",
+    "badge1": "Conform eIDAS 2.0",
     "badge2": "Certificare în curs",
     "badge3": "Momentan gratuit",
     "downloadAndroid": "Disponibil pe Google Play",
@@ -47,7 +47,7 @@
     "example1Step4": "Comerciantul nu primește: nume, CNP, adresă, fotografie",
     "legalTitle": "Baza juridică",
     "legal1": "<a href=\"https://eur-lex.europa.eu/eli/reg/2016/679/oj\" target=\"_blank\" rel=\"noopener\" style=\"text-decoration:underline;\">GDPR Art. 5(1)(c)</a> — principiul minimizării datelor: prelucrarea datelor se limitează la strictul necesar.",
-    "legal2": "<a href=\"https://eur-lex.europa.eu/eli/reg/2024/1183/oj\" target=\"_blank\" rel=\"noopener\" style=\"text-decoration:underline;\">Reg. (UE) 2024/1183</a> — prezentarea selectivă este un drept al cetățeanului, nu o opțiune opțională.",
+    "legal2": "<a href=\"https://eur-lex.europa.eu/eli/reg/2024/1183/oj\" target=\"_blank\" rel=\"noopener\" style=\"text-decoration:underline;\">Reg. (UE) 2024/1183</a> — prezentarea selectivă este un drept al cetățeanului, nu o facilitate suplimentară.",
     "legal3": "Nicio prezentare nu este stocată de portofel sau de parte terță — fiecare dezvăluire este efemeră."
   },
   "documents": {
@@ -113,7 +113,7 @@
       {
         "icon": "🚔",
         "image": "/assets/illustrations/usecase-police.jpg",
-        "title": "Ordine Publică și Forțe de Ordine",
+        "title": "Poliție și Ordine Publică",
         "description": "Ofițeri de poliție, polițiști de frontieră și inspectori verifică identitatea digitală în câteva secunde — cu garanție criptografică, fără a atinge documente fizice.",
         "scenarios": [
           {
@@ -151,7 +151,7 @@
           {
             "emoji": "✍️",
             "name": "Verificare Reprezentant Legal",
-            "body": "Un partener sau notar verifică că o persoană este reprezentant autorizat al firmei — identitate + credențial firmă + mandat prezentate simultan.",
+            "body": "Un partener sau notar verifică că o persoană este reprezentant autorizat al firmei — identitate + credențialul firmei + mandat prezentate simultan.",
             "legal": "Legea 31/1990 — Art. 75, 197"
           },
           {
@@ -218,7 +218,7 @@
         "icon": "🏦",
         "image": "/assets/illustrations/usecase-banking.jpg",
         "title": "Servicii Financiare și KYC",
-        "description": "Bănci, asiguratori și platforme fintech onboardează clienți digital — respectând cerințele AML/KYC fără formulare pe hârtie.",
+        "description": "Bănci, asigurători și platforme fintech onboardează clienți digital — respectând cerințele AML/KYC fără formulare pe hârtie.",
         "scenarios": [
           {
             "emoji": "🏦",
@@ -229,7 +229,7 @@
           {
             "emoji": "💼",
             "name": "Asigurări și Produse Financiare",
-            "body": "Asiguratorii verifică identitatea asiguratului la semnarea contractului — digital, instantaneu, cu trasabilitate completă eIDAS 2.0.",
+            "body": "Asigurătorii verifică identitatea asiguratului la semnarea contractului — digital, instantaneu, cu trasabilitate completă eIDAS 2.0.",
             "legal": "Reg. (UE) 2024/1183"
           }
         ]
@@ -287,7 +287,7 @@
           {
             "emoji": "🤝",
             "name": "Contracte Comerciale cu QES",
-            "body": "Contracte de prestări servicii, contracte de asociere, hotărâri AGA — semnate cu Semnătură Electronică Calificată direct din EguWallet. Valoare juridică în toate cele 27 de state membre UE. Fără imprimantă, fără curier, fără programare.",
+            "body": "Contracte de prestări de servicii, contracte de asociere, hotărâri AGA — semnate cu Semnătură Electronică Calificată direct din EguWallet. Valoare juridică în toate cele 27 de state membre UE. Fără imprimantă, fără curier, fără programare.",
             "legal": "Legea 455/2001; eIDAS 2.0 Art. 25; Legea 31/1990"
           }
         ]
@@ -321,7 +321,7 @@
     ]
   },
   "trust": {
-    "heading": "Obligatoriu din punct de vedere juridic — protejat de lege, controlat de tine",
+    "heading": "Cu forță juridică deplină — protejat de lege, controlat de tine",
     "subheading": "EguWallet oferă cetățenilor control deplin asupra datelor lor de identitate, iar serviciilor și autorităților publice certitudinea juridică de care au nevoie.",
     "image": "/assets/illustrations/usecase-trust.jpg",
     "citizenTitle": "Pentru cetățeni — tu decizi tot",
@@ -356,7 +356,7 @@
       },
       {
         "icon": "🔐",
-        "label": "Divulgare selectivă fără cunoaștere"
+        "label": "Dezvăluire selectivă zero-knowledge"
       },
       {
         "icon": "🔍",
@@ -412,7 +412,7 @@
       {
         "icon": "📡",
         "title": "Verificare dispozitiv la dispozitiv (Bluetooth)",
-        "body": "Ca plata NFC contactless — ofițerul de poliție sau comerciantul apropie telefonul de al tău și primește instantaneu datele autorizate de tine. Fără internet, fără server intermediar."
+        "body": "Ca o plată NFC contactless — ofițerul de poliție sau comerciantul apropie telefonul de al tău și primește instantaneu datele autorizate de tine. Fără internet, fără server intermediar."
       },
       {
         "icon": "🚔",
@@ -501,7 +501,7 @@
   },
   "footer": {
     "provider": "Furnizat de IT Eguilde SRL",
-    "tagline": "Portofel Digital European — eIDAS 2.0 Conform",
+    "tagline": "Portofel Digital European — Conform eIDAS 2.0",
     "privacy": "Politica de confidențialitate",
     "legal": "Termeni și condiții",
     "contact": "Contact",
@@ -566,7 +566,7 @@
     "contactTitle": "Contact — EguWallet",
     "contactDesc": "Contactează echipa EguWallet. Răspundem la întrebări, solicitări de parteneriat și integrare în maximum 2 zile lucrătoare.",
     "privacyTitle": "Politica de Confidențialitate — EguWallet",
-    "privacyDesc": "Politica de confidențialitate EguWallet: GDPR, prelucrarea datelor, drepturile utilizatorilor și angajamentul față de privacitate.",
+    "privacyDesc": "Politica de confidențialitate EguWallet: GDPR, prelucrarea datelor, drepturile utilizatorilor și angajamentul față de confidențialitate.",
     "termsTitle": "Termeni și Condiții — EguWallet",
     "termsDesc": "Termenii și condițiile de utilizare ale aplicației EguWallet și serviciilor IT Eguilde SRL, furnizor de identitate digitală europeană."
   }

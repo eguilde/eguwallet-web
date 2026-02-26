@@ -20,10 +20,10 @@
     "title": "L-identità digitali tiegħek — sigura, privata, dejjem miegħek",
     "subtitle": "EguWallet huwa kartiera digitali Ewropea ċertifikata eIDAS 2.0 li tissostitwixxi d-dokumenti fiżiċi b'ekwivalenti digitali verifikabbli, rikonoxxuti fl-istati membri kollha tal-UE.",
     "badge1": "Konformi mal-eIDAS 2.0",
-    "badge2": "Ċertifikazzjoni fi progress",
+    "badge2": "Ċertifikazzjoni għaddejja",
     "badge3": "Bla ħlas bħalissa",
     "downloadAndroid": "Iksibha fuq Google Play",
-    "downloadIos": "Disponibbli breve fuq App Store",
+    "downloadIos": "Dalwaqt disponibbli fuq App Store",
     "downloadIosComingSoon": "Dalwaqt"
   },
   "what": {
@@ -542,11 +542,11 @@
     "contactText": "Għal mistoqsijiet dwar it-tħassir tad-data jew id-drittijiet tal-privatezza tiegħek, ikkuntattjana fuq <a href='mailto:privacy@eguwallet.eu' class='t-primary underline'>privacy@eguwallet.eu</a>."
   },
   "contact": {
-    "sending": "Qed jintbaghat…",
-    "successMsg": "Messagg mibgħut! Nirrispondu fi zmien 2 ijiem tax-xoghol.",
-    "errorFields": "Jekk joghgbok imla l-oqsma kollha mehtiega.",
-    "errorFail": "Ma setax jintbaghat il-messagg. Iktbilna direttament fuq contact@eguwallet.eu",
-    "submitBtn": "Ibghat messagg"
+    "sending": "Qed jintbagħat…",
+    "successMsg": "Messaġġ mibgħut! Nirrispondu fi żmien 2 ijiem tax-xogħol.",
+    "errorFields": "Jekk jogħġbok imla l-oqsma kollha meħtieġa.",
+    "errorFail": "Ma setax jintbagħat il-messaġġ. Iktbilna direttament fuq contact@eguwallet.eu",
+    "submitBtn": "Ibgħat messaġġ"
   },
   "a11y": {
     "listen": "Isma",

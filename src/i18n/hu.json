@@ -19,7 +19,7 @@
   "hero": {
     "title": "Az Ön digitális személyazonossága — biztonságos, privát, mindig Önnel",
     "subtitle": "Az EguWallet egy európai eIDAS 2.0 tanúsítvánnyal rendelkező digitális tárca, amely a fizikai dokumentumokat az összes EU-tagállamban elismert, ellenőrizhető digitális egyenértékűekkel váltja fel.",
-    "badge1": "eIDAS 2.0 megfelelő",
+    "badge1": "eIDAS 2.0-nek megfelelő",
     "badge2": "Tanúsítás folyamatban",
     "badge3": "Egyelőre ingyenes",
     "downloadAndroid": "Letöltés Google Play-ről",
@@ -500,11 +500,11 @@
   },
   "footer": {
     "provider": "Biztosítja: IT Eguilde SRL",
-    "tagline": "Európai Digitális Tárca — eIDAS 2.0 megfelelő",
+    "tagline": "Európai Digitális Tárca — eIDAS 2.0-nek megfelelő",
     "privacy": "Adatvédelmi irányelvek",
     "legal": "Általános Szerződési Feltételek",
     "contact": "Kapcsolat",
-    "euCompliance": "eIDAS 2.0 megfelelő",
+    "euCompliance": "eIDAS 2.0-nek megfelelő",
     "accessibility": "Akadálymentesítés",
     "machineTranslatedNotice": "Ez az oldal gépi fordítású. Hivatalos változatok: román és angol.",
     "rights": "© 2026 IT Eguilde SRL. Minden jog fenntartva."
@@ -559,7 +559,7 @@
   },
   "meta": {
     "homeTitle": "EguWallet — Európai digitális személyazonosság-tárca",
-    "homeDesc": "Tárold és mutasd be személyigazolványod, jogosítványod, okleveleid és minősített aláírásodat telefonról. eIDAS 2.0 megfelelő, EU-szerte elismert.",
+    "homeDesc": "Tárold és mutasd be személyigazolványod, jogosítványod, okleveleid és minősített aláírásodat telefonról. eIDAS 2.0-nek megfelelő, EU-szerte elismert.",
     "aboutTitle": "Az EguWalletről — IT Eguilde SRL",
     "aboutDesc": "Az IT Eguilde SRL fejleszti az eIDAS 2.0 digitális személyazonosság-tárcát romániai és uniós polgárok számára.",
     "contactTitle": "Kapcsolat — EguWallet",

@@ -544,8 +544,8 @@
   "contact": {
     "sending": "Enviando…",
     "successMsg": "¡Mensaje enviado! Responderemos en 2 días hábiles.",
-    "errorFields": "Por favor, rellene todos los campos obligatorios.",
-    "errorFail": "No se pudo enviar el mensaje. Escríbanos directamente a contact@eguwallet.eu",
+    "errorFields": "Por favor, rellena todos los campos obligatorios.",
+    "errorFail": "No se pudo enviar el mensaje. Escríbenos directamente a contact@eguwallet.eu",
     "submitBtn": "Enviar mensaje"
   },
   "a11y": {

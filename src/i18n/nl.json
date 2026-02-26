@@ -38,7 +38,7 @@
   "privacy": {
     "heading": "Uw gegevens, uw controle",
     "subheading": "Selectieve openbaarmaking — alleen wat nodig is, alleen wanneer u instemt",
-    "body": "EguWallet gebruikt SD-JWT (Selective Disclosure JWT) en mDoc/ISO 18013-5 om selectieve gegevensverstrekking mogelijk te maken. Wanneer een handelaar of instelling identiteitsverificatie aanvraagt, kiest u precies welke gegevens worden verzonden. Niet meer.",
+    "body": "EguWallet gebruikt SD-JWT (Selective Disclosure JWT) en mDoc/ISO 18013-5 om selectieve gegevensverstrekking mogelijk te maken. Wanneer een handelaar of instelling identiteitsverificatie aanvraagt, kiest u precies welke gegevens worden verzonden. Niets meer.",
     "example1Title": "Leeftijdsverificatie 18+",
     "example1Step1": "Handelaar scant QR-code",
     "example1Step2": "Uw portemonnee ontvangt het verzoek",
@@ -138,7 +138,7 @@
       {
         "icon": "🏢",
         "image": "/assets/illustrations/usecase-business.jpg",
-        "title": "Zakelijk en commerciële transacties",
+        "title": "Bedrijfsleven en commerciële transacties",
         "description": "Bedrijven, notarissen, advocaten en B2B-platforms verifiëren bedrijfsidentiteit en wettelijke vertegenwoordigingsbevoegdheid onmiddellijk — zonder papieren certificaten en koeriers.",
         "scenarios": [
           {
@@ -222,7 +222,7 @@
           {
             "emoji": "🏦",
             "name": "Bankrekening openen (KYC/AML)",
-            "body": "Een bank verifieert de volledige identiteit van de klant op afstand — naam, CNP, geboorte datum en -plaats, nationaliteit, adres — gecertificeerd door de EUDI-portemonnee. Conform de anti-witwasswetgeving.",
+            "body": "Een bank verifieert de volledige identiteit van de klant op afstand — naam, CNP, geboorte datum en -plaats, nationaliteit, adres — gecertificeerd door de EUDI-portemonnee. Conform de anti-witwaswetgeving.",
             "legal": "Wet 129/2019; Richtlijn (EU) 2015/849"
           },
           {

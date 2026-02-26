@@ -543,7 +543,7 @@
   },
   "contact": {
     "sending": "Pošiljanje…",
-    "successMsg": "Sporočilo poslano! Odgovorimo v 2 delovnih dneh.",
+    "successMsg": "Sporočilo poslano! Odgovorili bomo v 2 delovnih dneh.",
     "errorFields": "Prosimo, izpolnite vsa obvezna polja.",
     "errorFail": "Sporočila ni bilo mogoče poslati. Pišite nam neposredno na contact@eguwallet.eu",
     "submitBtn": "Pošlji sporočilo"
