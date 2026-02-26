@@ -442,11 +442,11 @@
   },
   "howItWorks": {
     "heading": "Miten se toimii",
-    "step1Title": "1. Lataa sovellus",
+    "step1Title": "Lataa sovellus",
     "step1Body": "Asenna EguWallet Google Play Kaupasta — toistaiseksi ilmainen pilottivaiheen aikana. Tulossa pian Apple App Storeen.",
-    "step2Title": "2. Aktivoi lompakkosi",
+    "step2Title": "Aktivoi lompakkosi",
     "step2Body": "Vahvista puhelinnumerosi, luo turvallinen PIN-koodi ja yhdistä maakunnan tai kaupungin portaaliisi digitaalisten asiakirjojesi rekisteröimiseksi.",
-    "step3Title": "3. Esitä täydellä hallinnalla",
+    "step3Title": "Esitä täydellä hallinnalla",
     "step3Body": "Skannaa QR-koodi, napauta NFC-terminaalia tai jaa turvallinen linkki. Sinä valitset tarkalleen, mitä tietoja lähetetään — ei koskaan enemmän kuin on tarpeen."
   },
   "faq": {

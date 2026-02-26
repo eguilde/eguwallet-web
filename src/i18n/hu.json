@@ -442,11 +442,11 @@
   },
   "howItWorks": {
     "heading": "Hogyan működik",
-    "step1Title": "1. Töltse le az alkalmazást",
+    "step1Title": "Töltse le az alkalmazást",
     "step1Body": "Telepítse az EguWallet-et a Google Play Áruházból — egyelőre ingyenesen a pilot fázisban. Hamarosan az Apple App Store-ban is.",
-    "step2Title": "2. Aktiválja tárcáját",
+    "step2Title": "Aktiválja tárcáját",
     "step2Body": "Ellenőrizze telefonszámát, hozzon létre biztonságos PIN-t, és csatlakozzon a megye vagy város portáljához digitális dokumentumai regisztrálásához.",
-    "step3Title": "3. Mutassa be teljes irányítással",
+    "step3Title": "Mutassa be teljes irányítással",
     "step3Body": "Olvasson be QR-kódot, érintsen meg NFC-terminált vagy osszon meg biztonságos linket. Ön pontosan meghatározza, mely adatok kerülnek továbbításra — soha nem több, mint amennyi szükséges."
   },
   "faq": {

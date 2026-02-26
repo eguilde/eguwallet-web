@@ -442,11 +442,11 @@
   },
   "howItWorks": {
     "heading": "Hvordan det fungerer",
-    "step1Title": "1. Download appen",
+    "step1Title": "Download appen",
     "step1Body": "Installer EguWallet fra Google Play Butik — gratis for nu under pilotfasen. Kommer snart til Apple App Store.",
-    "step2Title": "2. Aktiver din tegnebog",
+    "step2Title": "Aktiver din tegnebog",
     "step2Body": "Verificer dit telefonnummer, opret en sikker PIN-kode og opret forbindelse til din amts- eller byportal for at registrere dine digitale dokumenter.",
-    "step3Title": "3. Præsenter med fuld kontrol",
+    "step3Title": "Præsenter med fuld kontrol",
     "step3Body": "Scan en QR-kode, tryk på en NFC-terminal eller del et sikkert link. Du vælger præcist, hvilke data der transmitteres — aldrig mere end nødvendigt."
   },
   "faq": {

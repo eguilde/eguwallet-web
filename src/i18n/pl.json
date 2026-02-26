@@ -442,11 +442,11 @@
   },
   "howItWorks": {
     "heading": "Jak to działa",
-    "step1Title": "1. Pobierz aplikację",
+    "step1Title": "Pobierz aplikację",
     "step1Body": "Zainstaluj EguWallet ze Sklepu Google Play — bezpłatnie na razie w fazie pilotażowej. Wkrótce w App Store firmy Apple.",
-    "step2Title": "2. Aktywuj swój portfel",
+    "step2Title": "Aktywuj swój portfel",
     "step2Body": "Zweryfikuj swój numer telefonu, utwórz bezpieczny PIN i połącz się z portalem swojego powiatu lub miasta, aby zarejestrować swoje cyfrowe dokumenty.",
-    "step3Title": "3. Prezentuj z pełną kontrolą",
+    "step3Title": "Prezentuj z pełną kontrolą",
     "step3Body": "Zeskanuj kod QR, zbliż terminal NFC lub udostępnij bezpieczny link. Ty decydujesz dokładnie, jakie dane są przekazywane — nigdy więcej niż jest to konieczne."
   },
   "faq": {

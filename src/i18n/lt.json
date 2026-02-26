@@ -442,11 +442,11 @@
   },
   "howItWorks": {
     "heading": "Kaip veikia",
-    "step1Title": "1. Atsisiųskite programą",
+    "step1Title": "Atsisiųskite programą",
     "step1Body": "Įdiekite EguWallet iš Google Play — nemokamai bandomojo etapo metu.",
-    "step2Title": "2. Aktyvuokite piniginę",
+    "step2Title": "Aktyvuokite piniginę",
     "step2Body": "Patvirtinkite savo telefono numerį, sukurkite PIN ir prisijunkite prie savo portalo.",
-    "step3Title": "3. Pateikite su visišku kontroliu",
+    "step3Title": "Pateikite su visišku kontroliu",
     "step3Body": "Nuskaitykite QR kodą, prisidėkite NFC. Jūs tiksliai pasirenkate, kokie duomenys perduodami."
   },
   "faq": {

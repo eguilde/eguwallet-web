@@ -442,11 +442,11 @@
   },
   "howItWorks": {
     "heading": "Kako deluje",
-    "step1Title": "1. Prenesite aplikacijo",
+    "step1Title": "Prenesite aplikacijo",
     "step1Body": "Namestite EguWallet iz Google Play — brezplačno med pilotno fazo.",
-    "step2Title": "2. Aktivirajte denarnico",
+    "step2Title": "Aktivirajte denarnico",
     "step2Body": "Potrdite svojo telefonsko številko, ustvarite PIN in se povežite s svojim portalom.",
-    "step3Title": "3. Predložite s popolnim nadzorom",
+    "step3Title": "Predložite s popolnim nadzorom",
     "step3Body": "Skenirajte QR kodo, prislonite NFC. Vi izberete natanko, kateri podatki se prenesejo."
   },
   "faq": {

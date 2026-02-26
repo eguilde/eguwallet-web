@@ -442,11 +442,11 @@
   },
   "howItWorks": {
     "heading": "Kuidas see töötab",
-    "step1Title": "1. Laadige rakendus alla",
+    "step1Title": "Laadige rakendus alla",
     "step1Body": "Installige EguWallet Google Play poest — praegu tasuta pilootfaasis. Peagi saadaval Apple App Store'is.",
-    "step2Title": "2. Aktiveerige oma rahakott",
+    "step2Title": "Aktiveerige oma rahakott",
     "step2Body": "Kinnitage telefoninumber, looge turvaline PIN ja ühendage oma maakonna või linna portaaliga digitaalsete dokumentide registreerimiseks.",
-    "step3Title": "3. Esitage täieliku kontrolliga",
+    "step3Title": "Esitage täieliku kontrolliga",
     "step3Body": "Skannige QR-kood, koputage NFC-terminali või jagage turvalist linki. Teie valite täpselt, milliseid andmeid edastatakse — mitte kunagi rohkem kui vajalik."
   },
   "faq": {

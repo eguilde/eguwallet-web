@@ -442,11 +442,11 @@
   },
   "howItWorks": {
     "heading": "Conas a oibríonn sé",
-    "step1Title": "1. Íoslódáil an aip",
+    "step1Title": "Íoslódáil an aip",
     "step1Body": "Suiteáil EguWallet ó Shiopa Google Play — saor in aisce faoi láthair le linn na céime píolótaí. Ag teacht go luath ar Apple App Store.",
-    "step2Title": "2. Gníomhachtaigh do sparán",
+    "step2Title": "Gníomhachtaigh do sparán",
     "step2Body": "Fíoraigh d'uimhir ghutháin, cruthaigh PIN slán, agus ceangail le tairseach do chontae nó do chathrach chun do chuid doiciméad digiteach a chlárú.",
-    "step3Title": "3. Cuir i láthair le rialú iomlán",
+    "step3Title": "Cuir i láthair le rialú iomlán",
     "step3Body": "Déan scanadh ar chód QR, buail le críochfort NFC nó roinn nasc slán. Roghnaíonn tú go cruinn cé na sonraí a tharchuirtear — níos mó ná mar is gá riamh."
   },
   "faq": {

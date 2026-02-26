@@ -443,12 +443,12 @@
   },
   "howItWorks": {
     "heading": "How it works",
-    "step1Title": "1. Download the app",
+    "step1Title": "Download the app",
     "step1Body": "Install EguWallet from the Google Play Store — free for now during the pilot phase. Coming soon on Apple App Store.",
-    "step2Title": "2. Activate your wallet",
+    "step2Title": "Activate your wallet",
     "step2Body": "Verify your phone number, create a secure PIN, and connect to your county or city portal to register your digital documents.",
-    "step3Title": "3. Present with full control",
-    "step3Body": "Scan a QR code, tap an NFC terminal or share a secure link. You choose exactly what data is transmitted — never more than is necessary."
+    "step3Title": "You control what you share",
+    "step3Body": "Scan a QR code or tap an NFC terminal. Your wallet shows exactly what data is being requested — you choose what to approve. Nothing is transmitted without your explicit consent."
   },
   "faq": {
     "heading": "Frequently asked questions",

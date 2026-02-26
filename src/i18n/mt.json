@@ -442,11 +442,11 @@
   },
   "howItWorks": {
     "heading": "Kif jaħdem",
-    "step1Title": "1. Niżżel l-applikazzjoni",
+    "step1Title": "Niżżel l-applikazzjoni",
     "step1Body": "Installa EguWallet mill-Google Play Store — bla ħlas bħalissa matul il-fażi tal-pilota. Dalwaqt fuq Apple App Store.",
-    "step2Title": "2. Attiva l-kartiera tiegħek",
+    "step2Title": "Attiva l-kartiera tiegħek",
     "step2Body": "Ivverifika n-numru tat-telefon tiegħek, oħloq PIN sigur, u qabbad mal-portal tal-kontea jew tal-belt tiegħek biex tirreġistra d-dokumenti digitali tiegħek.",
-    "step3Title": "3. Ippreżenta b'kontroll sħiħ",
+    "step3Title": "Ippreżenta b'kontroll sħiħ",
     "step3Body": "Iskenja kodiċi QR, idoqq terminal NFC jew aqsam link sigur. Int tagħżel eżattament liema data tiġi trasmessa — qatt aktar minn dak li huwa meħtieġ."
   },
   "faq": {

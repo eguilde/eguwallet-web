@@ -442,11 +442,11 @@
   },
   "howItWorks": {
     "heading": "Cómo funciona",
-    "step1Title": "1. Descarga la aplicación",
+    "step1Title": "Descarga la aplicación",
     "step1Body": "Instala EguWallet desde Google Play Store — gratis por ahora durante la fase piloto. Próximamente en Apple App Store.",
-    "step2Title": "2. Activa tu monedero",
+    "step2Title": "Activa tu monedero",
     "step2Body": "Verifica tu número de teléfono, crea un PIN seguro y conéctate a tu portal de condado o ciudad para registrar tus documentos digitales.",
-    "step3Title": "3. Presenta con control total",
+    "step3Title": "Presenta con control total",
     "step3Body": "Escanea un código QR, toca un terminal NFC o comparte un enlace seguro. Eliges exactamente qué datos se transmiten — nunca más de lo necesario."
   },
   "faq": {

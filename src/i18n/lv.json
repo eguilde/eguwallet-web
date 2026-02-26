@@ -442,11 +442,11 @@
   },
   "howItWorks": {
     "heading": "Kā tas darbojas",
-    "step1Title": "1. Lejupielādējiet lietotni",
+    "step1Title": "Lejupielādējiet lietotni",
     "step1Body": "Instalējiet EguWallet no Google Play — bez maksas izmēģinājuma fāzē.",
-    "step2Title": "2. Aktivizējiet maku",
+    "step2Title": "Aktivizējiet maku",
     "step2Body": "Apstipriniet savu tālruņa numuru, izveidojiet PIN un pievienojieties savam portālam.",
-    "step3Title": "3. Uzrādiet ar pilnu kontroli",
+    "step3Title": "Uzrādiet ar pilnu kontroli",
     "step3Body": "Skenējiet QR kodu, pieskarieties NFC. Jūs precīzi izvēlaties, kādi dati tiek pārsūtīti."
   },
   "faq": {

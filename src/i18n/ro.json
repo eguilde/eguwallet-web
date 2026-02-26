@@ -443,12 +443,12 @@
   },
   "howItWorks": {
     "heading": "Cum funcționează",
-    "step1Title": "1. Descarcă aplicația",
+    "step1Title": "Descarcă aplicația",
     "step1Body": "Instalează EguWallet din Google Play Store — momentan gratuit în faza pilot. Disponibil în curând și pe Apple App Store.",
-    "step2Title": "2. Activează portofelul",
+    "step2Title": "Activează portofelul",
     "step2Body": "Verifică numărul de telefon, creează un PIN securizat și conectează-te la portalul județului sau orașului tău pentru a-ți înregistra documentele digitale.",
-    "step3Title": "3. Prezintă cu control total",
-    "step3Body": "Scanezi un cod QR, atingi un terminal NFC sau partajezi un link securizat. Tu alegi exact ce date sunt transmise — niciodată mai mult decât este necesar."
+    "step3Title": "Tu controlezi ce date partajezi",
+    "step3Body": "Scanezi un cod QR sau atingi un terminal NFC. Portofelul îți arată exact ce informații sunt solicitate — tu alegi ce aprobi. Nicio dată nu se transmite fără acordul tău explicit."
   },
   "faq": {
     "heading": "Întrebări frecvente",

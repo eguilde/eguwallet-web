@@ -442,11 +442,11 @@
   },
   "howItWorks": {
     "heading": "Hur det fungerar",
-    "step1Title": "1. Ladda ner appen",
+    "step1Title": "Ladda ner appen",
     "step1Body": "Installera EguWallet från Google Play Butik — gratis för tillfället under pilotfasen. Kommer snart till Apple App Store.",
-    "step2Title": "2. Aktivera din plånbok",
+    "step2Title": "Aktivera din plånbok",
     "step2Body": "Verifiera ditt telefonnummer, skapa en säker PIN-kod och anslut till din läns- eller stadsportal för att registrera dina digitala dokument.",
-    "step3Title": "3. Presentera med full kontroll",
+    "step3Title": "Presentera med full kontroll",
     "step3Body": "Skanna en QR-kod, knacka på en NFC-terminal eller dela en säker länk. Du väljer exakt vilka uppgifter som skickas — aldrig mer än nödvändigt."
   },
   "faq": {

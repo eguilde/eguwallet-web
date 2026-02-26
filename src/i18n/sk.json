@@ -442,11 +442,11 @@
   },
   "howItWorks": {
     "heading": "Ako to funguje",
-    "step1Title": "1. Stiahnite aplikáciu",
+    "step1Title": "Stiahnite aplikáciu",
     "step1Body": "Nainštalujte EguWallet z Google Play Store — zatiaľ zadarmo v pilotnej fáze. Čoskoro aj v Apple App Store.",
-    "step2Title": "2. Aktivujte peňaženku",
+    "step2Title": "Aktivujte peňaženku",
     "step2Body": "Overte svoje telefónne číslo, vytvorte bezpečný PIN a pripojte sa k portálu svojho kraja alebo mesta na registráciu digitálnych dokladov.",
-    "step3Title": "3. Predložte s plnou kontrolou",
+    "step3Title": "Predložte s plnou kontrolou",
     "step3Body": "Naskenujte QR kód, priložte k NFC terminálu alebo zdieľajte bezpečný odkaz. Vy presne určíte, aké údaje sa prenášajú — nikdy viac, než je nutné."
   },
   "faq": {
