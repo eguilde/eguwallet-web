@@ -53,14 +53,54 @@
     "heading": "Documents dans votre portefeuille",
     "subheading": "Tous vos documents importants — numériques, vérifiables, toujours à portée de main",
     "items": [
-      { "icon": "🪪", "title": "Carte d'identité (PID)", "body": "Le document d'identité numérique principal conforme à eIDAS 2.0. Reconnu dans tous les États membres de l'UE.", "status": "available" },
-      { "icon": "🛂", "title": "Passeport", "body": "La version numérique de votre passeport, instantanément vérifiable par les autorités et les services.", "status": "available" },
-      { "icon": "🚗", "title": "Permis de conduire", "body": "Permis de conduire numérique conforme à mDoc/ISO 18013-5. Vérifiable sans contact, y compris par la police de la route.", "status": "available" },
-      { "icon": "📋", "title": "Carte grise", "body": "Votre document d'immatriculation du véhicule en format numérique. Fini les documents papier.", "status": "soon" },
-      { "icon": "🛡️", "title": "Assurance auto (RCA)", "body": "Police d'assurance automobile obligatoire, vérifiable en temps réel.", "status": "soon" },
-      { "icon": "🔧", "title": "Contrôle technique / RAR", "body": "Contrôle technique périodique (ITP) et données véhicule RAR — certificats numériques vérifiables.", "status": "soon" },
-      { "icon": "🏢", "title": "Documents d'entreprise", "body": "Extrait Kbis, procurations et documents d'entreprise. Signez numériquement avec votre portefeuille.", "status": "soon" },
-      { "icon": "🏠", "title": "Documents de propriété", "body": "Extraits du registre foncier et documents de propriété immobilière en format numérique vérifiable.", "status": "soon" }
+      {
+        "icon": "🪪",
+        "title": "Carte d'identité (PID)",
+        "body": "Le document d'identité numérique principal conforme à eIDAS 2.0. Reconnu dans tous les États membres de l'UE.",
+        "status": "available"
+      },
+      {
+        "icon": "🛂",
+        "title": "Passeport",
+        "body": "La version numérique de votre passeport, instantanément vérifiable par les autorités et les services.",
+        "status": "available"
+      },
+      {
+        "icon": "🚗",
+        "title": "Permis de conduire",
+        "body": "Permis de conduire numérique conforme à mDoc/ISO 18013-5. Vérifiable sans contact, y compris par la police de la route.",
+        "status": "available"
+      },
+      {
+        "icon": "📋",
+        "title": "Carte grise",
+        "body": "Votre document d'immatriculation du véhicule en format numérique. Fini les documents papier.",
+        "status": "soon"
+      },
+      {
+        "icon": "🛡️",
+        "title": "Assurance auto (RCA)",
+        "body": "Police d'assurance automobile obligatoire, vérifiable en temps réel.",
+        "status": "soon"
+      },
+      {
+        "icon": "🔧",
+        "title": "Contrôle technique / RAR",
+        "body": "Contrôle technique périodique (ITP) et données véhicule RAR — certificats numériques vérifiables.",
+        "status": "soon"
+      },
+      {
+        "icon": "🏢",
+        "title": "Documents d'entreprise",
+        "body": "Extrait Kbis, procurations et documents d'entreprise. Signez numériquement avec votre portefeuille.",
+        "status": "soon"
+      },
+      {
+        "icon": "🏠",
+        "title": "Documents de propriété",
+        "body": "Extraits du registre foncier et documents de propriété immobilière en format numérique vérifiable.",
+        "status": "soon"
+      }
     ],
     "statusAvailable": "Disponible",
     "statusSoon": "Prochainement"
@@ -75,9 +115,24 @@
         "title": "Forces de l'ordre & Ordre public",
         "description": "Les policiers, les gardes-frontières et les inspecteurs de l'ordre public vérifient l'identité numérique en quelques secondes — avec une confiance cryptographique totale, sans toucher aux documents physiques.",
         "scenarios": [
-          { "emoji": "🪪", "name": "Contrôle d'identité en patrouille", "body": "Un policier vérifie l'identité complète d'un citoyen — nom, CNP, adresse, photo — via NFC ou QR. Pas de papier. Résultat enregistré automatiquement.", "legal": "Loi 218/2002 — Art. 31" },
-          { "emoji": "🚗", "name": "Contrôle routier complet", "body": "Un scan QR : l'agent reçoit la pièce d'identité, le permis de conduire avec catégories, la carte grise, l'assurance RCA et l'ITP — tout vérifiable cryptographiquement.", "legal": "OUG 195/2002 — Art. 6, 80, 81" },
-          { "emoji": "🛂", "name": "Contrôle aux frontières", "body": "Aux points de passage frontaliers, les agents vérifient l'identité, la nationalité et la validité du document de voyage en une seule présentation numérique sécurisée.", "legal": "Loi 248/2005" }
+          {
+            "emoji": "🪪",
+            "name": "Contrôle d'identité en patrouille",
+            "body": "Un policier vérifie l'identité complète d'un citoyen — nom, CNP, adresse, photo — via NFC ou QR. Pas de papier. Résultat enregistré automatiquement.",
+            "legal": "Loi 218/2002 — Art. 31"
+          },
+          {
+            "emoji": "🚗",
+            "name": "Contrôle routier complet",
+            "body": "Un scan QR : l'agent reçoit la pièce d'identité, le permis de conduire avec catégories, la carte grise, l'assurance RCA et l'ITP — tout vérifiable cryptographiquement.",
+            "legal": "OUG 195/2002 — Art. 6, 80, 81"
+          },
+          {
+            "emoji": "🛂",
+            "name": "Contrôle aux frontières",
+            "body": "Aux points de passage frontaliers, les agents vérifient l'identité, la nationalité et la validité du document de voyage en une seule présentation numérique sécurisée.",
+            "legal": "Loi 248/2005"
+          }
         ]
       },
       {
@@ -86,9 +141,24 @@
         "title": "Affaires & Transactions commerciales",
         "description": "Les entreprises, notaires, avocats et plateformes B2B vérifient l'identité de l'entreprise et l'autorité du représentant légal instantanément — sans certificats papier ni coursiers.",
         "scenarios": [
-          { "emoji": "🏛️", "name": "Vérification d'entreprise (ONRC)", "body": "Une plateforme B2B ou un portail d'appels d'offres publics vérifie le nom de la société, le CUI, l'adresse enregistrée et le statut actif — tout certifié par le Registre National du Commerce.", "legal": "Loi 31/1990 ; Loi 26/1990" },
-          { "emoji": "✍️", "name": "Vérification du représentant légal", "body": "Un partenaire ou un notaire vérifie qu'une personne est un représentant autorisé d'une société — identité + titre de société + mandat présentés simultanément.", "legal": "Loi 31/1990 — Art. 75, 197" },
-          { "emoji": "📜", "name": "Signature de contrat — Flux entièrement automatisé", "body": "Un QR : identité vérifiée, mandat confirmé, contrat signé avec une Signature Électronique Qualifiée. Juridiquement contraignant dans toute l'UE. En moins de 90 secondes.", "legal": "Règl. (UE) 2024/1183 — Art. 25 ; Loi 455/2001" }
+          {
+            "emoji": "🏛️",
+            "name": "Vérification d'entreprise (ONRC)",
+            "body": "Une plateforme B2B ou un portail d'appels d'offres publics vérifie le nom de la société, le CUI, l'adresse enregistrée et le statut actif — tout certifié par le Registre National du Commerce.",
+            "legal": "Loi 31/1990 ; Loi 26/1990"
+          },
+          {
+            "emoji": "✍️",
+            "name": "Vérification du représentant légal",
+            "body": "Un partenaire ou un notaire vérifie qu'une personne est un représentant autorisé d'une société — identité + titre de société + mandat présentés simultanément.",
+            "legal": "Loi 31/1990 — Art. 75, 197"
+          },
+          {
+            "emoji": "📜",
+            "name": "Signature de contrat — Flux entièrement automatisé",
+            "body": "Un QR : identité vérifiée, mandat confirmé, contrat signé avec une Signature Électronique Qualifiée. Juridiquement contraignant dans toute l'UE. En moins de 90 secondes.",
+            "legal": "Règl. (UE) 2024/1183 — Art. 25 ; Loi 455/2001"
+          }
         ]
       },
       {
@@ -97,10 +167,30 @@
         "title": "Éducation — École & Université",
         "description": "Les élèves de 6 ans jusqu'au doctorat portent leur carte scolaire ou universitaire dans EguWallet. Utilisée pour l'entrée à l'école, les examens, la bibliothèque, la cantine, les dortoirs et les réductions de transport.",
         "scenarios": [
-          { "emoji": "🏫", "name": "Carte d'élève (Classes 1–12)", "body": "Un élève touche son téléphone à la grille de l'école, à la bibliothèque ou à la cantine. La carte d'élève numérique est délivrée par l'école ou l'inspection — valable pour l'année scolaire.", "legal": "Loi 1/2011 — Art. 5" },
-          { "emoji": "📋", "name": "Carte d'élève + CI aux examens", "body": "Pour le baccalauréat, les examens nationaux et les olympiades : carte d'élève plus carte d'identité électronique présentées simultanément — pour les élèves de 14 ans et plus.", "legal": "Loi 1/2011 ; OUG 97/2005 — Art. 14" },
-          { "emoji": "🎓", "name": "Carte d'étudiant universitaire", "body": "Accès à la faculté, au dortoir, à la bibliothèque, au secrétariat — la carte d'étudiant numérique remplace la carte physique. Fonctionne pour les bourses et les réductions de voyage CFR.", "legal": "Loi 1/2011 — Art. 118, 119" },
-          { "emoji": "🚌", "name": "Titre de transport étudiant", "body": "Les élèves et étudiants montent dans les bus, le métro et les trains avec leur portefeuille. Le contrôleur ou le chauffeur voit le droit instantanément — pas besoin de titre physique.", "legal": "OUG 133/2000 ; HCL transport urbain" }
+          {
+            "emoji": "🏫",
+            "name": "Carte d'élève (Classes 1–12)",
+            "body": "Un élève touche son téléphone à la grille de l'école, à la bibliothèque ou à la cantine. La carte d'élève numérique est délivrée par l'école ou l'inspection — valable pour l'année scolaire.",
+            "legal": "Loi 1/2011 — Art. 5"
+          },
+          {
+            "emoji": "📋",
+            "name": "Carte d'élève + CI aux examens",
+            "body": "Pour le baccalauréat, les examens nationaux et les olympiades : carte d'élève plus carte d'identité électronique présentées simultanément — pour les élèves de 14 ans et plus.",
+            "legal": "Loi 1/2011 ; OUG 97/2005 — Art. 14"
+          },
+          {
+            "emoji": "🎓",
+            "name": "Carte d'étudiant universitaire",
+            "body": "Accès à la faculté, au dortoir, à la bibliothèque, au secrétariat — la carte d'étudiant numérique remplace la carte physique. Fonctionne pour les bourses et les réductions de voyage CFR.",
+            "legal": "Loi 1/2011 — Art. 118, 119"
+          },
+          {
+            "emoji": "🚌",
+            "name": "Titre de transport étudiant",
+            "body": "Les élèves et étudiants montent dans les bus, le métro et les trains avec leur portefeuille. Le contrôleur ou le chauffeur voit le droit instantanément — pas besoin de titre physique.",
+            "legal": "OUG 133/2000 ; HCL transport urbain"
+          }
         ]
       },
       {
@@ -109,8 +199,18 @@
         "title": "Commerce & Vérification d'âge",
         "description": "Les commerçants vérifient l'âge ou l'identité au point de vente en quelques secondes — sans aucune donnée personnelle stockée et en pleine conformité RGPD.",
         "scenarios": [
-          { "emoji": "🍺", "name": "Vérification 18+ au point de vente", "body": "Le caissier affiche un QR code. Le client approuve depuis son portefeuille : seul «âge ≥ 18 : OUI» est transmis. Pas de nom, pas de numéro d'identité, pas de photo.", "legal": "OUG 99/2000 — alcool/tabac" },
-          { "emoji": "🏨", "name": "Check-in hôtel", "body": "Le touriste s'enregistre en présentant nom, date de naissance et nationalité depuis le portefeuille. Pas de photocopie de passeport. Conforme aux réglementations d'enregistrement d'hébergement.", "legal": "HG 1215/2001" }
+          {
+            "emoji": "🍺",
+            "name": "Vérification 18+ au point de vente",
+            "body": "Le caissier affiche un QR code. Le client approuve depuis son portefeuille : seul «âge ≥ 18 : OUI» est transmis. Pas de nom, pas de numéro d'identité, pas de photo.",
+            "legal": "OUG 99/2000 — alcool/tabac"
+          },
+          {
+            "emoji": "🏨",
+            "name": "Check-in hôtel",
+            "body": "Le touriste s'enregistre en présentant nom, date de naissance et nationalité depuis le portefeuille. Pas de photocopie de passeport. Conforme aux réglementations d'enregistrement d'hébergement.",
+            "legal": "HG 1215/2001"
+          }
         ]
       },
       {
@@ -119,8 +219,18 @@
         "title": "Services financiers & KYC",
         "description": "Les banques, compagnies d'assurance et plateformes fintech intègrent les clients numériquement — en respectant les exigences AML/KYC sans formulaires papier.",
         "scenarios": [
-          { "emoji": "🏦", "name": "Ouverture de compte bancaire (KYC/AML)", "body": "Une banque vérifie l'identité complète du client à distance — nom, CNP, date et lieu de naissance, nationalité, adresse — certifiée par le portefeuille EUDI. Conforme à la loi anti-blanchiment.", "legal": "Loi 129/2019 ; Directive (UE) 2015/849" },
-          { "emoji": "💼", "name": "Assurance & produits financiers", "body": "Les compagnies d'assurance vérifient l'identité du souscripteur lors de la signature du contrat — numériquement, instantanément, avec une traçabilité eIDAS 2.0 complète.", "legal": "Règl. (UE) 2024/1183" }
+          {
+            "emoji": "🏦",
+            "name": "Ouverture de compte bancaire (KYC/AML)",
+            "body": "Une banque vérifie l'identité complète du client à distance — nom, CNP, date et lieu de naissance, nationalité, adresse — certifiée par le portefeuille EUDI. Conforme à la loi anti-blanchiment.",
+            "legal": "Loi 129/2019 ; Directive (UE) 2015/849"
+          },
+          {
+            "emoji": "💼",
+            "name": "Assurance & produits financiers",
+            "body": "Les compagnies d'assurance vérifient l'identité du souscripteur lors de la signature du contrat — numériquement, instantanément, avec une traçabilité eIDAS 2.0 complète.",
+            "legal": "Règl. (UE) 2024/1183"
+          }
         ]
       },
       {
@@ -129,9 +239,24 @@
         "title": "Santé & Services sociaux",
         "description": "Les hôpitaux, cliniques, pharmacies et services sociaux identifient les patients et bénéficiaires de manière sécurisée, sans remplissage manuel de formulaires.",
         "scenarios": [
-          { "emoji": "🏥", "name": "Identification du patient", "body": "Un hôpital ou une clinique identifie un patient avec son EguWallet. Nom, CNP, date de naissance vérifiés instantanément à l'accueil ou aux urgences.", "legal": "Loi 95/2006 — Art. 230-232" },
-          { "emoji": "🗳️", "name": "Vérification des électeurs par la commission électorale", "body": "Les assesseurs des bureaux de vote vérifient l'identité des électeurs et consultent le registre électoral — instantanément, avec une piste d'audit complète. Pas de recherche manuelle dans les listes.", "legal": "Loi 208/2015 — Art. 84" },
-          { "emoji": "📋", "name": "Embauche & Vérification RH", "body": "Les employeurs vérifient l'identité du nouvel employé lors de la signature du contrat — nom, CNP, adresse — conformément au Code du travail et aux obligations de déclaration REVISAL.", "legal": "Loi 53/2003 ; HG 500/2011" }
+          {
+            "emoji": "🏥",
+            "name": "Identification du patient",
+            "body": "Un hôpital ou une clinique identifie un patient avec son EguWallet. Nom, CNP, date de naissance vérifiés instantanément à l'accueil ou aux urgences.",
+            "legal": "Loi 95/2006 — Art. 230-232"
+          },
+          {
+            "emoji": "🗳️",
+            "name": "Vérification des électeurs par la commission électorale",
+            "body": "Les assesseurs des bureaux de vote vérifient l'identité des électeurs et consultent le registre électoral — instantanément, avec une piste d'audit complète. Pas de recherche manuelle dans les listes.",
+            "legal": "Loi 208/2015 — Art. 84"
+          },
+          {
+            "emoji": "📋",
+            "name": "Embauche & Vérification RH",
+            "body": "Les employeurs vérifient l'identité du nouvel employé lors de la signature du contrat — nom, CNP, adresse — conformément au Code du travail et aux obligations de déclaration REVISAL.",
+            "legal": "Loi 53/2003 ; HG 500/2011"
+          }
         ]
       },
       {
@@ -140,10 +265,30 @@
         "title": "Juridique & Notarial — La présence physique n'est plus requise",
         "description": "En vertu du Règlement (UE) 2024/1183, le EUDI Wallet fournit une identification juridiquement contraignante équivalente à la présence physique pour un large éventail d'actes juridiques.",
         "scenarios": [
-          { "emoji": "📝", "name": "Identification notariale à distance", "body": "Pour les actes qui nécessitaient auparavant une comparution physique — procuration, déclarations, transferts de propriété — le notaire peut désormais identifier la partie via le portefeuille EUDI à distance.", "legal": "Loi 36/1995 — Art. 40 ; Règl. (UE) 2024/1183 — Art. 5a" },
-          { "emoji": "🏠", "name": "Transactions immobilières sans file d'attente", "body": "Acheter ou vendre un bien immobilier ne nécessite plus de se déplacer chez le notaire juste pour l'identification. Les deux parties s'identifient numériquement, et le contrat est signé avec une QES.", "legal": "Code civil Art. 1244 ; eIDAS 2.0 Art. 25" },
-          { "emoji": "✅", "name": "Déclarations & Procurations", "body": "Déclarations légales, mandats, affidavits — ces actes ne nécessitent plus de rendez-vous physique chez le notaire pour l'étape d'identification. Le citoyen présente son EguWallet PID.", "legal": "Règl. (UE) 2024/1183 — eIDAS 2.0 ; Loi 455/2001" },
-          { "emoji": "🤝", "name": "Contrats d'entreprise & commerciaux avec QES", "body": "Contrats de services, contrats de partenariat, résolutions d'actionnaires — signés avec une Signature Électronique Qualifiée directement depuis EguWallet. Valeur légale dans les 27 États membres de l'UE.", "legal": "Loi 455/2001 ; eIDAS 2.0 Art. 25 ; Loi 31/1990" }
+          {
+            "emoji": "📝",
+            "name": "Identification notariale à distance",
+            "body": "Pour les actes qui nécessitaient auparavant une comparution physique — procuration, déclarations, transferts de propriété — le notaire peut désormais identifier la partie via le portefeuille EUDI à distance.",
+            "legal": "Loi 36/1995 — Art. 40 ; Règl. (UE) 2024/1183 — Art. 5a"
+          },
+          {
+            "emoji": "🏠",
+            "name": "Transactions immobilières sans file d'attente",
+            "body": "Acheter ou vendre un bien immobilier ne nécessite plus de se déplacer chez le notaire juste pour l'identification. Les deux parties s'identifient numériquement, et le contrat est signé avec une QES.",
+            "legal": "Code civil Art. 1244 ; eIDAS 2.0 Art. 25"
+          },
+          {
+            "emoji": "✅",
+            "name": "Déclarations & Procurations",
+            "body": "Déclarations légales, mandats, affidavits — ces actes ne nécessitent plus de rendez-vous physique chez le notaire pour l'étape d'identification. Le citoyen présente son EguWallet PID.",
+            "legal": "Règl. (UE) 2024/1183 — eIDAS 2.0 ; Loi 455/2001"
+          },
+          {
+            "emoji": "🤝",
+            "name": "Contrats d'entreprise & commerciaux avec QES",
+            "body": "Contrats de services, contrats de partenariat, résolutions d'actionnaires — signés avec une Signature Électronique Qualifiée directement depuis EguWallet. Valeur légale dans les 27 États membres de l'UE.",
+            "legal": "Loi 455/2001 ; eIDAS 2.0 Art. 25 ; Loi 31/1990"
+          }
         ]
       },
       {
@@ -152,9 +297,24 @@
         "title": "Jeux d'argent & Auto-exclusion",
         "description": "Les casinos en ligne et physiques, les opérateurs de paris sportifs et les plateformes de jeux vérifient l'identité des joueurs et consultent les registres nationaux d'auto-exclusion — prévenant les jeux problématiques et assurant la conformité réglementaire.",
         "scenarios": [
-          { "emoji": "🎰", "name": "Vérification d'identité du joueur (KYC)", "body": "Les opérateurs de jeux vérifient l'identité du joueur à l'inscription — nom, date de naissance, nationalité — conformément aux réglementations AML et d'octroi de licences de jeux. Rapide, numérique, sans photocopies.", "legal": "Directive (UE) 2015/849 ; Réglementations d'octroi de licences de jeux" },
-          { "emoji": "🚫", "name": "Vérification du registre d'auto-exclusion", "body": "Avant de permettre à un joueur de parier, l'opérateur consulte le registre national d'auto-exclusion via EguWallet. Si le joueur est sur la liste, l'accès est bloqué automatiquement.", "legal": "Règl. (UE) 2024/1183 ; lois nationales sur les jeux" },
-          { "emoji": "🔞", "name": "Vérification 18+ pour les jeux", "body": "Les opérateurs de jeux en ligne et physiques vérifient que le joueur a 18 ans ou plus — en utilisant l'attestation d'âge EguWallet. Seul OUI/NON est transmis — aucune donnée personnelle stockée.", "legal": "OUG 77/2009 ; Directive (UE) 2015/849" }
+          {
+            "emoji": "🎰",
+            "name": "Vérification d'identité du joueur (KYC)",
+            "body": "Les opérateurs de jeux vérifient l'identité du joueur à l'inscription — nom, date de naissance, nationalité — conformément aux réglementations AML et d'octroi de licences de jeux. Rapide, numérique, sans photocopies.",
+            "legal": "Directive (UE) 2015/849 ; Réglementations d'octroi de licences de jeux"
+          },
+          {
+            "emoji": "🚫",
+            "name": "Vérification du registre d'auto-exclusion",
+            "body": "Avant de permettre à un joueur de parier, l'opérateur consulte le registre national d'auto-exclusion via EguWallet. Si le joueur est sur la liste, l'accès est bloqué automatiquement.",
+            "legal": "Règl. (UE) 2024/1183 ; lois nationales sur les jeux"
+          },
+          {
+            "emoji": "🔞",
+            "name": "Vérification 18+ pour les jeux",
+            "body": "Les opérateurs de jeux en ligne et physiques vérifient que le joueur a 18 ans ou plus — en utilisant l'attestation d'âge EguWallet. Seul OUI/NON est transmis — aucune donnée personnelle stockée.",
+            "legal": "OUG 77/2009 ; Directive (UE) 2015/849"
+          }
         ]
       }
     ]
@@ -181,12 +341,30 @@
     "auditTitle": "Audité en privé. Responsable publiquement.",
     "auditBody": "EguWallet est construit sur des standards ouverts (ARF 2.5+, OpenID4VCI, OpenID4VP, SD-JWT, ISO 18013-5) et est en cours de certification formelle par un organisme d'évaluation de la conformité accrédité.",
     "badges": [
-      { "icon": "🛡️", "label": "RGPD Art. 17 — Droit à l'effacement" },
-      { "icon": "📋", "label": "Historique complet des interactions" },
-      { "icon": "⚖️", "label": "eIDAS 2.0 juridiquement contraignant" },
-      { "icon": "🔐", "label": "Divulgation sélective à connaissance nulle" },
-      { "icon": "🔍", "label": "Audité en privé" },
-      { "icon": "🌍", "label": "Valide dans les 27 États de l'UE" }
+      {
+        "icon": "🛡️",
+        "label": "RGPD Art. 17 — Droit à l'effacement"
+      },
+      {
+        "icon": "📋",
+        "label": "Historique complet des interactions"
+      },
+      {
+        "icon": "⚖️",
+        "label": "eIDAS 2.0 juridiquement contraignant"
+      },
+      {
+        "icon": "🔐",
+        "label": "Divulgation sélective à connaissance nulle"
+      },
+      {
+        "icon": "🔍",
+        "label": "Audité en privé"
+      },
+      {
+        "icon": "🌍",
+        "label": "Valide dans les 27 États de l'UE"
+      }
     ]
   },
   "usedToday": {
@@ -214,12 +392,36 @@
     "heading": "La suite — l'avenir de l'identité numérique",
     "subheading": "EguWallet s'enrichit continuellement de nouveaux cas d'usage qui facilitent la vie",
     "items": [
-      { "icon": "📡", "title": "Vérification appareil à appareil (Bluetooth)", "body": "Comme le paiement sans contact NFC — un policier ou un commerçant approche son téléphone du vôtre et reçoit instantanément uniquement les données que vous avez autorisées." },
-      { "icon": "🚔", "title": "Contrôle d'identité par les forces de l'ordre", "body": "Un agent des forces de l'ordre vérifie l'identité via NFC/Bluetooth. Vous contrôlez quelles données sont transmises. Rapide, sécurisé, pas de photocopies nécessaires." },
-      { "icon": "🍺", "title": "Vérification 18+ (Prochainement)", "body": "Déploiement imminent chez un grand détaillant roumain pour le contrôle de l'âge lors de la vente d'alcool. Le commerçant reçoit uniquement une réponse OUI/NON." },
-      { "icon": "🚌", "title": "Tickets & Abonnements de transport public", "body": "Les élèves ayant droit au transport gratuit prouvent leur statut via EguWallet. Les passagers réguliers achètent et présentent leurs tickets numériquement." },
-      { "icon": "📍", "title": "Adresse sur la nouvelle carte d'identité roumaine", "body": "La nouvelle carte d'identité roumaine ne contient plus d'adresse sur la puce. EguWallet résout cela : votre adresse enregistrée peut être divulguée sélectivement si nécessaire." },
-      { "icon": "✍️", "title": "Signature numérique qualifiée", "body": "EguWallet fonctionnera comme un dispositif de Signature Électronique Qualifiée (QES) conforme à eIDAS 2.0. Signez des documents avec pleine valeur légale dans tous les États membres de l'UE." }
+      {
+        "icon": "📡",
+        "title": "Vérification appareil à appareil (Bluetooth)",
+        "body": "Comme le paiement sans contact NFC — un policier ou un commerçant approche son téléphone du vôtre et reçoit instantanément uniquement les données que vous avez autorisées."
+      },
+      {
+        "icon": "🚔",
+        "title": "Contrôle d'identité par les forces de l'ordre",
+        "body": "Un agent des forces de l'ordre vérifie l'identité via NFC/Bluetooth. Vous contrôlez quelles données sont transmises. Rapide, sécurisé, pas de photocopies nécessaires."
+      },
+      {
+        "icon": "🍺",
+        "title": "Vérification 18+ (Prochainement)",
+        "body": "Déploiement imminent chez un grand détaillant roumain pour le contrôle de l'âge lors de la vente d'alcool. Le commerçant reçoit uniquement une réponse OUI/NON."
+      },
+      {
+        "icon": "🚌",
+        "title": "Tickets & Abonnements de transport public",
+        "body": "Les élèves ayant droit au transport gratuit prouvent leur statut via EguWallet. Les passagers réguliers achètent et présentent leurs tickets numériquement."
+      },
+      {
+        "icon": "📍",
+        "title": "Adresse sur la nouvelle carte d'identité roumaine",
+        "body": "La nouvelle carte d'identité roumaine ne contient plus d'adresse sur la puce. EguWallet résout cela : votre adresse enregistrée peut être divulguée sélectivement si nécessaire."
+      },
+      {
+        "icon": "✍️",
+        "title": "Signature numérique qualifiée",
+        "body": "EguWallet fonctionnera comme un dispositif de Signature Électronique Qualifiée (QES) conforme à eIDAS 2.0. Signez des documents avec pleine valeur légale dans tous les États membres de l'UE."
+      }
     ]
   },
   "howItWorks": {
@@ -234,15 +436,42 @@
   "faq": {
     "heading": "Questions fréquemment posées",
     "items": [
-      { "q": "Qu'est-ce qu'EguWallet ?", "a": "EguWallet est un portefeuille numérique européen certifié eIDAS 2.0 développé par IT Eguilde SRL. Il vous permet de stocker et de présenter des documents d'identité numériques de manière sécurisée sur votre téléphone." },
-      { "q": "Quels documents puis-je stocker dans EguWallet ?", "a": "Actuellement : carte d'identité (PID), passeport et permis de conduire. Prochainement : carte grise, assurance RCA, ITP/RAR, documents d'entreprise et documents de propriété." },
-      { "q": "Mes données personnelles sont-elles sécurisées ?", "a": "Oui. EguWallet utilise SD-JWT et mDoc/ISO 18013-5 pour la divulgation sélective — vous ne transmettez que les données que vous approuvez explicitement." },
-      { "q": "Où puis-je utiliser EguWallet ?", "a": "Aujourd'hui : services numériques du Conseil du Comté d'Ilfov (ilfov.net) et Mairie du Secteur 2 (sector2.eu). Expansion en cours." },
-      { "q": "Qu'est-ce qu'eIDAS 2.0 ?", "a": "eIDAS 2.0 est le Règlement (UE) 2024/1183. Il garantit à chaque citoyen européen le droit à un portefeuille numérique gratuit, reconnu dans les 27 États membres." },
-      { "q": "Comment fonctionne la divulgation sélective ?", "a": "Lorsqu'un service demande une vérification d'identité, votre portefeuille vous montre exactement quelles données sont demandées. Vous approuvez ou refusez chaque champ." },
-      { "q": "EguWallet est-il gratuit ?", "a": "Oui, gratuit pour les citoyens durant la phase pilote actuelle." },
-      { "q": "EguWallet est-il entièrement certifié ?", "a": "EguWallet est actuellement en cours de certification formelle eIDAS 2.0. Jusqu'à la fin de la certification, il fonctionne comme un EUDI Wallet pilote." },
-      { "q": "Comment activer mon portefeuille numérique ?", "a": "Téléchargez depuis Google Play, vérifiez votre numéro de téléphone, créez un code PIN, puis connectez-vous à votre portail de comté ou de ville." }
+      {
+        "q": "Qu'est-ce qu'EguWallet ?",
+        "a": "EguWallet est un portefeuille numérique européen certifié eIDAS 2.0 développé par IT Eguilde SRL. Il vous permet de stocker et de présenter des documents d'identité numériques de manière sécurisée sur votre téléphone."
+      },
+      {
+        "q": "Quels documents puis-je stocker dans EguWallet ?",
+        "a": "Actuellement : carte d'identité (PID), passeport et permis de conduire. Prochainement : carte grise, assurance RCA, ITP/RAR, documents d'entreprise et documents de propriété."
+      },
+      {
+        "q": "Mes données personnelles sont-elles sécurisées ?",
+        "a": "Oui. EguWallet utilise SD-JWT et mDoc/ISO 18013-5 pour la divulgation sélective — vous ne transmettez que les données que vous approuvez explicitement."
+      },
+      {
+        "q": "Où puis-je utiliser EguWallet ?",
+        "a": "Aujourd'hui : services numériques du Conseil du Comté d'Ilfov (ilfov.net) et Mairie du Secteur 2 (sector2.eu). Expansion en cours."
+      },
+      {
+        "q": "Qu'est-ce qu'eIDAS 2.0 ?",
+        "a": "eIDAS 2.0 est le Règlement (UE) 2024/1183. Il garantit à chaque citoyen européen le droit à un portefeuille numérique gratuit, reconnu dans les 27 États membres."
+      },
+      {
+        "q": "Comment fonctionne la divulgation sélective ?",
+        "a": "Lorsqu'un service demande une vérification d'identité, votre portefeuille vous montre exactement quelles données sont demandées. Vous approuvez ou refusez chaque champ."
+      },
+      {
+        "q": "EguWallet est-il gratuit ?",
+        "a": "Oui, gratuit pour les citoyens durant la phase pilote actuelle."
+      },
+      {
+        "q": "EguWallet est-il entièrement certifié ?",
+        "a": "EguWallet est actuellement en cours de certification formelle eIDAS 2.0. Jusqu'à la fin de la certification, il fonctionne comme un EUDI Wallet pilote."
+      },
+      {
+        "q": "Comment activer mon portefeuille numérique ?",
+        "a": "Téléchargez depuis Google Play, vérifiez votre numéro de téléphone, créez un code PIN, puis connectez-vous à votre portail de comté ou de ville."
+      }
     ]
   },
   "getDigitalId": {
@@ -269,17 +498,38 @@
     "description": "Demandez la suppression de votre compte EguWallet et de toutes les données associées.",
     "intro": "EguWallet respecte votre droit à l'effacement des données en vertu de l'Article 17 du RGPD.",
     "method1Title": "Méthode 1 : Suppression dans l'application",
-    "method1Steps": ["Ouvrez l'application EguWallet", "Allez dans Paramètres", "Appuyez sur 'Supprimer le portefeuille'", "Confirmez la suppression"],
+    "method1Steps": [
+      "Ouvrez l'application EguWallet",
+      "Allez dans Paramètres",
+      "Appuyez sur 'Supprimer le portefeuille'",
+      "Confirmez la suppression"
+    ],
     "method1Note": "Cela supprime immédiatement tous les identifiants, clés cryptographiques et données locales de votre appareil.",
     "method2Title": "Méthode 2 : Demande par e-mail",
     "method2Text": "Envoyez un e-mail à <a href='mailto:privacy@eguwallet.eu' class='t-primary underline'>privacy@eguwallet.eu</a> avec l'objet 'Demande de suppression de compte'.",
     "whatDeleted": "Ce qui est supprimé",
-    "deletedItems": ["Vos données d'inscription au portefeuille", "Tous les identifiants numériques", "Clés cryptographiques", "Informations sur l'appareil", "Images de selfie et de scan de document", "Codes de vérification et données de session"],
+    "deletedItems": [
+      "Vos données d'inscription au portefeuille",
+      "Tous les identifiants numériques",
+      "Clés cryptographiques",
+      "Informations sur l'appareil",
+      "Images de selfie et de scan de document",
+      "Codes de vérification et données de session"
+    ],
     "whatRetained": "Ce qui est conservé",
-    "retainedItems": ["Journaux d'audit obligatoires eIDAS 2.0 (anonymisés) — conservés pendant 7 ans"],
+    "retainedItems": [
+      "Journaux d'audit obligatoires eIDAS 2.0 (anonymisés) — conservés pendant 7 ans"
+    ],
     "timeline": "Délai de suppression",
     "timelineText": "Vos données personnelles seront définitivement supprimées dans les 30 jours.",
     "contact": "Des questions ?",
     "contactText": "Pour toute question sur la suppression de données, contactez-nous à <a href='mailto:privacy@eguwallet.eu' class='t-primary underline'>privacy@eguwallet.eu</a>."
+  },
+  "contact": {
+    "sending": "Envoi en cours…",
+    "successMsg": "Message envoyé ! Nous répondrons dans les 2 jours ouvrables.",
+    "errorFields": "Veuillez remplir tous les champs obligatoires.",
+    "errorFail": "Impossible d'envoyer le message. Écrivez-nous directement à contact@eguwallet.eu",
+    "submitBtn": "Envoyer le message"
   }
 }

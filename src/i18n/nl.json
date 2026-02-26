@@ -53,14 +53,54 @@
     "heading": "Documenten in uw portemonnee",
     "subheading": "Al uw belangrijke documenten — digitaal, verifieerbaar, altijd bij de hand",
     "items": [
-      { "icon": "🪪", "title": "Identiteitskaart (PID)", "body": "Het primaire digitale identiteitsdocument conform eIDAS 2.0. Erkend in alle EU-lidstaten.", "status": "available" },
-      { "icon": "🛂", "title": "Paspoort", "body": "De digitale versie van uw paspoort, direct verifieerbaar door autoriteiten en diensten.", "status": "available" },
-      { "icon": "🚗", "title": "Rijbewijs", "body": "Digitaal rijbewijs conform mDoc/ISO 18013-5. Contactloos verifieerbaar, ook door de verkeerspolitie.", "status": "available" },
-      { "icon": "📋", "title": "Kentekenbewijs", "body": "Uw voertuigregistratiedocument in digitaal formaat. Geen papieren documenten meer meenemen.", "status": "soon" },
-      { "icon": "🛡️", "title": "Autoverzekering (RCA)", "body": "Verplichte voertuigverzekeringspolis, in realtime verifieerbaar.", "status": "soon" },
-      { "icon": "🔧", "title": "APK-keuring / RAR", "body": "Periodieke technische inspectie (ITP) en RAR-voertuiggegevens — verifieerbare digitale certificaten.", "status": "soon" },
-      { "icon": "🏢", "title": "Bedrijfsdocumenten", "body": "Kamer van Koophandel-uittreksel, volmachten en bedrijfsdocumenten. Onderteken digitaal met uw portemonnee.", "status": "soon" },
-      { "icon": "🏠", "title": "Eigendomsdocumenten", "body": "Kadasteruittreksels en onroerendgoeddocumenten in verifieerbaar digitaal formaat.", "status": "soon" }
+      {
+        "icon": "🪪",
+        "title": "Identiteitskaart (PID)",
+        "body": "Het primaire digitale identiteitsdocument conform eIDAS 2.0. Erkend in alle EU-lidstaten.",
+        "status": "available"
+      },
+      {
+        "icon": "🛂",
+        "title": "Paspoort",
+        "body": "De digitale versie van uw paspoort, direct verifieerbaar door autoriteiten en diensten.",
+        "status": "available"
+      },
+      {
+        "icon": "🚗",
+        "title": "Rijbewijs",
+        "body": "Digitaal rijbewijs conform mDoc/ISO 18013-5. Contactloos verifieerbaar, ook door de verkeerspolitie.",
+        "status": "available"
+      },
+      {
+        "icon": "📋",
+        "title": "Kentekenbewijs",
+        "body": "Uw voertuigregistratiedocument in digitaal formaat. Geen papieren documenten meer meenemen.",
+        "status": "soon"
+      },
+      {
+        "icon": "🛡️",
+        "title": "Autoverzekering (RCA)",
+        "body": "Verplichte voertuigverzekeringspolis, in realtime verifieerbaar.",
+        "status": "soon"
+      },
+      {
+        "icon": "🔧",
+        "title": "APK-keuring / RAR",
+        "body": "Periodieke technische inspectie (ITP) en RAR-voertuiggegevens — verifieerbare digitale certificaten.",
+        "status": "soon"
+      },
+      {
+        "icon": "🏢",
+        "title": "Bedrijfsdocumenten",
+        "body": "Kamer van Koophandel-uittreksel, volmachten en bedrijfsdocumenten. Onderteken digitaal met uw portemonnee.",
+        "status": "soon"
+      },
+      {
+        "icon": "🏠",
+        "title": "Eigendomsdocumenten",
+        "body": "Kadasteruittreksels en onroerendgoeddocumenten in verifieerbaar digitaal formaat.",
+        "status": "soon"
+      }
     ],
     "statusAvailable": "Beschikbaar",
     "statusSoon": "Binnenkort"
@@ -75,9 +115,24 @@
         "title": "Rechtshandhaving en openbare orde",
         "description": "Politieagenten, grensbewakers en inspecteurs van de openbare orde verifiëren de digitale identiteit in seconden — met volledige cryptografische vertrouwelijkheid, zonder fysieke documenten aan te raken.",
         "scenarios": [
-          { "emoji": "🪪", "name": "Identiteitscontrole tijdens patrouille", "body": "Een politieagent verifieert de volledige identiteit van een burger — naam, CNP, adres, foto — via NFC of QR. Geen papier. Resultaat automatisch gelogd.", "legal": "Wet 218/2002 — Art. 31" },
-          { "emoji": "🚗", "name": "Volledig verkeerscontrolepakket", "body": "Één QR-scan: agent ontvangt ID, rijbewijs met categorieën, kentekenbewijs, RCA-verzekering en ITP — alles cryptografisch geverifieerd.", "legal": "OUG 195/2002 — Art. 6, 80, 81" },
-          { "emoji": "🛂", "name": "Grenscontrole", "body": "Bij grensovergangen verifiëren agenten identiteit, nationaliteit en geldigheid van het reisdocument in één veilige digitale presentatie.", "legal": "Wet 248/2005" }
+          {
+            "emoji": "🪪",
+            "name": "Identiteitscontrole tijdens patrouille",
+            "body": "Een politieagent verifieert de volledige identiteit van een burger — naam, CNP, adres, foto — via NFC of QR. Geen papier. Resultaat automatisch gelogd.",
+            "legal": "Wet 218/2002 — Art. 31"
+          },
+          {
+            "emoji": "🚗",
+            "name": "Volledig verkeerscontrolepakket",
+            "body": "Één QR-scan: agent ontvangt ID, rijbewijs met categorieën, kentekenbewijs, RCA-verzekering en ITP — alles cryptografisch geverifieerd.",
+            "legal": "OUG 195/2002 — Art. 6, 80, 81"
+          },
+          {
+            "emoji": "🛂",
+            "name": "Grenscontrole",
+            "body": "Bij grensovergangen verifiëren agenten identiteit, nationaliteit en geldigheid van het reisdocument in één veilige digitale presentatie.",
+            "legal": "Wet 248/2005"
+          }
         ]
       },
       {
@@ -86,9 +141,24 @@
         "title": "Zakelijk en commerciële transacties",
         "description": "Bedrijven, notarissen, advocaten en B2B-platforms verifiëren bedrijfsidentiteit en wettelijke vertegenwoordigingsbevoegdheid onmiddellijk — zonder papieren certificaten en koeriers.",
         "scenarios": [
-          { "emoji": "🏛️", "name": "Bedrijfsverificatie (ONRC)", "body": "Een B2B-platform of overheidsaanbestedingsportaal verifieert bedrijfsnaam, CUI, geregistreerd adres en actieve status — alles gecertificeerd door het Nationaal Handelsregister.", "legal": "Wet 31/1990; Wet 26/1990" },
-          { "emoji": "✍️", "name": "Verificatie wettelijk vertegenwoordiger", "body": "Een partner of notaris verifieert dat een persoon een gemachtigde vertegenwoordiger van een bedrijf is — identiteit + bedrijfscredential + mandaat gelijktijdig gepresenteerd.", "legal": "Wet 31/1990 — Art. 75, 197" },
-          { "emoji": "📜", "name": "Contractondertekening — Volledig geautomatiseerde stroom", "body": "Één QR: identiteit geverifieerd, mandaat bevestigd, contract ondertekend met een Gekwalificeerde Elektronische Handtekening. Juridisch bindend in de hele EU. Onder 90 seconden.", "legal": "Verord. (EU) 2024/1183 — Art. 25; Wet 455/2001" }
+          {
+            "emoji": "🏛️",
+            "name": "Bedrijfsverificatie (ONRC)",
+            "body": "Een B2B-platform of overheidsaanbestedingsportaal verifieert bedrijfsnaam, CUI, geregistreerd adres en actieve status — alles gecertificeerd door het Nationaal Handelsregister.",
+            "legal": "Wet 31/1990; Wet 26/1990"
+          },
+          {
+            "emoji": "✍️",
+            "name": "Verificatie wettelijk vertegenwoordiger",
+            "body": "Een partner of notaris verifieert dat een persoon een gemachtigde vertegenwoordiger van een bedrijf is — identiteit + bedrijfscredential + mandaat gelijktijdig gepresenteerd.",
+            "legal": "Wet 31/1990 — Art. 75, 197"
+          },
+          {
+            "emoji": "📜",
+            "name": "Contractondertekening — Volledig geautomatiseerde stroom",
+            "body": "Één QR: identiteit geverifieerd, mandaat bevestigd, contract ondertekend met een Gekwalificeerde Elektronische Handtekening. Juridisch bindend in de hele EU. Onder 90 seconden.",
+            "legal": "Verord. (EU) 2024/1183 — Art. 25; Wet 455/2001"
+          }
         ]
       },
       {
@@ -97,10 +167,30 @@
         "title": "Onderwijs — School en Universiteit",
         "description": "Studenten van 6 jaar tot aan het doctoraat dragen hun school- of universiteitskaart in EguWallet. Gebruikt voor schooltoegang, examens, bibliotheek, kantine, slaapzalen en transportkortingen.",
         "scenarios": [
-          { "emoji": "🏫", "name": "Schoolpas (Klassen 1–12)", "body": "Een leerling tikt met zijn telefoon bij de schoolpoort, bibliotheek of kantine. De digitale schoolpas wordt uitgegeven door de school of inspectie — geldig voor het schooljaar.", "legal": "Wet 1/2011 — Art. 5" },
-          { "emoji": "📋", "name": "Schoolpas + ID bij examens", "body": "Voor het eindexamen, nationale examens en olympiaden: schoolpas plus elektronische identiteitskaart gelijktijdig gepresenteerd — voor leerlingen van 14 jaar en ouder.", "legal": "Wet 1/2011; OUG 97/2005 — Art. 14" },
-          { "emoji": "🎓", "name": "Universitaire studentenkaart", "body": "Toegang tot de faculteit, slaapzaal, bibliotheek, secretariaat — de digitale studentenkaart vervangt de fysieke kaart. Werkt voor beurzen en CFR-reiskortingen.", "legal": "Wet 1/2011 — Art. 118, 119" },
-          { "emoji": "🚌", "name": "Student OV-kaart", "body": "Leerlingen en studenten stappen in bussen, metro en treinen met hun portemonnee. De controleur of chauffeur ziet het recht onmiddellijk — geen fysieke kaart nodig.", "legal": "OUG 133/2000; HCL stedelijk vervoer" }
+          {
+            "emoji": "🏫",
+            "name": "Schoolpas (Klassen 1–12)",
+            "body": "Een leerling tikt met zijn telefoon bij de schoolpoort, bibliotheek of kantine. De digitale schoolpas wordt uitgegeven door de school of inspectie — geldig voor het schooljaar.",
+            "legal": "Wet 1/2011 — Art. 5"
+          },
+          {
+            "emoji": "📋",
+            "name": "Schoolpas + ID bij examens",
+            "body": "Voor het eindexamen, nationale examens en olympiaden: schoolpas plus elektronische identiteitskaart gelijktijdig gepresenteerd — voor leerlingen van 14 jaar en ouder.",
+            "legal": "Wet 1/2011; OUG 97/2005 — Art. 14"
+          },
+          {
+            "emoji": "🎓",
+            "name": "Universitaire studentenkaart",
+            "body": "Toegang tot de faculteit, slaapzaal, bibliotheek, secretariaat — de digitale studentenkaart vervangt de fysieke kaart. Werkt voor beurzen en CFR-reiskortingen.",
+            "legal": "Wet 1/2011 — Art. 118, 119"
+          },
+          {
+            "emoji": "🚌",
+            "name": "Student OV-kaart",
+            "body": "Leerlingen en studenten stappen in bussen, metro en treinen met hun portemonnee. De controleur of chauffeur ziet het recht onmiddellijk — geen fysieke kaart nodig.",
+            "legal": "OUG 133/2000; HCL stedelijk vervoer"
+          }
         ]
       },
       {
@@ -109,8 +199,18 @@
         "title": "Detailhandel en leeftijdsverificatie",
         "description": "Handelaars verifiëren leeftijd of identiteit bij het verkooppunt in seconden — zonder opgeslagen persoonsgegevens en in volledige AVG-naleving.",
         "scenarios": [
-          { "emoji": "🍺", "name": "Leeftijdsverificatie 18+ bij verkooppunt", "body": "De kassier toont een QR-code. De klant keurt goed vanuit zijn portemonnee: alleen «leeftijd ≥ 18: JA» wordt verzonden. Geen naam, geen ID-nummer, geen foto.", "legal": "OUG 99/2000 — alcohol/tabak" },
-          { "emoji": "🏨", "name": "Hotel check-in", "body": "Toerist checkt in door naam, geboortedatum en nationaliteit uit de portemonnee te presenteren. Geen paspoorten kopiëren. Conform de registratieregels voor accommodatie.", "legal": "HG 1215/2001" }
+          {
+            "emoji": "🍺",
+            "name": "Leeftijdsverificatie 18+ bij verkooppunt",
+            "body": "De kassier toont een QR-code. De klant keurt goed vanuit zijn portemonnee: alleen «leeftijd ≥ 18: JA» wordt verzonden. Geen naam, geen ID-nummer, geen foto.",
+            "legal": "OUG 99/2000 — alcohol/tabak"
+          },
+          {
+            "emoji": "🏨",
+            "name": "Hotel check-in",
+            "body": "Toerist checkt in door naam, geboortedatum en nationaliteit uit de portemonnee te presenteren. Geen paspoorten kopiëren. Conform de registratieregels voor accommodatie.",
+            "legal": "HG 1215/2001"
+          }
         ]
       },
       {
@@ -119,8 +219,18 @@
         "title": "Financiële diensten en KYC",
         "description": "Banken, verzekeringsmaatschappijen en fintech-platforms onboarden klanten digitaal — voldoend aan de AML/KYC-vereisten zonder papieren formulieren.",
         "scenarios": [
-          { "emoji": "🏦", "name": "Bankrekening openen (KYC/AML)", "body": "Een bank verifieert de volledige identiteit van de klant op afstand — naam, CNP, geboorte datum en -plaats, nationaliteit, adres — gecertificeerd door de EUDI-portemonnee. Conform de anti-witwasswetgeving.", "legal": "Wet 129/2019; Richtlijn (EU) 2015/849" },
-          { "emoji": "💼", "name": "Verzekering en financiële producten", "body": "Verzekeringsmaatschappijen verifiëren de identiteit van de verzekeringnemer bij contractondertekening — digitaal, onmiddellijk, met volledige eIDAS 2.0-traceerbaarheid.", "legal": "Verord. (EU) 2024/1183" }
+          {
+            "emoji": "🏦",
+            "name": "Bankrekening openen (KYC/AML)",
+            "body": "Een bank verifieert de volledige identiteit van de klant op afstand — naam, CNP, geboorte datum en -plaats, nationaliteit, adres — gecertificeerd door de EUDI-portemonnee. Conform de anti-witwasswetgeving.",
+            "legal": "Wet 129/2019; Richtlijn (EU) 2015/849"
+          },
+          {
+            "emoji": "💼",
+            "name": "Verzekering en financiële producten",
+            "body": "Verzekeringsmaatschappijen verifiëren de identiteit van de verzekeringnemer bij contractondertekening — digitaal, onmiddellijk, met volledige eIDAS 2.0-traceerbaarheid.",
+            "legal": "Verord. (EU) 2024/1183"
+          }
         ]
       },
       {
@@ -129,9 +239,24 @@
         "title": "Gezondheidszorg en sociale diensten",
         "description": "Ziekenhuizen, klinieken, apotheken en sociale diensten identificeren patiënten en begunstigden veilig, zonder handmatig formulieren in te vullen.",
         "scenarios": [
-          { "emoji": "🏥", "name": "Patiëntidentificatie", "body": "Een ziekenhuis of kliniek identificeert een patiënt met hun EguWallet. Naam, CNP, geboortedatum direct geverifieerd aan de receptie of op de spoedeisende hulp.", "legal": "Wet 95/2006 — Art. 230-232" },
-          { "emoji": "🗳️", "name": "Kiezersverificatie door de verkiezingscommissie", "body": "Stembureaumedewerkers verifiëren de identiteit van kiezers en controleren het kiezersregister — onmiddellijk, met volledige audittrail. Geen handmatig zoeken in lijsten.", "legal": "Wet 208/2015 — Art. 84" },
-          { "emoji": "📋", "name": "Indienstneming en HR-verificatie", "body": "Werkgevers verifiëren de identiteit van nieuwe medewerkers bij contractondertekening — naam, CNP, adres — zoals vereist door het Arbeidsrecht en de REVISAL-rapportage.", "legal": "Wet 53/2003; HG 500/2011" }
+          {
+            "emoji": "🏥",
+            "name": "Patiëntidentificatie",
+            "body": "Een ziekenhuis of kliniek identificeert een patiënt met hun EguWallet. Naam, CNP, geboortedatum direct geverifieerd aan de receptie of op de spoedeisende hulp.",
+            "legal": "Wet 95/2006 — Art. 230-232"
+          },
+          {
+            "emoji": "🗳️",
+            "name": "Kiezersverificatie door de verkiezingscommissie",
+            "body": "Stembureaumedewerkers verifiëren de identiteit van kiezers en controleren het kiezersregister — onmiddellijk, met volledige audittrail. Geen handmatig zoeken in lijsten.",
+            "legal": "Wet 208/2015 — Art. 84"
+          },
+          {
+            "emoji": "📋",
+            "name": "Indienstneming en HR-verificatie",
+            "body": "Werkgevers verifiëren de identiteit van nieuwe medewerkers bij contractondertekening — naam, CNP, adres — zoals vereist door het Arbeidsrecht en de REVISAL-rapportage.",
+            "legal": "Wet 53/2003; HG 500/2011"
+          }
         ]
       },
       {
@@ -140,10 +265,30 @@
         "title": "Juridisch en notarieel — Fysieke aanwezigheid niet langer vereist",
         "description": "Onder Verordening (EU) 2024/1183 biedt de EUDI Wallet juridisch bindende identificatie gelijkwaardig aan fysieke aanwezigheid voor een breed scala aan rechtshandelingen.",
         "scenarios": [
-          { "emoji": "📝", "name": "Notariële identificatie op afstand", "body": "Voor aktes waarvoor voorheen persoonlijke verschijning vereist was — volmachten, verklaringen, eigendomsoverdrachten — kan de notaris de partij nu via de EUDI-portemonnee op afstand identificeren.", "legal": "Wet 36/1995 — Art. 40; Verord. (EU) 2024/1183 — Art. 5a" },
-          { "emoji": "🏠", "name": "Vastgoedtransacties zonder wachtrij", "body": "Een woning kopen of verkopen vereist niet langer een bezoek aan de notaris alleen voor identificatie. Beide partijen identificeren zich digitaal en het contract wordt ondertekend met een QES.", "legal": "Burgerlijk Wetboek Art. 1244; eIDAS 2.0 Art. 25" },
-          { "emoji": "✅", "name": "Verklaringen en volmachten", "body": "Wettelijke verklaringen, mandaten, beëdigde verklaringen — deze aktes vereisen geen fysieke notarisafspraak meer voor de identificatiestap. De burger presenteert zijn EguWallet PID.", "legal": "Verord. (EU) 2024/1183 — eIDAS 2.0; Wet 455/2001" },
-          { "emoji": "🤝", "name": "Bedrijfs- en handelscontracten met QES", "body": "Dienstovereenkomsten, partnercontracten, aandeelhoudersresoluties — ondertekend met een Gekwalificeerde Elektronische Handtekening rechtstreeks vanuit EguWallet. Rechtskracht in alle 27 EU-lidstaten.", "legal": "Wet 455/2001; eIDAS 2.0 Art. 25; Wet 31/1990" }
+          {
+            "emoji": "📝",
+            "name": "Notariële identificatie op afstand",
+            "body": "Voor aktes waarvoor voorheen persoonlijke verschijning vereist was — volmachten, verklaringen, eigendomsoverdrachten — kan de notaris de partij nu via de EUDI-portemonnee op afstand identificeren.",
+            "legal": "Wet 36/1995 — Art. 40; Verord. (EU) 2024/1183 — Art. 5a"
+          },
+          {
+            "emoji": "🏠",
+            "name": "Vastgoedtransacties zonder wachtrij",
+            "body": "Een woning kopen of verkopen vereist niet langer een bezoek aan de notaris alleen voor identificatie. Beide partijen identificeren zich digitaal en het contract wordt ondertekend met een QES.",
+            "legal": "Burgerlijk Wetboek Art. 1244; eIDAS 2.0 Art. 25"
+          },
+          {
+            "emoji": "✅",
+            "name": "Verklaringen en volmachten",
+            "body": "Wettelijke verklaringen, mandaten, beëdigde verklaringen — deze aktes vereisen geen fysieke notarisafspraak meer voor de identificatiestap. De burger presenteert zijn EguWallet PID.",
+            "legal": "Verord. (EU) 2024/1183 — eIDAS 2.0; Wet 455/2001"
+          },
+          {
+            "emoji": "🤝",
+            "name": "Bedrijfs- en handelscontracten met QES",
+            "body": "Dienstovereenkomsten, partnercontracten, aandeelhoudersresoluties — ondertekend met een Gekwalificeerde Elektronische Handtekening rechtstreeks vanuit EguWallet. Rechtskracht in alle 27 EU-lidstaten.",
+            "legal": "Wet 455/2001; eIDAS 2.0 Art. 25; Wet 31/1990"
+          }
         ]
       },
       {
@@ -152,9 +297,24 @@
         "title": "Gokken en zelfuitsluiting",
         "description": "Online en fysieke casino's, sportgokoperatoren en spelplatforms verifiëren de identiteit van spelers en controleren nationale zelfuitsluitingsregisters — om probleemgokken te voorkomen en naleving van regelgeving te garanderen.",
         "scenarios": [
-          { "emoji": "🎰", "name": "Speleridentiteitsverificatie (KYC)", "body": "Gokoperatoren verifiëren de spelersidentiteit bij registratie — naam, geboortedatum, nationaliteit — zoals vereist door AML- en goklicentieregelingen. Snel, digitaal, geen fotokopieën.", "legal": "Richtlijn (EU) 2015/849; goklicentieregelingen" },
-          { "emoji": "🚫", "name": "Controle van het zelfuitsluitingsregister", "body": "Voordat een speler mag inzetten, controleert de operator het nationale zelfuitsluitingsregister via EguWallet. Als de speler op de lijst staat, wordt toegang automatisch geblokkeerd.", "legal": "Verord. (EU) 2024/1183; nationale gokwetten" },
-          { "emoji": "🔞", "name": "Leeftijdsverificatie 18+ voor gokken", "body": "Online en fysieke speloperatoren verifiëren dat de speler 18 jaar of ouder is — met behulp van de EguWallet leeftijdsbevestiging. Alleen JA/NEE wordt verzonden — geen persoonsgegevens opgeslagen.", "legal": "OUG 77/2009; Richtlijn (EU) 2015/849" }
+          {
+            "emoji": "🎰",
+            "name": "Speleridentiteitsverificatie (KYC)",
+            "body": "Gokoperatoren verifiëren de spelersidentiteit bij registratie — naam, geboortedatum, nationaliteit — zoals vereist door AML- en goklicentieregelingen. Snel, digitaal, geen fotokopieën.",
+            "legal": "Richtlijn (EU) 2015/849; goklicentieregelingen"
+          },
+          {
+            "emoji": "🚫",
+            "name": "Controle van het zelfuitsluitingsregister",
+            "body": "Voordat een speler mag inzetten, controleert de operator het nationale zelfuitsluitingsregister via EguWallet. Als de speler op de lijst staat, wordt toegang automatisch geblokkeerd.",
+            "legal": "Verord. (EU) 2024/1183; nationale gokwetten"
+          },
+          {
+            "emoji": "🔞",
+            "name": "Leeftijdsverificatie 18+ voor gokken",
+            "body": "Online en fysieke speloperatoren verifiëren dat de speler 18 jaar of ouder is — met behulp van de EguWallet leeftijdsbevestiging. Alleen JA/NEE wordt verzonden — geen persoonsgegevens opgeslagen.",
+            "legal": "OUG 77/2009; Richtlijn (EU) 2015/849"
+          }
         ]
       }
     ]
@@ -181,12 +341,30 @@
     "auditTitle": "Privé gecontroleerd. Publiekelijk verantwoordelijk.",
     "auditBody": "EguWallet is gebouwd op open standaarden (ARF 2.5+, OpenID4VCI, OpenID4VP, SD-JWT, ISO 18013-5) en ondergaat formele certificering door een geaccrediteerd Conformiteitsbeoordelingsorgaan.",
     "badges": [
-      { "icon": "🛡️", "label": "AVG Art. 17 — Recht op verwijdering" },
-      { "icon": "📋", "label": "Volledige interactiegeschiedenis" },
-      { "icon": "⚖️", "label": "eIDAS 2.0 juridisch bindend" },
-      { "icon": "🔐", "label": "Zero-knowledge selectieve openbaarmaking" },
-      { "icon": "🔍", "label": "Privé gecontroleerd" },
-      { "icon": "🌍", "label": "Geldig in alle 27 EU-staten" }
+      {
+        "icon": "🛡️",
+        "label": "AVG Art. 17 — Recht op verwijdering"
+      },
+      {
+        "icon": "📋",
+        "label": "Volledige interactiegeschiedenis"
+      },
+      {
+        "icon": "⚖️",
+        "label": "eIDAS 2.0 juridisch bindend"
+      },
+      {
+        "icon": "🔐",
+        "label": "Zero-knowledge selectieve openbaarmaking"
+      },
+      {
+        "icon": "🔍",
+        "label": "Privé gecontroleerd"
+      },
+      {
+        "icon": "🌍",
+        "label": "Geldig in alle 27 EU-staten"
+      }
     ]
   },
   "usedToday": {
@@ -214,12 +392,36 @@
     "heading": "Wat is de volgende stap — de toekomst van digitale identiteit",
     "subheading": "EguWallet breidt voortdurend uit met nieuwe gebruiksscenario's die het leven gemakkelijker maken",
     "items": [
-      { "icon": "📡", "title": "Apparaat-naar-apparaat verificatie (Bluetooth)", "body": "Zoals contactloos NFC-betalen — een politieagent of handelaar houdt zijn telefoon bij de uwe en ontvangt onmiddellijk alleen de gegevens die u hebt geautoriseerd." },
-      { "icon": "🚔", "title": "Identiteitscontrole door wetshandhaving", "body": "Een wetshandhavingsfunctionaris verifieert identiteit via NFC/Bluetooth. U bepaalt welke gegevens worden verzonden. Snel, veilig, geen fotokopieën nodig." },
-      { "icon": "🍺", "title": "Leeftijdsverificatie 18+ (Binnenkort)", "body": "Aanstaande implementatie bij een grote Roemeense retailer voor leeftijdscontrole bij alcoholverkoop. De handelaar ontvangt alleen een JA/NEE-antwoord." },
-      { "icon": "🚌", "title": "Openbaar vervoer tickets en abonnementen", "body": "Studenten met recht op gratis reizen bewijzen hun status via EguWallet. Reguliere passagiers kopen en presenteren tickets digitaal." },
-      { "icon": "📍", "title": "Adres op de nieuwe Roemeense identiteitskaart", "body": "De nieuwe Roemeense identiteitskaart bevat geen adres meer op de chip. EguWallet lost dit op: uw geregistreerde adres kan selectief worden verstrekt wanneer nodig." },
-      { "icon": "✍️", "title": "Gekwalificeerde digitale handtekening", "body": "EguWallet zal functioneren als een Gekwalificeerde Elektronische Handtekening (QES) apparaat conform eIDAS 2.0. Onderteken documenten met volledige rechtskracht in alle EU-lidstaten." }
+      {
+        "icon": "📡",
+        "title": "Apparaat-naar-apparaat verificatie (Bluetooth)",
+        "body": "Zoals contactloos NFC-betalen — een politieagent of handelaar houdt zijn telefoon bij de uwe en ontvangt onmiddellijk alleen de gegevens die u hebt geautoriseerd."
+      },
+      {
+        "icon": "🚔",
+        "title": "Identiteitscontrole door wetshandhaving",
+        "body": "Een wetshandhavingsfunctionaris verifieert identiteit via NFC/Bluetooth. U bepaalt welke gegevens worden verzonden. Snel, veilig, geen fotokopieën nodig."
+      },
+      {
+        "icon": "🍺",
+        "title": "Leeftijdsverificatie 18+ (Binnenkort)",
+        "body": "Aanstaande implementatie bij een grote Roemeense retailer voor leeftijdscontrole bij alcoholverkoop. De handelaar ontvangt alleen een JA/NEE-antwoord."
+      },
+      {
+        "icon": "🚌",
+        "title": "Openbaar vervoer tickets en abonnementen",
+        "body": "Studenten met recht op gratis reizen bewijzen hun status via EguWallet. Reguliere passagiers kopen en presenteren tickets digitaal."
+      },
+      {
+        "icon": "📍",
+        "title": "Adres op de nieuwe Roemeense identiteitskaart",
+        "body": "De nieuwe Roemeense identiteitskaart bevat geen adres meer op de chip. EguWallet lost dit op: uw geregistreerde adres kan selectief worden verstrekt wanneer nodig."
+      },
+      {
+        "icon": "✍️",
+        "title": "Gekwalificeerde digitale handtekening",
+        "body": "EguWallet zal functioneren als een Gekwalificeerde Elektronische Handtekening (QES) apparaat conform eIDAS 2.0. Onderteken documenten met volledige rechtskracht in alle EU-lidstaten."
+      }
     ]
   },
   "howItWorks": {
@@ -234,15 +436,42 @@
   "faq": {
     "heading": "Veelgestelde vragen",
     "items": [
-      { "q": "Wat is EguWallet?", "a": "EguWallet is een Europese eIDAS 2.0 gecertificeerde digitale portemonnee ontwikkeld door IT Eguilde SRL. Hiermee kunt u digitale identiteitsdocumenten veilig op uw telefoon opslaan en presenteren." },
-      { "q": "Welke documenten kan ik opslaan in EguWallet?", "a": "Momenteel: identiteitskaart (PID), paspoort en rijbewijs. Binnenkort: kentekenbewijs, RCA-verzekering, ITP/RAR, bedrijfsdocumenten en eigendomsdocumenten." },
-      { "q": "Zijn mijn persoonlijke gegevens veilig?", "a": "Ja. EguWallet gebruikt SD-JWT en mDoc/ISO 18013-5 voor selectieve openbaarmaking — u verzendt alleen gegevens die u uitdrukkelijk goedkeurt." },
-      { "q": "Waar kan ik EguWallet gebruiken?", "a": "Vandaag: digitale diensten van Gemeenteraad Ilfov (ilfov.net) en Gemeentehuis Sector 2 (sector2.eu). Uitbreiding gaande." },
-      { "q": "Wat is eIDAS 2.0?", "a": "eIDAS 2.0 is Verordening (EU) 2024/1183. Het garandeert elke Europese burger het recht op een gratis digitale portemonnee, erkend in alle 27 lidstaten." },
-      { "q": "Hoe werkt selectieve openbaarmaking?", "a": "Wanneer een dienst identiteitsverificatie aanvraagt, toont uw portemonnee u precies welke gegevens worden opgevraagd. U keurt elk veld goed of weigert het." },
-      { "q": "Is EguWallet gratis?", "a": "Ja, gratis voor burgers tijdens de huidige pilotfase." },
-      { "q": "Is EguWallet volledig gecertificeerd?", "a": "EguWallet ondergaat momenteel formele eIDAS 2.0-certificering. Totdat de certificering is voltooid, functioneert het als een pilot EUDI Wallet." },
-      { "q": "Hoe activeer ik mijn digitale portemonnee?", "a": "Downloaden vanuit Google Play, uw telefoonnummer verifiëren, een PIN aanmaken, dan verbinden met uw gemeente- of stadsportaal." }
+      {
+        "q": "Wat is EguWallet?",
+        "a": "EguWallet is een Europese eIDAS 2.0 gecertificeerde digitale portemonnee ontwikkeld door IT Eguilde SRL. Hiermee kunt u digitale identiteitsdocumenten veilig op uw telefoon opslaan en presenteren."
+      },
+      {
+        "q": "Welke documenten kan ik opslaan in EguWallet?",
+        "a": "Momenteel: identiteitskaart (PID), paspoort en rijbewijs. Binnenkort: kentekenbewijs, RCA-verzekering, ITP/RAR, bedrijfsdocumenten en eigendomsdocumenten."
+      },
+      {
+        "q": "Zijn mijn persoonlijke gegevens veilig?",
+        "a": "Ja. EguWallet gebruikt SD-JWT en mDoc/ISO 18013-5 voor selectieve openbaarmaking — u verzendt alleen gegevens die u uitdrukkelijk goedkeurt."
+      },
+      {
+        "q": "Waar kan ik EguWallet gebruiken?",
+        "a": "Vandaag: digitale diensten van Gemeenteraad Ilfov (ilfov.net) en Gemeentehuis Sector 2 (sector2.eu). Uitbreiding gaande."
+      },
+      {
+        "q": "Wat is eIDAS 2.0?",
+        "a": "eIDAS 2.0 is Verordening (EU) 2024/1183. Het garandeert elke Europese burger het recht op een gratis digitale portemonnee, erkend in alle 27 lidstaten."
+      },
+      {
+        "q": "Hoe werkt selectieve openbaarmaking?",
+        "a": "Wanneer een dienst identiteitsverificatie aanvraagt, toont uw portemonnee u precies welke gegevens worden opgevraagd. U keurt elk veld goed of weigert het."
+      },
+      {
+        "q": "Is EguWallet gratis?",
+        "a": "Ja, gratis voor burgers tijdens de huidige pilotfase."
+      },
+      {
+        "q": "Is EguWallet volledig gecertificeerd?",
+        "a": "EguWallet ondergaat momenteel formele eIDAS 2.0-certificering. Totdat de certificering is voltooid, functioneert het als een pilot EUDI Wallet."
+      },
+      {
+        "q": "Hoe activeer ik mijn digitale portemonnee?",
+        "a": "Downloaden vanuit Google Play, uw telefoonnummer verifiëren, een PIN aanmaken, dan verbinden met uw gemeente- of stadsportaal."
+      }
     ]
   },
   "getDigitalId": {
@@ -269,17 +498,38 @@
     "description": "Vraag verwijdering aan van uw EguWallet-account en alle bijbehorende gegevens.",
     "intro": "EguWallet respecteert uw recht op gegevenswissing onder AVG Artikel 17.",
     "method1Title": "Methode 1: Verwijdering in de app",
-    "method1Steps": ["Open de EguWallet-app", "Ga naar Instellingen", "Tik op 'Portemonnee verwijderen'", "Bevestig de verwijdering"],
+    "method1Steps": [
+      "Open de EguWallet-app",
+      "Ga naar Instellingen",
+      "Tik op 'Portemonnee verwijderen'",
+      "Bevestig de verwijdering"
+    ],
     "method1Note": "Dit verwijdert onmiddellijk alle credentials, cryptografische sleutels en lokale gegevens van uw apparaat.",
     "method2Title": "Methode 2: Verzoek per e-mail",
     "method2Text": "Stuur een e-mail naar <a href='mailto:privacy@eguwallet.eu' class='t-primary underline'>privacy@eguwallet.eu</a> met als onderwerp 'Verzoek tot accountverwijdering'.",
     "whatDeleted": "Wat wordt verwijderd",
-    "deletedItems": ["Uw portemonnee-registratiegegevens", "Alle digitale credentials", "Cryptografische sleutels", "Apparaatinformatie", "Selfie- en documentscanafbeeldingen", "Verificatiecodes en sessiegegevens"],
+    "deletedItems": [
+      "Uw portemonnee-registratiegegevens",
+      "Alle digitale credentials",
+      "Cryptografische sleutels",
+      "Apparaatinformatie",
+      "Selfie- en documentscanafbeeldingen",
+      "Verificatiecodes en sessiegegevens"
+    ],
     "whatRetained": "Wat wordt bewaard",
-    "retainedItems": ["Verplichte eIDAS 2.0-auditlogs (geanonimiseerd) — 7 jaar bewaard"],
+    "retainedItems": [
+      "Verplichte eIDAS 2.0-auditlogs (geanonimiseerd) — 7 jaar bewaard"
+    ],
     "timeline": "Verwijderingstijdlijn",
     "timelineText": "Uw persoonlijke gegevens worden binnen 30 dagen definitief verwijderd.",
     "contact": "Vragen?",
     "contactText": "Voor vragen over gegevenswissing, neem contact met ons op via <a href='mailto:privacy@eguwallet.eu' class='t-primary underline'>privacy@eguwallet.eu</a>."
+  },
+  "contact": {
+    "sending": "Verzenden…",
+    "successMsg": "Bericht verzonden! We reageren binnen 2 werkdagen.",
+    "errorFields": "Vul alle verplichte velden in.",
+    "errorFail": "Bericht kon niet worden verzonden. Schrijf ons direct op contact@eguwallet.eu",
+    "submitBtn": "Bericht verzenden"
   }
 }

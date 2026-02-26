@@ -53,14 +53,54 @@
     "heading": "Dokumentumok a tárcájában",
     "subheading": "Minden fontos dokumentuma — digitális, ellenőrizhető, mindig kéznél",
     "items": [
-      { "icon": "🪪", "title": "Személyigazolvány (PID)", "body": "Az eIDAS 2.0-val megfelelő elsődleges digitális személyazonossági dokumentum. Mind a 27 EU-tagállamban elismert.", "status": "available" },
-      { "icon": "🛂", "title": "Útlevél", "body": "Útlevelének digitális változata, hatóságok és szolgáltatások által azonnal ellenőrizhető.", "status": "available" },
-      { "icon": "🚗", "title": "Jogosítvány", "body": "mDoc/ISO 18013-5 szabványnak megfelelő digitális jogosítvány. Érintés nélkül ellenőrizhető, beleértve a közlekedési rendőrség általi ellenőrzést is.", "status": "available" },
-      { "icon": "📋", "title": "Forgalmi engedély", "body": "Járművének forgalmi engedélye digitális formátumban. Többé nem kell papíros dokumentumokat cipelni.", "status": "soon" },
-      { "icon": "🛡️", "title": "Gépjárműbiztosítás (kötelező)", "body": "Kötelező gépjárműbiztosítási kötvény, valós időben ellenőrizhető.", "status": "soon" },
-      { "icon": "🔧", "title": "Műszaki vizsga / RAR", "body": "Időszakos műszaki vizsgálat (ITP) és RAR járműadatok — ellenőrizhető digitális tanúsítványok.", "status": "soon" },
-      { "icon": "🏢", "title": "Céges dokumentumok", "body": "Cégbejegyzési igazolás, meghatalmazások és vállalati dokumentumok. Írjon alá digitálisan a tárcájával.", "status": "soon" },
-      { "icon": "🏠", "title": "Ingatlandokumentumok", "body": "Ingatlan-nyilvántartási kivonatok és ingatlan-tulajdonjogi dokumentumok ellenőrizhető digitális formátumban.", "status": "soon" }
+      {
+        "icon": "🪪",
+        "title": "Személyigazolvány (PID)",
+        "body": "Az eIDAS 2.0-val megfelelő elsődleges digitális személyazonossági dokumentum. Mind a 27 EU-tagállamban elismert.",
+        "status": "available"
+      },
+      {
+        "icon": "🛂",
+        "title": "Útlevél",
+        "body": "Útlevelének digitális változata, hatóságok és szolgáltatások által azonnal ellenőrizhető.",
+        "status": "available"
+      },
+      {
+        "icon": "🚗",
+        "title": "Jogosítvány",
+        "body": "mDoc/ISO 18013-5 szabványnak megfelelő digitális jogosítvány. Érintés nélkül ellenőrizhető, beleértve a közlekedési rendőrség általi ellenőrzést is.",
+        "status": "available"
+      },
+      {
+        "icon": "📋",
+        "title": "Forgalmi engedély",
+        "body": "Járművének forgalmi engedélye digitális formátumban. Többé nem kell papíros dokumentumokat cipelni.",
+        "status": "soon"
+      },
+      {
+        "icon": "🛡️",
+        "title": "Gépjárműbiztosítás (kötelező)",
+        "body": "Kötelező gépjárműbiztosítási kötvény, valós időben ellenőrizhető.",
+        "status": "soon"
+      },
+      {
+        "icon": "🔧",
+        "title": "Műszaki vizsga / RAR",
+        "body": "Időszakos műszaki vizsgálat (ITP) és RAR járműadatok — ellenőrizhető digitális tanúsítványok.",
+        "status": "soon"
+      },
+      {
+        "icon": "🏢",
+        "title": "Céges dokumentumok",
+        "body": "Cégbejegyzési igazolás, meghatalmazások és vállalati dokumentumok. Írjon alá digitálisan a tárcájával.",
+        "status": "soon"
+      },
+      {
+        "icon": "🏠",
+        "title": "Ingatlandokumentumok",
+        "body": "Ingatlan-nyilvántartási kivonatok és ingatlan-tulajdonjogi dokumentumok ellenőrizhető digitális formátumban.",
+        "status": "soon"
+      }
     ],
     "statusAvailable": "Elérhető",
     "statusSoon": "Hamarosan"
@@ -75,9 +115,24 @@
         "title": "Bűnüldözés és közrend",
         "description": "Rendőrök, határőrök és közrendi felügyelők másodpercek alatt ellenőrzik a digitális személyazonosságot — teljes kriptográfiai megbízhatósággal, fizikai dokumentumok érintése nélkül.",
         "scenarios": [
-          { "emoji": "🪪", "name": "Személyazonosság-ellenőrzés járőrözés közben", "body": "Egy rendőrtiszt NFC vagy QR révén ellenőrzi egy polgár teljes személyazonosságát — nevét, CNP-jét, címét, fényképét. Papír nélkül. Az eredmény automatikusan rögzítve.", "legal": "Law 218/2002 — Art. 31" },
-          { "emoji": "🚗", "name": "Teljes közlekedési ellenőrzési csomag", "body": "Egy QR-beolvasás: a tiszt megkapja a személyigazolványt, a kategóriákkal ellátott jogosítványt, a forgalmi engedélyt, a kötelező biztosítást és a műszaki vizsgát — mindezt kriptográfiailag ellenőrizve.", "legal": "OUG 195/2002 — Art. 6, 80, 81" },
-          { "emoji": "🛂", "name": "Határellenőrzés", "body": "A határátkelőhelyeken a tisztek egyetlen biztonságos digitális bemutatással ellenőrzik a személyazonosságot, az állampolgárságot és az úti okmány érvényességét.", "legal": "Law 248/2005" }
+          {
+            "emoji": "🪪",
+            "name": "Személyazonosság-ellenőrzés járőrözés közben",
+            "body": "Egy rendőrtiszt NFC vagy QR révén ellenőrzi egy polgár teljes személyazonosságát — nevét, CNP-jét, címét, fényképét. Papír nélkül. Az eredmény automatikusan rögzítve.",
+            "legal": "Law 218/2002 — Art. 31"
+          },
+          {
+            "emoji": "🚗",
+            "name": "Teljes közlekedési ellenőrzési csomag",
+            "body": "Egy QR-beolvasás: a tiszt megkapja a személyigazolványt, a kategóriákkal ellátott jogosítványt, a forgalmi engedélyt, a kötelező biztosítást és a műszaki vizsgát — mindezt kriptográfiailag ellenőrizve.",
+            "legal": "OUG 195/2002 — Art. 6, 80, 81"
+          },
+          {
+            "emoji": "🛂",
+            "name": "Határellenőrzés",
+            "body": "A határátkelőhelyeken a tisztek egyetlen biztonságos digitális bemutatással ellenőrzik a személyazonosságot, az állampolgárságot és az úti okmány érvényességét.",
+            "legal": "Law 248/2005"
+          }
         ]
       },
       {
@@ -86,9 +141,24 @@
         "title": "Üzleti és kereskedelmi tranzakciók",
         "description": "Vállalatok, közjegyzők, ügyvédek és B2B platformok azonnal ellenőrzik a vállalati személyazonosságot és a jogi képviselő jogosultságát — elimináálva a papíros igazolásokat és a futárokat.",
         "scenarios": [
-          { "emoji": "🏛️", "name": "Cégvizsgálat (cégjegyzék)", "body": "Egy B2B platform vagy közbeszerzési portál ellenőrzi a cég nevét, adószámát, bejegyzett székhelyét és aktív státuszát — mindezt a Nemzeti Cégnyilvántartó által tanúsítva.", "legal": "Law 31/1990; Law 26/1990" },
-          { "emoji": "✍️", "name": "Jogi képviselő ellenőrzése", "body": "Egy partner vagy közjegyző ellenőrzi, hogy egy személy egy vállalat meghatalmazott képviselője-e — a személyazonosság, a vállalati igazolvány és a meghatalmazás egyidejűleg bemutatva.", "legal": "Law 31/1990 — Art. 75, 197" },
-          { "emoji": "📜", "name": "Szerződéskötés — teljesen automatizált folyamat", "body": "Egy QR: személyazonosság ellenőrizve, meghatalmazás megerősítve, szerződés aláírva Minősített Elektronikus Aláírással. Jogilag kötelező érvényű az egész EU-ban. 90 másodpercen belül.", "legal": "Reg. (EU) 2024/1183 — Art. 25; Law 455/2001" }
+          {
+            "emoji": "🏛️",
+            "name": "Cégvizsgálat (cégjegyzék)",
+            "body": "Egy B2B platform vagy közbeszerzési portál ellenőrzi a cég nevét, adószámát, bejegyzett székhelyét és aktív státuszát — mindezt a Nemzeti Cégnyilvántartó által tanúsítva.",
+            "legal": "Law 31/1990; Law 26/1990"
+          },
+          {
+            "emoji": "✍️",
+            "name": "Jogi képviselő ellenőrzése",
+            "body": "Egy partner vagy közjegyző ellenőrzi, hogy egy személy egy vállalat meghatalmazott képviselője-e — a személyazonosság, a vállalati igazolvány és a meghatalmazás egyidejűleg bemutatva.",
+            "legal": "Law 31/1990 — Art. 75, 197"
+          },
+          {
+            "emoji": "📜",
+            "name": "Szerződéskötés — teljesen automatizált folyamat",
+            "body": "Egy QR: személyazonosság ellenőrizve, meghatalmazás megerősítve, szerződés aláírva Minősített Elektronikus Aláírással. Jogilag kötelező érvényű az egész EU-ban. 90 másodpercen belül.",
+            "legal": "Reg. (EU) 2024/1183 — Art. 25; Law 455/2001"
+          }
         ]
       },
       {
@@ -97,10 +167,30 @@
         "title": "Oktatás — iskola és egyetem",
         "description": "Az 1. osztálytól a doktorátusig a diákok az iskolai vagy egyetemi igazolványukat az EguWallet-ban hordják. Iskolai belépéshez, vizsgákhoz, könyvtárhoz, menzához, kollégiumhoz és közlekedési kedvezményekhez használják.",
         "scenarios": [
-          { "emoji": "🏫", "name": "Tanulói igazolvány (1–12. osztály)", "body": "Egy tanuló odatartja a telefonját az iskola kapujánál, könyvtárban vagy menzán. A digitális igazolványt az iskola vagy a tanfelügyelőség állítja ki — a tanévre érvényes.", "legal": "Law 1/2011 — Art. 5" },
-          { "emoji": "📋", "name": "Diákigazolvány + személyigazolvány vizsgákon", "body": "Az érettségi, nemzeti vizsgák és olimpiák esetén: diákigazolvány és elektronikus személyigazolvány egyidejűleg bemutatva — 14 éves és idősebb diákok számára.", "legal": "Law 1/2011; OUG 97/2005 — Art. 14" },
-          { "emoji": "🎓", "name": "Egyetemi diákigazolvány", "body": "Kari belépés, kollégium, könyvtár, titkárság — a digitális igazolvány felváltja a fizikai kártyát. Ösztöndíjakhoz és vasúti utazási kedvezményekhez is működik.", "legal": "Law 1/2011 — Art. 118, 119" },
-          { "emoji": "🚌", "name": "Diák közlekedési bérlet", "body": "A tanulók és diákok a tárcájukat használva szállnak fel buszokra, metróra és vonatokra. Az ellenőrző vagy a sofőr azonnal látja a jogosultságot — fizikai bérlet nélkül.", "legal": "OUG 133/2000; HCL urban transport" }
+          {
+            "emoji": "🏫",
+            "name": "Tanulói igazolvány (1–12. osztály)",
+            "body": "Egy tanuló odatartja a telefonját az iskola kapujánál, könyvtárban vagy menzán. A digitális igazolványt az iskola vagy a tanfelügyelőség állítja ki — a tanévre érvényes.",
+            "legal": "Law 1/2011 — Art. 5"
+          },
+          {
+            "emoji": "📋",
+            "name": "Diákigazolvány + személyigazolvány vizsgákon",
+            "body": "Az érettségi, nemzeti vizsgák és olimpiák esetén: diákigazolvány és elektronikus személyigazolvány egyidejűleg bemutatva — 14 éves és idősebb diákok számára.",
+            "legal": "Law 1/2011; OUG 97/2005 — Art. 14"
+          },
+          {
+            "emoji": "🎓",
+            "name": "Egyetemi diákigazolvány",
+            "body": "Kari belépés, kollégium, könyvtár, titkárság — a digitális igazolvány felváltja a fizikai kártyát. Ösztöndíjakhoz és vasúti utazási kedvezményekhez is működik.",
+            "legal": "Law 1/2011 — Art. 118, 119"
+          },
+          {
+            "emoji": "🚌",
+            "name": "Diák közlekedési bérlet",
+            "body": "A tanulók és diákok a tárcájukat használva szállnak fel buszokra, metróra és vonatokra. Az ellenőrző vagy a sofőr azonnal látja a jogosultságot — fizikai bérlet nélkül.",
+            "legal": "OUG 133/2000; HCL urban transport"
+          }
         ]
       },
       {
@@ -109,8 +199,18 @@
         "title": "Kiskereskedelem és korhatár-ellenőrzés",
         "description": "A kereskedők másodpercek alatt ellenőrzik az életkort vagy a személyazonosságot az értékesítési pontnál — tárolt személyes adatok nélkül és teljes GDPR-megfeleléssel.",
         "scenarios": [
-          { "emoji": "🍺", "name": "18+ korhatár az értékesítési pontnál", "body": "A pénztáros QR-kódot mutat. Az ügyfél jóváhagyja a tárcájából: csak a «kor ≥ 18: IGEN» kerül továbbításra. Sem név, sem személyigazolvány-szám, sem fénykép.", "legal": "OUG 99/2000 — alkohol/dohány" },
-          { "emoji": "🏨", "name": "Szállodai bejelentkezés", "body": "A turista a tárcájából benyújtja a nevét, születési dátumát és állampolgárságát. Nem kell útlevelet fénymásolni. Megfelel a szálláshely-regisztrációs előírásoknak.", "legal": "HG 1215/2001" }
+          {
+            "emoji": "🍺",
+            "name": "18+ korhatár az értékesítési pontnál",
+            "body": "A pénztáros QR-kódot mutat. Az ügyfél jóváhagyja a tárcájából: csak a «kor ≥ 18: IGEN» kerül továbbításra. Sem név, sem személyigazolvány-szám, sem fénykép.",
+            "legal": "OUG 99/2000 — alkohol/dohány"
+          },
+          {
+            "emoji": "🏨",
+            "name": "Szállodai bejelentkezés",
+            "body": "A turista a tárcájából benyújtja a nevét, születési dátumát és állampolgárságát. Nem kell útlevelet fénymásolni. Megfelel a szálláshely-regisztrációs előírásoknak.",
+            "legal": "HG 1215/2001"
+          }
         ]
       },
       {
@@ -119,8 +219,18 @@
         "title": "Pénzügyi szolgáltatások és KYC",
         "description": "Bankok, biztosítók és fintech platformok digitálisan fogadnak be ügyfeleket — teljesítve az AML/KYC követelményeket papíros nyomtatványok nélkül.",
         "scenarios": [
-          { "emoji": "🏦", "name": "Bankszámlanyitás (KYC/AML)", "body": "Egy bank távolról ellenőrzi az ügyfél teljes személyazonosságát — nevét, CNP-jét, születési dátumát és helyét, állampolgárságát, címét — az EUDI tárca által tanúsítva. Megfelel a pénzmosás elleni törvénynek.", "legal": "Law 129/2019; Directive (EU) 2015/849" },
-          { "emoji": "💼", "name": "Biztosítások és pénzügyi termékek", "body": "A biztosítók szerződéskötéskor ellenőrzik a kötvénytulajdonos személyazonosságát — digitálisan, azonnal, teljes eIDAS 2.0 nyomonkövethetőséggel.", "legal": "Reg. (EU) 2024/1183" }
+          {
+            "emoji": "🏦",
+            "name": "Bankszámlanyitás (KYC/AML)",
+            "body": "Egy bank távolról ellenőrzi az ügyfél teljes személyazonosságát — nevét, CNP-jét, születési dátumát és helyét, állampolgárságát, címét — az EUDI tárca által tanúsítva. Megfelel a pénzmosás elleni törvénynek.",
+            "legal": "Law 129/2019; Directive (EU) 2015/849"
+          },
+          {
+            "emoji": "💼",
+            "name": "Biztosítások és pénzügyi termékek",
+            "body": "A biztosítók szerződéskötéskor ellenőrzik a kötvénytulajdonos személyazonosságát — digitálisan, azonnal, teljes eIDAS 2.0 nyomonkövethetőséggel.",
+            "legal": "Reg. (EU) 2024/1183"
+          }
         ]
       },
       {
@@ -129,9 +239,24 @@
         "title": "Egészségügy és szociális szolgáltatások",
         "description": "Kórházak, klinikák, gyógyszertárak és szociális szolgáltatások biztonságosan azonosítják a betegeket és kedvezményezetteket, manuális nyomtatványkitöltés nélkül.",
         "scenarios": [
-          { "emoji": "🏥", "name": "Betegazonosítás", "body": "Egy kórház vagy klinika az EguWallet segítségével azonosítja a beteget. Név, CNP, születési dátum azonnal ellenőrizve a recepción vagy a sürgősségin.", "legal": "Law 95/2006 — Art. 230-232" },
-          { "emoji": "🗳️", "name": "Szavazói ellenőrzés a választási bizottság által", "body": "A szavazóhelyiség személyzete ellenőrzi a szavazó személyazonosságát és a névjegyzékkel egyezteti — azonnal, teljes auditnaplóval. Manuális listaböngészés nélkül.", "legal": "Law 208/2015 — Art. 84" },
-          { "emoji": "📋", "name": "Felvétel és HR-ellenőrzés", "body": "A munkáltatók a szerződéskötéskor ellenőrzik az új alkalmazott személyazonosságát — nevét, CNP-jét, címét — a Munka törvénykönyve és a REVISAL-bejelentés követelményeinek megfelelően.", "legal": "Law 53/2003; HG 500/2011" }
+          {
+            "emoji": "🏥",
+            "name": "Betegazonosítás",
+            "body": "Egy kórház vagy klinika az EguWallet segítségével azonosítja a beteget. Név, CNP, születési dátum azonnal ellenőrizve a recepción vagy a sürgősségin.",
+            "legal": "Law 95/2006 — Art. 230-232"
+          },
+          {
+            "emoji": "🗳️",
+            "name": "Szavazói ellenőrzés a választási bizottság által",
+            "body": "A szavazóhelyiség személyzete ellenőrzi a szavazó személyazonosságát és a névjegyzékkel egyezteti — azonnal, teljes auditnaplóval. Manuális listaböngészés nélkül.",
+            "legal": "Law 208/2015 — Art. 84"
+          },
+          {
+            "emoji": "📋",
+            "name": "Felvétel és HR-ellenőrzés",
+            "body": "A munkáltatók a szerződéskötéskor ellenőrzik az új alkalmazott személyazonosságát — nevét, CNP-jét, címét — a Munka törvénykönyve és a REVISAL-bejelentés követelményeinek megfelelően.",
+            "legal": "Law 53/2003; HG 500/2011"
+          }
         ]
       },
       {
@@ -140,9 +265,24 @@
         "title": "Szerencsejáték és önkizárás",
         "description": "Online és fizikai kaszinók, sportfogadási operátorok és játékplatformok ellenőrzik a játékos személyazonosságát és ellenőrzik a nemzeti önkizárási nyilvántartásokat — megelőzve a problémás szerencsejátékot és biztosítva a szabályozási megfelelőséget.",
         "scenarios": [
-          { "emoji": "🎰", "name": "Játékos személyazonosság-ellenőrzés (KYC)", "body": "A szerencsejáték-operátorok regisztrációkor ellenőrzik a játékos személyazonosságát — nevét, születési dátumát, állampolgárságát — az AML és szerencsejáték-engedélyezési előírások szerint. Gyors, digitális, fénymásolat nélkül.", "legal": "Directive (EU) 2015/849; OUG 77/2009" },
-          { "emoji": "🚫", "name": "Önkizárási nyilvántartás ellenőrzése", "body": "Mielőtt engedélyezné a játékosnak a fogadást, az operátor az EguWallet-en keresztül ellenőrzi a nemzeti önkizárási nyilvántartást. Ha a játékos szerepel a listán, a hozzáférés automatikusan blokkolva van — manuális keresés nélkül.", "legal": "OUG 77/2009 — Art. 10; national gambling authority" },
-          { "emoji": "🔞", "name": "18+ korhatár-ellenőrzés játékhoz", "body": "Az online és fizikai játékoperátorok ellenőrzik, hogy a játékos 18 éves vagy idősebb-e — az EguWallet korhigazolást használva. Csak IGEN/NEM kerül továbbításra — az operátor nem tárol személyes adatokat.", "legal": "OUG 77/2009; Directive (EU) 2015/849" }
+          {
+            "emoji": "🎰",
+            "name": "Játékos személyazonosság-ellenőrzés (KYC)",
+            "body": "A szerencsejáték-operátorok regisztrációkor ellenőrzik a játékos személyazonosságát — nevét, születési dátumát, állampolgárságát — az AML és szerencsejáték-engedélyezési előírások szerint. Gyors, digitális, fénymásolat nélkül.",
+            "legal": "Directive (EU) 2015/849; OUG 77/2009"
+          },
+          {
+            "emoji": "🚫",
+            "name": "Önkizárási nyilvántartás ellenőrzése",
+            "body": "Mielőtt engedélyezné a játékosnak a fogadást, az operátor az EguWallet-en keresztül ellenőrzi a nemzeti önkizárási nyilvántartást. Ha a játékos szerepel a listán, a hozzáférés automatikusan blokkolva van — manuális keresés nélkül.",
+            "legal": "OUG 77/2009 — Art. 10; national gambling authority"
+          },
+          {
+            "emoji": "🔞",
+            "name": "18+ korhatár-ellenőrzés játékhoz",
+            "body": "Az online és fizikai játékoperátorok ellenőrzik, hogy a játékos 18 éves vagy idősebb-e — az EguWallet korhigazolást használva. Csak IGEN/NEM kerül továbbításra — az operátor nem tárol személyes adatokat.",
+            "legal": "OUG 77/2009; Directive (EU) 2015/849"
+          }
         ]
       },
       {
@@ -151,10 +291,30 @@
         "title": "Jogi és közjegyzői — a fizikai jelenlét már nem szükséges",
         "description": "Az (EU) 2024/1183 rendelet alapján az EUDI tárca jogi aktusok széles körénél fizikai jelenléttel egyenértékű, jogilag kötelező erejű azonosítást biztosít. Sok közjegyzői eljárás, amely korábban személyes megjelenést igényelt, most távolról elvégezhető.",
         "scenarios": [
-          { "emoji": "📝", "name": "Távoli közjegyzői azonosítás", "body": "A korábban személyes megjelenést igénylő aktusok esetén — meghatalmazás, nyilatkozatok, ingatlanátruházás — a közjegyző most távolról is azonosíthatja a felet az EUDI tárcán keresztül. A tárca ellenőrzött PID-je felváltja a személyes okmányvizsgálatot.", "legal": "Law 36/1995 — Art. 40; Reg. (EU) 2024/1183 — Art. 5a" },
-          { "emoji": "🏠", "name": "Ingatlantranzakciók várakozás nélkül", "body": "Ingatlan vétele vagy eladása már nem igényli a közjegyző irodájába való utazást pusztán az azonosítás miatt. Mindkét fél digitálisan azonosítja magát, a képviselő meghatalmazása ellenőrzésre kerül, és a szerződést MEA-val írják alá — mindezt távolról.", "legal": "Civil Code Art. 1244; eIDAS 2.0 Art. 25" },
-          { "emoji": "✅", "name": "Nyilatkozatok és meghatalmazások", "body": "Törvényes nyilatkozatok, meghatalmazások, eskü alatt tett vallomások — ezek az aktusok már nem igényelnek fizikai közjegyző-látogatást az azonosítási lépéshez. A polgár bemutatja EguWallet PID-jét; az azonosítás jogilag egyenértékű a személyes ellenőrzéssel.", "legal": "Reg. (EU) 2024/1183 — eIDAS 2.0; Law 455/2001" },
-          { "emoji": "🤝", "name": "Vállalati és kereskedelmi szerződések MEA-val", "body": "Szolgáltatási szerződések, partnerségi szerződések, részvényesi határozatok — közvetlenül az EguWallet-ből Minősített Elektronikus Aláírással aláírva. Jogi erő mind a 27 EU-tagállamban. Sem nyomtató, sem futár, sem időpontfoglalás.", "legal": "Law 455/2001; eIDAS 2.0 Art. 25; Law 31/1990" }
+          {
+            "emoji": "📝",
+            "name": "Távoli közjegyzői azonosítás",
+            "body": "A korábban személyes megjelenést igénylő aktusok esetén — meghatalmazás, nyilatkozatok, ingatlanátruházás — a közjegyző most távolról is azonosíthatja a felet az EUDI tárcán keresztül. A tárca ellenőrzött PID-je felváltja a személyes okmányvizsgálatot.",
+            "legal": "Law 36/1995 — Art. 40; Reg. (EU) 2024/1183 — Art. 5a"
+          },
+          {
+            "emoji": "🏠",
+            "name": "Ingatlantranzakciók várakozás nélkül",
+            "body": "Ingatlan vétele vagy eladása már nem igényli a közjegyző irodájába való utazást pusztán az azonosítás miatt. Mindkét fél digitálisan azonosítja magát, a képviselő meghatalmazása ellenőrzésre kerül, és a szerződést MEA-val írják alá — mindezt távolról.",
+            "legal": "Civil Code Art. 1244; eIDAS 2.0 Art. 25"
+          },
+          {
+            "emoji": "✅",
+            "name": "Nyilatkozatok és meghatalmazások",
+            "body": "Törvényes nyilatkozatok, meghatalmazások, eskü alatt tett vallomások — ezek az aktusok már nem igényelnek fizikai közjegyző-látogatást az azonosítási lépéshez. A polgár bemutatja EguWallet PID-jét; az azonosítás jogilag egyenértékű a személyes ellenőrzéssel.",
+            "legal": "Reg. (EU) 2024/1183 — eIDAS 2.0; Law 455/2001"
+          },
+          {
+            "emoji": "🤝",
+            "name": "Vállalati és kereskedelmi szerződések MEA-val",
+            "body": "Szolgáltatási szerződések, partnerségi szerződések, részvényesi határozatok — közvetlenül az EguWallet-ből Minősített Elektronikus Aláírással aláírva. Jogi erő mind a 27 EU-tagállamban. Sem nyomtató, sem futár, sem időpontfoglalás.",
+            "legal": "Law 455/2001; eIDAS 2.0 Art. 25; Law 31/1990"
+          }
         ]
       }
     ]
@@ -181,12 +341,30 @@
     "auditTitle": "Magánúton auditált. Nyilvánosan elszámoltatható.",
     "auditBody": "Az EguWallet nyílt szabványokra épül (ARF 2.5+, OpenID4VCI, OpenID4VP, SD-JWT, ISO 18013-5), és akkreditált Megfelelőségértékelő Szervezet által végzett formális tanúsítás folyamatban van. Technikai architektúránk nyitott a független biztonsági auditok előtt. Megfelelünk az eIDAS 2.0-nak a hatóságok számára, miközben rugalmasak maradunk a kiskereskedelem, az egészségügy, a pénzügy és a jogi szolgáltatások magánszektor-integrációihoz.",
     "badges": [
-      { "icon": "🛡️", "label": "GDPR 17. cikk — törléshez való jog" },
-      { "icon": "📋", "label": "Teljes interakcióelőzmény" },
-      { "icon": "⚖️", "label": "eIDAS 2.0 jogilag kötelező" },
-      { "icon": "🔐", "label": "Nullaismereti szelektív közzététel" },
-      { "icon": "🔍", "label": "Magánúton auditált" },
-      { "icon": "🌍", "label": "Érvényes mind a 27 EU-tagállamban" }
+      {
+        "icon": "🛡️",
+        "label": "GDPR 17. cikk — törléshez való jog"
+      },
+      {
+        "icon": "📋",
+        "label": "Teljes interakcióelőzmény"
+      },
+      {
+        "icon": "⚖️",
+        "label": "eIDAS 2.0 jogilag kötelező"
+      },
+      {
+        "icon": "🔐",
+        "label": "Nullaismereti szelektív közzététel"
+      },
+      {
+        "icon": "🔍",
+        "label": "Magánúton auditált"
+      },
+      {
+        "icon": "🌍",
+        "label": "Érvényes mind a 27 EU-tagállamban"
+      }
     ]
   },
   "usedToday": {
@@ -214,12 +392,36 @@
     "heading": "Mi következik — a digitális személyazonosság jövője",
     "subheading": "Az EguWallet folyamatosan bővül új felhasználási esetekkel, amelyek megkönnyítik az életet",
     "items": [
-      { "icon": "📡", "title": "Eszközök közötti ellenőrzés (Bluetooth)", "body": "Mint egy NFC érintés nélküli fizetés — egy rendőrtiszt vagy kereskedő közel viszi a telefonját az Önéhez, és azonnal csak az Ön által engedélyezett adatokat kapja meg. Nincs internet, nincs közbenső szerver." },
-      { "icon": "🚔", "title": "Bűnüldöző hatóság személyazonosság-ellenőrzése", "body": "Hasonlóan a modern érintés nélküli fizetéshez: egy bűnüldöző tiszt NFC/Bluetooth-on ellenőrzi a személyazonosságot. Ön irányítja, hogy milyen adatok kerülnek továbbításra. Gyors, biztonságos, fénymásolat nélkül." },
-      { "icon": "🍺", "title": "18+ korhatár-ellenőrzés (hamarosan)", "body": "Hamarosan bevezetésre kerül egy nagy kiskereskedőnél az alkohol értékesítésének korhatár-ellenőrzésére. A kereskedő csak IGEN/NEM választ kap — semmilyen más személyes adat nem kerül közzétételre." },
-      { "icon": "🚌", "title": "Tömegközlekedési jegyek és bérletek", "body": "Az ingyenes utazásra jogosult diákok az EguWallet segítségével igazolják jogosultságukat. A rendszeres utasok digitálisan vásárolnak és mutatnak be jegyeket — sem papír, sem érintéses ellenőrzők." },
-      { "icon": "📍", "title": "Lakcímigazolás", "body": "Bejegyzett lakcíme, amelyet a hivatalos nyilvántartás tanúsít, szükség esetén szelektíven közzétehető." },
-      { "icon": "✍️", "title": "Minősített digitális aláírás", "body": "Az EguWallet eIDAS 2.0-val megfelelő Minősített Elektronikus Aláírás (MEA) eszközként fog működni. Írjon alá dokumentumokat teljes jogi erővel, amelyet mind a 27 EU-tagállamban elismernek — közvetlenül a telefonjáról." }
+      {
+        "icon": "📡",
+        "title": "Eszközök közötti ellenőrzés (Bluetooth)",
+        "body": "Mint egy NFC érintés nélküli fizetés — egy rendőrtiszt vagy kereskedő közel viszi a telefonját az Önéhez, és azonnal csak az Ön által engedélyezett adatokat kapja meg. Nincs internet, nincs közbenső szerver."
+      },
+      {
+        "icon": "🚔",
+        "title": "Bűnüldöző hatóság személyazonosság-ellenőrzése",
+        "body": "Hasonlóan a modern érintés nélküli fizetéshez: egy bűnüldöző tiszt NFC/Bluetooth-on ellenőrzi a személyazonosságot. Ön irányítja, hogy milyen adatok kerülnek továbbításra. Gyors, biztonságos, fénymásolat nélkül."
+      },
+      {
+        "icon": "🍺",
+        "title": "18+ korhatár-ellenőrzés (hamarosan)",
+        "body": "Hamarosan bevezetésre kerül egy nagy kiskereskedőnél az alkohol értékesítésének korhatár-ellenőrzésére. A kereskedő csak IGEN/NEM választ kap — semmilyen más személyes adat nem kerül közzétételre."
+      },
+      {
+        "icon": "🚌",
+        "title": "Tömegközlekedési jegyek és bérletek",
+        "body": "Az ingyenes utazásra jogosult diákok az EguWallet segítségével igazolják jogosultságukat. A rendszeres utasok digitálisan vásárolnak és mutatnak be jegyeket — sem papír, sem érintéses ellenőrzők."
+      },
+      {
+        "icon": "📍",
+        "title": "Lakcímigazolás",
+        "body": "Bejegyzett lakcíme, amelyet a hivatalos nyilvántartás tanúsít, szükség esetén szelektíven közzétehető."
+      },
+      {
+        "icon": "✍️",
+        "title": "Minősített digitális aláírás",
+        "body": "Az EguWallet eIDAS 2.0-val megfelelő Minősített Elektronikus Aláírás (MEA) eszközként fog működni. Írjon alá dokumentumokat teljes jogi erővel, amelyet mind a 27 EU-tagállamban elismernek — közvetlenül a telefonjáról."
+      }
     ]
   },
   "howItWorks": {
@@ -234,15 +436,42 @@
   "faq": {
     "heading": "Gyakran ismételt kérdések",
     "items": [
-      { "q": "Mi az EguWallet?", "a": "Az EguWallet az IT Eguilde SRL által fejlesztett európai eIDAS 2.0 tanúsítvánnyal rendelkező digitális tárca. Lehetővé teszi, hogy biztonságosan tárolja és bemutassa a digitális személyazonossági dokumentumokat (személyigazolvány, útlevél, jogosítvány stb.) a telefonján, teljes irányítással személyes adatai felett." },
-      { "q": "Milyen dokumentumokat tárolhatok az EguWallet-ben?", "a": "Jelenleg: személyigazolvány (PID), útlevél és jogosítvány. Hamarosan: forgalmi engedély, kötelező biztosítás, ITP/RAR, céges dokumentumok és ingatlandokumentumok." },
-      { "q": "Biztonságban vannak-e személyes adataim?", "a": "Igen. Az EguWallet SD-JWT és mDoc/ISO 18013-5 technológiát használ a szelektív közzétételhez — csak az Ön által kifejezetten jóváhagyott adatokat továbbítja. Semmilyen bemutatás nem tárolódik. Jogalap: GDPR 5. cikk (1) bek. c) pont és (EU) 2024/1183 rendelet." },
-      { "q": "Hol használhatom az EguWallet-et?", "a": "Ma: Ilfov megye digitális szolgáltatásai (ilfov.net) és a Szektor 2 Polgármesteri Hivatal (sector2.eu). A romániai és uniós más közintézményekre és magán kiskereskedőkre való kiterjesztés folyamatban van." },
-      { "q": "Mi az eIDAS 2.0?", "a": "Az eIDAS 2.0 az (EU) 2024/1183 rendelet, amely módosítja az eredeti eIDAS rendeletet. Garantálja minden EU-polgárnak a jogot egy ingyenes digitális tárcához (EUDI tárca), amelyet mind a 27 tagállamban elismernek." },
-      { "q": "Hogyan működik a szelektív közzététel?", "a": "Amikor egy szolgáltatás személyazonosság-ellenőrzést kér, a tárcája pontosan megmutatja, hogy milyen adatokat kérnek. Ön jóváhagyja vagy elutasítja az egyes mezőket. Például a 18+ korhatár-ellenőrzésnél a kereskedő csak IGEN/NEM-et kap — soha nem látja nevét, személyigazolvány-számát vagy címét." },
-      { "q": "Ingyenes az EguWallet?", "a": "Igen, ingyenes a polgárok számára a jelenlegi pilot fázisban. Az EguWallet formális eIDAS 2.0 tanúsítás alatt áll — a tanúsítást követően az intézményi integrációkra díjszabás vonatkozhat, de a polgároknak szóló tárcaalkalmazás ingyenes marad." },
-      { "q": "Az EguWallet teljesen tanúsított?", "a": "Az EguWallet jelenleg akkreditált Megfelelőségértékelő Szervezet (CAB) általi formális eIDAS 2.0 tanúsítás alatt áll. A tanúsítás befejezéséig pilot EUDI tárcaként működik. Minden technikai szabvány (ARF 2.5+, OpenID4VCI, OpenID4VP, SD-JWT, ISO 18013-5) már megvalósított." },
-      { "q": "Hogyan aktiválhatom a digitális tárcámat?", "a": "Töltse le az alkalmazást a Google Play-ről, ellenőrizze telefonszámát, hozzon létre PIN-t, majd csatlakozzon a megye vagy város portáljához dokumentumai regisztrálásához. A folyamat kb. 5 percet vesz igénybe." }
+      {
+        "q": "Mi az EguWallet?",
+        "a": "Az EguWallet az IT Eguilde SRL által fejlesztett európai eIDAS 2.0 tanúsítvánnyal rendelkező digitális tárca. Lehetővé teszi, hogy biztonságosan tárolja és bemutassa a digitális személyazonossági dokumentumokat (személyigazolvány, útlevél, jogosítvány stb.) a telefonján, teljes irányítással személyes adatai felett."
+      },
+      {
+        "q": "Milyen dokumentumokat tárolhatok az EguWallet-ben?",
+        "a": "Jelenleg: személyigazolvány (PID), útlevél és jogosítvány. Hamarosan: forgalmi engedély, kötelező biztosítás, ITP/RAR, céges dokumentumok és ingatlandokumentumok."
+      },
+      {
+        "q": "Biztonságban vannak-e személyes adataim?",
+        "a": "Igen. Az EguWallet SD-JWT és mDoc/ISO 18013-5 technológiát használ a szelektív közzétételhez — csak az Ön által kifejezetten jóváhagyott adatokat továbbítja. Semmilyen bemutatás nem tárolódik. Jogalap: GDPR 5. cikk (1) bek. c) pont és (EU) 2024/1183 rendelet."
+      },
+      {
+        "q": "Hol használhatom az EguWallet-et?",
+        "a": "Ma: Ilfov megye digitális szolgáltatásai (ilfov.net) és a Szektor 2 Polgármesteri Hivatal (sector2.eu). A romániai és uniós más közintézményekre és magán kiskereskedőkre való kiterjesztés folyamatban van."
+      },
+      {
+        "q": "Mi az eIDAS 2.0?",
+        "a": "Az eIDAS 2.0 az (EU) 2024/1183 rendelet, amely módosítja az eredeti eIDAS rendeletet. Garantálja minden EU-polgárnak a jogot egy ingyenes digitális tárcához (EUDI tárca), amelyet mind a 27 tagállamban elismernek."
+      },
+      {
+        "q": "Hogyan működik a szelektív közzététel?",
+        "a": "Amikor egy szolgáltatás személyazonosság-ellenőrzést kér, a tárcája pontosan megmutatja, hogy milyen adatokat kérnek. Ön jóváhagyja vagy elutasítja az egyes mezőket. Például a 18+ korhatár-ellenőrzésnél a kereskedő csak IGEN/NEM-et kap — soha nem látja nevét, személyigazolvány-számát vagy címét."
+      },
+      {
+        "q": "Ingyenes az EguWallet?",
+        "a": "Igen, ingyenes a polgárok számára a jelenlegi pilot fázisban. Az EguWallet formális eIDAS 2.0 tanúsítás alatt áll — a tanúsítást követően az intézményi integrációkra díjszabás vonatkozhat, de a polgároknak szóló tárcaalkalmazás ingyenes marad."
+      },
+      {
+        "q": "Az EguWallet teljesen tanúsított?",
+        "a": "Az EguWallet jelenleg akkreditált Megfelelőségértékelő Szervezet (CAB) általi formális eIDAS 2.0 tanúsítás alatt áll. A tanúsítás befejezéséig pilot EUDI tárcaként működik. Minden technikai szabvány (ARF 2.5+, OpenID4VCI, OpenID4VP, SD-JWT, ISO 18013-5) már megvalósított."
+      },
+      {
+        "q": "Hogyan aktiválhatom a digitális tárcámat?",
+        "a": "Töltse le az alkalmazást a Google Play-ről, ellenőrizze telefonszámát, hozzon létre PIN-t, majd csatlakozzon a megye vagy város portáljához dokumentumai regisztrálásához. A folyamat kb. 5 percet vesz igénybe."
+      }
     ]
   },
   "getDigitalId": {
@@ -295,5 +524,12 @@
     "timelineText": "A törlési kérelem kézhezvételét követően személyes adatai 30 napon belül véglegesen törlésre kerülnek szervereinkről. A helyi eszközadatok azonnal törlődnek az alkalmazáson belüli törlés használatakor.",
     "contact": "Kérdései vannak?",
     "contactText": "Az adattörlésre vagy adatvédelmi jogaira vonatkozó kérdésekkel keressen minket a <a href='mailto:privacy@eguwallet.eu' class='t-primary underline'>privacy@eguwallet.eu</a> címen."
+  },
+  "contact": {
+    "sending": "Küldés…",
+    "successMsg": "Üzenet elküldve! 2 munkanapon belül válaszolunk.",
+    "errorFields": "Kérjük, töltse ki az összes kötelező mezőt.",
+    "errorFail": "Az üzenetet nem sikerült elküldeni. Írjon nekünk közvetlenül a contact@eguwallet.eu",
+    "submitBtn": "Üzenet küldése"
   }
 }

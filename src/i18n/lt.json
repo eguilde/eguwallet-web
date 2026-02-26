@@ -53,14 +53,54 @@
     "heading": "Dokumentai jūsų piniginėje",
     "subheading": "Visi svarbūs jūsų dokumentai — skaitmeniniai, patikrinami, visada po ranka",
     "items": [
-      { "icon": "🪪", "title": "Asmens tapatybės kortelė (PID)", "body": "Pagrindinis skaitmeninis tapatybės dokumentas, atitinkantis eIDAS 2.0.", "status": "available" },
-      { "icon": "🛂", "title": "Pasas", "body": "Skaitmeninė jūsų paso versija, nedelsiant patikrinama.", "status": "available" },
-      { "icon": "🚗", "title": "Vairuotojo pažymėjimas", "body": "Skaitmeninis vairuotojo pažymėjimas, atitinkantis mDoc/ISO 18013-5.", "status": "available" },
-      { "icon": "📋", "title": "Transporto priemonės registracija", "body": "Jūsų transporto priemonės registracijos dokumentas skaitmeniniu formatu.", "status": "soon" },
-      { "icon": "🛡️", "title": "Transporto priemonės draudimas (RCA)", "body": "Privalomasis transporto priemonės draudimas, tikrinamas realiuoju laiku.", "status": "soon" },
-      { "icon": "🔧", "title": "Techninis patikrinimas", "body": "Periodinio techninio patikrinimo pažymėjimai.", "status": "soon" },
-      { "icon": "🏢", "title": "Įmonės dokumentai", "body": "Įmonės registracija ir korporatyviniai dokumentai.", "status": "soon" },
-      { "icon": "🏠", "title": "Nekilnojamojo turto dokumentai", "body": "Žemės registro išrašai ir nuosavybės dokumentai.", "status": "soon" }
+      {
+        "icon": "🪪",
+        "title": "Asmens tapatybės kortelė (PID)",
+        "body": "Pagrindinis skaitmeninis tapatybės dokumentas, atitinkantis eIDAS 2.0.",
+        "status": "available"
+      },
+      {
+        "icon": "🛂",
+        "title": "Pasas",
+        "body": "Skaitmeninė jūsų paso versija, nedelsiant patikrinama.",
+        "status": "available"
+      },
+      {
+        "icon": "🚗",
+        "title": "Vairuotojo pažymėjimas",
+        "body": "Skaitmeninis vairuotojo pažymėjimas, atitinkantis mDoc/ISO 18013-5.",
+        "status": "available"
+      },
+      {
+        "icon": "📋",
+        "title": "Transporto priemonės registracija",
+        "body": "Jūsų transporto priemonės registracijos dokumentas skaitmeniniu formatu.",
+        "status": "soon"
+      },
+      {
+        "icon": "🛡️",
+        "title": "Transporto priemonės draudimas (RCA)",
+        "body": "Privalomasis transporto priemonės draudimas, tikrinamas realiuoju laiku.",
+        "status": "soon"
+      },
+      {
+        "icon": "🔧",
+        "title": "Techninis patikrinimas",
+        "body": "Periodinio techninio patikrinimo pažymėjimai.",
+        "status": "soon"
+      },
+      {
+        "icon": "🏢",
+        "title": "Įmonės dokumentai",
+        "body": "Įmonės registracija ir korporatyviniai dokumentai.",
+        "status": "soon"
+      },
+      {
+        "icon": "🏠",
+        "title": "Nekilnojamojo turto dokumentai",
+        "body": "Žemės registro išrašai ir nuosavybės dokumentai.",
+        "status": "soon"
+      }
     ],
     "statusAvailable": "Prieinama",
     "statusSoon": "Greitai"
@@ -75,9 +115,24 @@
         "title": "Teisėsaugos institucijos ir viešoji tvarka",
         "description": "Policijos pareigūnai ir pasienio apsaugos darbuotojai per kelias sekundes patikrina skaitmeninę tapatybę.",
         "scenarios": [
-          { "emoji": "🪪", "name": "Tapatybės patikrinimas patruliaujant", "body": "Policijos pareigūnas patikrina visą piliečio tapatybę per NFC arba QR.", "legal": "Įstatymas 218/2002 — str. 31" },
-          { "emoji": "🚗", "name": "Pilnas paketas eismo patikrinimo metu", "body": "Vienas QR nuskaitymas: pareigūnas gauna tapatybės kortelę, vairuotojo pažymėjimą, registraciją, draudimą ir techninį patikrinimą.", "legal": "OUG 195/2002 — str. 6, 80, 81" },
-          { "emoji": "🛂", "name": "Pasienio kontrolė", "body": "Pareigūnai skaitmeniškai patikrina tapatybę ir kelionės dokumentų galiojimą.", "legal": "Įstatymas 248/2005" }
+          {
+            "emoji": "🪪",
+            "name": "Tapatybės patikrinimas patruliaujant",
+            "body": "Policijos pareigūnas patikrina visą piliečio tapatybę per NFC arba QR.",
+            "legal": "Įstatymas 218/2002 — str. 31"
+          },
+          {
+            "emoji": "🚗",
+            "name": "Pilnas paketas eismo patikrinimo metu",
+            "body": "Vienas QR nuskaitymas: pareigūnas gauna tapatybės kortelę, vairuotojo pažymėjimą, registraciją, draudimą ir techninį patikrinimą.",
+            "legal": "OUG 195/2002 — str. 6, 80, 81"
+          },
+          {
+            "emoji": "🛂",
+            "name": "Pasienio kontrolė",
+            "body": "Pareigūnai skaitmeniškai patikrina tapatybę ir kelionės dokumentų galiojimą.",
+            "legal": "Įstatymas 248/2005"
+          }
         ]
       },
       {
@@ -86,9 +141,24 @@
         "title": "Verslas ir komerciniai sandoriai",
         "description": "Įmonės ir notarai akimirksniu patikrina tapatybę ir įgaliojimus.",
         "scenarios": [
-          { "emoji": "🏛️", "name": "Įmonės patikrinimas", "body": "B2B platforma patikrina įmonės pavadinimą, registraciją ir veiklos statusą.", "legal": "Įstatymas 31/1990; Įstatymas 26/1990" },
-          { "emoji": "✍️", "name": "Teisėto atstovo patikrinimas", "body": "Notaras patikrina įgaliotojo atstovo statusą.", "legal": "Įstatymas 31/1990 — str. 75, 197" },
-          { "emoji": "📜", "name": "Sutarties pasirašymas su QES", "body": "Tapatybė patikrinta, sutartis pasirašyta kvalifikuotu elektroniniu parašu. Per 90 sekundžių.", "legal": "Regl. (ES) 2024/1183 — str. 25; Įstatymas 455/2001" }
+          {
+            "emoji": "🏛️",
+            "name": "Įmonės patikrinimas",
+            "body": "B2B platforma patikrina įmonės pavadinimą, registraciją ir veiklos statusą.",
+            "legal": "Įstatymas 31/1990; Įstatymas 26/1990"
+          },
+          {
+            "emoji": "✍️",
+            "name": "Teisėto atstovo patikrinimas",
+            "body": "Notaras patikrina įgaliotojo atstovo statusą.",
+            "legal": "Įstatymas 31/1990 — str. 75, 197"
+          },
+          {
+            "emoji": "📜",
+            "name": "Sutarties pasirašymas su QES",
+            "body": "Tapatybė patikrinta, sutartis pasirašyta kvalifikuotu elektroniniu parašu. Per 90 sekundžių.",
+            "legal": "Regl. (ES) 2024/1183 — str. 25; Įstatymas 455/2001"
+          }
         ]
       },
       {
@@ -97,10 +167,30 @@
         "title": "Švietimas — mokykla ir universitetas",
         "description": "Mokiniai nešiojasi savo mokyklinę ar studentų kortelę EguWallet.",
         "scenarios": [
-          { "emoji": "🏫", "name": "Mokyklinio mokinio kortelė", "body": "Mokinys prisideda telefoną prie mokyklos vartų, bibliotekos ar valgyklos.", "legal": "Įstatymas 1/2011 — str. 5" },
-          { "emoji": "📋", "name": "Studentų kortelė + tapatybė egzaminuose", "body": "Skaitmeninė studentų kortelė ir elektroninė tapatybės kortelė pateikiama egzaminų metu.", "legal": "Įstatymas 1/2011; OUG 97/2005 — str. 14" },
-          { "emoji": "🎓", "name": "Universiteto studentų kortelė", "body": "Skaitmeninė studentų kortelė pakeičia fizinę kortelę.", "legal": "Įstatymas 1/2011 — str. 118, 119" },
-          { "emoji": "🚌", "name": "Studentų transporto bilietas", "body": "Studentai sėda į autobusus ir traukinius naudodamiesi piniginę.", "legal": "OUG 133/2000" }
+          {
+            "emoji": "🏫",
+            "name": "Mokyklinio mokinio kortelė",
+            "body": "Mokinys prisideda telefoną prie mokyklos vartų, bibliotekos ar valgyklos.",
+            "legal": "Įstatymas 1/2011 — str. 5"
+          },
+          {
+            "emoji": "📋",
+            "name": "Studentų kortelė + tapatybė egzaminuose",
+            "body": "Skaitmeninė studentų kortelė ir elektroninė tapatybės kortelė pateikiama egzaminų metu.",
+            "legal": "Įstatymas 1/2011; OUG 97/2005 — str. 14"
+          },
+          {
+            "emoji": "🎓",
+            "name": "Universiteto studentų kortelė",
+            "body": "Skaitmeninė studentų kortelė pakeičia fizinę kortelę.",
+            "legal": "Įstatymas 1/2011 — str. 118, 119"
+          },
+          {
+            "emoji": "🚌",
+            "name": "Studentų transporto bilietas",
+            "body": "Studentai sėda į autobusus ir traukinius naudodamiesi piniginę.",
+            "legal": "OUG 133/2000"
+          }
         ]
       },
       {
@@ -109,8 +199,18 @@
         "title": "Mažmeninė prekyba ir amžiaus patikrinimas",
         "description": "Pardavėjai tikrina amžių nesaugodami asmens duomenų.",
         "scenarios": [
-          { "emoji": "🍺", "name": "Amžius 18+ pardavimo vietoje", "body": "Perduodama tik «amžius ≥ 18: TAIP». Be vardo, be asmens kodo.", "legal": "OUG 99/2000" },
-          { "emoji": "🏨", "name": "Registracija viešbutyje", "body": "Turistas registruojasi pateikdamas vardą, gimimo datą ir pilietybę.", "legal": "HG 1215/2001" }
+          {
+            "emoji": "🍺",
+            "name": "Amžius 18+ pardavimo vietoje",
+            "body": "Perduodama tik «amžius ≥ 18: TAIP». Be vardo, be asmens kodo.",
+            "legal": "OUG 99/2000"
+          },
+          {
+            "emoji": "🏨",
+            "name": "Registracija viešbutyje",
+            "body": "Turistas registruojasi pateikdamas vardą, gimimo datą ir pilietybę.",
+            "legal": "HG 1215/2001"
+          }
         ]
       },
       {
@@ -119,8 +219,18 @@
         "title": "Finansinės paslaugos ir KYC",
         "description": "Bankai ir fintech platformos priima klientus laikydamiesi AML/KYC reikalavimų.",
         "scenarios": [
-          { "emoji": "🏦", "name": "Banko sąskaitos atidarymas (KYC/AML)", "body": "Bankas nuotoliniu būdu patikrina kliento tapatybę — sertifikuota EUDI piniginės.", "legal": "Įstatymas 129/2019; Direktyva (ES) 2015/849" },
-          { "emoji": "💼", "name": "Draudimas ir finansiniai produktai", "body": "Draudimo bendrovės skaitmeniškai patikrina draudėjo tapatybę.", "legal": "Regl. (ES) 2024/1183" }
+          {
+            "emoji": "🏦",
+            "name": "Banko sąskaitos atidarymas (KYC/AML)",
+            "body": "Bankas nuotoliniu būdu patikrina kliento tapatybę — sertifikuota EUDI piniginės.",
+            "legal": "Įstatymas 129/2019; Direktyva (ES) 2015/849"
+          },
+          {
+            "emoji": "💼",
+            "name": "Draudimas ir finansiniai produktai",
+            "body": "Draudimo bendrovės skaitmeniškai patikrina draudėjo tapatybę.",
+            "legal": "Regl. (ES) 2024/1183"
+          }
         ]
       },
       {
@@ -129,9 +239,24 @@
         "title": "Sveikatos priežiūra ir socialinės paslaugos",
         "description": "Ligoninės ir klinikos saugiai identifikuoja pacientus.",
         "scenarios": [
-          { "emoji": "🏥", "name": "Paciento identifikavimas", "body": "Ligoninė akimirksniu identifikuoja pacientą naudodama EguWallet.", "legal": "Įstatymas 95/2006 — str. 230-232" },
-          { "emoji": "🗳️", "name": "Rinkimų komisijos rinkėjo patikrinimas", "body": "Balsavimo skyriaus darbuotojai akimirksniu patikrina rinkėjo tapatybę.", "legal": "Įstatymas 208/2015 — str. 84" },
-          { "emoji": "📋", "name": "Įdarbinimas ir HR patikrinimas", "body": "Darbdaviai patikrina naujojo darbuotojo tapatybę sudarant sutartį.", "legal": "Įstatymas 53/2003; HG 500/2011" }
+          {
+            "emoji": "🏥",
+            "name": "Paciento identifikavimas",
+            "body": "Ligoninė akimirksniu identifikuoja pacientą naudodama EguWallet.",
+            "legal": "Įstatymas 95/2006 — str. 230-232"
+          },
+          {
+            "emoji": "🗳️",
+            "name": "Rinkimų komisijos rinkėjo patikrinimas",
+            "body": "Balsavimo skyriaus darbuotojai akimirksniu patikrina rinkėjo tapatybę.",
+            "legal": "Įstatymas 208/2015 — str. 84"
+          },
+          {
+            "emoji": "📋",
+            "name": "Įdarbinimas ir HR patikrinimas",
+            "body": "Darbdaviai patikrina naujojo darbuotojo tapatybę sudarant sutartį.",
+            "legal": "Įstatymas 53/2003; HG 500/2011"
+          }
         ]
       },
       {
@@ -140,10 +265,30 @@
         "title": "Teisinės ir notarinės paslaugos — fizinis buvimas nebereikalingas",
         "description": "Pagal Regl. (ES) 2024/1183 EUDI Wallet suteikia teisiškai privalomą identifikavimą.",
         "scenarios": [
-          { "emoji": "📝", "name": "Nuotolinis notarinis identifikavimas", "body": "Notaras nuotoliniu būdu identifikuoja šalį per EUDI piniginę.", "legal": "Įstatymas 36/1995 — str. 40; Regl. (ES) 2024/1183 — str. 5a" },
-          { "emoji": "🏠", "name": "Nekilnojamojo turto sandoriai be eilių", "body": "Abi šalys skaitmeniškai identifikuojasi ir pasirašo su QES — viskas nuotoliniu būdu.", "legal": "Civilinis kodeksas str. 1244; eIDAS 2.0 str. 25" },
-          { "emoji": "✅", "name": "Pareiškimai ir įgaliojimai", "body": "Pilietis pateikia EguWallet PID teisiniam identifikavimui.", "legal": "Regl. (ES) 2024/1183; Įstatymas 455/2001" },
-          { "emoji": "🤝", "name": "Komercinės sutartys su QES", "body": "Sutartys, pasirašytos su QES — teisinė galia visose 27 ES valstybėse narėse.", "legal": "Įstatymas 455/2001; eIDAS 2.0 str. 25; Įstatymas 31/1990" }
+          {
+            "emoji": "📝",
+            "name": "Nuotolinis notarinis identifikavimas",
+            "body": "Notaras nuotoliniu būdu identifikuoja šalį per EUDI piniginę.",
+            "legal": "Įstatymas 36/1995 — str. 40; Regl. (ES) 2024/1183 — str. 5a"
+          },
+          {
+            "emoji": "🏠",
+            "name": "Nekilnojamojo turto sandoriai be eilių",
+            "body": "Abi šalys skaitmeniškai identifikuojasi ir pasirašo su QES — viskas nuotoliniu būdu.",
+            "legal": "Civilinis kodeksas str. 1244; eIDAS 2.0 str. 25"
+          },
+          {
+            "emoji": "✅",
+            "name": "Pareiškimai ir įgaliojimai",
+            "body": "Pilietis pateikia EguWallet PID teisiniam identifikavimui.",
+            "legal": "Regl. (ES) 2024/1183; Įstatymas 455/2001"
+          },
+          {
+            "emoji": "🤝",
+            "name": "Komercinės sutartys su QES",
+            "body": "Sutartys, pasirašytos su QES — teisinė galia visose 27 ES valstybėse narėse.",
+            "legal": "Įstatymas 455/2001; eIDAS 2.0 str. 25; Įstatymas 31/1990"
+          }
         ]
       },
       {
@@ -152,9 +297,24 @@
         "title": "Azartiniai lošimai ir saviizstūmimas",
         "description": "Kazino ir lošimų platformos tikrina žaidėjų tapatybę ir saviizstūmimo registrus.",
         "scenarios": [
-          { "emoji": "🎰", "name": "Žaidėjo tapatybės patikrinimas (KYC)", "body": "Lošimų operatoriai tikrina žaidėjo tapatybę registruojantis pagal AML reikalavimus.", "legal": "Direktyva (ES) 2015/849; lošimų licencijavimo taisyklės" },
-          { "emoji": "🚫", "name": "Saviizstūmimo registro patikrinimas", "body": "Operatorius tikrina nacionalinį saviizstūmimo registrą. Jei asmuo yra sąraše, prieiga automatiškai blokuojama.", "legal": "Regl. (ES) 2024/1183; nacionaliniai azartinių lošimų įstatymai" },
-          { "emoji": "🔞", "name": "Amžiaus 18+ patikrinimas lošimams", "body": "Lošimų operatoriai tikrina, ar žaidėjui yra 18 ar daugiau metų — perduodama tik TAIP/NE.", "legal": "OUG 77/2009; Direktyva (ES) 2015/849" }
+          {
+            "emoji": "🎰",
+            "name": "Žaidėjo tapatybės patikrinimas (KYC)",
+            "body": "Lošimų operatoriai tikrina žaidėjo tapatybę registruojantis pagal AML reikalavimus.",
+            "legal": "Direktyva (ES) 2015/849; lošimų licencijavimo taisyklės"
+          },
+          {
+            "emoji": "🚫",
+            "name": "Saviizstūmimo registro patikrinimas",
+            "body": "Operatorius tikrina nacionalinį saviizstūmimo registrą. Jei asmuo yra sąraše, prieiga automatiškai blokuojama.",
+            "legal": "Regl. (ES) 2024/1183; nacionaliniai azartinių lošimų įstatymai"
+          },
+          {
+            "emoji": "🔞",
+            "name": "Amžiaus 18+ patikrinimas lošimams",
+            "body": "Lošimų operatoriai tikrina, ar žaidėjui yra 18 ar daugiau metų — perduodama tik TAIP/NE.",
+            "legal": "OUG 77/2009; Direktyva (ES) 2015/849"
+          }
         ]
       }
     ]
@@ -181,12 +341,30 @@
     "auditTitle": "Privačiai audituota. Viešai atskaitinga.",
     "auditBody": "EguWallet sukurta remiantis atvirais standartais ir vyksta oficialus sertifikavimas.",
     "badges": [
-      { "icon": "🛡️", "label": "BDAR 17 str. — Teisė į ištrynimą" },
-      { "icon": "📋", "label": "Pilna sąveikų istorija" },
-      { "icon": "⚖️", "label": "eIDAS 2.0 teisiškai privaloma" },
-      { "icon": "🔐", "label": "Selektyvus atskleidimas be žinių" },
-      { "icon": "🔍", "label": "Privačiai audituota" },
-      { "icon": "🌍", "label": "Galioja visose 27 ES valstybėse" }
+      {
+        "icon": "🛡️",
+        "label": "BDAR 17 str. — Teisė į ištrynimą"
+      },
+      {
+        "icon": "📋",
+        "label": "Pilna sąveikų istorija"
+      },
+      {
+        "icon": "⚖️",
+        "label": "eIDAS 2.0 teisiškai privaloma"
+      },
+      {
+        "icon": "🔐",
+        "label": "Selektyvus atskleidimas be žinių"
+      },
+      {
+        "icon": "🔍",
+        "label": "Privačiai audituota"
+      },
+      {
+        "icon": "🌍",
+        "label": "Galioja visose 27 ES valstybėse"
+      }
     ]
   },
   "usedToday": {
@@ -214,12 +392,36 @@
     "heading": "Kas toliau — skaitmeninės tapatybės ateitis",
     "subheading": "EguWallet nuolat plečiamas naujais naudojimo atvejais",
     "items": [
-      { "icon": "📡", "title": "Įrenginys su įrenginiu (Bluetooth) patikrinimas", "body": "Kaip bekontaktis NFC mokėjimas — momentinis duomenų perdavimas jūsų kontroliuojamas." },
-      { "icon": "🚔", "title": "Teisėsaugos tapatybės patikrinimas", "body": "Teisėsaugos pareigūnas tikrina tapatybę per NFC/Bluetooth." },
-      { "icon": "🍺", "title": "Amžiaus 18+ patikrinimas (Greitai)", "body": "Diegimas amžiaus kontrolei parduodant alkoholį." },
-      { "icon": "🚌", "title": "Viešojo transporto bilietai ir abonementai", "body": "Studentai ir keleiviai pateikia skaitmeninius bilietus." },
-      { "icon": "📍", "title": "Adreso patvirtinimas", "body": "Jūsų registruotas adresas gali būti selektyviai atskleistas, kai reikia." },
-      { "icon": "✍️", "title": "Kvalifikuotas skaitmeninis parašas", "body": "Pasirašykite dokumentus su visu teisiniu pajėgumu visose 27 ES valstybėse narėse." }
+      {
+        "icon": "📡",
+        "title": "Įrenginys su įrenginiu (Bluetooth) patikrinimas",
+        "body": "Kaip bekontaktis NFC mokėjimas — momentinis duomenų perdavimas jūsų kontroliuojamas."
+      },
+      {
+        "icon": "🚔",
+        "title": "Teisėsaugos tapatybės patikrinimas",
+        "body": "Teisėsaugos pareigūnas tikrina tapatybę per NFC/Bluetooth."
+      },
+      {
+        "icon": "🍺",
+        "title": "Amžiaus 18+ patikrinimas (Greitai)",
+        "body": "Diegimas amžiaus kontrolei parduodant alkoholį."
+      },
+      {
+        "icon": "🚌",
+        "title": "Viešojo transporto bilietai ir abonementai",
+        "body": "Studentai ir keleiviai pateikia skaitmeninius bilietus."
+      },
+      {
+        "icon": "📍",
+        "title": "Adreso patvirtinimas",
+        "body": "Jūsų registruotas adresas gali būti selektyviai atskleistas, kai reikia."
+      },
+      {
+        "icon": "✍️",
+        "title": "Kvalifikuotas skaitmeninis parašas",
+        "body": "Pasirašykite dokumentus su visu teisiniu pajėgumu visose 27 ES valstybėse narėse."
+      }
     ]
   },
   "howItWorks": {
@@ -234,15 +436,42 @@
   "faq": {
     "heading": "Dažnai užduodami klausimai",
     "items": [
-      { "q": "Kas yra EguWallet?", "a": "EguWallet yra Europos eIDAS 2.0 skaitmeninė piniginė iš IT Eguilde SRL." },
-      { "q": "Kokius dokumentus galiu saugoti?", "a": "Asmens tapatybės kortelę (PID), pasą, vairuotojo pažymėjimą. Greitai: transporto priemonės registraciją, draudimą, įmonės ir nekilnojamojo turto dokumentus." },
-      { "q": "Ar saugūs mano asmens duomenys?", "a": "Taip. EguWallet naudoja SD-JWT ir mDoc selektyviam atskleidimui." },
-      { "q": "Kur galiu naudoti EguWallet?", "a": "Šiandien: ilfov.net ir sector2.eu." },
-      { "q": "Kas yra eIDAS 2.0?", "a": "Reglamentas (ES) 2024/1183 — kiekvienas ES pilietis turi teisę į nemokamą skaitmeninę piniginę." },
-      { "q": "Kaip veikia selektyvus atskleidimas?", "a": "Jūsų piniginė rodo, kokie duomenys prašomi. Jūs patvirtinate arba atmetate kiekvieną lauką." },
-      { "q": "Ar EguWallet nemokamas?", "a": "Taip, nemokamai piliečiams bandomojo etapo metu." },
-      { "q": "Ar EguWallet yra visiškai sertifikuotas?", "a": "Šiuo metu vyksta oficialus eIDAS 2.0 sertifikavimas." },
-      { "q": "Kaip aktyvuoti piniginę?", "a": "Atsisiųskite iš Google Play, patvirtinkite telefono numerį, sukurkite PIN." }
+      {
+        "q": "Kas yra EguWallet?",
+        "a": "EguWallet yra Europos eIDAS 2.0 skaitmeninė piniginė iš IT Eguilde SRL."
+      },
+      {
+        "q": "Kokius dokumentus galiu saugoti?",
+        "a": "Asmens tapatybės kortelę (PID), pasą, vairuotojo pažymėjimą. Greitai: transporto priemonės registraciją, draudimą, įmonės ir nekilnojamojo turto dokumentus."
+      },
+      {
+        "q": "Ar saugūs mano asmens duomenys?",
+        "a": "Taip. EguWallet naudoja SD-JWT ir mDoc selektyviam atskleidimui."
+      },
+      {
+        "q": "Kur galiu naudoti EguWallet?",
+        "a": "Šiandien: ilfov.net ir sector2.eu."
+      },
+      {
+        "q": "Kas yra eIDAS 2.0?",
+        "a": "Reglamentas (ES) 2024/1183 — kiekvienas ES pilietis turi teisę į nemokamą skaitmeninę piniginę."
+      },
+      {
+        "q": "Kaip veikia selektyvus atskleidimas?",
+        "a": "Jūsų piniginė rodo, kokie duomenys prašomi. Jūs patvirtinate arba atmetate kiekvieną lauką."
+      },
+      {
+        "q": "Ar EguWallet nemokamas?",
+        "a": "Taip, nemokamai piliečiams bandomojo etapo metu."
+      },
+      {
+        "q": "Ar EguWallet yra visiškai sertifikuotas?",
+        "a": "Šiuo metu vyksta oficialus eIDAS 2.0 sertifikavimas."
+      },
+      {
+        "q": "Kaip aktyvuoti piniginę?",
+        "a": "Atsisiųskite iš Google Play, patvirtinkite telefono numerį, sukurkite PIN."
+      }
     ]
   },
   "getDigitalId": {
@@ -269,17 +498,38 @@
     "description": "Prašykite ištrinti savo EguWallet paskyrą.",
     "intro": "EguWallet gerbia jūsų teisę į duomenų ištrynimą pagal BDAR 17 straipsnį.",
     "method1Title": "1 būdas: Ištrynimas programėlėje",
-    "method1Steps": ["Atidarykite EguWallet", "Eikite į Nustatymus", "Bakstelėkite 'Ištrinti piniginę'", "Patvirtinkite"],
+    "method1Steps": [
+      "Atidarykite EguWallet",
+      "Eikite į Nustatymus",
+      "Bakstelėkite 'Ištrinti piniginę'",
+      "Patvirtinkite"
+    ],
     "method1Note": "Tai pašalina visus kredencialus ir vietinius duomenis.",
     "method2Title": "2 būdas: Užklausa el. paštu",
     "method2Text": "Siųskite el. laišką adresu <a href='mailto:privacy@eguwallet.eu' class='t-primary underline'>privacy@eguwallet.eu</a>.",
     "whatDeleted": "Kas ištriname",
-    "deletedItems": ["Piniginės registracijos duomenys", "Visi skaitmeniniai kredencialai", "Kriptografiniai raktai", "Įrenginio informacija", "Selfie ir dokumentų nuskaitymai", "Seanso duomenys"],
+    "deletedItems": [
+      "Piniginės registracijos duomenys",
+      "Visi skaitmeniniai kredencialai",
+      "Kriptografiniai raktai",
+      "Įrenginio informacija",
+      "Selfie ir dokumentų nuskaitymai",
+      "Seanso duomenys"
+    ],
     "whatRetained": "Kas saugoma",
-    "retainedItems": ["eIDAS 2.0 audito žurnalai (anonimizuoti) — saugomi 7 metus"],
+    "retainedItems": [
+      "eIDAS 2.0 audito žurnalai (anonimizuoti) — saugomi 7 metus"
+    ],
     "timeline": "Ištrynimo terminas",
     "timelineText": "Jūsų duomenys bus visam laikui pašalinti per 30 dienų.",
     "contact": "Klausimai?",
     "contactText": "Susisiekite su mumis adresu <a href='mailto:privacy@eguwallet.eu' class='t-primary underline'>privacy@eguwallet.eu</a>."
+  },
+  "contact": {
+    "sending": "Siunčiama…",
+    "successMsg": "Žinutė išsiųsta! Atsakysime per 2 darbo dienas.",
+    "errorFields": "Prašome užpildyti visus privalomus laukus.",
+    "errorFail": "Nepavyko išsiųsti žinutės. Rašykite mums tiesiogiai adresu contact@eguwallet.eu",
+    "submitBtn": "Siųsti žinutę"
   }
 }

@@ -53,14 +53,54 @@
     "heading": "Dokumenti jūsu makā",
     "subheading": "Visi svarīgie dokumenti — digitāli, pārbaudāmi, vienmēr pieejami",
     "items": [
-      { "icon": "🪪", "title": "Personas apliecība (PID)", "body": "Primārais digitālais identitātes dokuments atbilstoši eIDAS 2.0.", "status": "available" },
-      { "icon": "🛂", "title": "Pase", "body": "Jūsu pases digitālā versija, nekavējoties pārbaudāma.", "status": "available" },
-      { "icon": "🚗", "title": "Vadītāja apliecība", "body": "Digitālā vadītāja apliecība atbilstoši mDoc/ISO 18013-5.", "status": "available" },
-      { "icon": "📋", "title": "Transportlīdzekļa reģistrācija", "body": "Jūsu transportlīdzekļa reģistrācijas dokuments digitālā formātā.", "status": "soon" },
-      { "icon": "🛡️", "title": "Transportlīdzekļa apdrošināšana (RCA)", "body": "Obligātā transportlīdzekļa apdrošināšana, pārbaudāma reāllaikā.", "status": "soon" },
-      { "icon": "🔧", "title": "Tehniskā apskate", "body": "Periodiskās tehniskās apskates sertifikāti.", "status": "soon" },
-      { "icon": "🏢", "title": "Uzņēmuma dokumenti", "body": "Uzņēmuma reģistrācija un korporatīvie dokumenti.", "status": "soon" },
-      { "icon": "🏠", "title": "Nekustamā īpašuma dokumenti", "body": "Zemesgrāmatas izraksti un īpašuma dokumenti.", "status": "soon" }
+      {
+        "icon": "🪪",
+        "title": "Personas apliecība (PID)",
+        "body": "Primārais digitālais identitātes dokuments atbilstoši eIDAS 2.0.",
+        "status": "available"
+      },
+      {
+        "icon": "🛂",
+        "title": "Pase",
+        "body": "Jūsu pases digitālā versija, nekavējoties pārbaudāma.",
+        "status": "available"
+      },
+      {
+        "icon": "🚗",
+        "title": "Vadītāja apliecība",
+        "body": "Digitālā vadītāja apliecība atbilstoši mDoc/ISO 18013-5.",
+        "status": "available"
+      },
+      {
+        "icon": "📋",
+        "title": "Transportlīdzekļa reģistrācija",
+        "body": "Jūsu transportlīdzekļa reģistrācijas dokuments digitālā formātā.",
+        "status": "soon"
+      },
+      {
+        "icon": "🛡️",
+        "title": "Transportlīdzekļa apdrošināšana (RCA)",
+        "body": "Obligātā transportlīdzekļa apdrošināšana, pārbaudāma reāllaikā.",
+        "status": "soon"
+      },
+      {
+        "icon": "🔧",
+        "title": "Tehniskā apskate",
+        "body": "Periodiskās tehniskās apskates sertifikāti.",
+        "status": "soon"
+      },
+      {
+        "icon": "🏢",
+        "title": "Uzņēmuma dokumenti",
+        "body": "Uzņēmuma reģistrācija un korporatīvie dokumenti.",
+        "status": "soon"
+      },
+      {
+        "icon": "🏠",
+        "title": "Nekustamā īpašuma dokumenti",
+        "body": "Zemesgrāmatas izraksti un īpašuma dokumenti.",
+        "status": "soon"
+      }
     ],
     "statusAvailable": "Pieejams",
     "statusSoon": "Drīzumā"
@@ -75,9 +115,24 @@
         "title": "Tiesībsargājošās iestādes un sabiedriskā kārtība",
         "description": "Policisti un robežsardzes darbinieki sekunžu laikā pārbauda digitālo identitāti.",
         "scenarios": [
-          { "emoji": "🪪", "name": "Identitātes pārbaude patrulēšanas laikā", "body": "Policists pārbauda pilsoņa pilno identitāti, izmantojot NFC vai QR.", "legal": "Likums 218/2002 — 31. pants" },
-          { "emoji": "🚗", "name": "Pilns pakotne satiksmes pārbaudē", "body": "Viens QR skenēšanas reiziens: virsnieks saņem personas apliecību, vadītāja apliecību, reģistrāciju, apdrošināšanu un tehnisko apskati.", "legal": "OUG 195/2002 — 6., 80., 81. pants" },
-          { "emoji": "🛂", "name": "Robežkontrole", "body": "Darbinieki digitāli pārbauda identitāti un ceļošanas dokumentu derīgumu.", "legal": "Likums 248/2005" }
+          {
+            "emoji": "🪪",
+            "name": "Identitātes pārbaude patrulēšanas laikā",
+            "body": "Policists pārbauda pilsoņa pilno identitāti, izmantojot NFC vai QR.",
+            "legal": "Likums 218/2002 — 31. pants"
+          },
+          {
+            "emoji": "🚗",
+            "name": "Pilns pakotne satiksmes pārbaudē",
+            "body": "Viens QR skenēšanas reiziens: virsnieks saņem personas apliecību, vadītāja apliecību, reģistrāciju, apdrošināšanu un tehnisko apskati.",
+            "legal": "OUG 195/2002 — 6., 80., 81. pants"
+          },
+          {
+            "emoji": "🛂",
+            "name": "Robežkontrole",
+            "body": "Darbinieki digitāli pārbauda identitāti un ceļošanas dokumentu derīgumu.",
+            "legal": "Likums 248/2005"
+          }
         ]
       },
       {
@@ -86,9 +141,24 @@
         "title": "Uzņēmējdarbība un komerciālie darījumi",
         "description": "Uzņēmumi un notāri nekavējoties pārbauda identitāti un pilnvaras.",
         "scenarios": [
-          { "emoji": "🏛️", "name": "Uzņēmuma pārbaude", "body": "B2B platforma pārbauda uzņēmuma nosaukumu, reģistrāciju un aktīvo statusu.", "legal": "Likums 31/1990; Likums 26/1990" },
-          { "emoji": "✍️", "name": "Likumīgā pārstāvja pārbaude", "body": "Notārs pārbauda pilnvarotā pārstāvja statusu.", "legal": "Likums 31/1990 — 75., 197. pants" },
-          { "emoji": "📜", "name": "Līguma parakstīšana ar QES", "body": "Identitāte pārbaudīta, līgums parakstīts ar kvalificētu elektronisko parakstu. Mazāk par 90 sekundēm.", "legal": "Reg. (ES) 2024/1183 — 25. pants; Likums 455/2001" }
+          {
+            "emoji": "🏛️",
+            "name": "Uzņēmuma pārbaude",
+            "body": "B2B platforma pārbauda uzņēmuma nosaukumu, reģistrāciju un aktīvo statusu.",
+            "legal": "Likums 31/1990; Likums 26/1990"
+          },
+          {
+            "emoji": "✍️",
+            "name": "Likumīgā pārstāvja pārbaude",
+            "body": "Notārs pārbauda pilnvarotā pārstāvja statusu.",
+            "legal": "Likums 31/1990 — 75., 197. pants"
+          },
+          {
+            "emoji": "📜",
+            "name": "Līguma parakstīšana ar QES",
+            "body": "Identitāte pārbaudīta, līgums parakstīts ar kvalificētu elektronisko parakstu. Mazāk par 90 sekundēm.",
+            "legal": "Reg. (ES) 2024/1183 — 25. pants; Likums 455/2001"
+          }
         ]
       },
       {
@@ -97,10 +167,30 @@
         "title": "Izglītība — skola un universitāte",
         "description": "Skolēni nēsā savu skolas vai studenta karti EguWallet.",
         "scenarios": [
-          { "emoji": "🏫", "name": "Skolas skolēna karte", "body": "Skolēns piespiež tālruni pie skolas vārtiem, bibliotēkas vai ēdnīcas.", "legal": "Likums 1/2011 — 5. pants" },
-          { "emoji": "📋", "name": "Studenta karte + personas apliecība eksāmenos", "body": "Digitālā studenta karte un elektroniskā personas apliecība uzrādīta eksāmenos.", "legal": "Likums 1/2011; OUG 97/2005 — 14. pants" },
-          { "emoji": "🎓", "name": "Universitātes studenta karte", "body": "Digitālā studenta karte aizstāj fizisko karti.", "legal": "Likums 1/2011 — 118., 119. pants" },
-          { "emoji": "🚌", "name": "Studenta transporta caurlaides", "body": "Studenti iekāpj autobusā un vilcienā, izmantojot maku.", "legal": "OUG 133/2000" }
+          {
+            "emoji": "🏫",
+            "name": "Skolas skolēna karte",
+            "body": "Skolēns piespiež tālruni pie skolas vārtiem, bibliotēkas vai ēdnīcas.",
+            "legal": "Likums 1/2011 — 5. pants"
+          },
+          {
+            "emoji": "📋",
+            "name": "Studenta karte + personas apliecība eksāmenos",
+            "body": "Digitālā studenta karte un elektroniskā personas apliecība uzrādīta eksāmenos.",
+            "legal": "Likums 1/2011; OUG 97/2005 — 14. pants"
+          },
+          {
+            "emoji": "🎓",
+            "name": "Universitātes studenta karte",
+            "body": "Digitālā studenta karte aizstāj fizisko karti.",
+            "legal": "Likums 1/2011 — 118., 119. pants"
+          },
+          {
+            "emoji": "🚌",
+            "name": "Studenta transporta caurlaides",
+            "body": "Studenti iekāpj autobusā un vilcienā, izmantojot maku.",
+            "legal": "OUG 133/2000"
+          }
         ]
       },
       {
@@ -109,8 +199,18 @@
         "title": "Mazumtirdzniecība un vecuma pārbaude",
         "description": "Tirgotāji pārbauda vecumu, neglabājot personas datus.",
         "scenarios": [
-          { "emoji": "🍺", "name": "Vecums 18+ pārdošanas vietā", "body": "Tiek pārsūtīts tikai «vecums ≥ 18: JĀ». Bez vārda, bez personas koda.", "legal": "OUG 99/2000" },
-          { "emoji": "🏨", "name": "Reģistrācija viesnīcā", "body": "Tūrists reģistrējas, uzrādot vārdu, dzimšanas datumu un pilsonību.", "legal": "HG 1215/2001" }
+          {
+            "emoji": "🍺",
+            "name": "Vecums 18+ pārdošanas vietā",
+            "body": "Tiek pārsūtīts tikai «vecums ≥ 18: JĀ». Bez vārda, bez personas koda.",
+            "legal": "OUG 99/2000"
+          },
+          {
+            "emoji": "🏨",
+            "name": "Reģistrācija viesnīcā",
+            "body": "Tūrists reģistrējas, uzrādot vārdu, dzimšanas datumu un pilsonību.",
+            "legal": "HG 1215/2001"
+          }
         ]
       },
       {
@@ -119,8 +219,18 @@
         "title": "Finanšu pakalpojumi un KYC",
         "description": "Bankas un fintech platformas uzņem klientus, ievērojot AML/KYC prasības.",
         "scenarios": [
-          { "emoji": "🏦", "name": "Bankas konta atvēršana (KYC/AML)", "body": "Banka attālināti pārbauda klienta identitāti — sertificēts ar EUDI maku.", "legal": "Likums 129/2019; Direktīva (ES) 2015/849" },
-          { "emoji": "💼", "name": "Apdrošināšana un finanšu produkti", "body": "Apdrošināšanas sabiedrības digitāli pārbauda apdrošinājuma ņēmēja identitāti.", "legal": "Reg. (ES) 2024/1183" }
+          {
+            "emoji": "🏦",
+            "name": "Bankas konta atvēršana (KYC/AML)",
+            "body": "Banka attālināti pārbauda klienta identitāti — sertificēts ar EUDI maku.",
+            "legal": "Likums 129/2019; Direktīva (ES) 2015/849"
+          },
+          {
+            "emoji": "💼",
+            "name": "Apdrošināšana un finanšu produkti",
+            "body": "Apdrošināšanas sabiedrības digitāli pārbauda apdrošinājuma ņēmēja identitāti.",
+            "legal": "Reg. (ES) 2024/1183"
+          }
         ]
       },
       {
@@ -129,9 +239,24 @@
         "title": "Veselības aprūpe un sociālie pakalpojumi",
         "description": "Slimnīcas un klīnikas droši identificē pacientus.",
         "scenarios": [
-          { "emoji": "🏥", "name": "Pacienta identifikācija", "body": "Slimnīca nekavējoties identificē pacientu ar EguWallet.", "legal": "Likums 95/2006 — 230.-232. pants" },
-          { "emoji": "🗳️", "name": "Vēlēšanu komisijas vēlētāja pārbaude", "body": "Vēlēšanu iecirkņa darbinieki nekavējoties pārbauda vēlētāja identitāti.", "legal": "Likums 208/2015 — 84. pants" },
-          { "emoji": "📋", "name": "Nodarbinātība un personāla pārbaude", "body": "Darba devēji pārbauda jaunā darbinieka identitāti, parakstot līgumu.", "legal": "Likums 53/2003; HG 500/2011" }
+          {
+            "emoji": "🏥",
+            "name": "Pacienta identifikācija",
+            "body": "Slimnīca nekavējoties identificē pacientu ar EguWallet.",
+            "legal": "Likums 95/2006 — 230.-232. pants"
+          },
+          {
+            "emoji": "🗳️",
+            "name": "Vēlēšanu komisijas vēlētāja pārbaude",
+            "body": "Vēlēšanu iecirkņa darbinieki nekavējoties pārbauda vēlētāja identitāti.",
+            "legal": "Likums 208/2015 — 84. pants"
+          },
+          {
+            "emoji": "📋",
+            "name": "Nodarbinātība un personāla pārbaude",
+            "body": "Darba devēji pārbauda jaunā darbinieka identitāti, parakstot līgumu.",
+            "legal": "Likums 53/2003; HG 500/2011"
+          }
         ]
       },
       {
@@ -140,10 +265,30 @@
         "title": "Juridiskais un notariālais — fiziska klātbūtne vairs nav nepieciešama",
         "description": "Saskaņā ar Reg. (ES) 2024/1183 EUDI Wallet nodrošina juridiski saistošu identifikāciju.",
         "scenarios": [
-          { "emoji": "📝", "name": "Attālināta notariālā identifikācija", "body": "Notārs attālināti identificē pusi, izmantojot EUDI maku.", "legal": "Likums 36/1995 — 40. pants; Reg. (ES) 2024/1183 — 5.a pants" },
-          { "emoji": "🏠", "name": "Nekustamā īpašuma darījumi bez rindas", "body": "Abas puses digitāli identificējas un paraksta ar QES — viss attālināti.", "legal": "Civilkodekss 1244. pants; eIDAS 2.0 25. pants" },
-          { "emoji": "✅", "name": "Paziņojumi un pilnvaras", "body": "Pilsonis uzrāda EguWallet PID juridiski līdzvērtīgai identifikācijai.", "legal": "Reg. (ES) 2024/1183; Likums 455/2001" },
-          { "emoji": "🤝", "name": "Komerciālie līgumi ar QES", "body": "Līgumi, kas parakstīti ar QES — juridisks spēks visās 27 ES dalībvalstīs.", "legal": "Likums 455/2001; eIDAS 2.0 25. pants; Likums 31/1990" }
+          {
+            "emoji": "📝",
+            "name": "Attālināta notariālā identifikācija",
+            "body": "Notārs attālināti identificē pusi, izmantojot EUDI maku.",
+            "legal": "Likums 36/1995 — 40. pants; Reg. (ES) 2024/1183 — 5.a pants"
+          },
+          {
+            "emoji": "🏠",
+            "name": "Nekustamā īpašuma darījumi bez rindas",
+            "body": "Abas puses digitāli identificējas un paraksta ar QES — viss attālināti.",
+            "legal": "Civilkodekss 1244. pants; eIDAS 2.0 25. pants"
+          },
+          {
+            "emoji": "✅",
+            "name": "Paziņojumi un pilnvaras",
+            "body": "Pilsonis uzrāda EguWallet PID juridiski līdzvērtīgai identifikācijai.",
+            "legal": "Reg. (ES) 2024/1183; Likums 455/2001"
+          },
+          {
+            "emoji": "🤝",
+            "name": "Komerciālie līgumi ar QES",
+            "body": "Līgumi, kas parakstīti ar QES — juridisks spēks visās 27 ES dalībvalstīs.",
+            "legal": "Likums 455/2001; eIDAS 2.0 25. pants; Likums 31/1990"
+          }
         ]
       },
       {
@@ -152,9 +297,24 @@
         "title": "Azartspēles un pašizslēgšana",
         "description": "Kazino un azartspēļu platformas pārbauda spēlētāju identitāti un pašizslēgšanas reģistrus.",
         "scenarios": [
-          { "emoji": "🎰", "name": "Spēlētāja identitātes pārbaude (KYC)", "body": "Azartspēļu operatori pārbauda spēlētāja identitāti reģistrācijas laikā saskaņā ar AML noteikumiem.", "legal": "Direktīva (ES) 2015/849; azartspēļu licencēšanas noteikumi" },
-          { "emoji": "🚫", "name": "Pašizslēgšanas reģistra pārbaude", "body": "Operators pārbauda nacionālo pašizslēgšanas reģistru. Ja persona ir sarakstā, piekļuve tiek automātiski bloķēta.", "legal": "Reg. (ES) 2024/1183; nacionālie azartspēļu likumi" },
-          { "emoji": "🔞", "name": "Vecuma 18+ pārbaude azartspēlēm", "body": "Spēļu operatori pārbauda, vai spēlētājs ir 18 gadus vecs vai vecāks — tiek pārsūtīts tikai JĀ/NĒ.", "legal": "OUG 77/2009; Direktīva (ES) 2015/849" }
+          {
+            "emoji": "🎰",
+            "name": "Spēlētāja identitātes pārbaude (KYC)",
+            "body": "Azartspēļu operatori pārbauda spēlētāja identitāti reģistrācijas laikā saskaņā ar AML noteikumiem.",
+            "legal": "Direktīva (ES) 2015/849; azartspēļu licencēšanas noteikumi"
+          },
+          {
+            "emoji": "🚫",
+            "name": "Pašizslēgšanas reģistra pārbaude",
+            "body": "Operators pārbauda nacionālo pašizslēgšanas reģistru. Ja persona ir sarakstā, piekļuve tiek automātiski bloķēta.",
+            "legal": "Reg. (ES) 2024/1183; nacionālie azartspēļu likumi"
+          },
+          {
+            "emoji": "🔞",
+            "name": "Vecuma 18+ pārbaude azartspēlēm",
+            "body": "Spēļu operatori pārbauda, vai spēlētājs ir 18 gadus vecs vai vecāks — tiek pārsūtīts tikai JĀ/NĒ.",
+            "legal": "OUG 77/2009; Direktīva (ES) 2015/849"
+          }
         ]
       }
     ]
@@ -181,12 +341,30 @@
     "auditTitle": "Privāti auditēts. Publiski atbildīgs.",
     "auditBody": "EguWallet ir veidots uz atvērtiem standartiem un notiek formāla sertifikācija.",
     "badges": [
-      { "icon": "🛡️", "label": "VDAR 17. pants — Tiesības uz dzēšanu" },
-      { "icon": "📋", "label": "Pilna mijiedarbību vēsture" },
-      { "icon": "⚖️", "label": "eIDAS 2.0 juridiski saistošs" },
-      { "icon": "🔐", "label": "Selektīva izpaušana bez zināšanām" },
-      { "icon": "🔍", "label": "Privāti auditēts" },
-      { "icon": "🌍", "label": "Derīgs visās 27 ES valstīs" }
+      {
+        "icon": "🛡️",
+        "label": "VDAR 17. pants — Tiesības uz dzēšanu"
+      },
+      {
+        "icon": "📋",
+        "label": "Pilna mijiedarbību vēsture"
+      },
+      {
+        "icon": "⚖️",
+        "label": "eIDAS 2.0 juridiski saistošs"
+      },
+      {
+        "icon": "🔐",
+        "label": "Selektīva izpaušana bez zināšanām"
+      },
+      {
+        "icon": "🔍",
+        "label": "Privāti auditēts"
+      },
+      {
+        "icon": "🌍",
+        "label": "Derīgs visās 27 ES valstīs"
+      }
     ]
   },
   "usedToday": {
@@ -214,12 +392,36 @@
     "heading": "Kas tālāk — digitālās identitātes nākotne",
     "subheading": "EguWallet nepārtraukti paplašinās ar jauniem lietošanas gadījumiem",
     "items": [
-      { "icon": "📡", "title": "Ierīces ar ierīci (Bluetooth) pārbaude", "body": "Kā bezskarta NFC maksājums — tūlītēja datu pārsūtīšana jūsu kontrolē." },
-      { "icon": "🚔", "title": "Tiesībsargājošo iestāžu identitātes pārbaude", "body": "Tiesībsargājošo iestāžu darbinieks pārbauda identitāti, izmantojot NFC/Bluetooth." },
-      { "icon": "🍺", "title": "Vecuma 18+ pārbaude (Drīzumā)", "body": "Ieviešana vecuma kontrolei alkohola pārdošanā." },
-      { "icon": "🚌", "title": "Sabiedriskā transporta biļetes un caurlaides", "body": "Studenti un pasažieri uzrāda digitālās biļetes." },
-      { "icon": "📍", "title": "Adreses apliecinājums", "body": "Jūsu reģistrēto adresi var selektīvi atklāt, kad nepieciešams." },
-      { "icon": "✍️", "title": "Kvalificēts digitālais paraksts", "body": "Parakstiet dokumentus ar pilnu juridisko spēku visās 27 ES dalībvalstīs." }
+      {
+        "icon": "📡",
+        "title": "Ierīces ar ierīci (Bluetooth) pārbaude",
+        "body": "Kā bezskarta NFC maksājums — tūlītēja datu pārsūtīšana jūsu kontrolē."
+      },
+      {
+        "icon": "🚔",
+        "title": "Tiesībsargājošo iestāžu identitātes pārbaude",
+        "body": "Tiesībsargājošo iestāžu darbinieks pārbauda identitāti, izmantojot NFC/Bluetooth."
+      },
+      {
+        "icon": "🍺",
+        "title": "Vecuma 18+ pārbaude (Drīzumā)",
+        "body": "Ieviešana vecuma kontrolei alkohola pārdošanā."
+      },
+      {
+        "icon": "🚌",
+        "title": "Sabiedriskā transporta biļetes un caurlaides",
+        "body": "Studenti un pasažieri uzrāda digitālās biļetes."
+      },
+      {
+        "icon": "📍",
+        "title": "Adreses apliecinājums",
+        "body": "Jūsu reģistrēto adresi var selektīvi atklāt, kad nepieciešams."
+      },
+      {
+        "icon": "✍️",
+        "title": "Kvalificēts digitālais paraksts",
+        "body": "Parakstiet dokumentus ar pilnu juridisko spēku visās 27 ES dalībvalstīs."
+      }
     ]
   },
   "howItWorks": {
@@ -234,15 +436,42 @@
   "faq": {
     "heading": "Bieži uzdotie jautājumi",
     "items": [
-      { "q": "Kas ir EguWallet?", "a": "EguWallet ir Eiropas eIDAS 2.0 digitālais maks no IT Eguilde SRL." },
-      { "q": "Kādus dokumentus varu glabāt?", "a": "Personas apliecību (PID), pasi, vadītāja apliecību. Drīzumā: transportlīdzekļa reģistrāciju, apdrošināšanu, uzņēmuma un nekustamā īpašuma dokumentus." },
-      { "q": "Vai mani personas dati ir droši?", "a": "Jā. EguWallet izmanto SD-JWT un mDoc selektīvai izpaušanai." },
-      { "q": "Kur varu izmantot EguWallet?", "a": "Šodien: ilfov.net un sector2.eu." },
-      { "q": "Kas ir eIDAS 2.0?", "a": "Regula (ES) 2024/1183 — katram ES pilsonim ir tiesības uz bezmaksas digitālo maku." },
-      { "q": "Kā darbojas selektīvā izpaušana?", "a": "Jūsu maks parāda, kādi dati tiek pieprasīti. Jūs apstiprinat vai noraidat katru lauku." },
-      { "q": "Vai EguWallet ir bez maksas?", "a": "Jā, bez maksas pilsoņiem izmēģinājuma fāzē." },
-      { "q": "Vai EguWallet ir pilnībā sertificēts?", "a": "Pašlaik notiek formāla eIDAS 2.0 sertifikācija." },
-      { "q": "Kā aktivizēt maku?", "a": "Lejupielādējiet no Google Play, apstipriniet tālruņa numuru, izveidojiet PIN." }
+      {
+        "q": "Kas ir EguWallet?",
+        "a": "EguWallet ir Eiropas eIDAS 2.0 digitālais maks no IT Eguilde SRL."
+      },
+      {
+        "q": "Kādus dokumentus varu glabāt?",
+        "a": "Personas apliecību (PID), pasi, vadītāja apliecību. Drīzumā: transportlīdzekļa reģistrāciju, apdrošināšanu, uzņēmuma un nekustamā īpašuma dokumentus."
+      },
+      {
+        "q": "Vai mani personas dati ir droši?",
+        "a": "Jā. EguWallet izmanto SD-JWT un mDoc selektīvai izpaušanai."
+      },
+      {
+        "q": "Kur varu izmantot EguWallet?",
+        "a": "Šodien: ilfov.net un sector2.eu."
+      },
+      {
+        "q": "Kas ir eIDAS 2.0?",
+        "a": "Regula (ES) 2024/1183 — katram ES pilsonim ir tiesības uz bezmaksas digitālo maku."
+      },
+      {
+        "q": "Kā darbojas selektīvā izpaušana?",
+        "a": "Jūsu maks parāda, kādi dati tiek pieprasīti. Jūs apstiprinat vai noraidat katru lauku."
+      },
+      {
+        "q": "Vai EguWallet ir bez maksas?",
+        "a": "Jā, bez maksas pilsoņiem izmēģinājuma fāzē."
+      },
+      {
+        "q": "Vai EguWallet ir pilnībā sertificēts?",
+        "a": "Pašlaik notiek formāla eIDAS 2.0 sertifikācija."
+      },
+      {
+        "q": "Kā aktivizēt maku?",
+        "a": "Lejupielādējiet no Google Play, apstipriniet tālruņa numuru, izveidojiet PIN."
+      }
     ]
   },
   "getDigitalId": {
@@ -269,17 +498,38 @@
     "description": "Pieprasiet sava EguWallet konta dzēšanu.",
     "intro": "EguWallet respektē jūsu tiesības uz datu dzēšanu saskaņā ar VDAR 17. pantu.",
     "method1Title": "1. metode: Dzēšana lietotnē",
-    "method1Steps": ["Atveriet EguWallet", "Dodieties uz Iestatījumi", "Pieskarieties 'Dzēst maku'", "Apstipriniet"],
+    "method1Steps": [
+      "Atveriet EguWallet",
+      "Dodieties uz Iestatījumi",
+      "Pieskarieties 'Dzēst maku'",
+      "Apstipriniet"
+    ],
     "method1Note": "Tādējādi tiek noņemti visi apliecinājumi un vietējie dati.",
     "method2Title": "2. metode: Pieprasījums pa e-pastu",
     "method2Text": "Nosūtiet e-pastu uz <a href='mailto:privacy@eguwallet.eu' class='t-primary underline'>privacy@eguwallet.eu</a>.",
     "whatDeleted": "Kas tiek dzēsts",
-    "deletedItems": ["Maka reģistrācijas dati", "Visi digitālie apliecinājumi", "Kriptogrāfiskās atslēgas", "Ierīces informācija", "Selfie un dokumentu skenēšana", "Sesijas dati"],
+    "deletedItems": [
+      "Maka reģistrācijas dati",
+      "Visi digitālie apliecinājumi",
+      "Kriptogrāfiskās atslēgas",
+      "Ierīces informācija",
+      "Selfie un dokumentu skenēšana",
+      "Sesijas dati"
+    ],
     "whatRetained": "Kas tiek saglabāts",
-    "retainedItems": ["eIDAS 2.0 audita žurnāli (anonimizēti) — glabāti 7 gadus"],
+    "retainedItems": [
+      "eIDAS 2.0 audita žurnāli (anonimizēti) — glabāti 7 gadus"
+    ],
     "timeline": "Dzēšanas termiņš",
     "timelineText": "Jūsu dati tiks neatgriezeniski noņemti 30 dienu laikā.",
     "contact": "Jautājumi?",
     "contactText": "Sazinieties ar mums pa <a href='mailto:privacy@eguwallet.eu' class='t-primary underline'>privacy@eguwallet.eu</a>."
+  },
+  "contact": {
+    "sending": "Nosūta…",
+    "successMsg": "Ziņojums nosūtīts! Atbildēsim 2 darba dienu laikā.",
+    "errorFields": "Lūdzu aizpildiet visus obligātos laukus.",
+    "errorFail": "Neizdevās nosūtīt ziņojumu. Rakstiet mums tieši uz contact@eguwallet.eu",
+    "submitBtn": "Nosūtīt ziņojumu"
   }
 }

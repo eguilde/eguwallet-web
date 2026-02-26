@@ -53,14 +53,54 @@
     "heading": "Dokumendid teie rahakotis",
     "subheading": "Kõik teie olulised dokumendid — digitaalsed, kontrollitavad, alati käepärast",
     "items": [
-      { "icon": "🪪", "title": "Isikutunnistus (PID)", "body": "Esmane digitaalne identiteedidokument, mis vastab eIDAS 2.0 nõuetele. Tunnustatud kõigis EL-i liikmesriikides.", "status": "available" },
-      { "icon": "🛂", "title": "Pass", "body": "Teie passi digitaalne versioon, mida ametiasutused ja teenused saavad koheselt kontrollida.", "status": "available" },
-      { "icon": "🚗", "title": "Juhiluba", "body": "Digitaalne juhiluba, mis vastab mDoc/ISO 18013-5 standardile. Kontaktivabalt kontrollitav, sh liikluspolitsei poolt.", "status": "available" },
-      { "icon": "📋", "title": "Sõiduki registreerimine", "body": "Teie sõiduki registreerimisdokument digitaalsel kujul. Ei ole enam vaja paberdokumente kaasas kanda.", "status": "soon" },
-      { "icon": "🛡️", "title": "Sõiduki kindlustus (RCA)", "body": "Kohustuslik sõidukikindlustuspoliis, reaalajas kontrollitav.", "status": "soon" },
-      { "icon": "🔧", "title": "Tehniline ülevaatus / RAR", "body": "Perioodilise tehnilise ülevaatuse (ITP) ja RAR sõidukiandmed — kontrollitavad digitaalsed tõendid.", "status": "soon" },
-      { "icon": "🏢", "title": "Ettevõtte dokumendid", "body": "Ettevõtte registreerimistõend, volikirjad ja äridokumendid. Allkirjastage digitaalselt oma rahakotiga.", "status": "soon" },
-      { "icon": "🏠", "title": "Kinnisvara dokumendid", "body": "Kinnistusraamatu väljavõtted ja kinnisvaraomandi dokumendid kontrollitavas digitaalses vormingus.", "status": "soon" }
+      {
+        "icon": "🪪",
+        "title": "Isikutunnistus (PID)",
+        "body": "Esmane digitaalne identiteedidokument, mis vastab eIDAS 2.0 nõuetele. Tunnustatud kõigis EL-i liikmesriikides.",
+        "status": "available"
+      },
+      {
+        "icon": "🛂",
+        "title": "Pass",
+        "body": "Teie passi digitaalne versioon, mida ametiasutused ja teenused saavad koheselt kontrollida.",
+        "status": "available"
+      },
+      {
+        "icon": "🚗",
+        "title": "Juhiluba",
+        "body": "Digitaalne juhiluba, mis vastab mDoc/ISO 18013-5 standardile. Kontaktivabalt kontrollitav, sh liikluspolitsei poolt.",
+        "status": "available"
+      },
+      {
+        "icon": "📋",
+        "title": "Sõiduki registreerimine",
+        "body": "Teie sõiduki registreerimisdokument digitaalsel kujul. Ei ole enam vaja paberdokumente kaasas kanda.",
+        "status": "soon"
+      },
+      {
+        "icon": "🛡️",
+        "title": "Sõiduki kindlustus (RCA)",
+        "body": "Kohustuslik sõidukikindlustuspoliis, reaalajas kontrollitav.",
+        "status": "soon"
+      },
+      {
+        "icon": "🔧",
+        "title": "Tehniline ülevaatus / RAR",
+        "body": "Perioodilise tehnilise ülevaatuse (ITP) ja RAR sõidukiandmed — kontrollitavad digitaalsed tõendid.",
+        "status": "soon"
+      },
+      {
+        "icon": "🏢",
+        "title": "Ettevõtte dokumendid",
+        "body": "Ettevõtte registreerimistõend, volikirjad ja äridokumendid. Allkirjastage digitaalselt oma rahakotiga.",
+        "status": "soon"
+      },
+      {
+        "icon": "🏠",
+        "title": "Kinnisvara dokumendid",
+        "body": "Kinnistusraamatu väljavõtted ja kinnisvaraomandi dokumendid kontrollitavas digitaalses vormingus.",
+        "status": "soon"
+      }
     ],
     "statusAvailable": "Saadaval",
     "statusSoon": "Tulemas"
@@ -75,9 +115,24 @@
         "title": "Õiguskaitse ja avalik kord",
         "description": "Politseinikud, piirikaitsjad ja avaliku korra inspektorid kontrollivad digitaalset identiteeti sekunditega — täieliku krüptograafilise usaldusega, ilma füüsilisi dokumente puudutamata.",
         "scenarios": [
-          { "emoji": "🪪", "name": "Identiteedi kontroll patrullimisel", "body": "Politseinik kontrollib kodaniku täielikku identiteeti — nime, CNP, aadressi, fotot — NFC või QR kaudu. Ei paberit. Tulemus logitakse automaatselt.", "legal": "Law 218/2002 — Art. 31" },
-          { "emoji": "🚗", "name": "Täielik liikluspeatuse pakett", "body": "Üks QR-skaneerimine: ametnik saab isikutunnistuse, juhiloa koos kategooriatega, sõiduki registreerimise, RCA kindlustuse ja ITP — kõik krüptograafiliselt kontrollitud.", "legal": "OUG 195/2002 — Art. 6, 80, 81" },
-          { "emoji": "🛂", "name": "Piirikontroll", "body": "Piiriületuspunktides kontrollivad ametnikud identiteeti, kodakondsust ja reisidokumendi kehtivust ühes turvalises digitaalses esituses.", "legal": "Law 248/2005" }
+          {
+            "emoji": "🪪",
+            "name": "Identiteedi kontroll patrullimisel",
+            "body": "Politseinik kontrollib kodaniku täielikku identiteeti — nime, CNP, aadressi, fotot — NFC või QR kaudu. Ei paberit. Tulemus logitakse automaatselt.",
+            "legal": "Law 218/2002 — Art. 31"
+          },
+          {
+            "emoji": "🚗",
+            "name": "Täielik liikluspeatuse pakett",
+            "body": "Üks QR-skaneerimine: ametnik saab isikutunnistuse, juhiloa koos kategooriatega, sõiduki registreerimise, RCA kindlustuse ja ITP — kõik krüptograafiliselt kontrollitud.",
+            "legal": "OUG 195/2002 — Art. 6, 80, 81"
+          },
+          {
+            "emoji": "🛂",
+            "name": "Piirikontroll",
+            "body": "Piiriületuspunktides kontrollivad ametnikud identiteeti, kodakondsust ja reisidokumendi kehtivust ühes turvalises digitaalses esituses.",
+            "legal": "Law 248/2005"
+          }
         ]
       },
       {
@@ -86,9 +141,24 @@
         "title": "Äri ja kaubandustehingud",
         "description": "Ettevõtted, notarid, juristid ja B2B platvormid kontrollivad ettevõtte identiteeti ja seadusliku esindaja volitust koheselt — kõrvaldades pabertõendite ja kullerite vajaduse.",
         "scenarios": [
-          { "emoji": "🏛️", "name": "Ettevõtte kontrollimine (ONRC)", "body": "B2B platvorm või avaliku hanke portaal kontrollib ettevõtte nime, CUI, registreeritud aadressi ja aktiivset staatust — kõik sertifitseeritud riikliku äriregistri poolt.", "legal": "Law 31/1990; Law 26/1990" },
-          { "emoji": "✍️", "name": "Seadusliku esindaja kontrollimine", "body": "Partner või notar kontrollib, et isik on ettevõtte volitatud esindaja — identiteet + ettevõtte mandaat + volitus esitatakse samaaegselt.", "legal": "Law 31/1990 — Art. 75, 197" },
-          { "emoji": "📜", "name": "Lepingu allkirjastamine — täisautomaatne voog", "body": "Üks QR: identiteet kontrollitud, volitus kinnitatud, leping allkirjastatud kvalifitseeritud elektroonilise allkirjaga. Õiguslikult siduv kogu EL-is. Alla 90 sekundi.", "legal": "Reg. (EL) 2024/1183 — Art. 25; Law 455/2001" }
+          {
+            "emoji": "🏛️",
+            "name": "Ettevõtte kontrollimine (ONRC)",
+            "body": "B2B platvorm või avaliku hanke portaal kontrollib ettevõtte nime, CUI, registreeritud aadressi ja aktiivset staatust — kõik sertifitseeritud riikliku äriregistri poolt.",
+            "legal": "Law 31/1990; Law 26/1990"
+          },
+          {
+            "emoji": "✍️",
+            "name": "Seadusliku esindaja kontrollimine",
+            "body": "Partner või notar kontrollib, et isik on ettevõtte volitatud esindaja — identiteet + ettevõtte mandaat + volitus esitatakse samaaegselt.",
+            "legal": "Law 31/1990 — Art. 75, 197"
+          },
+          {
+            "emoji": "📜",
+            "name": "Lepingu allkirjastamine — täisautomaatne voog",
+            "body": "Üks QR: identiteet kontrollitud, volitus kinnitatud, leping allkirjastatud kvalifitseeritud elektroonilise allkirjaga. Õiguslikult siduv kogu EL-is. Alla 90 sekundi.",
+            "legal": "Reg. (EL) 2024/1183 — Art. 25; Law 455/2001"
+          }
         ]
       },
       {
@@ -97,10 +167,30 @@
         "title": "Haridus — kool ja ülikool",
         "description": "Õpilased 6. eluaastast kuni doktorantuurini kannavad oma kooli- või ülikooli kaarti EguWallet'is. Kasutatakse kooli sissepääsuks, eksamiteks, raamatukokku, sööklas, ühiselamus ja transpordi allahindlusteks.",
         "scenarios": [
-          { "emoji": "🏫", "name": "Kooliõpilase kaart (klassid 1–12)", "body": "Õpilane koputab telefoniga kooli värava, raamatukogu või söökla juures. Digitaalne carnet de elev väljastatakse kooli või inspektoraadi poolt — kehtib õppeaasta jooksul.", "legal": "Law 1/2011 — Art. 5" },
-          { "emoji": "📋", "name": "Üliõpilaskaart + ID eksamitel", "body": "Bakalaureuse-, riiklike eksamite ja olümpiaadide jaoks: carnet de elev koos elektroonilise isikutunnistusega esitatakse samaaegselt — 14-aastastele ja vanematele õpilastele.", "legal": "Law 1/2011; OUG 97/2005 — Art. 14" },
-          { "emoji": "🎓", "name": "Ülikooliõpilase kaart", "body": "Teaduskonna sissepääs, ühiselamu, raamatukogu, sekretariaat — digitaalne carnet de student asendab füüsilise kaardi. Toimib stipendiumide ja CFR reisisoodustuste jaoks.", "legal": "Law 1/2011 — Art. 118, 119" },
-          { "emoji": "🚌", "name": "Õpilase transpordipass", "body": "Õpilased ja üliõpilased sõidavad bussides, metroos ja rongides oma rahakoti kaudu. Valideerija või juht näeb õigust koheselt — füüsilist piletit pole vaja.", "legal": "OUG 133/2000; HCL linnaliiklus" }
+          {
+            "emoji": "🏫",
+            "name": "Kooliõpilase kaart (klassid 1–12)",
+            "body": "Õpilane koputab telefoniga kooli värava, raamatukogu või söökla juures. Digitaalne carnet de elev väljastatakse kooli või inspektoraadi poolt — kehtib õppeaasta jooksul.",
+            "legal": "Law 1/2011 — Art. 5"
+          },
+          {
+            "emoji": "📋",
+            "name": "Üliõpilaskaart + ID eksamitel",
+            "body": "Bakalaureuse-, riiklike eksamite ja olümpiaadide jaoks: carnet de elev koos elektroonilise isikutunnistusega esitatakse samaaegselt — 14-aastastele ja vanematele õpilastele.",
+            "legal": "Law 1/2011; OUG 97/2005 — Art. 14"
+          },
+          {
+            "emoji": "🎓",
+            "name": "Ülikooliõpilase kaart",
+            "body": "Teaduskonna sissepääs, ühiselamu, raamatukogu, sekretariaat — digitaalne carnet de student asendab füüsilise kaardi. Toimib stipendiumide ja CFR reisisoodustuste jaoks.",
+            "legal": "Law 1/2011 — Art. 118, 119"
+          },
+          {
+            "emoji": "🚌",
+            "name": "Õpilase transpordipass",
+            "body": "Õpilased ja üliõpilased sõidavad bussides, metroos ja rongides oma rahakoti kaudu. Valideerija või juht näeb õigust koheselt — füüsilist piletit pole vaja.",
+            "legal": "OUG 133/2000; HCL linnaliiklus"
+          }
         ]
       },
       {
@@ -109,8 +199,18 @@
         "title": "Jaekaubandus ja vanuse kontrollimine",
         "description": "Kauplejad kontrollivad vanust või identiteeti kassas sekunditega — ilma isikuandmeid salvestamata ja täieliku GDPR vastavusega.",
         "scenarios": [
-          { "emoji": "🍺", "name": "18+ vanus kassas", "body": "Kassapidaja näitab QR-koodi. Klient kinnitab oma rahakotist: edastatakse ainult «vanus ≥ 18: JAH». Ei nime, ei ID-numbrit, ei fotot.", "legal": "OUG 99/2000 — alkohol/tubakas" },
-          { "emoji": "🏨", "name": "Hotelli sisseregistreerimine", "body": "Turist registreerub, esitades oma rahakotist nime, sünnikuupäeva ja kodakondsuse. Ei passipaljundusi. Vastab majutuse registreerimise eeskirjadele.", "legal": "HG 1215/2001" }
+          {
+            "emoji": "🍺",
+            "name": "18+ vanus kassas",
+            "body": "Kassapidaja näitab QR-koodi. Klient kinnitab oma rahakotist: edastatakse ainult «vanus ≥ 18: JAH». Ei nime, ei ID-numbrit, ei fotot.",
+            "legal": "OUG 99/2000 — alkohol/tubakas"
+          },
+          {
+            "emoji": "🏨",
+            "name": "Hotelli sisseregistreerimine",
+            "body": "Turist registreerub, esitades oma rahakotist nime, sünnikuupäeva ja kodakondsuse. Ei passipaljundusi. Vastab majutuse registreerimise eeskirjadele.",
+            "legal": "HG 1215/2001"
+          }
         ]
       },
       {
@@ -119,8 +219,18 @@
         "title": "Finantsteenused ja KYC",
         "description": "Pangad, kindlustusseltsid ja fintech-platvormid registreerivad kliente digitaalselt — täites AML/KYC nõudeid ilma pabervormideta.",
         "scenarios": [
-          { "emoji": "🏦", "name": "Pangakonto avamine (KYC/AML)", "body": "Pank kontrollib kliendi täielikku identiteeti kaugelt — nimi, CNP, sünnikuupäev ja -koht, kodakondsus, aadress — sertifitseeritud EUDI rahakoti poolt. Vastab rahapesuvastasele seadusele.", "legal": "Law 129/2019; Directive (EL) 2015/849" },
-          { "emoji": "💼", "name": "Kindlustus ja finantstooted", "body": "Kindlustusseltsid kontrollivad kindlustusvõtja identiteeti lepingu allkirjastamisel — digitaalselt, koheselt, täieliku eIDAS 2.0 jälgitavusega.", "legal": "Reg. (EL) 2024/1183" }
+          {
+            "emoji": "🏦",
+            "name": "Pangakonto avamine (KYC/AML)",
+            "body": "Pank kontrollib kliendi täielikku identiteeti kaugelt — nimi, CNP, sünnikuupäev ja -koht, kodakondsus, aadress — sertifitseeritud EUDI rahakoti poolt. Vastab rahapesuvastasele seadusele.",
+            "legal": "Law 129/2019; Directive (EL) 2015/849"
+          },
+          {
+            "emoji": "💼",
+            "name": "Kindlustus ja finantstooted",
+            "body": "Kindlustusseltsid kontrollivad kindlustusvõtja identiteeti lepingu allkirjastamisel — digitaalselt, koheselt, täieliku eIDAS 2.0 jälgitavusega.",
+            "legal": "Reg. (EL) 2024/1183"
+          }
         ]
       },
       {
@@ -129,9 +239,24 @@
         "title": "Tervishoid ja sotsiaalteenused",
         "description": "Haiglad, kliinikud, apteegid ja sotsiaalteenused tuvastavad patsiente ja toetuse saajaid turvaliselt, ilma käsitsi vorme täitmata.",
         "scenarios": [
-          { "emoji": "🏥", "name": "Patsiendi tuvastamine", "body": "Haigla või kliinik tuvastab patsiendi EguWallet'iga. Nimi, CNP, sünnikuupäev kontrollitakse koheselt vastuvõtus või erakorralises meditsiinis.", "legal": "Law 95/2006 — Art. 230-232" },
-          { "emoji": "🗳️", "name": "Valimiskomisjoni valijate kontroll", "body": "Valimisjaoskonna töötajad kontrollivad valija identiteeti ja ristviitavad valimisregistriga — koheselt, täieliku auditijäljega. Ei käsitsi nimekirja otsimist.", "legal": "Law 208/2015 — Art. 84" },
-          { "emoji": "📋", "name": "Töölevõtmine ja personalikontroll", "body": "Tööandjad kontrollivad uue töötaja identiteeti lepingu allkirjastamisel — nimi, CNP, aadress — nagu nõuab tööseadustik ja REVISAL aruandlus.", "legal": "Law 53/2003; HG 500/2011" }
+          {
+            "emoji": "🏥",
+            "name": "Patsiendi tuvastamine",
+            "body": "Haigla või kliinik tuvastab patsiendi EguWallet'iga. Nimi, CNP, sünnikuupäev kontrollitakse koheselt vastuvõtus või erakorralises meditsiinis.",
+            "legal": "Law 95/2006 — Art. 230-232"
+          },
+          {
+            "emoji": "🗳️",
+            "name": "Valimiskomisjoni valijate kontroll",
+            "body": "Valimisjaoskonna töötajad kontrollivad valija identiteeti ja ristviitavad valimisregistriga — koheselt, täieliku auditijäljega. Ei käsitsi nimekirja otsimist.",
+            "legal": "Law 208/2015 — Art. 84"
+          },
+          {
+            "emoji": "📋",
+            "name": "Töölevõtmine ja personalikontroll",
+            "body": "Tööandjad kontrollivad uue töötaja identiteeti lepingu allkirjastamisel — nimi, CNP, aadress — nagu nõuab tööseadustik ja REVISAL aruandlus.",
+            "legal": "Law 53/2003; HG 500/2011"
+          }
         ]
       },
       {
@@ -140,9 +265,24 @@
         "title": "Hasartmängud ja enesevälistamine",
         "description": "Veebis ja füüsilised kasiinod, spordikihluste korraldajad ja mänguplatvormid kontrollivad mängija identiteeti ning riiklikke enesevälistamise registreid — ennetades hasartmängusõltuvust ja tagades õigusnõuetele vastavuse.",
         "scenarios": [
-          { "emoji": "🎰", "name": "Mängija identiteedi kontrollimine (KYC)", "body": "Hasartmänguoperaatorid kontrollivad mängija identiteeti registreerimisel — nime, sünnikuupäeva, kodakondsust — vastavalt AML-i ja hasartmängulitsentsimise eeskirjadele. Kiire, digitaalne, ei paljundusi.", "legal": "Directive (EL) 2015/849; OUG 77/2009" },
-          { "emoji": "🚫", "name": "Enesevälistamise registri kontroll", "body": "Enne mängijale panustamise lubamist kontrollib operaator EguWallet'i kaudu riiklikku enesevälistamise registrit. Kui mängija on nimekirjas, blokeeritakse juurdepääs automaatselt — käsitsi otsimist pole vaja.", "legal": "OUG 77/2009 — Art. 10; riiklik hasartmänguamet" },
-          { "emoji": "🔞", "name": "18+ vanuse kontrollimine mängimiseks", "body": "Veebis ja füüsilised mänguoperaatorid kontrollivad, et mängija on 18-aastane või vanem — kasutades EguWallet'i vanuse tõendamist. Edastatakse ainult JAH/EI — operaator ei salvesta isikuandmeid.", "legal": "OUG 77/2009; Directive (EL) 2015/849" }
+          {
+            "emoji": "🎰",
+            "name": "Mängija identiteedi kontrollimine (KYC)",
+            "body": "Hasartmänguoperaatorid kontrollivad mängija identiteeti registreerimisel — nime, sünnikuupäeva, kodakondsust — vastavalt AML-i ja hasartmängulitsentsimise eeskirjadele. Kiire, digitaalne, ei paljundusi.",
+            "legal": "Directive (EL) 2015/849; OUG 77/2009"
+          },
+          {
+            "emoji": "🚫",
+            "name": "Enesevälistamise registri kontroll",
+            "body": "Enne mängijale panustamise lubamist kontrollib operaator EguWallet'i kaudu riiklikku enesevälistamise registrit. Kui mängija on nimekirjas, blokeeritakse juurdepääs automaatselt — käsitsi otsimist pole vaja.",
+            "legal": "OUG 77/2009 — Art. 10; riiklik hasartmänguamet"
+          },
+          {
+            "emoji": "🔞",
+            "name": "18+ vanuse kontrollimine mängimiseks",
+            "body": "Veebis ja füüsilised mänguoperaatorid kontrollivad, et mängija on 18-aastane või vanem — kasutades EguWallet'i vanuse tõendamist. Edastatakse ainult JAH/EI — operaator ei salvesta isikuandmeid.",
+            "legal": "OUG 77/2009; Directive (EL) 2015/849"
+          }
         ]
       },
       {
@@ -151,10 +291,30 @@
         "title": "Õiguslik ja notariaalne — füüsilist kohalolekut enam ei nõuta",
         "description": "Vastavalt määrusele (EL) 2024/1183 pakub EUDI rahakott õiguslikult siduvat tuvastamist, mis vastab füüsilisele kohalolekule paljude õiguslike toimingute puhul. Paljud notariaalsed menetlused, mis varem nõudsid kodanike füüsilist kohalolu, saab nüüd läbi viia kaugelt — suur samm edasi digitaalsete avalike teenuste vallas.",
         "scenarios": [
-          { "emoji": "📝", "name": "Kaugnotariaalne tuvastamine", "body": "Toimingute puhul, mis varem nõudsid füüsilist kohalolu — volikiri, deklaratsioonid, kinnisvaraülekanded — saab notar nüüd tuvastada poole EUDI rahakoti kaudu kaugelt. Rahakoti kontrollitud PID asendab isiklikku dokumendikontrolli.", "legal": "Law 36/1995 — Art. 40; Reg. (EL) 2024/1183 — Art. 5a" },
-          { "emoji": "🏠", "name": "Kinnisvaratehingud ilma järjekorraga", "body": "Kinnisvara ostmine või müümine ei nõua enam notarisse reisimist ainult tuvastamise eesmärgil. Mõlemad osapooled tuvastavad end digitaalselt, esindaja volitus kontrollitakse ja leping allkirjastatakse QES-iga — kõik kaugelt.", "legal": "Civil Code Art. 1244; eIDAS 2.0 Art. 25" },
-          { "emoji": "✅", "name": "Deklaratsioonid ja volikirjad", "body": "Seaduslikud deklaratsioonid, volitused, vandega kinnitused — need toimingud ei nõua enam füüsilist notariaalmenetlust tuvastamisetapis. Kodanik esitab oma EguWallet PID; tuvastamine on õiguslikult samaväärne isikliku kontrollimisega.", "legal": "Reg. (EL) 2024/1183 — eIDAS 2.0; Law 455/2001" },
-          { "emoji": "🤝", "name": "Ärilepingud QES-iga", "body": "Teenuslepingud, partnerluse lepingud, aktsionäride resolutsioonid — allkirjastatud kvalifitseeritud elektroonilise allkirjaga otse EguWallet'ist. Õigusjõud kõigis 27 EL-i liikmesriigis. Ei printerit, ei kullerit, ei kohtumist.", "legal": "Law 455/2001; eIDAS 2.0 Art. 25; Law 31/1990" }
+          {
+            "emoji": "📝",
+            "name": "Kaugnotariaalne tuvastamine",
+            "body": "Toimingute puhul, mis varem nõudsid füüsilist kohalolu — volikiri, deklaratsioonid, kinnisvaraülekanded — saab notar nüüd tuvastada poole EUDI rahakoti kaudu kaugelt. Rahakoti kontrollitud PID asendab isiklikku dokumendikontrolli.",
+            "legal": "Law 36/1995 — Art. 40; Reg. (EL) 2024/1183 — Art. 5a"
+          },
+          {
+            "emoji": "🏠",
+            "name": "Kinnisvaratehingud ilma järjekorraga",
+            "body": "Kinnisvara ostmine või müümine ei nõua enam notarisse reisimist ainult tuvastamise eesmärgil. Mõlemad osapooled tuvastavad end digitaalselt, esindaja volitus kontrollitakse ja leping allkirjastatakse QES-iga — kõik kaugelt.",
+            "legal": "Civil Code Art. 1244; eIDAS 2.0 Art. 25"
+          },
+          {
+            "emoji": "✅",
+            "name": "Deklaratsioonid ja volikirjad",
+            "body": "Seaduslikud deklaratsioonid, volitused, vandega kinnitused — need toimingud ei nõua enam füüsilist notariaalmenetlust tuvastamisetapis. Kodanik esitab oma EguWallet PID; tuvastamine on õiguslikult samaväärne isikliku kontrollimisega.",
+            "legal": "Reg. (EL) 2024/1183 — eIDAS 2.0; Law 455/2001"
+          },
+          {
+            "emoji": "🤝",
+            "name": "Ärilepingud QES-iga",
+            "body": "Teenuslepingud, partnerluse lepingud, aktsionäride resolutsioonid — allkirjastatud kvalifitseeritud elektroonilise allkirjaga otse EguWallet'ist. Õigusjõud kõigis 27 EL-i liikmesriigis. Ei printerit, ei kullerit, ei kohtumist.",
+            "legal": "Law 455/2001; eIDAS 2.0 Art. 25; Law 31/1990"
+          }
         ]
       }
     ]
@@ -181,12 +341,30 @@
     "auditTitle": "Erasektoris auditeeritud. Avalikult vastutav.",
     "auditBody": "EguWallet on ehitatud avatud standarditele (ARF 2.5+, OpenID4VCI, OpenID4VP, SD-JWT, ISO 18013-5) ja läbib ametlikku sertifitseerimist akrediteeritud vastavushindamisasutuse poolt. Meie tehniline arhitektuur on avatud sõltumatutele turvaauditidele.",
     "badges": [
-      { "icon": "🛡️", "label": "GDPR Art. 17 — Õigus kustutamisele" },
-      { "icon": "📋", "label": "Täielik suhtluse ajalugu" },
-      { "icon": "⚖️", "label": "eIDAS 2.0 õiguslikult siduv" },
-      { "icon": "🔐", "label": "Nullteadmiste selektiivne avalikustamine" },
-      { "icon": "🔍", "label": "Erasektoris auditeeritud" },
-      { "icon": "🌍", "label": "Kehtiv kõigis 27 EL-i riigis" }
+      {
+        "icon": "🛡️",
+        "label": "GDPR Art. 17 — Õigus kustutamisele"
+      },
+      {
+        "icon": "📋",
+        "label": "Täielik suhtluse ajalugu"
+      },
+      {
+        "icon": "⚖️",
+        "label": "eIDAS 2.0 õiguslikult siduv"
+      },
+      {
+        "icon": "🔐",
+        "label": "Nullteadmiste selektiivne avalikustamine"
+      },
+      {
+        "icon": "🔍",
+        "label": "Erasektoris auditeeritud"
+      },
+      {
+        "icon": "🌍",
+        "label": "Kehtiv kõigis 27 EL-i riigis"
+      }
     ]
   },
   "usedToday": {
@@ -214,12 +392,36 @@
     "heading": "Mis on järgmine — digitaalse identiteedi tulevik",
     "subheading": "EguWallet laieneb pidevalt uute kasutusjuhtudega, mis muudavad elu lihtsamaks",
     "items": [
-      { "icon": "📡", "title": "Seadmetevahelise kontrollimine (Bluetooth)", "body": "Nagu kontaktivaba NFC-makse — politseinik või kaupleja toob oma telefoni teie telefoni lähedale ja saab koheselt ainult andmed, mida olete volitanud. Ei internetti, ei vahendavat serverit." },
-      { "icon": "🚔", "title": "Õiguskaitse identiteedi kontroll", "body": "Sarnaselt kaasaegsele kontaktivabale maksele: õiguskaitseametnik kontrollib identiteeti NFC/Bluetooth kaudu. Teie kontrollite, milliseid andmeid edastatakse. Kiire, turvaline, paljundusi pole vaja." },
-      { "icon": "🍺", "title": "18+ vanuse kontrollimine (tulemas)", "body": "Lähenev kasutuselevõtt suure Rumeenia jaemüüjaga alkoholi müügi vanusekontrolliks. Kaupleja saab ainult JAH/EI vastuse — muid isikuandmeid ei avalikustata." },
-      { "icon": "🚌", "title": "Ühistranspordi piletid ja passid", "body": "Tasuta reisimise õigusega õpilased tõendavad oma staatust EguWallet'i kaudu. Tavalised reisijad ostavad ja esitavad pileteid digitaalselt — ei paberit, ei kontaktvalidaatoreid." },
-      { "icon": "📍", "title": "Aadress uuel Rumeenia ID-kaardil", "body": "Uus Rumeenia ID-kaart ei sisalda enam aadressi kiibil. EguWallet lahendab selle: teie registreeritud aadress, sertifitseeritud ametliku registri poolt, saab vajaduse korral selektiivselt avaldada." },
-      { "icon": "✍️", "title": "Kvalifitseeritud digitaalallkiri", "body": "EguWallet toimib qualifitseeritud elektroonilise allkirja (QES) seadmena, mis vastab eIDAS 2.0 nõuetele. Allkirjastage dokumente täieliku õigusjõuga, tunnustatud kõigis EL-i liikmesriikides — otse oma telefonist." }
+      {
+        "icon": "📡",
+        "title": "Seadmetevahelise kontrollimine (Bluetooth)",
+        "body": "Nagu kontaktivaba NFC-makse — politseinik või kaupleja toob oma telefoni teie telefoni lähedale ja saab koheselt ainult andmed, mida olete volitanud. Ei internetti, ei vahendavat serverit."
+      },
+      {
+        "icon": "🚔",
+        "title": "Õiguskaitse identiteedi kontroll",
+        "body": "Sarnaselt kaasaegsele kontaktivabale maksele: õiguskaitseametnik kontrollib identiteeti NFC/Bluetooth kaudu. Teie kontrollite, milliseid andmeid edastatakse. Kiire, turvaline, paljundusi pole vaja."
+      },
+      {
+        "icon": "🍺",
+        "title": "18+ vanuse kontrollimine (tulemas)",
+        "body": "Lähenev kasutuselevõtt suure Rumeenia jaemüüjaga alkoholi müügi vanusekontrolliks. Kaupleja saab ainult JAH/EI vastuse — muid isikuandmeid ei avalikustata."
+      },
+      {
+        "icon": "🚌",
+        "title": "Ühistranspordi piletid ja passid",
+        "body": "Tasuta reisimise õigusega õpilased tõendavad oma staatust EguWallet'i kaudu. Tavalised reisijad ostavad ja esitavad pileteid digitaalselt — ei paberit, ei kontaktvalidaatoreid."
+      },
+      {
+        "icon": "📍",
+        "title": "Aadress uuel Rumeenia ID-kaardil",
+        "body": "Uus Rumeenia ID-kaart ei sisalda enam aadressi kiibil. EguWallet lahendab selle: teie registreeritud aadress, sertifitseeritud ametliku registri poolt, saab vajaduse korral selektiivselt avaldada."
+      },
+      {
+        "icon": "✍️",
+        "title": "Kvalifitseeritud digitaalallkiri",
+        "body": "EguWallet toimib qualifitseeritud elektroonilise allkirja (QES) seadmena, mis vastab eIDAS 2.0 nõuetele. Allkirjastage dokumente täieliku õigusjõuga, tunnustatud kõigis EL-i liikmesriikides — otse oma telefonist."
+      }
     ]
   },
   "howItWorks": {
@@ -234,15 +436,42 @@
   "faq": {
     "heading": "Korduma kippuvad küsimused",
     "items": [
-      { "q": "Mis on EguWallet?", "a": "EguWallet on IT Eguilde SRL arendatud Euroopa eIDAS 2.0 sertifitseeritud digitaalne rahakott. See võimaldab teil salvestada ja esitada digitaalseid identiteedidokumente (ID-kaart, pass, juhiluba jne) turvaliselt oma telefonis, täieliku kontrolliga oma isikuandmete üle." },
-      { "q": "Milliseid dokumente saan EguWallet'is salvestada?", "a": "Praegu: isikutunnistus (PID), pass ja juhiluba. Tulemas: sõiduki registreerimine, RCA kindlustus, ITP/RAR, ettevõtte dokumendid ja kinnisvara dokumendid." },
-      { "q": "Kas minu isikuandmed on turvalised?", "a": "Jah. EguWallet kasutab SD-JWT ja mDoc/ISO 18013-5 valikuliseks avalikustamiseks — edastate ainult andmeid, mille olete selgesõnaliselt kinnitanud. Ühtegi esitust ei salvestata. Õiguslik alus: GDPR Art. 5(1)(c) ja määrus (EL) 2024/1183." },
-      { "q": "Kus saan EguWallet'i kasutada?", "a": "Täna: Ilfovi maakonna nõukogu digitaalteenused (ilfov.net) ja Sektori 2 linnavalitsus (sector2.eu). Laienemine teistele avalikele asutustele ja erakauplejatele Rumeenias ja EL-is on käimas." },
-      { "q": "Mis on eIDAS 2.0?", "a": "eIDAS 2.0 on määrus (EL) 2024/1183, mis muudab algset eIDAS määrust. See tagab igale Euroopa kodanikule õiguse tasuta digitaalsele rahakotile (EUDI rahakott), tunnustatud kõigis 27 liikmesriigis." },
-      { "q": "Kuidas toimib selektiivne avalikustamine?", "a": "Kui teenus taotleb identiteedi kontrollimist, näitab teie rahakott täpselt, milliseid andmeid taotletakse. Kinnitate või lükkate tagasi iga välja. Näiteks 18-aastase vanuse kontrollimiseks saab kaupleja ainult JAH/EI — ta ei näe kunagi teie nime, riiklikku ID-numbrit ega aadressi." },
-      { "q": "Kas EguWallet on tasuta?", "a": "Jah, kodanikele täiesti tasuta praeguse pilootfaasi jooksul. Lae alla, registreerimine ja kasutamine on kõik tasuta." },
-      { "q": "Kas EguWallet on täielikult sertifitseeritud?", "a": "EguWallet läbib praegu ametlikku eIDAS 2.0 sertifitseerimist akrediteeritud vastavushindamisasutuse (CAB) poolt. Kuni sertifitseerimise lõpetamiseni toimib piloot-EUDI rahakotina. Kõik tehnilised standardid (ARF 2.5+, OpenID4VCI, OpenID4VP, SD-JWT, ISO 18013-5) on juba rakendatud." },
-      { "q": "Kuidas aktiveerida oma digitaalne rahakott?", "a": "Laadige rakendus alla Google Play'st, kinnitage telefoninumber, looge PIN, seejärel ühendage oma maakonna või linna portaaliga dokumentide registreerimiseks. Protsess võtab umbes 5 minutit." }
+      {
+        "q": "Mis on EguWallet?",
+        "a": "EguWallet on IT Eguilde SRL arendatud Euroopa eIDAS 2.0 sertifitseeritud digitaalne rahakott. See võimaldab teil salvestada ja esitada digitaalseid identiteedidokumente (ID-kaart, pass, juhiluba jne) turvaliselt oma telefonis, täieliku kontrolliga oma isikuandmete üle."
+      },
+      {
+        "q": "Milliseid dokumente saan EguWallet'is salvestada?",
+        "a": "Praegu: isikutunnistus (PID), pass ja juhiluba. Tulemas: sõiduki registreerimine, RCA kindlustus, ITP/RAR, ettevõtte dokumendid ja kinnisvara dokumendid."
+      },
+      {
+        "q": "Kas minu isikuandmed on turvalised?",
+        "a": "Jah. EguWallet kasutab SD-JWT ja mDoc/ISO 18013-5 valikuliseks avalikustamiseks — edastate ainult andmeid, mille olete selgesõnaliselt kinnitanud. Ühtegi esitust ei salvestata. Õiguslik alus: GDPR Art. 5(1)(c) ja määrus (EL) 2024/1183."
+      },
+      {
+        "q": "Kus saan EguWallet'i kasutada?",
+        "a": "Täna: Ilfovi maakonna nõukogu digitaalteenused (ilfov.net) ja Sektori 2 linnavalitsus (sector2.eu). Laienemine teistele avalikele asutustele ja erakauplejatele Rumeenias ja EL-is on käimas."
+      },
+      {
+        "q": "Mis on eIDAS 2.0?",
+        "a": "eIDAS 2.0 on määrus (EL) 2024/1183, mis muudab algset eIDAS määrust. See tagab igale Euroopa kodanikule õiguse tasuta digitaalsele rahakotile (EUDI rahakott), tunnustatud kõigis 27 liikmesriigis."
+      },
+      {
+        "q": "Kuidas toimib selektiivne avalikustamine?",
+        "a": "Kui teenus taotleb identiteedi kontrollimist, näitab teie rahakott täpselt, milliseid andmeid taotletakse. Kinnitate või lükkate tagasi iga välja. Näiteks 18-aastase vanuse kontrollimiseks saab kaupleja ainult JAH/EI — ta ei näe kunagi teie nime, riiklikku ID-numbrit ega aadressi."
+      },
+      {
+        "q": "Kas EguWallet on tasuta?",
+        "a": "Jah, kodanikele täiesti tasuta praeguse pilootfaasi jooksul. Lae alla, registreerimine ja kasutamine on kõik tasuta."
+      },
+      {
+        "q": "Kas EguWallet on täielikult sertifitseeritud?",
+        "a": "EguWallet läbib praegu ametlikku eIDAS 2.0 sertifitseerimist akrediteeritud vastavushindamisasutuse (CAB) poolt. Kuni sertifitseerimise lõpetamiseni toimib piloot-EUDI rahakotina. Kõik tehnilised standardid (ARF 2.5+, OpenID4VCI, OpenID4VP, SD-JWT, ISO 18013-5) on juba rakendatud."
+      },
+      {
+        "q": "Kuidas aktiveerida oma digitaalne rahakott?",
+        "a": "Laadige rakendus alla Google Play'st, kinnitage telefoninumber, looge PIN, seejärel ühendage oma maakonna või linna portaaliga dokumentide registreerimiseks. Protsess võtab umbes 5 minutit."
+      }
     ]
   },
   "getDigitalId": {
@@ -295,5 +524,12 @@
     "timelineText": "Pärast kustutamistaotluse saamist eemaldatakse teie isikuandmed meie serveritelt jäädavalt 30 päeva jooksul. Kohalikud seadmeandmed kustutatakse koheselt rakendusesisese kustutamise kasutamisel.",
     "contact": "Küsimused?",
     "contactText": "Andmete kustutamise või privaatsusõiguste küsimustes võtke meiega ühendust aadressil <a href='mailto:privacy@eguwallet.eu' class='t-primary underline'>privacy@eguwallet.eu</a>."
+  },
+  "contact": {
+    "sending": "Saatmine…",
+    "successMsg": "Sõnum saadetud! Vastame 2 tööpäeva jooksul.",
+    "errorFields": "Palun täitke kõik kohustuslikud väljad.",
+    "errorFail": "Sõnumit ei õnnestunud saata. Kirjutage meile otse aadressil contact@eguwallet.eu",
+    "submitBtn": "Saada sõnum"
   }
 }

@@ -1,10 +1,12 @@
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import tailwind from '@tailwindcss/vite';
+import node from '@astrojs/node';
 
 export default defineConfig({
   site: 'https://eguwallet.eu',
   output: 'static',
+  adapter: node({ mode: 'standalone' }),
   vite: {
     plugins: [tailwind()],
   },

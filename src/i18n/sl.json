@@ -53,14 +53,54 @@
     "heading": "Dokumenti v vaši denarnici",
     "subheading": "Vsi vaši pomembni dokumenti — digitalni, preverljivi, vedno pri roki",
     "items": [
-      { "icon": "🪪", "title": "Osebna izkaznica (PID)", "body": "Primarni digitalni identifikacijski dokument, skladen z eIDAS 2.0.", "status": "available" },
-      { "icon": "🛂", "title": "Potni list", "body": "Digitalna različica vašega potnega lista, takoj preverljiva.", "status": "available" },
-      { "icon": "🚗", "title": "Vozniško dovoljenje", "body": "Digitalno vozniško dovoljenje, skladno z mDoc/ISO 18013-5.", "status": "available" },
-      { "icon": "📋", "title": "Prometno dovoljenje", "body": "Vaše prometno dovoljenje v digitalnem formatu.", "status": "soon" },
-      { "icon": "🛡️", "title": "Zavarovanje vozila (RCA)", "body": "Obvezno zavarovanje vozila, preverljivo v realnem času.", "status": "soon" },
-      { "icon": "🔧", "title": "Tehnični pregled", "body": "Potrdila o rednem tehničnem pregledu.", "status": "soon" },
-      { "icon": "🏢", "title": "Poslovni dokumenti", "body": "Registracija podjetja in korporativni dokumenti.", "status": "soon" },
-      { "icon": "🏠", "title": "Dokumenti o nepremičninah", "body": "Izpiski iz zemljiške knjige in dokumenti o lastništvu.", "status": "soon" }
+      {
+        "icon": "🪪",
+        "title": "Osebna izkaznica (PID)",
+        "body": "Primarni digitalni identifikacijski dokument, skladen z eIDAS 2.0.",
+        "status": "available"
+      },
+      {
+        "icon": "🛂",
+        "title": "Potni list",
+        "body": "Digitalna različica vašega potnega lista, takoj preverljiva.",
+        "status": "available"
+      },
+      {
+        "icon": "🚗",
+        "title": "Vozniško dovoljenje",
+        "body": "Digitalno vozniško dovoljenje, skladno z mDoc/ISO 18013-5.",
+        "status": "available"
+      },
+      {
+        "icon": "📋",
+        "title": "Prometno dovoljenje",
+        "body": "Vaše prometno dovoljenje v digitalnem formatu.",
+        "status": "soon"
+      },
+      {
+        "icon": "🛡️",
+        "title": "Zavarovanje vozila (RCA)",
+        "body": "Obvezno zavarovanje vozila, preverljivo v realnem času.",
+        "status": "soon"
+      },
+      {
+        "icon": "🔧",
+        "title": "Tehnični pregled",
+        "body": "Potrdila o rednem tehničnem pregledu.",
+        "status": "soon"
+      },
+      {
+        "icon": "🏢",
+        "title": "Poslovni dokumenti",
+        "body": "Registracija podjetja in korporativni dokumenti.",
+        "status": "soon"
+      },
+      {
+        "icon": "🏠",
+        "title": "Dokumenti o nepremičninah",
+        "body": "Izpiski iz zemljiške knjige in dokumenti o lastništvu.",
+        "status": "soon"
+      }
     ],
     "statusAvailable": "Na voljo",
     "statusSoon": "Kmalu"
@@ -75,9 +115,24 @@
         "title": "Kazenski pregon in javni red",
         "description": "Policisti in mejni stražarji v sekundah preverijo digitalno identiteto.",
         "scenarios": [
-          { "emoji": "🪪", "name": "Preverjanje identitete na patruljiranju", "body": "Policist preveri celotno identiteto državljana prek NFC ali QR.", "legal": "Zakon 218/2002 — čl. 31" },
-          { "emoji": "🚗", "name": "Celoten paket pri prometni kontroli", "body": "En QR sken: policist prejme osebno, vozniško, prometno dovoljenje, zavarovanje in tehnični pregled.", "legal": "OUG 195/2002 — čl. 6, 80, 81" },
-          { "emoji": "🛂", "name": "Mejna kontrola", "body": "Uradniki digitalno preverijo identiteto in veljavnost potovalnih dokumentov.", "legal": "Zakon 248/2005" }
+          {
+            "emoji": "🪪",
+            "name": "Preverjanje identitete na patruljiranju",
+            "body": "Policist preveri celotno identiteto državljana prek NFC ali QR.",
+            "legal": "Zakon 218/2002 — čl. 31"
+          },
+          {
+            "emoji": "🚗",
+            "name": "Celoten paket pri prometni kontroli",
+            "body": "En QR sken: policist prejme osebno, vozniško, prometno dovoljenje, zavarovanje in tehnični pregled.",
+            "legal": "OUG 195/2002 — čl. 6, 80, 81"
+          },
+          {
+            "emoji": "🛂",
+            "name": "Mejna kontrola",
+            "body": "Uradniki digitalno preverijo identiteto in veljavnost potovalnih dokumentov.",
+            "legal": "Zakon 248/2005"
+          }
         ]
       },
       {
@@ -86,9 +141,24 @@
         "title": "Poslovanje in komercialne transakcije",
         "description": "Podjetja in notarji takoj preverijo identiteto in pooblastila.",
         "scenarios": [
-          { "emoji": "🏛️", "name": "Preverjanje podjetja", "body": "Platforma B2B preveri ime, registracijo in aktivni status podjetja.", "legal": "Zakon 31/1990; Zakon 26/1990" },
-          { "emoji": "✍️", "name": "Preverjanje zakonitega zastopnika", "body": "Notar preveri status pooblaščenega zastopnika.", "legal": "Zakon 31/1990 — čl. 75, 197" },
-          { "emoji": "📜", "name": "Podpisovanje pogodbe s QES", "body": "Identiteta preverjena, pogodba podpisana s kvalificiranim elektronskim podpisom. Pod 90 sekund.", "legal": "Uredba (EU) 2024/1183 — čl. 25; Zakon 455/2001" }
+          {
+            "emoji": "🏛️",
+            "name": "Preverjanje podjetja",
+            "body": "Platforma B2B preveri ime, registracijo in aktivni status podjetja.",
+            "legal": "Zakon 31/1990; Zakon 26/1990"
+          },
+          {
+            "emoji": "✍️",
+            "name": "Preverjanje zakonitega zastopnika",
+            "body": "Notar preveri status pooblaščenega zastopnika.",
+            "legal": "Zakon 31/1990 — čl. 75, 197"
+          },
+          {
+            "emoji": "📜",
+            "name": "Podpisovanje pogodbe s QES",
+            "body": "Identiteta preverjena, pogodba podpisana s kvalificiranim elektronskim podpisom. Pod 90 sekund.",
+            "legal": "Uredba (EU) 2024/1183 — čl. 25; Zakon 455/2001"
+          }
         ]
       },
       {
@@ -97,10 +167,30 @@
         "title": "Izobraževanje — šola in univerza",
         "description": "Učenci nosijo svojo šolsko ali študentsko izkaznico v EguWalletu.",
         "scenarios": [
-          { "emoji": "🏫", "name": "Šolska učenčeva izkaznica", "body": "Učenec prislonji telefon pri šolskih vratih, v knjižnici ali menz.", "legal": "Zakon 1/2011 — čl. 5" },
-          { "emoji": "📋", "name": "Študentska izkaznica + osebna na izpitih", "body": "Digitalna študentska izkaznica in elektronska osebna predložena na izpitih.", "legal": "Zakon 1/2011; OUG 97/2005 — čl. 14" },
-          { "emoji": "🎓", "name": "Univerzitetna študentska izkaznica", "body": "Digitalna študentska izkaznica nadomešča fizično kartico.", "legal": "Zakon 1/2011 — čl. 118, 119" },
-          { "emoji": "🚌", "name": "Študentska potniška karta", "body": "Študenti vstopajo v avtobuse in vlake s pomočjo denarnice.", "legal": "OUG 133/2000" }
+          {
+            "emoji": "🏫",
+            "name": "Šolska učenčeva izkaznica",
+            "body": "Učenec prislonji telefon pri šolskih vratih, v knjižnici ali menz.",
+            "legal": "Zakon 1/2011 — čl. 5"
+          },
+          {
+            "emoji": "📋",
+            "name": "Študentska izkaznica + osebna na izpitih",
+            "body": "Digitalna študentska izkaznica in elektronska osebna predložena na izpitih.",
+            "legal": "Zakon 1/2011; OUG 97/2005 — čl. 14"
+          },
+          {
+            "emoji": "🎓",
+            "name": "Univerzitetna študentska izkaznica",
+            "body": "Digitalna študentska izkaznica nadomešča fizično kartico.",
+            "legal": "Zakon 1/2011 — čl. 118, 119"
+          },
+          {
+            "emoji": "🚌",
+            "name": "Študentska potniška karta",
+            "body": "Študenti vstopajo v avtobuse in vlake s pomočjo denarnice.",
+            "legal": "OUG 133/2000"
+          }
         ]
       },
       {
@@ -109,8 +199,18 @@
         "title": "Maloprodaja in preverjanje starosti",
         "description": "Trgovci preverjajo starost brez shranjevanja osebnih podatkov.",
         "scenarios": [
-          { "emoji": "🍺", "name": "Starost 18+ na prodajnem mestu", "body": "Prenese se samo «starost ≥ 18: DA». Brez imena, brez EMŠO.", "legal": "OUG 99/2000" },
-          { "emoji": "🏨", "name": "Prijava v hotel", "body": "Turist se prijavi s predložitvijo imena, datuma rojstva in državljanstva.", "legal": "HG 1215/2001" }
+          {
+            "emoji": "🍺",
+            "name": "Starost 18+ na prodajnem mestu",
+            "body": "Prenese se samo «starost ≥ 18: DA». Brez imena, brez EMŠO.",
+            "legal": "OUG 99/2000"
+          },
+          {
+            "emoji": "🏨",
+            "name": "Prijava v hotel",
+            "body": "Turist se prijavi s predložitvijo imena, datuma rojstva in državljanstva.",
+            "legal": "HG 1215/2001"
+          }
         ]
       },
       {
@@ -119,8 +219,18 @@
         "title": "Finančne storitve in KYC",
         "description": "Banke in fintech platforme sprejemajo stranke ob izpolnjevanju zahtev AML/KYC.",
         "scenarios": [
-          { "emoji": "🏦", "name": "Odprtje bančnega računa (KYC/AML)", "body": "Banka na daljavo preveri identiteto stranke — certificirano z EUDI denarnico.", "legal": "Zakon 129/2019; Direktiva (EU) 2015/849" },
-          { "emoji": "💼", "name": "Zavarovanje in finančni produkti", "body": "Zavarovalnice digitalno preverijo identiteto zavarovalca.", "legal": "Uredba (EU) 2024/1183" }
+          {
+            "emoji": "🏦",
+            "name": "Odprtje bančnega računa (KYC/AML)",
+            "body": "Banka na daljavo preveri identiteto stranke — certificirano z EUDI denarnico.",
+            "legal": "Zakon 129/2019; Direktiva (EU) 2015/849"
+          },
+          {
+            "emoji": "💼",
+            "name": "Zavarovanje in finančni produkti",
+            "body": "Zavarovalnice digitalno preverijo identiteto zavarovalca.",
+            "legal": "Uredba (EU) 2024/1183"
+          }
         ]
       },
       {
@@ -129,9 +239,24 @@
         "title": "Zdravstvo in socialne storitve",
         "description": "Bolnišnice in klinike varno identificirajo bolnike.",
         "scenarios": [
-          { "emoji": "🏥", "name": "Identifikacija bolnika", "body": "Bolnišnica takoj identificira bolnika z EguWallet.", "legal": "Zakon 95/2006 — čl. 230-232" },
-          { "emoji": "🗳️", "name": "Preverjanje volivca na volišču", "body": "Osebje volišča takoj preveri identiteto volivca.", "legal": "Zakon 208/2015 — čl. 84" },
-          { "emoji": "📋", "name": "Zaposlovanje in HR preverjanje", "body": "Delodajalci preverijo identiteto novega zaposlenega pri podpisu pogodbe.", "legal": "Zakon 53/2003; HG 500/2011" }
+          {
+            "emoji": "🏥",
+            "name": "Identifikacija bolnika",
+            "body": "Bolnišnica takoj identificira bolnika z EguWallet.",
+            "legal": "Zakon 95/2006 — čl. 230-232"
+          },
+          {
+            "emoji": "🗳️",
+            "name": "Preverjanje volivca na volišču",
+            "body": "Osebje volišča takoj preveri identiteto volivca.",
+            "legal": "Zakon 208/2015 — čl. 84"
+          },
+          {
+            "emoji": "📋",
+            "name": "Zaposlovanje in HR preverjanje",
+            "body": "Delodajalci preverijo identiteto novega zaposlenega pri podpisu pogodbe.",
+            "legal": "Zakon 53/2003; HG 500/2011"
+          }
         ]
       },
       {
@@ -140,10 +265,30 @@
         "title": "Pravne in notarske storitve — fizična prisotnost ni več potrebna",
         "description": "Po Uredbi (EU) 2024/1183 EUDI Wallet zagotavlja pravno zavezujočo identifikacijo.",
         "scenarios": [
-          { "emoji": "📝", "name": "Daljinska notarska identifikacija", "body": "Notar na daljavo identificira stranko prek EUDI denarnice.", "legal": "Zakon 36/1995 — čl. 40; Uredba (EU) 2024/1183 — čl. 5a" },
-          { "emoji": "🏠", "name": "Transakcije z nepremičninami brez čakanja v vrsti", "body": "Obe stranki se digitalno identificirata in podpišeta s QES — vse na daljavo.", "legal": "Civilni zakonik čl. 1244; eIDAS 2.0 čl. 25" },
-          { "emoji": "✅", "name": "Izjave in pooblastila", "body": "Državljan predloži EguWallet PID za pravno enakovredne identifikacijo.", "legal": "Uredba (EU) 2024/1183; Zakon 455/2001" },
-          { "emoji": "🤝", "name": "Poslovne pogodbe s QES", "body": "Pogodbe, podpisane s QES — pravna moč v vseh 27 državah članicah EU.", "legal": "Zakon 455/2001; eIDAS 2.0 čl. 25; Zakon 31/1990" }
+          {
+            "emoji": "📝",
+            "name": "Daljinska notarska identifikacija",
+            "body": "Notar na daljavo identificira stranko prek EUDI denarnice.",
+            "legal": "Zakon 36/1995 — čl. 40; Uredba (EU) 2024/1183 — čl. 5a"
+          },
+          {
+            "emoji": "🏠",
+            "name": "Transakcije z nepremičninami brez čakanja v vrsti",
+            "body": "Obe stranki se digitalno identificirata in podpišeta s QES — vse na daljavo.",
+            "legal": "Civilni zakonik čl. 1244; eIDAS 2.0 čl. 25"
+          },
+          {
+            "emoji": "✅",
+            "name": "Izjave in pooblastila",
+            "body": "Državljan predloži EguWallet PID za pravno enakovredne identifikacijo.",
+            "legal": "Uredba (EU) 2024/1183; Zakon 455/2001"
+          },
+          {
+            "emoji": "🤝",
+            "name": "Poslovne pogodbe s QES",
+            "body": "Pogodbe, podpisane s QES — pravna moč v vseh 27 državah članicah EU.",
+            "legal": "Zakon 455/2001; eIDAS 2.0 čl. 25; Zakon 31/1990"
+          }
         ]
       },
       {
@@ -152,9 +297,24 @@
         "title": "Igre na srečo in samoizključitev",
         "description": "Kasina in platforme za igre na srečo preverjajo identiteto igralcev in registre samoizključitve.",
         "scenarios": [
-          { "emoji": "🎰", "name": "Preverjanje identitete igralca (KYC)", "body": "Upravljavci iger na srečo preverijo identiteto igralca ob registraciji v skladu s predpisi AML.", "legal": "Direktiva (EU) 2015/849; predpisi o licenciranju iger na srečo" },
-          { "emoji": "🚫", "name": "Preverjanje registra samoizključitve", "body": "Upravljavec preveri nacionalni register samoizključitve. Če je oseba na seznamu, se dostop samodejno blokira.", "legal": "Uredba (EU) 2024/1183; nacionalni zakoni o igrah na srečo" },
-          { "emoji": "🔞", "name": "Preverjanje starosti 18+ za igre na srečo", "body": "Upravljavci iger preverijo, ali je igralec star 18 ali več let — prenese se samo DA/NE.", "legal": "OUG 77/2009; Direktiva (EU) 2015/849" }
+          {
+            "emoji": "🎰",
+            "name": "Preverjanje identitete igralca (KYC)",
+            "body": "Upravljavci iger na srečo preverijo identiteto igralca ob registraciji v skladu s predpisi AML.",
+            "legal": "Direktiva (EU) 2015/849; predpisi o licenciranju iger na srečo"
+          },
+          {
+            "emoji": "🚫",
+            "name": "Preverjanje registra samoizključitve",
+            "body": "Upravljavec preveri nacionalni register samoizključitve. Če je oseba na seznamu, se dostop samodejno blokira.",
+            "legal": "Uredba (EU) 2024/1183; nacionalni zakoni o igrah na srečo"
+          },
+          {
+            "emoji": "🔞",
+            "name": "Preverjanje starosti 18+ za igre na srečo",
+            "body": "Upravljavci iger preverijo, ali je igralec star 18 ali več let — prenese se samo DA/NE.",
+            "legal": "OUG 77/2009; Direktiva (EU) 2015/849"
+          }
         ]
       }
     ]
@@ -181,12 +341,30 @@
     "auditTitle": "Zasebno revidirano. Javno odgovorno.",
     "auditBody": "EguWallet temelji na odprtih standardih in poteka formalna certifikacija.",
     "badges": [
-      { "icon": "🛡️", "label": "GDPR čl. 17 — Pravica do izbrisa" },
-      { "icon": "📋", "label": "Popolna zgodovina interakcij" },
-      { "icon": "⚖️", "label": "eIDAS 2.0 pravno zavezujoče" },
-      { "icon": "🔐", "label": "Selektivno razkritje brez znanja" },
-      { "icon": "🔍", "label": "Zasebno revidirano" },
-      { "icon": "🌍", "label": "Veljavno v vseh 27 državah EU" }
+      {
+        "icon": "🛡️",
+        "label": "GDPR čl. 17 — Pravica do izbrisa"
+      },
+      {
+        "icon": "📋",
+        "label": "Popolna zgodovina interakcij"
+      },
+      {
+        "icon": "⚖️",
+        "label": "eIDAS 2.0 pravno zavezujoče"
+      },
+      {
+        "icon": "🔐",
+        "label": "Selektivno razkritje brez znanja"
+      },
+      {
+        "icon": "🔍",
+        "label": "Zasebno revidirano"
+      },
+      {
+        "icon": "🌍",
+        "label": "Veljavno v vseh 27 državah EU"
+      }
     ]
   },
   "usedToday": {
@@ -214,12 +392,36 @@
     "heading": "Kaj sledi — prihodnost digitalne identitete",
     "subheading": "EguWallet se nenehno širi z novimi primeri uporabe",
     "items": [
-      { "icon": "📡", "title": "Preverjanje naprava-do-naprave (Bluetooth)", "body": "Kot brezstični NFC plačilo — takojšen prenos podatkov pod vašim nadzorom." },
-      { "icon": "🚔", "title": "Preverjanje identitete s strani policije", "body": "Policist preveri identiteto prek NFC/Bluetooth." },
-      { "icon": "🍺", "title": "Preverjanje starosti 18+ (Kmalu)", "body": "Uvedba za nadzor starosti pri prodaji alkohola." },
-      { "icon": "🚌", "title": "Karte in vozovnice za javni prevoz", "body": "Študenti in potniki predložijo digitalne vozovnice." },
-      { "icon": "📍", "title": "Potrdilo o naslovu", "body": "Vaš registriran naslov se lahko selektivno razkrije, ko je to potrebno." },
-      { "icon": "✍️", "title": "Kvalificirani digitalni podpis", "body": "Podpisujte dokumente s polno pravno veljavo v vseh 27 državah članicah EU." }
+      {
+        "icon": "📡",
+        "title": "Preverjanje naprava-do-naprave (Bluetooth)",
+        "body": "Kot brezstični NFC plačilo — takojšen prenos podatkov pod vašim nadzorom."
+      },
+      {
+        "icon": "🚔",
+        "title": "Preverjanje identitete s strani policije",
+        "body": "Policist preveri identiteto prek NFC/Bluetooth."
+      },
+      {
+        "icon": "🍺",
+        "title": "Preverjanje starosti 18+ (Kmalu)",
+        "body": "Uvedba za nadzor starosti pri prodaji alkohola."
+      },
+      {
+        "icon": "🚌",
+        "title": "Karte in vozovnice za javni prevoz",
+        "body": "Študenti in potniki predložijo digitalne vozovnice."
+      },
+      {
+        "icon": "📍",
+        "title": "Potrdilo o naslovu",
+        "body": "Vaš registriran naslov se lahko selektivno razkrije, ko je to potrebno."
+      },
+      {
+        "icon": "✍️",
+        "title": "Kvalificirani digitalni podpis",
+        "body": "Podpisujte dokumente s polno pravno veljavo v vseh 27 državah članicah EU."
+      }
     ]
   },
   "howItWorks": {
@@ -234,15 +436,42 @@
   "faq": {
     "heading": "Pogosto zastavljena vprašanja",
     "items": [
-      { "q": "Kaj je EguWallet?", "a": "EguWallet je evropska eIDAS 2.0 digitalna denarnica podjetja IT Eguilde SRL." },
-      { "q": "Katere dokumente lahko shranjujem?", "a": "Osebno izkaznico (PID), potni list, vozniško dovoljenje. Kmalu: prometno dovoljenje, zavarovanje, poslovne dokumente in dokumente o nepremičninah." },
-      { "q": "Ali so moji osebni podatki varni?", "a": "Da. EguWallet uporablja SD-JWT in mDoc za selektivno razkritje." },
-      { "q": "Kje lahko uporabljam EguWallet?", "a": "Danes: ilfov.net in sector2.eu." },
-      { "q": "Kaj je eIDAS 2.0?", "a": "Uredba (EU) 2024/1183 — vsak državljan EU ima pravico do brezplačne digitalne denarnice." },
-      { "q": "Kako deluje selektivno razkritje?", "a": "Vaša denarnica prikaže, kateri podatki so zahtevani. Vi odobrite ali zavrnete vsako polje." },
-      { "q": "Je EguWallet brezplačen?", "a": "Da, brezplačen za državljane med pilotno fazo." },
-      { "q": "Je EguWallet v celoti certificiran?", "a": "Trenutno poteka formalna eIDAS 2.0 certifikacija." },
-      { "q": "Kako aktiviram denarnico?", "a": "Prenesite iz Google Play, potrdite telefonsko številko, ustvarite PIN." }
+      {
+        "q": "Kaj je EguWallet?",
+        "a": "EguWallet je evropska eIDAS 2.0 digitalna denarnica podjetja IT Eguilde SRL."
+      },
+      {
+        "q": "Katere dokumente lahko shranjujem?",
+        "a": "Osebno izkaznico (PID), potni list, vozniško dovoljenje. Kmalu: prometno dovoljenje, zavarovanje, poslovne dokumente in dokumente o nepremičninah."
+      },
+      {
+        "q": "Ali so moji osebni podatki varni?",
+        "a": "Da. EguWallet uporablja SD-JWT in mDoc za selektivno razkritje."
+      },
+      {
+        "q": "Kje lahko uporabljam EguWallet?",
+        "a": "Danes: ilfov.net in sector2.eu."
+      },
+      {
+        "q": "Kaj je eIDAS 2.0?",
+        "a": "Uredba (EU) 2024/1183 — vsak državljan EU ima pravico do brezplačne digitalne denarnice."
+      },
+      {
+        "q": "Kako deluje selektivno razkritje?",
+        "a": "Vaša denarnica prikaže, kateri podatki so zahtevani. Vi odobrite ali zavrnete vsako polje."
+      },
+      {
+        "q": "Je EguWallet brezplačen?",
+        "a": "Da, brezplačen za državljane med pilotno fazo."
+      },
+      {
+        "q": "Je EguWallet v celoti certificiran?",
+        "a": "Trenutno poteka formalna eIDAS 2.0 certifikacija."
+      },
+      {
+        "q": "Kako aktiviram denarnico?",
+        "a": "Prenesite iz Google Play, potrdite telefonsko številko, ustvarite PIN."
+      }
     ]
   },
   "getDigitalId": {
@@ -269,17 +498,38 @@
     "description": "Zahtevajte izbris vašega računa EguWallet.",
     "intro": "EguWallet spoštuje vašo pravico do izbrisa podatkov po GDPR členu 17.",
     "method1Title": "Metoda 1: Izbris v aplikaciji",
-    "method1Steps": ["Odprite EguWallet", "Pojdite v Nastavitve", "Dotaknite se 'Izbriši denarnico'", "Potrdite"],
+    "method1Steps": [
+      "Odprite EguWallet",
+      "Pojdite v Nastavitve",
+      "Dotaknite se 'Izbriši denarnico'",
+      "Potrdite"
+    ],
     "method1Note": "S tem se odstranijo vse poverilnice in lokalni podatki.",
     "method2Title": "Metoda 2: Zahteva po e-pošti",
     "method2Text": "Pošljite e-pošto na <a href='mailto:privacy@eguwallet.eu' class='t-primary underline'>privacy@eguwallet.eu</a>.",
     "whatDeleted": "Kaj se izbriše",
-    "deletedItems": ["Podatki o registraciji denarnice", "Vse digitalne poverilnice", "Kriptografski ključi", "Podatki o napravi", "Posnetki obraza in skeniranja dokumentov", "Podatki seje"],
+    "deletedItems": [
+      "Podatki o registraciji denarnice",
+      "Vse digitalne poverilnice",
+      "Kriptografski ključi",
+      "Podatki o napravi",
+      "Posnetki obraza in skeniranja dokumentov",
+      "Podatki seje"
+    ],
     "whatRetained": "Kaj se ohrani",
-    "retainedItems": ["Revizijski zapisi eIDAS 2.0 (anonimizirani) — hranjeni 7 let"],
+    "retainedItems": [
+      "Revizijski zapisi eIDAS 2.0 (anonimizirani) — hranjeni 7 let"
+    ],
     "timeline": "Rok izbrisa",
     "timelineText": "Vaši podatki bodo trajno odstranjeni v 30 dneh.",
     "contact": "Vprašanja?",
     "contactText": "Kontaktirajte nas na <a href='mailto:privacy@eguwallet.eu' class='t-primary underline'>privacy@eguwallet.eu</a>."
+  },
+  "contact": {
+    "sending": "Pošiljanje…",
+    "successMsg": "Sporočilo poslano! Odgovorimo v 2 delovnih dneh.",
+    "errorFields": "Prosimo, izpolnite vsa obvezna polja.",
+    "errorFail": "Sporočila ni bilo mogoče poslati. Pišite nam neposredno na contact@eguwallet.eu",
+    "submitBtn": "Pošlji sporočilo"
   }
 }

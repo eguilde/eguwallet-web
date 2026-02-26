@@ -4,6 +4,7 @@ import { SITE } from '../../../config/site.ts';
 import { getTranslations } from '../../../i18n/index';
 import Navbar from '../../../components/Navbar.astro';
 import HeadSEO from '../../../components/HeadSEO.astro';
+export const prerender = true;
 
 export async function getStaticPaths() {
   const locales = [
@@ -130,7 +131,13 @@ const desc  = isRo
               {isRo ? 'Trimite un mesaj' : 'Send a message'}
             </h2>
 
-            <form id="contact-form" class="flex flex-col gap-4" novalidate>
+            <form id="contact-form" class="flex flex-col gap-4" novalidate
+              data-msg-sending={t.contact.sending}
+              data-msg-success={t.contact.successMsg}
+              data-msg-err-fields={t.contact.errorFields}
+              data-msg-err-fail={t.contact.errorFail}
+              data-submit-default={t.contact.submitBtn}
+            >
               <div class="flex flex-col gap-1">
                 <label for="cf-name" class="text-[12px] font-medium t-fg opacity-70">
                   {isRo ? 'Nume *' : 'Name *'}
@@ -194,7 +201,7 @@ const desc  = isRo
                 class="w-full sm:w-auto px-6 py-3 rounded-lg font-semibold text-[14px] transition-opacity hover:opacity-90 active:opacity-75"
                 style="background: var(--eg-primary, #A01E28); color: var(--eg-on-primary, #fff);"
               >
-                {isRo ? 'Trimite mesajul' : 'Send message'}
+                {t.contact.submitBtn}
               </button>
 
               <p class="text-[11px] t-fg opacity-35">
@@ -253,42 +260,68 @@ const desc  = isRo
 
 <script>
 const form = document.getElementById('contact-form') as HTMLFormElement | null;
-const status = document.getElementById('cf-status');
+const statusEl = document.getElementById('cf-status');
+
+// i18n messages injected from data attributes on the form
+const msg = {
+  sending:       form?.dataset.msgSending     || 'Sending…',
+  success:       form?.dataset.msgSuccess     || 'Message sent!',
+  errorFields:   form?.dataset.msgErrFields   || 'Please fill in all required fields.',
+  errorFail:     form?.dataset.msgErrFail     || 'Could not send. Please email us directly.',
+  submitDefault: form?.dataset.submitDefault  || 'Send message',
+};
 
 form?.addEventListener('submit', async (e) => {
   e.preventDefault();
-  if (!form || !status) return;
+  if (!form || !statusEl) return;
 
-  const name    = (form.querySelector('#cf-name') as HTMLInputElement)?.value.trim();
-  const email   = (form.querySelector('#cf-email') as HTMLInputElement)?.value.trim();
+  const lang    = document.documentElement.lang || 'en';
+  const name    = (form.querySelector('#cf-name')    as HTMLInputElement)?.value.trim();
+  const email   = (form.querySelector('#cf-email')   as HTMLInputElement)?.value.trim();
   const subject = (form.querySelector('#cf-subject') as HTMLSelectElement)?.value;
   const message = (form.querySelector('#cf-message') as HTMLTextAreaElement)?.value.trim();
 
   if (!name || !email || !subject || !message) {
-    status.className = 'text-[13px] px-3 py-2 rounded-lg';
-    status.style.background = 'var(--eg-error-container, #fce4e4)';
-    status.style.color = 'var(--eg-on-error-container, #410002)';
-    status.textContent = document.documentElement.lang === 'ro'
-      ? 'Completează toate câmpurile obligatorii.'
-      : 'Please fill in all required fields.';
+    showStatus('error', msg.errorFields);
     return;
   }
 
   const btn = form.querySelector('button[type="submit"]') as HTMLButtonElement;
-  if (btn) { btn.disabled = true; btn.style.opacity = '0.6'; }
+  if (btn) { btn.disabled = true; btn.textContent = msg.sending; }
 
-  // Compose mailto link as fallback — opens email client with pre-filled fields
-  const body = `Name: ${name}\nEmail: ${email}\nSubject: ${subject}\n\n${message}`;
-  const mailto = `mailto:contact@eguwallet.eu?subject=${encodeURIComponent(`[EguWallet Contact] ${subject}`)}&body=${encodeURIComponent(body)}`;
-  window.location.href = mailto;
-
-  status.className = 'text-[13px] px-3 py-2 rounded-lg';
-  status.style.background = 'var(--eg-primary-container, #ffd8d8)';
-  status.style.color = 'var(--eg-on-primary-container, #410002)';
-  status.textContent = document.documentElement.lang === 'ro'
-    ? 'Se deschide clientul de email cu mesajul pre-completat.'
-    : 'Opening your email client with the pre-filled message.';
-
-  if (btn) { setTimeout(() => { btn.disabled = false; btn.style.opacity = ''; }, 3000); }
+  try {
+    const res = await fetch('/api/contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ name, email, subject, message, language: lang }),
+    });
+    const data = await res.json();
+    if (res.ok && data.success) {
+      showStatus('success', msg.success);
+      form.reset();
+    } else {
+      throw new Error(data.message || 'error');
+    }
+  } catch {
+    // Fallback: open mailto so the user is never stuck
+    const body = `Name: ${name}\nEmail: ${email}\nSubject: ${subject}\n\n${message}`;
+    window.open(`mailto:contact@eguwallet.eu?subject=${encodeURIComponent('[EguWallet] ' + subject)}&body=${encodeURIComponent(body)}`);
+    showStatus('warn', msg.errorFail);
+  } finally {
+    if (btn) { btn.disabled = false; btn.textContent = msg.submitDefault; }
+  }
 });
+
+function showStatus(type: 'success' | 'error' | 'warn', text: string) {
+  if (!statusEl) return;
+  const styles = {
+    success: { bg: 'rgba(34,197,94,0.12)', color: '#166534', border: 'rgba(34,197,94,0.25)' },
+    error:   { bg: 'rgba(239,68,68,0.10)', color: '#991b1b', border: 'rgba(239,68,68,0.25)' },
+    warn:    { bg: 'rgba(234,179,8,0.10)', color: '#854d0e', border: 'rgba(234,179,8,0.25)' },
+  };
+  const s = styles[type];
+  statusEl.className = 'text-sm px-4 py-3 rounded-lg';
+  statusEl.style.cssText = `background:${s.bg};color:${s.color};border:1px solid ${s.border};`;
+  statusEl.textContent = text;
+}
 </script>
