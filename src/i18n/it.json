@@ -155,7 +155,7 @@
           },
           {
             "emoji": "📜",
-            "name": "Firma del contratto — Flusso completamente automatizzato",
+            "name": "Firma del contratto — flusso completamente automatizzato",
             "body": "Un QR: identità verificata, mandato confermato, contratto firmato con una Firma Elettronica Qualificata. Legalmente vincolante in tutta l'UE. In meno di 90 secondi.",
             "legal": "Reg. (UE) 2024/1183 — Art. 25; Legge 455/2001"
           }
@@ -164,7 +164,7 @@
       {
         "icon": "🎓",
         "image": "/assets/illustrations/usecase-education.jpg",
-        "title": "Istruzione — Scuola e Università",
+        "title": "Istruzione — scuola e università",
         "description": "Gli studenti dai 6 anni fino al dottorato portano il loro tesserino scolastico o universitario in EguWallet. Usato per l'accesso a scuola, esami, biblioteca, mensa, dormitori e sconti sui trasporti.",
         "scenarios": [
           {
@@ -175,7 +175,7 @@
           },
           {
             "emoji": "📋",
-            "name": "Tesserino + Carta d'identità agli esami",
+            "name": "Tesserino + carta d'identità agli esami",
             "body": "Per la maturità, gli esami nazionali e le olimpiadi: tesserino scolastico più carta d'identità elettronica presentati simultaneamente — per gli studenti di 14 anni e oltre.",
             "legal": "Legge 1/2011; OUG 97/2005 — Art. 14"
           },
@@ -262,7 +262,7 @@
       {
         "icon": "⚖️",
         "image": "/assets/illustrations/usecase-legal.jpg",
-        "title": "Legale e notarile — La presenza fisica non è più necessaria",
+        "title": "Legale e notarile — la presenza fisica non è più necessaria",
         "description": "Ai sensi del Regolamento (UE) 2024/1183, il EUDI Wallet fornisce un'identificazione giuridicamente vincolante equivalente alla presenza fisica per un'ampia gamma di atti giuridici.",
         "scenarios": [
           {

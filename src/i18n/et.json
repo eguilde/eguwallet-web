@@ -201,7 +201,7 @@
         "scenarios": [
           {
             "emoji": "🍺",
-            "name": "18+ vanus kassas",
+            "name": "118+8+ vanus kassas",
             "body": "Kassapidaja näitab QR-koodi. Klient kinnitab oma rahakotist: edastatakse ainult «vanus ≥ 18: JAH». Ei nime, ei ID-numbrit, ei fotot.",
             "legal": "OUG 99/2000 — alkohol/tubakas"
           },
@@ -285,7 +285,7 @@
           },
           {
             "emoji": "🤝",
-            "name": "Ärilepingud QES-iga",
+            "name": "Ärilepingud qES-iga",
             "body": "Teenuslepingud, partnerluse lepingud, aktsionäride resolutsioonid — allkirjastatud kvalifitseeritud elektroonilise allkirjaga otse EguWallet'ist. Õigusjõud kõigis 27 EL-i liikmesriigis. Ei printerit, ei kullerit, ei kohtumist.",
             "legal": "Law 455/2001; eIDAS 2.0 Art. 25; Law 31/1990"
           }
@@ -311,7 +311,7 @@
           },
           {
             "emoji": "🔞",
-            "name": "18+ vanuse kontrollimine mängimiseks",
+            "name": "118+8+ vanuse kontrollimine mängimiseks",
             "body": "Veebis ja füüsilised mänguoperaatorid kontrollivad, et mängija on 18-aastane või vanem — kasutades EguWallet'i vanuse tõendamist. Edastatakse ainult JAH/EI — operaator ei salvesta isikuandmeid.",
             "legal": "OUG 77/2009; Directive (EL) 2015/849"
           }

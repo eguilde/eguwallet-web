@@ -112,24 +112,24 @@
       {
         "icon": "🚔",
         "image": "/assets/illustrations/usecase-police.jpg",
-        "title": "Forças de Segurança e Ordem Pública",
+        "title": "Forças de segurança e ordem pública",
         "description": "Agentes de polícia, guardas de fronteira e inspetores de ordem pública verificam a identidade digital em segundos — com total confiança criptográfica, sem tocar em documentos físicos.",
         "scenarios": [
           {
             "emoji": "🪪",
-            "name": "Verificação de Identidade em Patrulha",
+            "name": "Verificação de identidade em patrulha",
             "body": "Um agente de polícia verifica a identidade completa de um cidadão — nome, CNP, morada, foto — via NFC ou QR. Sem papel. Resultado registado automaticamente.",
             "legal": "Law 218/2002 — Art. 31"
           },
           {
             "emoji": "🚗",
-            "name": "Pacote Completo de Controlo de Trânsito",
+            "name": "Pacote completo de controlo de trânsito",
             "body": "Uma leitura QR: o agente recebe BI, carta de condução com categorias, registo do veículo, seguro RC e ITP — tudo verificado criptograficamente.",
             "legal": "OUG 195/2002 — Art. 6, 80, 81"
           },
           {
             "emoji": "🛂",
-            "name": "Controlo Fronteiriço",
+            "name": "Controlo fronteiriço",
             "body": "Nos postos de controlo fronteiriço, os agentes verificam identidade, nacionalidade e validade do documento de viagem numa única apresentação digital segura.",
             "legal": "Law 248/2005"
           }
@@ -138,24 +138,24 @@
       {
         "icon": "🏢",
         "image": "/assets/illustrations/usecase-business.jpg",
-        "title": "Negócios e Transações Comerciais",
+        "title": "Negócios e transações comerciais",
         "description": "Empresas, notários, advogados e plataformas B2B verificam instantaneamente a identidade empresarial e a autoridade do representante legal — eliminando certificados em papel e estafetas.",
         "scenarios": [
           {
             "emoji": "🏛️",
-            "name": "Verificação de Empresa (Registo Comercial)",
+            "name": "Verificação de empresa (Registo comercial)",
             "body": "Uma plataforma B2B ou portal de concurso público verifica o nome da empresa, NIF, morada registada e estado ativo — tudo certificado pelo Registo Comercial Nacional.",
             "legal": "Law 31/1990; Law 26/1990"
           },
           {
             "emoji": "✍️",
-            "name": "Verificação de Representante Legal",
+            "name": "Verificação de representante legal",
             "body": "Um parceiro ou notário verifica que uma pessoa é representante autorizado de uma empresa — identidade, credencial da empresa e mandato apresentados simultaneamente.",
             "legal": "Law 31/1990 — Art. 75, 197"
           },
           {
             "emoji": "📜",
-            "name": "Assinatura de Contrato — Fluxo Automatizado Completo",
+            "name": "Assinatura de contrato — fluxo automatizado completo",
             "body": "Um QR: identidade verificada, mandato confirmado, contrato assinado com Assinatura Eletrónica Qualificada. Juridicamente vinculativo em toda a UE. Menos de 90 segundos.",
             "legal": "Reg. (UE) 2024/1183 — Art. 25; Law 455/2001"
           }
@@ -164,30 +164,30 @@
       {
         "icon": "🎓",
         "image": "/assets/illustrations/usecase-education.jpg",
-        "title": "Educação — Escola e Universidade",
+        "title": "Educação — escola e universidade",
         "description": "Estudantes desde o 1.º ano até ao doutoramento carregam o seu cartão escolar ou universitário no EguWallet. Usado para entrada na escola, exames, biblioteca, cantina, dormitórios e descontos de transporte.",
         "scenarios": [
           {
             "emoji": "🏫",
-            "name": "Cartão de Aluno (1.º ao 12.º ano)",
+            "name": "Cartão de aluno (1.º ao 12.º ano)",
             "body": "Um aluno aproxima o telefone na porta da escola, biblioteca ou cantina. O cartão digital é emitido pela escola ou inspeção — válido para o ano letivo.",
             "legal": "Law 1/2011 — Art. 5"
           },
           {
             "emoji": "📋",
-            "name": "Cartão de Estudante + BI nos Exames",
+            "name": "Cartão de estudante + BI nos exames",
             "body": "Para o exame nacional e olimpíadas: cartão de estudante mais bilhete de identidade eletrónico apresentados simultaneamente — para estudantes com 14 anos ou mais.",
             "legal": "Law 1/2011; OUG 97/2005 — Art. 14"
           },
           {
             "emoji": "🎓",
-            "name": "Cartão de Estudante Universitário",
+            "name": "Cartão de estudante universitário",
             "body": "Entrada na faculdade, dormitório, biblioteca, secretaria — o cartão digital substitui o cartão físico. Funciona para bolsas e descontos em viagens de comboio.",
             "legal": "Law 1/2011 — Art. 118, 119"
           },
           {
             "emoji": "🚌",
-            "name": "Passe de Transporte para Estudantes",
+            "name": "Passe de transporte para estudantes",
             "body": "Alunos e estudantes entram em autocarros, metro e comboios usando a sua carteira. O validador ou o motorista vê o direito instantaneamente — sem passe físico.",
             "legal": "OUG 133/2000; HCL urban transport"
           }
@@ -196,18 +196,18 @@
       {
         "icon": "🛒",
         "image": "/assets/illustrations/usecase-retail.jpg",
-        "title": "Comércio a Retalho e Verificação de Idade",
+        "title": "Comércio a retalho e verificação de idade",
         "description": "Os comerciantes verificam a idade ou identidade no ponto de venda em segundos — sem dados pessoais armazenados e total conformidade com o RGPD.",
         "scenarios": [
           {
             "emoji": "🍺",
-            "name": "Idade 18+ no Ponto de Venda",
+            "name": "Idade 18+ no ponto de venda",
             "body": "O caixa mostra um código QR. O cliente aprova da sua carteira: apenas «idade ≥ 18: SIM» é transmitido. Sem nome, sem número de BI, sem foto.",
             "legal": "OUG 99/2000 — álcool/tabaco"
           },
           {
             "emoji": "🏨",
-            "name": "Check-In em Hotel",
+            "name": "Check-in em hotel",
             "body": "O turista faz check-in apresentando nome, data de nascimento e nacionalidade da carteira. Sem fotocópia de passaportes. Conforme com os regulamentos de registo de alojamento.",
             "legal": "HG 1215/2001"
           }
@@ -216,18 +216,18 @@
       {
         "icon": "🏦",
         "image": "/assets/illustrations/usecase-banking.jpg",
-        "title": "Serviços Financeiros e KYC",
+        "title": "Serviços financeiros e KYC",
         "description": "Bancos, seguradoras e plataformas fintech integram clientes digitalmente — cumprindo os requisitos AML/KYC sem formulários em papel.",
         "scenarios": [
           {
             "emoji": "🏦",
-            "name": "Abertura de Conta Bancária (KYC/AML)",
+            "name": "Abertura de conta bancária (KYC/AML)",
             "body": "Um banco verifica remotamente a identidade completa do cliente — nome, CNP, data e local de nascimento, nacionalidade, morada — certificada pela carteira EUDI. Conforme com a lei anti-branqueamento de capitais.",
             "legal": "Law 129/2019; Directive (EU) 2015/849"
           },
           {
             "emoji": "💼",
-            "name": "Seguros e Produtos Financeiros",
+            "name": "Seguros e produtos financeiros",
             "body": "As seguradoras verificam a identidade do tomador na assinatura do contrato — digitalmente, instantaneamente, com total rastreabilidade eIDAS 2.0.",
             "legal": "Reg. (UE) 2024/1183"
           }
@@ -236,24 +236,24 @@
       {
         "icon": "🏥",
         "image": "/assets/illustrations/usecase-healthcare.jpg",
-        "title": "Saúde e Serviços Sociais",
+        "title": "Saúde e serviços sociais",
         "description": "Hospitais, clínicas, farmácias e serviços sociais identificam pacientes e beneficiários em segurança, sem preenchimento manual de formulários.",
         "scenarios": [
           {
             "emoji": "🏥",
-            "name": "Identificação do Paciente",
+            "name": "Identificação do paciente",
             "body": "Um hospital ou clínica identifica um paciente com o EguWallet. Nome, CNP, data de nascimento verificados instantaneamente na receção ou no serviço de urgência.",
             "legal": "Law 95/2006 — Art. 230-232"
           },
           {
             "emoji": "🗳️",
-            "name": "Verificação de Eleitor pela Comissão Eleitoral",
+            "name": "Verificação de eleitor pela comissão eleitoral",
             "body": "O pessoal da mesa de voto verifica a identidade do eleitor e cruza o recenseamento eleitoral — instantaneamente, com trilha de auditoria completa. Sem consulta manual de listas.",
             "legal": "Law 208/2015 — Art. 84"
           },
           {
             "emoji": "📋",
-            "name": "Verificação na Contratação e RH",
+            "name": "Verificação na contratação e RH",
             "body": "Os empregadores verificam a identidade do novo colaborador na assinatura do contrato — nome, CNP, morada — conforme exigido pelo Código do Trabalho e pela declaração REVISAL.",
             "legal": "Law 53/2003; HG 500/2011"
           }
@@ -262,30 +262,30 @@
       {
         "icon": "⚖️",
         "image": "/assets/illustrations/usecase-legal.jpg",
-        "title": "Jurídico e Notarial — A Presença Física Já Não é Necessária",
+        "title": "Jurídico e notarial — a presença física já não é necessária",
         "description": "Ao abrigo do Regulamento (UE) 2024/1183, a Carteira EUDI fornece identificação juridicamente vinculativa equivalente à presença física para uma ampla gama de atos jurídicos. Muitos procedimentos notariais que anteriormente exigiam a presença física podem agora ser concluídos remotamente.",
         "scenarios": [
           {
             "emoji": "📝",
-            "name": "Identificação Notarial Remota",
+            "name": "Identificação notarial remota",
             "body": "Para atos que anteriormente exigiam presença física — procurações, declarações, transferências de propriedade — o notário pode agora identificar a parte remotamente via carteira EUDI. O PID verificado da carteira substitui a inspeção presencial de documentos.",
             "legal": "Law 36/1995 — Art. 40; Reg. (UE) 2024/1183 — Art. 5a"
           },
           {
             "emoji": "🏠",
-            "name": "Transações Imobiliárias Sem Filas",
+            "name": "Transações imobiliárias sem filas",
             "body": "Comprar ou vender uma propriedade já não requer deslocação ao escritório de um notário apenas para identificação. Ambas as partes identificam-se digitalmente, o mandato do representante é verificado, e o contrato é assinado com uma AEQ — tudo remotamente.",
             "legal": "Civil Code Art. 1244; eIDAS 2.0 Art. 25"
           },
           {
             "emoji": "✅",
-            "name": "Declarações e Procurações",
+            "name": "Declarações e procurações",
             "body": "Declarações estatutárias, mandatos, declarações juradas — estes atos já não requerem uma consulta notarial física para o passo de identificação. O cidadão apresenta o seu PID EguWallet; a identificação é legalmente equivalente à verificação presencial.",
             "legal": "Reg. (UE) 2024/1183 — eIDAS 2.0; Law 455/2001"
           },
           {
             "emoji": "🤝",
-            "name": "Contratos Empresariais e Comerciais com AEQ",
+            "name": "Contratos empresariais e comerciais com AEQ",
             "body": "Contratos de serviços, contratos de parceria, resoluções de acionistas — assinados com Assinatura Eletrónica Qualificada diretamente do EguWallet. Força legal em todos os 27 Estados-Membros da UE. Sem impressora, sem estafeta, sem marcação.",
             "legal": "Law 455/2001; eIDAS 2.0 Art. 25; Law 31/1990"
           }
@@ -294,24 +294,24 @@
       {
         "icon": "🎰",
         "image": "/assets/illustrations/usecase-gambling.jpg",
-        "title": "Jogo e Auto-Exclusão",
+        "title": "Jogo e auto-Exclusão",
         "description": "Casinos online e físicos, operadores de apostas desportivas e plataformas de jogos verificam a identidade do jogador e consultam registos nacionais de auto-exclusão — prevenindo o jogo problemático e garantindo a conformidade regulatória.",
         "scenarios": [
           {
             "emoji": "🎰",
-            "name": "Verificação de Identidade do Jogador (KYC)",
+            "name": "Verificação de identidade do jogador (KYC)",
             "body": "Os operadores de jogo verificam a identidade do jogador no registo — nome, data de nascimento, nacionalidade — conforme exigido pela regulamentação AML e de licenciamento de jogo. Rápido, digital, sem fotocópias.",
             "legal": "Directive (EU) 2015/849; OUG 77/2009"
           },
           {
             "emoji": "🚫",
-            "name": "Verificação do Registo de Auto-Exclusão",
+            "name": "Verificação do registo de auto-Exclusão",
             "body": "Antes de permitir que um jogador aposte, o operador consulta o registo nacional de auto-exclusão via EguWallet. Se o jogador estiver na lista, o acesso é bloqueado automaticamente — sem pesquisa manual.",
             "legal": "OUG 77/2009 — Art. 10; national gambling authority"
           },
           {
             "emoji": "🔞",
-            "name": "Verificação de Idade 18+ para Jogos",
+            "name": "Verificação de idade 18+ para jogos",
             "body": "Os operadores de jogos online e físicos verificam que o jogador tem 18 anos ou mais — usando o atestado de idade EguWallet. Apenas SIM/NÃO é transmitido — o operador não armazena dados pessoais.",
             "legal": "OUG 77/2009; Directive (EU) 2015/849"
           }

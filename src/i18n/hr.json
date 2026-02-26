@@ -155,7 +155,7 @@
           },
           {
             "emoji": "📜",
-            "name": "Potpisivanje ugovora s QES-om",
+            "name": "Potpisivanje ugovora s qES-om",
             "body": "Identitet provjeren, ugovor potpisan kvalificiranim elektroničkim potpisom. Ispod 90 sekundi.",
             "legal": "Uredba (EU) 2024/1183 — čl. 25; Zakon 455/2001"
           }
@@ -285,7 +285,7 @@
           },
           {
             "emoji": "🤝",
-            "name": "Poslovni ugovori s QES-om",
+            "name": "Poslovni ugovori s qES-om",
             "body": "Ugovori potpisani s QES-om — pravna snaga u svih 27 država članica EU.",
             "legal": "Zakon 455/2001; eIDAS 2.0 čl. 25; Zakon 31/1990"
           }

@@ -155,7 +155,7 @@
           },
           {
             "emoji": "📜",
-            "name": "Contractondertekening — Volledig geautomatiseerde stroom",
+            "name": "Contractondertekening — volledig geautomatiseerde stroom",
             "body": "Één QR: identiteit geverifieerd, mandaat bevestigd, contract ondertekend met een Gekwalificeerde Elektronische Handtekening. Juridisch bindend in de hele EU. Onder 90 seconden.",
             "legal": "Verord. (EU) 2024/1183 — Art. 25; Wet 455/2001"
           }
@@ -164,7 +164,7 @@
       {
         "icon": "🎓",
         "image": "/assets/illustrations/usecase-education.jpg",
-        "title": "Onderwijs — School en Universiteit",
+        "title": "Onderwijs — school en universiteit",
         "description": "Studenten van 6 jaar tot aan het doctoraat dragen hun school- of universiteitskaart in EguWallet. Gebruikt voor schooltoegang, examens, bibliotheek, kantine, slaapzalen en transportkortingen.",
         "scenarios": [
           {
@@ -187,7 +187,7 @@
           },
           {
             "emoji": "🚌",
-            "name": "Student OV-kaart",
+            "name": "Student oV-kaart",
             "body": "Leerlingen en studenten stappen in bussen, metro en treinen met hun portemonnee. De controleur of chauffeur ziet het recht onmiddellijk — geen fysieke kaart nodig.",
             "legal": "OUG 133/2000; HCL stedelijk vervoer"
           }
@@ -253,7 +253,7 @@
           },
           {
             "emoji": "📋",
-            "name": "Indienstneming en HR-verificatie",
+            "name": "Indienstneming en hR-verificatie",
             "body": "Werkgevers verifiëren de identiteit van nieuwe medewerkers bij contractondertekening — naam, CNP, adres — zoals vereist door het Arbeidsrecht en de REVISAL-rapportage.",
             "legal": "Wet 53/2003; HG 500/2011"
           }
@@ -262,7 +262,7 @@
       {
         "icon": "⚖️",
         "image": "/assets/illustrations/usecase-legal.jpg",
-        "title": "Juridisch en notarieel — Fysieke aanwezigheid niet langer vereist",
+        "title": "Juridisch en notarieel — fysieke aanwezigheid niet langer vereist",
         "description": "Onder Verordening (EU) 2024/1183 biedt de EUDI Wallet juridisch bindende identificatie gelijkwaardig aan fysieke aanwezigheid voor een breed scala aan rechtshandelingen.",
         "scenarios": [
           {

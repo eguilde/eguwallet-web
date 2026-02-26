@@ -112,7 +112,7 @@
       {
         "icon": "🚔",
         "image": "/assets/illustrations/usecase-police.jpg",
-        "title": "Forces de l'ordre & Ordre public",
+        "title": "Forces de l'ordre & ordre public",
         "description": "Les policiers, les gardes-frontières et les inspecteurs de l'ordre public vérifient l'identité numérique en quelques secondes — avec une confiance cryptographique totale, sans toucher aux documents physiques.",
         "scenarios": [
           {
@@ -138,7 +138,7 @@
       {
         "icon": "🏢",
         "image": "/assets/illustrations/usecase-business.jpg",
-        "title": "Affaires & Transactions commerciales",
+        "title": "Affaires & transactions commerciales",
         "description": "Les entreprises, notaires, avocats et plateformes B2B vérifient l'identité de l'entreprise et l'autorité du représentant légal instantanément — sans certificats papier ni coursiers.",
         "scenarios": [
           {
@@ -155,7 +155,7 @@
           },
           {
             "emoji": "📜",
-            "name": "Signature de contrat — Flux entièrement automatisé",
+            "name": "Signature de contrat — flux entièrement automatisé",
             "body": "Un QR : identité vérifiée, mandat confirmé, contrat signé avec une Signature Électronique Qualifiée. Juridiquement contraignant dans toute l'UE. En moins de 90 secondes.",
             "legal": "Règl. (UE) 2024/1183 — Art. 25 ; Loi 455/2001"
           }
@@ -164,7 +164,7 @@
       {
         "icon": "🎓",
         "image": "/assets/illustrations/usecase-education.jpg",
-        "title": "Éducation — École & Université",
+        "title": "Éducation — école & université",
         "description": "Les élèves de 6 ans jusqu'au doctorat portent leur carte scolaire ou universitaire dans EguWallet. Utilisée pour l'entrée à l'école, les examens, la bibliothèque, la cantine, les dortoirs et les réductions de transport.",
         "scenarios": [
           {
@@ -196,7 +196,7 @@
       {
         "icon": "🛒",
         "image": "/assets/illustrations/usecase-retail.jpg",
-        "title": "Commerce & Vérification d'âge",
+        "title": "Commerce & vérification d'âge",
         "description": "Les commerçants vérifient l'âge ou l'identité au point de vente en quelques secondes — sans aucune donnée personnelle stockée et en pleine conformité RGPD.",
         "scenarios": [
           {
@@ -236,7 +236,7 @@
       {
         "icon": "🏥",
         "image": "/assets/illustrations/usecase-healthcare.jpg",
-        "title": "Santé & Services sociaux",
+        "title": "Santé & services sociaux",
         "description": "Les hôpitaux, cliniques, pharmacies et services sociaux identifient les patients et bénéficiaires de manière sécurisée, sans remplissage manuel de formulaires.",
         "scenarios": [
           {
@@ -253,7 +253,7 @@
           },
           {
             "emoji": "📋",
-            "name": "Embauche & Vérification RH",
+            "name": "Embauche & vérification RH",
             "body": "Les employeurs vérifient l'identité du nouvel employé lors de la signature du contrat — nom, CNP, adresse — conformément au Code du travail et aux obligations de déclaration REVISAL.",
             "legal": "Loi 53/2003 ; HG 500/2011"
           }
@@ -262,7 +262,7 @@
       {
         "icon": "⚖️",
         "image": "/assets/illustrations/usecase-legal.jpg",
-        "title": "Juridique & Notarial — La présence physique n'est plus requise",
+        "title": "Juridique & notarial — la présence physique n'est plus requise",
         "description": "En vertu du Règlement (UE) 2024/1183, le EUDI Wallet fournit une identification juridiquement contraignante équivalente à la présence physique pour un large éventail d'actes juridiques.",
         "scenarios": [
           {
@@ -279,7 +279,7 @@
           },
           {
             "emoji": "✅",
-            "name": "Déclarations & Procurations",
+            "name": "Déclarations & procurations",
             "body": "Déclarations légales, mandats, affidavits — ces actes ne nécessitent plus de rendez-vous physique chez le notaire pour l'étape d'identification. Le citoyen présente son EguWallet PID.",
             "legal": "Règl. (UE) 2024/1183 — eIDAS 2.0 ; Loi 455/2001"
           },
@@ -294,7 +294,7 @@
       {
         "icon": "🎰",
         "image": "/assets/illustrations/usecase-gambling.jpg",
-        "title": "Jeux d'argent & Auto-exclusion",
+        "title": "Jeux d'argent & auto-exclusion",
         "description": "Les casinos en ligne et physiques, les opérateurs de paris sportifs et les plateformes de jeux vérifient l'identité des joueurs et consultent les registres nationaux d'auto-exclusion — prévenant les jeux problématiques et assurant la conformité réglementaire.",
         "scenarios": [
           {

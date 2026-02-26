@@ -155,7 +155,7 @@
           },
           {
             "emoji": "📜",
-            "name": "Kontraktssignering — Fullständigt automatiserat flöde",
+            "name": "Kontraktssignering — fullständigt automatiserat flöde",
             "body": "En QR: identitet verifierad, fullmakt bekräftad, kontrakt signerat med en Kvalificerad Elektronisk Signatur. Rättsligt bindande i hela EU. Under 90 sekunder.",
             "legal": "Förord. (EU) 2024/1183 — Art. 25; Law 455/2001"
           }
@@ -164,7 +164,7 @@
       {
         "icon": "🎓",
         "image": "/assets/illustrations/usecase-education.jpg",
-        "title": "Utbildning — Skola och universitet",
+        "title": "Utbildning — skola och universitet",
         "description": "Studenter från 6 år till doktorat bär sitt skol- eller universitetskort i EguWallet. Används för skolentré, tentor, bibliotek, kafeteria, sovsal och transportrabatter.",
         "scenarios": [
           {
@@ -253,7 +253,7 @@
           },
           {
             "emoji": "📋",
-            "name": "Rekrytering och HR-verifiering",
+            "name": "Rekrytering och hR-verifiering",
             "body": "Arbetsgivare verifierar nytt anställds identitet vid kontraktssignering — namn, CNP, adress — som krävs av arbetslagen och REVISAL-rapportering.",
             "legal": "Law 53/2003; HG 500/2011"
           }
@@ -262,7 +262,7 @@
       {
         "icon": "⚖️",
         "image": "/assets/illustrations/usecase-legal.jpg",
-        "title": "Juridik och notariat — Fysisk närvaro krävs inte längre",
+        "title": "Juridik och notariat — fysisk närvaro krävs inte längre",
         "description": "Enligt förordning (EU) 2024/1183 tillhandahåller EUDI-plånboken rättsligt bindande identifiering som motsvarar fysisk närvaro för ett brett spektrum av rättshandlingar.",
         "scenarios": [
           {

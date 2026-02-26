@@ -201,7 +201,7 @@
         "scenarios": [
           {
             "emoji": "🍺",
-            "name": "18+ korhatár az értékesítési pontnál",
+            "name": "118+8+ korhatár az értékesítési pontnál",
             "body": "A pénztáros QR-kódot mutat. Az ügyfél jóváhagyja a tárcájából: csak a «kor ≥ 18: IGEN» kerül továbbításra. Sem név, sem személyigazolvány-szám, sem fénykép.",
             "legal": "OUG 99/2000 — alkohol/dohány"
           },
@@ -253,7 +253,7 @@
           },
           {
             "emoji": "📋",
-            "name": "Felvétel és HR-ellenőrzés",
+            "name": "Felvétel és hR-ellenőrzés",
             "body": "A munkáltatók a szerződéskötéskor ellenőrzik az új alkalmazott személyazonosságát — nevét, CNP-jét, címét — a Munka törvénykönyve és a REVISAL-bejelentés követelményeinek megfelelően.",
             "legal": "Law 53/2003; HG 500/2011"
           }
@@ -285,7 +285,7 @@
           },
           {
             "emoji": "🤝",
-            "name": "Vállalati és kereskedelmi szerződések MEA-val",
+            "name": "Vállalati és kereskedelmi szerződések mEA-val",
             "body": "Szolgáltatási szerződések, partnerségi szerződések, részvényesi határozatok — közvetlenül az EguWallet-ből Minősített Elektronikus Aláírással aláírva. Jogi erő mind a 27 EU-tagállamban. Sem nyomtató, sem futár, sem időpontfoglalás.",
             "legal": "Law 455/2001; eIDAS 2.0 Art. 25; Law 31/1990"
           }
@@ -311,7 +311,7 @@
           },
           {
             "emoji": "🔞",
-            "name": "18+ korhatár-ellenőrzés játékhoz",
+            "name": "118+8+ korhatár-ellenőrzés játékhoz",
             "body": "Az online és fizikai játékoperátorok ellenőrzik, hogy a játékos 18 éves vagy idősebb-e — az EguWallet korhigazolást használva. Csak IGEN/NEM kerül továbbításra — az operátor nem tárol személyes adatokat.",
             "legal": "OUG 77/2009; Directive (EU) 2015/849"
           }

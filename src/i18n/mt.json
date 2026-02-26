@@ -112,7 +112,7 @@
       {
         "icon": "🚔",
         "image": "/assets/illustrations/usecase-police.jpg",
-        "title": "Infurzar tal-Liġi u Ordni Pubbliku",
+        "title": "Infurzar tal-Liġi u ordni pubbliku",
         "description": "L-uffiċjali tal-pulizija, il-gwardji tal-fruntiera u l-ispetturi tal-ordni pubbliku jivverifikaw l-identità digitali f'sekondi — b'fiduċja kriptografika sħiħa, mingħajr ma jmissu d-dokumenti fiżiċi.",
         "scenarios": [
           {
@@ -123,7 +123,7 @@
           },
           {
             "emoji": "🚗",
-            "name": "Pakkett Sħiħ ta' Waqfa tat-Traffiku",
+            "name": "Pakkett sħiħ ta' waqfa tat-Traffiku",
             "body": "Skaner wieħed QR: l-uffiċjal jirċievi l-ID, il-liċenzja tas-sewqan bil-kategoriji, ir-reġistrazzjoni tal-vettura, l-assigurazzjoni RCA u l-ITP — kollha vverifikati kriptografikament.",
             "legal": "OUG 195/2002 — Art. 6, 80, 81"
           },
@@ -138,7 +138,7 @@
       {
         "icon": "🏢",
         "image": "/assets/illustrations/usecase-business.jpg",
-        "title": "Negozju u Tranżazzjonijiet Kummerċjali",
+        "title": "Negozju u tranżazzjonijiet kummerċjali",
         "description": "Il-kumpaniji, in-nutara, l-avukati u l-pjattaformi B2B jivverifikaw l-identità tal-kumpanija u l-awtorità tar-rappreżentant legali istantanjament — jelimina ċ-ċertifikati tal-karta u l-kurrier.",
         "scenarios": [
           {
@@ -149,13 +149,13 @@
           },
           {
             "emoji": "✍️",
-            "name": "Verifika tar-Rappreżentant Legali",
+            "name": "Verifika tar-Rappreżentant legali",
             "body": "Sieħeb jew nutar jivverifika li persuna hija rappreżentant awtorizzat ta' kumpanija — identità + kredenzjal tal-kumpanija + mandat ippreżentati simultanjament.",
             "legal": "Law 31/1990 — Art. 75, 197"
           },
           {
             "emoji": "📜",
-            "name": "Iffirmar ta' Kuntratt — Flusso Awtomatizzat Sħiħ",
+            "name": "Iffirmar ta' kuntratt — flusso awtomatizzat sħiħ",
             "body": "QR wieħed: identità vverifikata, mandat ikkonfermata, kuntratt iffirmat b'Firma Elettronika Kwalifikata. Legalment vinkolanti fl-UE kollha. Taħt 90 sekonda.",
             "legal": "Reg. (UE) 2024/1183 — Art. 25; Law 455/2001"
           }
@@ -164,7 +164,7 @@
       {
         "icon": "🎓",
         "image": "/assets/illustrations/usecase-education.jpg",
-        "title": "Edukazzjoni — Skola u Università",
+        "title": "Edukazzjoni — skola u università",
         "description": "L-istudenti mill-età ta' 6 sal-dottorat iġorru l-karta tal-iskola jew tal-università tagħhom f'EguWallet. Użata għad-dħul fl-iskola, l-eżamijiet, il-librerija, il-kafetterija, id-dormitorji u s-skontijiet tat-trasport.",
         "scenarios": [
           {
@@ -181,7 +181,7 @@
           },
           {
             "emoji": "🎓",
-            "name": "Karta tal-Istudent Universitarju",
+            "name": "Karta tal-Istudent universitarju",
             "body": "Dħul fil-fakultà, dormitorju, librerija, segretarjat — il-carnet de student digitali jissostitwixxi l-karta fiżika. Jaħdem għal boroz ta' studju u skontijiet tal-ivvjaġġar CFR.",
             "legal": "Law 1/2011 — Art. 118, 119"
           },
@@ -196,7 +196,7 @@
       {
         "icon": "🛒",
         "image": "/assets/illustrations/usecase-retail.jpg",
-        "title": "Bejgħ bl-Imnut u Verifika tal-Età",
+        "title": "Bejgħ bl-Imnut u verifika tal-Età",
         "description": "In-negozjanti jivverifikaw l-età jew l-identità fil-punt tal-bejgħ f'sekondi — mingħajr ebda data personali maħżuna u konformità sħiħa mal-GDPR.",
         "scenarios": [
           {
@@ -216,18 +216,18 @@
       {
         "icon": "🏦",
         "image": "/assets/illustrations/usecase-banking.jpg",
-        "title": "Servizzi Finanzjarji u KYC",
+        "title": "Servizzi finanzjarji u KYC",
         "description": "Il-banek, il-kumpaniji tal-assigurazzjoni u l-pjattaformi fintech jirreġistraw il-klijenti diġitalment — jissodisfaw ir-rekwiżiti AML/KYC mingħajr formoli tal-karta.",
         "scenarios": [
           {
             "emoji": "🏦",
-            "name": "Ftuħ ta' Kont Bankarju (KYC/AML)",
+            "name": "Ftuħ ta' kont bankarju (KYC/AML)",
             "body": "Bank jivverifika l-identità sħiħa tal-klijent mill-bogħod — isem, CNP, data u post tat-twelid, nazzjonalità, indirizz — ċċertifikat mill-kartiera EUDI. Konformi mal-liġi kontra l-ħasil tal-flus.",
             "legal": "Law 129/2019; Directive (UE) 2015/849"
           },
           {
             "emoji": "💼",
-            "name": "Assigurazzjoni u Prodotti Finanzjarji",
+            "name": "Assigurazzjoni u prodotti finanzjarji",
             "body": "Il-kumpaniji tal-assigurazzjoni jivverifikaw l-identità tad-detentur tal-polza meta jiffirmaw il-kuntratt — diġitalment, istantanjament, b'traċċabilità sħiħa tal-eIDAS 2.0.",
             "legal": "Reg. (UE) 2024/1183"
           }
@@ -236,7 +236,7 @@
       {
         "icon": "🏥",
         "image": "/assets/illustrations/usecase-healthcare.jpg",
-        "title": "Saħħa u Servizzi Soċjali",
+        "title": "Saħħa u servizzi soċjali",
         "description": "L-isptarijiet, il-kliniċi, il-ispiżeriji u s-servizzi soċjali jidentifikaw lill-pazjenti u l-benefiċjarji b'mod sigur, mingħajr ma jimlewx formoli manwalment.",
         "scenarios": [
           {
@@ -247,13 +247,13 @@
           },
           {
             "emoji": "🗳️",
-            "name": "Kontroll tal-Votant tal-Kummissjoni Elettorali",
+            "name": "Kontroll tal-Votant tal-Kummissjoni elettorali",
             "body": "Il-persunal tal-istazzjon tal-votazzjoni jivverifika l-identità tal-votant u jikkontrolla r-reġistru elettorali — istantanjament, b'pista ta' awditu sħiħa. L-ebda tfittxija manwali tal-lista.",
             "legal": "Law 208/2015 — Art. 84"
           },
           {
             "emoji": "📋",
-            "name": "Reklutaġġ u Verifika tal-HR",
+            "name": "Reklutaġġ u verifika tal-HR",
             "body": "Min iħaddem jivverifika l-identità tal-ħaddiem il-ġdid meta jiffirma l-kuntratt — isem, CNP, indirizz — kif meħtieġ mill-Kodiċi tax-Xogħol u r-rappurtar REVISAL.",
             "legal": "Law 53/2003; HG 500/2011"
           }
@@ -262,30 +262,30 @@
       {
         "icon": "⚖️",
         "image": "/assets/illustrations/usecase-legal.jpg",
-        "title": "Legali u Notarili — Il-Preżenza Fiżika M'għadhiex Meħtieġa",
+        "title": "Legali u notarili — il-Preżenza fiżika m'għadhiex meħtieġa",
         "description": "Skont ir-Regolament (UE) 2024/1183, il-Kartiera EUDI tipprovdi identifikazzjoni legalment vinkolanti ekwivalenti għall-preżenza fiżika għal firxa wiesgħa ta' atti legali.",
         "scenarios": [
           {
             "emoji": "📝",
-            "name": "Identifikazzjoni Notarili mill-Bogħod",
+            "name": "Identifikazzjoni notarili mill-Bogħod",
             "body": "Għal atti li qabel kienu jeħtieġu preżenza fiżika — prokura, dikjarazzjonijiet, trasferimenti ta' proprjetà — in-nutar issa jista' jidentifika l-parti permezz tal-kartiera EUDI mill-bogħod.",
             "legal": "Law 36/1995 — Art. 40; Reg. (UE) 2024/1183 — Art. 5a"
           },
           {
             "emoji": "🏠",
-            "name": "Tranżazzjonijiet tal-Proprjetà Immobbli Mingħajr Tbatija",
+            "name": "Tranżazzjonijiet tal-Proprjetà immobbli mingħajr tbatija",
             "body": "Ix-xiri jew il-bejgħ tal-proprjetà m'għadux jeħtieġ li tivvjaġġa lejn l-uffiċċju tan-nutar biss għall-identifikazzjoni. Iż-żewġ partijiet jidentifikaw ruħhom diġitalment, il-mandat tar-rappreżentant jiġi vverifikat, u l-kuntratt jiġi ffirmat b'QES — kollha mill-bogħod.",
             "legal": "Civil Code Art. 1244; eIDAS 2.0 Art. 25"
           },
           {
             "emoji": "✅",
-            "name": "Dikjarazzjonijiet u Prokuri",
+            "name": "Dikjarazzjonijiet u prokuri",
             "body": "Dikjarazzjonijiet statutorji, mandati, affidavits — dawn l-atti m'għadhomx jeħtieġu appuntament notarili fiżiku għall-pass tal-identifikazzjoni. Iċ-ċittadin jippreżenta l-PID EguWallet tiegħu; l-identifikazzjoni hija legalment ekwivalenti għall-verifika personali.",
             "legal": "Reg. (UE) 2024/1183 — eIDAS 2.0; Law 455/2001"
           },
           {
             "emoji": "🤝",
-            "name": "Kuntratti Kummerċjali b'QES",
+            "name": "Kuntratti kummerċjali b'QES",
             "body": "Ftehimiet ta' servizzi, kuntratti ta' sħubija, riżoluzzjonijiet tal-azzjonisti — iffirmati b'Firma Elettronika Kwalifikata direttament minn EguWallet. Forza legali fl-istati membri kollha 27 tal-UE. L-ebda printer, l-ebda kurrier, l-ebda appuntament.",
             "legal": "Law 455/2001; eIDAS 2.0 Art. 25; Law 31/1990"
           }
@@ -294,7 +294,7 @@
       {
         "icon": "🎰",
         "image": "/assets/illustrations/usecase-gambling.jpg",
-        "title": "Logħob u Esklużjoni Awtoimposta",
+        "title": "Logħob u esklużjoni awtoimposta",
         "description": "Il-każinos onlajn u fiżiċi, l-operaturi tas-sports betting u l-pjattaformi tal-logħob jivverifikaw l-identità tal-loġġatur u jiċċekkjaw ir-reġistri nazzjonali tal-esklużjoni awtoimposta.",
         "scenarios": [
           {
@@ -305,7 +305,7 @@
           },
           {
             "emoji": "🚫",
-            "name": "Kontroll tar-Reġistru tal-Esklużjoni Awtoimposta",
+            "name": "Kontroll tar-Reġistru tal-Esklużjoni awtoimposta",
             "body": "Qabel ma jħalli loġġatur jillogħob, l-operatur jiċċekkja r-reġistru nazzjonali tal-esklużjoni awtoimposta permezz ta' EguWallet. Jekk il-loġġatur jinsab fuq il-lista, l-aċċess jiġi mblukkat awtomatikament — l-ebda tfittxija manwali meħtieġa.",
             "legal": "OUG 77/2009 — Art. 10; awtorità nazzjonali tal-logħob"
           },

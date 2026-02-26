@@ -155,7 +155,7 @@
           },
           {
             "emoji": "📜",
-            "name": "Firma de contrato — Flujo totalmente automatizado",
+            "name": "Firma de contrato — flujo totalmente automatizado",
             "body": "Un QR: identidad verificada, mandato confirmado, contrato firmado con una Firma Electrónica Cualificada. Legalmente vinculante en toda la UE. En menos de 90 segundos.",
             "legal": "Regl. (UE) 2024/1183 — Art. 25; Ley 455/2001"
           }
@@ -164,7 +164,7 @@
       {
         "icon": "🎓",
         "image": "/assets/illustrations/usecase-education.jpg",
-        "title": "Educación — Escuela y Universidad",
+        "title": "Educación — escuela y universidad",
         "description": "Los estudiantes desde los 6 años hasta el doctorado llevan su carné escolar o universitario en EguWallet. Usado para la entrada al colegio, exámenes, biblioteca, cantina, dormitorios y descuentos de transporte.",
         "scenarios": [
           {
@@ -262,7 +262,7 @@
       {
         "icon": "⚖️",
         "image": "/assets/illustrations/usecase-legal.jpg",
-        "title": "Jurídico y notarial — La presencia física ya no es necesaria",
+        "title": "Jurídico y notarial — la presencia física ya no es necesaria",
         "description": "Bajo el Reglamento (UE) 2024/1183, el EUDI Wallet proporciona una identificación legalmente vinculante equivalente a la presencia física para una amplia gama de actos jurídicos.",
         "scenarios": [
           {

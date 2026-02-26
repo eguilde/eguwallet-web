@@ -155,7 +155,7 @@
           },
           {
             "emoji": "📜",
-            "name": "Kontraktunderskrivelse — Fuldt automatiseret flow",
+            "name": "Kontraktunderskrivelse — fuldt automatiseret flow",
             "body": "Én QR: identitet verificeret, fuldmagt bekræftet, kontrakt underskrevet med en Kvalificeret Elektronisk Signatur. Juridisk bindende i hele EU. Under 90 sekunder.",
             "legal": "Forord. (EU) 2024/1183 — Art. 25; Law 455/2001"
           }
@@ -164,7 +164,7 @@
       {
         "icon": "🎓",
         "image": "/assets/illustrations/usecase-education.jpg",
-        "title": "Uddannelse — Skole og universitet",
+        "title": "Uddannelse — skole og universitet",
         "description": "Studerende fra 6 år til ph.d. bærer deres skole- eller universitetskort i EguWallet. Bruges til skoleadgang, eksamener, bibliotek, kantine, kollegium og transportrabatter.",
         "scenarios": [
           {
@@ -253,7 +253,7 @@
           },
           {
             "emoji": "📋",
-            "name": "Rekruttering og HR-verifikation",
+            "name": "Rekruttering og hR-verifikation",
             "body": "Arbejdsgivere verificerer ny medarbejders identitet ved kontraktunderskrivelse — navn, CNP, adresse — som krævet af arbejdsloven og REVISAL-rapportering.",
             "legal": "Law 53/2003; HG 500/2011"
           }
@@ -262,7 +262,7 @@
       {
         "icon": "⚖️",
         "image": "/assets/illustrations/usecase-legal.jpg",
-        "title": "Juridisk og notarielt — Fysisk tilstedeværelse kræves ikke længere",
+        "title": "Juridisk og notarielt — fysisk tilstedeværelse kræves ikke længere",
         "description": "I henhold til forordning (EU) 2024/1183 tilbyder EUDI-tegnebogen juridisk bindende identifikation svarende til fysisk tilstedeværelse for en bred vifte af retshandlinger.",
         "scenarios": [
           {

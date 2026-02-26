@@ -155,7 +155,7 @@
           },
           {
             "emoji": "📜",
-            "name": "Sopimuksen allekirjoittaminen — Täysin automatisoitu virtaus",
+            "name": "Sopimuksen allekirjoittaminen — täysin automatisoitu virtaus",
             "body": "Yksi QR: henkilöllisyys varmennettu, toimeksianto vahvistettu, sopimus allekirjoitettu Pätevällä Sähköisellä Allekirjoituksella. Oikeudellisesti sitova koko EU:ssa. Alle 90 sekuntia.",
             "legal": "Asetus (EU) 2024/1183 — Art. 25; Law 455/2001"
           }
@@ -164,7 +164,7 @@
       {
         "icon": "🎓",
         "image": "/assets/illustrations/usecase-education.jpg",
-        "title": "Koulutus — Koulu ja yliopisto",
+        "title": "Koulutus — koulu ja yliopisto",
         "description": "Opiskelijat 6-vuotiaista tohtoraattiin kantavat koulu- tai yliopistokorttinsa EguWalletissa. Käytetään koulun sisäänpääsyyn, kokeisiin, kirjastoon, kanttiiniin, asuntoloihin ja liikennealennuksiin.",
         "scenarios": [
           {
@@ -253,7 +253,7 @@
           },
           {
             "emoji": "📋",
-            "name": "Rekrytointi ja HR-varmistus",
+            "name": "Rekrytointi ja hR-varmistus",
             "body": "Työnantajat tarkastavat uuden työntekijän henkilöllisyyden sopimuksen allekirjoittamisen yhteydessä — nimi, CNP, osoite — kuten työlaki ja REVISAL-raportointi vaatii.",
             "legal": "Law 53/2003; HG 500/2011"
           }
@@ -262,7 +262,7 @@
       {
         "icon": "⚖️",
         "image": "/assets/illustrations/usecase-legal.jpg",
-        "title": "Oikeudellinen ja notariaalinen — Fyysistä läsnäoloa ei enää tarvita",
+        "title": "Oikeudellinen ja notariaalinen — fyysistä läsnäoloa ei enää tarvita",
         "description": "Asetuksen (EU) 2024/1183 mukaisesti EUDI-lompakko tarjoaa oikeudellisesti sitovan tunnistamisen, joka vastaa fyysistä läsnäoloa laajalle valikoimalle oikeudellisia toimia.",
         "scenarios": [
           {
@@ -285,7 +285,7 @@
           },
           {
             "emoji": "🤝",
-            "name": "Liiketoimintasopimukset QES:llä",
+            "name": "Liiketoimintasopimukset qES:llä",
             "body": "Palvelusopimukset, kumppanuussopimukset, osakkeenomistajapäätökset — allekirjoitettu Pätevällä Sähköisellä Allekirjoituksella suoraan EguWalletista. Oikeudellinen vaikutus kaikissa 27 EU:n jäsenvaltiossa. Ei tulostinta, ei lähettejä, ei tapaamista.",
             "legal": "Law 455/2001; eIDAS 2.0 Art. 25; Law 31/1990"
           }
@@ -294,7 +294,7 @@
       {
         "icon": "🎰",
         "image": "/assets/illustrations/usecase-gambling.jpg",
-        "title": "Rahapelit ja Itsepoisjättäytyminen",
+        "title": "Rahapelit ja itsepoisjättäytyminen",
         "description": "Verkko- ja fyysisiä kasinoita, urheiluvedonlyöjiä ja peliympäristöjä käyttävät operaattorit varmentavat pelaajan henkilöllisyyden ja tarkistavat kansalliset itsepoisjättäytymisrekisterit.",
         "scenarios": [
           {

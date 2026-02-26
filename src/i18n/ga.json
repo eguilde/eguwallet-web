@@ -112,24 +112,24 @@
       {
         "icon": "🚔",
         "image": "/assets/illustrations/usecase-police.jpg",
-        "title": "Forfheidhmiú Dlí agus Ord Poiblí",
+        "title": "Forfheidhmiú dlí agus ord poiblí",
         "description": "Deimhníonn gardaí, garda teorann, agus cigirí oird poiblí céannacht dhigiteach i soicindí — le muinín cripteagrafach iomlán, gan doiciméid fhisiciúla a láimhseáil.",
         "scenarios": [
           {
             "emoji": "🪪",
-            "name": "Seiceáil Céannachta ar Phatról",
+            "name": "Seiceáil céannachta ar phatról",
             "body": "Deimhníonn garda céannacht iomlán saoránaigh — ainm, CNP, seoladh, grianghraf — trí NFC nó QR. Gan páipéar. Déantar an toradh a logáil go huathoibríoch.",
             "legal": "Law 218/2002 — Art. 31"
           },
           {
             "emoji": "🚗",
-            "name": "Pacáiste Iomlán Stoptha Tráchta",
+            "name": "Pacáiste iomlán stoptha tráchta",
             "body": "Aon scanadh QR amháin: faigheann an t-oifigeach aitheantais, ceadúnas tiomána le catagóirí, clárúchán feithicle, árachas RCA agus ITP — go léir fíoraithe go cripteagrafach.",
             "legal": "OUG 195/2002 — Art. 6, 80, 81"
           },
           {
             "emoji": "🛂",
-            "name": "Rialú Teorann",
+            "name": "Rialú teorann",
             "body": "Ag pointí trasnaithe teorann, fíoraíonn oifigigh céannacht, náisiúntacht agus bailíocht doiciméad taistil in aon chur i láthair digiteach slán amháin.",
             "legal": "Law 248/2005"
           }
@@ -138,24 +138,24 @@
       {
         "icon": "🏢",
         "image": "/assets/illustrations/usecase-business.jpg",
-        "title": "Gnó agus Idirbheartaíochtaí Tráchtála",
+        "title": "Gnó agus idirbheartaíochtaí tráchtála",
         "description": "Deimhníonn cuideachtaí, nótairí, dlíodóirí agus ardáin B2B céannacht cuideachta agus údarás ionadaí dhlíthiúil láithreach — ag deireadh le deimhnithe páipéir agus teachtairí.",
         "scenarios": [
           {
             "emoji": "🏛️",
-            "name": "Fíorú Cuideachta (ONRC)",
+            "name": "Fíorú cuideachta (ONRC)",
             "body": "Deimhníonn ardán B2B nó tairseach tairiscint phoiblí ainm cuideachta, CUI, seoladh cláraithe agus stádas gníomhach — go léir deimhnithe ag an gClár Náisiúnta Tráchtála.",
             "legal": "Law 31/1990; Law 26/1990"
           },
           {
             "emoji": "✍️",
-            "name": "Fíorú Ionadaí Dlíthiúil",
+            "name": "Fíorú ionadaí dlíthiúil",
             "body": "Deimhníonn comhpháirtí nó nótaire go bhfuil duine ina ionadaí údaraithe cuideachta — céannacht + creidmheas cuideachta + sainordú curtha i láthair ag an am céanna.",
             "legal": "Law 31/1990 — Art. 75, 197"
           },
           {
             "emoji": "📜",
-            "name": "Síniú Conartha — Sreabhadh Uathoibrithe Iomlán",
+            "name": "Síniú conartha — sreabhadh uathoibrithe iomlán",
             "body": "Aon QR amháin: céannacht fíoraithe, sainordú deimhnithe, conradh sínithe le Síniú Leictreonach Cáilithe. Ceangailteach go dlíthiúil ar fud an AE. Faoi bhun 90 soicind.",
             "legal": "Rialachán (AE) 2024/1183 — Art. 25; Law 455/2001"
           }
@@ -164,30 +164,30 @@
       {
         "icon": "🎓",
         "image": "/assets/illustrations/usecase-education.jpg",
-        "title": "Oideachas — Scoil agus Ollscoil",
+        "title": "Oideachas — scoil agus ollscoil",
         "description": "Iompraíonn mic léinn ó 6 bliana d'aois go dochtúireacht a gcárta scoile nó ollscoile in EguWallet. Úsáidtear é chun iontráil scoile, scrúduithe, leabharlann, bialann, cóiríocht agus lascainí iompair.",
         "scenarios": [
           {
             "emoji": "🏫",
-            "name": "Cárta Dalta Scoile (Ranganna 1–12)",
+            "name": "Cárta dalta scoile (Ranganna 1–12)",
             "body": "Buaileann dalta a fón ag geata na scoile, leabharlann nó bialann. Eiseann an scoil nó an cigireacht an carnet de elev digiteach — bailí don bhliain acadúil.",
             "legal": "Law 1/2011 — Art. 5"
           },
           {
             "emoji": "📋",
-            "name": "Cárta Mac Léinn + Aitheantais ag Scrúduithe",
+            "name": "Cárta mac léinn + aitheantais ag scrúduithe",
             "body": "Do scrúdú an ardteistiméireachta, scrúduithe náisiúnta agus oilimpeachtaí: cuirtear carnet de elev agus cárta aitheantais leictreonach i láthair ag an am céanna — do mhic léinn 14 bliana agus níos sine.",
             "legal": "Law 1/2011; OUG 97/2005 — Art. 14"
           },
           {
             "emoji": "🎓",
-            "name": "Cárta Mac Léinn Ollscoile",
+            "name": "Cárta mac léinn ollscoile",
             "body": "Iontráil dáimhe, cóiríocht, leabharlann, rúnaíocht — cuireann an carnet de student digiteach an cárta fisiciúil in ionad. Oibríonn sé do scoláireachtaí agus lascainí taistil CFR.",
             "legal": "Law 1/2011 — Art. 118, 119"
           },
           {
             "emoji": "🚌",
-            "name": "Pas Iompair Mac Léinn",
+            "name": "Pas iompair mac léinn",
             "body": "Taistlaíonn daltaí agus mic léinn ar bhusanna, metro agus traenacha ag baint úsáide as a sparán. Feiceann an bailíochtóir nó an tiománaí an teidlíocht láithreach — ní gá cárta fisiciúil.",
             "legal": "OUG 133/2000; HCL iompar uirbeach"
           }
@@ -196,7 +196,7 @@
       {
         "icon": "🛒",
         "image": "/assets/illustrations/usecase-retail.jpg",
-        "title": "Miondíol agus Fíorú Aoise",
+        "title": "Miondíol agus fíorú aoise",
         "description": "Deimhníonn ceannaitheoirí aois nó céannacht ag an gcuntar i soicindí — gan sonraí pearsanta stóráilte agus comhlíonadh iomlán GDPR.",
         "scenarios": [
           {
@@ -207,7 +207,7 @@
           },
           {
             "emoji": "🏨",
-            "name": "Seic-isteach Óstáin",
+            "name": "Seic-isteach óstáin",
             "body": "Déanann an turasóir seic-isteach trí ainm, dáta breithe agus náisiúntacht a chur i láthair óna sparán. Gan pasanna a fhótachóipeáil. Comhlíontach le rialacháin chlárúcháin lóistín.",
             "legal": "HG 1215/2001"
           }
@@ -216,18 +216,18 @@
       {
         "icon": "🏦",
         "image": "/assets/illustrations/usecase-banking.jpg",
-        "title": "Seirbhísí Airgeadais agus KYC",
+        "title": "Seirbhísí airgeadais agus KYC",
         "description": "Cláraíonn bainc, cuideachtaí árachais agus ardáin fintech custaiméirí go digiteach — ag comhlíonadh riachtanas AML/KYC gan foirmeacha páipéir.",
         "scenarios": [
           {
             "emoji": "🏦",
-            "name": "Oscailt Cuntas Bainc (KYC/AML)",
+            "name": "Oscailt cuntas bainc (KYC/AML)",
             "body": "Fíoraíonn banc céannacht iomlán an chustaiméara ó chian — ainm, CNP, dáta agus áit breithe, náisiúntacht, seoladh — deimhnithe ag sparán EUDI. Comhlíontach le dlí frith-sciúrtha airgid.",
             "legal": "Law 129/2019; Directive (EU) 2015/849"
           },
           {
             "emoji": "💼",
-            "name": "Árachas agus Táirgí Airgeadais",
+            "name": "Árachas agus táirgí airgeadais",
             "body": "Fíoraíonn cuideachtaí árachais céannacht shealbhóir polasaí ag síniú conartha — go digiteach, láithreach, le hinfhianaisíocht iomlán eIDAS 2.0.",
             "legal": "Rialachán (AE) 2024/1183"
           }
@@ -236,24 +236,24 @@
       {
         "icon": "🏥",
         "image": "/assets/illustrations/usecase-healthcare.jpg",
-        "title": "Cúram Sláinte agus Seirbhísí Sóisialta",
+        "title": "Cúram sláinte agus seirbhísí sóisialta",
         "description": "Aithníonn ospidéil, clinicí, cógaslanna agus seirbhísí sóisialta othair agus tairbhithe go slán, gan foirmeacha a líonadh de láimh.",
         "scenarios": [
           {
             "emoji": "🏥",
-            "name": "Aitheantas Othar",
+            "name": "Aitheantas othar",
             "body": "Aithníonn ospidéal nó clinic othar lena EguWallet. Fíoraítear ainm, CNP, dáta breithe láithreach ag an gclár nó i rannóg éigeandála.",
             "legal": "Law 95/2006 — Art. 230-232"
           },
           {
             "emoji": "🗳️",
-            "name": "Seiceáil Vótálaithe ag an gCoimisiún Toghcháin",
+            "name": "Seiceáil vótálaithe ag an gCoimisiún toghcháin",
             "body": "Deimhníonn foireann an ionaid vótála céannacht an vótálaí agus seiceálann siad an clár toghcháin — láithreach, le cosán iniúchta iomlán. Gan cuardach liosta de láimh.",
             "legal": "Law 208/2015 — Art. 84"
           },
           {
             "emoji": "📋",
-            "name": "Earcaíocht agus Fíorú HR",
+            "name": "Earcaíocht agus fíorú HR",
             "body": "Fíoraíonn fostóirí céannacht fostaí nua ag síniú conartha — ainm, CNP, seoladh — mar a éilíonn an Cód Oibre agus tuairisciú REVISAL.",
             "legal": "Law 53/2003; HG 500/2011"
           }
@@ -262,30 +262,30 @@
       {
         "icon": "⚖️",
         "image": "/assets/illustrations/usecase-legal.jpg",
-        "title": "Dlíthiúil agus Nótaireachta — Ní gá Láithreacht Fhisiciúil a Thuilleadh",
+        "title": "Dlíthiúil agus nótaireachta — ní gá láithreacht fhisiciúil a thuilleadh",
         "description": "Faoi Rialachán (AE) 2024/1183, soláthraíonn Sparán EUDI aithint cheangailteach go dlíthiúil atá coibhéiseach le láithreacht fhisiciúil le haghaidh raon leathan de ghníomhartha dlíthiúla.",
         "scenarios": [
           {
             "emoji": "📝",
-            "name": "Aithint Nótaireachta Cian",
+            "name": "Aithint nótaireachta cian",
             "body": "Le haghaidh gníomhartha a d'éiligh láithreacht fhisiciúil roimhe seo — cumhacht aturnae, dearbhuithe, aistrithe maoine — is féidir leis an nótaire an páirtí a aithint anois trí sparán EUDI ó chian.",
             "legal": "Law 36/1995 — Art. 40; Rialachán (AE) 2024/1183 — Art. 5a"
           },
           {
             "emoji": "🏠",
-            "name": "Idirbheartaíochtaí Réadmhaoine gan Scuaine",
+            "name": "Idirbheartaíochtaí réadmhaoine gan scuaine",
             "body": "Ní éilíonn ceannach nó díol maoine taisteal go hoifig nótaire feasta le haghaidh aithinte amháin. Aithníonn an dá pháirtí go digiteach, fíoraítear sainordú an ionadaí, agus sínítear an conradh le QES — go léir ó chian.",
             "legal": "Civil Code Art. 1244; eIDAS 2.0 Art. 25"
           },
           {
             "emoji": "✅",
-            "name": "Dearbhuithe agus Cumhachtaí Aturnae",
+            "name": "Dearbhuithe agus cumhachtaí aturnae",
             "body": "Dearbhuithe reachtúla, sainorduithe, mionnscríbhinní — ní éilíonn na gníomhartha seo coinne nótaireachta fisiciúil don chéim aitheantais feasta. Cuireann an saoránach a PID EguWallet i láthair; tá an aithint coibhéiseach go dlíthiúil le fíorú pearsanta.",
             "legal": "Rialachán (AE) 2024/1183 — eIDAS 2.0; Law 455/2001"
           },
           {
             "emoji": "🤝",
-            "name": "Conarthaí Tráchtála le QES",
+            "name": "Conarthaí tráchtála le QES",
             "body": "Comhaontuithe seirbhíse, conarthaí comhpháirtíochta, rúin scairshealbhóirí — sínithe le Síniú Leictreonach Cáilithe díreach ó EguWallet. Fórsa dlíthiúil i ngach ceann de 27 ballstát an AE. Gan printéir, gan teachtaire, gan coinne.",
             "legal": "Law 455/2001; eIDAS 2.0 Art. 25; Law 31/1990"
           }
@@ -294,24 +294,24 @@
       {
         "icon": "🎰",
         "image": "/assets/illustrations/usecase-gambling.jpg",
-        "title": "Cearrbhachas agus Féineisiamh",
+        "title": "Cearrbhachas agus féineisiamh",
         "description": "Fíoraíonn caisíní ar líne agus fisiciúla, oibreoirí geallghlacadóireachta spóirt agus ardáin chearrbhachais céannacht imreoir agus seiceálann siad clárlanna náisiúnta féineisiaimh.",
         "scenarios": [
           {
             "emoji": "🎰",
-            "name": "Fíorú Céannachta Imreora (KYC)",
+            "name": "Fíorú céannachta imreora (KYC)",
             "body": "Fíoraíonn oibreoirí cearrbhachais céannacht an imreora ag clárú — ainm, dáta breithe, náisiúntacht — mar a éilíonn rialacháin AML agus ceadúnaithe cearrbhachais. Tapa, digiteach, gan fótachóipeanna.",
             "legal": "Directive (EU) 2015/849; OUG 77/2009"
           },
           {
             "emoji": "🚫",
-            "name": "Seiceáil Clárlainne Féineisiaimh",
+            "name": "Seiceáil clárlainne féineisiaimh",
             "body": "Sula gceadaíonn oibreoir d'imreoir geall a dhéanamh, seiceálann an t-oibreoir an chlárlann náisiúnta féineisiaimh trí EguWallet. Más ar an liosta an t-imreoir, blocáltar an rochtain go huathoibríoch — ní gá cuardach de láimh.",
             "legal": "OUG 77/2009 — Art. 10; údarás náisiúnta cearrbhachais"
           },
           {
             "emoji": "🔞",
-            "name": "Fíorú Aoise 18+ le haghaidh Cearrbhachais",
+            "name": "Fíorú aoise 18+ le haghaidh cearrbhachais",
             "body": "Fíoraíonn oibreoirí cluichíochta ar líne agus fisiciúla go bhfuil an t-imreoir 18 bliana nó níos sine — ag baint úsáide as fianú aoise EguWallet. Ní sheoltar ach TÁ/NÍL — ní stórálann an t-oibreoir sonraí pearsanta.",
             "legal": "OUG 77/2009; Directive (EU) 2015/849"
           }
