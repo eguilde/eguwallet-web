@@ -7,14 +7,14 @@ interface Props { t: Translations; lang: string; }
 const { t, lang } = Astro.props;
 
 const links = [
-  { href: '#what',       label: t.nav.what },
-  { href: '#privacy',    label: t.nav.privacy },
-  { href: '#documents',  label: t.nav.documents },
-  { href: '#usecases',   label: t.nav.useCases },
-  { href: '#verifier',   label: t.verifier.navLabel },
-  { href: '#future',     label: t.nav.future },
-  { href: '#how',        label: t.nav.howItWorks },
-  { href: '#faq',        label: t.nav.faq },
+  { href: '#what',                   label: t.nav.what },
+  { href: '#documents',              label: t.nav.documents },
+  { href: '#usecases',               label: t.nav.useCases },
+  { href: '#trust',                  label: t.nav.trust },
+  { href: '#verifier',               label: t.verifier.navLabel },
+  { href: '#faq',                    label: t.nav.faq },
+  { href: `/${lang}/about/`,         label: t.nav.about },
+  { href: `/${lang}/contact/`,       label: t.nav.contact },
 ];
 ---
 <header class="sticky top-0 z-40 w-full t-bg border-b t-border backdrop-blur-sm">

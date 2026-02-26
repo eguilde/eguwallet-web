@@ -20,37 +20,59 @@ const playUrl = 'https://play.google.com/store/apps/details?id=wallet.eguwallet.
 ---
 <Base lang={lang} title={`EguWallet — ${t.hero.title}`} description={t.hero.subtitle} faqItems={faqItems}>
   <Navbar t={t} lang={lang} />
-  <main class="t-bg">
+  <main id="main-content" class="t-bg">
 
     <!-- HERO -->
-    <section id="download" class="pt-10 sm:pt-16 md:pt-24 pb-10 sm:pb-12 px-4 sm:px-6">
-      <div class="max-w-4xl mx-auto flex flex-col items-center text-center gap-4 sm:gap-6">
+    <section id="download" class="relative overflow-hidden">
+      <!-- Banner image -->
+      <div class="relative w-full" style="max-height: 420px; overflow: hidden;">
+        <img
+          src="/assets/hero-banner.jpg"
+          alt=""
+          aria-hidden="true"
+          width="1360"
+          height="400"
+          class="w-full object-cover"
+          style="max-height: 420px;"
+          fetchpriority="high"
+          loading="eager"
+        />
+        <!-- Gradient overlay for text legibility -->
+        <div class="absolute inset-0" style="background: linear-gradient(to bottom, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.55) 60%, var(--eg-bg, #fff) 100%);"></div>
 
-        <!-- Large shield logo -->
-        <img src="/assets/logo-shield.svg" alt="EguWallet" class="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24" />
-
-        <div class="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 text-[10px] sm:text-[12px] font-semibold uppercase tracking-wider t-primary">
-          <span>{t.hero.badge1}</span>
-          <span class="t-fg opacity-20">·</span>
-          <span>{t.hero.badge2}</span>
-          <span class="t-fg opacity-20">·</span>
-          <span>{t.hero.badge3}</span>
+        <!-- Logo + title overlaid on banner -->
+        <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-4 sm:px-6 pb-4 gap-2 sm:gap-3">
+          <img
+            src="/assets/logo-shield.svg"
+            alt="EguWallet"
+            width="80"
+            height="80"
+            class="w-14 h-14 sm:w-20 sm:h-20 md:w-24 md:h-24 drop-shadow-lg"
+          />
+          <h1 class="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-bold leading-snug tracking-tight text-white drop-shadow-md max-w-2xl">
+            {t.hero.title}
+          </h1>
+          <div class="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 text-[10px] sm:text-[12px] font-semibold uppercase tracking-wider" style="color: rgba(255,255,255,0.80);">
+            <span>{t.hero.badge1}</span>
+            <span style="opacity:0.4">·</span>
+            <span>{t.hero.badge2}</span>
+            <span style="opacity:0.4">·</span>
+            <span>{t.hero.badge3}</span>
+          </div>
         </div>
+      </div>
 
-        <h1 class="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-snug tracking-tight t-fg">
-          {t.hero.title}
-        </h1>
-
-        <p class="text-sm sm:text-base md:text-lg leading-relaxed t-fg opacity-50 max-w-2xl">
+      <!-- Subtitle + download buttons below banner -->
+      <div class="px-4 sm:px-6 py-6 sm:py-8 flex flex-col items-center text-center gap-4 sm:gap-5">
+        <p class="text-sm sm:text-base md:text-lg leading-relaxed t-fg opacity-55 max-w-2xl">
           {t.hero.subtitle}
         </p>
-
-        <div class="flex flex-wrap items-center justify-center gap-3 mt-2 sm:mt-4">
+        <div class="flex flex-wrap items-center justify-center gap-3">
           <a href={playUrl} target="_blank" rel="noopener" class="transition-opacity hover:opacity-80">
-            <img src={playBadge} alt={t.hero.downloadAndroid} class="h-[36px] sm:h-[44px] w-auto" />
+            <img src={playBadge} alt={t.hero.downloadAndroid} width="156" height="44" class="h-[38px] sm:h-[44px] w-auto" />
           </a>
           <span class="relative">
-            <img src="/assets/badges/app-store.svg" alt={t.hero.downloadIos} class="h-[36px] sm:h-[44px] w-auto opacity-25" />
+            <img src="/assets/badges/app-store.svg" alt={t.hero.downloadIos} width="156" height="44" class="h-[38px] sm:h-[44px] w-auto opacity-25" />
             <span class="absolute -bottom-4 sm:-bottom-5 left-1/2 -translate-x-1/2 text-[9px] sm:text-[10px] t-fg opacity-25 whitespace-nowrap">{t.hero.downloadIosComingSoon}</span>
           </span>
         </div>
@@ -165,8 +187,24 @@ const playUrl = 'https://play.google.com/store/apps/details?id=wallet.eguwallet.
         <p class="text-[13px] sm:text-[15px] t-fg opacity-45 mb-6 sm:mb-8">{t.useCases.subheading}</p>
 
         <div class="flex flex-col gap-6 sm:gap-8">
-          {t.useCases.categories.map(({ icon, title, description, scenarios }) => (
+          {t.useCases.categories.map(({ icon, image, title, description, scenarios }) => {
+            const videoSrc = image ? image.replace('/assets/illustrations/', '/assets/videos/').replace('.jpg', '.mp4') : null;
+            return (
             <div>
+              {image && (
+                <div class="w-full rounded-xl mb-4 sm:mb-5 overflow-hidden" style="max-height: 260px;">
+                  <video
+                    src={videoSrc ?? undefined}
+                    poster={image}
+                    autoplay
+                    loop
+                    muted
+                    playsinline
+                    class="w-full h-full object-cover"
+                    style="max-height: 260px;"
+                  />
+                </div>
+              )}
               <!-- Category header -->
               <div class="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4">
                 <span class="text-xl sm:text-2xl">{icon}</span>
@@ -187,7 +225,78 @@ const playUrl = 'https://play.google.com/store/apps/details?id=wallet.eguwallet.
                 ))}
               </div>
             </div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+
+    <div class="max-w-4xl mx-auto px-4 sm:px-6"><div class="h-px t-bg-surface"></div></div>
+
+    <!-- TRUST & LEGAL BINDING -->
+    <section id="trust" class="py-10 sm:py-16 md:py-20 px-4 sm:px-6">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-xl sm:text-2xl md:text-3xl font-bold mb-1.5 sm:mb-2 t-fg">{t.trust.heading}</h2>
+        <p class="text-[13px] sm:text-[15px] t-fg opacity-45 mb-6 sm:mb-8">{t.trust.subheading}</p>
+
+        {t.trust.image && (
+          <div class="w-full rounded-xl mb-6 sm:mb-8 overflow-hidden" style="max-height: 280px;">
+            <video
+              src={t.trust.image.replace('/assets/illustrations/', '/assets/videos/').replace('.jpg', '.mp4')}
+              poster={t.trust.image}
+              autoplay
+              loop
+              muted
+              playsinline
+              class="w-full h-full object-cover"
+              style="max-height: 280px;"
+            />
+          </div>
+        )}
+
+        <!-- Badges -->
+        <div class="flex flex-wrap gap-2 mb-8 sm:mb-10">
+          {t.trust.badges.map(({ icon, label }) => (
+            <span class="flex items-center gap-1.5 px-3 py-1.5 rounded-full t-bg-surface text-[11px] sm:text-[12px] t-fg opacity-75 font-medium">
+              <span>{icon}</span>
+              <span>{label}</span>
+            </span>
           ))}
+        </div>
+
+        <div class="flex flex-col gap-8 md:grid md:grid-cols-2 md:gap-10">
+          <!-- For citizens -->
+          <div>
+            <h3 class="text-base sm:text-lg font-semibold mb-3 sm:mb-4 t-fg">{t.trust.citizenTitle}</h3>
+            <div class="flex flex-col gap-3">
+              {t.trust.citizenPoints.map((point) => (
+                <div class="flex items-start gap-2.5 text-[13px] sm:text-[14px]">
+                  <span class="w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-[10px] font-bold t-bg-primary-container t-on-primary-container">✓</span>
+                  <span class="t-fg opacity-65 leading-relaxed">{point}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <!-- For relying parties -->
+          <div>
+            <h3 class="text-base sm:text-lg font-semibold mb-1.5 t-fg">{t.trust.rpTitle}</h3>
+            <p class="text-[11px] sm:text-[12px] t-fg opacity-40 mb-3 italic">{t.trust.rpSubtitle}</p>
+            <div class="flex flex-col gap-3">
+              {t.trust.rpPoints.map((point) => (
+                <div class="flex items-start gap-2.5 text-[13px] sm:text-[14px]">
+                  <span class="w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-[10px] font-bold t-bg-surface-high t-fg opacity-60">§</span>
+                  <span class="t-fg opacity-65 leading-relaxed">{point}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <!-- Audit statement -->
+        <div class="mt-8 sm:mt-10 p-4 sm:p-6 rounded-xl t-bg-surface">
+          <h4 class="font-semibold text-[14px] sm:text-base mb-2 t-fg">{t.trust.auditTitle}</h4>
+          <p class="text-[12px] sm:text-[13px] t-fg opacity-55 leading-relaxed">{t.trust.auditBody}</p>
         </div>
       </div>
     </section>
@@ -263,6 +372,52 @@ const playUrl = 'https://play.google.com/store/apps/details?id=wallet.eguwallet.
 
     <div class="max-w-4xl mx-auto px-4 sm:px-6"><div class="h-px t-bg-surface"></div></div>
 
+    <!-- INTEGRATE / SDK -->
+    <section id="integrate" class="py-10 sm:py-16 md:py-20 px-4 sm:px-6 t-bg-surface-high">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-xl sm:text-2xl md:text-3xl font-bold mb-1.5 sm:mb-2 t-fg">{t.integrate.heading}</h2>
+        <p class="text-[13px] sm:text-[15px] t-fg opacity-45 mb-6 sm:mb-8">{t.integrate.subheading}</p>
+
+        <!-- SDK badges -->
+        <div class="flex flex-wrap gap-2 mb-6 sm:mb-8">
+          {[t.integrate.badge1, t.integrate.badge2, t.integrate.badge3, t.integrate.badge4].map((badge) => (
+            <span class="px-2.5 py-1 rounded-full text-[11px] sm:text-[12px] font-semibold t-fg t-bg-surface border t-border">{badge}</span>
+          ))}
+        </div>
+
+        <div class="flex flex-col gap-3 md:grid md:grid-cols-3 md:gap-4 mb-6 sm:mb-8">
+          <!-- Card 1 — SDK -->
+          <div class="flex flex-col gap-2 p-4 sm:p-5 rounded-lg t-bg">
+            <span class="text-2xl sm:text-3xl">🔌</span>
+            <h3 class="font-semibold text-[14px] sm:text-base t-fg">{t.integrate.card1Title}</h3>
+            <p class="text-[13px] sm:text-[14px] leading-relaxed t-fg opacity-55">{t.integrate.card1Body}</p>
+          </div>
+          <!-- Card 2 — Compliance -->
+          <div class="flex flex-col gap-2 p-4 sm:p-5 rounded-lg t-bg">
+            <span class="text-2xl sm:text-3xl">✅</span>
+            <h3 class="font-semibold text-[14px] sm:text-base t-fg">{t.integrate.card2Title}</h3>
+            <p class="text-[13px] sm:text-[14px] leading-relaxed t-fg opacity-55">{t.integrate.card2Body}</p>
+          </div>
+          <!-- Card 3 — Use cases -->
+          <div class="flex flex-col gap-2 p-4 sm:p-5 rounded-lg t-bg">
+            <span class="text-2xl sm:text-3xl">🚀</span>
+            <h3 class="font-semibold text-[14px] sm:text-base t-fg">{t.integrate.card3Title}</h3>
+            <p class="text-[13px] sm:text-[14px] leading-relaxed t-fg opacity-55">{t.integrate.card3Body}</p>
+          </div>
+        </div>
+
+        <a
+          href={`/${lang}/contact/`}
+          class="inline-flex items-center gap-2 px-5 py-3 rounded-lg font-semibold text-[14px] transition-opacity hover:opacity-90"
+          style="background: var(--eg-primary, #A01E28); color: var(--eg-on-primary, #fff);"
+        >
+          {t.integrate.cta} →
+        </a>
+      </div>
+    </section>
+
+    <div class="max-w-4xl mx-auto px-4 sm:px-6"><div class="h-px t-bg-surface"></div></div>
+
     <!-- FUTURE -->
     <section id="future" class="py-10 sm:py-16 md:py-20 px-4 sm:px-6">
       <div class="max-w-4xl mx-auto">
@@ -327,32 +482,6 @@ const playUrl = 'https://play.google.com/store/apps/details?id=wallet.eguwallet.
       </div>
     </section>
 
-    <!-- GET YOUR DIGITAL ID -->
-    <section id="get-id" class="py-8 sm:py-12 px-4 sm:px-6">
-      <div class="max-w-4xl mx-auto rounded-xl t-bg-primary-container p-5 sm:p-8">
-        <div class="flex flex-col items-center text-center gap-4 sm:gap-5">
-          <svg class="w-10 h-10 sm:w-12 sm:h-12 t-on-primary-container opacity-80" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15A2.25 2.25 0 002.25 6.75v10.5A2.25 2.25 0 004.5 19.5zm6-10.125a1.875 1.875 0 11-3.75 0 1.875 1.875 0 013.75 0zm1.294 6.336a6.721 6.721 0 01-3.17.789 6.721 6.721 0 01-3.168-.789 3.376 3.376 0 016.338 0z"/></svg>
-          <h2 class="text-lg sm:text-xl md:text-2xl font-bold t-on-primary-container">{t.getDigitalId.heading}</h2>
-          <p class="text-[13px] sm:text-[14px] leading-relaxed t-on-primary-container opacity-70 max-w-xl">{t.getDigitalId.body}</p>
-
-          <div class="flex flex-col gap-2 text-[12px] sm:text-[13px] t-on-primary-container opacity-60 text-left">
-            <div class="flex items-center gap-2"><span class="font-bold">1.</span> {t.getDigitalId.step1}</div>
-            <div class="flex items-center gap-2"><span class="font-bold">2.</span> {t.getDigitalId.step2}</div>
-            <div class="flex items-center gap-2"><span class="font-bold">3.</span> {t.getDigitalId.step3}</div>
-          </div>
-
-          <a
-            href="https://dgep.eguwallet.eu/onboarding"
-            class="mt-2 inline-flex items-center gap-2 px-5 py-2.5 sm:px-6 sm:py-3 rounded-lg font-semibold text-[13px] sm:text-[14px] transition-opacity hover:opacity-90"
-            style="background-color: var(--eg-primary); color: var(--eg-on-primary);"
-          >
-            {t.getDigitalId.cta}
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
-          </a>
-        </div>
-      </div>
-    </section>
-
     <!-- FOOTER -->
     <footer class="py-8 sm:py-10 px-4 sm:px-6 t-bg-surface-high">
       <div class="max-w-4xl mx-auto">
@@ -366,10 +495,12 @@ const playUrl = 'https://play.google.com/store/apps/details?id=wallet.eguwallet.
             <div class="flex flex-col gap-1.5">
               <a href={`/${lang}/privacy/`} class="t-fg opacity-45 hover:opacity-75 transition-opacity">{t.footer.privacy}</a>
               <a href={`/${lang}/terms/`} class="t-fg opacity-45 hover:opacity-75 transition-opacity">{t.footer.legal}</a>
+              <a href={`/${lang}/contact/`} class="t-fg opacity-45 hover:opacity-75 transition-opacity">{t.footer.contact}</a>
             </div>
             <div class="flex flex-col gap-1.5">
-              <a href="mailto:contact@eguwallet.eu" class="t-fg opacity-45 hover:opacity-75 transition-opacity">{t.footer.contact}</a>
-              <a href="https://github.com/eguilde" target="_blank" rel="noopener" class="t-fg opacity-45 hover:opacity-75 transition-opacity">GitHub</a>
+              <a href="https://anpc.ro" target="_blank" rel="noopener noreferrer" class="t-fg opacity-30 hover:opacity-60 transition-opacity">ANPC ↗</a>
+              <a href="https://www.dataprotection.ro" target="_blank" rel="noopener noreferrer" class="t-fg opacity-30 hover:opacity-60 transition-opacity">ANSPDCP ↗</a>
+              <a href="https://digital-strategy.ec.europa.eu/en/activities/digital-identities" target="_blank" rel="noopener noreferrer" class="t-fg opacity-30 hover:opacity-60 transition-opacity">EUDI ↗</a>
             </div>
           </div>
         </div>
@@ -382,6 +513,17 @@ const playUrl = 'https://play.google.com/store/apps/details?id=wallet.eguwallet.
           <span>SD-JWT</span><span>·</span>
           <span>ISO 18013-5</span>
         </div>
+
+        <!-- EU regulatory references — discrete -->
+        <p class="text-[10px] sm:text-[11px] t-fg opacity-20 mb-1.5">
+          <a href="https://eur-lex.europa.eu/eli/reg/2024/1183/oj" target="_blank" rel="noopener noreferrer" class="hover:opacity-60 transition-opacity underline">Reg. (EU) 2024/1183</a>
+          {' · '}
+          <a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj" target="_blank" rel="noopener noreferrer" class="hover:opacity-60 transition-opacity underline">GDPR (EU) 2016/679</a>
+          {' · '}
+          <a href="https://digital-strategy.ec.europa.eu/en/activities/digital-identities" target="_blank" rel="noopener noreferrer" class="hover:opacity-60 transition-opacity underline">EUDI Wallet</a>
+          {' · '}
+          <a href={`/${lang}/contact/`} class="hover:opacity-60 transition-opacity underline">{t.footer.accessibility}</a>
+        </p>
 
         {t.isMachineTranslated && (
           <p class="text-[10px] sm:text-[11px] t-fg opacity-20 mb-2">{t.footer.machineTranslatedNotice}</p>

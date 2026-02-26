@@ -3,213 +3,297 @@
   "langName": "Polski",
   "isMachineTranslated": true,
   "nav": {
-    "what": "What is it",
-    "privacy": "Privacy",
-    "documents": "Documents",
-    "usedToday": "Where it works",
-    "future": "Future",
-    "howItWorks": "How it works",
+    "what": "Co to jest",
+    "privacy": "Prywatność",
+    "documents": "Dokumenty",
+    "useCases": "Przypadki użycia",
+    "trust": "Zaufanie i prawo",
+    "usedToday": "Gdzie działa",
+    "about": "O nas",
+    "contact": "Kontakt",
+    "future": "Przyszłość",
+    "howItWorks": "Jak to działa",
     "faq": "FAQ",
-    "download": "Download"
+    "download": "Pobierz"
   },
   "hero": {
-    "title": "Your digital identity — secure, private, always with you",
-    "subtitle": "EguWallet is a European eIDAS 2.0 certified digital wallet that replaces physical documents with verifiable digital equivalents, recognised across all EU member states.",
-    "badge1": "eIDAS 2.0 Compliant",
-    "badge2": "Certified EUDI Wallet",
-    "badge3": "Free",
-    "downloadAndroid": "Get it on Google Play",
-    "downloadIos": "Available soon on App Store",
-    "downloadIosComingSoon": "Coming Soon"
+    "title": "Twoja cyfrowa tożsamość — bezpieczna, prywatna, zawsze przy Tobie",
+    "subtitle": "EguWallet to europejski portfel cyfrowy z certyfikatem eIDAS 2.0, który zastępuje fizyczne dokumenty weryfikowalnymi odpowiednikami cyfrowymi, uznanymi we wszystkich państwach członkowskich UE.",
+    "badge1": "Zgodny z eIDAS 2.0",
+    "badge2": "Certyfikacja w toku",
+    "badge3": "Bezpłatny na razie",
+    "downloadAndroid": "Pobierz w Google Play",
+    "downloadIos": "Wkrótce w App Store",
+    "downloadIosComingSoon": "Już wkrótce"
   },
   "what": {
-    "heading": "What is EguWallet?",
-    "card1Title": "Regulated by EU Law",
-    "card1Body": "EguWallet is built on Regulation (EU) 2024/1183 — the eIDAS revision — which guarantees every European citizen the right to a free digital wallet, recognised across all 27 member states.",
-    "card2Title": "What is a EUDI Wallet?",
-    "card2Body": "A European Digital Identity Wallet (EUDI) is a secure app that stores verifiable digital identity documents: ID card, passport, driving licence, vehicle documents and more — all under your exclusive control.",
-    "card3Title": "Who provides EguWallet?",
-    "card3Body": "EguWallet is developed by IT Eguilde SRL, a digital identity provider. The app fully complies with the EUDI Architecture Reference Framework (ARF 2.5+), OpenID4VCI and OpenID4VP standards."
+    "heading": "Czym jest EguWallet?",
+    "card1Title": "Regulowany przez prawo UE",
+    "card1Body": "EguWallet jest zbudowany na Rozporządzeniu (UE) 2024/1183 — nowelizacji eIDAS — które gwarantuje każdemu obywatelowi europejskiemu prawo do bezpłatnego portfela cyfrowego, uznawanego we wszystkich 27 państwach członkowskich.",
+    "card2Title": "Czym jest portfel EUDI?",
+    "card2Body": "Europejski Portfel Tożsamości Cyfrowej (EUDI) to bezpieczna aplikacja przechowująca weryfikowalne cyfrowe dokumenty tożsamości: dowód osobisty, paszport, prawo jazdy, dokumenty pojazdu i inne — wszystkie pod Twoją wyłączną kontrolą.",
+    "card3Title": "Kto dostarcza EguWallet?",
+    "card3Body": "EguWallet jest rozwijany przez IT Eguilde SRL, dostawcę tożsamości cyfrowej. Aplikacja jest zbudowana na standardach EUDI Architecture Reference Framework (ARF 2.5+), OpenID4VCI i OpenID4VP. Aktualnie przechodzi formalną certyfikację eIDAS 2.0 — do czasu jej ukończenia działa jako pilotażowy portfel EUDI."
   },
   "privacy": {
-    "heading": "Your data, your control",
-    "subheading": "Selective disclosure — only what is needed, only when you agree",
-    "body": "EguWallet uses SD-JWT (Selective Disclosure JWT) and mDoc/ISO 18013-5 to enable selective data disclosure. When a merchant or institution requests identity verification, you choose exactly which data is transmitted. Nothing more.",
-    "example1Title": "Age 18+ verification",
-    "example1Step1": "Merchant scans QR code",
-    "example1Step2": "Your wallet receives the request",
-    "example1Step3": "You approve: transmit ONLY «age ≥ 18: YES»",
-    "example1Step4": "Merchant does NOT receive: name, ID number, address, photo",
-    "legalTitle": "Legal basis",
-    "legal1": "<a href=\"https://eur-lex.europa.eu/eli/reg/2016/679/oj\" target=\"_blank\" rel=\"noopener\" style=\"text-decoration:underline;\">GDPR Art. 5(1)(c)</a> — data minimisation principle: processing is limited to what is strictly necessary.",
-    "legal2": "<a href=\"https://eur-lex.europa.eu/eli/reg/2024/1183/oj\" target=\"_blank\" rel=\"noopener\" style=\"text-decoration:underline;\">Reg. (EU) 2024/1183</a> — selective presentation is a citizen right, not an optional feature.",
-    "legal3": "No presentation is stored by the wallet or any third party — every disclosure is ephemeral."
+    "heading": "Twoje dane, Twoja kontrola",
+    "subheading": "Selektywne ujawnianie — tylko to, co potrzebne, tylko gdy wyrazisz zgodę",
+    "body": "EguWallet używa SD-JWT (Selective Disclosure JWT) i mDoc/ISO 18013-5 do selektywnego ujawniania danych. Gdy sprzedawca lub instytucja żąda weryfikacji tożsamości, Ty decydujesz dokładnie, które dane są przekazywane. Nic więcej.",
+    "example1Title": "Weryfikacja wieku 18+",
+    "example1Step1": "Sprzedawca skanuje kod QR",
+    "example1Step2": "Twój portfel otrzymuje żądanie",
+    "example1Step3": "Zatwierdzasz: przekaż TYLKO «wiek ≥ 18: TAK»",
+    "example1Step4": "Sprzedawca NIE otrzymuje: imienia, numeru dowodu, adresu, zdjęcia",
+    "legalTitle": "Podstawa prawna",
+    "legal1": "<a href=\"https://eur-lex.europa.eu/eli/reg/2016/679/oj\" target=\"_blank\" rel=\"noopener\" style=\"text-decoration:underline;\">RODO Art. 5(1)(c)</a> — zasada minimalizacji danych: przetwarzanie jest ograniczone do tego, co ściśle niezbędne.",
+    "legal2": "<a href=\"https://eur-lex.europa.eu/eli/reg/2024/1183/oj\" target=\"_blank\" rel=\"noopener\" style=\"text-decoration:underline;\">Rozp. (UE) 2024/1183</a> — selektywna prezentacja jest prawem obywatelskim, a nie opcjonalną funkcją.",
+    "legal3": "Żadna prezentacja nie jest przechowywana przez portfel ani żadną stronę trzecią — każde ujawnienie jest efemeryczne."
   },
   "documents": {
-    "heading": "Documents in your wallet",
-    "subheading": "All your important documents — digital, verifiable, always at hand",
+    "heading": "Dokumenty w Twoim portfelu",
+    "subheading": "Wszystkie ważne dokumenty — cyfrowe, weryfikowalne, zawsze pod ręką",
     "items": [
+      { "icon": "🪪", "title": "Dowód osobisty (PID)", "body": "Podstawowy cyfrowy dokument tożsamości zgodny z eIDAS 2.0. Uznawany we wszystkich państwach członkowskich UE.", "status": "available" },
+      { "icon": "🛂", "title": "Paszport", "body": "Cyfrowa wersja Twojego paszportu, natychmiastowo weryfikowalna przez władze i usługi.", "status": "available" },
+      { "icon": "🚗", "title": "Prawo jazdy", "body": "Cyfrowe prawo jazdy zgodne z mDoc/ISO 18013-5. Weryfikowalne bezkontaktowo, w tym przez policję drogową.", "status": "available" },
+      { "icon": "📋", "title": "Dowód rejestracyjny pojazdu", "body": "Dowód rejestracyjny pojazdu w formacie cyfrowym. Koniec z noszeniem papierowych dokumentów.", "status": "soon" },
+      { "icon": "🛡️", "title": "Ubezpieczenie pojazdu (OC)", "body": "Obowiązkowe ubezpieczenie komunikacyjne, weryfikowalne w czasie rzeczywistym.", "status": "soon" },
+      { "icon": "🔧", "title": "Badanie techniczne / przegląd", "body": "Certyfikaty z okresowego badania technicznego i dane pojazdu — weryfikowalne dokumenty cyfrowe.", "status": "soon" },
+      { "icon": "🏢", "title": "Dokumenty firmy", "body": "Zaświadczenie o rejestracji firmy, pełnomocnictwa i dokumenty korporacyjne. Podpisuj cyfrowo swoim portfelem.", "status": "soon" },
+      { "icon": "🏠", "title": "Dokumenty nieruchomości", "body": "Wyciągi z ksiąg wieczystych i dokumenty własności nieruchomości w weryfikowalnym formacie cyfrowym.", "status": "soon" }
+    ],
+    "statusAvailable": "Dostępne",
+    "statusSoon": "Już wkrótce"
+  },
+  "useCases": {
+    "heading": "Rzeczywiste przypadki użycia",
+    "subheading": "EguWallet działa w każdej dziedzinie życia publicznego i prywatnego — od rutynowej kontroli drogowej po podpisanie umowy handlowej",
+    "categories": [
       {
-        "icon": "🪪",
-        "title": "Identity Card (PID)",
-        "body": "The primary digital identity document compliant with eIDAS 2.0. Recognised across all EU member states.",
-        "status": "available"
-      },
-      {
-        "icon": "🛂",
-        "title": "Passport",
-        "body": "The digital version of your passport, instantly verifiable by authorities and services.",
-        "status": "available"
-      },
-      {
-        "icon": "🚗",
-        "title": "Driving Licence",
-        "body": "Digital driving licence compliant with mDoc/ISO 18013-5. Contactlessly verifiable, including by traffic police.",
-        "status": "available"
-      },
-      {
-        "icon": "📋",
-        "title": "Vehicle Registration",
-        "body": "Your vehicle registration document in digital format. No more carrying paper documents.",
-        "status": "available"
-      },
-      {
-        "icon": "🛡️",
-        "title": "Vehicle Insurance (RCA)",
-        "body": "Mandatory vehicle insurance policy, verifiable in real time.",
-        "status": "available"
-      },
-      {
-        "icon": "🔧",
-        "title": "Technical Inspection / RAR",
-        "body": "Periodic technical inspection (ITP) and RAR vehicle data — verifiable digital certificates.",
-        "status": "available"
+        "icon": "🚔",
+        "image": "/assets/illustrations/usecase-police.jpg",
+        "title": "Organy ścigania i porządek publiczny",
+        "description": "Policjanci, straż graniczna i inspektorzy porządku publicznego weryfikują tożsamość cyfrową w kilka sekund — z pełnym zaufaniem kryptograficznym, bez dotykania fizycznych dokumentów.",
+        "scenarios": [
+          { "emoji": "🪪", "name": "Kontrola tożsamości na patrolu", "body": "Policjant weryfikuje pełną tożsamość obywatela — imię, CNP, adres, zdjęcie — przez NFC lub QR. Bez papieru. Wynik rejestrowany automatycznie.", "legal": "Law 218/2002 — Art. 31" },
+          { "emoji": "🚗", "name": "Kompletna kontrola drogowa", "body": "Jedno skanowanie QR: funkcjonariusz otrzymuje dowód, prawo jazdy z kategoriami, dowód rejestracyjny, ubezpieczenie OC i przegląd techniczny — wszystko kryptograficznie zweryfikowane.", "legal": "OUG 195/2002 — Art. 6, 80, 81" },
+          { "emoji": "🛂", "name": "Kontrola graniczna", "body": "Na przejściach granicznych funkcjonariusze weryfikują tożsamość, obywatelstwo i ważność dokumentu podróży w jednej bezpiecznej prezentacji cyfrowej.", "legal": "Law 248/2005" }
+        ]
       },
       {
         "icon": "🏢",
-        "title": "Company Documents",
-        "body": "Company registration certificate, powers of attorney and corporate documents. Sign digitally with your wallet.",
-        "status": "soon"
+        "image": "/assets/illustrations/usecase-business.jpg",
+        "title": "Biznes i transakcje handlowe",
+        "description": "Firmy, notariusze, prawnicy i platformy B2B błyskawicznie weryfikują tożsamość firmową i uprawnienia przedstawiciela prawnego — eliminując papierowe zaświadczenia i kurierów.",
+        "scenarios": [
+          { "emoji": "🏛️", "name": "Weryfikacja firmy (KRS)", "body": "Platforma B2B lub portal przetargowy weryfikuje nazwę firmy, NIP, adres siedziby i status aktywności — wszystko certyfikowane przez Krajowy Rejestr Sądowy.", "legal": "Law 31/1990; Law 26/1990" },
+          { "emoji": "✍️", "name": "Weryfikacja przedstawiciela prawnego", "body": "Partner lub notariusz weryfikuje, że dana osoba jest upoważnionym przedstawicielem firmy — tożsamość, poświadczenie firmowe i pełnomocnictwo prezentowane jednocześnie.", "legal": "Law 31/1990 — Art. 75, 197" },
+          { "emoji": "📜", "name": "Podpisanie umowy — pełny zautomatyzowany przepływ", "body": "Jeden QR: tożsamość zweryfikowana, pełnomocnictwo potwierdzone, umowa podpisana kwalifikowanym podpisem elektronicznym. Prawnie wiążąca w całej UE. Poniżej 90 sekund.", "legal": "Reg. (EU) 2024/1183 — Art. 25; Law 455/2001" }
+        ]
       },
       {
-        "icon": "🏠",
-        "title": "Property Documents",
-        "body": "Land registry extracts and real estate ownership documents in verifiable digital format.",
-        "status": "soon"
+        "icon": "🎓",
+        "image": "/assets/illustrations/usecase-education.jpg",
+        "title": "Edukacja — szkoła i uczelnia",
+        "description": "Uczniowie od klasy 1 do doktoratu noszą swoją legitymację szkolną lub studencką w EguWallet. Używana do wejścia do szkoły, egzaminów, biblioteki, stołówki, akademika i zniżek na transport.",
+        "scenarios": [
+          { "emoji": "🏫", "name": "Legitymacja ucznia (klasy 1–12)", "body": "Uczeń przykłada telefon przy bramce szkolnej, w bibliotece lub stołówce. Cyfrowa legitymacja jest wydawana przez szkołę lub kuratorium — ważna na rok szkolny.", "legal": "Law 1/2011 — Art. 5" },
+          { "emoji": "📋", "name": "Legitymacja + dowód na egzaminach", "body": "Na maturze, egzaminach państwowych i olimpiadach: legitymacja plus elektroniczny dowód osobisty prezentowane jednocześnie — dla uczniów od 14 roku życia.", "legal": "Law 1/2011; OUG 97/2005 — Art. 14" },
+          { "emoji": "🎓", "name": "Legitymacja studencka", "body": "Wejście na wydział, akademik, biblioteka, dziekanat — cyfrowa legitymacja zastępuje kartę fizyczną. Działa dla stypendiów i zniżek na przejazdy kolejowe.", "legal": "Law 1/2011 — Art. 118, 119" },
+          { "emoji": "🚌", "name": "Bilet komunikacji dla studentów", "body": "Uczniowie i studenci wsiadają do autobusów, metra i pociągów używając swojego portfela. Kasownik lub kierowca natychmiast widzi uprawnienie — bez fizycznej karty.", "legal": "OUG 133/2000; HCL urban transport" }
+        ]
+      },
+      {
+        "icon": "🛒",
+        "image": "/assets/illustrations/usecase-retail.jpg",
+        "title": "Handel detaliczny i weryfikacja wieku",
+        "description": "Sprzedawcy weryfikują wiek lub tożsamość w punkcie sprzedaży w kilka sekund — bez przechowywania żadnych danych osobowych i z pełną zgodnością z RODO.",
+        "scenarios": [
+          { "emoji": "🍺", "name": "Wiek 18+ w punkcie sprzedaży", "body": "Kasjer pokazuje kod QR. Klient zatwierdza ze swojego portfela: przekazywane jest tylko «wiek ≥ 18: TAK». Bez imienia, bez numeru dowodu, bez zdjęcia.", "legal": "OUG 99/2000 — alkohol/tytoń" },
+          { "emoji": "🏨", "name": "Zameldowanie w hotelu", "body": "Turysta melduje się podając imię, datę urodzenia i narodowość z portfela. Bez kserowania paszportów. Zgodne z przepisami o rejestracji zakwaterowania.", "legal": "HG 1215/2001" }
+        ]
+      },
+      {
+        "icon": "🏦",
+        "image": "/assets/illustrations/usecase-banking.jpg",
+        "title": "Usługi finansowe i KYC",
+        "description": "Banki, firmy ubezpieczeniowe i platformy fintech pozyskują klientów cyfrowo — spełniając wymogi AML/KYC bez papierowych formularzy.",
+        "scenarios": [
+          { "emoji": "🏦", "name": "Otwarcie konta bankowego (KYC/AML)", "body": "Bank zdalnie weryfikuje pełną tożsamość klienta — imię, CNP, datę i miejsce urodzenia, obywatelstwo, adres — certyfikowaną przez portfel EUDI. Zgodne z ustawą o przeciwdziałaniu praniu pieniędzy.", "legal": "Law 129/2019; Directive (EU) 2015/849" },
+          { "emoji": "💼", "name": "Ubezpieczenia i produkty finansowe", "body": "Firmy ubezpieczeniowe weryfikują tożsamość ubezpieczonego przy podpisaniu umowy — cyfrowo, natychmiastowo, z pełną identyfikowalnością eIDAS 2.0.", "legal": "Reg. (EU) 2024/1183" }
+        ]
+      },
+      {
+        "icon": "🏥",
+        "image": "/assets/illustrations/usecase-healthcare.jpg",
+        "title": "Opieka zdrowotna i usługi społeczne",
+        "description": "Szpitale, kliniki, apteki i służby społeczne bezpiecznie identyfikują pacjentów i beneficjentów, bez ręcznego wypełniania formularzy.",
+        "scenarios": [
+          { "emoji": "🏥", "name": "Identyfikacja pacjenta", "body": "Szpital lub klinika identyfikuje pacjenta za pomocą EguWallet. Imię, CNP, data urodzenia weryfikowane natychmiast przy recepcji lub na izbie przyjęć.", "legal": "Law 95/2006 — Art. 230-232" },
+          { "emoji": "🗳️", "name": "Weryfikacja wyborcy przez komisję wyborczą", "body": "Pracownicy lokalu wyborczego weryfikują tożsamość wyborcy i sprawdzają rejestr wyborców — natychmiast, z pełnym śladem audytu. Bez ręcznego przeszukiwania list.", "legal": "Law 208/2015 — Art. 84" },
+          { "emoji": "📋", "name": "Weryfikacja tożsamości przy zatrudnieniu", "body": "Pracodawcy weryfikują tożsamość nowego pracownika przy podpisaniu umowy — imię, CNP, adres — zgodnie z wymogami Kodeksu pracy i raportowania REVISAL.", "legal": "Law 53/2003; HG 500/2011" }
+        ]
+      },
+      {
+        "icon": "🎰",
+        "image": "/assets/illustrations/usecase-gambling.jpg",
+        "title": "Hazard i samowykluczenie",
+        "description": "Kasyna online i stacjonarne, bukmacherzy sportowi i platformy gier weryfikują tożsamość gracza i sprawdzają krajowe rejestry samowykluczenia — zapobiegając problemowemu hazardowi i zapewniając zgodność z przepisami.",
+        "scenarios": [
+          { "emoji": "🎰", "name": "Weryfikacja tożsamości gracza (KYC)", "body": "Operatorzy hazardowi weryfikują tożsamość gracza przy rejestracji — imię, datę urodzenia, narodowość — zgodnie z wymogami AML i przepisami licencyjnymi. Szybko, cyfrowo, bez kserokopii.", "legal": "Directive (EU) 2015/849; OUG 77/2009" },
+          { "emoji": "🚫", "name": "Sprawdzenie rejestru samowykluczenia", "body": "Przed umożliwieniem graczowi postawienia zakładu, operator sprawdza krajowy rejestr samowykluczenia przez EguWallet. Jeśli gracz figuruje na liście, dostęp jest automatycznie blokowany — bez ręcznego wyszukiwania.", "legal": "OUG 77/2009 — Art. 10; national gambling authority" },
+          { "emoji": "🔞", "name": "Weryfikacja wieku 18+ dla gier", "body": "Operatorzy gier online i stacjonarnych weryfikują, że gracz ma co najmniej 18 lat — używając poświadczenia wiekowego EguWallet. Przekazywane jest tylko TAK/NIE — operator nie przechowuje żadnych danych osobowych.", "legal": "OUG 77/2009; Directive (EU) 2015/849" }
+        ]
+      },
+      {
+        "icon": "⚖️",
+        "image": "/assets/illustrations/usecase-legal.jpg",
+        "title": "Prawo i notariat — fizyczna obecność nie jest już wymagana",
+        "description": "Na podstawie Rozporządzenia (UE) 2024/1183 portfel EUDI zapewnia prawnie wiążącą identyfikację równoważną obecności fizycznej dla szerokiego zakresu czynności prawnych. Wiele procedur notarialnych, które wcześniej wymagały osobistego stawiennictwa, można teraz realizować zdalnie.",
+        "scenarios": [
+          { "emoji": "📝", "name": "Zdalna identyfikacja notarialna", "body": "Dla czynności, które wcześniej wymagały osobistej obecności — pełnomocnictwa, oświadczenia, przeniesienie własności — notariusz może teraz zdalnie zidentyfikować stronę przez portfel EUDI. Zweryfikowany PID portfela zastępuje osobistą weryfikację dokumentów.", "legal": "Law 36/1995 — Art. 40; Reg. (EU) 2024/1183 — Art. 5a" },
+          { "emoji": "🏠", "name": "Transakcje nieruchomościami bez kolejkowania", "body": "Kupno lub sprzedaż nieruchomości nie wymaga już podróży do kancelarii notarialnej tylko w celu identyfikacji. Obie strony identyfikują się cyfrowo, pełnomocnictwo przedstawiciela jest weryfikowane, a umowa podpisywana kwalifikowanym podpisem elektronicznym — wszystko zdalnie.", "legal": "Civil Code Art. 1244; eIDAS 2.0 Art. 25" },
+          { "emoji": "✅", "name": "Oświadczenia i pełnomocnictwa", "body": "Oświadczenia ustawowe, pełnomocnictwa, zeznania pod przysięgą — te czynności nie wymagają już fizycznej wizyty u notariusza tylko do identyfikacji. Obywatel prezentuje swój PID EguWallet; identyfikacja jest prawnie równoważna weryfikacji osobistej.", "legal": "Reg. (EU) 2024/1183 — eIDAS 2.0; Law 455/2001" },
+          { "emoji": "🤝", "name": "Umowy firmowe i handlowe z kwalifikowanym podpisem elektronicznym", "body": "Umowy o świadczenie usług, umowy partnerskie, uchwały wspólników — podpisane kwalifikowanym podpisem elektronicznym bezpośrednio z EguWallet. Moc prawna we wszystkich 27 państwach członkowskich UE. Bez drukarki, bez kuriera, bez umawiania wizyty.", "legal": "Law 455/2001; eIDAS 2.0 Art. 25; Law 31/1990" }
+        ]
       }
+    ]
+  },
+  "trust": {
+    "heading": "Prawnie wiążący — zaufany przez prawo, kontrolowany przez Ciebie",
+    "subheading": "EguWallet daje obywatelom pełną kontrolę nad ich danymi tożsamości, zapewniając jednocześnie usługom i organom publicznym pewność prawną, której potrzebują.",
+    "image": "/assets/illustrations/usecase-trust.jpg",
+    "citizenTitle": "Dla obywateli — Ty decydujesz o wszystkim",
+    "citizenPoints": [
+      "Wybierasz, jakie dane udostępniać, komu i kiedy — Twój portfel nigdy nic nie przesyła bez Twojej wyraźnej zgody.",
+      "Każda interakcja jest rejestrowana w Twoim osobistym dzienniku audytu. Możesz zobaczyć dokładnie, kto żądał Twoich danych i co otrzymał.",
+      "Na podstawie RODO Art. 17 możesz w każdej chwili zażądać usunięcia swoich danych z dowolnej usługi — bezpośrednio z aplikacji.",
+      "Twoje klucze kryptograficzne nigdy nie opuszczają Twojego urządzenia. Żaden dostawca portfela, żaden rząd, żadna strona trzecia nie może uzyskać dostępu do Twoich poświadczeń bez Twojej zgody."
     ],
-    "statusAvailable": "Available",
-    "statusSoon": "Coming Soon"
+    "rpTitle": "Dla usług i organizacji — prawnie pewna tożsamość",
+    "rpSubtitle": "Usługi akceptujące EguWallet (tzw. Strony ufające — firmy, instytucje lub organy publiczne weryfikujące tożsamość) korzystają z:",
+    "rpPoints": [
+      "Prawnie wiążącej identyfikacji na podstawie Rozporządzenia (UE) 2024/1183 — równoważnej fizycznej weryfikacji dokumentów dla większości celów prawnych.",
+      "Kryptograficznie zweryfikowanych danych tożsamości — niemożliwych do sfałszowania, odtworzenia lub manipulowania.",
+      "Pełnej zgodności z AML/KYC dla banków, firm ubezpieczeniowych i platform finansowych.",
+      "Zerowego ryzyka odpowiedzialności — wydawca portfela ponosi odpowiedzialność regulacyjną za autentyczność poświadczeń."
+    ],
+    "auditTitle": "Prywatnie audytowany. Publicznie rozliczalny.",
+    "auditBody": "EguWallet jest zbudowany na otwartych standardach (ARF 2.5+, OpenID4VCI, OpenID4VP, SD-JWT, ISO 18013-5) i przechodzi formalną certyfikację przez akredytowany Organ Oceny Zgodności. Nasza architektura techniczna jest otwarta na niezależne audyty bezpieczeństwa. Jesteśmy zgodni z eIDAS 2.0 dla organów publicznych, pozostając jednocześnie elastyczni dla integracji sektora prywatnego w handlu detalicznym, opiece zdrowotnej, finansach i usługach prawnych.",
+    "badges": [
+      { "icon": "🛡️", "label": "RODO Art. 17 — Prawo do usunięcia danych" },
+      { "icon": "📋", "label": "Pełna historia interakcji" },
+      { "icon": "⚖️", "label": "eIDAS 2.0 prawnie wiążący" },
+      { "icon": "🔐", "label": "Selektywne ujawnianie bez wiedzy zerowej" },
+      { "icon": "🔍", "label": "Prywatnie audytowany" },
+      { "icon": "🌍", "label": "Ważny we wszystkich 27 państwach UE" }
+    ]
   },
   "usedToday": {
-    "heading": "Where EguWallet works today",
-    "subheading": "Production applications already using EguWallet for authentication and verification",
-    "app1Name": "Ilfov County Council",
+    "heading": "Gdzie EguWallet działa dzisiaj",
+    "subheading": "Aplikacje produkcyjne już korzystające z EguWallet do uwierzytelniania i weryfikacji",
+    "app1Name": "Rada Powiatu Ilfov",
     "app1Url": "https://ilfov.net",
-    "app1Body": "Digital public services for Ilfov County citizens — EguWallet authentication for e-government portal access, application submission, and document verification.",
-    "app2Name": "Sector 2 Bucharest City Hall",
+    "app1Body": "Cyfrowe usługi publiczne dla mieszkańców powiatu Ilfov — uwierzytelnianie EguWallet do dostępu do portalu e-administracji, składania wniosków i weryfikacji dokumentów.",
+    "app2Name": "Urząd Dzielnicy Sector 2 Bukareszt",
     "app2Url": "https://sector2.eu",
-    "app2Body": "Digital municipal services for Sector 2 residents — fast and secure authentication with the digital wallet for all online city hall services.",
-    "badgeText": "Sign in with EguWallet"
+    "app2Body": "Cyfrowe usługi miejskie dla mieszkańców Sektora 2 — szybkie i bezpieczne uwierzytelnianie portfelem cyfrowym do wszystkich usług ratusza online.",
+    "badgeText": "Zaloguj się z EguWallet"
+  },
+  "verifier": {
+    "heading": "Jesteś instytucją publiczną lub firmą?",
+    "subheading": "Weryfikuj dokumenty tożsamości i cyfrowe poświadczenia za pomocą EguWallet Verifier",
+    "card1Title": "Cyfrowy inspektor tożsamości",
+    "card1Body": "Zarejestrowani pracownicy instytucji weryfikują dokumenty cyfrowe w kilka sekund przez Bluetooth/NFC — bezpośrednio ze swojego telefonu. Każda weryfikacja jest rejestrowana, możliwa do prześledzenia i zgodna z RODO. Bez papieru, bez kserokopii.",
+    "card2Title": "Jak zacząć",
+    "card2Body": "Pobierz EguWallet Verifier, zarejestruj się swoim portfelem EguWallet lub ręcznie, wybierz swoją instytucję i wydział. Twoje konto jest aktywowane przez administratora instytucji.",
+    "playBadgeAlt": "Pobierz EguWallet Verifier w Google Play",
+    "navLabel": "Dla instytucji"
   },
   "future": {
-    "heading": "What's next — the future of digital identity",
-    "subheading": "EguWallet continuously expands with new use cases that make life easier",
+    "heading": "Co dalej — przyszłość tożsamości cyfrowej",
+    "subheading": "EguWallet stale rozszerza się o nowe przypadki użycia ułatwiające życie",
     "items": [
-      {
-        "icon": "📡",
-        "title": "Device-to-Device Verification (Bluetooth)",
-        "body": "Like contactless NFC payment — a police officer or merchant brings their phone near yours and instantly receives only the data you have authorised. No internet, no intermediate server."
-      },
-      {
-        "icon": "🚔",
-        "title": "Law Enforcement Identity Check",
-        "body": "Similar to modern contactless payment: a law enforcement officer verifies identity via NFC/Bluetooth. You control what data is transmitted. Fast, secure, no photocopies needed."
-      },
-      {
-        "icon": "🍺",
-        "title": "Age 18+ Verification (Coming Soon)",
-        "body": "Imminent deployment with a major Romanian retailer for age control on alcohol sales. The merchant receives only a YES/NO answer — no other personal data is disclosed."
-      },
-      {
-        "icon": "🚌",
-        "title": "Public Transport Tickets & Passes",
-        "body": "Students entitled to free travel prove their status via EguWallet. Regular passengers purchase and present tickets digitally — no paper, no contact validators."
-      },
-      {
-        "icon": "📍",
-        "title": "Address on the New Romanian ID Card",
-        "body": "The new Romanian ID card no longer contains an address on the chip. EguWallet solves this: your registered address, certified by the official registry, can be selectively disclosed when required."
-      },
-      {
-        "icon": "✍️",
-        "title": "Qualified Digital Signature",
-        "body": "EguWallet will function as a Qualified Electronic Signature (QES) device compliant with eIDAS 2.0. Sign documents with full legal force, recognised across all EU member states — directly from your phone."
-      }
+      { "icon": "📡", "title": "Weryfikacja między urządzeniami (Bluetooth)", "body": "Jak płatność zbliżeniowa NFC — policjant lub sprzedawca zbliża swój telefon do Twojego i natychmiast otrzymuje tylko dane, które autoryzowałeś. Bez internetu, bez pośredniego serwera." },
+      { "icon": "🚔", "title": "Kontrola tożsamości przez organy ścigania", "body": "Podobnie jak nowoczesna płatność zbliżeniowa: funkcjonariusz weryfikuje tożsamość przez NFC/Bluetooth. Kontrolujesz, jakie dane są przekazywane. Szybko, bezpiecznie, bez kserokopii." },
+      { "icon": "🍺", "title": "Weryfikacja wieku 18+ (wkrótce)", "body": "Zbliżające się wdrożenie z dużym detalistą do kontroli wieku przy sprzedaży alkoholu. Sprzedawca otrzymuje tylko odpowiedź TAK/NIE — żadne inne dane osobowe nie są ujawniane." },
+      { "icon": "🚌", "title": "Bilety i karnety komunikacji publicznej", "body": "Studenci uprawnieni do bezpłatnych przejazdów potwierdzają swój status przez EguWallet. Zwykli pasażerowie kupują i prezentują bilety cyfrowo — bez papieru, bez kontaktowych kasowników." },
+      { "icon": "📍", "title": "Adres na nowym dowodzie osobistym", "body": "Nowy dowód osobisty nie zawiera już adresu na chipie. EguWallet rozwiązuje ten problem: Twój zarejestrowany adres, certyfikowany przez oficjalny rejestr, może być selektywnie ujawniany w razie potrzeby." },
+      { "icon": "✍️", "title": "Kwalifikowany podpis cyfrowy", "body": "EguWallet będzie działał jako urządzenie do Kwalifikowanego Podpisu Elektronicznego (QES) zgodne z eIDAS 2.0. Podpisuj dokumenty z pełną mocą prawną uznawaną we wszystkich państwach członkowskich UE — bezpośrednio ze swojego telefonu." }
     ]
   },
   "howItWorks": {
-    "heading": "How it works",
-    "step1Title": "1. Download the app",
-    "step1Body": "Install EguWallet for free from the Google Play Store. Coming soon on Apple App Store.",
-    "step2Title": "2. Activate your wallet",
-    "step2Body": "Verify your phone number, create a secure PIN, and connect to your county or city portal to register your digital documents.",
-    "step3Title": "3. Present with full control",
-    "step3Body": "Scan a QR code, tap an NFC terminal or share a secure link. You choose exactly what data is transmitted — never more than is necessary."
+    "heading": "Jak to działa",
+    "step1Title": "1. Pobierz aplikację",
+    "step1Body": "Zainstaluj EguWallet ze Sklepu Google Play — bezpłatnie na razie w fazie pilotażowej. Wkrótce w App Store firmy Apple.",
+    "step2Title": "2. Aktywuj swój portfel",
+    "step2Body": "Zweryfikuj swój numer telefonu, utwórz bezpieczny PIN i połącz się z portalem swojego powiatu lub miasta, aby zarejestrować swoje cyfrowe dokumenty.",
+    "step3Title": "3. Prezentuj z pełną kontrolą",
+    "step3Body": "Zeskanuj kod QR, zbliż terminal NFC lub udostępnij bezpieczny link. Ty decydujesz dokładnie, jakie dane są przekazywane — nigdy więcej niż jest to konieczne."
   },
   "faq": {
-    "heading": "Frequently asked questions",
+    "heading": "Często zadawane pytania",
     "items": [
-      {
-        "q": "What is EguWallet?",
-        "a": "EguWallet is a European eIDAS 2.0 certified digital wallet developed by IT Eguilde SRL. It allows you to store and present digital identity documents (ID card, passport, driving licence etc.) securely on your phone, with full control over your personal data."
-      },
-      {
-        "q": "What documents can I store in EguWallet?",
-        "a": "Currently: identity card (PID), passport, driving licence, vehicle registration, RCA insurance and vehicle inspection certificate (ITP/RAR). Coming soon: company documents and property documents."
-      },
-      {
-        "q": "Is my personal data secure?",
-        "a": "Yes. EguWallet uses SD-JWT and mDoc/ISO 18013-5 for selective disclosure — you only transmit data you explicitly approve. No presentation is stored. Legal basis: GDPR Art. 5(1)(c) and Regulation (EU) 2024/1183."
-      },
-      {
-        "q": "Where can I use EguWallet?",
-        "a": "Today: Ilfov County Council digital services (ilfov.net) and Sector 2 City Hall (sector2.eu). Expansion to other public institutions and private retailers in Romania and the EU is ongoing."
-      },
-      {
-        "q": "What is eIDAS 2.0?",
-        "a": "eIDAS 2.0 is Regulation (EU) 2024/1183 amending the original eIDAS regulation. It guarantees every European citizen the right to a free digital wallet (EUDI Wallet), recognised across all 27 member states."
-      },
-      {
-        "q": "How does selective disclosure work?",
-        "a": "When a service requests identity verification, your wallet shows you exactly what data is being requested. You approve or reject each field. For example, for age-18 verification, the merchant receives only a YES/NO — they never see your name, national ID number or address."
-      },
-      {
-        "q": "Is EguWallet free?",
-        "a": "Yes, completely free for citizens. Download, registration and use are all without cost."
-      },
-      {
-        "q": "How do I activate my digital wallet?",
-        "a": "Download the app from Google Play, verify your phone number, create a PIN, then connect to your county or city portal to register your documents. The process takes approximately 5 minutes."
-      }
+      { "q": "Czym jest EguWallet?", "a": "EguWallet to europejski portfel cyfrowy z certyfikatem eIDAS 2.0 opracowany przez IT Eguilde SRL. Umożliwia bezpieczne przechowywanie i prezentowanie cyfrowych dokumentów tożsamości (dowód osobisty, paszport, prawo jazdy itp.) na telefonie, z pełną kontrolą nad danymi osobowymi." },
+      { "q": "Jakie dokumenty mogę przechowywać w EguWallet?", "a": "Aktualnie: dowód osobisty (PID), paszport i prawo jazdy. Wkrótce: dowód rejestracyjny, ubezpieczenie OC, przegląd techniczny, dokumenty firmowe i nieruchomości." },
+      { "q": "Czy moje dane osobowe są bezpieczne?", "a": "Tak. EguWallet używa SD-JWT i mDoc/ISO 18013-5 do selektywnego ujawniania — przekazujesz tylko dane, które wyraźnie zatwierdzasz. Żadna prezentacja nie jest przechowywana. Podstawa prawna: RODO Art. 5(1)(c) i Rozporządzenie (UE) 2024/1183." },
+      { "q": "Gdzie mogę używać EguWallet?", "a": "Dzisiaj: cyfrowe usługi Rady Powiatu Ilfov (ilfov.net) i Urzędu Dzielnicy Sector 2 (sector2.eu). Rozbudowa do innych instytucji publicznych i prywatnych detalistów w Rumunii i UE trwa." },
+      { "q": "Czym jest eIDAS 2.0?", "a": "eIDAS 2.0 to Rozporządzenie (UE) 2024/1183 nowelizujące pierwotne rozporządzenie eIDAS. Gwarantuje każdemu obywatelowi UE prawo do bezpłatnego portfela cyfrowego (portfel EUDI), uznawanego we wszystkich 27 państwach członkowskich." },
+      { "q": "Jak działa selektywne ujawnianie?", "a": "Gdy usługa żąda weryfikacji tożsamości, Twój portfel pokazuje Ci dokładnie, jakie dane są żądane. Zatwierdzasz lub odrzucasz każde pole. Na przykład przy weryfikacji wieku 18+ sprzedawca otrzymuje tylko TAK/NIE — nigdy nie widzi Twojego imienia, numeru dowodu ani adresu." },
+      { "q": "Czy EguWallet jest bezpłatny?", "a": "Tak, bezpłatny dla obywateli w bieżącej fazie pilotażowej. EguWallet przechodzi formalną certyfikację eIDAS 2.0 — po certyfikacji może obowiązywać cennik dla integracji instytucjonalnych, ale aplikacja portfela dla obywateli pozostanie bezpłatna." },
+      { "q": "Czy EguWallet jest w pełni certyfikowany?", "a": "EguWallet aktualnie przechodzi formalną certyfikację eIDAS 2.0 przez akredytowany Organ Oceny Zgodności (CAB). Do czasu ukończenia certyfikacji działa jako pilotażowy portfel EUDI. Wszystkie standardy techniczne (ARF 2.5+, OpenID4VCI, OpenID4VP, SD-JWT, ISO 18013-5) są już wdrożone." },
+      { "q": "Jak aktywować portfel cyfrowy?", "a": "Pobierz aplikację z Google Play, zweryfikuj swój numer telefonu, utwórz PIN, a następnie połącz się z portalem swojego powiatu lub miasta, aby zarejestrować dokumenty. Proces trwa około 5 minut." }
     ]
   },
   "getDigitalId": {
-    "heading": "Uzyskaj europejską tożsamość cyfrową",
-    "body": "Złóż wniosek o poświadczenie PID (Dane Identyfikacji Osobowej) — oficjalny cyfrowy dowód osobisty UE w Twoim portfelu, uznawany we wszystkich 27 państwach członkowskich.",
-    "cta": "Złóż wniosek o cyfrowy dowód",
-    "step1": "Zweryfikuj tożsamość skanem dowodu osobistego i rozpoznawaniem twarzy",
-    "step2": "Inspektor weryfikuje i zatwierdza Twój wniosek",
+    "heading": "Uzyskaj swoją europejską tożsamość cyfrową",
+    "body": "Złóż wniosek o poświadczenie Danych Identyfikacyjnych Osoby (PID) — oficjalny cyfrowy dowód tożsamości UE w Twoim portfelu, uznawany we wszystkich 27 państwach członkowskich.",
+    "cta": "Złóż wniosek o cyfrowy dowód tożsamości",
+    "step1": "Zweryfikuj swoją tożsamość skanując dowód osobisty i rozpoznając twarz",
+    "step2": "Inspektor sprawdza i zatwierdza Twój wniosek",
     "step3": "Otrzymaj poświadczenie PID bezpośrednio w EguWallet"
   },
   "footer": {
-    "provider": "Provided by IT Eguilde SRL",
-    "tagline": "European Digital Wallet — eIDAS 2.0 Compliant",
-    "privacy": "Privacy Policy",
-    "legal": "Terms & Conditions",
-    "contact": "Contact",
-    "euCompliance": "eIDAS 2.0 Compliant",
-    "machineTranslatedNotice": "This page is currently available in Romanian and English only.",
-    "rights": "© 2026 IT Eguilde SRL. All rights reserved."
+    "provider": "Dostarczane przez IT Eguilde SRL",
+    "tagline": "Europejski Portfel Cyfrowy — zgodny z eIDAS 2.0",
+    "privacy": "Polityka prywatności",
+    "legal": "Regulamin",
+    "contact": "Kontakt",
+    "euCompliance": "Zgodny z eIDAS 2.0",
+    "accessibility": "Dostępność",
+    "machineTranslatedNotice": "Ta strona jest tłumaczona maszynowo. Oficjalne wersje: rumuńska i angielska.",
+    "rights": "© 2026 IT Eguilde SRL. Wszelkie prawa zastrzeżone."
+  },
+  "accountDelete": {
+    "title": "Usuń swoje konto",
+    "description": "Złóż wniosek o usunięcie konta EguWallet i wszystkich powiązanych danych.",
+    "intro": "EguWallet szanuje Twoje prawo do usunięcia danych na podstawie RODO Artykuł 17. Możesz usunąć swój portfel i wszystkie powiązane dane za pomocą dowolnej z poniższych metod.",
+    "method1Title": "Metoda 1: Usunięcie w aplikacji",
+    "method1Steps": [
+      "Otwórz aplikację EguWallet na swoim urządzeniu",
+      "Przejdź do Ustawień",
+      "Kliknij 'Usuń portfel'",
+      "Potwierdź usunięcie po wyświetleniu monitu"
+    ],
+    "method1Note": "Natychmiast usuwa to wszystkie poświadczenia, klucze kryptograficzne i dane lokalne z Twojego urządzenia oraz wysyła żądanie usunięcia danych konta po stronie serwera.",
+    "method2Title": "Metoda 2: Wniosek przez e-mail",
+    "method2Text": "Wyślij e-mail na adres <a href='mailto:privacy@eguwallet.eu' class='t-primary underline'>privacy@eguwallet.eu</a> z tematem 'Wniosek o usunięcie konta'. Podaj adres e-mail lub numer telefonu powiązany z rejestracją portfela.",
+    "whatDeleted": "Co zostaje usunięte",
+    "deletedItems": [
+      "Dane rejestracyjne portfela (imię, e-mail, numer telefonu)",
+      "Wszystkie cyfrowe poświadczenia (PID, mDL, kwalifikowane atestacje)",
+      "Klucze kryptograficzne i atestacje portfela",
+      "Informacje o urządzeniu i tokeny powiadomień push FCM",
+      "Selfie i skany dokumentów",
+      "Kody weryfikacyjne i dane sesji"
+    ],
+    "whatRetained": "Co jest zachowane",
+    "retainedItems": [
+      "Obowiązkowe dzienniki audytu eIDAS 2.0 (zanonimizowane, bez danych osobowych) — przechowywane przez 7 lat zgodnie z wymogami rozporządzenia UE"
+    ],
+    "timeline": "Harmonogram usunięcia",
+    "timelineText": "Po otrzymaniu żądania usunięcia Twoje dane osobowe zostaną trwale usunięte z naszych serwerów w ciągu 30 dni. Dane lokalne urządzenia są usuwane natychmiastowo przy korzystaniu z usunięcia w aplikacji.",
+    "contact": "Pytania?",
+    "contactText": "W sprawie pytań dotyczących usunięcia danych lub Twoich praw do prywatności skontaktuj się z nami pod adresem <a href='mailto:privacy@eguwallet.eu' class='t-primary underline'>privacy@eguwallet.eu</a>."
   }
 }

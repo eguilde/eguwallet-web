@@ -18,11 +18,20 @@ const softwareApp = {
   'name':'EguWallet',
   'operatingSystem':'Android',
   'applicationCategory':'UtilitiesApplication',
-  'offers':{'@type':'Offer','price':'0','priceCurrency':'EUR'},
-  'description':'EUDI Wallet conform eIDAS 2.0 — identitate digitală europeană',
+  'inLanguage': inLanguage,
+  'offers':{'@type':'Offer','price':'0','priceCurrency':'EUR','availability':'https://schema.org/InStock'},
+  'description':'EUDI Wallet compliant with eIDAS 2.0 — European digital identity wallet. Store and present your ID card, passport, driving licence and more.',
   'url':SITE,
   'downloadUrl':'https://play.google.com/store/apps/details?id=com.eguwallet.wallet',
   'author':{'@type':'Organization','name':'IT Eguilde SRL'},
+  'featureList': [
+    'eIDAS 2.0 compliant digital identity',
+    'Selective disclosure via SD-JWT',
+    'ISO 18013-5 mDoc support',
+    'OpenID4VCI / OpenID4VP',
+    'GDPR Art. 17 right to erasure',
+    'Qualified Electronic Signature (QES)',
+  ],
 };
 
 const organization = {
@@ -31,7 +40,16 @@ const organization = {
   'name':'IT Eguilde SRL',
   'url':SITE,
   'logo':`${SITE}/assets/logo-shield.svg`,
-  'sameAs':['https://github.com/eguilde'],
+  'email':'contact@eguwallet.eu',
+  'address':{
+    '@type':'PostalAddress',
+    'streetAddress':'B-dul Pache Protopopescu nr. 89',
+    'addressLocality':'București',
+    'addressRegion':'Sector 2',
+    'postalCode':'021408',
+    'addressCountry':'RO',
+  },
+  'sameAs':[],
 };
 
 const website = {
@@ -40,11 +58,17 @@ const website = {
   'name':'EguWallet',
   'url':SITE,
   'inLanguage': inLanguage,
+  'potentialAction':{
+    '@type':'SearchAction',
+    'target':`${SITE}/{search_term_string}`,
+    'query-input':'required name=search_term_string',
+  },
 };
 
 const faqPage = {
   '@context':'https://schema.org',
   '@type':'FAQPage',
+  'inLanguage': inLanguage,
   'mainEntity': faqItems.map(({q,a}) => ({
     '@type':'Question',
     'name': q,
@@ -55,4 +79,4 @@ const faqPage = {
 <script type="application/ld+json" is:inline set:html={JSON.stringify(softwareApp)} />
 <script type="application/ld+json" is:inline set:html={JSON.stringify(organization)} />
 <script type="application/ld+json" is:inline set:html={JSON.stringify(website)} />
-<script type="application/ld+json" is:inline set:html={JSON.stringify(faqPage)} />
+{faqItems.length > 0 && <script type="application/ld+json" is:inline set:html={JSON.stringify(faqPage)} />}

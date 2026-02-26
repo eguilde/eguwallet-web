@@ -1,0 +1,247 @@
+---
+import '../../../styles/global.css';
+import { SITE } from '../../../config/site.ts';
+import HeadSEO from '../../../components/HeadSEO.astro';
+
+export async function getStaticPaths() {
+  const locales = [
+    'ro','en','de','fr','es','it','pl','pt','hu','cs',
+    'sk','bg','hr','lt','lv','et','mt','sl','sv','da','nl','el','fi','ga'
+  ];
+  return locales.map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const isRo = lang === 'ro';
+---
+<!doctype html>
+<html lang={lang} data-theme="light">
+<head>
+  <HeadSEO
+    lang={lang}
+    title={`${isRo ? 'Politica de confidențialitate' : 'Privacy Policy'} — EguWallet`}
+    description={isRo ? 'Politica de confidențialitate EguWallet — Portofel digital european eIDAS 2.0' : 'EguWallet Privacy Policy — EU Digital Identity Wallet eIDAS 2.0'}
+    canonical={`${SITE}/${lang}/privacy/`}
+    pathSuffix="privacy/"
+  />
+</head>
+<body class="t-bg t-fg">
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:px-4 focus:py-2 focus:rounded focus:t-bg focus:t-fg focus:outline-none focus:ring-2">
+    {isRo ? 'Sari la conținut' : 'Skip to main content'}
+  </a>
+  <div class="max-w-3xl mx-auto px-4 py-12">
+    <a href={`/${lang}/`} class="inline-flex items-center gap-2 mb-8 text-sm opacity-60 hover:opacity-100 transition-opacity">
+      <img src="/assets/logo-shield.svg" alt="" class="w-6 h-6" aria-hidden="true" />
+      <span>EguWallet</span>
+    </a>
+
+    <main id="main-content">
+      {!isRo && lang !== 'en' && (
+        <div class="mb-6 px-4 py-3 rounded-lg text-sm opacity-70" style="background: var(--eg-surface-high, rgba(0,0,0,0.05));">
+          This page is the official version in English. A Romanian version is available at <a href={`/ro/privacy/`} class="underline">/ro/privacy/</a>.
+        </div>
+      )}
+
+      {isRo ? (
+        <div class="space-y-6 leading-relaxed">
+          <h1 class="text-3xl font-bold mb-2">Politica de confidențialitate</h1>
+          <p class="text-sm opacity-60 mb-8">Ultima actualizare: 23 februarie 2026</p>
+
+          <section>
+            <h2 class="text-xl font-semibold mb-2">1. Introducere</h2>
+            <p>EguWallet („noi", „nouă", „nostru") este o aplicație de Portofel Digital European (EUDI Wallet) dezvoltată de IT Eguilde SRL, conformă cu cadrul European de Identitate Digitală (eIDAS 2.0, Regulamentul (UE) 2024/1183). Această Politică de Confidențialitate explică modul în care accesăm, colectăm, utilizăm, partajăm și protejăm datele tale personale atunci când folosești aplicația mobilă EguWallet disponibilă pe Google Play.</p>
+            <p class="mt-2">Prin instalarea și utilizarea aplicației, confirmi că ai citit și înțeles această Politică de Confidențialitate.</p>
+          </section>
+
+          <section>
+            <h2 class="text-xl font-semibold mb-2">2. Operator de date</h2>
+            <p><strong>IT Eguilde SRL</strong><br/>
+            B-dul Pache Protopopescu nr. 89, Sector 2, București, România<br/>
+            Contact confidențialitate: <a href="mailto:privacy@eguwallet.eu" class="t-primary underline">privacy@eguwallet.eu</a></p>
+            <p class="mt-2">Dacă ai întrebări, preocupări sau solicitări privind datele tale personale, ne poți contacta la adresa de email de mai sus. Vom răspunde în 30 de zile.</p>
+          </section>
+
+          <section>
+            <h2 class="text-xl font-semibold mb-2">3. Datele pe care le colectăm</h2>
+
+            <h3 class="font-semibold mt-4 mb-1">3.1 Date de înregistrare cont</h3>
+            <p>La înregistrarea portofelului colectăm:</p>
+            <ul class="list-disc pl-6 space-y-1">
+              <li><strong>Număr de telefon</strong> — pentru verificare prin SMS la înregistrare</li>
+              <li><strong>Adresă de email</strong> — pentru verificare prin email la înregistrare</li>
+              <li><strong>Prenume, nume</strong> — pentru asocierea identității cu instanța portofelului tău</li>
+              <li><strong>Fotografie selfie</strong> — pentru verificarea vitalității și potrivirea identității (procesată pe dispozitiv, transmisă serverului nostru doar la emiterea PID)</li>
+            </ul>
+
+            <h3 class="font-semibold mt-4 mb-1">3.2 Informații despre dispozitiv</h3>
+            <p>Pentru a asigura securitatea și integritatea portofelului digital, colectăm:</p>
+            <ul class="list-disc pl-6 space-y-1">
+              <li><strong>Identificator dispozitiv</strong> (Android ID) — identificator pseudonim pentru legarea portofelului de dispozitivul tău</li>
+              <li><strong>Model și producător dispozitiv</strong> — pentru evaluarea capabilităților de securitate hardware</li>
+              <li><strong>Versiunea Android și nivelul patch-ului de securitate</strong> — pentru verificarea că dispozitivul îndeplinește cerințele eIDAS 2.0</li>
+              <li><strong>Capabilități de securitate hardware</strong> — disponibilitatea TEE, StrongBox și senzori biometrici</li>
+              <li><strong>Starea înscrierii biometrice</strong> — dacă autentificarea prin amprentă sau față este configurată (nu accesăm niciodată datele biometrice în sine)</li>
+            </ul>
+
+            <h3 class="font-semibold mt-4 mb-1">3.3 Cameră (android.permission.CAMERA)</h3>
+            <p>Aplicația necesită acces la cameră pentru:</p>
+            <ul class="list-disc pl-6 space-y-1">
+              <li><strong>Scanare cod QR</strong> — pentru citirea ofertelor de acreditare și solicitărilor de verificare</li>
+              <li><strong>Scanare document de identitate</strong> — pentru capturarea cărții de identitate sau pașaportului la emiterea PID</li>
+              <li><strong>Selfie și verificarea vitalității</strong> — pentru a confirma că ești o persoană reală</li>
+              <li><strong>Citire MRZ</strong> — extragerea datelor din documentul de identitate prin recunoaștere optică pe dispozitiv</li>
+            </ul>
+            <p class="mt-2"><strong>Procesare pe dispozitiv:</strong> Toate imaginile sunt procesate local folosind Google ML Kit. Imaginile brute nu sunt transmise serverelor noastre decât dacă inițiezi explicit emiterea PID, caz în care doar imaginea documentului și selfie-ul sunt transmise printr-o conexiune criptată.</p>
+
+            <h3 class="font-semibold mt-4 mb-1">3.4 Bluetooth (BLE) și NFC</h3>
+            <p>Aplicația folosește BLE și NFC pentru <strong>prezentarea offline a acreditărilor</strong> conform standardului ISO 18013-5. Sunt activate doar când alegi explicit să prezinți o acreditare în mod proximitate. Nu se derivă date de locație din Bluetooth sau NFC.</p>
+
+            <h3 class="font-semibold mt-4 mb-1">3.5 Acreditări digitale</h3>
+            <p>Acreditările tale digitale (PID, permis de conducere mobil, atestări electronice calificate) sunt stocate criptat în keystore-ul hardware Android (TEE/StrongBox) pe dispozitivul tău. Nu avem acces la conținutul acreditărilor tale. La prezentare, sunt partajate doar câmpurile pe care le aprobi explicit prin divulgare selectivă.</p>
+
+            <h3 class="font-semibold mt-4 mb-1">3.6 Notificări push</h3>
+            <p>Aplicația folosește Firebase Cloud Messaging (FCM) pentru notificări despre statusul emiterii acreditărilor, solicitări de verificare și memento-uri de reînnoire. Stocăm un token FCM pe serverul nostru pentru livrarea notificărilor.</p>
+          </section>
+
+          <section>
+            <h2 class="text-xl font-semibold mb-2">4. Cum utilizăm datele tale</h2>
+            <ul class="list-disc pl-6 space-y-1">
+              <li><strong>Înregistrare:</strong> numărul de telefon și emailul sunt folosite exclusiv pentru verificarea identității la configurarea portofelului</li>
+              <li><strong>Atestarea portofelului:</strong> informațiile despre dispozitiv sunt folosite pentru a evalua dacă dispozitivul îndeplinește cerințele de securitate eIDAS 2.0 (Nivel de Asigurare Ridicat)</li>
+              <li><strong>Emiterea acreditărilor:</strong> datele de identitate sunt transmise Furnizorului PID pentru emiterea acreditării digitale</li>
+              <li><strong>Prezentarea acreditărilor:</strong> la prezentarea acreditărilor, sunt partajate doar câmpurile pe care le aprobi (divulgare selectivă)</li>
+              <li><strong>Conformitate:</strong> înregistrările de audit obligatorii eIDAS 2.0 sunt menținute fără stocarea datelor personale în jurnale</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 class="text-xl font-semibold mb-2">5. Servicii și SDK-uri terțe</h2>
+            <p>Aplicația integrează Google Play Integrity API, Google ML Kit (procesare locală, fără transmitere date), Firebase Cloud Messaging și bibliotecile EUDI ISO 18013-5. Fiecare procesează date conform politicilor lor de confidențialitate.</p>
+          </section>
+
+          <section>
+            <h2 class="text-xl font-semibold mb-2">6. Stocarea și securitatea datelor</h2>
+            <ul class="list-disc pl-6 space-y-1">
+              <li>Cheile criptografice sunt stocate în keystore-ul hardware Android și nu părăsesc niciodată hardware-ul securizat</li>
+              <li>Acreditările sunt criptate la repaus folosind chei susținute de hardware</li>
+              <li>Datele locale sunt criptate cu AndroidX Security Crypto (AES-256-GCM)</li>
+              <li>Toată comunicarea în rețea folosește TLS 1.3</li>
+              <li>Datele serverului sunt stocate exclusiv în Uniunea Europeană (România)</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 class="text-xl font-semibold mb-2">7. Partajarea datelor</h2>
+            <p>Nu vindem, nu închiriem și nu comercializăm datele tale personale. Datele sunt partajate doar cu verificatorii pe care îi aprobi, cu emitenții de acreditări la solicitarea ta, cu Google Play Integrity API (verificare anonimă) și conform cerințelor legale.</p>
+          </section>
+
+          <section>
+            <h2 class="text-xl font-semibold mb-2">8. Drepturile tale (GDPR)</h2>
+            <p>Conform Regulamentului General privind Protecția Datelor (UE) 2016/679, ai dreptul la:</p>
+            <ul class="list-disc pl-6 space-y-1">
+              <li><strong>Acces</strong> — solicitarea unei copii a tuturor datelor personale pe care le deținem despre tine</li>
+              <li><strong>Rectificare</strong> — corectarea datelor personale incorecte</li>
+              <li><strong>Ștergere</strong> — solicitarea ștergerii datelor personale („dreptul de a fi uitat") — Art. 17</li>
+              <li><strong>Restricție</strong> — restricționarea prelucrării datelor tale</li>
+              <li><strong>Portabilitate</strong> — primirea datelor tale într-un format structurat, lizibil automat</li>
+              <li><strong>Obiecție</strong> — obiecția față de prelucrarea bazată pe interese legitime</li>
+              <li><strong>Retragerea consimțământului</strong> — retragerea consimțământului oricând, fără a afecta prelucrarea anterioară</li>
+            </ul>
+            <p class="mt-2">Trimite solicitările GDPR la <a href="mailto:privacy@eguwallet.eu" class="t-primary underline">privacy@eguwallet.eu</a>. Răspundem în 30 de zile. Poți depune plângere și la <a href="https://www.dataprotection.ro" target="_blank" rel="noopener noreferrer" class="t-primary underline">ANSPDCP</a>.</p>
+          </section>
+
+          <section>
+            <h2 class="text-xl font-semibold mb-2">9. Ștergerea contului și a datelor</h2>
+            <p>Poți șterge portofelul și toate datele asociate oricând: din aplicație (Setări → Ștergere Portofel) sau prin email la <a href="mailto:privacy@eguwallet.eu" class="t-primary underline">privacy@eguwallet.eu</a>. Datele personale sunt eliminate de pe serverele noastre în 30 de zile. Jurnalele de audit eIDAS 2.0 (fără date personale) sunt păstrate 7 ani conform reglementărilor.</p>
+          </section>
+
+          <section>
+            <h2 class="text-xl font-semibold mb-2">10. Retenția datelor</h2>
+            <ul class="list-disc pl-6 space-y-1">
+              <li>Atestări portofel: 7 zile (reînnoite automat)</li>
+              <li>Coduri de verificare SMS/email: 15 minute</li>
+              <li>Nonce-uri DPoP: 5 minute</li>
+              <li>Jurnale de audit eIDAS 2.0: 7 ani (obligație regulatorie, fără date personale)</li>
+              <li>Date cont: păstrate până la ștergerea portofelului</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 class="text-xl font-semibold mb-2">11. Confidențialitatea copiilor</h2>
+            <p>EguWallet nu este destinat utilizării de către persoane cu vârsta sub 16 ani. Nu colectăm cu bună știință date personale de la minori sub 16 ani.</p>
+          </section>
+
+          <section>
+            <h2 class="text-xl font-semibold mb-2">12. Transferuri internaționale de date</h2>
+            <p>Datele tale personale sunt procesate și stocate exclusiv în Uniunea Europeană (România). Nu transferăm date personale în afara UE/SEE.</p>
+          </section>
+
+          <section>
+            <h2 class="text-xl font-semibold mb-2">13. Temeiul juridic al prelucrării (Art. 6 GDPR)</h2>
+            <ul class="list-disc pl-6 space-y-1">
+              <li><strong>Consimțământ (Art. 6(1)(a))</strong> — acces cameră, autentificare biometrică, notificări push</li>
+              <li><strong>Executarea unui contract (Art. 6(1)(b))</strong> — înregistrare portofel, emitere și prezentare acreditări</li>
+              <li><strong>Obligație legală (Art. 6(1)(c))</strong> — jurnale de audit obligatorii eIDAS 2.0</li>
+              <li><strong>Interes legitim (Art. 6(1)(f))</strong> — evaluarea securității dispozitivului, prevenirea fraudelor</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 class="text-xl font-semibold mb-2">14. Modificări ale acestei politici</h2>
+            <p>Putem actualiza această Politică de Confidențialitate periodic. Modificările vor fi postate pe această pagină cu data actualizată. Dacă facem modificări semnificative, te vom notifica prin aplicație sau prin email.</p>
+          </section>
+
+          <section>
+            <h2 class="text-xl font-semibold mb-2">15. Contactează-ne</h2>
+            <p><strong>IT Eguilde SRL</strong><br/>
+            B-dul Pache Protopopescu nr. 89, Sector 2, București, România<br/>
+            Email: <a href="mailto:privacy@eguwallet.eu" class="t-primary underline">privacy@eguwallet.eu</a></p>
+          </section>
+        </div>
+      ) : (
+        <div class="space-y-6 leading-relaxed">
+          <h1 class="text-3xl font-bold mb-2">Privacy Policy</h1>
+          <p class="text-sm opacity-60 mb-8">Last updated: February 23, 2026</p>
+
+          <section><h2 class="text-xl font-semibold mb-2">1. Introduction</h2><p>EguWallet ("we", "us", "our") is an EU Digital Identity Wallet application developed by IT Eguilde SRL, compliant with the European Digital Identity framework (eIDAS 2.0, Regulation (EU) 2024/1183). This Privacy Policy explains how we access, collect, use, share, and protect your personal data when you use the EguWallet mobile application ("the App") available on Google Play.</p><p class="mt-2">By installing and using the App, you acknowledge that you have read and understood this Privacy Policy.</p></section>
+
+          <section><h2 class="text-xl font-semibold mb-2">2. Data Controller</h2><p><strong>IT Eguilde SRL</strong><br/>B-dul Pache Protopopescu nr. 89, Sector 2, Bucharest, Romania<br/>Privacy Contact: <a href="mailto:privacy@eguwallet.eu" class="t-primary underline">privacy@eguwallet.eu</a></p><p class="mt-2">If you have questions, concerns, or requests regarding your personal data, you may contact us at the email address above. We will respond within 30 days.</p></section>
+
+          <section><h2 class="text-xl font-semibold mb-2">3. Data We Collect</h2><h3 class="font-semibold mt-4 mb-1">3.1 Account Registration Data</h3><ul class="list-disc pl-6 space-y-1"><li><strong>Phone number</strong> — for SMS verification during registration</li><li><strong>Email address</strong> — for email verification during registration</li><li><strong>First name, last name</strong> — for identity association with your wallet instance</li><li><strong>Selfie photo</strong> — for liveness verification and identity matching</li></ul><h3 class="font-semibold mt-4 mb-1">3.2 Device Information</h3><ul class="list-disc pl-6 space-y-1"><li><strong>Device identifier</strong> (Android ID) — pseudonymous identifier binding wallet to your device</li><li><strong>Device model and manufacturer</strong> — to assess hardware security capabilities</li><li><strong>Android OS version and security patch level</strong> — to verify eIDAS 2.0 security requirements</li><li><strong>Hardware security capabilities</strong> — TEE, StrongBox, biometric sensor availability</li><li><strong>Biometric enrollment status</strong> — whether biometric auth is configured (we never access biometric data itself)</li></ul><h3 class="font-semibold mt-4 mb-1">3.3 Camera (android.permission.CAMERA)</h3><ul class="list-disc pl-6 space-y-1"><li><strong>QR code scanning</strong> — to read credential offers and verification requests</li><li><strong>Identity document scanning</strong> — to capture your national ID card or passport for PID issuance</li><li><strong>Selfie and liveness verification</strong> — to confirm you are a real person</li><li><strong>MRZ reading</strong> — to extract data from your identity document using on-device text recognition</li></ul><p class="mt-2"><strong>On-device processing:</strong> All camera images are processed locally using Google ML Kit. Raw images are not uploaded unless you explicitly initiate PID issuance.</p><h3 class="font-semibold mt-4 mb-1">3.4 Bluetooth (BLE) and NFC</h3><p>Used for offline credential presentation per ISO 18013-5. Activated only when you explicitly choose proximity mode. No location data is derived.</p><h3 class="font-semibold mt-4 mb-1">3.5 Digital Credentials</h3><p>Credentials are stored encrypted in Android hardware-backed keystore (TEE/StrongBox). We do not have access to your credential contents. Only fields you explicitly approve are shared via selective disclosure.</p><h3 class="font-semibold mt-4 mb-1">3.6 Push Notifications</h3><p>Firebase Cloud Messaging (FCM) tokens are stored to deliver wallet notifications. You can disable notifications in Android system settings at any time.</p></section>
+
+          <section><h2 class="text-xl font-semibold mb-2">4. How We Use Your Data</h2><ul class="list-disc pl-6 space-y-1"><li><strong>Registration:</strong> phone and email used solely for identity verification during wallet setup</li><li><strong>Wallet attestation:</strong> device information used to assess eIDAS 2.0 security requirements (LoA High)</li><li><strong>Credential issuance:</strong> identity data transmitted to PID Provider at your request</li><li><strong>Credential presentation:</strong> only approved fields shared (selective disclosure)</li><li><strong>Compliance:</strong> eIDAS 2.0 mandatory audit records maintained without personal data in logs</li></ul></section>
+
+          <section><h2 class="text-xl font-semibold mb-2">5. Third-Party Services</h2><p>The App integrates: Google Play Integrity API (anonymous device check), Google ML Kit (on-device only), Firebase Cloud Messaging (notification delivery), and EU EUDI libraries (device-to-device, no external transmission). Each operates under their respective privacy policies.</p></section>
+
+          <section><h2 class="text-xl font-semibold mb-2">6. Data Storage and Security</h2><ul class="list-disc pl-6 space-y-1"><li>Cryptographic keys stored in Android hardware-backed keystore — never leave secure hardware</li><li>Credentials encrypted at rest with hardware-backed keys</li><li>Local app data encrypted with AES-256-GCM</li><li>All network communication uses TLS 1.3</li><li>Server-side data stored exclusively in the EU (Romania)</li></ul></section>
+
+          <section><h2 class="text-xl font-semibold mb-2">7. Data Sharing</h2><p>We do not sell, rent, or trade your personal data. Data is shared only: with verifiers you approve (selective disclosure), with credential issuers at your request, with Google Play Integrity API (anonymous), with Firebase for push notifications, and as required by law. We do not share data with advertisers or data brokers.</p></section>
+
+          <section><h2 class="text-xl font-semibold mb-2">8. Your Rights (GDPR)</h2><p>Under GDPR (EU) 2016/679, you have the right to:</p><ul class="list-disc pl-6 space-y-1"><li><strong>Access</strong> — request a copy of all personal data we hold about you</li><li><strong>Rectification</strong> — correct inaccurate personal data</li><li><strong>Erasure</strong> — request deletion ("right to be forgotten") — Art. 17</li><li><strong>Restriction</strong> — restrict processing of your data</li><li><strong>Portability</strong> — receive your data in a structured, machine-readable format</li><li><strong>Objection</strong> — object to processing based on legitimate interests</li><li><strong>Withdraw consent</strong> — withdraw at any time without affecting prior processing</li></ul><p class="mt-2">Contact <a href="mailto:privacy@eguwallet.eu" class="t-primary underline">privacy@eguwallet.eu</a> for GDPR requests. Response within 30 days. You may also lodge a complaint with <a href="https://www.dataprotection.ro" target="_blank" rel="noopener noreferrer" class="t-primary underline">ANSPDCP</a> (Romanian DPA) or your local data protection authority.</p></section>
+
+          <section><h2 class="text-xl font-semibold mb-2">9. Account and Data Deletion</h2><p>Delete your wallet anytime: in-app (Settings → Delete Wallet) or by emailing <a href="mailto:privacy@eguwallet.eu" class="t-primary underline">privacy@eguwallet.eu</a>. Personal data removed from our servers within 30 days. eIDAS 2.0 audit records (no personal data) retained 7 years as required by regulation.</p></section>
+
+          <section><h2 class="text-xl font-semibold mb-2">10. Data Retention</h2><ul class="list-disc pl-6 space-y-1"><li>Wallet attestations: 7 days (auto-renewed)</li><li>Verification codes: 15 minutes</li><li>DPoP nonces: 5 minutes</li><li>eIDAS 2.0 audit logs: 7 years (regulatory, no personal data)</li><li>Account data: until wallet deletion</li></ul></section>
+
+          <section><h2 class="text-xl font-semibold mb-2">11. Children's Privacy</h2><p>EguWallet is not intended for use by children under 16. We do not knowingly collect personal data from children under 16. Contact <a href="mailto:privacy@eguwallet.eu" class="t-primary underline">privacy@eguwallet.eu</a> if you believe a child has provided personal data.</p></section>
+
+          <section><h2 class="text-xl font-semibold mb-2">12. International Data Transfers</h2><p>Your personal data is processed and stored exclusively within the EU (Romania). We do not transfer personal data outside the EU/EEA.</p></section>
+
+          <section><h2 class="text-xl font-semibold mb-2">13. Legal Basis for Processing (GDPR Art. 6)</h2><ul class="list-disc pl-6 space-y-1"><li><strong>Consent (Art. 6(1)(a))</strong> — camera access, biometric authentication, push notifications</li><li><strong>Performance of a contract (Art. 6(1)(b))</strong> — wallet registration, credential issuance and presentation</li><li><strong>Legal obligation (Art. 6(1)(c))</strong> — eIDAS 2.0 mandatory audit records</li><li><strong>Legitimate interest (Art. 6(1)(f))</strong> — device security assessment, fraud prevention</li></ul></section>
+
+          <section><h2 class="text-xl font-semibold mb-2">14. Changes to This Policy</h2><p>We may update this Privacy Policy from time to time. Changes will be posted with an updated revision date. Material changes will be communicated through the App or by email.</p></section>
+
+          <section><h2 class="text-xl font-semibold mb-2">15. Contact Us</h2><p><strong>IT Eguilde SRL</strong><br/>B-dul Pache Protopopescu nr. 89, Sector 2, Bucharest, Romania<br/>Email: <a href="mailto:privacy@eguwallet.eu" class="t-primary underline">privacy@eguwallet.eu</a></p></section>
+        </div>
+      )}
+    </main>
+
+    <footer class="mt-12 pt-6 border-t border-current/10 text-sm opacity-50">
+      &copy; 2026 IT Eguilde SRL. &nbsp;
+      <a href={`/${lang}/`} class="underline">EguWallet</a> &middot;
+      <a href={`/${lang}/terms/`} class="underline">{isRo ? 'Termeni și condiții' : 'Terms & Conditions'}</a> &middot;
+      <a href={`/${lang}/contact/`} class="underline">{isRo ? 'Contact' : 'Contact'}</a>
+    </footer>
+  </div>
+</body>
+</html>

@@ -9,9 +9,12 @@ interface Props {
   title: string;
   description: string;
   ogImage?: string;
+  canonical?: string;
   faqItems: {q:string; a:string}[];
+  noindex?: boolean;
 }
-const { lang, title, description, faqItems } = Astro.props;
+const { lang, title, description, noindex = false, faqItems } = Astro.props;
+
 const OG_LOCALES: Record<string, string> = {
   ro:'ro_RO', en:'en_GB', de:'de_DE', fr:'fr_FR', es:'es_ES',
   it:'it_IT', pl:'pl_PL', pt:'pt_PT', hu:'hu_HU', cs:'cs_CZ',
@@ -20,8 +23,9 @@ const OG_LOCALES: Record<string, string> = {
   nl:'nl_NL', el:'el_GR', fi:'fi_FI', ga:'ga_IE',
 };
 const ogLocale = OG_LOCALES[lang] ?? lang;
-const ogImage = Astro.props.ogImage ?? `${SITE}/assets/og/og-${lang}.png`;
-const canonical = `${SITE}/${lang}/`;
+// Single og:image for all languages — generated banner
+const ogImage = Astro.props.ogImage ?? `${SITE}/assets/og/og-default.png`;
+const canonical = Astro.props.canonical ?? `${SITE}/${lang}/`;
 ---
 <!doctype html>
 <html lang={lang} data-theme="light">
@@ -40,6 +44,7 @@ const canonical = `${SITE}/${lang}/`;
 
   <title>{title}</title>
   <meta name="description" content={description} />
+  <meta name="robots" content={noindex ? 'noindex, nofollow' : 'index, follow'} />
   <link rel="canonical" href={canonical} />
 
   <!-- hreflang for all 24 EU languages -->
@@ -62,8 +67,14 @@ const canonical = `${SITE}/${lang}/`;
   <meta name="twitter:description" content={description} />
   <meta name="twitter:image" content={ogImage} />
 
+  <!-- iOS / PWA -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="EguWallet" />
+
   <!-- Performance -->
   <link rel="preload" as="image" href="/assets/logo-shield.svg" />
+  <link rel="preload" as="image" href="/assets/hero-banner.jpg" fetchpriority="high" />
   <meta name="theme-color" content="#904A4D" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
@@ -73,6 +84,7 @@ const canonical = `${SITE}/${lang}/`;
   <JsonLd lang={lang} faqItems={faqItems} />
 </head>
 <body>
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:px-4 focus:py-2 focus:rounded focus:outline-none" style="background:var(--eg-bg,#fff);color:var(--eg-fg,#000);">Skip to main content</a>
   <slot />
 </body>
 </html>

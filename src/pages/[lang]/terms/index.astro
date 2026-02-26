@@ -1,0 +1,177 @@
+---
+import '../../../styles/global.css';
+import { SITE } from '../../../config/site.ts';
+import HeadSEO from '../../../components/HeadSEO.astro';
+
+export async function getStaticPaths() {
+  const locales = [
+    'ro','en','de','fr','es','it','pl','pt','hu','cs',
+    'sk','bg','hr','lt','lv','et','mt','sl','sv','da','nl','el','fi','ga'
+  ];
+  return locales.map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const isRo = lang === 'ro';
+---
+<!doctype html>
+<html lang={lang} data-theme="light">
+<head>
+  <HeadSEO
+    lang={lang}
+    title={`${isRo ? 'Termeni și condiții' : 'Terms & Conditions'} — EguWallet`}
+    description={isRo ? 'Termeni și condiții de utilizare EguWallet — Portofel digital european eIDAS 2.0' : 'EguWallet Terms & Conditions — EU Digital Identity Wallet eIDAS 2.0'}
+    canonical={`${SITE}/${lang}/terms/`}
+    pathSuffix="terms/"
+  />
+</head>
+<body class="t-bg t-fg">
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:px-4 focus:py-2 focus:rounded focus:t-bg focus:t-fg focus:outline-none focus:ring-2">
+    {isRo ? 'Sari la conținut' : 'Skip to main content'}
+  </a>
+  <div class="max-w-3xl mx-auto px-4 py-12">
+    <a href={`/${lang}/`} class="inline-flex items-center gap-2 mb-8 text-sm opacity-60 hover:opacity-100 transition-opacity">
+      <img src="/assets/logo-shield.svg" alt="" class="w-6 h-6" aria-hidden="true" />
+      <span>EguWallet</span>
+    </a>
+
+    <main id="main-content">
+      {!isRo && lang !== 'en' && (
+        <div class="mb-6 px-4 py-3 rounded-lg text-sm opacity-70" style="background: var(--eg-surface-high, rgba(0,0,0,0.05));">
+          This page is the official version in English. A Romanian version is available at <a href="/ro/terms/" class="underline">/ro/terms/</a>.
+        </div>
+      )}
+
+      {isRo ? (
+        <div class="space-y-6 leading-relaxed">
+          <h1 class="text-3xl font-bold mb-2">Termeni și condiții de utilizare</h1>
+          <p class="text-sm opacity-60 mb-8">Ultima actualizare: 26 februarie 2026</p>
+
+          <section>
+            <h2 class="text-xl font-semibold mb-2">1. Acceptarea termenilor</h2>
+            <p>Prin descărcarea, instalarea sau utilizarea aplicației mobile EguWallet ("Aplicația"), ești de acord cu acești Termeni și Condiții de Utilizare. Dacă nu ești de acord cu acești termeni, nu instala sau nu utiliza Aplicația.</p>
+          </section>
+
+          <section>
+            <h2 class="text-xl font-semibold mb-2">2. Descrierea serviciului</h2>
+            <p>EguWallet este un Portofel Digital European (EUDI Wallet) conform Regulamentului (UE) 2024/1183 (eIDAS 2.0), dezvoltat de IT Eguilde SRL. Aplicația permite:</p>
+            <ul class="list-disc pl-6 space-y-1">
+              <li>Stocarea și gestionarea acreditărilor digitale de identitate (PID, permis de conducere, documente de vehicul, acreditări educaționale și de business)</li>
+              <li>Prezentarea selectivă a datelor de identitate către servicii și autorități care acceptă EUDI Wallet</li>
+              <li>Semnătura electronică calificată (QES) conform Regulamentului eIDAS 2.0</li>
+              <li>Verificarea identității digitale conforme eIDAS 2.0</li>
+            </ul>
+            <p class="mt-2"><strong>Notă:</strong> EguWallet se află în prezent în faza de pilot eIDAS 2.0, în curs de obținere a certificării formale de la un Organism de Evaluare a Conformității (CAB) acreditat. Acreditările emise în perioada pilot sunt tehnic conforme ARF 2.5+, dar nu sunt încă certificate formal ca EUDI Wallet complet certificat.</p>
+          </section>
+
+          <section>
+            <h2 class="text-xl font-semibold mb-2">3. Eligibilitate</h2>
+            <ul class="list-disc pl-6 space-y-1">
+              <li>Trebuie să ai cel puțin <strong>16 ani</strong> pentru a utiliza EguWallet</li>
+              <li>Trebuie să furnizezi informații corecte și complete la înregistrare</li>
+              <li>Ești responsabil pentru menținerea confidențialității PIN-ului portofelului tău</li>
+              <li>Nu poți transfera accesul la portofelul tău unui terț</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 class="text-xl font-semibold mb-2">4. Responsabilitățile utilizatorului</h2>
+            <ul class="list-disc pl-6 space-y-1">
+              <li>Protejează-ți PIN-ul și autentificarea biometrică — nu le partaja cu nimeni</li>
+              <li>Raportează imediat la <a href="mailto:contact@eguwallet.eu" class="t-primary underline">contact@eguwallet.eu</a> orice acces neautorizat sau pierdere a dispozitivului</li>
+              <li>Nu utiliza Aplicația în scopuri ilegale sau frauduloase</li>
+              <li>Nu încerca să modifici, decompilezi sau manipulezi Aplicația</li>
+              <li>Ești responsabil pentru toate acțiunile efectuate prin portofelul tău</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 class="text-xl font-semibold mb-2">5. Acreditări digitale și forța juridică</h2>
+            <p>Acreditările digitale emise de EguWallet (PID, permis de conducere, etc.) au forță juridică conform Regulamentului (UE) 2024/1183 atunci când sunt prezentate entităților de verificare (Relying Parties) care acceptă portofelele EUDI. Semnăturile electronice calificate (QES) efectuate cu EguWallet au aceeași valoare juridică cu semnăturile olografe în toată UE, conform Art. 25 din eIDAS 2.0.</p>
+            <p class="mt-2">Tu ești responsabil să verifici că entitatea căreia îi prezinți acreditările acceptă și recunoaște EUDI Wallet înainte de a utiliza Aplicația pentru tranzacții cu relevanță juridică.</p>
+          </section>
+
+          <section>
+            <h2 class="text-xl font-semibold mb-2">6. Limitarea răspunderii</h2>
+            <p>În limita permisă de legea aplicabilă:</p>
+            <ul class="list-disc pl-6 space-y-1">
+              <li>IT Eguilde SRL nu este responsabilă pentru pierderi cauzate de utilizarea incorectă a Aplicației, pierderea dispozitivului sau compromiterea PIN-ului</li>
+              <li>Aplicația este furnizată "ca atare" în faza de pilot — nu garantăm disponibilitate neîntreruptă</li>
+              <li>Nu suntem responsabili pentru deciziile terților (servicii, autorități) privind acceptarea sau refuzul acreditărilor tale digitale</li>
+              <li>Serviciile terțe (Google Play Services, Firebase) sunt guvernate de propriile lor termeni și condiții</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 class="text-xl font-semibold mb-2">7. Proprietate intelectuală</h2>
+            <p>EguWallet, logo-ul EguWallet și toate materialele asociate sunt proprietatea IT Eguilde SRL. Nu ai dreptul să reproduci, distribuie sau creezi lucrări derivate fără acordul nostru scris. Aplicația încorporează biblioteci open-source EUDI (licență Apache 2.0) și alte componente terțe, fiecare sub propriile licențe.</p>
+          </section>
+
+          <section>
+            <h2 class="text-xl font-semibold mb-2">8. Protecția datelor</h2>
+            <p>Prelucrarea datelor tale personale este descrisă în <a href={`/ro/privacy/`} class="t-primary underline">Politica de Confidențialitate</a>. Utilizarea Aplicației constituie acceptarea prelucrării datelor conform acestei politici și în conformitate cu GDPR (UE) 2016/679.</p>
+          </section>
+
+          <section>
+            <h2 class="text-xl font-semibold mb-2">9. Modificări ale serviciului și termenilor</h2>
+            <p>Ne rezervăm dreptul de a modifica Aplicația, funcționalitățile sale sau acești Termeni în orice moment. Modificările semnificative vor fi comunicate prin Aplicație sau prin email cu cel puțin 30 de zile înainte de intrarea în vigoare. Utilizarea continuă a Aplicației după modificări constituie acceptarea noilor termeni.</p>
+          </section>
+
+          <section>
+            <h2 class="text-xl font-semibold mb-2">10. Suspendarea și rezilierea</h2>
+            <p>Poți șterge portofelul oricând din Aplicație (Setări → Ștergere Portofel). Ne rezervăm dreptul de a suspenda accesul în cazul utilizării frauduloase, a violării acestor termeni sau a cerințelor legale. La reziliere, toate datele locale sunt șterse; datele serverului sunt eliminate în 30 de zile.</p>
+          </section>
+
+          <section>
+            <h2 class="text-xl font-semibold mb-2">11. Legea aplicabilă</h2>
+            <p>Acești Termeni sunt guvernați de legea română și de reglementările europene aplicabile, inclusiv Regulamentul (UE) 2024/1183 (eIDAS 2.0) și GDPR (UE) 2016/679. Orice litigiu va fi soluționat de instanțele competente din România. Ai dreptul să apelezi la ANPC (<a href="https://anpc.ro" target="_blank" rel="noopener noreferrer" class="t-primary underline">anpc.ro</a>) pentru soluționarea alternativă a litigiilor de consum.</p>
+          </section>
+
+          <section>
+            <h2 class="text-xl font-semibold mb-2">12. Contact</h2>
+            <p><strong>IT Eguilde SRL</strong><br/>
+            B-dul Pache Protopopescu nr. 89, Sector 2, București, România<br/>
+            Email: <a href="mailto:contact@eguwallet.eu" class="t-primary underline">contact@eguwallet.eu</a></p>
+          </section>
+        </div>
+      ) : (
+        <div class="space-y-6 leading-relaxed">
+          <h1 class="text-3xl font-bold mb-2">Terms &amp; Conditions</h1>
+          <p class="text-sm opacity-60 mb-8">Last updated: February 26, 2026</p>
+
+          <section><h2 class="text-xl font-semibold mb-2">1. Acceptance of Terms</h2><p>By downloading, installing or using the EguWallet mobile application ("the App"), you agree to these Terms & Conditions. If you do not agree, do not install or use the App.</p></section>
+
+          <section><h2 class="text-xl font-semibold mb-2">2. Description of Service</h2><p>EguWallet is a European Digital Identity Wallet (EUDI Wallet) compliant with Regulation (EU) 2024/1183 (eIDAS 2.0), developed by IT Eguilde SRL. The App enables storage of digital identity credentials (PID, driving licence, vehicle documents, education and business credentials), selective disclosure of identity data to relying parties, Qualified Electronic Signature (QES) per eIDAS 2.0, and eIDAS 2.0-compliant identity verification.</p><p class="mt-2"><strong>Note:</strong> EguWallet is currently in the eIDAS 2.0 pilot phase, undergoing formal certification by an accredited Conformity Assessment Body (CAB). Credentials issued during the pilot are technically ARF 2.5+ compliant but not yet formally certified as a fully certified EUDI Wallet.</p></section>
+
+          <section><h2 class="text-xl font-semibold mb-2">3. Eligibility</h2><ul class="list-disc pl-6 space-y-1"><li>You must be at least <strong>16 years old</strong> to use EguWallet</li><li>You must provide accurate and complete information at registration</li><li>You are responsible for maintaining confidentiality of your wallet PIN</li><li>You may not transfer wallet access to any third party</li></ul></section>
+
+          <section><h2 class="text-xl font-semibold mb-2">4. User Responsibilities</h2><ul class="list-disc pl-6 space-y-1"><li>Protect your PIN and biometric authentication — do not share them</li><li>Report any unauthorised access or device loss immediately to <a href="mailto:contact@eguwallet.eu" class="t-primary underline">contact@eguwallet.eu</a></li><li>Do not use the App for illegal or fraudulent purposes</li><li>Do not attempt to reverse-engineer, decompile, or tamper with the App</li><li>You are responsible for all actions performed through your wallet</li></ul></section>
+
+          <section><h2 class="text-xl font-semibold mb-2">5. Digital Credentials and Legal Force</h2><p>Digital credentials issued by EguWallet have legal force under Regulation (EU) 2024/1183 when presented to Relying Parties (services and authorities) that accept EUDI Wallets. Qualified Electronic Signatures (QES) made with EguWallet have the same legal value as handwritten signatures across the EU under eIDAS 2.0 Art. 25. You are responsible for verifying that any Relying Party accepts and recognises EUDI Wallet before using the App for legally binding transactions.</p></section>
+
+          <section><h2 class="text-xl font-semibold mb-2">6. Limitation of Liability</h2><p>To the extent permitted by applicable law: IT Eguilde SRL is not liable for losses caused by improper use of the App, device loss, or PIN compromise. The App is provided "as is" in the pilot phase — we do not guarantee uninterrupted availability. We are not responsible for decisions by third parties (services, authorities) regarding acceptance or rejection of your digital credentials.</p></section>
+
+          <section><h2 class="text-xl font-semibold mb-2">7. Intellectual Property</h2><p>EguWallet, the EguWallet logo, and all associated materials are the property of IT Eguilde SRL. The App incorporates EUDI open-source libraries (Apache 2.0) and other third-party components, each under their respective licences.</p></section>
+
+          <section><h2 class="text-xl font-semibold mb-2">8. Data Protection</h2><p>Processing of your personal data is described in our <a href={`/${lang}/privacy/`} class="t-primary underline">Privacy Policy</a>. Use of the App constitutes acceptance of data processing in accordance with that policy and GDPR (EU) 2016/679.</p></section>
+
+          <section><h2 class="text-xl font-semibold mb-2">9. Changes to Service and Terms</h2><p>We reserve the right to modify the App, its features, or these Terms at any time. Material changes will be communicated through the App or by email at least 30 days before they take effect. Continued use after changes constitutes acceptance.</p></section>
+
+          <section><h2 class="text-xl font-semibold mb-2">10. Suspension and Termination</h2><p>You may delete your wallet at any time from within the App (Settings → Delete Wallet). We reserve the right to suspend access in cases of fraudulent use, violation of these Terms, or legal requirements. Upon termination, all local data is deleted; server data is removed within 30 days.</p></section>
+
+          <section><h2 class="text-xl font-semibold mb-2">11. Governing Law</h2><p>These Terms are governed by Romanian law and applicable EU regulations, including Regulation (EU) 2024/1183 (eIDAS 2.0) and GDPR (EU) 2016/679. Any dispute shall be resolved by competent courts in Romania. You may also refer disputes to ANPC (<a href="https://anpc.ro" target="_blank" rel="noopener noreferrer" class="t-primary underline">anpc.ro</a>) for alternative consumer dispute resolution.</p></section>
+
+          <section><h2 class="text-xl font-semibold mb-2">12. Contact</h2><p><strong>IT Eguilde SRL</strong><br/>B-dul Pache Protopopescu nr. 89, Sector 2, Bucharest, Romania<br/>Email: <a href="mailto:contact@eguwallet.eu" class="t-primary underline">contact@eguwallet.eu</a></p></section>
+        </div>
+      )}
+    </main>
+
+    <footer class="mt-12 pt-6 border-t border-current/10 text-sm opacity-50">
+      &copy; 2026 IT Eguilde SRL. &nbsp;
+      <a href={`/${lang}/`} class="underline">EguWallet</a> &middot;
+      <a href={`/${lang}/privacy/`} class="underline">{isRo ? 'Confidențialitate' : 'Privacy Policy'}</a> &middot;
+      <a href={`/${lang}/contact/`} class="underline">{isRo ? 'Contact' : 'Contact'}</a>
+    </footer>
+  </div>
+</body>
+</html>

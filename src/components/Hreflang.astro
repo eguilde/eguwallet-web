@@ -1,5 +1,11 @@
 ---
 import { SITE } from '../config/site.ts';
+
+// Current page path suffix (e.g. "" for home, "about/" for about page)
+// Passed from parent, defaults to empty string (home page)
+interface Props { pathSuffix?: string; }
+const { pathSuffix = '' } = Astro.props;
+
 const LOCALES: Record<string, string> = {
   ro:'ro-RO', en:'en-GB', de:'de-DE', fr:'fr-FR', es:'es-ES',
   it:'it-IT', pl:'pl-PL', pt:'pt-PT', hu:'hu-HU', cs:'cs-CZ',
@@ -9,6 +15,6 @@ const LOCALES: Record<string, string> = {
 };
 ---
 {Object.entries(LOCALES).map(([loc, hl]) => (
-  <link rel="alternate" hreflang={hl} href={`${SITE}/${loc}/`} />
+  <link rel="alternate" hreflang={hl} href={`${SITE}/${loc}/${pathSuffix}`} />
 ))}
-<link rel="alternate" hreflang="x-default" href={`${SITE}/ro/`} />
+<link rel="alternate" hreflang="x-default" href={`${SITE}/en/${pathSuffix}`} />

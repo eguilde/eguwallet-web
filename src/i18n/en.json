@@ -7,7 +7,10 @@
     "privacy": "Privacy",
     "documents": "Documents",
     "useCases": "Use cases",
+    "trust": "Trust & Law",
     "usedToday": "Where it works",
+    "about": "About",
+    "contact": "Contact",
     "future": "Future",
     "howItWorks": "How it works",
     "faq": "FAQ",
@@ -53,9 +56,9 @@
       { "icon": "🪪", "title": "Identity Card (PID)", "body": "The primary digital identity document compliant with eIDAS 2.0. Recognised across all EU member states.", "status": "available" },
       { "icon": "🛂", "title": "Passport", "body": "The digital version of your passport, instantly verifiable by authorities and services.", "status": "available" },
       { "icon": "🚗", "title": "Driving Licence", "body": "Digital driving licence compliant with mDoc/ISO 18013-5. Contactlessly verifiable, including by traffic police.", "status": "available" },
-      { "icon": "📋", "title": "Vehicle Registration", "body": "Your vehicle registration document in digital format. No more carrying paper documents.", "status": "available" },
-      { "icon": "🛡️", "title": "Vehicle Insurance (RCA)", "body": "Mandatory vehicle insurance policy, verifiable in real time.", "status": "available" },
-      { "icon": "🔧", "title": "Technical Inspection / RAR", "body": "Periodic technical inspection (ITP) and RAR vehicle data — verifiable digital certificates.", "status": "available" },
+      { "icon": "📋", "title": "Vehicle Registration", "body": "Your vehicle registration document in digital format. No more carrying paper documents.", "status": "soon" },
+      { "icon": "🛡️", "title": "Vehicle Insurance (RCA)", "body": "Mandatory vehicle insurance policy, verifiable in real time.", "status": "soon" },
+      { "icon": "🔧", "title": "Technical Inspection / RAR", "body": "Periodic technical inspection (ITP) and RAR vehicle data — verifiable digital certificates.", "status": "soon" },
       { "icon": "🏢", "title": "Company Documents", "body": "Company registration certificate, powers of attorney and corporate documents. Sign digitally with your wallet.", "status": "soon" },
       { "icon": "🏠", "title": "Property Documents", "body": "Land registry extracts and real estate ownership documents in verifiable digital format.", "status": "soon" }
     ],
@@ -68,6 +71,7 @@
     "categories": [
       {
         "icon": "🚔",
+        "image": "/assets/illustrations/usecase-police.jpg",
         "title": "Law Enforcement & Public Order",
         "description": "Police officers, border guards, and public order inspectors verify digital identity in seconds — with full cryptographic trust, without touching physical documents.",
         "scenarios": [
@@ -78,6 +82,7 @@
       },
       {
         "icon": "🏢",
+        "image": "/assets/illustrations/usecase-business.jpg",
         "title": "Business & Commercial Transactions",
         "description": "Companies, notaries, lawyers and B2B platforms verify company identity and legal representative authority instantly — eliminating paper certificates and couriers.",
         "scenarios": [
@@ -88,6 +93,7 @@
       },
       {
         "icon": "🎓",
+        "image": "/assets/illustrations/usecase-education.jpg",
         "title": "Education — School & University",
         "description": "Students from age 6 to doctorate carry their school or university card in EguWallet. Used for school entry, exams, library, cafeteria, dormitories and transport discounts.",
         "scenarios": [
@@ -99,6 +105,7 @@
       },
       {
         "icon": "🛒",
+        "image": "/assets/illustrations/usecase-retail.jpg",
         "title": "Retail & Age Verification",
         "description": "Merchants verify age or identity at point of sale in seconds — with zero personal data stored and full GDPR compliance.",
         "scenarios": [
@@ -108,6 +115,7 @@
       },
       {
         "icon": "🏦",
+        "image": "/assets/illustrations/usecase-banking.jpg",
         "title": "Financial Services & KYC",
         "description": "Banks, insurance companies and fintech platforms onboard customers digitally — meeting AML/KYC requirements without paper forms.",
         "scenarios": [
@@ -117,6 +125,7 @@
       },
       {
         "icon": "🏥",
+        "image": "/assets/illustrations/usecase-healthcare.jpg",
         "title": "Healthcare & Social Services",
         "description": "Hospitals, clinics, pharmacies and social services identify patients and beneficiaries securely, without manual form-filling.",
         "scenarios": [
@@ -126,7 +135,19 @@
         ]
       },
       {
+        "icon": "🎰",
+        "image": "/assets/illustrations/usecase-gambling.jpg",
+        "title": "Gambling & Self-Exclusion",
+        "description": "Online and physical casinos, sports betting operators and gaming platforms verify player identity and check national self-exclusion registers — preventing problem gambling and ensuring regulatory compliance.",
+        "scenarios": [
+          { "emoji": "🎰", "name": "Player Identity Verification (KYC)", "body": "Gambling operators verify player identity at registration — name, date of birth, nationality — as required by AML and gambling licensing regulations. Fast, digital, no photocopies.", "legal": "Directive (EU) 2015/849; OUG 77/2009" },
+          { "emoji": "🚫", "name": "Self-Exclusion Register Check", "body": "Before allowing a player to bet, the operator checks the national self-exclusion register via EguWallet. If the player is on the list, access is blocked automatically — no manual lookup required.", "legal": "OUG 77/2009 — Art. 10; national gambling authority" },
+          { "emoji": "🔞", "name": "Age 18+ Verification for Gaming", "body": "Online and physical gaming operators verify that the player is 18 or older — using the EguWallet age attestation. Only YES/NO is transmitted — no personal data stored by the operator.", "legal": "OUG 77/2009; Directive (EU) 2015/849" }
+        ]
+      },
+      {
         "icon": "⚖️",
+        "image": "/assets/illustrations/usecase-legal.jpg",
         "title": "Legal & Notarial — Physical Presence No Longer Required",
         "description": "Under Regulation (EU) 2024/1183, the EUDI Wallet provides legally binding identification equivalent to physical presence for a wide range of legal acts. Many notarial procedures that previously required citizens to physically appear can now be completed remotely — a major leap forward for digital public services.",
         "scenarios": [
@@ -137,6 +158,52 @@
         ]
       }
     ]
+  },
+  "trust": {
+    "heading": "Legally binding — trusted by law, controlled by you",
+    "subheading": "EguWallet gives citizens full control over their identity data, while giving services and public authorities the legal certainty they need.",
+    "image": "/assets/illustrations/usecase-trust.jpg",
+    "citizenTitle": "For citizens — you decide everything",
+    "citizenPoints": [
+      "You choose what data to share, with whom, and when — your wallet never transmits anything without your explicit approval.",
+      "Every interaction is logged in your personal audit history. You can see exactly who requested your data and what they received.",
+      "Under GDPR Art. 17, you can request deletion of your data from any service at any time — directly from the app.",
+      "Your cryptographic keys never leave your device. No wallet provider, no government, no third party can access your credentials without your consent."
+    ],
+    "rpTitle": "For services and organisations — legally certain identity",
+    "rpSubtitle": "Services that accept EguWallet (called Relying Parties — the businesses, institutions or public authorities that verify identity) benefit from:",
+    "rpPoints": [
+      "Legally binding identification under Regulation (EU) 2024/1183 — equivalent to physical document inspection for most legal purposes.",
+      "Cryptographically verified identity data — impossible to forge, replay or tamper with.",
+      "Full AML/KYC compliance for banks, insurance companies and financial platforms.",
+      "Zero liability risk — the wallet issuer bears regulatory responsibility for credential authenticity."
+    ],
+    "auditTitle": "Privately audited. Publicly accountable.",
+    "auditBody": "EguWallet is built on open standards (ARF 2.5+, OpenID4VCI, OpenID4VP, SD-JWT, ISO 18013-5) and is undergoing formal certification by an accredited Conformity Assessment Body. Our technical architecture is open to independent security audits. We are compliant with eIDAS 2.0 for public authorities, while remaining flexible for private sector integrations across retail, healthcare, finance and legal services.",
+    "badges": [
+      { "icon": "🛡️", "label": "GDPR Art. 17 — Right to erasure" },
+      { "icon": "📋", "label": "Full interaction history" },
+      { "icon": "⚖️", "label": "eIDAS 2.0 legally binding" },
+      { "icon": "🔐", "label": "Zero-knowledge selective disclosure" },
+      { "icon": "🔍", "label": "Privately audited" },
+      { "icon": "🌍", "label": "Valid across all 27 EU states" }
+    ]
+  },
+  "integrate": {
+    "heading": "Integrate EguWallet into your service",
+    "subheading": "Open SDKs and APIs — add trusted digital identity to your website or app in hours, not months",
+    "card1Title": "Web & Mobile SDK",
+    "card1Body": "Drop-in JavaScript SDK for websites and REST/native SDKs for Android and iOS. Add a «Verify with EguWallet» button to your service — identity data arrives cryptographically signed, no manual verification needed.",
+    "card2Title": "Compliance included",
+    "card2Body": "Relying parties must register with the national node. Until the Romanian national node is live, integration with EguWallet automatically covers registration through our own LOTL and certification services — removing the compliance hurdle entirely.",
+    "card3Title": "Ready for all use cases",
+    "card3Body": "Age verification, KYC/AML onboarding, self-exclusion checks, qualified electronic signature — all available through a single integration. Our SDK handles the OpenID4VP presentation flow, selective disclosure and audit logging for you.",
+    "cta": "Contact us for integration",
+    "ctaUrl": "/en/contact/",
+    "badge1": "OpenID4VP",
+    "badge2": "SD-JWT / mDoc",
+    "badge3": "GDPR-compliant",
+    "badge4": "eIDAS 2.0 ready"
   },
   "usedToday": {
     "heading": "Where EguWallet works today",
@@ -184,7 +251,7 @@
     "heading": "Frequently asked questions",
     "items": [
       { "q": "What is EguWallet?", "a": "EguWallet is a European eIDAS 2.0 certified digital wallet developed by IT Eguilde SRL. It allows you to store and present digital identity documents (ID card, passport, driving licence etc.) securely on your phone, with full control over your personal data." },
-      { "q": "What documents can I store in EguWallet?", "a": "Currently: identity card (PID), passport, driving licence, vehicle registration, RCA insurance and vehicle inspection certificate (ITP/RAR). Coming soon: company documents and property documents." },
+      { "q": "What documents can I store in EguWallet?", "a": "Currently: identity card (PID), passport and driving licence. Coming soon: vehicle registration, RCA insurance, ITP/RAR, company documents and property documents." },
       { "q": "Is my personal data secure?", "a": "Yes. EguWallet uses SD-JWT and mDoc/ISO 18013-5 for selective disclosure — you only transmit data you explicitly approve. No presentation is stored. Legal basis: GDPR Art. 5(1)(c) and Regulation (EU) 2024/1183." },
       { "q": "Where can I use EguWallet?", "a": "Today: Ilfov County Council digital services (ilfov.net) and Sector 2 City Hall (sector2.eu). Expansion to other public institutions and private retailers in Romania and the EU is ongoing." },
       { "q": "What is eIDAS 2.0?", "a": "eIDAS 2.0 is Regulation (EU) 2024/1183 amending the original eIDAS regulation. It guarantees every European citizen the right to a free digital wallet (EUDI Wallet), recognised across all 27 member states." },
@@ -209,6 +276,7 @@
     "legal": "Terms & Conditions",
     "contact": "Contact",
     "euCompliance": "eIDAS 2.0 Compliant",
+    "accessibility": "Accessibility",
     "machineTranslatedNotice": "This page is currently available in Romanian and English only.",
     "rights": "© 2026 IT Eguilde SRL. All rights reserved."
   },

@@ -1,0 +1,294 @@
+---
+import '../../../styles/global.css';
+import { SITE } from '../../../config/site.ts';
+import { getTranslations } from '../../../i18n/index';
+import Navbar from '../../../components/Navbar.astro';
+import HeadSEO from '../../../components/HeadSEO.astro';
+
+export async function getStaticPaths() {
+  const locales = [
+    'ro','en','de','fr','es','it','pl','pt','hu','cs',
+    'sk','bg','hr','lt','lv','et','mt','sl','sv','da','nl','el','fi','ga'
+  ];
+  return locales.map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const t = await getTranslations(lang);
+const isRo = lang === 'ro';
+
+const title = isRo ? 'Contact — EguWallet' : 'Contact — EguWallet';
+const desc  = isRo
+  ? 'Contactează IT Eguilde SRL — furnizorul EguWallet, portofelul digital european eIDAS 2.0.'
+  : 'Contact IT Eguilde SRL — provider of EguWallet, the European Digital Identity Wallet.';
+---
+<!doctype html>
+<html lang={lang} data-theme="light">
+<head>
+  <HeadSEO lang={lang} title={title} description={desc} canonical={`${SITE}/${lang}/contact/`} pathSuffix="contact/" />
+</head>
+<body class="t-bg t-fg">
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:px-4 focus:py-2 focus:rounded focus:t-bg focus:t-fg focus:outline-none focus:ring-2">
+    {isRo ? 'Sari la conținut' : 'Skip to main content'}
+  </a>
+
+  <Navbar t={t} lang={lang} />
+
+  <main id="main-content" class="t-bg">
+
+    <!-- Page header -->
+    <div class="py-12 sm:py-16 px-4 sm:px-6 t-bg-surface-high">
+      <div class="max-w-4xl mx-auto">
+        <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold t-fg mb-2">
+          {isRo ? 'Contact' : 'Contact'}
+        </h1>
+        <p class="text-[14px] sm:text-base t-fg opacity-55">
+          {isRo
+            ? 'Suntem la dispoziția ta. Răspundem în maximum 2 zile lucrătoare.'
+            : 'We are here for you. We respond within 2 business days.'}
+        </p>
+      </div>
+    </div>
+
+    <!-- Main content -->
+    <div class="py-10 sm:py-14 px-4 sm:px-6">
+      <div class="max-w-4xl mx-auto">
+
+        <div class="flex flex-col gap-10 md:grid md:grid-cols-2 md:gap-12">
+
+          <!-- LEFT: company info -->
+          <div class="flex flex-col gap-8">
+
+            <!-- Provider card -->
+            <section aria-labelledby="provider-h">
+              <h2 id="provider-h" class="text-[11px] sm:text-[12px] font-semibold uppercase tracking-widest t-fg opacity-40 mb-3">
+                {isRo ? 'Furnizor' : 'Provider'}
+              </h2>
+              <div class="flex flex-col gap-1 text-[14px] sm:text-[15px]">
+                <p class="font-bold t-fg text-base">IT Eguilde SRL</p>
+                <p class="t-fg opacity-65">{isRo ? 'B-dul Pache Protopopescu nr. 89' : 'B-dul Pache Protopopescu no. 89'}</p>
+                <p class="t-fg opacity-65">{isRo ? 'Sector 2, București, România' : 'Sector 2, Bucharest, Romania'}</p>
+              </div>
+            </section>
+
+            <!-- Contact channels -->
+            <section aria-labelledby="channels-h">
+              <h2 id="channels-h" class="text-[11px] sm:text-[12px] font-semibold uppercase tracking-widest t-fg opacity-40 mb-3">
+                {isRo ? 'Email' : 'Email'}
+              </h2>
+              <div class="flex flex-col gap-4">
+                <div class="flex items-start gap-3">
+                  <div class="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0 t-bg-surface-high text-base mt-0.5" aria-hidden="true">✉️</div>
+                  <div>
+                    <p class="text-[13px] font-medium t-fg">
+                      {isRo ? 'Întrebări generale' : 'General enquiries'}
+                    </p>
+                    <a href="mailto:contact@eguwallet.eu" class="text-[14px] t-primary hover:underline">contact@eguwallet.eu</a>
+                  </div>
+                </div>
+                <div class="flex items-start gap-3">
+                  <div class="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0 t-bg-surface-high text-base mt-0.5" aria-hidden="true">📱</div>
+                  <div>
+                    <p class="text-[13px] font-medium t-fg">
+                      {isRo ? 'Ștergere cont (portofel pierdut)' : 'Account deletion (lost wallet)'}
+                    </p>
+                    <a href="mailto:privacy@eguwallet.eu" class="text-[14px] t-primary hover:underline">privacy@eguwallet.eu</a>
+                    <p class="text-[11px] sm:text-[12px] t-fg opacity-45 mt-0.5">
+                      {isRo
+                        ? 'Doar pentru situații excepționale — drepturile GDPR se exercită din aplicație (Setări → GDPR)'
+                        : 'For exceptional situations only — GDPR rights are exercised in-app (Settings → GDPR)'}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Supervisory authority -->
+            <section aria-labelledby="dpa-h">
+              <h2 id="dpa-h" class="text-[11px] sm:text-[12px] font-semibold uppercase tracking-widest t-fg opacity-40 mb-3">
+                {isRo ? 'Autoritate de supraveghere' : 'Supervisory authority'}
+              </h2>
+              <div class="flex flex-col gap-2 text-[13px]">
+                <a href="https://www.dataprotection.ro" target="_blank" rel="noopener noreferrer"
+                   class="flex items-center gap-2 t-fg opacity-65 hover:opacity-100 transition-opacity">
+                  <span aria-hidden="true">🔐</span>
+                  <span>ANSPDCP — <span class="underline">dataprotection.ro ↗</span></span>
+                </a>
+                <a href="https://anpc.ro" target="_blank" rel="noopener noreferrer"
+                   class="flex items-center gap-2 t-fg opacity-65 hover:opacity-100 transition-opacity">
+                  <span aria-hidden="true">🛡️</span>
+                  <span>ANPC — <span class="underline">anpc.ro ↗</span></span>
+                </a>
+              </div>
+            </section>
+
+          </div>
+
+          <!-- RIGHT: contact form -->
+          <div>
+            <h2 class="text-[11px] sm:text-[12px] font-semibold uppercase tracking-widest t-fg opacity-40 mb-3">
+              {isRo ? 'Trimite un mesaj' : 'Send a message'}
+            </h2>
+
+            <form id="contact-form" class="flex flex-col gap-4" novalidate>
+              <div class="flex flex-col gap-1">
+                <label for="cf-name" class="text-[12px] font-medium t-fg opacity-70">
+                  {isRo ? 'Nume *' : 'Name *'}
+                </label>
+                <input
+                  id="cf-name" name="name" type="text" required
+                  autocomplete="name"
+                  placeholder={isRo ? 'Ion Popescu' : 'Your name'}
+                  class="w-full px-3 py-2.5 rounded-lg border text-[14px] t-bg t-fg t-border outline-none focus:ring-2"
+                  style="border: 1px solid var(--eg-outline, rgba(0,0,0,0.15));"
+                />
+              </div>
+
+              <div class="flex flex-col gap-1">
+                <label for="cf-email" class="text-[12px] font-medium t-fg opacity-70">
+                  {isRo ? 'Email *' : 'Email *'}
+                </label>
+                <input
+                  id="cf-email" name="email" type="email" required
+                  autocomplete="email"
+                  placeholder="email@example.com"
+                  class="w-full px-3 py-2.5 rounded-lg text-[14px] t-bg t-fg outline-none focus:ring-2"
+                  style="border: 1px solid var(--eg-outline, rgba(0,0,0,0.15));"
+                />
+              </div>
+
+              <div class="flex flex-col gap-1">
+                <label for="cf-subject" class="text-[12px] font-medium t-fg opacity-70">
+                  {isRo ? 'Subiect *' : 'Subject *'}
+                </label>
+                <select
+                  id="cf-subject" name="subject" required
+                  class="w-full px-3 py-2.5 rounded-lg text-[14px] t-bg t-fg outline-none focus:ring-2"
+                  style="border: 1px solid var(--eg-outline, rgba(0,0,0,0.15));"
+                >
+                  <option value="">{isRo ? '— Selectează —' : '— Select —'}</option>
+                  <option value="general">{isRo ? 'Întrebare generală' : 'General question'}</option>
+                  <option value="technical">{isRo ? 'Problemă tehnică' : 'Technical issue'}</option>
+                  <option value="partnership">{isRo ? 'Parteneriat / Integrare' : 'Partnership / Integration'}</option>
+                  <option value="media">{isRo ? 'Presă / Media' : 'Press / Media'}</option>
+                  <option value="other">{isRo ? 'Altele' : 'Other'}</option>
+                </select>
+              </div>
+
+              <div class="flex flex-col gap-1">
+                <label for="cf-message" class="text-[12px] font-medium t-fg opacity-70">
+                  {isRo ? 'Mesaj *' : 'Message *'}
+                </label>
+                <textarea
+                  id="cf-message" name="message" rows="5" required
+                  placeholder={isRo ? 'Descrie pe scurt solicitarea ta...' : 'Briefly describe your enquiry...'}
+                  class="w-full px-3 py-2.5 rounded-lg text-[14px] t-bg t-fg outline-none focus:ring-2 resize-y"
+                  style="border: 1px solid var(--eg-outline, rgba(0,0,0,0.15)); min-height: 120px;"
+                ></textarea>
+              </div>
+
+              <div id="cf-status" class="hidden text-[13px] px-3 py-2 rounded-lg"></div>
+
+              <button
+                type="submit"
+                class="w-full sm:w-auto px-6 py-3 rounded-lg font-semibold text-[14px] transition-opacity hover:opacity-90 active:opacity-75"
+                style="background: var(--eg-primary, #A01E28); color: var(--eg-on-primary, #fff);"
+              >
+                {isRo ? 'Trimite mesajul' : 'Send message'}
+              </button>
+
+              <p class="text-[11px] t-fg opacity-35">
+                {isRo
+                  ? '* Câmpuri obligatorii. Datele tale sunt prelucrate conform Politicii de Confidențialitate și GDPR (UE) 2016/679.'
+                  : '* Required fields. Your data is processed in accordance with our Privacy Policy and GDPR (EU) 2016/679.'}
+              </p>
+            </form>
+          </div>
+
+        </div>
+
+        <!-- Map -->
+        <div class="mt-12 sm:mt-16">
+          <h2 class="text-[11px] sm:text-[12px] font-semibold uppercase tracking-widest t-fg opacity-40 mb-4">
+            {isRo ? 'Locație' : 'Location'}
+          </h2>
+          <div class="rounded-xl overflow-hidden" style="height: 280px;">
+            <iframe
+              title={isRo ? 'Hartă locație IT Eguilde SRL' : 'IT Eguilde SRL location map'}
+              src="https://www.openstreetmap.org/export/embed.html?bbox=26.0920%2C44.4290%2C26.1060%2C44.4370&amp;layer=mapnik&amp;marker=44.4330%2C26.0990"
+              width="100%"
+              height="280"
+              style="border:0;"
+              loading="lazy"
+              referrerpolicy="no-referrer"
+            ></iframe>
+          </div>
+          <p class="text-[11px] t-fg opacity-35 mt-2">
+            B-dul Pache Protopopescu nr. 89, Sector 2, {isRo ? 'București' : 'Bucharest'} &middot;
+            <a href="https://www.openstreetmap.org/?mlat=44.4330&mlon=26.0990#map=16/44.4330/26.0990" target="_blank" rel="noopener noreferrer" class="underline hover:opacity-70 transition-opacity">
+              {isRo ? 'Deschide în OpenStreetMap ↗' : 'Open in OpenStreetMap ↗'}
+            </a>
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-8 px-4 sm:px-6 t-bg-surface-high">
+      <div class="max-w-4xl mx-auto flex flex-wrap gap-x-4 gap-y-1 text-[12px] t-fg opacity-40">
+        <a href={`/${lang}/`} class="hover:opacity-70 transition-opacity">EguWallet</a>
+        <span>·</span>
+        <a href={`/${lang}/privacy/`} class="hover:opacity-70 transition-opacity underline">{isRo ? 'Confidențialitate' : 'Privacy Policy'}</a>
+        <span>·</span>
+        <a href={`/${lang}/terms/`} class="hover:opacity-70 transition-opacity underline">{isRo ? 'Termeni' : 'Terms'}</a>
+        <span>·</span>
+        <span>© 2026 IT Eguilde SRL</span>
+      </div>
+    </footer>
+
+  </main>
+</body>
+</html>
+
+<script>
+const form = document.getElementById('contact-form') as HTMLFormElement | null;
+const status = document.getElementById('cf-status');
+
+form?.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  if (!form || !status) return;
+
+  const name    = (form.querySelector('#cf-name') as HTMLInputElement)?.value.trim();
+  const email   = (form.querySelector('#cf-email') as HTMLInputElement)?.value.trim();
+  const subject = (form.querySelector('#cf-subject') as HTMLSelectElement)?.value;
+  const message = (form.querySelector('#cf-message') as HTMLTextAreaElement)?.value.trim();
+
+  if (!name || !email || !subject || !message) {
+    status.className = 'text-[13px] px-3 py-2 rounded-lg';
+    status.style.background = 'var(--eg-error-container, #fce4e4)';
+    status.style.color = 'var(--eg-on-error-container, #410002)';
+    status.textContent = document.documentElement.lang === 'ro'
+      ? 'Completează toate câmpurile obligatorii.'
+      : 'Please fill in all required fields.';
+    return;
+  }
+
+  const btn = form.querySelector('button[type="submit"]') as HTMLButtonElement;
+  if (btn) { btn.disabled = true; btn.style.opacity = '0.6'; }
+
+  // Compose mailto link as fallback — opens email client with pre-filled fields
+  const body = `Name: ${name}\nEmail: ${email}\nSubject: ${subject}\n\n${message}`;
+  const mailto = `mailto:contact@eguwallet.eu?subject=${encodeURIComponent(`[EguWallet Contact] ${subject}`)}&body=${encodeURIComponent(body)}`;
+  window.location.href = mailto;
+
+  status.className = 'text-[13px] px-3 py-2 rounded-lg';
+  status.style.background = 'var(--eg-primary-container, #ffd8d8)';
+  status.style.color = 'var(--eg-on-primary-container, #410002)';
+  status.textContent = document.documentElement.lang === 'ro'
+    ? 'Se deschide clientul de email cu mesajul pre-completat.'
+    : 'Opening your email client with the pre-filled message.';
+
+  if (btn) { setTimeout(() => { btn.disabled = false; btn.style.opacity = ''; }, 3000); }
+});
+</script>
