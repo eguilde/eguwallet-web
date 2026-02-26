@@ -595,7 +595,13 @@
       "buttonLabel": "Send enquiry"
     },
     "regulations": "Assessed against: CIR 2024/2979, 2024/2981, 2024/2982, 2024/2983 | ARF 2.5.0 | EWC ITB",
-    "noData": "Report data not yet available. The first conformance run will populate this page."
+    "noData": "Report data not yet available. The first conformance run will populate this page.",
+    "historyTitle": "Conformance history (last 10 runs)",
+    "historyDate": "Date",
+    "historyStatus": "Status",
+    "historyPassed": "Passed",
+    "historyFailed": "Failed",
+    "noHistory": "No history available yet."
   },
   "meta": {
     "homeTitle": "EguWallet — European Digital Identity Wallet",

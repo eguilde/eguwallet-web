@@ -113,12 +113,12 @@
       {
         "icon": "🚔",
         "image": "/assets/illustrations/usecase-police.jpg",
-        "title": "Poliție și Ordine Publică",
+        "title": "Poliție și ordine publică",
         "description": "Ofițeri de poliție, polițiști de frontieră și inspectori verifică identitatea digitală în câteva secunde — cu garanție criptografică, fără a atinge documente fizice.",
         "scenarios": [
           {
             "emoji": "🪪",
-            "name": "Control de Identitate în Patrulare",
+            "name": "Control de identitate în patrulare",
             "body": "Ofițerul verifică identitatea completă a cetățeanului — nume, CNP, adresă, fotografie — prin NFC sau QR. Fără hârtii. Rezultatul este înregistrat automat.",
             "legal": "Legea 218/2002 — Art. 31"
           },
@@ -595,7 +595,13 @@
       "buttonLabel": "Trimite solicitare"
     },
     "regulations": "Evaluat conform: CIR 2024/2979, 2024/2981, 2024/2982, 2024/2983 | ARF 2.5.0 | EWC ITB",
-    "noData": "Datele raportului nu sunt disponibile încă. Prima rulare de conformitate va popula această pagină."
+    "noData": "Datele raportului nu sunt disponibile încă. Prima rulare de conformitate va popula această pagină.",
+    "historyTitle": "Istoric conformitate (ultimele 10 rulări)",
+    "historyDate": "Data",
+    "historyStatus": "Statut",
+    "historyPassed": "Trecute",
+    "historyFailed": "Eșuate",
+    "noHistory": "Istoricul nu este disponibil încă."
   },
   "meta": {
     "homeTitle": "EguWallet — Portofel Digital European eIDAS 2.0",

@@ -24,6 +24,14 @@ const t = await getTranslations(lang);
 const tc = t.certification;
 
 const COMPONENT_IDS = ['android-wallet', 'android-verifier', 'dgep', 'dgp'];
+const REPORTS_BASE = 'https://eguilde.github.io/eguwallet-conformance/latest';
+
+const ARF_DESCRIPTIONS: Record<string, string> = {
+  'android-wallet': 'Wallet Application — ARF §5. Stores and presents PID and (Q)EAA credentials using OpenID4VP. Assessed against HAIP 1.0, DCQL, KB-JWT, WSCD/WSCA hardware binding.',
+  'android-verifier': 'Relying Party Application — ARF §6. Reads ISO 18013-5 mdoc credentials via BLE proximity. Assessed for RP certificate validation and trust list verification.',
+  'dgep': 'PID Issuer — ARF §6.3 + CIR 2024/2983. Issues SD-JWT Personal Identification Data (dc+sd-jwt format) via OpenID4VCI pre-authorized code flow.',
+  'dgp': 'Attestation Issuer — ARF §6.4. Issues government attestations (Wallet Instance Attestation) and acts as OIDC provider. Assessed for WIA guard and credential format compliance.',
+};
 
 interface RemediationReport {
   component?: string;
@@ -35,8 +43,17 @@ interface RemediationReport {
   reportUrl?: string;
 }
 
+interface HistoryEntry {
+  date: string;
+  overallStatus: string;
+  p1Count: number;
+  p2Count: number;
+  passedCount: number;
+  failedCount: number;
+}
+
 async function fetchReport(component: string): Promise<RemediationReport | null> {
-  const url = 'https://eguilde.github.io/eguwallet-conformance/latest/' + component + '/remediation.json';
+  const url = REPORTS_BASE + '/' + component + '/remediation.json';
   try {
     const controller = new AbortController();
     const timerId = setTimeout(() => controller.abort(), 5000);
@@ -47,6 +64,10 @@ async function fetchReport(component: string): Promise<RemediationReport | null>
   } catch {
     return null;
   }
+}
+
+function ragColor(s: string): string {
+  return s === 'COMPLIANT' ? '#28a745' : s === 'PARTIAL' ? '#ffc107' : '#dc3545';
 }
 
 function statusStyle(status: string | undefined): string {
@@ -94,10 +115,23 @@ const componentRoles: Record<string, string> = {
 
 const reports = await Promise.all(COMPONENT_IDS.map(fetchReport));
 
+// Fetch history for each component
+const histories: Record<string, HistoryEntry[] | null> = {};
+await Promise.all(COMPONENT_IDS.map(async (c) => {
+  try {
+    const res = await fetch(REPORTS_BASE + '/' + c + '/history-index.json',
+      { signal: AbortSignal.timeout(5000) });
+    histories[c] = res.ok ? (await res.json() as HistoryEntry[]) : null;
+  } catch {
+    histories[c] = null;
+  }
+}));
+
 interface CardData {
   component: string;
   compName: string;
   compRole: string;
+  arfDesc: string;
   status: string | undefined;
   total: number;
   passed: number;
@@ -109,6 +143,7 @@ interface CardData {
   passedPercent: number;
   progressColor: string;
   hasReport: boolean;
+  history: HistoryEntry[] | null;
 }
 
 const cards: CardData[] = COMPONENT_IDS.map((component, i) => {
@@ -124,19 +159,52 @@ const cards: CardData[] = COMPONENT_IDS.map((component, i) => {
     component,
     compName: componentNames[component] ?? component,
     compRole: componentRoles[component] ?? '',
+    arfDesc: ARF_DESCRIPTIONS[component] ?? '',
     status,
     total,
     passed,
     failed,
     failures: report?.failures ?? [],
     updatedAt: report?.generatedAt,
-    reportUrl: report?.reportUrl ?? ('https://eguilde.github.io/eguwallet-conformance/latest/' + component + '/report.html'),
+    reportUrl: report?.reportUrl ?? (REPORTS_BASE + '/' + component + '/report.html'),
     cabUrl: report?.cabDownloadUrl ?? null,
     passedPercent: total > 0 ? Math.round((passed / total) * 100) : 0,
     progressColor,
     hasReport: report !== null,
+    history: histories[component] ?? null,
   };
 });
+
+// Precompute all history table rows as plain objects to avoid Astro generic TS parse issues
+interface HistoryRow {
+  date: string;
+  statusLabel: string;
+  ragBg: string;
+  passedCount: number;
+  failedCount: number;
+  passedStyle: string;
+  failedStyle: string;
+}
+
+const cardHistoryRows: Record<string, HistoryRow[]> = {};
+for (const card of cards) {
+  const rows: HistoryRow[] = [];
+  if (card.history && card.history.length > 0) {
+    for (const entry of card.history) {
+      const totalFailed = entry.p1Count + entry.p2Count;
+      rows.push({
+        date: entry.date,
+        statusLabel: statusLabels[entry.overallStatus] ?? entry.overallStatus,
+        ragBg: ragColor(entry.overallStatus),
+        passedCount: entry.passedCount,
+        failedCount: totalFailed,
+        passedStyle: entry.passedCount > 0 ? 'padding:4px 8px;color:#155724' : 'padding:4px 8px',
+        failedStyle: totalFailed > 0 ? 'padding:4px 8px;color:#dc3545;font-weight:600' : 'padding:4px 8px',
+      });
+    }
+  }
+  cardHistoryRows[card.component] = rows;
+}
 
 const title = t.meta.certificationTitle;
 const desc  = t.meta.certificationDesc;
@@ -192,9 +260,11 @@ const contactSubject = encodeURIComponent(lang === 'ro' ? 'Solicitare informați
               <div class="flex flex-col gap-1">
                 <h2 class="text-base sm:text-lg font-bold t-fg">{card.compName}</h2>
                 <p class="text-[12px] sm:text-[13px] t-fg opacity-50">{card.compRole}</p>
+                <p class="text-[11px] sm:text-[12px] t-fg opacity-40 max-w-xl leading-snug mt-0.5">{card.arfDesc}</p>
               </div>
-              <span class="text-[11px] sm:text-xs font-semibold uppercase tracking-wider px-3 py-1 rounded-full flex-shrink-0"
+              <span class="text-[11px] sm:text-xs font-semibold uppercase tracking-wider px-3 py-1 rounded-full flex-shrink-0 flex items-center gap-1.5"
                 style={statusStyle(card.status)}>
+                <span style={"display:inline-block;width:10px;height:10px;border-radius:50%;background:" + ragColor(card.status ?? 'NOT_RUN') + ";flex-shrink:0"}></span>
                 {statusLabel(card.status, statusLabels)}
               </span>
             </div>
@@ -244,6 +314,41 @@ const contactSubject = encodeURIComponent(lang === 'ro' ? 'Solicitare informați
                     </div>
                   </details>
                 )}
+
+                <!-- History table (collapsed) -->
+                <details>
+                  <summary style="cursor:pointer;font-size:0.85rem;color:var(--p-text-muted-color);margin-top:0.25rem;list-style:none;display:flex;align-items:center;gap:0.4rem;opacity:0.6;">
+                    <svg style="width:14px;height:14px;flex-shrink:0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>
+                    {tc.historyTitle}
+                  </summary>
+                  {cardHistoryRows[card.component].length > 0 ? (
+                    <table style="width:100%;border-collapse:collapse;font-size:0.8rem;margin-top:0.5rem">
+                      <thead>
+                        <tr style="border-bottom:1px solid var(--p-surface-200);text-align:left">
+                          <th style="padding:4px 8px">{tc.historyDate}</th>
+                          <th style="padding:4px 8px">{tc.historyStatus}</th>
+                          <th style="padding:4px 8px">{tc.historyPassed}</th>
+                          <th style="padding:4px 8px">{tc.historyFailed}</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {cardHistoryRows[card.component].map((row) => (
+                          <tr style="border-bottom:1px solid var(--p-surface-100)">
+                            <td style="padding:4px 8px;font-family:monospace">{row.date}</td>
+                            <td style="padding:4px 8px">
+                              <span style={"display:inline-block;width:10px;height:10px;border-radius:50%;background:" + row.ragBg + ";vertical-align:middle;margin-right:4px"}></span>
+                              {row.statusLabel}
+                            </td>
+                            <td style={row.passedStyle}>{row.passedCount}</td>
+                            <td style={row.failedStyle}>{row.failedCount}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  ) : (
+                    <p style="font-size:0.8rem;color:var(--p-text-muted-color);margin-top:0.5rem;opacity:0.6">{tc.noHistory}</p>
+                  )}
+                </details>
 
                 <!-- Last updated + links -->
                 <div class="flex flex-wrap items-center justify-between gap-3 pt-1" style="border-top:1px solid var(--eg-glass-border);">
