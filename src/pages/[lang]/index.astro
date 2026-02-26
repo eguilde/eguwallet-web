@@ -193,7 +193,9 @@ const playUrl = 'https://play.google.com/store/apps/details?id=wallet.eguwallet.
                     playsinline
                     class="w-full h-full object-cover"
                     style="max-height: 260px;"
+                    onerror="this.style.display='none';this.nextElementSibling&&(this.nextElementSibling.style.display='')"
                   />
+                  <img src={image} alt="" class="w-full h-full object-cover" style="max-height:260px;display:none;" loading="lazy" aria-hidden="true" />
                 </div>
               )}
               <div class="flex items-center gap-3 mb-3">
