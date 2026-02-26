@@ -487,8 +487,204 @@ const playUrl = 'https://play.google.com/store/apps/details?id=wallet.eguwallet.
         )}
 
         <p class="text-sm" style="color:rgba(240,232,232,0.35);">{t.footer.rights}</p>
+
+        <!-- Mobile-only: theme + accessibility controls -->
+        <div class="xl:hidden mt-6 pt-6 flex items-center gap-3" style="border-top:1px solid rgba(240,232,232,0.10);">
+          <!-- Theme toggle -->
+          <button
+            id="footer-theme-toggle"
+            aria-label="Toggle dark/light mode"
+            class="flex items-center justify-center w-10 h-10 rounded-xl"
+            style="background:rgba(255,255,255,0.08); color:#f0e8e8;"
+          >
+            <svg class="footer-theme-light w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><path d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72l1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+            <svg class="footer-theme-dark w-5 h-5" style="display:none" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+          </button>
+
+          <!-- Accessibility button -->
+          <div class="relative" id="footer-a11y-wrapper">
+            <button
+              id="footer-a11y-toggle"
+              aria-label="Accessibility settings"
+              aria-expanded="false"
+              class="flex items-center justify-center w-10 h-10 rounded-xl"
+              style="background:rgba(255,255,255,0.08); color:#f0e8e8;"
+            >
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="4" r="1.5" fill="currentColor" stroke="none"/>
+                <path d="M6 8h12M12 8v12M9 14l-3 4M15 14l3 4"/>
+              </svg>
+            </button>
+            <!-- A11y panel (opens upward) -->
+            <div
+              id="footer-a11y-panel"
+              class="hidden absolute left-0 bottom-full mb-2 flex-col gap-3 p-4 rounded-2xl shadow-2xl z-50"
+              style="background:#1a1a1a; border:1px solid rgba(255,255,255,0.12); min-width:220px;"
+            >
+              <!-- TTS -->
+              <div>
+                <p class="text-xs font-semibold mb-1.5 uppercase tracking-wider" style="color:rgba(255,255,255,0.50);">{t.a11y.listen}</p>
+                <button id="footer-a11y-tts" aria-pressed="false" class="w-full flex items-center gap-2 px-3 py-2 rounded-xl text-sm font-medium transition-colors" style="background:rgba(255,255,255,0.08); color:#f0e8e8;"
+                  data-label-read={t.a11y.readAloud}
+                  data-label-stop={t.a11y.stopReading}
+                >
+                  <span id="footer-a11y-tts-icon" aria-hidden="true">🔊</span>
+                  <span id="footer-a11y-tts-label">{t.a11y.readAloud}</span>
+                </button>
+              </div>
+              <!-- Font size -->
+              <div>
+                <p class="text-xs font-semibold mb-1.5 uppercase tracking-wider" style="color:rgba(255,255,255,0.50);">{t.a11y.textSize}</p>
+                <div class="flex gap-1.5">
+                  {[0,1,2].map((i) => (
+                    <button
+                      data-font-size={i}
+                      class="footer-a11y-font-btn flex-1 py-2 rounded-xl font-bold transition-colors"
+                      style={`font-size: ${14 + i * 3}px; background:rgba(255,255,255,0.08); color:#f0e8e8;`}
+                      aria-label={`Text size ${i === 0 ? 'normal' : i === 1 ? 'large' : 'extra large'}`}
+                    >A</button>
+                  ))}
+                </div>
+              </div>
+              <!-- Contrast -->
+              <div>
+                <p class="text-xs font-semibold mb-1.5 uppercase tracking-wider" style="color:rgba(255,255,255,0.50);">{t.a11y.contrast}</p>
+                <button id="footer-a11y-contrast" aria-pressed="false" class="w-full flex items-center gap-2 px-3 py-2 rounded-xl text-sm font-medium transition-colors" style="background:rgba(255,255,255,0.08); color:#f0e8e8;"
+                  data-label-off={t.a11y.highContrastOff}
+                  data-label-on={t.a11y.highContrastOn}
+                >
+                  <span aria-hidden="true">◑</span>
+                  <span id="footer-a11y-contrast-label">{t.a11y.highContrastOff}</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
     </footer>
+
+    <script is:inline>
+    (function() {
+      // ── Footer theme toggle ─────────────────────────────────────
+      var footerThemeBtn = document.getElementById('footer-theme-toggle');
+      var footerThemeLight = footerThemeBtn ? footerThemeBtn.querySelector('.footer-theme-light') : null;
+      var footerThemeDark  = footerThemeBtn ? footerThemeBtn.querySelector('.footer-theme-dark')  : null;
+      function syncFooterTheme() {
+        var dark = document.documentElement.getAttribute('data-theme') === 'dark';
+        if (footerThemeLight) footerThemeLight.style.display = dark ? 'none' : '';
+        if (footerThemeDark)  footerThemeDark.style.display  = dark ? '' : 'none';
+      }
+      syncFooterTheme();
+      if (footerThemeBtn) footerThemeBtn.addEventListener('click', function() {
+        var next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem('egu-theme', next);
+        syncFooterTheme();
+        // Also sync navbar toggle if present
+        var navLight = document.querySelector('#theme-toggle .theme-light');
+        var navDark  = document.querySelector('#theme-toggle .theme-dark');
+        if (navLight) navLight.style.display = next === 'dark' ? 'none' : '';
+        if (navDark)  navDark.style.display  = next === 'dark' ? '' : 'none';
+      });
+
+      // ── Footer a11y panel ────────────────────────────────────────
+      var fToggle      = document.getElementById('footer-a11y-toggle');
+      var fPanel       = document.getElementById('footer-a11y-panel');
+      var fWrapper     = document.getElementById('footer-a11y-wrapper');
+      var fTtsBtn      = document.getElementById('footer-a11y-tts');
+      var fTtsLabel    = document.getElementById('footer-a11y-tts-label');
+      var fTtsIcon     = document.getElementById('footer-a11y-tts-icon');
+      var fContrastBtn = document.getElementById('footer-a11y-contrast');
+      var fContrastLbl = document.getElementById('footer-a11y-contrast-label');
+      var fFontBtns    = document.querySelectorAll('.footer-a11y-font-btn');
+      var html         = document.documentElement;
+
+      var labelRead        = (fTtsBtn && fTtsBtn.dataset.labelRead)       || 'Read page aloud';
+      var labelStop        = (fTtsBtn && fTtsBtn.dataset.labelStop)       || 'Stop reading';
+      var labelContrastOff = (fContrastBtn && fContrastBtn.dataset.labelOff) || 'High contrast: off';
+      var labelContrastOn  = (fContrastBtn && fContrastBtn.dataset.labelOn)  || 'High contrast: on';
+
+      // Restore persisted settings
+      fApplyFont(parseInt(localStorage.getItem('a11y-font') || '0'));
+      fApplyContrast(localStorage.getItem('a11y-contrast') || 'off');
+
+      if (fToggle) fToggle.addEventListener('click', function(e) {
+        e.stopPropagation();
+        var open = fPanel ? fPanel.classList.toggle('hidden') === false : false;
+        if (fPanel) fPanel.classList.toggle('flex', open);
+        fToggle.setAttribute('aria-expanded', String(open));
+      });
+
+      document.addEventListener('click', function(e) {
+        if (fWrapper && !fWrapper.contains(e.target)) {
+          if (fPanel) { fPanel.classList.add('hidden'); fPanel.classList.remove('flex'); }
+          if (fToggle) fToggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+
+      if (fTtsBtn) fTtsBtn.addEventListener('click', function() {
+        if (!('speechSynthesis' in window)) { alert('Text-to-speech not supported in this browser.'); return; }
+        if (window.speechSynthesis.speaking) { window.speechSynthesis.cancel(); fSetTtsState(false); return; }
+        var main = document.getElementById('main-content');
+        var text = Array.from(main ? main.querySelectorAll('h1,h2,h3,h4,p,li') : [])
+          .map(function(el) { return el.textContent ? el.textContent.trim() : ''; })
+          .filter(function(t) { return t && t.length > 2; }).join('. ');
+        var utt = new SpeechSynthesisUtterance(text);
+        var bcp47 = {
+          ro:'ro-RO', en:'en-GB', de:'de-DE', fr:'fr-FR', es:'es-ES',
+          it:'it-IT', pl:'pl-PL', pt:'pt-PT', hu:'hu-HU', cs:'cs-CZ',
+          sk:'sk-SK', bg:'bg-BG', hr:'hr-HR', lt:'lt-LT', lv:'lv-LV',
+          et:'et-EE', mt:'mt-MT', sl:'sl-SI', sv:'sv-SE', da:'da-DK',
+          nl:'nl-NL', el:'el-GR', fi:'fi-FI', ga:'ga-IE'
+        };
+        var pageLang = document.documentElement.lang || 'en';
+        utt.lang = bcp47[pageLang] || pageLang;
+        utt.rate = 0.92;
+        utt.onstart = function() { fSetTtsState(true); };
+        utt.onend = function() { fSetTtsState(false); };
+        utt.onerror = function() { fSetTtsState(false); };
+        window.speechSynthesis.speak(utt);
+      });
+
+      function fSetTtsState(speaking) {
+        if (fTtsBtn) fTtsBtn.setAttribute('aria-pressed', String(speaking));
+        if (fTtsIcon) fTtsIcon.textContent = speaking ? '⏹' : '🔊';
+        if (fTtsLabel) fTtsLabel.textContent = speaking ? labelStop : labelRead;
+        if (fTtsBtn) fTtsBtn.style.background = speaking ? 'rgba(160,30,40,0.40)' : 'rgba(255,255,255,0.08)';
+      }
+
+      fFontBtns.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          var level = parseInt(btn.getAttribute('data-font-size') || '0');
+          fApplyFont(level);
+          localStorage.setItem('a11y-font', String(level));
+        });
+      });
+
+      function fApplyFont(level) {
+        html.removeAttribute('data-a11y-font');
+        if (level > 0) html.setAttribute('data-a11y-font', String(level));
+        fFontBtns.forEach(function(btn) {
+          var active = parseInt(btn.getAttribute('data-font-size') || '0') === level;
+          btn.style.background = active ? 'rgba(160,30,40,0.45)' : 'rgba(255,255,255,0.08)';
+        });
+      }
+
+      if (fContrastBtn) fContrastBtn.addEventListener('click', function() {
+        var next = html.getAttribute('data-a11y-contrast') === 'on' ? 'off' : 'on';
+        fApplyContrast(next);
+        localStorage.setItem('a11y-contrast', next);
+      });
+
+      function fApplyContrast(value) {
+        html.setAttribute('data-a11y-contrast', value);
+        if (fContrastBtn) fContrastBtn.setAttribute('aria-pressed', String(value === 'on'));
+        if (fContrastLbl) fContrastLbl.textContent = value === 'on' ? labelContrastOn : labelContrastOff;
+        if (fContrastBtn) fContrastBtn.style.background = value === 'on' ? 'rgba(160,30,40,0.45)' : 'rgba(255,255,255,0.08)';
+      }
+    })();
+    </script>
 
   </main>
 

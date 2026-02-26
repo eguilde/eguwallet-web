@@ -35,10 +35,12 @@ const links = [
 
     <div class="flex items-center gap-1.5 sm:gap-2 flex-shrink-0">
       <LanguageSelector currentLang={lang} />
-      <ThemeToggle />
+      <div class="hidden xl:flex items-center gap-1.5">
+        <ThemeToggle />
+      </div>
 
-      <!-- Accessibility button -->
-      <div class="relative" id="a11y-nav-wrapper">
+      <!-- Accessibility button (desktop only) -->
+      <div class="relative hidden xl:flex" id="a11y-nav-wrapper">
         <button
           id="a11y-toggle"
           aria-label="Accessibility settings"
