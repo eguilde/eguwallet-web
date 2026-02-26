@@ -68,8 +68,11 @@ const cache: Record<string, Translations> = {};
 export async function getTranslations(lang: string): Promise<Translations> {
   if (cache[lang]) return cache[lang];
   const data = raw[lang] ?? enData;
-  // Deep-merge with RO as the authoritative fallback (RO is always complete)
-  const merged = deepMerge(data as Partial<Translations>, roData as Translations);
+  // Fallback chain: lang → EN → RO (so missing keys show in English, not Romanian)
+  const withEnFallback = lang === 'ro' || lang === 'en'
+    ? data
+    : deepMerge(data as Partial<Translations>, enData as Translations);
+  const merged = deepMerge(withEnFallback as Partial<Translations>, roData as Translations);
   cache[lang] = merged;
   return merged;
 }

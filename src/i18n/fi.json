@@ -260,32 +260,6 @@
         ]
       },
       {
-        "icon": "🎰",
-        "image": "/assets/illustrations/usecase-gambling.jpg",
-        "title": "Rahapelit ja Itsepoisjättäytyminen",
-        "description": "Verkko- ja fyysisiä kasinoita, urheiluvedonlyöjiä ja peliympäristöjä käyttävät operaattorit varmentavat pelaajan henkilöllisyyden ja tarkistavat kansalliset itsepoisjättäytymisrekisterit.",
-        "scenarios": [
-          {
-            "emoji": "🎰",
-            "name": "Pelaajan henkilöllisyyden varmistus (KYC)",
-            "body": "Rahapeli-operaattorit varmentavat pelaajan henkilöllisyyden rekisteröinnin yhteydessä — nimi, syntymäaika, kansalaisuus — AML- ja pelilisenssisäädösten vaatimusten mukaisesti. Nopeasti, digitaalisesti, ilman kopioita.",
-            "legal": "Directive (EU) 2015/849; OUG 77/2009"
-          },
-          {
-            "emoji": "🚫",
-            "name": "Itsepoisjättäytymisrekisterin tarkistus",
-            "body": "Ennen kuin pelaaja saa lyödä vetoa, operaattori tarkistaa kansallisen itsepoisjättäytymisrekisterin EguWalletin kautta. Jos pelaaja on listalla, pääsy estetään automaattisesti — ei manuaalista hakua tarvita.",
-            "legal": "OUG 77/2009 — Art. 10; kansallinen rahapeliviranomainen"
-          },
-          {
-            "emoji": "🔞",
-            "name": "Ikäverifikaatio 18+ pelaamiseen",
-            "body": "Verkko- ja fyysiset pelioperaattorit varmentavat, että pelaaja on 18 vuotta tai vanhempi — käyttäen EguWalletin ikätodistusta. Lähetetään vain KYLLÄ/EI — operaattori ei tallenna henkilötietoja.",
-            "legal": "OUG 77/2009; Directive (EU) 2015/849"
-          }
-        ]
-      },
-      {
         "icon": "⚖️",
         "image": "/assets/illustrations/usecase-legal.jpg",
         "title": "Oikeudellinen ja notariaalinen — Fyysistä läsnäoloa ei enää tarvita",
@@ -314,6 +288,32 @@
             "name": "Liiketoimintasopimukset QES:llä",
             "body": "Palvelusopimukset, kumppanuussopimukset, osakkeenomistajapäätökset — allekirjoitettu Pätevällä Sähköisellä Allekirjoituksella suoraan EguWalletista. Oikeudellinen vaikutus kaikissa 27 EU:n jäsenvaltiossa. Ei tulostinta, ei lähettejä, ei tapaamista.",
             "legal": "Law 455/2001; eIDAS 2.0 Art. 25; Law 31/1990"
+          }
+        ]
+      },
+      {
+        "icon": "🎰",
+        "image": "/assets/illustrations/usecase-gambling.jpg",
+        "title": "Rahapelit ja Itsepoisjättäytyminen",
+        "description": "Verkko- ja fyysisiä kasinoita, urheiluvedonlyöjiä ja peliympäristöjä käyttävät operaattorit varmentavat pelaajan henkilöllisyyden ja tarkistavat kansalliset itsepoisjättäytymisrekisterit.",
+        "scenarios": [
+          {
+            "emoji": "🎰",
+            "name": "Pelaajan henkilöllisyyden varmistus (KYC)",
+            "body": "Rahapeli-operaattorit varmentavat pelaajan henkilöllisyyden rekisteröinnin yhteydessä — nimi, syntymäaika, kansalaisuus — AML- ja pelilisenssisäädösten vaatimusten mukaisesti. Nopeasti, digitaalisesti, ilman kopioita.",
+            "legal": "Directive (EU) 2015/849; OUG 77/2009"
+          },
+          {
+            "emoji": "🚫",
+            "name": "Itsepoisjättäytymisrekisterin tarkistus",
+            "body": "Ennen kuin pelaaja saa lyödä vetoa, operaattori tarkistaa kansallisen itsepoisjättäytymisrekisterin EguWalletin kautta. Jos pelaaja on listalla, pääsy estetään automaattisesti — ei manuaalista hakua tarvita.",
+            "legal": "OUG 77/2009 — Art. 10; kansallinen rahapeliviranomainen"
+          },
+          {
+            "emoji": "🔞",
+            "name": "Ikäverifikaatio 18+ pelaamiseen",
+            "body": "Verkko- ja fyysiset pelioperaattorit varmentavat, että pelaaja on 18 vuotta tai vanhempi — käyttäen EguWalletin ikätodistusta. Lähetetään vain KYLLÄ/EI — operaattori ei tallenna henkilötietoja.",
+            "legal": "OUG 77/2009; Directive (EU) 2015/849"
           }
         ]
       }

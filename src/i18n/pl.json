@@ -260,32 +260,6 @@
         ]
       },
       {
-        "icon": "🎰",
-        "image": "/assets/illustrations/usecase-gambling.jpg",
-        "title": "Hazard i samowykluczenie",
-        "description": "Kasyna online i stacjonarne, bukmacherzy sportowi i platformy gier weryfikują tożsamość gracza i sprawdzają krajowe rejestry samowykluczenia — zapobiegając problemowemu hazardowi i zapewniając zgodność z przepisami.",
-        "scenarios": [
-          {
-            "emoji": "🎰",
-            "name": "Weryfikacja tożsamości gracza (KYC)",
-            "body": "Operatorzy hazardowi weryfikują tożsamość gracza przy rejestracji — imię, datę urodzenia, narodowość — zgodnie z wymogami AML i przepisami licencyjnymi. Szybko, cyfrowo, bez kserokopii.",
-            "legal": "Directive (EU) 2015/849; OUG 77/2009"
-          },
-          {
-            "emoji": "🚫",
-            "name": "Sprawdzenie rejestru samowykluczenia",
-            "body": "Przed umożliwieniem graczowi postawienia zakładu, operator sprawdza krajowy rejestr samowykluczenia przez EguWallet. Jeśli gracz figuruje na liście, dostęp jest automatycznie blokowany — bez ręcznego wyszukiwania.",
-            "legal": "OUG 77/2009 — Art. 10; national gambling authority"
-          },
-          {
-            "emoji": "🔞",
-            "name": "Weryfikacja wieku 18+ dla gier",
-            "body": "Operatorzy gier online i stacjonarnych weryfikują, że gracz ma co najmniej 18 lat — używając poświadczenia wiekowego EguWallet. Przekazywane jest tylko TAK/NIE — operator nie przechowuje żadnych danych osobowych.",
-            "legal": "OUG 77/2009; Directive (EU) 2015/849"
-          }
-        ]
-      },
-      {
         "icon": "⚖️",
         "image": "/assets/illustrations/usecase-legal.jpg",
         "title": "Prawo i notariat — fizyczna obecność nie jest już wymagana",
@@ -314,6 +288,32 @@
             "name": "Umowy firmowe i handlowe z kwalifikowanym podpisem elektronicznym",
             "body": "Umowy o świadczenie usług, umowy partnerskie, uchwały wspólników — podpisane kwalifikowanym podpisem elektronicznym bezpośrednio z EguWallet. Moc prawna we wszystkich 27 państwach członkowskich UE. Bez drukarki, bez kuriera, bez umawiania wizyty.",
             "legal": "Law 455/2001; eIDAS 2.0 Art. 25; Law 31/1990"
+          }
+        ]
+      },
+      {
+        "icon": "🎰",
+        "image": "/assets/illustrations/usecase-gambling.jpg",
+        "title": "Hazard i samowykluczenie",
+        "description": "Kasyna online i stacjonarne, bukmacherzy sportowi i platformy gier weryfikują tożsamość gracza i sprawdzają krajowe rejestry samowykluczenia — zapobiegając problemowemu hazardowi i zapewniając zgodność z przepisami.",
+        "scenarios": [
+          {
+            "emoji": "🎰",
+            "name": "Weryfikacja tożsamości gracza (KYC)",
+            "body": "Operatorzy hazardowi weryfikują tożsamość gracza przy rejestracji — imię, datę urodzenia, narodowość — zgodnie z wymogami AML i przepisami licencyjnymi. Szybko, cyfrowo, bez kserokopii.",
+            "legal": "Directive (EU) 2015/849; OUG 77/2009"
+          },
+          {
+            "emoji": "🚫",
+            "name": "Sprawdzenie rejestru samowykluczenia",
+            "body": "Przed umożliwieniem graczowi postawienia zakładu, operator sprawdza krajowy rejestr samowykluczenia przez EguWallet. Jeśli gracz figuruje na liście, dostęp jest automatycznie blokowany — bez ręcznego wyszukiwania.",
+            "legal": "OUG 77/2009 — Art. 10; national gambling authority"
+          },
+          {
+            "emoji": "🔞",
+            "name": "Weryfikacja wieku 18+ dla gier",
+            "body": "Operatorzy gier online i stacjonarnych weryfikują, że gracz ma co najmniej 18 lat — używając poświadczenia wiekowego EguWallet. Przekazywane jest tylko TAK/NIE — operator nie przechowuje żadnych danych osobowych.",
+            "legal": "OUG 77/2009; Directive (EU) 2015/849"
           }
         ]
       }

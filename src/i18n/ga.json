@@ -260,32 +260,6 @@
         ]
       },
       {
-        "icon": "🎰",
-        "image": "/assets/illustrations/usecase-gambling.jpg",
-        "title": "Cearrbhachas agus Féineisiamh",
-        "description": "Fíoraíonn caisíní ar líne agus fisiciúla, oibreoirí geallghlacadóireachta spóirt agus ardáin chearrbhachais céannacht imreoir agus seiceálann siad clárlanna náisiúnta féineisiaimh.",
-        "scenarios": [
-          {
-            "emoji": "🎰",
-            "name": "Fíorú Céannachta Imreora (KYC)",
-            "body": "Fíoraíonn oibreoirí cearrbhachais céannacht an imreora ag clárú — ainm, dáta breithe, náisiúntacht — mar a éilíonn rialacháin AML agus ceadúnaithe cearrbhachais. Tapa, digiteach, gan fótachóipeanna.",
-            "legal": "Directive (EU) 2015/849; OUG 77/2009"
-          },
-          {
-            "emoji": "🚫",
-            "name": "Seiceáil Clárlainne Féineisiaimh",
-            "body": "Sula gceadaíonn oibreoir d'imreoir geall a dhéanamh, seiceálann an t-oibreoir an chlárlann náisiúnta féineisiaimh trí EguWallet. Más ar an liosta an t-imreoir, blocáltar an rochtain go huathoibríoch — ní gá cuardach de láimh.",
-            "legal": "OUG 77/2009 — Art. 10; údarás náisiúnta cearrbhachais"
-          },
-          {
-            "emoji": "🔞",
-            "name": "Fíorú Aoise 18+ le haghaidh Cearrbhachais",
-            "body": "Fíoraíonn oibreoirí cluichíochta ar líne agus fisiciúla go bhfuil an t-imreoir 18 bliana nó níos sine — ag baint úsáide as fianú aoise EguWallet. Ní sheoltar ach TÁ/NÍL — ní stórálann an t-oibreoir sonraí pearsanta.",
-            "legal": "OUG 77/2009; Directive (EU) 2015/849"
-          }
-        ]
-      },
-      {
         "icon": "⚖️",
         "image": "/assets/illustrations/usecase-legal.jpg",
         "title": "Dlíthiúil agus Nótaireachta — Ní gá Láithreacht Fhisiciúil a Thuilleadh",
@@ -314,6 +288,32 @@
             "name": "Conarthaí Tráchtála le QES",
             "body": "Comhaontuithe seirbhíse, conarthaí comhpháirtíochta, rúin scairshealbhóirí — sínithe le Síniú Leictreonach Cáilithe díreach ó EguWallet. Fórsa dlíthiúil i ngach ceann de 27 ballstát an AE. Gan printéir, gan teachtaire, gan coinne.",
             "legal": "Law 455/2001; eIDAS 2.0 Art. 25; Law 31/1990"
+          }
+        ]
+      },
+      {
+        "icon": "🎰",
+        "image": "/assets/illustrations/usecase-gambling.jpg",
+        "title": "Cearrbhachas agus Féineisiamh",
+        "description": "Fíoraíonn caisíní ar líne agus fisiciúla, oibreoirí geallghlacadóireachta spóirt agus ardáin chearrbhachais céannacht imreoir agus seiceálann siad clárlanna náisiúnta féineisiaimh.",
+        "scenarios": [
+          {
+            "emoji": "🎰",
+            "name": "Fíorú Céannachta Imreora (KYC)",
+            "body": "Fíoraíonn oibreoirí cearrbhachais céannacht an imreora ag clárú — ainm, dáta breithe, náisiúntacht — mar a éilíonn rialacháin AML agus ceadúnaithe cearrbhachais. Tapa, digiteach, gan fótachóipeanna.",
+            "legal": "Directive (EU) 2015/849; OUG 77/2009"
+          },
+          {
+            "emoji": "🚫",
+            "name": "Seiceáil Clárlainne Féineisiaimh",
+            "body": "Sula gceadaíonn oibreoir d'imreoir geall a dhéanamh, seiceálann an t-oibreoir an chlárlann náisiúnta féineisiaimh trí EguWallet. Más ar an liosta an t-imreoir, blocáltar an rochtain go huathoibríoch — ní gá cuardach de láimh.",
+            "legal": "OUG 77/2009 — Art. 10; údarás náisiúnta cearrbhachais"
+          },
+          {
+            "emoji": "🔞",
+            "name": "Fíorú Aoise 18+ le haghaidh Cearrbhachais",
+            "body": "Fíoraíonn oibreoirí cluichíochta ar líne agus fisiciúla go bhfuil an t-imreoir 18 bliana nó níos sine — ag baint úsáide as fianú aoise EguWallet. Ní sheoltar ach TÁ/NÍL — ní stórálann an t-oibreoir sonraí pearsanta.",
+            "legal": "OUG 77/2009; Directive (EU) 2015/849"
           }
         ]
       }

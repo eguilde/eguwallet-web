@@ -260,32 +260,6 @@
         ]
       },
       {
-        "icon": "🎰",
-        "image": "/assets/illustrations/usecase-gambling.jpg",
-        "title": "Spel och självexkludering",
-        "description": "Online och fysiska kasinon, speloperatörer och spelplattformar verifierar spelaridentitet och kontrollerar nationella självexkluderingsregister — förhindrar problemspelande och säkerställer regelefterlevnad.",
-        "scenarios": [
-          {
-            "emoji": "🎰",
-            "name": "Spelaridentitetsverifiering (KYC)",
-            "body": "Speloperatörer verifierar spelaridentitet vid registrering — namn, födelsedatum, nationalitet — som krävs av AML och spelkoncessionsregler. Snabbt, digitalt, inga kopior.",
-            "legal": "Directive (EU) 2015/849; OUG 77/2009"
-          },
-          {
-            "emoji": "🚫",
-            "name": "Kontroll av självexkluderingsregister",
-            "body": "Innan en spelare tillåts satsa kontrollerar operatören det nationella självexkluderingsregistret via EguWallet. Om spelaren finns på listan blockeras åtkomsten automatiskt — ingen manuell sökning krävs.",
-            "legal": "OUG 77/2009 — Art. 10; nationell spelarmyndighet"
-          },
-          {
-            "emoji": "🔞",
-            "name": "Åldersverifiering 18+ för spelande",
-            "body": "Online och fysiska speloperatörer verifierar att spelaren är 18 år eller äldre — med EguWallet:s åldersattestering. Bara JA/NEJ skickas — operatören lagrar inga personuppgifter.",
-            "legal": "OUG 77/2009; Directive (EU) 2015/849"
-          }
-        ]
-      },
-      {
         "icon": "⚖️",
         "image": "/assets/illustrations/usecase-legal.jpg",
         "title": "Juridik och notariat — Fysisk närvaro krävs inte längre",
@@ -314,6 +288,32 @@
             "name": "Affärskontrakt med QES",
             "body": "Serviceavtal, partnerskapskontrakt, aktieägarbeslut — signerade med en Kvalificerad Elektronisk Signatur direkt från EguWallet. Rättslig kraft i alla 27 EU:s medlemsstater. Ingen skrivare, ingen kurir, inget möte.",
             "legal": "Law 455/2001; eIDAS 2.0 Art. 25; Law 31/1990"
+          }
+        ]
+      },
+      {
+        "icon": "🎰",
+        "image": "/assets/illustrations/usecase-gambling.jpg",
+        "title": "Spel och självexkludering",
+        "description": "Online och fysiska kasinon, speloperatörer och spelplattformar verifierar spelaridentitet och kontrollerar nationella självexkluderingsregister — förhindrar problemspelande och säkerställer regelefterlevnad.",
+        "scenarios": [
+          {
+            "emoji": "🎰",
+            "name": "Spelaridentitetsverifiering (KYC)",
+            "body": "Speloperatörer verifierar spelaridentitet vid registrering — namn, födelsedatum, nationalitet — som krävs av AML och spelkoncessionsregler. Snabbt, digitalt, inga kopior.",
+            "legal": "Directive (EU) 2015/849; OUG 77/2009"
+          },
+          {
+            "emoji": "🚫",
+            "name": "Kontroll av självexkluderingsregister",
+            "body": "Innan en spelare tillåts satsa kontrollerar operatören det nationella självexkluderingsregistret via EguWallet. Om spelaren finns på listan blockeras åtkomsten automatiskt — ingen manuell sökning krävs.",
+            "legal": "OUG 77/2009 — Art. 10; nationell spelarmyndighet"
+          },
+          {
+            "emoji": "🔞",
+            "name": "Åldersverifiering 18+ för spelande",
+            "body": "Online och fysiska speloperatörer verifierar att spelaren är 18 år eller äldre — med EguWallet:s åldersattestering. Bara JA/NEJ skickas — operatören lagrar inga personuppgifter.",
+            "legal": "OUG 77/2009; Directive (EU) 2015/849"
           }
         ]
       }

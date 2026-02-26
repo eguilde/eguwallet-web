@@ -260,32 +260,6 @@
         ]
       },
       {
-        "icon": "🎰",
-        "image": "/assets/illustrations/usecase-gambling.jpg",
-        "title": "Hazardné hry a sebaobmedzenie",
-        "description": "Online aj kamenné kasíná, prevádzkovatelia športového stávkovania a herné platformy overujú totožnosť hráča a kontrolujú národné registre sebaobmedzenia — prevencia problémového hazardu a zabezpečenie regulačnej zhody.",
-        "scenarios": [
-          {
-            "emoji": "🎰",
-            "name": "Overenie totožnosti hráča (KYC)",
-            "body": "Prevádzkovatelia hazardných hier overia totožnosť hráča pri registrácii — meno, dátum narodenia, štátnu príslušnosť — podľa požiadaviek predpisov AML a licencovania hazardu. Rýchlo, digitálne, bez kópií.",
-            "legal": "Directive (EU) 2015/849; OUG 77/2009"
-          },
-          {
-            "emoji": "🚫",
-            "name": "Kontrola registra sebaobmedzenia",
-            "body": "Pred povolením hráčovi stavať prevádzkovateľ cez EguWallet skontroluje národný register sebaobmedzenia. Ak je hráč na zozname, prístup je automaticky zablokovaný — bez ručného vyhľadávania.",
-            "legal": "OUG 77/2009 — Art. 10; national gambling authority"
-          },
-          {
-            "emoji": "🔞",
-            "name": "Overenie veku 18+ pre hry",
-            "body": "Online aj kamenní herní prevádzkovatelia overia, že hráč má 18 rokov alebo viac — pomocou vekovej atestácie EguWallet. Prenesené je iba ÁNO/NIE — žiadne osobné údaje nie sú uložené prevádzkovateľom.",
-            "legal": "OUG 77/2009; Directive (EU) 2015/849"
-          }
-        ]
-      },
-      {
         "icon": "⚖️",
         "image": "/assets/illustrations/usecase-legal.jpg",
         "title": "Právne a notárske — fyzická prítomnosť už nie je potrebná",
@@ -314,6 +288,32 @@
             "name": "Firemné a komerčné zmluvy s KEP",
             "body": "Zmluvy o poskytovaní služieb, partnerské zmluvy, uznesenia akcionárov — podpísané kvalifikovaným elektronickým podpisom priamo z EguWallet. Právna sila vo všetkých 27 členských štátoch EÚ. Bez tlačiarne, bez kuriéra, bez objednania.",
             "legal": "Law 455/2001; eIDAS 2.0 Art. 25; Law 31/1990"
+          }
+        ]
+      },
+      {
+        "icon": "🎰",
+        "image": "/assets/illustrations/usecase-gambling.jpg",
+        "title": "Hazardné hry a sebaobmedzenie",
+        "description": "Online aj kamenné kasíná, prevádzkovatelia športového stávkovania a herné platformy overujú totožnosť hráča a kontrolujú národné registre sebaobmedzenia — prevencia problémového hazardu a zabezpečenie regulačnej zhody.",
+        "scenarios": [
+          {
+            "emoji": "🎰",
+            "name": "Overenie totožnosti hráča (KYC)",
+            "body": "Prevádzkovatelia hazardných hier overia totožnosť hráča pri registrácii — meno, dátum narodenia, štátnu príslušnosť — podľa požiadaviek predpisov AML a licencovania hazardu. Rýchlo, digitálne, bez kópií.",
+            "legal": "Directive (EU) 2015/849; OUG 77/2009"
+          },
+          {
+            "emoji": "🚫",
+            "name": "Kontrola registra sebaobmedzenia",
+            "body": "Pred povolením hráčovi stavať prevádzkovateľ cez EguWallet skontroluje národný register sebaobmedzenia. Ak je hráč na zozname, prístup je automaticky zablokovaný — bez ručného vyhľadávania.",
+            "legal": "OUG 77/2009 — Art. 10; national gambling authority"
+          },
+          {
+            "emoji": "🔞",
+            "name": "Overenie veku 18+ pre hry",
+            "body": "Online aj kamenní herní prevádzkovatelia overia, že hráč má 18 rokov alebo viac — pomocou vekovej atestácie EguWallet. Prenesené je iba ÁNO/NIE — žiadne osobné údaje nie sú uložené prevádzkovateľom.",
+            "legal": "OUG 77/2009; Directive (EU) 2015/849"
           }
         ]
       }

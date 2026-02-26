@@ -46,6 +46,8 @@ const canonical = Astro.props.canonical ?? `${SITE}/${lang}/`;
   <title>{title}</title>
   <meta name="description" content={description} />
   <meta name="robots" content={noindex ? 'noindex, nofollow' : 'index, follow'} />
+  <meta name="google" content="notranslate" />
+  <meta http-equiv="Content-Language" content={lang} />
   <link rel="canonical" href={canonical} />
 
   <!-- hreflang for all 24 EU languages -->

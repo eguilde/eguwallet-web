@@ -260,32 +260,6 @@
         ]
       },
       {
-        "icon": "🎰",
-        "image": "/assets/illustrations/usecase-gambling.jpg",
-        "title": "Jogo e Auto-Exclusão",
-        "description": "Casinos online e físicos, operadores de apostas desportivas e plataformas de jogos verificam a identidade do jogador e consultam registos nacionais de auto-exclusão — prevenindo o jogo problemático e garantindo a conformidade regulatória.",
-        "scenarios": [
-          {
-            "emoji": "🎰",
-            "name": "Verificação de Identidade do Jogador (KYC)",
-            "body": "Os operadores de jogo verificam a identidade do jogador no registo — nome, data de nascimento, nacionalidade — conforme exigido pela regulamentação AML e de licenciamento de jogo. Rápido, digital, sem fotocópias.",
-            "legal": "Directive (EU) 2015/849; OUG 77/2009"
-          },
-          {
-            "emoji": "🚫",
-            "name": "Verificação do Registo de Auto-Exclusão",
-            "body": "Antes de permitir que um jogador aposte, o operador consulta o registo nacional de auto-exclusão via EguWallet. Se o jogador estiver na lista, o acesso é bloqueado automaticamente — sem pesquisa manual.",
-            "legal": "OUG 77/2009 — Art. 10; national gambling authority"
-          },
-          {
-            "emoji": "🔞",
-            "name": "Verificação de Idade 18+ para Jogos",
-            "body": "Os operadores de jogos online e físicos verificam que o jogador tem 18 anos ou mais — usando o atestado de idade EguWallet. Apenas SIM/NÃO é transmitido — o operador não armazena dados pessoais.",
-            "legal": "OUG 77/2009; Directive (EU) 2015/849"
-          }
-        ]
-      },
-      {
         "icon": "⚖️",
         "image": "/assets/illustrations/usecase-legal.jpg",
         "title": "Jurídico e Notarial — A Presença Física Já Não é Necessária",
@@ -314,6 +288,32 @@
             "name": "Contratos Empresariais e Comerciais com AEQ",
             "body": "Contratos de serviços, contratos de parceria, resoluções de acionistas — assinados com Assinatura Eletrónica Qualificada diretamente do EguWallet. Força legal em todos os 27 Estados-Membros da UE. Sem impressora, sem estafeta, sem marcação.",
             "legal": "Law 455/2001; eIDAS 2.0 Art. 25; Law 31/1990"
+          }
+        ]
+      },
+      {
+        "icon": "🎰",
+        "image": "/assets/illustrations/usecase-gambling.jpg",
+        "title": "Jogo e Auto-Exclusão",
+        "description": "Casinos online e físicos, operadores de apostas desportivas e plataformas de jogos verificam a identidade do jogador e consultam registos nacionais de auto-exclusão — prevenindo o jogo problemático e garantindo a conformidade regulatória.",
+        "scenarios": [
+          {
+            "emoji": "🎰",
+            "name": "Verificação de Identidade do Jogador (KYC)",
+            "body": "Os operadores de jogo verificam a identidade do jogador no registo — nome, data de nascimento, nacionalidade — conforme exigido pela regulamentação AML e de licenciamento de jogo. Rápido, digital, sem fotocópias.",
+            "legal": "Directive (EU) 2015/849; OUG 77/2009"
+          },
+          {
+            "emoji": "🚫",
+            "name": "Verificação do Registo de Auto-Exclusão",
+            "body": "Antes de permitir que um jogador aposte, o operador consulta o registo nacional de auto-exclusão via EguWallet. Se o jogador estiver na lista, o acesso é bloqueado automaticamente — sem pesquisa manual.",
+            "legal": "OUG 77/2009 — Art. 10; national gambling authority"
+          },
+          {
+            "emoji": "🔞",
+            "name": "Verificação de Idade 18+ para Jogos",
+            "body": "Os operadores de jogos online e físicos verificam que o jogador tem 18 anos ou mais — usando o atestado de idade EguWallet. Apenas SIM/NÃO é transmitido — o operador não armazena dados pessoais.",
+            "legal": "OUG 77/2009; Directive (EU) 2015/849"
           }
         ]
       }

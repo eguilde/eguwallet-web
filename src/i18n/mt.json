@@ -260,32 +260,6 @@
         ]
       },
       {
-        "icon": "🎰",
-        "image": "/assets/illustrations/usecase-gambling.jpg",
-        "title": "Logħob u Esklużjoni Awtoimposta",
-        "description": "Il-każinos onlajn u fiżiċi, l-operaturi tas-sports betting u l-pjattaformi tal-logħob jivverifikaw l-identità tal-loġġatur u jiċċekkjaw ir-reġistri nazzjonali tal-esklużjoni awtoimposta.",
-        "scenarios": [
-          {
-            "emoji": "🎰",
-            "name": "Verifika tal-Identità tal-Loġġatur (KYC)",
-            "body": "L-operaturi tal-logħob jivverifikaw l-identità tal-loġġatur fir-reġistrazzjoni — isem, data tat-twelid, nazzjonalità — kif meħtieġ mir-regolamenti AML u l-liċenzjar tal-logħob. Mgħaġġla, digitali, l-ebda fotokolja.",
-            "legal": "Directive (UE) 2015/849; OUG 77/2009"
-          },
-          {
-            "emoji": "🚫",
-            "name": "Kontroll tar-Reġistru tal-Esklużjoni Awtoimposta",
-            "body": "Qabel ma jħalli loġġatur jillogħob, l-operatur jiċċekkja r-reġistru nazzjonali tal-esklużjoni awtoimposta permezz ta' EguWallet. Jekk il-loġġatur jinsab fuq il-lista, l-aċċess jiġi mblukkat awtomatikament — l-ebda tfittxija manwali meħtieġa.",
-            "legal": "OUG 77/2009 — Art. 10; awtorità nazzjonali tal-logħob"
-          },
-          {
-            "emoji": "🔞",
-            "name": "Verifika tal-Età 18+ għal-Logħob",
-            "body": "L-operaturi tal-logħob onlajn u fiżiċi jivverifikaw li l-loġġatur għandu 18-il sena jew akbar — bl-użu tal-attestazzjoni tal-età EguWallet. Jintbagħat biss IVA/LE — l-ebda data personali maħżuna mill-operatur.",
-            "legal": "OUG 77/2009; Directive (UE) 2015/849"
-          }
-        ]
-      },
-      {
         "icon": "⚖️",
         "image": "/assets/illustrations/usecase-legal.jpg",
         "title": "Legali u Notarili — Il-Preżenza Fiżika M'għadhiex Meħtieġa",
@@ -314,6 +288,32 @@
             "name": "Kuntratti Kummerċjali b'QES",
             "body": "Ftehimiet ta' servizzi, kuntratti ta' sħubija, riżoluzzjonijiet tal-azzjonisti — iffirmati b'Firma Elettronika Kwalifikata direttament minn EguWallet. Forza legali fl-istati membri kollha 27 tal-UE. L-ebda printer, l-ebda kurrier, l-ebda appuntament.",
             "legal": "Law 455/2001; eIDAS 2.0 Art. 25; Law 31/1990"
+          }
+        ]
+      },
+      {
+        "icon": "🎰",
+        "image": "/assets/illustrations/usecase-gambling.jpg",
+        "title": "Logħob u Esklużjoni Awtoimposta",
+        "description": "Il-każinos onlajn u fiżiċi, l-operaturi tas-sports betting u l-pjattaformi tal-logħob jivverifikaw l-identità tal-loġġatur u jiċċekkjaw ir-reġistri nazzjonali tal-esklużjoni awtoimposta.",
+        "scenarios": [
+          {
+            "emoji": "🎰",
+            "name": "Verifika tal-Identità tal-Loġġatur (KYC)",
+            "body": "L-operaturi tal-logħob jivverifikaw l-identità tal-loġġatur fir-reġistrazzjoni — isem, data tat-twelid, nazzjonalità — kif meħtieġ mir-regolamenti AML u l-liċenzjar tal-logħob. Mgħaġġla, digitali, l-ebda fotokolja.",
+            "legal": "Directive (UE) 2015/849; OUG 77/2009"
+          },
+          {
+            "emoji": "🚫",
+            "name": "Kontroll tar-Reġistru tal-Esklużjoni Awtoimposta",
+            "body": "Qabel ma jħalli loġġatur jillogħob, l-operatur jiċċekkja r-reġistru nazzjonali tal-esklużjoni awtoimposta permezz ta' EguWallet. Jekk il-loġġatur jinsab fuq il-lista, l-aċċess jiġi mblukkat awtomatikament — l-ebda tfittxija manwali meħtieġa.",
+            "legal": "OUG 77/2009 — Art. 10; awtorità nazzjonali tal-logħob"
+          },
+          {
+            "emoji": "🔞",
+            "name": "Verifika tal-Età 18+ għal-Logħob",
+            "body": "L-operaturi tal-logħob onlajn u fiżiċi jivverifikaw li l-loġġatur għandu 18-il sena jew akbar — bl-użu tal-attestazzjoni tal-età EguWallet. Jintbagħat biss IVA/LE — l-ebda data personali maħżuna mill-operatur.",
+            "legal": "OUG 77/2009; Directive (UE) 2015/849"
           }
         ]
       }

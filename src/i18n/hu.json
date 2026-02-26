@@ -260,32 +260,6 @@
         ]
       },
       {
-        "icon": "🎰",
-        "image": "/assets/illustrations/usecase-gambling.jpg",
-        "title": "Szerencsejáték és önkizárás",
-        "description": "Online és fizikai kaszinók, sportfogadási operátorok és játékplatformok ellenőrzik a játékos személyazonosságát és ellenőrzik a nemzeti önkizárási nyilvántartásokat — megelőzve a problémás szerencsejátékot és biztosítva a szabályozási megfelelőséget.",
-        "scenarios": [
-          {
-            "emoji": "🎰",
-            "name": "Játékos személyazonosság-ellenőrzés (KYC)",
-            "body": "A szerencsejáték-operátorok regisztrációkor ellenőrzik a játékos személyazonosságát — nevét, születési dátumát, állampolgárságát — az AML és szerencsejáték-engedélyezési előírások szerint. Gyors, digitális, fénymásolat nélkül.",
-            "legal": "Directive (EU) 2015/849; OUG 77/2009"
-          },
-          {
-            "emoji": "🚫",
-            "name": "Önkizárási nyilvántartás ellenőrzése",
-            "body": "Mielőtt engedélyezné a játékosnak a fogadást, az operátor az EguWallet-en keresztül ellenőrzi a nemzeti önkizárási nyilvántartást. Ha a játékos szerepel a listán, a hozzáférés automatikusan blokkolva van — manuális keresés nélkül.",
-            "legal": "OUG 77/2009 — Art. 10; national gambling authority"
-          },
-          {
-            "emoji": "🔞",
-            "name": "18+ korhatár-ellenőrzés játékhoz",
-            "body": "Az online és fizikai játékoperátorok ellenőrzik, hogy a játékos 18 éves vagy idősebb-e — az EguWallet korhigazolást használva. Csak IGEN/NEM kerül továbbításra — az operátor nem tárol személyes adatokat.",
-            "legal": "OUG 77/2009; Directive (EU) 2015/849"
-          }
-        ]
-      },
-      {
         "icon": "⚖️",
         "image": "/assets/illustrations/usecase-legal.jpg",
         "title": "Jogi és közjegyzői — a fizikai jelenlét már nem szükséges",
@@ -314,6 +288,32 @@
             "name": "Vállalati és kereskedelmi szerződések MEA-val",
             "body": "Szolgáltatási szerződések, partnerségi szerződések, részvényesi határozatok — közvetlenül az EguWallet-ből Minősített Elektronikus Aláírással aláírva. Jogi erő mind a 27 EU-tagállamban. Sem nyomtató, sem futár, sem időpontfoglalás.",
             "legal": "Law 455/2001; eIDAS 2.0 Art. 25; Law 31/1990"
+          }
+        ]
+      },
+      {
+        "icon": "🎰",
+        "image": "/assets/illustrations/usecase-gambling.jpg",
+        "title": "Szerencsejáték és önkizárás",
+        "description": "Online és fizikai kaszinók, sportfogadási operátorok és játékplatformok ellenőrzik a játékos személyazonosságát és ellenőrzik a nemzeti önkizárási nyilvántartásokat — megelőzve a problémás szerencsejátékot és biztosítva a szabályozási megfelelőséget.",
+        "scenarios": [
+          {
+            "emoji": "🎰",
+            "name": "Játékos személyazonosság-ellenőrzés (KYC)",
+            "body": "A szerencsejáték-operátorok regisztrációkor ellenőrzik a játékos személyazonosságát — nevét, születési dátumát, állampolgárságát — az AML és szerencsejáték-engedélyezési előírások szerint. Gyors, digitális, fénymásolat nélkül.",
+            "legal": "Directive (EU) 2015/849; OUG 77/2009"
+          },
+          {
+            "emoji": "🚫",
+            "name": "Önkizárási nyilvántartás ellenőrzése",
+            "body": "Mielőtt engedélyezné a játékosnak a fogadást, az operátor az EguWallet-en keresztül ellenőrzi a nemzeti önkizárási nyilvántartást. Ha a játékos szerepel a listán, a hozzáférés automatikusan blokkolva van — manuális keresés nélkül.",
+            "legal": "OUG 77/2009 — Art. 10; national gambling authority"
+          },
+          {
+            "emoji": "🔞",
+            "name": "18+ korhatár-ellenőrzés játékhoz",
+            "body": "Az online és fizikai játékoperátorok ellenőrzik, hogy a játékos 18 éves vagy idősebb-e — az EguWallet korhigazolást használva. Csak IGEN/NEM kerül továbbításra — az operátor nem tárol személyes adatokat.",
+            "legal": "OUG 77/2009; Directive (EU) 2015/849"
           }
         ]
       }

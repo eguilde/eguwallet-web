@@ -260,32 +260,6 @@
         ]
       },
       {
-        "icon": "🎰",
-        "image": "/assets/illustrations/usecase-gambling.jpg",
-        "title": "Gambling & Self-Exclusion",
-        "description": "Online and physical casinos, sports betting operators and gaming platforms verify player identity and check national self-exclusion registers — preventing problem gambling and ensuring regulatory compliance.",
-        "scenarios": [
-          {
-            "emoji": "🎰",
-            "name": "Player Identity Verification (KYC)",
-            "body": "Gambling operators verify player identity at registration — name, date of birth, nationality — as required by AML and gambling licensing regulations. Fast, digital, no photocopies.",
-            "legal": "Directive (EU) 2015/849; OUG 77/2009"
-          },
-          {
-            "emoji": "🚫",
-            "name": "Self-Exclusion Register Check",
-            "body": "Before allowing a player to bet, the operator checks the national self-exclusion register via EguWallet. If the player is on the list, access is blocked automatically — no manual lookup required.",
-            "legal": "OUG 77/2009 — Art. 10; national gambling authority"
-          },
-          {
-            "emoji": "🔞",
-            "name": "Age 18+ Verification for Gaming",
-            "body": "Online and physical gaming operators verify that the player is 18 or older — using the EguWallet age attestation. Only YES/NO is transmitted — no personal data stored by the operator.",
-            "legal": "OUG 77/2009; Directive (EU) 2015/849"
-          }
-        ]
-      },
-      {
         "icon": "⚖️",
         "image": "/assets/illustrations/usecase-legal.jpg",
         "title": "Legal & Notarial — Physical Presence No Longer Required",
@@ -314,6 +288,32 @@
             "name": "Company & Commercial Contracts with QES",
             "body": "Service agreements, partnership contracts, shareholder resolutions — signed with a Qualified Electronic Signature directly from EguWallet. Legal force in all 27 EU member states. No printer, no courier, no appointment.",
             "legal": "Law 455/2001; eIDAS 2.0 Art. 25; Law 31/1990"
+          }
+        ]
+      },
+      {
+        "icon": "🎰",
+        "image": "/assets/illustrations/usecase-gambling.jpg",
+        "title": "Gambling & Self-Exclusion",
+        "description": "Online and physical casinos, sports betting operators and gaming platforms verify player identity and check national self-exclusion registers — preventing problem gambling and ensuring regulatory compliance.",
+        "scenarios": [
+          {
+            "emoji": "🎰",
+            "name": "Player Identity Verification (KYC)",
+            "body": "Gambling operators verify player identity at registration — name, date of birth, nationality — as required by AML and gambling licensing regulations. Fast, digital, no photocopies.",
+            "legal": "Directive (EU) 2015/849; OUG 77/2009"
+          },
+          {
+            "emoji": "🚫",
+            "name": "Self-Exclusion Register Check",
+            "body": "Before allowing a player to bet, the operator checks the national self-exclusion register via EguWallet. If the player is on the list, access is blocked automatically — no manual lookup required.",
+            "legal": "OUG 77/2009 — Art. 10; national gambling authority"
+          },
+          {
+            "emoji": "🔞",
+            "name": "Age 18+ Verification for Gaming",
+            "body": "Online and physical gaming operators verify that the player is 18 or older — using the EguWallet age attestation. Only YES/NO is transmitted — no personal data stored by the operator.",
+            "legal": "OUG 77/2009; Directive (EU) 2015/849"
           }
         ]
       }

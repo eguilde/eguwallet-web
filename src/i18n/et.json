@@ -260,32 +260,6 @@
         ]
       },
       {
-        "icon": "🎰",
-        "image": "/assets/illustrations/usecase-gambling.jpg",
-        "title": "Hasartmängud ja enesevälistamine",
-        "description": "Veebis ja füüsilised kasiinod, spordikihluste korraldajad ja mänguplatvormid kontrollivad mängija identiteeti ning riiklikke enesevälistamise registreid — ennetades hasartmängusõltuvust ja tagades õigusnõuetele vastavuse.",
-        "scenarios": [
-          {
-            "emoji": "🎰",
-            "name": "Mängija identiteedi kontrollimine (KYC)",
-            "body": "Hasartmänguoperaatorid kontrollivad mängija identiteeti registreerimisel — nime, sünnikuupäeva, kodakondsust — vastavalt AML-i ja hasartmängulitsentsimise eeskirjadele. Kiire, digitaalne, ei paljundusi.",
-            "legal": "Directive (EL) 2015/849; OUG 77/2009"
-          },
-          {
-            "emoji": "🚫",
-            "name": "Enesevälistamise registri kontroll",
-            "body": "Enne mängijale panustamise lubamist kontrollib operaator EguWallet'i kaudu riiklikku enesevälistamise registrit. Kui mängija on nimekirjas, blokeeritakse juurdepääs automaatselt — käsitsi otsimist pole vaja.",
-            "legal": "OUG 77/2009 — Art. 10; riiklik hasartmänguamet"
-          },
-          {
-            "emoji": "🔞",
-            "name": "18+ vanuse kontrollimine mängimiseks",
-            "body": "Veebis ja füüsilised mänguoperaatorid kontrollivad, et mängija on 18-aastane või vanem — kasutades EguWallet'i vanuse tõendamist. Edastatakse ainult JAH/EI — operaator ei salvesta isikuandmeid.",
-            "legal": "OUG 77/2009; Directive (EL) 2015/849"
-          }
-        ]
-      },
-      {
         "icon": "⚖️",
         "image": "/assets/illustrations/usecase-legal.jpg",
         "title": "Õiguslik ja notariaalne — füüsilist kohalolekut enam ei nõuta",
@@ -314,6 +288,32 @@
             "name": "Ärilepingud QES-iga",
             "body": "Teenuslepingud, partnerluse lepingud, aktsionäride resolutsioonid — allkirjastatud kvalifitseeritud elektroonilise allkirjaga otse EguWallet'ist. Õigusjõud kõigis 27 EL-i liikmesriigis. Ei printerit, ei kullerit, ei kohtumist.",
             "legal": "Law 455/2001; eIDAS 2.0 Art. 25; Law 31/1990"
+          }
+        ]
+      },
+      {
+        "icon": "🎰",
+        "image": "/assets/illustrations/usecase-gambling.jpg",
+        "title": "Hasartmängud ja enesevälistamine",
+        "description": "Veebis ja füüsilised kasiinod, spordikihluste korraldajad ja mänguplatvormid kontrollivad mängija identiteeti ning riiklikke enesevälistamise registreid — ennetades hasartmängusõltuvust ja tagades õigusnõuetele vastavuse.",
+        "scenarios": [
+          {
+            "emoji": "🎰",
+            "name": "Mängija identiteedi kontrollimine (KYC)",
+            "body": "Hasartmänguoperaatorid kontrollivad mängija identiteeti registreerimisel — nime, sünnikuupäeva, kodakondsust — vastavalt AML-i ja hasartmängulitsentsimise eeskirjadele. Kiire, digitaalne, ei paljundusi.",
+            "legal": "Directive (EL) 2015/849; OUG 77/2009"
+          },
+          {
+            "emoji": "🚫",
+            "name": "Enesevälistamise registri kontroll",
+            "body": "Enne mängijale panustamise lubamist kontrollib operaator EguWallet'i kaudu riiklikku enesevälistamise registrit. Kui mängija on nimekirjas, blokeeritakse juurdepääs automaatselt — käsitsi otsimist pole vaja.",
+            "legal": "OUG 77/2009 — Art. 10; riiklik hasartmänguamet"
+          },
+          {
+            "emoji": "🔞",
+            "name": "18+ vanuse kontrollimine mängimiseks",
+            "body": "Veebis ja füüsilised mänguoperaatorid kontrollivad, et mängija on 18-aastane või vanem — kasutades EguWallet'i vanuse tõendamist. Edastatakse ainult JAH/EI — operaator ei salvesta isikuandmeid.",
+            "legal": "OUG 77/2009; Directive (EL) 2015/849"
           }
         ]
       }
