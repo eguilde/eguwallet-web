@@ -531,5 +531,14 @@
     "errorFields": "Molimo ispunite sva obavezna polja.",
     "errorFail": "Poruka nije mogla biti poslana. Pišite nam izravno na contact@eguwallet.eu",
     "submitBtn": "Pošalji poruku"
+  },
+  "a11y": {
+    "listen": "Slušaj",
+    "readAloud": "Čitaj stranicu naglas",
+    "stopReading": "Zaustavi čitanje",
+    "textSize": "Veličina teksta",
+    "contrast": "Kontrast",
+    "highContrastOff": "Visoki kontrast: isključen",
+    "highContrastOn": "Visoki kontrast: uključen"
   }
 }

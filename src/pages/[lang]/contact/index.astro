@@ -303,10 +303,7 @@ form?.addEventListener('submit', async (e) => {
       throw new Error(data.message || 'error');
     }
   } catch {
-    // Fallback: open mailto so the user is never stuck
-    const body = `Name: ${name}\nEmail: ${email}\nSubject: ${subject}\n\n${message}`;
-    window.open(`mailto:contact@eguwallet.eu?subject=${encodeURIComponent('[EguWallet] ' + subject)}&body=${encodeURIComponent(body)}`);
-    showStatus('warn', msg.errorFail);
+    showStatus('error', msg.errorFail);
   } finally {
     if (btn) { btn.disabled = false; btn.textContent = msg.submitDefault; }
   }

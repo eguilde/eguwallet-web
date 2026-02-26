@@ -531,5 +531,14 @@
     "errorFields": "Prosze wypelnic wszystkie wymagane pola.",
     "errorFail": "Nie mozna wyslac wiadomosci. Napisz do nas bezposrednio na contact@eguwallet.eu",
     "submitBtn": "Wyslij wiadomosc"
+  },
+  "a11y": {
+    "listen": "Słuchaj",
+    "readAloud": "Czytaj stronę na głos",
+    "stopReading": "Zatrzymaj czytanie",
+    "textSize": "Rozmiar tekstu",
+    "contrast": "Kontrast",
+    "highContrastOff": "Wysoki kontrast: wyłączony",
+    "highContrastOn": "Wysoki kontrast: włączony"
   }
 }

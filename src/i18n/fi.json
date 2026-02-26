@@ -531,5 +531,14 @@
     "errorFields": "Täytä kaikki pakolliset kentät.",
     "errorFail": "Viestiä ei voitu lähettää. Kirjoita meille suoraan osoitteeseen contact@eguwallet.eu",
     "submitBtn": "Lähetä viesti"
+  },
+  "a11y": {
+    "listen": "Kuuntele",
+    "readAloud": "Lue sivu ääneen",
+    "stopReading": "Lopeta lukeminen",
+    "textSize": "Tekstin koko",
+    "contrast": "Kontrasti",
+    "highContrastOff": "Korkea kontrasti: pois",
+    "highContrastOn": "Korkea kontrasti: päällä"
   }
 }

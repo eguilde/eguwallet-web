@@ -531,5 +531,14 @@
     "errorFields": "Vänligen fyll i alla obligatoriska fält.",
     "errorFail": "Det gick inte att skicka meddelandet. Skriv till oss direkt på contact@eguwallet.eu",
     "submitBtn": "Skicka meddelande"
+  },
+  "a11y": {
+    "listen": "Lyssna",
+    "readAloud": "Läs sidan högt",
+    "stopReading": "Sluta läsa",
+    "textSize": "Textstorlek",
+    "contrast": "Kontrast",
+    "highContrastOff": "Hög kontrast: av",
+    "highContrastOn": "Hög kontrast: på"
   }
 }

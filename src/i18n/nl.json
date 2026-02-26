@@ -531,5 +531,14 @@
     "errorFields": "Vul alle verplichte velden in.",
     "errorFail": "Bericht kon niet worden verzonden. Schrijf ons direct op contact@eguwallet.eu",
     "submitBtn": "Bericht verzenden"
+  },
+  "a11y": {
+    "listen": "Luisteren",
+    "readAloud": "Pagina hardop lezen",
+    "stopReading": "Stoppen met lezen",
+    "textSize": "Tekstgrootte",
+    "contrast": "Contrast",
+    "highContrastOff": "Hoog contrast: uit",
+    "highContrastOn": "Hoog contrast: aan"
   }
 }

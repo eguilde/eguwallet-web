@@ -531,5 +531,14 @@
     "errorFields": "Kérjük, töltse ki az összes kötelező mezőt.",
     "errorFail": "Az üzenetet nem sikerült elküldeni. Írjon nekünk közvetlenül a contact@eguwallet.eu",
     "submitBtn": "Üzenet küldése"
+  },
+  "a11y": {
+    "listen": "Hallgasd",
+    "readAloud": "Oldal felolvasása",
+    "stopReading": "Felolvasás leállítása",
+    "textSize": "Szövegméret",
+    "contrast": "Kontraszt",
+    "highContrastOff": "Nagy kontraszt: kikapcsolva",
+    "highContrastOn": "Nagy kontraszt: bekapcsolva"
   }
 }

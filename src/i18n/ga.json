@@ -531,5 +531,14 @@
     "errorFields": "Líon isteach na réimsí riachtanacha go léir le do thoil.",
     "errorFail": "Níorbh fhéidir an teachtaireacht a sheoladh. Scríobh chugainn go díreach ag contact@eguwallet.eu",
     "submitBtn": "Seol teachtaireacht"
+  },
+  "a11y": {
+    "listen": "Éist",
+    "readAloud": "Léigh an leathanach os ard",
+    "stopReading": "Stop ag léamh",
+    "textSize": "Méid téacs",
+    "contrast": "Codarsnacht",
+    "highContrastOff": "Codarsnacht ard: as",
+    "highContrastOn": "Codarsnacht ard: air"
   }
 }

@@ -547,5 +547,14 @@
     "errorFields": "Completează toate câmpurile obligatorii.",
     "errorFail": "Nu s-a putut trimite mesajul. Scrie-ne direct la contact@eguwallet.eu",
     "submitBtn": "Trimite mesajul"
+  },
+  "a11y": {
+    "listen": "Ascultă",
+    "readAloud": "Citește pagina cu voce tare",
+    "stopReading": "Oprește citirea",
+    "textSize": "Mărime text",
+    "contrast": "Contrast",
+    "highContrastOff": "Contrast ridicat: dezactivat",
+    "highContrastOn": "Contrast ridicat: activat"
   }
 }

@@ -547,5 +547,14 @@
     "errorFields": "Please fill in all required fields.",
     "errorFail": "Could not send message. Please email us directly at contact@eguwallet.eu",
     "submitBtn": "Send message"
+  },
+  "a11y": {
+    "listen": "Listen",
+    "readAloud": "Read page aloud",
+    "stopReading": "Stop reading",
+    "textSize": "Text size",
+    "contrast": "Contrast",
+    "highContrastOff": "High contrast: off",
+    "highContrastOn": "High contrast: on"
   }
 }

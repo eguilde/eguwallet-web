@@ -531,5 +531,14 @@
     "errorFields": "Lūdzu aizpildiet visus obligātos laukus.",
     "errorFail": "Neizdevās nosūtīt ziņojumu. Rakstiet mums tieši uz contact@eguwallet.eu",
     "submitBtn": "Nosūtīt ziņojumu"
+  },
+  "a11y": {
+    "listen": "Klausies",
+    "readAloud": "Lasīt lapu skaļi",
+    "stopReading": "Apturēt lasīšanu",
+    "textSize": "Teksta izmērs",
+    "contrast": "Kontrasts",
+    "highContrastOff": "Augsts kontrasts: izslēgts",
+    "highContrastOn": "Augsts kontrasts: ieslēgts"
   }
 }

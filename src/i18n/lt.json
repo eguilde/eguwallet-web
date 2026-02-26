@@ -531,5 +531,14 @@
     "errorFields": "Prašome užpildyti visus privalomus laukus.",
     "errorFail": "Nepavyko išsiųsti žinutės. Rašykite mums tiesiogiai adresu contact@eguwallet.eu",
     "submitBtn": "Siųsti žinutę"
+  },
+  "a11y": {
+    "listen": "Klausyk",
+    "readAloud": "Skaityti puslapį garsiai",
+    "stopReading": "Sustabdyti skaitymą",
+    "textSize": "Teksto dydis",
+    "contrast": "Kontrastas",
+    "highContrastOff": "Didelis kontrastas: išjungtas",
+    "highContrastOn": "Didelis kontrastas: įjungtas"
   }
 }

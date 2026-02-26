@@ -531,5 +531,14 @@
     "errorFields": "Palun täitke kõik kohustuslikud väljad.",
     "errorFail": "Sõnumit ei õnnestunud saata. Kirjutage meile otse aadressil contact@eguwallet.eu",
     "submitBtn": "Saada sõnum"
+  },
+  "a11y": {
+    "listen": "Kuula",
+    "readAloud": "Loe leht ette",
+    "stopReading": "Peata lugemine",
+    "textSize": "Teksti suurus",
+    "contrast": "Kontrastsus",
+    "highContrastOff": "Kõrge kontrastsus: väljas",
+    "highContrastOn": "Kõrge kontrastsus: sees"
   }
 }

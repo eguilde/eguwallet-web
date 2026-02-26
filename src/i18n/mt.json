@@ -531,5 +531,14 @@
     "errorFields": "Jekk joghgbok imla l-oqsma kollha mehtiega.",
     "errorFail": "Ma setax jintbaghat il-messagg. Iktbilna direttament fuq contact@eguwallet.eu",
     "submitBtn": "Ibghat messagg"
+  },
+  "a11y": {
+    "listen": "Isma",
+    "readAloud": "Aqra l-paġna b'leħen",
+    "stopReading": "Ieqaf taqra",
+    "textSize": "Daqs tat-test",
+    "contrast": "Kuntrast",
+    "highContrastOff": "Kuntrast għoli: mitfi",
+    "highContrastOn": "Kuntrast għoli: mixgħul"
   }
 }

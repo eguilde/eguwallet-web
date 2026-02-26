@@ -63,15 +63,18 @@ const links = [
         >
           <!-- TTS -->
           <div>
-            <p class="text-xs font-semibold mb-1.5 uppercase tracking-wider" style="color:rgba(255,255,255,0.50);">Listen</p>
-            <button id="a11y-tts" aria-pressed="false" class="w-full flex items-center gap-2 px-3 py-2 rounded-xl text-sm font-medium transition-colors" style="background:rgba(255,255,255,0.08); color:#f0e8e8;">
+            <p class="text-xs font-semibold mb-1.5 uppercase tracking-wider" style="color:rgba(255,255,255,0.50);">{t.a11y.listen}</p>
+            <button id="a11y-tts" aria-pressed="false" class="w-full flex items-center gap-2 px-3 py-2 rounded-xl text-sm font-medium transition-colors" style="background:rgba(255,255,255,0.08); color:#f0e8e8;"
+              data-label-read={t.a11y.readAloud}
+              data-label-stop={t.a11y.stopReading}
+            >
               <span id="a11y-tts-icon" aria-hidden="true">🔊</span>
-              <span id="a11y-tts-label">Read page aloud</span>
+              <span id="a11y-tts-label">{t.a11y.readAloud}</span>
             </button>
           </div>
           <!-- Font size -->
           <div>
-            <p class="text-xs font-semibold mb-1.5 uppercase tracking-wider" style="color:rgba(255,255,255,0.50);">Text size</p>
+            <p class="text-xs font-semibold mb-1.5 uppercase tracking-wider" style="color:rgba(255,255,255,0.50);">{t.a11y.textSize}</p>
             <div class="flex gap-1.5">
               {[0,1,2].map((i) => (
                 <button
@@ -85,10 +88,13 @@ const links = [
           </div>
           <!-- Contrast -->
           <div>
-            <p class="text-xs font-semibold mb-1.5 uppercase tracking-wider" style="color:rgba(255,255,255,0.50);">Contrast</p>
-            <button id="a11y-contrast" aria-pressed="false" class="w-full flex items-center gap-2 px-3 py-2 rounded-xl text-sm font-medium transition-colors" style="background:rgba(255,255,255,0.08); color:#f0e8e8;">
+            <p class="text-xs font-semibold mb-1.5 uppercase tracking-wider" style="color:rgba(255,255,255,0.50);">{t.a11y.contrast}</p>
+            <button id="a11y-contrast" aria-pressed="false" class="w-full flex items-center gap-2 px-3 py-2 rounded-xl text-sm font-medium transition-colors" style="background:rgba(255,255,255,0.08); color:#f0e8e8;"
+              data-label-off={t.a11y.highContrastOff}
+              data-label-on={t.a11y.highContrastOn}
+            >
               <span aria-hidden="true">◑</span>
-              <span id="a11y-contrast-label">High contrast: off</span>
+              <span id="a11y-contrast-label">{t.a11y.highContrastOff}</span>
             </button>
           </div>
         </div>
@@ -168,8 +174,13 @@ const links = [
     }
   });
 
+  const labelRead = ttsBtn?.dataset.labelRead || 'Read page aloud';
+  const labelStop = ttsBtn?.dataset.labelStop || 'Stop reading';
+  const labelContrastOff = contrastBtn?.dataset.labelOff || 'High contrast: off';
+  const labelContrastOn  = contrastBtn?.dataset.labelOn  || 'High contrast: on';
+
   ttsBtn?.addEventListener('click', () => {
-    if (!('speechSynthesis' in window)) { alert('Your browser does not support text-to-speech.'); return; }
+    if (!('speechSynthesis' in window)) { alert('Text-to-speech not supported in this browser.'); return; }
     if (window.speechSynthesis.speaking) { window.speechSynthesis.cancel(); setTtsState(false); return; }
     const main = document.getElementById('main-content');
     const text = Array.from(main?.querySelectorAll('h1,h2,h3,h4,p,li') ?? [])
@@ -186,7 +197,7 @@ const links = [
   function setTtsState(speaking: boolean) {
     ttsBtn?.setAttribute('aria-pressed', String(speaking));
     if (ttsIcon) ttsIcon.textContent = speaking ? '⏹' : '🔊';
-    if (ttsLabel) ttsLabel.textContent = speaking ? 'Stop reading' : 'Read page aloud';
+    if (ttsLabel) ttsLabel.textContent = speaking ? labelStop : labelRead;
     if (ttsBtn) ttsBtn.style.background = speaking ? 'rgba(160,30,40,0.40)' : 'rgba(255,255,255,0.08)';
   }
 
@@ -214,7 +225,7 @@ const links = [
   function applyContrast(value: string) {
     html.setAttribute('data-a11y-contrast', value);
     contrastBtn?.setAttribute('aria-pressed', String(value === 'on'));
-    if (contrastLabel) contrastLabel.textContent = `High contrast: ${value}`;
+    if (contrastLabel) contrastLabel.textContent = value === 'on' ? labelContrastOn : labelContrastOff;
     if (contrastBtn) contrastBtn.style.background = value === 'on' ? 'rgba(160,30,40,0.45)' : 'rgba(255,255,255,0.08)';
   }
 </script>

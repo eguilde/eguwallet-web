@@ -531,5 +531,14 @@
     "errorFields": "Vyplňte prosím všechna povinná pole.",
     "errorFail": "Zprávu se nepodařilo odeslat. Napište nám přímo na contact@eguwallet.eu",
     "submitBtn": "Odeslat zprávu"
+  },
+  "a11y": {
+    "listen": "Poslouchej",
+    "readAloud": "Číst stránku nahlas",
+    "stopReading": "Zastavit čtení",
+    "textSize": "Velikost textu",
+    "contrast": "Kontrast",
+    "highContrastOff": "Vysoký kontrast: vypnuto",
+    "highContrastOn": "Vysoký kontrast: zapnuto"
   }
 }
