@@ -127,11 +127,13 @@
       },
       {
         "icon": "⚖️",
-        "title": "Legal & Notarial Services",
-        "description": "Notaries, lawyers and courts identify parties to legal acts with certified digital credentials — fully compliant with Romanian notarial law.",
+        "title": "Legal & Notarial — Physical Presence No Longer Required",
+        "description": "Under Regulation (EU) 2024/1183, the EUDI Wallet provides legally binding identification equivalent to physical presence for a wide range of legal acts. Many notarial procedures that previously required citizens to physically appear can now be completed remotely — a major leap forward for digital public services.",
         "scenarios": [
-          { "emoji": "📝", "name": "Notarial Identification", "body": "Notary identifies all parties to a sale-purchase deed, power of attorney or inheritance document — name, CNP, date and place of birth, address — from the wallet.", "legal": "Law 36/1995 — Art. 40" },
-          { "emoji": "🤝", "name": "Employment & Service Contracts", "body": "Digital contract signing with QES — full legal force across all EU member states. Combined with legal representative verification for company contracts.", "legal": "Law 455/2001; eIDAS 2.0 Art. 25" }
+          { "emoji": "📝", "name": "Remote Notarial Identification", "body": "For acts that previously required physical appearance — power of attorney, declarations, property transfers — the notary can now identify the party via the EUDI wallet remotely. The wallet's verified PID replaces in-person document inspection.", "legal": "Law 36/1995 — Art. 40; Reg. (EU) 2024/1183 — Art. 5a" },
+          { "emoji": "🏠", "name": "Real Estate Transactions Without Queuing", "body": "Buying or selling property no longer requires travelling to a notary's office just for identification. Both parties identify digitally, the representative's mandate is verified, and the contract is signed with a QES — all remotely.", "legal": "Civil Code Art. 1244; eIDAS 2.0 Art. 25" },
+          { "emoji": "✅", "name": "Declarations & Powers of Attorney", "body": "Statutory declarations, mandates, affidavits — these acts no longer require a physical notary appointment for the identification step. The citizen presents their EguWallet PID; identification is legally equivalent to in-person verification.", "legal": "Reg. (EU) 2024/1183 — eIDAS 2.0; Law 455/2001" },
+          { "emoji": "🤝", "name": "Company & Commercial Contracts with QES", "body": "Service agreements, partnership contracts, shareholder resolutions — signed with a Qualified Electronic Signature directly from EguWallet. Legal force in all 27 EU member states. No printer, no courier, no appointment.", "legal": "Law 455/2001; eIDAS 2.0 Art. 25; Law 31/1990" }
         ]
       }
     ]

@@ -127,11 +127,13 @@
       },
       {
         "icon": "⚖️",
-        "title": "Servicii Juridice și Notariale",
-        "description": "Notari, avocați și instanțe identifică părțile actelor juridice cu credențiale digitale certificate — conform legii notariale române.",
+        "title": "Juridic și Notarial — Prezența Fizică Nu Mai Este Necesară",
+        "description": "Conform Regulamentului (UE) 2024/1183, Portofelul EUDI asigură o identificare cu valoare juridică echivalentă cu prezența fizică pentru o gamă largă de acte juridice. Multe proceduri notariale care necesitau deplasarea cetățeanului pot fi acum finalizate de la distanță — un pas enorm în digitalizarea serviciilor publice.",
         "scenarios": [
-          { "emoji": "📝", "name": "Identificare la Notar", "body": "Notarul identifică toate părțile unui act de vânzare-cumpărare, procură sau succesiune — nume, CNP, data și locul nașterii, adresă — din portofel.", "legal": "Legea 36/1995 — Art. 40" },
-          { "emoji": "🤝", "name": "Contracte de Muncă și Prestări Servicii", "body": "Semnare digitală cu QES — valoare juridică deplină în toate statele membre UE. Combinat cu verificare reprezentant legal pentru contracte între companii.", "legal": "Legea 455/2001; eIDAS 2.0 Art. 25" }
+          { "emoji": "📝", "name": "Identificare Notarială de la Distanță", "body": "Pentru acte care necesitau anterior prezență fizică — procuri, declarații, transferuri de proprietate — notarul poate identifica părțile prin portofelul EUDI de la distanță. PID-ul verificat înlocuiește inspecția fizică a documentelor.", "legal": "Legea 36/1995 — Art. 40; Reg. (UE) 2024/1183 — Art. 5a" },
+          { "emoji": "🏠", "name": "Tranzacții Imobiliare Fără Deplasare", "body": "Cumpărarea sau vânzarea unui imobil nu mai presupune deplasarea la notar doar pentru identificare. Ambele părți se identifică digital, mandatul reprezentantului este verificat, contractul este semnat cu QES — totul de la distanță.", "legal": "Codul Civil Art. 1244; eIDAS 2.0 Art. 25" },
+          { "emoji": "✅", "name": "Declarații și Procuri", "body": "Declarații pe proprie răspundere, procuri, mandate — aceste acte nu mai necesită programare fizică la notar pentru etapa de identificare. Cetățeanul prezintă PID-ul din EguWallet; identificarea are valoare juridică echivalentă cu verificarea în persoană.", "legal": "Reg. (UE) 2024/1183 — eIDAS 2.0; Legea 455/2001" },
+          { "emoji": "🤝", "name": "Contracte Comerciale cu QES", "body": "Contracte de prestări servicii, contracte de asociere, hotărâri AGA — semnate cu Semnătură Electronică Calificată direct din EguWallet. Valoare juridică în toate cele 27 de state membre UE. Fără imprimantă, fără curier, fără programare.", "legal": "Legea 455/2001; eIDAS 2.0 Art. 25; Legea 31/1990" }
         ]
       }
     ]
