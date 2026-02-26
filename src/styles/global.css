@@ -116,6 +116,83 @@
 .t-bg-primary           { background-color: var(--eg-primary); }
 .t-border               { border-color: var(--eg-outline-var); }
 
+/* ─── Glass / Gradient Premium tokens ─── */
+:root {
+  --eg-gradient:          linear-gradient(135deg, #A01E28 0%, #6B0D14 100%);
+  --eg-gradient-subtle:   linear-gradient(135deg, rgba(160,30,40,0.08) 0%, rgba(107,13,20,0.04) 100%);
+  --eg-section-dark:      #0d0809;
+  --eg-glass-bg:          rgba(255,255,255,0.72);
+  --eg-glass-border:      rgba(255,255,255,0.28);
+  --eg-glass-dark-bg:     rgba(255,255,255,0.06);
+  --eg-glass-dark-border: rgba(255,255,255,0.10);
+  --eg-shadow-card:       0 2px 16px rgba(0,0,0,0.06), 0 1px 4px rgba(0,0,0,0.04);
+  --eg-shadow-card-hover: 0 8px 32px rgba(0,0,0,0.10), 0 2px 8px rgba(0,0,0,0.06);
+  --eg-radius-card:       16px;
+}
+
+[data-theme="dark"] {
+  --eg-glass-bg:          rgba(255,255,255,0.05);
+  --eg-glass-border:      rgba(255,255,255,0.10);
+  --eg-section-dark:      #0d0809;
+}
+
+/* ─── Glass card utility ─── */
+.eg-glass {
+  background: var(--eg-glass-bg);
+  border: 1px solid var(--eg-glass-border);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: var(--eg-radius-card);
+  box-shadow: var(--eg-shadow-card);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.eg-glass:hover {
+  box-shadow: var(--eg-shadow-card-hover);
+  transform: translateY(-2px);
+}
+
+.eg-glass-dark {
+  background: var(--eg-glass-dark-bg);
+  border: 1px solid var(--eg-glass-dark-border);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: var(--eg-radius-card);
+  box-shadow: 0 2px 16px rgba(0,0,0,0.20);
+}
+
+/* ─── Gradient text ─── */
+.eg-gradient-text {
+  background: var(--eg-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ─── Section dark ─── */
+.eg-section-dark {
+  background-color: var(--eg-section-dark);
+  color: #f0e8e8;
+}
+
+/* ─── Scroll fade-up animation ─── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.eg-fade-up {
+  opacity: 0;
+  animation: fadeUp 0.5s ease forwards;
+}
+.eg-fade-up.eg-visible {
+  opacity: 1;
+}
+
+/* IntersectionObserver fallback — if JS is off, show everything */
+@media (prefers-reduced-motion: reduce) {
+  .eg-fade-up { opacity: 1; animation: none; }
+}
+
 /* ─── Base styles ─── */
 body {
   background-color: var(--eg-bg);
