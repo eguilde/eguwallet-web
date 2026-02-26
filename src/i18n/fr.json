@@ -378,6 +378,22 @@
     "app2Body": "Services municipaux numériques pour les résidents du Secteur 2 — authentification rapide et sécurisée avec le portefeuille numérique pour tous les services en ligne de la mairie.",
     "badgeText": "Se connecter avec EguWallet"
   },
+  "integrate": {
+    "heading": "Integrate EguWallet into your service",
+    "subheading": "Open SDKs and APIs — add trusted digital identity to your website or app in hours, not months",
+    "card1Title": "Web & Mobile SDK",
+    "card1Body": "Drop-in JavaScript SDK for websites and REST/native SDKs for Android and iOS. Add a «Verify with EguWallet» button to your service — identity data arrives cryptographically signed, no manual verification needed.",
+    "card2Title": "Compliance included",
+    "card2Body": "Relying parties must register with the national node. Until the Romanian national node is live, integration with EguWallet automatically covers registration through our own LOTL and certification services — removing the compliance hurdle entirely.",
+    "card3Title": "Ready for all use cases",
+    "card3Body": "Age verification, KYC/AML onboarding, self-exclusion checks, qualified electronic signature — all available through a single integration. Our SDK handles the OpenID4VP presentation flow, selective disclosure and audit logging for you.",
+    "cta": "Contact us for integration",
+    "ctaUrl": "/fr/contact/",
+    "badge1": "OpenID4VP",
+    "badge2": "SD-JWT / mDoc",
+    "badge3": "GDPR-compliant",
+    "badge4": "eIDAS 2.0 ready"
+  },
   "verifier": {
     "heading": "Êtes-vous une institution publique ou une entreprise ?",
     "subheading": "Vérifiez les documents d'identité et les identifiants numériques avec EguWallet Verifier",
