@@ -1,0 +1,216 @@
+---
+interface Props { lang: string; }
+const { lang } = Astro.props;
+---
+
+<!-- Accessibility floating widget -->
+<div id="a11y-widget" class="fixed bottom-5 right-5 z-50 flex flex-col items-end gap-2">
+
+  <!-- Expanded panel -->
+  <div
+    id="a11y-panel"
+    role="region"
+    aria-label="Accessibility tools"
+    class="hidden flex-col gap-2 p-3 rounded-2xl shadow-2xl"
+    style="background:#1a1a1a; border: 1px solid rgba(255,255,255,0.12); min-width: 200px;"
+  >
+    <!-- TTS row -->
+    <div>
+      <p class="text-xs font-semibold mb-1.5 uppercase tracking-wider" style="color:rgba(255,255,255,0.50);">Listen</p>
+      <button
+        id="a11y-tts"
+        aria-pressed="false"
+        class="w-full flex items-center gap-2 px-3 py-2 rounded-xl text-sm font-medium transition-colors"
+        style="background:rgba(255,255,255,0.08); color:#f0e8e8;"
+      >
+        <span id="a11y-tts-icon" aria-hidden="true">🔊</span>
+        <span id="a11y-tts-label">Read page aloud</span>
+      </button>
+    </div>
+
+    <!-- Font size row -->
+    <div>
+      <p class="text-xs font-semibold mb-1.5 uppercase tracking-wider" style="color:rgba(255,255,255,0.50);">Text size</p>
+      <div class="flex gap-1.5">
+        {['A', 'A', 'A'].map((_, i) => (
+          <button
+            data-font-size={i}
+            class="a11y-font-btn flex-1 py-2 rounded-xl font-bold transition-colors"
+            style={`font-size: ${14 + i * 3}px; background:rgba(255,255,255,0.08); color:#f0e8e8;`}
+            aria-label={`Text size ${i === 0 ? 'normal' : i === 1 ? 'large' : 'extra large'}`}
+          >A</button>
+        ))}
+      </div>
+    </div>
+
+    <!-- High contrast row -->
+    <div>
+      <p class="text-xs font-semibold mb-1.5 uppercase tracking-wider" style="color:rgba(255,255,255,0.50);">Contrast</p>
+      <button
+        id="a11y-contrast"
+        aria-pressed="false"
+        class="w-full flex items-center gap-2 px-3 py-2 rounded-xl text-sm font-medium transition-colors"
+        style="background:rgba(255,255,255,0.08); color:#f0e8e8;"
+      >
+        <span aria-hidden="true">◑</span>
+        <span id="a11y-contrast-label">High contrast: off</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Toggle button -->
+  <button
+    id="a11y-toggle"
+    aria-label="Open accessibility tools"
+    aria-expanded="false"
+    aria-controls="a11y-panel"
+    class="w-12 h-12 rounded-full flex items-center justify-center shadow-xl text-xl transition-transform hover:scale-110 focus:outline-none focus:ring-2"
+    style="background: linear-gradient(135deg, #A01E28 0%, #6B0D14 100%); color: #fff; box-shadow: 0 4px 20px rgba(160,30,40,0.50);"
+    title="Accessibility tools"
+  >
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <circle cx="12" cy="4" r="1.5" fill="currentColor" stroke="none"/>
+      <path d="M6 8h12M12 8v12M9 14l-3 4M15 14l3 4"/>
+    </svg>
+  </button>
+</div>
+
+<style is:global>
+  /* High contrast mode overrides */
+  [data-a11y-contrast="on"] {
+    --eg-bg: #000000 !important;
+    --eg-fg: #ffffff !important;
+    --eg-surface-container: #111111 !important;
+    --eg-surface-container-high: #1a1a1a !important;
+    --eg-outline-var: #ffffff !important;
+    --eg-primary: #ff6b6b !important;
+    filter: contrast(1.15);
+  }
+  [data-a11y-contrast="on"] .eg-glass {
+    background: #111111 !important;
+    border-color: rgba(255,255,255,0.30) !important;
+  }
+  [data-a11y-contrast="on"] .eg-glass-dark {
+    background: #000000 !important;
+    border-color: rgba(255,255,255,0.25) !important;
+  }
+
+  /* Font size levels */
+  [data-a11y-font="1"] { font-size: 112% !important; }
+  [data-a11y-font="2"] { font-size: 128% !important; }
+</style>
+
+<script define:vars={{ lang }}>
+  const panel = document.getElementById('a11y-panel');
+  const toggle = document.getElementById('a11y-toggle');
+  const ttsBtn = document.getElementById('a11y-tts');
+  const ttsLabel = document.getElementById('a11y-tts-label');
+  const ttsIcon = document.getElementById('a11y-tts-icon');
+  const contrastBtn = document.getElementById('a11y-contrast');
+  const contrastLabel = document.getElementById('a11y-contrast-label');
+  const fontBtns = document.querySelectorAll('.a11y-font-btn');
+  const html = document.documentElement;
+
+  // ── Restore persisted settings ──────────────────────────────────
+  const savedFont = localStorage.getItem('a11y-font') || '0';
+  const savedContrast = localStorage.getItem('a11y-contrast') || 'off';
+  applyFont(parseInt(savedFont));
+  applyContrast(savedContrast);
+
+  // ── Toggle panel open/close ──────────────────────────────────────
+  toggle?.addEventListener('click', () => {
+    const open = panel?.classList.toggle('hidden') === false;
+    panel?.classList.toggle('flex', open);
+    toggle?.setAttribute('aria-expanded', String(open));
+  });
+
+  // Close panel on outside click
+  document.addEventListener('click', (e) => {
+    const widget = document.getElementById('a11y-widget');
+    if (widget && !widget.contains(e.target)) {
+      panel?.classList.add('hidden');
+      panel?.classList.remove('flex');
+      toggle?.setAttribute('aria-expanded', 'false');
+    }
+  });
+
+  // ── Text-to-speech ───────────────────────────────────────────────
+  ttsBtn?.addEventListener('click', () => {
+    if (!('speechSynthesis' in window)) {
+      alert('Your browser does not support text-to-speech.');
+      return;
+    }
+    if (window.speechSynthesis.speaking) {
+      window.speechSynthesis.cancel();
+      setTtsState(false);
+      return;
+    }
+    const main = document.getElementById('main-content');
+    // Collect text from headings and paragraphs — skip nav, footer legal boilerplate
+    const nodes = main?.querySelectorAll('h1, h2, h3, h4, p, li') ?? [];
+    const text = Array.from(nodes)
+      .map(el => el.textContent?.trim())
+      .filter(t => t && t.length > 2)
+      .join('. ');
+
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = lang || 'en';
+    utterance.rate = 0.92;
+    utterance.pitch = 1.0;
+    utterance.onstart = () => setTtsState(true);
+    utterance.onend = () => setTtsState(false);
+    utterance.onerror = () => setTtsState(false);
+    window.speechSynthesis.speak(utterance);
+  });
+
+  function setTtsState(speaking) {
+    ttsBtn?.setAttribute('aria-pressed', String(speaking));
+    if (ttsIcon) ttsIcon.textContent = speaking ? '⏹' : '🔊';
+    if (ttsLabel) ttsLabel.textContent = speaking ? 'Stop reading' : 'Read page aloud';
+    if (ttsBtn) {
+      ttsBtn.style.background = speaking
+        ? 'rgba(160,30,40,0.40)'
+        : 'rgba(255,255,255,0.08)';
+    }
+  }
+
+  // ── Font size ────────────────────────────────────────────────────
+  fontBtns.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const level = parseInt(btn.getAttribute('data-font-size') ?? '0');
+      applyFont(level);
+      localStorage.setItem('a11y-font', String(level));
+    });
+  });
+
+  function applyFont(level) {
+    html.removeAttribute('data-a11y-font');
+    if (level > 0) html.setAttribute('data-a11y-font', String(level));
+    fontBtns.forEach((btn) => {
+      const active = parseInt(btn.getAttribute('data-font-size') ?? '0') === level;
+      btn.style.background = active
+        ? 'rgba(160,30,40,0.45)'
+        : 'rgba(255,255,255,0.08)';
+      btn.style.color = '#f0e8e8';
+    });
+  }
+
+  // ── High contrast ────────────────────────────────────────────────
+  contrastBtn?.addEventListener('click', () => {
+    const current = html.getAttribute('data-a11y-contrast') || 'off';
+    const next = current === 'on' ? 'off' : 'on';
+    applyContrast(next);
+    localStorage.setItem('a11y-contrast', next);
+  });
+
+  function applyContrast(value) {
+    html.setAttribute('data-a11y-contrast', value);
+    contrastBtn?.setAttribute('aria-pressed', String(value === 'on'));
+    if (contrastLabel) contrastLabel.textContent = `High contrast: ${value}`;
+    if (contrastBtn) {
+      contrastBtn.style.background = value === 'on'
+        ? 'rgba(160,30,40,0.45)'
+        : 'rgba(255,255,255,0.08)';
+    }
+  }
+</script>
