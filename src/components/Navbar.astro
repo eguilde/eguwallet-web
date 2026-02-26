@@ -6,7 +6,7 @@ import type { Translations } from '../i18n/index';
 interface Props { t: Translations; lang: string; }
 const { t, lang } = Astro.props;
 
-const links = [
+const desktopLinks = [
   { href: `/${lang}/#what`,          label: t.nav.what },
   { href: `/${lang}/#documents`,     label: t.nav.documents },
   { href: `/${lang}/#usecases`,      label: t.nav.useCases },
@@ -15,6 +15,10 @@ const links = [
   { href: `/${lang}/#faq`,           label: t.nav.faq },
   { href: `/${lang}/about/`,         label: t.nav.about },
   { href: `/${lang}/contact/`,       label: t.nav.contact },
+];
+const mobileLinks = [
+  { href: `/${lang}/`,               label: t.nav.home },
+  ...desktopLinks,
 ];
 ---
 <header class="sticky top-0 z-40 w-full t-bg border-b t-border backdrop-blur-sm">
@@ -26,7 +30,7 @@ const links = [
     </a>
 
     <ul class="hidden xl:flex items-center gap-0.5 flex-1 justify-center list-none m-0 p-0 flex-nowrap">
-      {links.map(({ href, label }) => (
+      {desktopLinks.map(({ href, label }) => (
         <li class="flex-shrink-0">
           <a href={href} class="px-2 py-1.5 rounded-md text-[12px] font-medium t-fg opacity-70 hover:opacity-100 transition-opacity whitespace-nowrap">{label}</a>
         </li>
@@ -114,7 +118,7 @@ const links = [
   </nav>
 
   <div id="mobile-menu" class="hidden xl:hidden px-3 sm:px-4 pb-3 sm:pb-4 flex-col gap-0.5 sm:gap-1 t-bg">
-    {links.map(({ href, label }) => (
+    {mobileLinks.map(({ href, label }) => (
       <a href={href} class="block px-3 py-2.5 rounded-lg text-[13px] font-medium t-fg" onclick="document.getElementById('mobile-menu').classList.add('hidden')">{label}</a>
     ))}
   </div>
