@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- P4: Node E — Red, no bg, slightly organic/hand-drawn node positions (like the calligraphic E) -->
+  <!-- Vertical spine nodes — slightly offset for organic feel -->
+  <circle cx="16" cy="11" r="4.5" fill="#A01E28"/>
+  <circle cx="17" cy="32" r="4.5" fill="#A01E28"/>
+  <circle cx="16" cy="53" r="4.5" fill="#A01E28"/>
+  <!-- Vertical connectors — slight curve via stroke -->
+  <path d="M16 15.5 Q17 24 17 27.5" stroke="#A01E28" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M17 36.5 Q16 45 16 48.5" stroke="#A01E28" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- Horizontal arms — slightly angled like handwriting -->
+  <line x1="20.5" y1="11" x2="44" y2="10" stroke="#A01E28" stroke-width="3" stroke-linecap="round"/>
+  <line x1="21.5" y1="32" x2="40" y2="31" stroke="#A01E28" stroke-width="3" stroke-linecap="round"/>
+  <line x1="20.5" y1="53" x2="44" y2="52" stroke="#A01E28" stroke-width="3" stroke-linecap="round"/>
+  <!-- End nodes -->
+  <circle cx="47" cy="10" r="3.5" fill="#DC4A56"/>
+  <circle cx="43" cy="31" r="3.5" fill="#DC4A56"/>
+  <circle cx="47" cy="52" r="3.5" fill="#DC4A56"/>
+</svg>

@@ -158,6 +158,42 @@ const playUrl = 'https://play.google.com/store/apps/details?id=wallet.eguwallet.
 
     <div class="max-w-4xl mx-auto px-4 sm:px-6"><div class="h-px t-bg-surface"></div></div>
 
+    <!-- USE CASES -->
+    <section id="usecases" class="py-10 sm:py-16 md:py-20 px-4 sm:px-6">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-xl sm:text-2xl md:text-3xl font-bold mb-1.5 sm:mb-2 t-fg">{t.useCases.heading}</h2>
+        <p class="text-[13px] sm:text-[15px] t-fg opacity-45 mb-6 sm:mb-8">{t.useCases.subheading}</p>
+
+        <div class="flex flex-col gap-6 sm:gap-8">
+          {t.useCases.categories.map(({ icon, title, description, scenarios }) => (
+            <div>
+              <!-- Category header -->
+              <div class="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4">
+                <span class="text-xl sm:text-2xl">{icon}</span>
+                <h3 class="font-bold text-[15px] sm:text-base md:text-lg t-fg">{title}</h3>
+              </div>
+              <p class="text-[13px] sm:text-[14px] leading-relaxed t-fg opacity-50 mb-3 sm:mb-4">{description}</p>
+              <!-- Scenario cards -->
+              <div class="flex flex-col gap-2 sm:grid sm:grid-cols-2 sm:gap-3">
+                {scenarios.map(({ emoji, name, body, legal }) => (
+                  <div class="flex gap-3 p-3 sm:p-4 rounded-lg t-bg-surface">
+                    <span class="text-lg flex-shrink-0 mt-0.5">{emoji}</span>
+                    <div>
+                      <h4 class="font-semibold text-[13px] sm:text-[14px] mb-1 t-fg">{name}</h4>
+                      <p class="text-[12px] sm:text-[13px] leading-relaxed t-fg opacity-50 mb-1">{body}</p>
+                      {legal && <p class="text-[10px] sm:text-[11px] t-fg opacity-30 italic">{legal}</p>}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <div class="max-w-4xl mx-auto px-4 sm:px-6"><div class="h-px t-bg-surface"></div></div>
+
     <!-- WHERE IT WORKS -->
     <section id="usedtoday" class="py-10 sm:py-16 md:py-20 px-4 sm:px-6">
       <div class="max-w-4xl mx-auto">

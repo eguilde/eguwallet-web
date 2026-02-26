@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Q3: Calligraphic "Ew" inside shield — red shield, white text, teal accent on w -->
+  <path d="M32 4L8 14v18c0 14.5 10.3 27.6 24 31 13.7-3.4 24-16.5 24-31V14L32 4z" fill="#A01E28"/>
+  <!-- Big calligraphic E -->
+  <text x="14" y="43" font-family="'Georgia', 'Times New Roman', serif" font-size="32" font-weight="700" font-style="italic" fill="#fff">E</text>
+  <!-- Small w in teal — the "wallet" part, digital accent -->
+  <text x="35" y="43" font-family="'Georgia', 'Times New Roman', serif" font-size="19" font-weight="400" font-style="italic" fill="#2DD4BF">w</text>
+</svg>

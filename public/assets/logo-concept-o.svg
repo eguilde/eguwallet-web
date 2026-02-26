@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Concept O: Stylish E where the NEGATIVE SPACE between bars forms wallet card shapes -->
+  <!-- Rounded square background -->
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="#0D9488"/>
+  <!-- Big bold E — but the gaps between bars are card-colored, making them look like stored cards -->
+  <!-- Full E shape as one path -->
+  <path d="M16,10 L48,10 L48,18 L24,18 L24,28 L44,28 L44,36 L24,36 L24,46 L48,46 L48,54 L16,54 Z" fill="#fff"/>
+  <!-- Card in first gap (between top bar and middle bar) — the gap IS the card -->
+  <rect x="24" y="18" width="24" height="10" rx="0" fill="#0D9488"/>
+  <!-- Chip on gap-card -->
+  <rect x="27" y="21" width="4.5" height="3" rx="0.6" fill="#99F6E4" opacity="0.5"/>
+  <!-- Card in second gap -->
+  <rect x="24" y="36" width="24" height="10" rx="0" fill="#0D9488"/>
+  <!-- Chip on second gap-card -->
+  <rect x="27" y="39" width="4.5" height="3" rx="0.6" fill="#99F6E4" opacity="0.5"/>
+  <!-- Contactless waves on second card -->
+  <g transform="translate(42, 39)" opacity="0.4">
+    <path d="M0 3a3 3 0 013-3" stroke="#99F6E4" stroke-width="1" fill="none" stroke-linecap="round"/>
+    <path d="M0 3a5.5 5.5 0 015.5-5.5" stroke="#99F6E4" stroke-width="1" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

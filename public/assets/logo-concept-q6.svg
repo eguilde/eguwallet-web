@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Q6: "Ew" no shield, no background — just the calligraphic mark in red -->
+  <text x="6" y="46" font-family="'Georgia', 'Times New Roman', serif" font-size="38" font-weight="700" font-style="italic" fill="#A01E28">E</text>
+  <text x="34" y="46" font-family="'Georgia', 'Times New Roman', serif" font-size="22" font-weight="400" font-style="italic" fill="#DC4A56">w</text>
+</svg>

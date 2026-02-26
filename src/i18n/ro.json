@@ -6,6 +6,7 @@
     "what": "Ce este",
     "privacy": "Confidențialitate",
     "documents": "Documente",
+    "useCases": "Cazuri de utilizare",
     "usedToday": "Unde funcționează",
     "future": "Viitor",
     "howItWorks": "Cum funcționează",
@@ -60,6 +61,80 @@
     ],
     "statusAvailable": "Disponibil",
     "statusSoon": "În curând"
+  },
+  "useCases": {
+    "heading": "Cazuri reale de utilizare",
+    "subheading": "EguWallet funcționează în toate domeniile vieții publice și private — de la un control rutier de rutină până la semnarea unui contract de afaceri",
+    "categories": [
+      {
+        "icon": "🚔",
+        "title": "Ordine Publică și Forțe de Ordine",
+        "description": "Ofițeri de poliție, polițiști de frontieră și inspectori verifică identitatea digitală în câteva secunde — cu garanție criptografică, fără a atinge documente fizice.",
+        "scenarios": [
+          { "emoji": "🪪", "name": "Control de Identitate în Patrulare", "body": "Ofițerul verifică identitatea completă a cetățeanului — nume, CNP, adresă, fotografie — prin NFC sau QR. Fără hârtii. Rezultatul este înregistrat automat.", "legal": "Legea 218/2002 — Art. 31" },
+          { "emoji": "🚗", "name": "Control Rutier Complet", "body": "O singură scanare QR: ofițerul primește actul de identitate, permisul de conducere cu categorii, certificatul de înmatriculare, polița RCA și ITP — toate verificate criptografic.", "legal": "OUG 195/2002 — Art. 6, 80, 81" },
+          { "emoji": "🛂", "name": "Control la Frontieră", "body": "La punctele de trecere a frontierei, ofițerii verifică identitatea, naționalitatea și valabilitatea documentului de călătorie printr-o singură prezentare digitală securizată.", "legal": "Legea 248/2005" }
+        ]
+      },
+      {
+        "icon": "🏢",
+        "title": "Afaceri și Tranzacții Comerciale",
+        "description": "Companii, notari, avocați și platforme B2B verifică instantaneu identitatea firmelor și calitatea de reprezentant legal — eliminând certificatele pe hârtie și curieratul.",
+        "scenarios": [
+          { "emoji": "🏛️", "name": "Verificare Firmă (ONRC)", "body": "O platformă B2B sau portal de licitații verifică denumirea firmei, CUI-ul, sediul social și statutul activ — toate certificate de Registrul Comerțului.", "legal": "Legea 31/1990; Legea 26/1990" },
+          { "emoji": "✍️", "name": "Verificare Reprezentant Legal", "body": "Un partener sau notar verifică că o persoană este reprezentant autorizat al firmei — identitate + credențial firmă + mandat prezentate simultan.", "legal": "Legea 31/1990 — Art. 75, 197" },
+          { "emoji": "📜", "name": "Semnare Contract — Flux Automat Complet", "body": "Un singur QR: identitate verificată, mandat confirmat, contract semnat cu Semnătură Electronică Calificată. Valoare juridică deplină în toată UE. Sub 90 de secunde.", "legal": "Reg. (UE) 2024/1183 — Art. 25; Legea 455/2001" }
+        ]
+      },
+      {
+        "icon": "🎓",
+        "title": "Educație — Elevi și Studenți",
+        "description": "Elevii și studenții de la 6 ani până la doctorat poartă carnetul de elev sau student în EguWallet — folosit la intrarea în școală, examene, bibliotecă, cantină, cămin și transport.",
+        "scenarios": [
+          { "emoji": "🏫", "name": "Carnet de Elev Digital (Clasele 1–12)", "body": "Elevul apropie telefonul la intrarea în școală, bibliotecă sau cantină. Carnetul digital este emis de școală sau inspectorat — valabil pe an școlar.", "legal": "Legea 1/2011 — Art. 5" },
+          { "emoji": "📋", "name": "Carnet Elev + CI la Examene", "body": "La bacalaureat, examene naționale și olimpiade: carnet de elev plus carte de identitate electronică prezentate simultan — pentru elevi de 14 ani și peste.", "legal": "Legea 1/2011; OUG 97/2005 — Art. 14" },
+          { "emoji": "🎓", "name": "Carnet de Student Digital", "body": "Intrare facultate, cămin, bibliotecă, secretariat — carnetul digital înlocuiește cel fizic. Funcționează și pentru burse și reduceri CFR.", "legal": "Legea 1/2011 — Art. 118, 119" },
+          { "emoji": "🚌", "name": "Legitimație Transport Elev/Student", "body": "Elevii și studenții se urcă în autobuz, metrou și tren cu portofelul. Validatorul sau șoferul vede dreptul instantaneu — fără legitimație fizică.", "legal": "OUG 133/2000; HCL transport urban" }
+        ]
+      },
+      {
+        "icon": "🛒",
+        "title": "Retail și Verificare Vârstă",
+        "description": "Comercianții verifică vârsta sau identitatea la punctul de vânzare în câteva secunde — fără stocarea de date personale, conform GDPR.",
+        "scenarios": [
+          { "emoji": "🍺", "name": "Verificare Vârstă 18+ la Casă", "body": "Casiera arată un cod QR. Cumpărătorul aprobă din portofel: se transmite doar «vârstă ≥ 18: DA». Fără nume, fără CNP, fără fotografie.", "legal": "OUG 99/2000 — alcool/tutun" },
+          { "emoji": "🏨", "name": "Check-In la Hotel", "body": "Turistul se cazează prezentând numele, data nașterii și naționalitatea din portofel. Fără fotocopii de pașaport. Conform normelor de cazare.", "legal": "HG 1215/2001" }
+        ]
+      },
+      {
+        "icon": "🏦",
+        "title": "Servicii Financiare și KYC",
+        "description": "Bănci, asiguratori și platforme fintech onboardează clienți digital — respectând cerințele AML/KYC fără formulare pe hârtie.",
+        "scenarios": [
+          { "emoji": "🏦", "name": "Deschidere Cont Bancar (KYC/AML)", "body": "O bancă verifică identitatea completă a clientului de la distanță — nume, CNP, data și locul nașterii, naționalitate, adresă — certificate de portofelul EUDI.", "legal": "Legea 129/2019; Directiva (UE) 2015/849" },
+          { "emoji": "💼", "name": "Asigurări și Produse Financiare", "body": "Asiguratorii verifică identitatea asiguratului la semnarea contractului — digital, instantaneu, cu trasabilitate completă eIDAS 2.0.", "legal": "Reg. (UE) 2024/1183" }
+        ]
+      },
+      {
+        "icon": "🏥",
+        "title": "Sănătate și Servicii Sociale",
+        "description": "Spitale, clinici, farmacii și servicii sociale identifică pacienții și beneficiarii în siguranță, fără formulare completate manual.",
+        "scenarios": [
+          { "emoji": "🏥", "name": "Identificare Pacient", "body": "Un spital sau o clinică identifică pacientul cu EguWallet. Nume, CNP, data nașterii verificate instantaneu la recepție sau în urgență.", "legal": "Legea 95/2006 — Art. 230-232" },
+          { "emoji": "🗳️", "name": "Verificare la Secția de Votare", "body": "Membrii biroului electoral verifică identitatea alegătorului și prezența în lista electorală — instantaneu, cu jurnal de audit complet.", "legal": "Legea 208/2015 — Art. 84" },
+          { "emoji": "📋", "name": "Verificare la Angajare", "body": "Angajatorii verifică identitatea noului angajat la semnarea contractului — nume, CNP, adresă — conform Codului Muncii și REVISAL.", "legal": "Legea 53/2003; HG 500/2011" }
+        ]
+      },
+      {
+        "icon": "⚖️",
+        "title": "Servicii Juridice și Notariale",
+        "description": "Notari, avocați și instanțe identifică părțile actelor juridice cu credențiale digitale certificate — conform legii notariale române.",
+        "scenarios": [
+          { "emoji": "📝", "name": "Identificare la Notar", "body": "Notarul identifică toate părțile unui act de vânzare-cumpărare, procură sau succesiune — nume, CNP, data și locul nașterii, adresă — din portofel.", "legal": "Legea 36/1995 — Art. 40" },
+          { "emoji": "🤝", "name": "Contracte de Muncă și Prestări Servicii", "body": "Semnare digitală cu QES — valoare juridică deplină în toate statele membre UE. Combinat cu verificare reprezentant legal pentru contracte între companii.", "legal": "Legea 455/2001; eIDAS 2.0 Art. 25" }
+        ]
+      }
+    ]
   },
   "usedToday": {
     "heading": "Unde funcționează EguWallet astăzi",

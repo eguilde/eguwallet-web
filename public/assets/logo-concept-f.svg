@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Concept F: Actual wallet — folded leather wallet shape with card inside -->
+  <defs>
+    <linearGradient id="walletF" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0D9488"/>
+      <stop offset="100%" stop-color="#0A7C72"/>
+    </linearGradient>
+  </defs>
+  <!-- Wallet body — rounded rectangle, slightly 3D feel -->
+  <rect x="8" y="14" width="48" height="36" rx="5" fill="url(#walletF)"/>
+  <!-- Wallet fold line (horizontal center crease) -->
+  <line x1="8" y1="32" x2="56" y2="32" stroke="#0F766E" stroke-width="1.5"/>
+  <!-- Wallet flap shadow (top half slightly darker) -->
+  <rect x="8" y="14" width="48" height="18" rx="5" fill="#000" opacity="0.08"/>
+  <!-- Card peeking out from top -->
+  <rect x="14" y="8" width="30" height="20" rx="2.5" fill="#fff" opacity="0.92"/>
+  <!-- Card chip -->
+  <rect x="18" y="12" width="6" height="4.5" rx="1" fill="#E2B44A"/>
+  <!-- Card chip lines -->
+  <line x1="19" y1="14.25" x2="23" y2="14.25" stroke="#D4A43A" stroke-width="0.5"/>
+  <line x1="21" y1="12.5" x2="21" y2="16" stroke="#D4A43A" stroke-width="0.5"/>
+  <!-- Card text lines -->
+  <rect x="18" y="19.5" width="12" height="1.2" rx="0.6" fill="#cbd5e1"/>
+  <rect x="18" y="22" width="8" height="1.2" rx="0.6" fill="#e2e8f0"/>
+  <!-- EU flag tiny circle on card -->
+  <circle cx="38" cy="15" r="4" fill="#1E3A5F" opacity="0.15"/>
+  <!-- Wallet clasp/button -->
+  <circle cx="32" cy="46" r="3" fill="#0A7C72"/>
+  <circle cx="32" cy="46" r="1.8" fill="#0D9488"/>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Concept C: Rounded shield formed by two overlapping cards/credentials -->
+  <!-- Background card (rotated slightly left) — represents stored credential -->
+  <rect x="10" y="14" width="32" height="22" rx="3" fill="#1E3A5F" transform="rotate(-6 26 25)"/>
+  <!-- Foreground card (rotated slightly right) — the active credential -->
+  <rect x="20" y="16" width="32" height="22" rx="3" fill="#0D9488" transform="rotate(4 36 27)"/>
+  <!-- Chip on foreground card -->
+  <rect x="25" y="21" width="7" height="5.5" rx="1.2" fill="#99F6E4" opacity="0.8" transform="rotate(4 28.5 23.75)"/>
+  <!-- Lines on card suggesting data -->
+  <line x1="25" y1="30" x2="42" y2="31" stroke="#fff" stroke-width="1.2" opacity="0.3" transform="rotate(4 33.5 30.5)"/>
+  <line x1="25" y1="33.5" x2="36" y2="34.2" stroke="#fff" stroke-width="1.2" opacity="0.2" transform="rotate(4 30.5 33.85)"/>
+  <!-- Shield outline overlaying both cards — the protection layer -->
+  <path d="M32 8L14 17v15c0 12.5 8 22 18 26 10-4 18-13.5 18-26V17L32 8z"
+        fill="none" stroke="#0D9488" stroke-width="2.5" opacity="0.6"/>
+  <!-- Small lock icon at bottom center -->
+  <rect x="29" y="46" width="6" height="5" rx="1" fill="#0D9488"/>
+  <path d="M30 46v-2a2 2 0 014 0v2" stroke="#0D9488" stroke-width="1.5" fill="none"/>
+</svg>

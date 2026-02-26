@@ -6,6 +6,7 @@
     "what": "What is it",
     "privacy": "Privacy",
     "documents": "Documents",
+    "useCases": "Use cases",
     "usedToday": "Where it works",
     "future": "Future",
     "howItWorks": "How it works",
@@ -60,6 +61,80 @@
     ],
     "statusAvailable": "Available",
     "statusSoon": "Coming Soon"
+  },
+  "useCases": {
+    "heading": "Real-world use cases",
+    "subheading": "EguWallet works across every area of public and private life — from a routine traffic stop to signing a business contract",
+    "categories": [
+      {
+        "icon": "🚔",
+        "title": "Law Enforcement & Public Order",
+        "description": "Police officers, border guards, and public order inspectors verify digital identity in seconds — with full cryptographic trust, without touching physical documents.",
+        "scenarios": [
+          { "emoji": "🪪", "name": "Identity Check on Patrol", "body": "A police officer verifies a citizen's full identity — name, CNP, address, photo — via NFC or QR. No paper. Result logged automatically.", "legal": "Law 218/2002 — Art. 31" },
+          { "emoji": "🚗", "name": "Complete Traffic Stop Package", "body": "One QR scan: officer receives ID, driving licence with categories, vehicle registration, RCA insurance and ITP — all cryptographically verified.", "legal": "OUG 195/2002 — Art. 6, 80, 81" },
+          { "emoji": "🛂", "name": "Border Control", "body": "At border crossing points, officers verify identity, nationality and travel document validity in one secure digital presentation.", "legal": "Law 248/2005" }
+        ]
+      },
+      {
+        "icon": "🏢",
+        "title": "Business & Commercial Transactions",
+        "description": "Companies, notaries, lawyers and B2B platforms verify company identity and legal representative authority instantly — eliminating paper certificates and couriers.",
+        "scenarios": [
+          { "emoji": "🏛️", "name": "Company Verification (ONRC)", "body": "A B2B platform or public tender portal verifies company name, CUI, registered address and active status — all certified by the National Trade Registry.", "legal": "Law 31/1990; Law 26/1990" },
+          { "emoji": "✍️", "name": "Legal Representative Verification", "body": "A partner or notary verifies that a person is an authorised representative of a company — identity + company credential + mandate presented simultaneously.", "legal": "Law 31/1990 — Art. 75, 197" },
+          { "emoji": "📜", "name": "Contract Signing — Full Automated Flow", "body": "One QR: identity verified, mandate confirmed, contract signed with a Qualified Electronic Signature. Legally binding across the entire EU. Under 90 seconds.", "legal": "Reg. (EU) 2024/1183 — Art. 25; Law 455/2001" }
+        ]
+      },
+      {
+        "icon": "🎓",
+        "title": "Education — School & University",
+        "description": "Students from age 6 to doctorate carry their school or university card in EguWallet. Used for school entry, exams, library, cafeteria, dormitories and transport discounts.",
+        "scenarios": [
+          { "emoji": "🏫", "name": "School Student Card (Classes 1–12)", "body": "A pupil taps their phone at the school gate, library or cafeteria. The digital carnet de elev is issued by the school or inspectorate — valid for the academic year.", "legal": "Law 1/2011 — Art. 5" },
+          { "emoji": "📋", "name": "Student Card + ID at Exams", "body": "For the baccalaureat, national exams and olympiads: carnet de elev plus electronic ID card presented simultaneously — for students 14 and older.", "legal": "Law 1/2011; OUG 97/2005 — Art. 14" },
+          { "emoji": "🎓", "name": "University Student Card", "body": "Faculty entry, dormitory, library, secretariat — the digital carnet de student replaces the physical card. Works for scholarships and CFR travel discounts.", "legal": "Law 1/2011 — Art. 118, 119" },
+          { "emoji": "🚌", "name": "Student Transport Pass", "body": "Pupils and students board buses, metro and trains using their wallet. The validator or driver sees the entitlement instantly — no physical pass needed.", "legal": "OUG 133/2000; HCL urban transport" }
+        ]
+      },
+      {
+        "icon": "🛒",
+        "title": "Retail & Age Verification",
+        "description": "Merchants verify age or identity at point of sale in seconds — with zero personal data stored and full GDPR compliance.",
+        "scenarios": [
+          { "emoji": "🍺", "name": "Age 18+ at Point of Sale", "body": "Cashier shows a QR code. Customer approves from their wallet: only «age ≥ 18: YES» is transmitted. No name, no ID number, no photo.", "legal": "OUG 99/2000 — alcohol/tobacco" },
+          { "emoji": "🏨", "name": "Hotel Check-In", "body": "Tourist checks in by presenting name, date of birth and nationality from the wallet. No photocopying passports. Compliant with accommodation registration regulations.", "legal": "HG 1215/2001" }
+        ]
+      },
+      {
+        "icon": "🏦",
+        "title": "Financial Services & KYC",
+        "description": "Banks, insurance companies and fintech platforms onboard customers digitally — meeting AML/KYC requirements without paper forms.",
+        "scenarios": [
+          { "emoji": "🏦", "name": "Bank Account Opening (KYC/AML)", "body": "A bank verifies the customer's full identity remotely — name, CNP, date and place of birth, nationality, address — certified by the EUDI wallet. Compliant with anti-money-laundering law.", "legal": "Law 129/2019; Directive (EU) 2015/849" },
+          { "emoji": "💼", "name": "Insurance & Financial Products", "body": "Insurance companies verify policyholder identity at contract signing — digitally, instantly, with full eIDAS 2.0 traceability.", "legal": "Reg. (EU) 2024/1183" }
+        ]
+      },
+      {
+        "icon": "🏥",
+        "title": "Healthcare & Social Services",
+        "description": "Hospitals, clinics, pharmacies and social services identify patients and beneficiaries securely, without manual form-filling.",
+        "scenarios": [
+          { "emoji": "🏥", "name": "Patient Identification", "body": "A hospital or clinic identifies a patient with their EguWallet. Name, CNP, date of birth verified instantly at reception or in the emergency room.", "legal": "Law 95/2006 — Art. 230-232" },
+          { "emoji": "🗳️", "name": "Electoral Commission Voter Check", "body": "Polling station staff verify voter identity and cross-check the electoral register — instantly, with full audit trail. No manual list lookup.", "legal": "Law 208/2015 — Art. 84" },
+          { "emoji": "📋", "name": "Hiring & HR Verification", "body": "Employers verify new hire identity at contract signing — name, CNP, address — as required by the Labour Code and REVISAL reporting.", "legal": "Law 53/2003; HG 500/2011" }
+        ]
+      },
+      {
+        "icon": "⚖️",
+        "title": "Legal & Notarial Services",
+        "description": "Notaries, lawyers and courts identify parties to legal acts with certified digital credentials — fully compliant with Romanian notarial law.",
+        "scenarios": [
+          { "emoji": "📝", "name": "Notarial Identification", "body": "Notary identifies all parties to a sale-purchase deed, power of attorney or inheritance document — name, CNP, date and place of birth, address — from the wallet.", "legal": "Law 36/1995 — Art. 40" },
+          { "emoji": "🤝", "name": "Employment & Service Contracts", "body": "Digital contract signing with QES — full legal force across all EU member states. Combined with legal representative verification for company contracts.", "legal": "Law 455/2001; eIDAS 2.0 Art. 25" }
+        ]
+      }
+    ]
   },
   "usedToday": {
     "heading": "Where EguWallet works today",

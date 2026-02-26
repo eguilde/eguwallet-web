@@ -1,0 +1,94 @@
+---
+import '../../../styles/global.css';
+import { SITE } from '../../../config/site.ts';
+import { getTranslations } from '../../../i18n/index';
+
+export async function getStaticPaths() {
+  const locales = [
+    'ro','en','de','fr','es','it','pl','pt','hu','cs',
+    'sk','bg','hr','lt','lv','et','mt','sl','sv','da','nl','el','fi','ga'
+  ];
+  return locales.map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const t = await getTranslations(lang);
+const ad = t.accountDelete;
+---
+<!doctype html>
+<html lang={lang} data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script is:inline>
+    (function(){
+      var t=localStorage.getItem('egu-theme')||
+        (window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+      document.documentElement.setAttribute('data-theme',t);
+    })();
+  </script>
+  <title>{ad.title} — EguWallet</title>
+  <meta name="description" content={ad.description} />
+  <link rel="canonical" href={`${SITE}/${lang}/account/delete/`} />
+  <meta name="theme-color" content="#904A4D" />
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+</head>
+<body class="t-bg t-fg">
+  <div class="max-w-3xl mx-auto px-4 py-12">
+    <a href={`/${lang}/`} class="inline-flex items-center gap-2 mb-8 text-sm opacity-60 hover:opacity-100">
+      <img src="/assets/logo-shield.svg" alt="" class="w-6 h-6" />
+      <span>EguWallet</span>
+    </a>
+
+    <h1 class="text-3xl font-bold mb-2">{ad.title}</h1>
+    <p class="text-sm opacity-60 mb-8">{ad.description}</p>
+
+    <div class="space-y-8 leading-relaxed">
+      <p>{ad.intro}</p>
+
+      <section>
+        <h2 class="text-xl font-semibold mb-3">{ad.method1Title}</h2>
+        <ol class="list-decimal pl-6 space-y-1">
+          {ad.method1Steps.map((step: string) => <li>{step}</li>)}
+        </ol>
+        <p class="mt-3 text-sm opacity-80">{ad.method1Note}</p>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-semibold mb-3">{ad.method2Title}</h2>
+        <p set:html={ad.method2Text} />
+      </section>
+
+      <section>
+        <h2 class="text-xl font-semibold mb-3">{ad.whatDeleted}</h2>
+        <ul class="list-disc pl-6 space-y-1">
+          {ad.deletedItems.map((item: string) => <li>{item}</li>)}
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-semibold mb-3">{ad.whatRetained}</h2>
+        <ul class="list-disc pl-6 space-y-1">
+          {ad.retainedItems.map((item: string) => <li>{item}</li>)}
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-semibold mb-3">{ad.timeline}</h2>
+        <p>{ad.timelineText}</p>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-semibold mb-3">{ad.contact}</h2>
+        <p set:html={ad.contactText} />
+      </section>
+    </div>
+
+    <footer class="mt-12 pt-6 border-t border-current/10 text-sm opacity-50">
+      &copy; 2026 IT Eguilde SRL.
+      <a href={`/${lang}/`} class="underline ml-2">EguWallet</a> &middot;
+      <a href="/privacy-policy/" class="underline">Privacy Policy</a>
+    </footer>
+  </div>
+</body>
+</html>

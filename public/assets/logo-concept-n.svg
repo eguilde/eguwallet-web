@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Concept N: Bold geometric E where the bars slide out like cards from a wallet sleeve -->
+  <!-- Teal circle background -->
+  <circle cx="32" cy="32" r="28" fill="#0D9488"/>
+  <!-- Wallet sleeve (the vertical part of E) — darker -->
+  <rect x="14" y="10" width="8" height="44" rx="4" fill="#0A7C72"/>
+  <!-- Card 1 sliding right from top (full width) -->
+  <rect x="18" y="12" width="28" height="10" rx="2" fill="#fff"/>
+  <!-- Gold chip on card 1 -->
+  <rect x="22" y="15" width="5" height="3" rx="0.7" fill="#D4A43A" opacity="0.6"/>
+  <!-- Card 2 sliding right from middle (shorter — the E's middle bar) -->
+  <rect x="18" y="28" width="22" height="8" rx="2" fill="#fff" opacity="0.8"/>
+  <!-- Card 3 sliding right from bottom (full width) -->
+  <rect x="18" y="44" width="28" height="10" rx="2" fill="#fff"/>
+  <!-- Tiny contactless on card 3 -->
+  <g transform="translate(40, 47)" opacity="0.3">
+    <path d="M0 2.5a3 3 0 013-3" stroke="#0D9488" stroke-width="1" fill="none" stroke-linecap="round"/>
+    <path d="M0 2.5a5.5 5.5 0 015.5-5.5" stroke="#0D9488" stroke-width="1" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

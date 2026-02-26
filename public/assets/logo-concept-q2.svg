@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Q2: Calligraphic "Ew" inside a shield — red outline shield, red text, no fill -->
+  <!-- Shield outline only -->
+  <path d="M32 4L8 14v18c0 14.5 10.3 27.6 24 31 13.7-3.4 24-16.5 24-31V14L32 4z" fill="none" stroke="#A01E28" stroke-width="2.5"/>
+  <!-- Calligraphic E + small w -->
+  <text x="15" y="42" font-family="'Georgia', 'Times New Roman', serif" font-size="30" font-weight="700" font-style="italic" fill="#A01E28">E</text>
+  <text x="34" y="42" font-family="'Georgia', 'Times New Roman', serif" font-size="18" font-weight="400" font-style="italic" fill="#DC4A56">w</text>
+</svg>

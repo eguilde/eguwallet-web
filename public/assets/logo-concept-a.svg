@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Concept A: Shield with stylized "E" inside — the E's bars are credential/card lines -->
+  <!-- Outer shield -->
+  <path d="M32 4L8 16v16c0 14.4 10.2 27.8 24 31 13.8-3.2 24-16.6 24-31V16L32 4z" fill="#0D9488"/>
+  <!-- Inner shield cutout (darker) -->
+  <path d="M32 9L13 18.5v13c0 12 8.4 23.2 19 25.8 10.6-2.6 19-13.8 19-25.8v-13L32 9z" fill="#0F766E"/>
+  <!-- Stylized E made of 3 horizontal card-like bars -->
+  <rect x="22" y="19" width="20" height="4" rx="1.5" fill="#fff" opacity="0.95"/>
+  <rect x="22" y="28" width="16" height="4" rx="1.5" fill="#fff" opacity="0.75"/>
+  <rect x="22" y="37" width="20" height="4" rx="1.5" fill="#fff" opacity="0.95"/>
+  <!-- Vertical bar of the E -->
+  <rect x="20" y="19" width="4" height="22" rx="1.5" fill="#fff"/>
+</svg>

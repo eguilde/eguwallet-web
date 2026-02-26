@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- J5: Node E — NO background, indigo→teal gradient (bridges EguIlde + EguWallet) -->
+  <defs>
+    <linearGradient id="eguGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#0D9488"/>
+    </linearGradient>
+    <linearGradient id="eguGradLight" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#a5b4fc"/>
+      <stop offset="100%" stop-color="#5eead4"/>
+    </linearGradient>
+  </defs>
+  <!-- Vertical spine nodes -->
+  <circle cx="18" cy="12" r="4.5" fill="url(#eguGrad)"/>
+  <circle cx="18" cy="32" r="4.5" fill="url(#eguGrad)"/>
+  <circle cx="18" cy="52" r="4.5" fill="url(#eguGrad)"/>
+  <!-- Vertical connectors -->
+  <line x1="18" y1="16.5" x2="18" y2="27.5" stroke="url(#eguGrad)" stroke-width="3"/>
+  <line x1="18" y1="36.5" x2="18" y2="47.5" stroke="url(#eguGrad)" stroke-width="3"/>
+  <!-- Horizontal arms -->
+  <line x1="22.5" y1="12" x2="42" y2="12" stroke="url(#eguGrad)" stroke-width="3"/>
+  <line x1="22.5" y1="32" x2="38" y2="32" stroke="url(#eguGrad)" stroke-width="3"/>
+  <line x1="22.5" y1="52" x2="42" y2="52" stroke="url(#eguGrad)" stroke-width="3"/>
+  <!-- End nodes — lighter gradient -->
+  <circle cx="45" cy="12" r="3.5" fill="url(#eguGradLight)"/>
+  <circle cx="41" cy="32" r="3.5" fill="url(#eguGradLight)"/>
+  <circle cx="45" cy="52" r="3.5" fill="url(#eguGradLight)"/>
+</svg>

@@ -1,0 +1,245 @@
+---
+import '../styles/global.css';
+import { SITE } from '../config/site.ts';
+---
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script is:inline>
+    (function(){
+      var t=localStorage.getItem('egu-theme')||
+        (window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+      document.documentElement.setAttribute('data-theme',t);
+    })();
+  </script>
+  <title>Privacy Policy — EguWallet</title>
+  <meta name="description" content="EguWallet Privacy Policy — EU Digital Identity Wallet" />
+  <link rel="canonical" href={`${SITE}/privacy-policy/`} />
+  <meta name="theme-color" content="#904A4D" />
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+</head>
+<body class="t-bg t-fg">
+  <div class="max-w-3xl mx-auto px-4 py-12">
+    <a href="/" class="inline-flex items-center gap-2 mb-8 text-sm opacity-60 hover:opacity-100">
+      <img src="/assets/logo-shield.svg" alt="" class="w-6 h-6" />
+      <span>EguWallet</span>
+    </a>
+
+    <h1 class="text-3xl font-bold mb-2">Privacy Policy</h1>
+    <p class="text-sm opacity-60 mb-8">Last updated: February 23, 2026</p>
+
+    <div class="space-y-6 leading-relaxed">
+      <section>
+        <h2 class="text-xl font-semibold mb-2">1. Introduction</h2>
+        <p>EguWallet ("we", "us", "our") is an EU Digital Identity Wallet application developed by EguildE S.R.L., compliant with the European Digital Identity framework (eIDAS 2.0, Regulation (EU) 2024/1183). This Privacy Policy explains how we access, collect, use, share, and protect your personal data when you use the EguWallet mobile application ("the App") available on Google Play.</p>
+        <p class="mt-2">By installing and using the App, you acknowledge that you have read and understood this Privacy Policy.</p>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-semibold mb-2">2. Data Controller</h2>
+        <p><strong>EguildE S.R.L.</strong><br/>
+        Ilfov County, Romania<br/>
+        Privacy Contact: <a href="mailto:privacy@eguwallet.eu" class="t-primary underline">privacy@eguwallet.eu</a></p>
+        <p class="mt-2">If you have questions, concerns, or requests regarding your personal data, you may contact us at the email address above. We will respond within 30 days.</p>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-semibold mb-2">3. Data We Collect</h2>
+
+        <h3 class="font-semibold mt-4 mb-1">3.1 Account Registration Data</h3>
+        <p>During wallet registration we collect:</p>
+        <ul class="list-disc pl-6 space-y-1">
+          <li><strong>Phone number</strong> — for SMS verification during registration</li>
+          <li><strong>Email address</strong> — for email verification during registration</li>
+          <li><strong>First name, last name</strong> — for identity association with your wallet instance</li>
+          <li><strong>Selfie photo</strong> — for liveness verification and identity matching (processed on-device, transmitted to our server only during PID issuance)</li>
+        </ul>
+
+        <h3 class="font-semibold mt-4 mb-1">3.2 Device Information</h3>
+        <p>To ensure the security and integrity of your digital wallet, we collect:</p>
+        <ul class="list-disc pl-6 space-y-1">
+          <li><strong>Device identifier</strong> (Android ID) — a pseudonymous identifier used to bind the wallet to your device</li>
+          <li><strong>Device model and manufacturer</strong> — to assess hardware security capabilities</li>
+          <li><strong>Android OS version and security patch level</strong> — to verify device meets eIDAS 2.0 security requirements</li>
+          <li><strong>Hardware security capabilities</strong> — availability of Trusted Execution Environment (TEE), StrongBox, and biometric sensors</li>
+          <li><strong>Biometric enrollment status</strong> — whether fingerprint or face authentication is configured (we never access biometric data itself)</li>
+        </ul>
+
+        <h3 class="font-semibold mt-4 mb-1">3.3 Camera (android.permission.CAMERA)</h3>
+        <p>The App requires camera access for the following purposes:</p>
+        <ul class="list-disc pl-6 space-y-1">
+          <li><strong>QR code scanning</strong> — to read credential offers and verification requests from relying parties</li>
+          <li><strong>Identity document scanning</strong> — to capture your national ID card or passport for Person Identification Data (PID) issuance</li>
+          <li><strong>Selfie and liveness verification</strong> — to confirm you are a real person by detecting face orientation and movement (multi-pose check)</li>
+          <li><strong>MRZ (Machine Readable Zone) reading</strong> — to extract data from your identity document using on-device text recognition</li>
+        </ul>
+        <p class="mt-2"><strong>On-device processing:</strong> All camera images are processed locally on your device using Google ML Kit. Face detection, selfie segmentation, text recognition, and barcode scanning models run entirely on-device. Raw camera images are not uploaded to our servers unless you explicitly initiate PID issuance, in which case only the document image and selfie are transmitted over an encrypted connection.</p>
+
+        <h3 class="font-semibold mt-4 mb-1">3.4 Bluetooth (BLE) and NFC</h3>
+        <p>The App uses Bluetooth Low Energy (BLE) and Near Field Communication (NFC) for <strong>offline credential presentation</strong> per the ISO 18013-5 standard:</p>
+        <ul class="list-disc pl-6 space-y-1">
+          <li><strong>BLE</strong> — used for proximity data transfer when presenting credentials (e.g., mobile driving licence, digital ID) to a verifier device in person</li>
+          <li><strong>NFC</strong> — used for device engagement handshake (tap your phone to a verifier terminal to initiate presentation)</li>
+        </ul>
+        <p class="mt-2">BLE and NFC are only activated when you explicitly choose to present a credential in proximity mode. No location data is derived from Bluetooth or NFC. No data is shared with third parties through these channels — communication is end-to-end encrypted between your device and the verifier.</p>
+
+        <h3 class="font-semibold mt-4 mb-1">3.5 Digital Credentials</h3>
+        <p>Your digital identity credentials (PID, mobile driving licence, qualified electronic attestations) are stored encrypted in the Android hardware-backed keystore (TEE/StrongBox) on your device. We do not have access to the contents of your credentials. During presentation, only the specific data fields you explicitly approve are shared with the verifier through selective disclosure.</p>
+
+        <h3 class="font-semibold mt-4 mb-1">3.6 Push Notifications</h3>
+        <p>The App uses Firebase Cloud Messaging (FCM) to deliver push notifications about:</p>
+        <ul class="list-disc pl-6 space-y-1">
+          <li>Credential issuance status (when your PID or other credential is ready)</li>
+          <li>Verification requests from relying parties</li>
+          <li>Wallet attestation renewal reminders</li>
+        </ul>
+        <p class="mt-2">We store a FCM device token on our server to deliver these notifications. You can disable notifications at any time through your Android system settings.</p>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-semibold mb-2">4. How We Use Your Data</h2>
+        <ul class="list-disc pl-6 space-y-1">
+          <li><strong>Registration:</strong> phone number and email are used solely for identity verification during wallet setup</li>
+          <li><strong>Wallet attestation:</strong> device information is used to assess whether your device meets eIDAS 2.0 security requirements (Level of Assurance High)</li>
+          <li><strong>Credential issuance:</strong> your identity data (name, document scan, selfie) is transmitted to the PID Provider to issue your digital identity credential</li>
+          <li><strong>Credential presentation:</strong> when you present credentials to a verifier, only the fields you approve are shared (selective disclosure)</li>
+          <li><strong>Device integrity:</strong> Play Integrity API results are used to verify the App has not been tampered with and the device is genuine</li>
+          <li><strong>Compliance:</strong> eIDAS 2.0 mandatory audit records are maintained without storing personal data in logs</li>
+          <li><strong>Notifications:</strong> FCM tokens are used to send you relevant wallet notifications</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-semibold mb-2">5. Third-Party Services and SDKs</h2>
+        <p>The App integrates the following third-party services. Each processes data as described:</p>
+
+        <h3 class="font-semibold mt-4 mb-1">5.1 Google Play Services</h3>
+        <ul class="list-disc pl-6 space-y-1">
+          <li><strong>Google Play Integrity API</strong> — verifies device and app integrity. An opaque integrity token is sent to Google servers; no personal data is included. <a href="https://policies.google.com/privacy" class="t-primary underline">Google Privacy Policy</a></li>
+          <li><strong>Google ML Kit</strong> (Face Detection, Text Recognition, Barcode Scanning, Document Scanner, Selfie Segmentation) — all models run on-device. No image data is sent to Google. <a href="https://developers.google.com/ml-kit/terms" class="t-primary underline">ML Kit Terms</a></li>
+          <li><strong>Google Identity Services</strong> — used for phone number hint during registration. No personal data is shared without your action.</li>
+        </ul>
+
+        <h3 class="font-semibold mt-4 mb-1">5.2 Firebase (Google)</h3>
+        <ul class="list-disc pl-6 space-y-1">
+          <li><strong>Firebase Cloud Messaging</strong> — delivers push notifications. Google processes your FCM token and IP address. <a href="https://firebase.google.com/support/privacy" class="t-primary underline">Firebase Privacy</a></li>
+          <li><strong>Firebase Analytics</strong> — included in the SDK but the App does not actively send custom analytics events. Standard Firebase Analytics data collection (crash-free users, session data) may apply per <a href="https://firebase.google.com/support/privacy" class="t-primary underline">Firebase data collection policies</a>.</li>
+        </ul>
+
+        <h3 class="font-semibold mt-4 mb-1">5.3 EU Digital Identity Libraries</h3>
+        <ul class="list-disc pl-6 space-y-1">
+          <li><strong>EUDI ISO 18013-5 Data Transfer Library</strong> — handles proximity presentation via BLE/NFC. All communication is device-to-device, encrypted per ISO 18013-5 session encryption. No data is sent to external servers.</li>
+          <li><strong>EUDI Document Manager Library</strong> — manages credential lifecycle on-device. No external data transmission.</li>
+        </ul>
+
+        <h3 class="font-semibold mt-4 mb-1">5.4 Cryptographic Libraries</h3>
+        <p>Bouncy Castle, Nimbus JOSE JWT, and other cryptographic libraries are used for digital signatures, certificate validation, and secure token handling. These operate locally and do not transmit data.</p>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-semibold mb-2">6. Data Storage and Security</h2>
+        <ul class="list-disc pl-6 space-y-1">
+          <li>Cryptographic keys are stored in Android hardware-backed keystore (TEE/StrongBox) and never leave the secure hardware</li>
+          <li>Credentials are encrypted at rest using hardware-backed keys</li>
+          <li>Local app data is encrypted using AndroidX Security Crypto (AES-256-GCM)</li>
+          <li>All network communication uses TLS 1.3 encryption</li>
+          <li>DPoP (Demonstration of Proof-of-Possession) tokens bind API requests to your device cryptographically</li>
+          <li>JWT attestations are signed with ES256 (ECDSA P-256)</li>
+          <li>Server-side data is stored exclusively in the European Union (Romania)</li>
+          <li>We implement GDPR-compliant data retention and security policies</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-semibold mb-2">7. Data Sharing</h2>
+        <p>We do not sell, rent, or trade your personal data. Data is shared only in these circumstances:</p>
+        <ul class="list-disc pl-6 space-y-1">
+          <li><strong>With verifiers you approve</strong> — when you present credentials, only the fields you explicitly consent to are disclosed (selective disclosure)</li>
+          <li><strong>With credential issuers</strong> — during PID or attestation issuance at your request</li>
+          <li><strong>With Google Play Integrity API</strong> — an anonymous device integrity check (no personal data included)</li>
+          <li><strong>With Firebase Cloud Messaging</strong> — your FCM token for push notification delivery</li>
+          <li><strong>Legal requirements</strong> — if required by law, court order, or regulatory authority</li>
+        </ul>
+        <p class="mt-2">We do not share your data with advertisers, data brokers, or any parties for marketing purposes.</p>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-semibold mb-2">8. Your Rights (GDPR)</h2>
+        <p>Under the General Data Protection Regulation (EU) 2016/679, you have the right to:</p>
+        <ul class="list-disc pl-6 space-y-1">
+          <li><strong>Access</strong> — request a copy of all personal data we hold about you</li>
+          <li><strong>Rectification</strong> — correct inaccurate personal data</li>
+          <li><strong>Erasure</strong> — request deletion of your personal data ("right to be forgotten")</li>
+          <li><strong>Restriction</strong> — restrict the processing of your data</li>
+          <li><strong>Portability</strong> — receive your data in a structured, machine-readable format</li>
+          <li><strong>Objection</strong> — object to processing based on legitimate interests</li>
+          <li><strong>Withdraw consent</strong> — withdraw consent at any time without affecting prior processing</li>
+        </ul>
+        <p class="mt-2">The App provides in-app GDPR tools including transaction history, connected parties overview, data export, and data erasure request. You can also exercise these rights by contacting <a href="mailto:privacy@eguwallet.eu" class="t-primary underline">privacy@eguwallet.eu</a>. We will respond within 30 days.</p>
+        <p class="mt-2">You also have the right to lodge a complaint with the Romanian National Supervisory Authority for Personal Data Processing (ANSPDCP) or your local data protection authority.</p>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-semibold mb-2">9. Account and Data Deletion</h2>
+        <p>You may delete your wallet and all associated data at any time:</p>
+        <ul class="list-disc pl-6 space-y-1">
+          <li><strong>In-app:</strong> Go to Settings &rarr; Delete Wallet. This removes all credentials, keys, and local data from your device and requests deletion of your server-side account data.</li>
+          <li><strong>By email:</strong> Contact <a href="mailto:privacy@eguwallet.eu" class="t-primary underline">privacy@eguwallet.eu</a> with your request.</li>
+        </ul>
+        <p class="mt-2">Upon deletion, your personal data is removed from our servers within 30 days, except for eIDAS 2.0 mandatory audit records (which contain no personal data) retained for 7 years as required by regulation.</p>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-semibold mb-2">10. Data Retention</h2>
+        <ul class="list-disc pl-6 space-y-1">
+          <li>Wallet attestations: 7 days (automatically renewed)</li>
+          <li>Verification codes (SMS/email): 15 minutes</li>
+          <li>DPoP nonces: 5 minutes</li>
+          <li>eIDAS 2.0 audit logs: 7 years (regulatory requirement, no personal data stored)</li>
+          <li>Account data: retained until you delete your wallet</li>
+          <li>FCM tokens: retained until you delete your wallet or uninstall the App</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-semibold mb-2">11. Children's Privacy</h2>
+        <p>EguWallet is not intended for use by children under the age of 16. We do not knowingly collect personal data from children. If we become aware that we have collected data from a child under 16, we will delete it promptly. If you believe a child has provided us personal data, please contact <a href="mailto:privacy@eguwallet.eu" class="t-primary underline">privacy@eguwallet.eu</a>.</p>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-semibold mb-2">12. International Data Transfers</h2>
+        <p>Your personal data is processed and stored exclusively within the European Union (Romania). We do not transfer personal data outside the EU/EEA. Third-party services (Google Play Services, Firebase) may process limited technical data (such as device tokens and IP addresses) in accordance with their own privacy policies and EU Standard Contractual Clauses.</p>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-semibold mb-2">13. Legal Basis for Processing (GDPR Art. 6)</h2>
+        <ul class="list-disc pl-6 space-y-1">
+          <li><strong>Consent (Art. 6(1)(a))</strong> — camera access, biometric authentication, push notifications</li>
+          <li><strong>Performance of a contract (Art. 6(1)(b))</strong> — wallet registration, credential issuance, credential presentation</li>
+          <li><strong>Legal obligation (Art. 6(1)(c))</strong> — eIDAS 2.0 mandatory audit records, regulatory compliance</li>
+          <li><strong>Legitimate interest (Art. 6(1)(f))</strong> — device security assessment, fraud prevention, app integrity verification</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-semibold mb-2">14. Changes to This Policy</h2>
+        <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated revision date. If we make material changes, we will notify you through the App or by email. Continued use of the App after changes constitutes acceptance of the updated policy.</p>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-semibold mb-2">15. Contact Us</h2>
+        <p>For questions, concerns, or requests regarding this Privacy Policy or your personal data:</p>
+        <p class="mt-2"><strong>EguildE S.R.L.</strong><br/>
+        Ilfov County, Romania<br/>
+        Email: <a href="mailto:privacy@eguwallet.eu" class="t-primary underline">privacy@eguwallet.eu</a></p>
+      </section>
+    </div>
+
+    <footer class="mt-12 pt-6 border-t border-current/10 text-sm opacity-50">
+      &copy; 2026 EguildE S.R.L. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Concept L: Trust Wallet / Exodus style — rounded square with abstract wallet symbol -->
+  <!-- Rounded square background -->
+  <rect x="4" y="4" width="56" height="56" rx="14" fill="#0D9488"/>
+  <!-- Abstract wallet: two overlapping rounded cards forming a "W" perspective -->
+  <!-- Back card (lighter, angled) -->
+  <rect x="12" y="14" width="28" height="18" rx="3" fill="#fff" opacity="0.3" transform="rotate(-5 26 23)"/>
+  <!-- Front card (white, angled other way) -->
+  <rect x="22" y="18" width="28" height="18" rx="3" fill="#fff" opacity="0.9" transform="rotate(3 36 27)"/>
+  <!-- Chip on front card -->
+  <rect x="27" y="23" width="5.5" height="4" rx="0.8" fill="#0D9488" opacity="0.4" transform="rotate(3 29.75 25)"/>
+  <!-- Contactless waves -->
+  <g transform="translate(44, 23) rotate(3)">
+    <path d="M0 3a4 4 0 014-4" stroke="#0D9488" stroke-width="1" fill="none" opacity="0.3" stroke-linecap="round"/>
+    <path d="M0 3a7 7 0 017-7" stroke="#0D9488" stroke-width="1" fill="none" opacity="0.2" stroke-linecap="round"/>
+  </g>
+  <!-- "E" mark at bottom -->
+  <text x="24" y="54" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="900" fill="#fff" opacity="0.9">ew</text>
+</svg>
