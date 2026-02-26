@@ -16,8 +16,8 @@
     "title": "Identitatea ta digitală — sigură, privată, mereu la tine",
     "subtitle": "EguWallet este portofelul digital european certificat eIDAS 2.0 care înlocuiește documentele fizice cu echivalente digitale verificabile, recunoscute în toate statele membre UE.",
     "badge1": "eIDAS 2.0 Conform",
-    "badge2": "EUDI Wallet Certificat",
-    "badge3": "Gratuit",
+    "badge2": "Certificare în curs",
+    "badge3": "Momentan gratuit",
     "downloadAndroid": "Disponibil pe Google Play",
     "downloadIos": "Disponibil curând pe App Store",
     "downloadIosComingSoon": "În curând"
@@ -29,7 +29,7 @@
     "card2Title": "Ce este un EUDI Wallet?",
     "card2Body": "Un Portofel European de Identitate Digitală (EUDI) este o aplicație sigură care stochează documente de identitate digitale verificabile: buletin, pașaport, permis auto, documente de vehicul și multe altele — toate sub controlul tău exclusiv.",
     "card3Title": "Cine furnizează EguWallet?",
-    "card3Body": "EguWallet este dezvoltat de IT Eguilde SRL, furnizor de identitate digitală. Aplicația respectă integral Arhitectura de Referință EUDI (ARF 2.5+), standardele OpenID4VCI și OpenID4VP."
+    "card3Body": "EguWallet este dezvoltat de IT Eguilde SRL, furnizor de identitate digitală. Aplicația este construită pe Arhitectura de Referință EUDI (ARF 2.5+), standardele OpenID4VCI și OpenID4VP. Se află în prezent în proces de certificare eIDAS 2.0 — până la finalizarea certificării, operează ca portofel EUDI pilot."
   },
   "privacy": {
     "heading": "Datele tale, controlul tău",
@@ -97,7 +97,7 @@
   "howItWorks": {
     "heading": "Cum funcționează",
     "step1Title": "1. Descarcă aplicația",
-    "step1Body": "Instalează EguWallet gratuit din Google Play Store. Disponibil în curând și pe Apple App Store.",
+    "step1Body": "Instalează EguWallet din Google Play Store — momentan gratuit în faza pilot. Disponibil în curând și pe Apple App Store.",
     "step2Title": "2. Activează portofelul",
     "step2Body": "Verifică numărul de telefon, creează un PIN securizat și conectează-te la portalul județului sau orașului tău pentru a-ți înregistra documentele digitale.",
     "step3Title": "3. Prezintă cu control total",
@@ -112,7 +112,8 @@
       { "q": "Unde pot folosi EguWallet?", "a": "Astăzi: la serviciile digitale ale Consiliului Județean Ilfov (ilfov.net) și Primăriei Sectorului 2 (sector2.eu). Urmează extinderea la alte instituții publice și retaileri privați din România și UE." },
       { "q": "Ce este eIDAS 2.0?", "a": "eIDAS 2.0 este Regulamentul (UE) 2024/1183 care amendează regulamentul eIDAS original. Garantează fiecărui cetățean european dreptul la un portofel digital gratuit (EUDI Wallet), recunoscut în toate cele 27 de state membre." },
       { "q": "Cum funcționează dezvăluirea selectivă?", "a": "Când un serviciu solicită verificarea identității, portofelul dvs. vă arată exact ce date sunt cerute. Aprobați sau respingeți fiecare câmp. De exemplu, pentru verificarea vârstei la 18 ani, comerciantul primește doar răspunsul DA/NU — nu vă vede numele, CNP-ul sau adresa." },
-      { "q": "Este EguWallet gratuit?", "a": "Da, complet gratuit pentru cetățeni. Descărcarea, înregistrarea și utilizarea sunt fără cost." },
+      { "q": "Este EguWallet gratuit?", "a": "Da, momentan gratuit pentru cetățeni în faza pilot. EguWallet se află în proces de certificare eIDAS 2.0 — odată certificat, poate apărea un cost pentru integrările instituționale, dar aplicația pentru cetățeni va rămâne gratuită." },
+      { "q": "EguWallet este complet certificat?", "a": "EguWallet se află în prezent în proces de certificare eIDAS 2.0 formală de către un Organism de Evaluare a Conformității (CAB) acreditat. Până la finalizarea certificării, operează ca portofel EUDI pilot. Toate standardele tehnice (ARF 2.5+, OpenID4VCI, OpenID4VP, SD-JWT, ISO 18013-5) sunt deja implementate." },
       { "q": "Cum îmi activez portofelul digital?", "a": "Descărcați aplicația din Google Play, verificați numărul de telefon, creați un PIN, apoi conectați-vă la portalul județului sau orașului dvs. pentru înregistrarea documentelor. Procesul durează aproximativ 5 minute." }
     ]
   },

@@ -16,8 +16,8 @@
     "title": "Your digital identity — secure, private, always with you",
     "subtitle": "EguWallet is a European eIDAS 2.0 certified digital wallet that replaces physical documents with verifiable digital equivalents, recognised across all EU member states.",
     "badge1": "eIDAS 2.0 Compliant",
-    "badge2": "Certified EUDI Wallet",
-    "badge3": "Free",
+    "badge2": "Certification in Progress",
+    "badge3": "Free for now",
     "downloadAndroid": "Get it on Google Play",
     "downloadIos": "Available soon on App Store",
     "downloadIosComingSoon": "Coming Soon"
@@ -29,7 +29,7 @@
     "card2Title": "What is a EUDI Wallet?",
     "card2Body": "A European Digital Identity Wallet (EUDI) is a secure app that stores verifiable digital identity documents: ID card, passport, driving licence, vehicle documents and more — all under your exclusive control.",
     "card3Title": "Who provides EguWallet?",
-    "card3Body": "EguWallet is developed by IT Eguilde SRL, a digital identity provider. The app fully complies with the EUDI Architecture Reference Framework (ARF 2.5+), OpenID4VCI and OpenID4VP standards."
+    "card3Body": "EguWallet is developed by IT Eguilde SRL, a digital identity provider. The app is built on the EUDI Architecture Reference Framework (ARF 2.5+), OpenID4VCI and OpenID4VP standards. It is currently undergoing formal eIDAS 2.0 certification — until certification is complete, it operates as a pilot EUDI Wallet."
   },
   "privacy": {
     "heading": "Your data, your control",
@@ -97,7 +97,7 @@
   "howItWorks": {
     "heading": "How it works",
     "step1Title": "1. Download the app",
-    "step1Body": "Install EguWallet for free from the Google Play Store. Coming soon on Apple App Store.",
+    "step1Body": "Install EguWallet from the Google Play Store — free for now during the pilot phase. Coming soon on Apple App Store.",
     "step2Title": "2. Activate your wallet",
     "step2Body": "Verify your phone number, create a secure PIN, and connect to your county or city portal to register your digital documents.",
     "step3Title": "3. Present with full control",
@@ -112,7 +112,8 @@
       { "q": "Where can I use EguWallet?", "a": "Today: Ilfov County Council digital services (ilfov.net) and Sector 2 City Hall (sector2.eu). Expansion to other public institutions and private retailers in Romania and the EU is ongoing." },
       { "q": "What is eIDAS 2.0?", "a": "eIDAS 2.0 is Regulation (EU) 2024/1183 amending the original eIDAS regulation. It guarantees every European citizen the right to a free digital wallet (EUDI Wallet), recognised across all 27 member states." },
       { "q": "How does selective disclosure work?", "a": "When a service requests identity verification, your wallet shows you exactly what data is being requested. You approve or reject each field. For example, for age-18 verification, the merchant receives only a YES/NO — they never see your name, national ID number or address." },
-      { "q": "Is EguWallet free?", "a": "Yes, completely free for citizens. Download, registration and use are all without cost." },
+      { "q": "Is EguWallet free?", "a": "Yes, free for citizens during the current pilot phase. EguWallet is undergoing formal eIDAS 2.0 certification — once certified, pricing for institutional integrations may apply, but the citizen wallet app will remain free." },
+      { "q": "Is EguWallet fully certified?", "a": "EguWallet is currently undergoing formal eIDAS 2.0 certification by an accredited Conformity Assessment Body (CAB). Until certification is complete, it operates as a pilot EUDI Wallet. All technical standards (ARF 2.5+, OpenID4VCI, OpenID4VP, SD-JWT, ISO 18013-5) are already implemented." },
       { "q": "How do I activate my digital wallet?", "a": "Download the app from Google Play, verify your phone number, create a PIN, then connect to your county or city portal to register your documents. The process takes approximately 5 minutes." }
     ]
   },
