@@ -197,7 +197,7 @@
 body {
   background-color: var(--eg-bg);
   color: var(--eg-fg);
-  font-family: 'Inter', 'Segoe UI', 'Roboto', system-ui, -apple-system, sans-serif;
+  font-family: 'Plus Jakarta Sans', 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
   transition: background-color 0.2s, color 0.2s;
 }
 

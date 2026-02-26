@@ -102,8 +102,8 @@ const playUrl = 'https://play.google.com/store/apps/details?id=wallet.eguwallet.
     <section id="privacy" class="eg-section-dark py-16 sm:py-20 md:py-24 px-4 sm:px-6">
       <div class="max-w-4xl mx-auto">
         <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-2 eg-fade-up" style="color:#f0e8e8;">{t.privacy.heading}</h2>
-        <p class="text-sm sm:text-base mb-3 eg-fade-up" style="background:var(--eg-gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-weight:600;">{t.privacy.subheading}</p>
-        <p class="text-sm sm:text-base leading-relaxed mb-10 eg-fade-up" style="color:rgba(240,232,232,0.55);">{t.privacy.body}</p>
+        <p class="text-base sm:text-lg mb-3 eg-fade-up" style="background:var(--eg-gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-weight:600;">{t.privacy.subheading}</p>
+        <p class="text-base sm:text-lg leading-relaxed mb-10 eg-fade-up" style="color:rgba(240,232,232,0.80);">{t.privacy.body}</p>
 
         <div class="flex flex-col gap-6 md:grid md:grid-cols-2 md:gap-8">
           <div class="eg-glass-dark p-5 sm:p-6 eg-fade-up">
@@ -115,14 +115,14 @@ const playUrl = 'https://play.google.com/store/apps/details?id=wallet.eguwallet.
                 { step: t.privacy.example1Step3, ok: true },
                 { step: t.privacy.example1Step4, ok: false },
               ].map(({ step, ok }) => (
-                <div class="flex items-start gap-3 text-sm">
+                <div class="flex items-start gap-3 text-base">
                   <span class={`w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-bold ${ok ? '' : ''}`}
                     style={ok
-                      ? 'background:rgba(160,30,40,0.35);color:#ffb3b0;'
-                      : 'background:rgba(255,255,255,0.08);color:rgba(240,232,232,0.35);'}>
+                      ? 'background:rgba(160,30,40,0.45);color:#ffb3b0;'
+                      : 'background:rgba(255,255,255,0.10);color:rgba(240,232,232,0.50);'}>
                     {ok ? '✓' : '✗'}
                   </span>
-                  <span style="color:rgba(240,232,232,0.65);">{step}</span>
+                  <span style="color:rgba(240,232,232,0.85);">{step}</span>
                 </div>
               ))}
             </div>
@@ -134,7 +134,7 @@ const playUrl = 'https://play.google.com/store/apps/details?id=wallet.eguwallet.
               {[t.privacy.legal1, t.privacy.legal2, t.privacy.legal3].map((text) => (
                 <div class="flex items-start gap-3 text-sm">
                   <span class="w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-bold" style="background:rgba(160,30,40,0.25);color:#ffb3b0;">§</span>
-                  <span class="leading-relaxed" style="color:rgba(240,232,232,0.60);" set:html={text} />
+                  <span class="leading-relaxed text-base" style="color:rgba(240,232,232,0.82);" set:html={text} />
                 </div>
               ))}
             </div>
@@ -163,7 +163,7 @@ const playUrl = 'https://play.google.com/store/apps/details?id=wallet.eguwallet.
                     {status === 'available' ? t.documents.statusAvailable : t.documents.statusSoon}
                   </span>
                 </div>
-                <p class="text-xs sm:text-sm leading-relaxed t-fg opacity-45">{body}</p>
+                <p class="text-sm sm:text-base leading-relaxed t-fg opacity-65">{body}</p>
               </div>
             </div>
           ))}
@@ -207,8 +207,8 @@ const playUrl = 'https://play.google.com/store/apps/details?id=wallet.eguwallet.
                     <span class="text-lg flex-shrink-0 mt-0.5">{emoji}</span>
                     <div>
                       <h4 class="font-semibold text-sm sm:text-base mb-1 t-fg">{name}</h4>
-                      <p class="text-xs sm:text-sm leading-relaxed t-fg opacity-50 mb-1">{body}</p>
-                      {legal && <p class="text-xs t-fg opacity-30 italic">{legal}</p>}
+                      <p class="text-sm sm:text-base leading-relaxed t-fg opacity-65 mb-1">{body}</p>
+                      {legal && <p class="text-xs sm:text-sm t-fg opacity-50 italic">{legal}</p>}
                     </div>
                   </div>
                 ))}
@@ -224,7 +224,7 @@ const playUrl = 'https://play.google.com/store/apps/details?id=wallet.eguwallet.
     <section id="trust" class="eg-section-dark py-16 sm:py-20 md:py-24 px-4 sm:px-6">
       <div class="max-w-4xl mx-auto">
         <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-2 eg-fade-up" style="color:#f0e8e8;">{t.trust.heading}</h2>
-        <p class="text-sm sm:text-base mb-8 eg-fade-up" style="color:rgba(240,232,232,0.50);">{t.trust.subheading}</p>
+        <p class="text-base sm:text-lg mb-8 eg-fade-up" style="color:rgba(240,232,232,0.75);">{t.trust.subheading}</p>
 
         {t.trust.image && (
           <div class="w-full rounded-2xl mb-8 overflow-hidden eg-fade-up" style="max-height: 280px;">
@@ -253,9 +253,9 @@ const playUrl = 'https://play.google.com/store/apps/details?id=wallet.eguwallet.
             <h3 class="text-base sm:text-lg font-semibold mb-4" style="color:#f0e8e8;">{t.trust.citizenTitle}</h3>
             <div class="flex flex-col gap-3">
               {t.trust.citizenPoints.map((point) => (
-                <div class="flex items-start gap-3 text-sm">
-                  <span class="w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-bold" style="background:rgba(160,30,40,0.35);color:#ffb3b0;">✓</span>
-                  <span style="color:rgba(240,232,232,0.65);">{point}</span>
+                <div class="flex items-start gap-3 text-base">
+                  <span class="w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-bold" style="background:rgba(160,30,40,0.45);color:#ffb3b0;">✓</span>
+                  <span style="color:rgba(240,232,232,0.85);">{point}</span>
                 </div>
               ))}
             </div>
@@ -263,12 +263,12 @@ const playUrl = 'https://play.google.com/store/apps/details?id=wallet.eguwallet.
 
           <div class="eg-glass-dark p-5 sm:p-6 eg-fade-up">
             <h3 class="text-base sm:text-lg font-semibold mb-1" style="color:#f0e8e8;">{t.trust.rpTitle}</h3>
-            <p class="text-xs mb-4 italic" style="color:rgba(240,232,232,0.35);">{t.trust.rpSubtitle}</p>
+            <p class="text-sm mb-4 italic" style="color:rgba(240,232,232,0.55);">{t.trust.rpSubtitle}</p>
             <div class="flex flex-col gap-3">
               {t.trust.rpPoints.map((point) => (
-                <div class="flex items-start gap-3 text-sm">
-                  <span class="w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-bold" style="background:rgba(160,30,40,0.25);color:#ffb3b0;">§</span>
-                  <span style="color:rgba(240,232,232,0.60);">{point}</span>
+                <div class="flex items-start gap-3 text-base">
+                  <span class="w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-bold" style="background:rgba(160,30,40,0.35);color:#ffb3b0;">§</span>
+                  <span style="color:rgba(240,232,232,0.82);">{point}</span>
                 </div>
               ))}
             </div>
@@ -277,8 +277,8 @@ const playUrl = 'https://play.google.com/store/apps/details?id=wallet.eguwallet.
 
         <!-- Audit statement -->
         <div class="eg-glass-dark mt-8 p-5 sm:p-6 eg-fade-up">
-          <h4 class="font-semibold text-sm sm:text-base mb-2" style="color:#f0e8e8;">{t.trust.auditTitle}</h4>
-          <p class="text-xs sm:text-sm leading-relaxed" style="color:rgba(240,232,232,0.50);">{t.trust.auditBody}</p>
+          <h4 class="font-semibold text-base sm:text-lg mb-2" style="color:#f0e8e8;">{t.trust.auditTitle}</h4>
+          <p class="text-sm sm:text-base leading-relaxed" style="color:rgba(240,232,232,0.75);">{t.trust.auditBody}</p>
         </div>
       </div>
     </section>
@@ -341,7 +341,7 @@ const playUrl = 'https://play.google.com/store/apps/details?id=wallet.eguwallet.
     <section id="integrate" class="eg-section-dark py-16 sm:py-20 md:py-24 px-4 sm:px-6">
       <div class="max-w-4xl mx-auto">
         <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-2 eg-fade-up" style="color:#f0e8e8;">{t.integrate.heading}</h2>
-        <p class="text-sm sm:text-base mb-4 eg-fade-up" style="color:rgba(240,232,232,0.50);">{t.integrate.subheading}</p>
+        <p class="text-base sm:text-lg mb-4 eg-fade-up" style="color:rgba(240,232,232,0.75);">{t.integrate.subheading}</p>
 
         <!-- SDK badges -->
         <div class="flex flex-wrap gap-2 mb-8 eg-fade-up">
@@ -359,7 +359,7 @@ const playUrl = 'https://play.google.com/store/apps/details?id=wallet.eguwallet.
             <div class="eg-glass-dark flex flex-col gap-2 p-5 sm:p-6 eg-fade-up">
               <span class="text-2xl sm:text-3xl">{icon}</span>
               <h3 class="font-semibold text-sm sm:text-base" style="color:#f0e8e8;">{title}</h3>
-              <p class="text-xs sm:text-sm leading-relaxed" style="color:rgba(240,232,232,0.50);">{body}</p>
+              <p class="text-sm sm:text-base leading-relaxed" style="color:rgba(240,232,232,0.75);">{body}</p>
             </div>
           ))}
         </div>
@@ -436,34 +436,34 @@ const playUrl = 'https://play.google.com/store/apps/details?id=wallet.eguwallet.
     </section>
 
     <!-- ═══════════════ FOOTER — dark ═══════════════ -->
-    <footer style="background:#0a0a0b; color: rgba(240,232,232,0.60);" class="py-10 sm:py-14 px-4 sm:px-6">
+    <footer style="background:#0a0a0b;" class="py-12 sm:py-16 px-4 sm:px-6">
       <div class="max-w-4xl mx-auto">
-        <div class="flex flex-col gap-8 sm:flex-row sm:justify-between mb-8">
+        <div class="flex flex-col gap-8 sm:flex-row sm:justify-between mb-10">
           <div>
-            <div class="flex items-center gap-2 mb-2">
-              <img src="/assets/logo-shield.svg" alt="" width="24" height="24" class="w-6 h-6 opacity-80" aria-hidden="true" />
-              <p class="text-sm font-bold" style="color:#f0e8e8;">EguWallet</p>
+            <div class="flex items-center gap-2 mb-3">
+              <img src="/assets/logo-shield.svg" alt="" width="28" height="28" class="w-7 h-7 opacity-90" aria-hidden="true" />
+              <p class="text-base font-bold" style="color:#f0e8e8;">EguWallet</p>
             </div>
-            <p class="text-xs mb-1" style="color:rgba(240,232,232,0.40);">{t.footer.tagline}</p>
-            <p class="text-xs" style="color:rgba(240,232,232,0.22);">{t.footer.provider}</p>
+            <p class="text-sm mb-1 leading-relaxed" style="color:rgba(240,232,232,0.65);">{t.footer.tagline}</p>
+            <p class="text-sm" style="color:rgba(240,232,232,0.45);">{t.footer.provider}</p>
           </div>
-          <div class="flex gap-8 text-xs sm:text-sm">
-            <div class="flex flex-col gap-2">
-              <a href={`/${lang}/privacy/`} class="hover:opacity-100 transition-opacity" style="color:rgba(240,232,232,0.45);">{t.footer.privacy}</a>
-              <a href={`/${lang}/terms/`} class="hover:opacity-100 transition-opacity" style="color:rgba(240,232,232,0.45);">{t.footer.legal}</a>
-              <a href={`/${lang}/contact/`} class="hover:opacity-100 transition-opacity" style="color:rgba(240,232,232,0.45);">{t.footer.contact}</a>
+          <div class="flex gap-10 text-sm sm:text-base">
+            <div class="flex flex-col gap-3">
+              <a href={`/${lang}/privacy/`} class="hover:text-white transition-colors" style="color:rgba(240,232,232,0.70);">{t.footer.privacy}</a>
+              <a href={`/${lang}/terms/`} class="hover:text-white transition-colors" style="color:rgba(240,232,232,0.70);">{t.footer.legal}</a>
+              <a href={`/${lang}/contact/`} class="hover:text-white transition-colors" style="color:rgba(240,232,232,0.70);">{t.footer.contact}</a>
             </div>
-            <div class="flex flex-col gap-2">
-              <a href="https://anpc.ro" target="_blank" rel="noopener noreferrer" class="hover:opacity-100 transition-opacity" style="color:rgba(240,232,232,0.28);">ANPC ↗</a>
-              <a href="https://www.dataprotection.ro" target="_blank" rel="noopener noreferrer" class="hover:opacity-100 transition-opacity" style="color:rgba(240,232,232,0.28);">ANSPDCP ↗</a>
-              <a href="https://digital-strategy.ec.europa.eu/en/activities/digital-identities" target="_blank" rel="noopener noreferrer" class="hover:opacity-100 transition-opacity" style="color:rgba(240,232,232,0.28);">EUDI ↗</a>
+            <div class="flex flex-col gap-3">
+              <a href="https://anpc.ro" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors" style="color:rgba(240,232,232,0.50);">ANPC ↗</a>
+              <a href="https://www.dataprotection.ro" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors" style="color:rgba(240,232,232,0.50);">ANSPDCP ↗</a>
+              <a href="https://digital-strategy.ec.europa.eu/en/activities/digital-identities" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors" style="color:rgba(240,232,232,0.50);">EUDI ↗</a>
             </div>
           </div>
         </div>
 
-        <div class="h-px mb-6" style="background:rgba(240,232,232,0.08);"></div>
+        <div class="h-px mb-8" style="background:rgba(240,232,232,0.10);"></div>
 
-        <div class="flex flex-wrap gap-x-3 gap-y-1 mb-4 text-xs" style="color:rgba(240,232,232,0.22);">
+        <div class="flex flex-wrap gap-x-3 gap-y-1 mb-5 text-sm" style="color:rgba(240,232,232,0.45);">
           <span>eIDAS 2.0</span><span>·</span>
           <span>GDPR</span><span>·</span>
           <span>ARF 2.5+</span><span>·</span>
@@ -472,21 +472,21 @@ const playUrl = 'https://play.google.com/store/apps/details?id=wallet.eguwallet.
           <span>ISO 18013-5</span>
         </div>
 
-        <p class="text-xs mb-2" style="color:rgba(240,232,232,0.18);">
-          <a href="https://eur-lex.europa.eu/eli/reg/2024/1183/oj" target="_blank" rel="noopener noreferrer" class="hover:opacity-60 transition-opacity underline">Reg. (EU) 2024/1183</a>
+        <p class="text-sm mb-3 leading-relaxed" style="color:rgba(240,232,232,0.40);">
+          <a href="https://eur-lex.europa.eu/eli/reg/2024/1183/oj" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors underline">Reg. (EU) 2024/1183</a>
           {' · '}
-          <a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj" target="_blank" rel="noopener noreferrer" class="hover:opacity-60 transition-opacity underline">GDPR (EU) 2016/679</a>
+          <a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors underline">GDPR (EU) 2016/679</a>
           {' · '}
-          <a href="https://digital-strategy.ec.europa.eu/en/activities/digital-identities" target="_blank" rel="noopener noreferrer" class="hover:opacity-60 transition-opacity underline">EUDI Wallet</a>
+          <a href="https://digital-strategy.ec.europa.eu/en/activities/digital-identities" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors underline">EUDI Wallet</a>
           {' · '}
-          <a href={`/${lang}/contact/`} class="hover:opacity-60 transition-opacity underline">{t.footer.accessibility}</a>
+          <a href={`/${lang}/contact/`} class="hover:text-white transition-colors underline">{t.footer.accessibility}</a>
         </p>
 
         {t.isMachineTranslated && (
-          <p class="text-xs mb-2" style="color:rgba(240,232,232,0.18);">{t.footer.machineTranslatedNotice}</p>
+          <p class="text-sm mb-3" style="color:rgba(240,232,232,0.40);">{t.footer.machineTranslatedNotice}</p>
         )}
 
-        <p class="text-xs" style="color:rgba(240,232,232,0.14);">{t.footer.rights}</p>
+        <p class="text-sm" style="color:rgba(240,232,232,0.35);">{t.footer.rights}</p>
       </div>
     </footer>
 
