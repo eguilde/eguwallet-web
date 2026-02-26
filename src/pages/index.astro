@@ -1,8 +1,31 @@
 ---
-// Fallback redirect handled by nginx (301 / -> /ro/)
-// This file exists only for the build system; nginx serves the redirect.
+export const prerender = false;
+
+const SUPPORTED = [
+  'ro','en','de','fr','es','it','pl','pt','hu','cs',
+  'sk','bg','hr','lt','lv','et','mt','sl','sv','da','nl','el','fi','ga'
+];
+
+// Pick the best language from Accept-Language header
+function bestLang(header: string | null): string {
+  if (!header) return 'en';
+  const tags = header.split(',').map(s => {
+    const [tag, q = '1'] = s.trim().split(';q=');
+    return { tag: tag.trim().toLowerCase(), q: parseFloat(q) };
+  }).sort((a, b) => b.q - a.q);
+
+  for (const { tag } of tags) {
+    // exact match (e.g. 'ro')
+    if (SUPPORTED.includes(tag)) return tag;
+    // prefix match (e.g. 'ro-RO' → 'ro')
+    const prefix = tag.split('-')[0];
+    if (SUPPORTED.includes(prefix)) return prefix;
+  }
+  return 'en';
+}
+
+const acceptLang = Astro.request.headers.get('accept-language');
+const lang = bestLang(acceptLang);
+
+return Astro.redirect(`/${lang}/`, 302);
 ---
-<!doctype html><html><head>
-<meta http-equiv="refresh" content="0;url=/ro/" />
-<link rel="canonical" href="/ro/" />
-</head></html>
