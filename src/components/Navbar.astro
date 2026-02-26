@@ -25,10 +25,10 @@ const links = [
       <span class="font-bold text-[13px] sm:text-[15px] hidden sm:inline t-fg">EguWallet</span>
     </a>
 
-    <ul class="hidden lg:flex items-center gap-1 flex-1 justify-center list-none m-0 p-0">
+    <ul class="hidden xl:flex items-center gap-0.5 flex-1 justify-center list-none m-0 p-0 flex-nowrap">
       {links.map(({ href, label }) => (
-        <li>
-          <a href={href} class="px-2.5 py-1.5 rounded-md text-[13px] font-medium t-fg opacity-70 hover:opacity-100 transition-opacity">{label}</a>
+        <li class="flex-shrink-0">
+          <a href={href} class="px-2 py-1.5 rounded-md text-[12px] font-medium t-fg opacity-70 hover:opacity-100 transition-opacity whitespace-nowrap">{label}</a>
         </li>
       ))}
     </ul>
@@ -104,14 +104,14 @@ const links = [
         id="nav-hamburger"
         aria-label="Open menu"
         aria-expanded="false"
-        class="lg:hidden min-h-[44px] min-w-[44px] flex items-center justify-center rounded-lg t-fg"
+        class="xl:hidden min-h-[44px] min-w-[44px] flex items-center justify-center rounded-lg t-fg"
       >
         <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
       </button>
     </div>
   </nav>
 
-  <div id="mobile-menu" class="hidden lg:hidden px-3 sm:px-4 pb-3 sm:pb-4 flex-col gap-0.5 sm:gap-1 t-bg">
+  <div id="mobile-menu" class="hidden xl:hidden px-3 sm:px-4 pb-3 sm:pb-4 flex-col gap-0.5 sm:gap-1 t-bg">
     {links.map(({ href, label }) => (
       <a href={href} class="block px-3 py-2.5 rounded-lg text-[13px] font-medium t-fg" onclick="document.getElementById('mobile-menu').classList.add('hidden')">{label}</a>
     ))}
