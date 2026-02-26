@@ -7,12 +7,12 @@ interface Props { t: Translations; lang: string; }
 const { t, lang } = Astro.props;
 
 const links = [
-  { href: '#what',                   label: t.nav.what },
-  { href: '#documents',              label: t.nav.documents },
-  { href: '#usecases',               label: t.nav.useCases },
-  { href: '#trust',                  label: t.nav.trust },
-  { href: '#verifier',               label: t.verifier.navLabel },
-  { href: '#faq',                    label: t.nav.faq },
+  { href: `/${lang}/#what`,          label: t.nav.what },
+  { href: `/${lang}/#documents`,     label: t.nav.documents },
+  { href: `/${lang}/#usecases`,      label: t.nav.useCases },
+  { href: `/${lang}/#trust`,         label: t.nav.trust },
+  { href: `/${lang}/#verifier`,      label: t.verifier.navLabel },
+  { href: `/${lang}/#faq`,           label: t.nav.faq },
   { href: `/${lang}/about/`,         label: t.nav.about },
   { href: `/${lang}/contact/`,       label: t.nav.contact },
 ];
