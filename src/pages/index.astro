@@ -6,26 +6,59 @@ const SUPPORTED = [
   'sk','bg','hr','lt','lv','et','mt','sl','sv','da','nl','el','fi','ga'
 ];
 
-// Pick the best language from Accept-Language header
-function bestLang(header: string | null): string {
+function bestLangFromHeader(header: string | null): string {
   if (!header) return 'en';
   const tags = header.split(',').map(s => {
     const [tag, q = '1'] = s.trim().split(';q=');
     return { tag: tag.trim().toLowerCase(), q: parseFloat(q) };
   }).sort((a, b) => b.q - a.q);
-
   for (const { tag } of tags) {
-    // exact match (e.g. 'ro')
     if (SUPPORTED.includes(tag)) return tag;
-    // prefix match (e.g. 'ro-RO' → 'ro')
     const prefix = tag.split('-')[0];
     if (SUPPORTED.includes(prefix)) return prefix;
   }
   return 'en';
 }
 
-const acceptLang = Astro.request.headers.get('accept-language');
-const lang = bestLang(acceptLang);
+// Check cookie from a previous visit — skip geo lookup
+const cookieLang = Astro.cookies.get('egu-lang')?.value;
+let lang = (cookieLang && SUPPORTED.includes(cookieLang))
+  ? cookieLang
+  : bestLangFromHeader(Astro.request.headers.get('accept-language'));
 
-return Astro.redirect(`/${lang}/`, 302);
+// If no cookie: check visitor's IP country (Romania → always Romanian)
+if (!cookieLang) {
+  const ip =
+    Astro.request.headers.get('x-forwarded-for')?.split(',')[0].trim() ||
+    Astro.request.headers.get('x-real-ip') ||
+    '';
+
+  if (ip && ip !== '127.0.0.1' && ip !== '::1') {
+    try {
+      const controller = new AbortController();
+      const tid = setTimeout(() => controller.abort(), 300);
+      const res = await fetch(`https://ip-api.com/json/${ip}?fields=countryCode`, {
+        signal: controller.signal,
+      });
+      clearTimeout(tid);
+      if (res.ok) {
+        const { countryCode } = await res.json() as { countryCode?: string };
+        if (countryCode === 'RO') lang = 'ro';
+      }
+    } catch {
+      // timed out or unreachable — keep Accept-Language result
+    }
+  }
+
+  // Remember for 7 days so next visit skips the geo lookup
+  Astro.cookies.set('egu-lang', lang, {
+    path: '/',
+    maxAge: 60 * 60 * 24 * 7,
+    sameSite: 'lax',
+    secure: true,
+  });
+}
+
+// Serve the language page content without changing the browser URL
+return Astro.rewrite(`/${lang}/`);
 ---
