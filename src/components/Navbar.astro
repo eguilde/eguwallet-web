@@ -187,7 +187,15 @@ const links = [
       .map(function(el) { return el.textContent ? el.textContent.trim() : ''; })
       .filter(function(t) { return t && t.length > 2; }).join('. ');
     var utt = new SpeechSynthesisUtterance(text);
-    utt.lang = document.documentElement.lang || 'en';
+    var bcp47 = {
+      ro:'ro-RO', en:'en-GB', de:'de-DE', fr:'fr-FR', es:'es-ES',
+      it:'it-IT', pl:'pl-PL', pt:'pt-PT', hu:'hu-HU', cs:'cs-CZ',
+      sk:'sk-SK', bg:'bg-BG', hr:'hr-HR', lt:'lt-LT', lv:'lv-LV',
+      et:'et-EE', mt:'mt-MT', sl:'sl-SI', sv:'sv-SE', da:'da-DK',
+      nl:'nl-NL', el:'el-GR', fi:'fi-FI', ga:'ga-IE'
+    };
+    var lang = document.documentElement.lang || 'en';
+    utt.lang = bcp47[lang] || lang;
     utt.rate = 0.92;
     utt.onstart = function() { setTtsState(true); };
     utt.onend = function() { setTtsState(false); };
