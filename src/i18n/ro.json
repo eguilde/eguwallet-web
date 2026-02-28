@@ -603,6 +603,36 @@
     "historyFailed": "Eșuate",
     "noHistory": "Istoricul nu este disponibil încă."
   },
+  "download": {
+    "title": "Descarcă EguWallet Desktop",
+    "subtitle": "Aplicații companion pentru Windows și macOS",
+    "windows": {
+      "title": "Windows",
+      "desc": "Folosește telefonul ca factor Windows Hello — deblochează orice PC cu Windows 10/11 prin Bluetooth. Semnează PDF-uri cu Semnătura Electronică Calificată eIDAS 2.0 direct din Adobe Acrobat.",
+      "requirements": "Windows 10 versiunea 1903 sau mai nou · Bluetooth LE",
+      "badge": "MSIX · winget",
+      "cta": "Descarcă pentru Windows"
+    },
+    "macos": {
+      "title": "macOS",
+      "desc": "Folosește telefonul pentru a debloca ecranul de autentificare macOS și economizorul de ecran prin Bluetooth. Semnează PDF-uri cu QES din orice aplicație macOS prin bridge-ul CSC de sistem.",
+      "requirements": "macOS 12 Monterey sau mai nou · Bluetooth",
+      "badge": "DMG · Homebrew",
+      "cta": "Descarcă pentru macOS"
+    },
+    "android": {
+      "title": "Aplicație Android",
+      "desc": "Aplicația EguWallet pe telefonul tău Android este centrul — se împerechează cu PC-urile tale, conține identitatea ta eIDAS 2.0 și autorizează fiecare solicitare de autentificare și semnătură."
+    },
+    "features": {
+      "title": "Ce poți face",
+      "unlock": "Deblochează Windows Hello și ecranul de autentificare macOS cu telefonul prin Bluetooth",
+      "sign": "Semnează documente PDF cu Semnătură Electronică Calificată eIDAS 2.0",
+      "multi": "Împerechează mai multe computere — un telefon, mai multe dispozitive"
+    },
+    "comingSoon": "În curând",
+    "releases": "Vezi toate versiunile pe GitHub"
+  },
   "meta": {
     "homeTitle": "EguWallet — Portofel Digital European eIDAS 2.0",
     "homeDesc": "Stochează și prezintă actul de identitate, permisul, diplomele și semnătura calificată direct de pe telefon. Conform eIDAS 2.0, recunoscut în UE.",

@@ -1,0 +1,188 @@
+---
+import '../../../styles/global.css';
+import { SITE } from '../../../config/site.ts';
+import { getTranslations } from '../../../i18n/index';
+import Navbar from '../../../components/Navbar.astro';
+import HeadSEO from '../../../components/HeadSEO.astro';
+
+export async function getStaticPaths() {
+  const locales = [
+    'ro','en','de','fr','es','it','pl','pt','hu','cs',
+    'sk','bg','hr','lt','lv','et','mt','sl','sv','da','nl','el','fi','ga'
+  ];
+  return locales.map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const t = await getTranslations(lang);
+const isRo = lang === 'ro';
+
+const dl = t.download;
+const title = dl.title;
+const desc  = dl.subtitle;
+const releasesUrl = 'https://github.com/eguilde/eguwallet-desktop/releases';
+const playUrl     = 'https://play.google.com/store/apps/details?id=wallet.eguwallet.eu';
+---
+<!doctype html>
+<html lang={lang} data-theme="light">
+<head>
+  <HeadSEO lang={lang} title={title} description={desc} canonical={`${SITE}/${lang}/download/`} pathSuffix="download/" />
+</head>
+<body class="t-bg t-fg">
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:px-4 focus:py-2 focus:rounded focus:t-bg focus:t-fg focus:outline-none focus:ring-2">
+    {isRo ? 'Sari la conținut' : 'Skip to main content'}
+  </a>
+
+  <Navbar t={t} lang={lang} />
+
+  <main id="main-content" class="t-bg">
+
+    <!-- Page header -->
+    <div class="py-12 sm:py-16 px-4 sm:px-6 t-bg-surface-high">
+      <div class="max-w-4xl mx-auto">
+        <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold t-fg mb-2">{dl.title}</h1>
+        <p class="text-[14px] sm:text-base t-fg opacity-55">{dl.subtitle}</p>
+      </div>
+    </div>
+
+    <!-- Desktop download cards -->
+    <div class="py-10 sm:py-14 px-4 sm:px-6">
+      <div class="max-w-4xl mx-auto flex flex-col gap-10 sm:gap-14">
+
+        <section aria-labelledby="desktop-h">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6">
+
+            <!-- Windows -->
+            <div class="eg-glass p-5 sm:p-6 flex flex-col gap-4">
+              <div class="flex items-center gap-3">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="t-fg opacity-80 flex-shrink-0">
+                  <path d="M3 5.6L10.5 4.5V11.5H3V5.6ZM11.5 4.35L21 3V11.5H11.5V4.35ZM3 12.5H10.5V19.5L3 18.4V12.5ZM11.5 12.5H21V21L11.5 19.65V12.5Z"/>
+                </svg>
+                <h2 class="text-base sm:text-lg font-semibold t-fg">{dl.windows.title}</h2>
+                <span class="ml-auto text-[11px] font-medium px-2 py-0.5 rounded-full t-bg-surface t-fg opacity-60 whitespace-nowrap">{dl.windows.badge}</span>
+              </div>
+              <p class="text-[13px] sm:text-[14px] leading-relaxed t-fg opacity-75">{dl.windows.desc}</p>
+              <p class="text-[12px] t-fg opacity-45">{dl.windows.requirements}</p>
+              <div class="mt-auto flex flex-col gap-2">
+                <a
+                  href={releasesUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg text-[13px] sm:text-[14px] font-semibold transition-opacity hover:opacity-90"
+                  style="background: var(--eg-primary, #A01E28); color: #fff;"
+                >
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                  {dl.windows.cta}
+                </a>
+                <a
+                  href={releasesUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-center text-[12px] t-fg opacity-45 hover:opacity-70 transition-opacity"
+                >
+                  {dl.releases} ↗
+                </a>
+              </div>
+            </div>
+
+            <!-- macOS -->
+            <div class="eg-glass p-5 sm:p-6 flex flex-col gap-4">
+              <div class="flex items-center gap-3">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="t-fg opacity-80 flex-shrink-0">
+                  <path d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 22 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.1 22C7.78 22.05 6.8 20.68 5.96 19.47C4.25 17 2.94 12.45 4.7 9.39C5.57 7.87 7.13 6.91 8.82 6.88C10.1 6.86 11.32 7.75 12.11 7.75C12.89 7.75 14.37 6.68 15.92 6.84C16.57 6.87 18.39 7.1 19.56 8.82C19.47 8.88 17.39 10.1 17.41 12.63C17.44 15.65 20.06 16.66 20.09 16.67C20.06 16.74 19.67 18.11 18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z"/>
+                </svg>
+                <h2 class="text-base sm:text-lg font-semibold t-fg">{dl.macos.title}</h2>
+                <span class="ml-auto text-[11px] font-medium px-2 py-0.5 rounded-full t-bg-surface t-fg opacity-60 whitespace-nowrap">{dl.macos.badge}</span>
+              </div>
+              <p class="text-[13px] sm:text-[14px] leading-relaxed t-fg opacity-75">{dl.macos.desc}</p>
+              <p class="text-[12px] t-fg opacity-45">{dl.macos.requirements}</p>
+              <div class="mt-auto flex flex-col gap-2">
+                <a
+                  href={releasesUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg text-[13px] sm:text-[14px] font-semibold transition-opacity hover:opacity-90"
+                  style="background: var(--eg-primary, #A01E28); color: #fff;"
+                >
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                  {dl.macos.cta}
+                </a>
+                <a
+                  href={releasesUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-center text-[12px] t-fg opacity-45 hover:opacity-70 transition-opacity"
+                >
+                  {dl.releases} ↗
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- Android -->
+        <section aria-labelledby="android-h">
+          <h2 id="android-h" class="text-[11px] sm:text-[12px] font-semibold uppercase tracking-widest t-fg opacity-40 mb-4">
+            {dl.android.title}
+          </h2>
+          <div class="eg-glass p-5 sm:p-6 flex flex-col sm:flex-row gap-5 sm:gap-8 sm:items-center">
+            <div class="flex-1">
+              <p class="text-[13px] sm:text-[14px] leading-relaxed t-fg opacity-75">{dl.android.desc}</p>
+            </div>
+            <div class="flex flex-col gap-2 flex-shrink-0">
+              <a href={playUrl} target="_blank" rel="noopener noreferrer" aria-label="Get it on Google Play">
+                <img
+                  src={`/assets/badges/google-play-${lang === 'ro' ? 'ro' : 'en'}.svg`}
+                  onerror="this.src='/assets/badges/google-play-en.svg'"
+                  alt="Get it on Google Play"
+                  class="h-10 sm:h-12"
+                  width="162"
+                  height="48"
+                />
+              </a>
+              <span class="text-[12px] t-fg opacity-40 text-center">{isRo ? 'iOS — în curând' : 'iOS — coming soon'}</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- What you can do -->
+        <section aria-labelledby="features-h">
+          <h2 id="features-h" class="text-[11px] sm:text-[12px] font-semibold uppercase tracking-widest t-fg opacity-40 mb-4">
+            {dl.features.title}
+          </h2>
+          <div class="flex flex-col gap-3">
+            {[
+              { icon: '🔓', label: dl.features.unlock },
+              { icon: '✍️', label: dl.features.sign },
+              { icon: '💻', label: dl.features.multi },
+            ].map(({ icon, label }) => (
+              <div class="flex items-start gap-3 p-4 sm:p-5 rounded-lg t-bg-surface text-[13px] sm:text-[14px] t-fg">
+                <span class="text-xl flex-shrink-0 mt-0.5" aria-hidden="true">{icon}</span>
+                <span class="t-fg opacity-80">{label}</span>
+              </div>
+            ))}
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-8 px-4 sm:px-6 t-bg-surface-high">
+      <div class="max-w-4xl mx-auto flex flex-wrap gap-x-4 gap-y-1 text-[12px] t-fg opacity-40">
+        <a href={`/${lang}/`} class="hover:opacity-70 transition-opacity">EguWallet</a>
+        <span>·</span>
+        <a href={`/${lang}/privacy/`} class="hover:opacity-70 transition-opacity underline">{isRo ? 'Confidențialitate' : 'Privacy Policy'}</a>
+        <span>·</span>
+        <a href={`/${lang}/terms/`} class="hover:opacity-70 transition-opacity underline">{isRo ? 'Termeni' : 'Terms'}</a>
+        <span>·</span>
+        <a href={`/${lang}/contact/`} class="hover:opacity-70 transition-opacity underline">{isRo ? 'Contact' : 'Contact'}</a>
+        <span>·</span>
+        <span>© 2026 IT Eguilde SRL</span>
+      </div>
+    </footer>
+
+  </main>
+</body>
+</html>

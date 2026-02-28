@@ -557,6 +557,36 @@
     "highContrastOff": "Alto contraste: desligado",
     "highContrastOn": "Alto contraste: ligado"
   },
+  "download": {
+    "title": "Download EguWallet Desktop",
+    "subtitle": "Companion apps for Windows and macOS",
+    "windows": {
+      "title": "Windows",
+      "desc": "Use your phone as a Windows Hello factor — unlock any Windows 10/11 PC over Bluetooth. Sign PDFs with your eIDAS 2.0 Qualified Electronic Signature directly from Adobe Acrobat.",
+      "requirements": "Windows 10 version 1903 or later · Bluetooth LE",
+      "badge": "MSIX · winget",
+      "cta": "Download for Windows"
+    },
+    "macos": {
+      "title": "macOS",
+      "desc": "Use your phone to unlock your Mac login screen and screensaver over Bluetooth. Sign PDFs with QES from any macOS app via the system CSC bridge.",
+      "requirements": "macOS 12 Monterey or later · Bluetooth",
+      "badge": "DMG · Homebrew",
+      "cta": "Download for macOS"
+    },
+    "android": {
+      "title": "Android App",
+      "desc": "The EguWallet app on your Android phone is the hub — it pairs with your PCs, holds your eIDAS 2.0 identity, and authorises every login and signature request."
+    },
+    "features": {
+      "title": "What you can do",
+      "unlock": "Unlock Windows Hello & macOS login with your phone over Bluetooth",
+      "sign": "Sign PDF documents with eIDAS 2.0 Qualified Electronic Signature",
+      "multi": "Pair multiple computers — one phone, many devices"
+    },
+    "comingSoon": "Coming soon",
+    "releases": "View all releases on GitHub"
+  },
   "meta": {
     "homeTitle": "EguWallet — Carteira de identidade digital europeia",
     "homeDesc": "Armazena e apresenta o BI, carta de condução, diplomas e assinatura qualificada pelo telemóvel. Conforme eIDAS 2.0, reconhecido na UE.",
