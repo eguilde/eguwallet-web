@@ -618,7 +618,9 @@
       "desc": "Folosește telefonul pentru a debloca ecranul de autentificare macOS și economizorul de ecran prin Bluetooth. Semnează PDF-uri cu QES din orice aplicație macOS prin bridge-ul CSC de sistem.",
       "requirements": "macOS 12 Monterey sau mai nou · Bluetooth",
       "badge": "DMG · Homebrew",
-      "cta": "Descarcă pentru macOS"
+      "cta": "Descarcă pentru macOS",
+      "ctaArm": "Apple Silicon (M1/M2/M3)",
+      "ctaX64": "Intel (x86-64)"
     },
     "android": {
       "title": "Aplicație Android",

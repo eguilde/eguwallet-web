@@ -572,7 +572,9 @@
       "desc": "Use your phone to unlock your Mac login screen and screensaver over Bluetooth. Sign PDFs with QES from any macOS app via the system CSC bridge.",
       "requirements": "macOS 12 Monterey or later · Bluetooth",
       "badge": "DMG · Homebrew",
-      "cta": "Download for macOS"
+      "cta": "Download for macOS",
+      "ctaArm": "Apple Silicon (M1/M2/M3)",
+      "ctaX64": "Intel (x86-64)"
     },
     "android": {
       "title": "Android App",

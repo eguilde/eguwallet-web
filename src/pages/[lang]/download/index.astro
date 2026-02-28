@@ -20,8 +20,13 @@ const isRo = lang === 'ro';
 const dl = t.download;
 const title = dl.title;
 const desc  = dl.subtitle;
-const releasesUrl = 'https://github.com/eguilde/eguwallet-desktop/releases';
-const playUrl     = 'https://play.google.com/store/apps/details?id=wallet.eguwallet.eu';
+const playUrl = 'https://play.google.com/store/apps/details?id=wallet.eguwallet.eu';
+
+// Self-hosted binary downloads — files live at /var/www/eguwallet.eu/downloads/ on the server
+// Upload new releases there; these paths never change (always-latest convention)
+const winUrl    = '/downloads/eguwallet-desktop-windows-x64.exe';
+const macArmUrl = '/downloads/eguwallet-desktop-macos-arm64.dmg';
+const macX64Url = '/downloads/eguwallet-desktop-macos-x64.dmg';
 ---
 <!doctype html>
 <html lang={lang} data-theme="light">
@@ -65,22 +70,13 @@ const playUrl     = 'https://play.google.com/store/apps/details?id=wallet.eguwal
               <p class="text-[12px] t-fg opacity-45">{dl.windows.requirements}</p>
               <div class="mt-auto flex flex-col gap-2">
                 <a
-                  href={releasesUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href={winUrl}
+                  download
                   class="flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg text-[13px] sm:text-[14px] font-semibold transition-opacity hover:opacity-90"
                   style="background: var(--eg-primary, #A01E28); color: #fff;"
                 >
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
                   {dl.windows.cta}
-                </a>
-                <a
-                  href={releasesUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="text-center text-[12px] t-fg opacity-45 hover:opacity-70 transition-opacity"
-                >
-                  {dl.releases} ↗
                 </a>
               </div>
             </div>
@@ -98,22 +94,21 @@ const playUrl     = 'https://play.google.com/store/apps/details?id=wallet.eguwal
               <p class="text-[12px] t-fg opacity-45">{dl.macos.requirements}</p>
               <div class="mt-auto flex flex-col gap-2">
                 <a
-                  href={releasesUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href={macArmUrl}
+                  download
                   class="flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg text-[13px] sm:text-[14px] font-semibold transition-opacity hover:opacity-90"
                   style="background: var(--eg-primary, #A01E28); color: #fff;"
                 >
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-                  {dl.macos.cta}
+                  {dl.macos.ctaArm}
                 </a>
                 <a
-                  href={releasesUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="text-center text-[12px] t-fg opacity-45 hover:opacity-70 transition-opacity"
+                  href={macX64Url}
+                  download
+                  class="flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg text-[13px] sm:text-[14px] font-medium t-fg border border-current border-opacity-20 hover:opacity-70 transition-opacity opacity-60"
                 >
-                  {dl.releases} ↗
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                  {dl.macos.ctaX64}
                 </a>
               </div>
             </div>
